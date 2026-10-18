@@ -613,6 +613,14 @@ step("boss: overview, abilities", function ()
 	tick(1)
 	assert(textShown("3,500 health"), "boss health missing")
 	assert(textShown("Defeated this lockout"), "kill not shown")
+	-- The 3.3.5 client draws a model inside a scroll frame in the wrong place.
+	local model = find(function (f) return f.__kind == "PlayerModel" and f:IsVisible() end)
+	assert(model, "boss model not shown")
+	local p = model:GetParent()
+	while p do
+		assert(p.__kind ~= "ScrollFrame", "boss model sits inside a scroll frame")
+		p = p:GetParent()
+	end
 	J.Show({ tab = "abilities" })
 	tick(0.5)
 	assert(textShown("^Arcane Explosion$"), "ability missing")
