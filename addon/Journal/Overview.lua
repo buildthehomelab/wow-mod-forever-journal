@@ -9,7 +9,6 @@ local setShown = J.SetShown
 
 local pane = CreateFrame("Frame")
 local scroll = J.CreateScrollArea(pane)
-scroll:SetPoint("TOPLEFT", pane, "TOPLEFT", 0, 0)
 scroll:SetPoint("BOTTOMRIGHT", pane, "BOTTOMRIGHT", -22, 0)
 scroll:SetScript("OnMouseWheel", function (self, delta)
 	local max = math.max(0, self.content:GetHeight() - self:GetHeight())
@@ -90,8 +89,13 @@ end
 -----------------------------------------
 -- the boss model
 
-local model = CreateFrame("PlayerModel", nil, c)
-model:SetHeight(250)
+-- It sits above the scroll area, not in it: the 3.3.5 client draws a model inside a scroll
+-- frame in the wrong place, on top of the boss list and the text.
+local MODEL_HEIGHT = 250
+local model = CreateFrame("PlayerModel", nil, pane)
+model:SetPoint("TOPLEFT", pane, "TOPLEFT", 4, -4)
+model:SetPoint("TOPRIGHT", pane, "TOPRIGHT", -26, -4)
+model:SetHeight(MODEL_HEIGHT)
 model:EnableMouse(true)
 model.facing = 0.4
 model:SetScript("OnMouseDown", function (self, btn)
@@ -109,7 +113,7 @@ model:SetScript("OnUpdate", function (self)
 	end
 end)
 model:SetScript("OnHide", function (self) self.shownEntry = nil end)
-local modelBg = c:CreateTexture(nil, "BACKGROUND")
+local modelBg = pane:CreateTexture(nil, "BACKGROUND")
 modelBg:SetPoint("TOPLEFT", model, "TOPLEFT")
 modelBg:SetPoint("BOTTOMRIGHT", model, "BOTTOMRIGHT")
 modelBg:SetTexture("Interface\\LFGFrame\\UI-LFG-BACKGROUND-QUESTPAPER")
@@ -118,6 +122,16 @@ modelBg:SetVertexColor(0.35, 0.32, 0.3)
 local modelHint = model:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
 modelHint:SetPoint("BOTTOMRIGHT", model, "BOTTOMRIGHT", -6, 4)
 modelHint:SetText("Drag to turn")
+
+-- Shows or hides the model; the scroll area starts below it while it shows.
+local function setModelShown(shown)
+	setShown(model, shown)
+	setShown(modelBg, shown)
+	scroll:ClearAllPoints()
+	scroll:SetPoint("TOPLEFT", pane, "TOPLEFT", 0, shown and -(MODEL_HEIGHT + 10) or 0)
+	scroll:SetPoint("BOTTOMRIGHT", pane, "BOTTOMRIGHT", -22, 0)
+end
+setModelShown(false)
 
 local function showCreature(entry)
 	if not entry or entry == 0 then
@@ -146,8 +160,6 @@ local serial = 0
 local function instanceOverview(ctx)
 	local inst, variant = ctx.inst, ctx.variant
 	local mine = serial
-	model:Hide()
-	modelBg:Hide()
 
 	text(inst.name, GameFontNormalHuge, GOLD, 0, 2)
 	text((inst.raid and "Raid" or "Dungeon") .. " for level " .. inst.minLevel .. "-" .. inst.maxLevel
@@ -250,16 +262,7 @@ local function bossOverview(ctx)
 	local st = ctx.status and ctx.status.inst == inst.id and ctx.status.value or nil
 
 	if boss.display and boss.display > 0 then
-		model:ClearAllPoints()
-		model:SetPoint("TOPLEFT", c, "TOPLEFT", 4, -y)
-		model:SetWidth(width)
-		model:Show()
-		modelBg:Show()
 		showCreature(pane.unit or boss.display)
-		y = y + 256
-	else
-		model:Hide()
-		modelBg:Hide()
 	end
 
 	text(boss.name, GameFontNormalHuge, GOLD, 0, 2)
@@ -329,6 +332,7 @@ end
 
 function pane:Refresh(ctx)
 	serial = serial + 1
+	setModelShown(ctx.boss and ctx.boss.display and ctx.boss.display > 0 and true or false)
 	reset()
 	if not ctx.boss then pane.unit = nil end
 	if pane.lastBoss ~= (ctx.boss and ctx.boss.key) then
