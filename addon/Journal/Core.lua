@@ -17,6 +17,7 @@ J.HELLO_QUESTS = 32
 J.HELLO_DIRECTORY = 64
 J.HELLO_LORE = 128
 J.HELLO_LIBRARY = 256
+J.HELLO_HINTS = 512
 
 -- What this addon can do, sent with HELLO (AddonFeatureFlags in src/Journal.h): open a tab when
 -- the server says OPEN (the Town Guide spell and .find), and answer OPENED.
@@ -266,7 +267,7 @@ J.state = 18
 local nextReq = 0
 local pending = {}
 -- list answers: first letter of the R/D/E codes per command
-local LISTS = { D = true, B = true, S = true, A = true, L = true, K = true, Q = true, T = true, F = true, C = true, W = true, O = true,
+local LISTS = { E = true, D = true, B = true, S = true, A = true, L = true, K = true, Q = true, T = true, F = true, C = true, W = true, O = true,
 	G = true, Z = true, X = true, N = true, Y = true, U = true, V = true, J = true, P = true }
 
 local function send(msg)
