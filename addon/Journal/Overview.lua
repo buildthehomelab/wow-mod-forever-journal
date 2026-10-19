@@ -58,11 +58,14 @@ local GREEN = { 0.3, 1, 0.3 }
 local function heading(str)
 	y = y + 6
 	text(str, GameFontNormalLarge, GOLD, 0, 4)
-	local rule = icons:Get()
-	rule:SetTexture(1, 0.82, 0, 0.35)
-	rule:ClearAllPoints()
-	rule:SetPoint("TOPLEFT", c, "TOPLEFT", 4, -y)
-	rule:SetSize(width, 1)
+	-- A gold rule under it with DragonUI; plain headings, as the stock quest log has, without.
+	if J.dragon then
+		local rule = icons:Get()
+		rule:SetTexture(1, 0.82, 0, 0.35)
+		rule:ClearAllPoints()
+		rule:SetPoint("TOPLEFT", c, "TOPLEFT", 4, -y)
+		rule:SetSize(width, 1)
+	end
 	y = y + 6
 end
 

@@ -32,7 +32,13 @@ header.shade = header:CreateTexture(nil, "BORDER")
 header.shade:SetPoint("BOTTOMLEFT", header, "BOTTOMLEFT")
 header.shade:SetPoint("BOTTOMRIGHT", header, "BOTTOMRIGHT")
 header.shade:SetHeight(58)
-header.shade:SetTexture(0, 0, 0, 0.72)
+if J.dragon then
+	header.shade:SetTexture(0, 0, 0, 0.72)
+else
+	-- Without DragonUI only a light fade under the name, so the art shows as it is.
+	header.shade:SetTexture(0, 0, 0, 1)
+	header.shade:SetGradientAlpha("VERTICAL", 0, 0, 0, 0.5, 0, 0, 0, 0)
+end
 header.name = header:CreateFontString(nil, "OVERLAY", "GameFontNormalHuge")
 header.name:SetPoint("BOTTOMLEFT", header, "BOTTOMLEFT", 10, 28)
 header.name:SetPoint("RIGHT", header, "RIGHT", -8, 0)
@@ -52,7 +58,7 @@ do
 	edge:SetPoint("TOPLEFT", header, "TOPLEFT", -2, 2)
 	edge:SetPoint("BOTTOMRIGHT", header, "BOTTOMRIGHT", 2, -2)
 	edge:SetBackdrop({ edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", edgeSize = 12 })
-	edge:SetBackdropBorderColor(0.7, 0.6, 0.35, 1)
+	if J.dragon then edge:SetBackdropBorderColor(0.7, 0.6, 0.35, 1) end
 	edge:EnableMouse(false)
 end
 
@@ -69,14 +75,18 @@ local dragon = J.dragon
 local function makeWingRow()
 	local r = CreateFrame("Frame", nil, list.content)
 	r:SetHeight(WING_ROW)
-	r.band = r:CreateTexture(nil, "BACKGROUND")
-	r.band:SetAllPoints(r)
-	r.band:SetTexture(0.2, 0.14, 0.04, dragon and 0.9 or 0.55)
-	r.rule = r:CreateTexture(nil, "BORDER")
-	r.rule:SetHeight(1)
-	r.rule:SetPoint("BOTTOMLEFT", r, "BOTTOMLEFT")
-	r.rule:SetPoint("BOTTOMRIGHT", r, "BOTTOMRIGHT")
-	r.rule:SetTexture(1, 0.82, 0, 0.55)
+	if dragon then
+		r.band = r:CreateTexture(nil, "BACKGROUND")
+		r.band:SetAllPoints(r)
+		r.band:SetTexture(0.2, 0.14, 0.04, 0.9)
+		r.rule = r:CreateTexture(nil, "BORDER")
+		r.rule:SetHeight(1)
+		r.rule:SetPoint("BOTTOMLEFT", r, "BOTTOMLEFT")
+		r.rule:SetPoint("BOTTOMRIGHT", r, "BOTTOMRIGHT")
+		r.rule:SetTexture(1, 0.82, 0, 0.55)
+	else
+		J.CreateHeaderBand(r)
+	end
 	r.text = r:CreateFontString(nil, "OVERLAY", "GameFontNormal")
 	r.text:SetPoint("LEFT", r, "LEFT", 6, 0)
 	r.extra = r:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
