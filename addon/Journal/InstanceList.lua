@@ -52,7 +52,13 @@ local function makeTile()
 	t.shade:SetPoint("BOTTOMLEFT", t.bg, "BOTTOMLEFT")
 	t.shade:SetPoint("BOTTOMRIGHT", t.bg, "BOTTOMRIGHT")
 	t.shade:SetHeight(46)
-	t.shade:SetTexture(0, 0, 0, 0.7)
+	if J.dragon then
+		t.shade:SetTexture(0, 0, 0, 0.7)
+	else
+		-- Without DragonUI only a light fade under the name, so the art shows as it is.
+		t.shade:SetTexture(0, 0, 0, 1)
+		t.shade:SetGradientAlpha("VERTICAL", 0, 0, 0, 0.5, 0, 0, 0, 0)
+	end
 	t.icon = t:CreateTexture(nil, "ARTWORK")
 	t.icon:SetSize(40, 40)
 	t.icon:SetPoint("TOPLEFT", t, "TOPLEFT", 10, -10)
@@ -72,7 +78,8 @@ local function makeTile()
 	t.border = CreateFrame("Frame", nil, t)
 	t.border:SetAllPoints(t)
 	t.border:SetBackdrop({ edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", edgeSize = 14 })
-	t.border:SetBackdropBorderColor(0.6, 0.5, 0.3, 1)
+	-- The tooltip border in its own colour without DragonUI; tan, gold on hover, with it.
+	if J.dragon then t.border:SetBackdropBorderColor(0.6, 0.5, 0.3, 1) end
 	t.border:EnableMouse(false)
 	local hl = t:CreateTexture(nil, "HIGHLIGHT")
 	hl:SetPoint("TOPLEFT", t, "TOPLEFT", 3, -3)
@@ -81,7 +88,7 @@ local function makeTile()
 	hl:SetBlendMode("ADD")
 	hl:SetVertexColor(1, 0.82, 0, 0.6)
 	t:SetScript("OnEnter", function (self)
-		self.border:SetBackdropBorderColor(1, 0.82, 0, 1)
+		if J.dragon then self.border:SetBackdropBorderColor(1, 0.82, 0, 1) end
 		local inst = self.inst
 		if not inst then return end
 		GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
@@ -101,7 +108,7 @@ local function makeTile()
 		GameTooltip:Show()
 	end)
 	t:SetScript("OnLeave", function (self)
-		self.border:SetBackdropBorderColor(0.6, 0.5, 0.3, 1)
+		if J.dragon then self.border:SetBackdropBorderColor(0.6, 0.5, 0.3, 1) end
 		GameTooltip:Hide()
 	end)
 	t:SetScript("OnClick", function (self)

@@ -139,7 +139,16 @@ function J.SetPortrait(texture, path)
 	end
 end
 
--- A recessed pane (retail's InsetFrameTemplate).
+-- The stock options box (OptionsBoxTemplate: the tooltip border in 0.4 grey, insets 5), filled
+-- with the tooltip background in dark grey so a list reads on the dialog.
+local OPTIONS_BOX_BACKDROP = {
+	bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
+	edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
+	tile = true, tileSize = 16, edgeSize = 16,
+	insets = { left = 5, right = 5, top = 5, bottom = 5 },
+}
+
+-- A recessed pane: retail's InsetFrameTemplate with DragonUI, the stock options box without.
 function J.CreateInset(parent)
 	local pane = CreateFrame("Frame", nil, parent)
 	local D = J.Dragon()
@@ -148,16 +157,30 @@ function J.CreateInset(parent)
 		bg:SetAllPoints(pane)
 		NineSliceUtils.ApplyLayout(pane, NineSliceUtils.GetLayout("InsetFrameTemplate"))
 	else
-		pane:SetBackdrop({
-			bgFile = "Interface\\ChatFrame\\ChatFrameBackground",
-			edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
-			tile = true, tileSize = 16, edgeSize = 12,
-			insets = { left = 3, right = 3, top = 3, bottom = 3 },
-		})
-		pane:SetBackdropColor(0, 0, 0, 0.5)
-		pane:SetBackdropBorderColor(0.6, 0.6, 0.6, 1)
+		pane:SetBackdrop(OPTIONS_BOX_BACKDROP)
+		pane:SetBackdropColor(0.1, 0.1, 0.1, 1)
+		pane:SetBackdropBorderColor(0.4, 0.4, 0.4, 1)
 	end
 	return pane
+end
+
+-- The stock category bar (the Currency tab's headers) behind a header row, for the look without
+-- DragonUI.
+function J.CreateHeaderBand(host)
+	local file = "Interface\\TokenFrame\\UI-TokenFrame-CategoryButton"
+	local right = host:CreateTexture(nil, "BACKGROUND")
+	right:SetTexture(file)
+	right:SetTexCoord(0, 0.14453125, 0.296875, 0.578125)
+	-- At the art's own 18px height, centred on the row, so the bevel isn't stretched.
+	right:SetSize(37, 18)
+	right:SetPoint("RIGHT", host, "RIGHT")
+	local left = host:CreateTexture(nil, "BACKGROUND")
+	left:SetTexture(file)
+	left:SetTexCoord(0, 1, 0, 0.28125)
+	left:SetHeight(18)
+	left:SetPoint("LEFT", host, "LEFT")
+	left:SetPoint("RIGHT", right, "LEFT")
+	return left, right
 end
 
 -- A FauxScrollFrame's bar: DragonUI's thin one, or the stock one.

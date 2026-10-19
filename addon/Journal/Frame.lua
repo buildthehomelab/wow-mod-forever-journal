@@ -207,7 +207,14 @@ results:SetBackdrop({
 	tile = true, tileSize = 16, edgeSize = 16,
 	insets = { left = 4, right = 4, top = 4, bottom = 4 },
 })
-results:SetBackdropColor(0, 0, 0, 0.92)
+if dragon then
+	results:SetBackdropColor(0, 0, 0, 0.92)
+else
+	-- GameTooltip's own colours.
+	results:SetBackdropColor(TOOLTIP_DEFAULT_BACKGROUND_COLOR.r, TOOLTIP_DEFAULT_BACKGROUND_COLOR.g,
+		TOOLTIP_DEFAULT_BACKGROUND_COLOR.b)
+	results:SetBackdropBorderColor(TOOLTIP_DEFAULT_COLOR.r, TOOLTIP_DEFAULT_COLOR.g, TOOLTIP_DEFAULT_COLOR.b)
+end
 results:EnableMouse(true)
 results:Hide()
 
