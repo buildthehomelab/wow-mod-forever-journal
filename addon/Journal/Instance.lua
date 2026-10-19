@@ -23,8 +23,10 @@ left:SetPoint("BOTTOMLEFT", page, "BOTTOMLEFT", 0, 0)
 left:SetWidth(LEFT_WIDTH)
 
 local header = CreateFrame("Button", nil, left)
-header:SetPoint("TOPLEFT", left, "TOPLEFT", 5, -5)
-header:SetPoint("TOPRIGHT", left, "TOPRIGHT", -5, -5)
+-- Without DragonUI the options box's border is wider, so the header's own edge sits further in.
+local headerInset = J.dragon and 5 or 7
+header:SetPoint("TOPLEFT", left, "TOPLEFT", headerInset, -headerInset)
+header:SetPoint("TOPRIGHT", left, "TOPRIGHT", -headerInset, -headerInset)
 header:SetHeight(HEADER_HEIGHT)
 header.art = header:CreateTexture(nil, "BACKGROUND")
 header.art:SetAllPoints(header)

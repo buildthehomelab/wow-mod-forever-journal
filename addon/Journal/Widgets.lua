@@ -139,7 +139,8 @@ function J.SetPortrait(texture, path)
 	end
 end
 
--- The stock options box (OptionsBoxTemplate): the tooltip border in grey round a dark grey fill.
+-- The stock options box (OptionsBoxTemplate: the tooltip border in 0.4 grey, insets 5), filled
+-- with the tooltip background in dark grey so a list reads on the dialog.
 local OPTIONS_BOX_BACKDROP = {
 	bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
 	edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
@@ -170,14 +171,15 @@ function J.CreateHeaderBand(host)
 	local right = host:CreateTexture(nil, "BACKGROUND")
 	right:SetTexture(file)
 	right:SetTexCoord(0, 0.14453125, 0.296875, 0.578125)
-	right:SetWidth(37)
-	right:SetPoint("TOPRIGHT", host, "TOPRIGHT")
-	right:SetPoint("BOTTOMRIGHT", host, "BOTTOMRIGHT")
+	-- At the art's own 18px height, centred on the row, so the bevel isn't stretched.
+	right:SetSize(37, 18)
+	right:SetPoint("RIGHT", host, "RIGHT")
 	local left = host:CreateTexture(nil, "BACKGROUND")
 	left:SetTexture(file)
 	left:SetTexCoord(0, 1, 0, 0.28125)
-	left:SetPoint("TOPLEFT", host, "TOPLEFT")
-	left:SetPoint("BOTTOMRIGHT", right, "BOTTOMLEFT")
+	left:SetHeight(18)
+	left:SetPoint("LEFT", host, "LEFT")
+	left:SetPoint("RIGHT", right, "LEFT")
 	return left, right
 end
 
