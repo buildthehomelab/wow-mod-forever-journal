@@ -63,6 +63,7 @@ namespace Journal
         HELLO_QUESTS      = 0x20, // G, Z, X: every quest of the realm
         HELLO_DIRECTORY   = 0x40, // N: the town directory, M:N flags a result
         HELLO_LORE        = 0x80, // Y, U, V: the lore codex, LN announces discoveries
+        HELLO_HINTS       = 0x200, // E: achievement actions for hover tooltips
         HELLO_LIBRARY     = 0x100, // J, P: books read, BN announces a new one
     };
 

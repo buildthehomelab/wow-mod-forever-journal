@@ -23,4 +23,5 @@ DirectoryTab.lua
 Lore.lua
 LoreTab.lua
 Collections.lua
+TooltipHints.lua
 Minimap.lua

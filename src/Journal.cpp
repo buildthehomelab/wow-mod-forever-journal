@@ -18,6 +18,7 @@
  *   H:<req>                           -> H:<req>:<instance>:<variant>   the instance you're in
  *   M:<req>:<E|Q>:<id>                -> M:<req>:ok:<where>     flags an entrance or quest giver
  *   F:<req>:<text>                    -> FR, FD rows (I/B/L), FE  instances, bosses and loot by name
+ *   E:<req>                           -> ER, ED rows (U/I,target,achievement,criterion,action), EE
  *   C:<req>:<M|P|T>                   -> CR, CD rows, CE        mounts, pets or toys
  *   W:<req>:<M|P|T>:<id>              -> WR, WD rows, WE        where one comes from
  *   O:<req>                           -> OR, OD rows, OE        toys the character has
@@ -47,6 +48,10 @@
 
 #include "Journal.h"
 #include "Chat.h"
+#include "DBCStores.h"
+#include "DatabaseEnv.h"
+#include "ItemTemplate.h"
+#include "ObjectMgr.h"
 #include "Config.h"
 #include "Creature.h"
 #include "Player.h"
@@ -309,7 +314,7 @@ namespace Journal
                 sFeatures[player->GetGUID().GetCounter()] = features;
             }
 
-            uint32 flags = HELLO_JOURNAL | HELLO_MAP_PINS;
+            uint32 flags = HELLO_JOURNAL | HELLO_MAP_PINS | HELLO_HINTS;
             if (sConfig.progressionEnabled && sConfig.eraLocks)
                 flags |= HELLO_PROGRESSION;
             if (sConfig.learnAbilities)
@@ -347,7 +352,7 @@ namespace Journal
         float CostOf(std::string_view command)
         {
             // The instance list and "every boss" loot are the long answers; the addon keeps them.
-            if (command == "D" || command == "C")
+            if (command == "D" || command == "C" || command == "E")
                 return 6.0f;
             if (command == "O")
                 return 2.0f;
@@ -357,6 +362,80 @@ namespace Journal
             if (command == "L" || command == "Q" || command == "F" || command == "K" || command == "X" || command == "N" || command == "Y" || command == "P")
                 return 2.0f;
             return 1.0f;
+        }
+
+        // E: realm achievement action index. No fixed stock creature/item lists in the addon.
+        // Rows: target kind (U/I), target entry, achievement, criterion ID, escaped action.
+        void HandleHints(Player* player, std::string const& req)
+        {
+            std::unordered_map<uint32, std::vector<uint32>> targets;
+            if (QueryResult result = WorldDatabase.Query(
+                "SELECT criteria_id, value1 FROM achievement_criteria_data WHERE type = 1"))
+            {
+                do
+                {
+                    Field* f = result->Fetch();
+                    targets[f[0].Get<uint32>()].push_back(f[1].Get<uint32>());
+                } while (result->NextRow());
+            }
+            std::vector<std::string> rows;
+            for (uint32 id = 0; id < sAchievementCriteriaStore.GetNumRows(); ++id)
+            {
+                auto const* c = sAchievementCriteriaStore.LookupEntry(id);
+                if (!c)
+                    continue;
+                auto const* achievement = sAchievementStore.LookupEntry(c->referredAchievement);
+                if (!achievement || (achievement->flags & ACHIEVEMENT_FLAG_COUNTER) || (achievement->requiredFaction != -1 &&
+                    achievement->requiredFaction != (player->GetTeamId() == TEAM_ALLIANCE ? 1 : 0)))
+                    continue;
+                auto add = [&](char kind, uint32 target, std::string const& action)
+                {
+                    if (target)
+                        rows.push_back(std::string(1, kind) + "," + std::to_string(target) + "," +
+                            std::to_string(c->referredAchievement) + "," + std::to_string(c->ID) + "," + Escape(action));
+                };
+                switch (c->requiredType)
+                {
+                    case ACHIEVEMENT_CRITERIA_TYPE_KILL_CREATURE:
+                        add('U', c->raw.field3, "Kill"); break;
+                    case ACHIEVEMENT_CRITERIA_TYPE_USE_ITEM:
+                    {
+                        auto const* item = sObjectMgr->GetItemTemplate(c->raw.field3);
+                        add('I', c->raw.field3, item && item->Class == ITEM_CLASS_CONSUMABLE &&
+                            item->SubClass == ITEM_SUBCLASS_FOOD ? "Eat / drink" : "Use");
+                        break;
+                    }
+                    case ACHIEVEMENT_CRITERIA_TYPE_LOOT_ITEM:
+                        add('I', c->raw.field3, "Loot"); break;
+                    case ACHIEVEMENT_CRITERIA_TYPE_OWN_ITEM:
+                        add('I', c->raw.field3, "Collect"); break;
+                    case ACHIEVEMENT_CRITERIA_TYPE_EQUIP_ITEM:
+                        add('I', c->raw.field3, "Equip"); break;
+                    case ACHIEVEMENT_CRITERIA_TYPE_DO_EMOTE:
+                    {
+                        std::string action;
+                        switch (c->do_emote.emoteID)
+                        {
+                            case TEXT_EMOTE_LOVE: action = "/love"; break;
+                            case TEXT_EMOTE_HUG: action = "/hug"; break;
+                            case TEXT_EMOTE_KISS: action = "/kiss"; break;
+                            case TEXT_EMOTE_DANCE: action = "/dance"; break;
+                            case TEXT_EMOTE_CHEER: action = "/cheer"; break;
+                            case TEXT_EMOTE_WAVE: action = "/wave"; break;
+                            case TEXT_EMOTE_BOW: action = "/bow"; break;
+                            case TEXT_EMOTE_SALUTE: action = "/salute"; break;
+                            default: action = "Emote (see achievement)"; break;
+                        }
+                        for (uint32 target : targets[c->ID])
+                            add('U', target, action);
+                        break;
+                    }
+                    default: break;
+                }
+            }
+            Send(player, "ER:" + req + ":" + std::to_string(rows.size()));
+            SendRows(player, "ED:" + req, rows);
+            Send(player, "EE:" + req);
         }
 
         void Dispatch(Player* player, std::string_view message)
@@ -387,7 +466,9 @@ namespace Journal
                 return;
             }
 
-            if (command == "D")
+            if (command == "E")
+                HandleHints(player, req);
+            else if (command == "D")
                 Index::HandleList(player, req);
             else if (command == "B")
                 Index::HandleBosses(player, req, args);

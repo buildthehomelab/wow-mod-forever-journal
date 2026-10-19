@@ -202,6 +202,30 @@ rest. Map flags go to the nearest spawn on your map. Sources nobody can reach ar
 and creatures that are never spawned or summoned, and quests nobody hands out or the realm has
 disabled.
 
+### Hover hints
+
+Journal adds action hints to creature and item tooltips, even while its window is closed:
+`/love`, `/hug`, other supported emotes, **Kill**, **Eat / drink**, **Use**, **Loot**, **Collect**
+and **Equip**, followed by the achievement they help complete and any repeat count. Completed
+criteria and achievements disappear on the next hover. Other requirements (location, difficulty,
+events, special circumstances) still apply; consult the named achievement.
+
+The server reads its `Achievement_Criteria.dbc` and the target-creature rows in
+`achievement_criteria_data`, so these are realm targets rather than a bundled stock checklist.
+Statistics are excluded. Emotes with no explicit creature target are omitted; unknown emotes
+point to the achievement rather than guessing a slash command. Achievement names and progress
+require matching client achievement data, including Evermore's custom DBC patches.
+
+Items in Journal's collection catalog also show **Learn mount**, **Learn pet**, or **Collect toy**
+when missing, with class/faction and progression restrictions noted. This currently matches the
+catalog's primary teaching item for each mount/pet; alternative teaching items are not yet indexed
+for hover hints. Toys use the server's bags/bank ownership check. Catalog loading takes a few
+seconds after login; hover again after it finishes. Both addon and server module updates are
+required; older servers continue to support the existing Journal tabs.
+
+Implementation status: Lua tooltip regression tests and addon smoke tests pass outside the game.
+The server changes have not been compiled against the Evermore core, deployed, or checked in-client.
+
 ## How it works
 
 The addon asks the server through addon whispers to itself (prefix `JNL`, like
