@@ -107,7 +107,7 @@
       "title": "Apocryphan's Rest",
       "triggers": [{ "area": "Apocryphan's Rest" }, { "talk": 2785 }],
       "body": [
-        "A lonely spot in the Badlands where Theldurin the Lost has made his camp. He is a dwarf who once belonged to a secret order, the people he fled, and he still knows their signs.",
+        "A lonely spot in the Badlands where Theldurin the Lost has made his camp. He was once a member of the Twilight's Hammer, a secret order that keeps cells in the great cities. He scorned its teachings, fled, and stole the Scroll of Myzrael on his way out, and he still knows its signs.",
         "Theldurin is terrified of a doom approaching from below: beings he will not name for fear they will hear him. He collects every scrap of their lore he can, from ancient tablets in Uldaman to Yagyin's Digest, hoping to learn how to stop them, and he has helped put the elemental princess Myzrael back in her chains."
       ],
       "sources": ["quests 709, 727, 737 descriptions and reward texts", "quests 692, 656 descriptions", "creature 2785 lines"]

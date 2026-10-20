@@ -1,0 +1,193 @@
+{
+  "zone": 28,
+  "name": "Western Plaguelands",
+  "entries": [
+    {
+      "id": 28000,
+      "kind": "zone",
+      "title": "Western Plaguelands",
+      "triggers": [{ "areaId": 28 }],
+      "body": [
+        "The western heart of the old kingdom of Lordaeron: farmland, forest and the river towns around Darrowmere Lake, east of Tirisfal. The plague of undeath swept through it during the Third War, and its farms are fields of rot and its towns are ruins held by the Scourge.",
+        "Four great cauldrons pump the plague into the air here, and four more in the east. The lich Araj rules from the ruins of Andorhal, the Scholomance teaches necromancy on Caer Darrow, and the Scarlet Crusade holds Hearthglen in the north and kills anyone it suspects of carrying the taint. Against all of them stand two small camps: the Alliance at Chillwind and the Forsaken at the Bulwark."
+      ],
+      "sources": ["quest 5215 description (eight cauldrons)", "quests 211, 105 descriptions", "quest 838 description", "quests 5096, 6004 descriptions", "creature 10837 gossip"]
+    },
+    {
+      "id": 28001,
+      "kind": "place",
+      "title": "Chillwind Camp",
+      "triggers": [{ "area": "Chillwind Camp" }, { "talk": 10838 }, { "accept": 5092 }],
+      "body": [
+        "An Alliance camp in the south of the Western Plaguelands, on the old road to the Hinterlands. Commander Ashlam Valorfist leads it on behalf of Stormwind, with High Priestess MacDonnell as his second and Alchemist Arbington as the man who turns Scourge poisons against the Scourge.",
+        "The Argent Dawn keeps officers here too, and SI:7 runs agents out of the camp. Weldon Barov, last heir of a once-great family of Lordaeron, shelters here under Alliance protection, and his brother would very much like him dead."
+      ],
+      "sources": ["quests 5092, 5215, 5533 descriptions", "quest 6184 description", "quest 5342 description", "creature 10840"]
+    },
+    {
+      "id": 28002,
+      "kind": "place",
+      "title": "The Bulwark",
+      "triggers": [{ "area": "The Bulwark" }, { "talk": 10837 }, { "accept": 5093 }],
+      "body": [
+        "The Forsaken fortification on the border with Tirisfal Glades, the eastern wall of the Undercity's lands and the front line against the Scourge. High Executor Derrington commands it, and he says plainly that politicians may scheme, but the Bulwark fights for its survival every day.",
+        "The Horde's call to arms brings heroes here from all over. Shadow Priestess Vandis and Apothecary Dithers run its war on the cauldrons, the Argent Dawn hands out commissions, and a bitter blood elf named Mehlar Dawnblade nurses a grudge against a dead paladin."
+      ],
+      "sources": ["creature 10837 gossip", "quests 5093, 5228, 838 descriptions", "quest 9443 description", "creature 10839 gossip"]
+    },
+    {
+      "id": 28003,
+      "kind": "place",
+      "title": "Andorhal",
+      "triggers": [{ "area": "Ruins of Andorhal" }, { "kill": 1852 }, { "accept": 5097 }],
+      "body": [
+        "Once a great city of Lordaeron, Andorhal was where the plague first broke out on a large scale, spread through grain shipped from its silos. Now it is a walled ruin held by the Scourge, its four watchtowers directing the undead armies around it.",
+        "Its master is Araj the Summoner, a lich who once led the Scholomance before claiming the city. He holds the centre surrounded by his guardians, and his scarab is the signet the living need to forge a key to the school. In one corner of the ruins, the city's inn is strangely untouched: Chromie of the bronze dragonflight works from it, mending a timeline she suspects the Scourge has been tampering with."
+      ],
+      "sources": ["quests 5097, 211, 105 descriptions", "quests 5803, 964 descriptions", "quests 4971, 4972 descriptions", "pre-Cataclysm lore: Andorhal's plagued grain"]
+    },
+    {
+      "id": 28004,
+      "kind": "place",
+      "title": "The Plague Cauldrons",
+      "triggers": [{ "area": "Gahrron's Withering" }, { "kill": 11075 }, { "accept": 5215 }],
+      "body": [
+        "Eight cauldrons stand across the lands of old Lordaeron, four in the west and four in the east, spewing poison into the air to spread the plague for the Scourge. Each is guarded by a cauldron lord who carries its key. Kel'Thuzad's necromancy is too strong for the cauldrons to be shut down.",
+        "But they can be subverted. The alchemists of Chillwind and the Bulwark take samples from each, work out a counter agent, and pour it in, so that the clouds the cauldrons spew weaken the very Scourge standing near them."
+      ],
+      "sources": ["quests 5215, 5216, 5217, 5218 descriptions and reward texts", "quest 5228 description", "quest 5226 reward text"]
+    },
+    {
+      "id": 28005,
+      "kind": "place",
+      "title": "Felstone Field",
+      "triggers": [{ "area": "Felstone Field" }, { "talk": 10778 }, { "accept": 5021 }],
+      "body": [
+        "A farm north-west of Andorhal, now home to one of the plague cauldrons. The ghost of Janice Felstone still cowers in an upstairs corner of the farmhouse, frantic to deliver a package before it is too late. The package, by her horse in the barn, was dated more than four years before.",
+        "It was addressed to her family: a sister in Stormwind, or Jeremiah, who stayed in Lordaeron and is Forsaken now. Janice is calling for her husband John and the other half of their good luck charm, so they can be together before the plague changes them into hideous beasts."
+      ],
+      "sources": ["quests 5021, 5022, 5023, 5050, 5051 descriptions and reward texts"]
+    },
+    {
+      "id": 28006,
+      "kind": "place",
+      "title": "Dalson's Tears",
+      "triggers": [{ "area": "Dalson's Tears" }, { "accept": 5219 }, { "kill": 10836 }],
+      "body": [
+        "A farmhouse almost due north of Andorhal, now named for its family's grief. One of the plague cauldrons stands in its field.",
+        "Mrs. Dalson's diary still lies open to her last entry. When her husband Harold turned, it took everything she had to drag him into the only place she could find that would hold him and lock him up tight. She kept the key, and prayed it would work."
+      ],
+      "sources": ["quests 5219, 5231 descriptions", "quests 5058, 5059, 5060 reward texts"]
+    },
+    {
+      "id": 28007,
+      "kind": "place",
+      "title": "The Writhing Haunt",
+      "triggers": [{ "area": "The Writhing Haunt" }, { "talk": 10739 }, { "accept": 4984 }],
+      "body": [
+        "A ruined homestead east of Andorhal, near the city walls, and the site of another plague cauldron.",
+        "A tauren druid named Mulgris Deepriver came here alone, to heal what he could of the damage done to nature. He could not; he could only ask strangers to give the diseased wolves and grizzlies a merciful death. He died here, with a glyphed oaken branch in his hand recording everything he had learned about the plague, addressed to the Cenarion Circle."
+      ],
+      "sources": ["quests 5222, 5233 descriptions", "quests 4984, 4985, 4986, 4987 descriptions and reward texts", "creature 10739 gossip"]
+    },
+    {
+      "id": 28008,
+      "kind": "place",
+      "title": "Hearthglen",
+      "triggers": [{ "area": "Hearthglen" }, { "area": "Mardenholde Keep" }, { "talk": 1842 }],
+      "body": [
+        "A walled town in the north of the Western Plaguelands, held by the Scarlet Crusade. Its Highlord, Taelan Fordring, commands from Mardenholde Keep, the old seat of the Lords of Mardenholde, and the Crusade's camps and guard towers cover the pass in front of it.",
+        "The Alliance thinks the town has more than historical importance and sends agents to count its soldiers. The Forsaken simply want the Crusade busy, and tried to turn it on the Scourge by burning its command tent and leaving a Scourge banner behind."
+      ],
+      "sources": ["quests 6004, 6023, 6025 descriptions", "quest 5096 description", "quest 5862 description", "quest 5861 reward text (Lord of Mardenholde)"]
+    },
+    {
+      "id": 28009,
+      "kind": "place",
+      "title": "Northridge Lumber Camp",
+      "triggers": [{ "area": "Northridge Lumber Camp" }, { "accept": 5904 }],
+      "body": [
+        "A lumber mill south of Hearthglen, west of the road up to the town, that supplies timber to the Scarlet Crusade.",
+        "A barrel of plagueland termites opened in the middle of the mill made it useless to the Crusade. One of the men who arranged it said it let his father's spirit rest."
+      ],
+      "sources": ["quests 5904, 6389, 6390 descriptions and reward texts"]
+    },
+    {
+      "id": 28010,
+      "kind": "place",
+      "title": "Uther's Tomb",
+      "triggers": [{ "area": "Uther's Tomb" }, { "talk": 11872 }, { "accept": 9474 }],
+      "body": [
+        "The tomb of Uther the Lightbringer, founder of the Knights of the Silver Hand, south-east of Andorhal. He was betrayed by his most promising pupil, Arthas, and his statue stands over the grave.",
+        "Myranda the Hag lives there, an illusionist who was once Tirion Fordring's most trusted adviser and was banished for speaking against his sentence. A draenei anchorite brought Uther's holy relic back to the tomb, and the Lightbringer's spirit appeared. When a blood elf tried to defile it instead, Uther forgave him."
+      ],
+      "sources": ["quests 9474, 9446 descriptions and reward texts", "quest 9444 description and reward text", "quests 5861, 5862 descriptions and reward texts"]
+    },
+    {
+      "id": 28011,
+      "kind": "place",
+      "title": "Caer Darrow",
+      "triggers": [{ "area": "Caer Darrow" }, { "area": "Darrowmere Lake" }, { "talk": 11286 }],
+      "body": [
+        "An island castle in Darrowmere Lake, in the south-east of the Western Plaguelands, once the seat of House Barov. The Barovs gave it to the Cult of the Damned in return for the promise of eternal life, and the cult made it the Scholomance, a school of necromancy where the Scourge pursues its research in safety.",
+        "The town around the castle is full of ghosts. Magistrate Marduke, one of them, knows that Ras Frostwhisper, a lich inside the school, was once a man of Stromgarde, and how he might be made mortal again."
+      ],
+      "sources": ["quests 838, 5533 descriptions", "quests 5461, 5462, 5465 descriptions", "quests 5342, 5344 descriptions", "pre-Cataclysm lore: the Barovs and the Cult of the Damned"]
+    },
+    {
+      "id": 28030,
+      "kind": "person",
+      "title": "Highlord Taelan Fordring",
+      "triggers": [{ "talk": 1842 }, { "accept": 5944 }],
+      "body": [
+        "The Highlord of the Scarlet Crusade at Hearthglen, and the son of Tirion Fordring, the paladin who was stripped of his title for defending an orc. Taelan joined the Crusade young, and for decades was a puppet of the Grand Crusader.",
+        "When a disguised messenger brought him proof of his father's life and deeds, Taelan fell to his knees. He asked to be taken to his father, and fought his way out of Hearthglen. Grand Inquisitor Isillien caught them on the road and killed him within sight of Tirion. Tirion took up the title of Highlord of a reborn Order of the Silver Hand."
+      ],
+      "sources": ["quests 5862, 5944 descriptions and reward texts", "creature 1842 lines", "quest 5861 description"]
+    },
+    {
+      "id": 28031,
+      "kind": "person",
+      "title": "Chromie",
+      "triggers": [{ "talk": 10667 }, { "accept": 4971 }],
+      "body": [
+        "A dragon of the bronze flight, which guards time itself, who has taken the form of a small gnome and set up in the Andorhal Inn. She works from a slightly different timeline to avoid contaminating this one.",
+        "She suspects a sinister force, most likely the Scourge, of tampering with Andorhal's past. Temporal parasites feed on the frayed strands of time in the silos. She is also trying to save Joseph Redpath of Darrowshire, whose fate the Annals of Darrowshire recorded: corrupted in battle, and turned to the Scourge."
+      ],
+      "sources": ["quests 4971, 4972, 4973 descriptions and reward texts", "quest 5154 description and reward text"]
+    },
+    {
+      "id": 28032,
+      "kind": "person",
+      "title": "Araj the Summoner",
+      "triggers": [{ "kill": 1852 }, { "accept": 211 }, { "accept": 105 }],
+      "body": [
+        "The lich who rules Andorhal from the ruins of its centre, guarded by his personal retinue. He was once the master of the Scholomance before he claimed the city.",
+        "Destroying him requires an army of the living, and both Chillwind and the Bulwark planned their campaigns around his fall: clearing Sorrow Hill, marking the watchtowers, and finally breaking his phylactery."
+      ],
+      "sources": ["quests 211, 105, 5803 descriptions", "quests 5092, 5097 descriptions"]
+    },
+    {
+      "id": 28050,
+      "kind": "history",
+      "title": "House Barov",
+      "triggers": [{ "complete": 5342 }, { "complete": 5344 }, { "area": "Caer Darrow" }],
+      "body": [
+        "The Barovs were nobles of Lordaeron who owned Caer Darrow. Before the plague they bargained with Kel'Thuzad and the Cult of the Damned, giving the castle over for the Scholomance in exchange for immortality. They got it, as undead servants of the school.",
+        "Two sons survived outside it, and they hate each other. Alexi went to the Forsaken, Weldon to the Alliance. Each pays adventurers to recover the family's deeds, and then to bring him his brother's head, so that the Barov fortune will belong to him alone."
+      ],
+      "sources": ["quests 5342, 5344 descriptions and reward texts", "creature 11022 lines", "pre-Cataclysm lore: the Barov family and Scholomance"]
+    },
+    {
+      "id": 28051,
+      "kind": "history",
+      "title": "The Fall of Lordaeron",
+      "triggers": [{ "complete": 5237 }, { "complete": 5238 }, { "complete": 9446 }],
+      "body": [
+        "The Cult of the Damned spread the plague through Lordaeron's grain, beginning at Andorhal, and the dead rose as the Scourge. Prince Arthas, sent to stop it, went north to Northrend in search of a weapon, returned as a death knight, killed his father King Terenas and his old teacher Uther, and handed the kingdom to the Lich King.",
+        "What is left is the Plaguelands. The living fight on at its edges, the Forsaken hold the old capital, and the Scarlet Crusade, born of the paladins who survived, has turned its fanaticism against anyone it fears may carry the taint."
+      ],
+      "sources": ["quest 9474 description (Uther betrayed by Arthas)", "quest 5215 description", "page text 3378 (Invincible)", "pre-Cataclysm lore: the Third War in Lordaeron"]
+    }
+  ]
+}

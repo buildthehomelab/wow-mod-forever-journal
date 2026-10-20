@@ -1,0 +1,116 @@
+{
+  "zone": 36,
+  "name": "Alterac Mountains",
+  "entries": [
+    {
+      "id": 36000,
+      "kind": "zone",
+      "title": "Alterac Mountains",
+      "triggers": [{ "areaId": 36 }],
+      "body": [
+        "Snowy mountains north of Hillsbrad and west of the Plaguelands, once the human kingdom of Alterac. Its king, Aiden Perenolde, betrayed the Alliance to the Horde in the Second War, and the kingdom was broken for it. Its capital is a ruin full of ogres.",
+        "Alterac's surviving nobles did not go quietly. They lead the Syndicate, a band of thieves and assassins operating out of the ruined towns of the foothills. Above them lie the empty crater where Dalaran once stood, the hidden manor of the Assassin's League, and the frozen valley where Stormpike dwarves and Frostwolf orcs fight their own war."
+      ],
+      "sources": ["quests 505, 512, 523 descriptions", "quest 500 description", "quest 602 description (Dalaran moved to Northrend, leaving a crater)", "pre-Cataclysm lore: Aiden Perenolde's betrayal"]
+    },
+    {
+      "id": 36001,
+      "kind": "place",
+      "title": "Strahnbrad",
+      "triggers": [{ "area": "Strahnbrad" }, { "kill": 2306 }, { "accept": 512 }],
+      "body": [
+        "A ruined town in the Alterac foothills that the Syndicate uses as its headquarters. Former nobles of Alterac run the gang, and some hide among their own footpads and thieves, given away only by the signet rings they still wear.",
+        "One of them is Baron Vardus, known for a cold heart and brutal practices. His seal was on the contract for the murder of Southshore's magistrate, and the Syndicate keeps prisoners here, including an orc held in chains."
+      ],
+      "sources": ["quests 512, 522, 523 descriptions", "creature 2316 lines"]
+    },
+    {
+      "id": 36002,
+      "kind": "place",
+      "title": "The Syndicate Camps",
+      "triggers": [{ "area": "Sofera's Naze" }, { "area": "Corrahn's Dagger" }, { "accept": 505 }],
+      "body": [
+        "Camps in the foothills north and west of Tarren Mill, at Sofera's Naze and Corrahn's Dagger, where Syndicate footpads and thieves gather.",
+        "Papers left on a table there spoke of an important mission against Southshore and asked urgently for masks, oil and poison. An encrypted letter among them was not written by any thief or noble of Alterac at all."
+      ],
+      "sources": ["quests 505, 510, 511, 525 descriptions and reward texts"]
+    },
+    {
+      "id": 36003,
+      "kind": "place",
+      "title": "The Uplands",
+      "triggers": [{ "area": "The Uplands" }, { "kill": 2320 }, { "accept": 537 }],
+      "body": [
+        "The valley north of Strahnbrad, where the Syndicate is strongest, and where Lord Aliden Perenolde, son of Alterac's traitor king, keeps his manor.",
+        "Strange allies have come to the Syndicate here: shadow mages of the Argus Wake, led by an envoy called Nagaz. Nagaz was only a servant of another. Southshore's magistrate fears the Argus Wake runs deep through Azeroth, perhaps further."
+      ],
+      "sources": ["quests 537, 523 descriptions and reward texts", "creature 2423", "pre-Cataclysm lore: Aliden Perenolde"]
+    },
+    {
+      "id": 36004,
+      "kind": "place",
+      "title": "The Ruins of Alterac",
+      "triggers": [{ "area": "Ruins of Alterac" }, { "area": "Crushridge Hold" }, { "accept": 504 }],
+      "body": [
+        "The ruined capital of Alterac, high in the mountains. Crushridge ogres have dug a mound nearby and taken over the city itself, and they are not known for their cleanliness.",
+        "The marshal of Southshore worries that if the ogres feel safe up there, their next step will be down into the foothills, right to his front door."
+      ],
+      "sources": ["quests 500, 504 descriptions and reward texts"]
+    },
+    {
+      "id": 36005,
+      "kind": "place",
+      "title": "Dalaran Crater",
+      "triggers": [{ "area": "Dalaran Crater" }, { "talk": 2543 }, { "talk": 18165 }],
+      "body": [
+        "The site of the city of Dalaran, on the shore of Lordamere Lake. Archimonde destroyed it in the Third War. The Kirin Tor rebuilt it, and lately they have lifted the whole city and moved it to Northrend, leaving behind a massive crater and a shimmering violet dome.",
+        "Some mages stayed. Archmage Ansirem Runeweaver, who once wrote a tome on the legends of the Gurubashi, still studies here, and Archmage Cedric warns visitors not to be fooled by the ruins: Dalaran is as powerful as ever. Rogue summoners with their elemental slaves wander the crater's edge."
+      ],
+      "sources": ["quests 602, 603 descriptions and reward texts", "creature 18165 gossip", "creatures 2358, 2359", "pre-Cataclysm lore: Archimonde's destruction of Dalaran"]
+    },
+    {
+      "id": 36006,
+      "kind": "place",
+      "title": "Ravenholdt Manor",
+      "triggers": [{ "area": "Ravenholdt Manor" }, { "talk": 6768 }, { "talk": 6707 }],
+      "body": [
+        "A manor hidden in the forested hills of northern Alterac, home of the Assassin's League. It is ruled by Lord Jorach Ravenholdt, and the master rogue Fahrad trains there.",
+        "Strangers are not welcome. Ravenholdt's assassins ask any who blunder in how they dare set foot inside, and the guards greet the cunning ones who have earned their trust by name."
+      ],
+      "sources": ["creatures 6766, 6768, 6771 gossip", "creature 6707 gossip"]
+    },
+    {
+      "id": 36007,
+      "kind": "place",
+      "title": "Alterac Valley",
+      "triggers": [{ "area": "Alterac Valley" }, { "talk": 13840 }, { "talk": 13841 }],
+      "body": [
+        "A frozen valley in the far north of the mountains, claimed by two peoples at once: the Frostwolf orcs, who have lived there since they were exiled during the First War, and the Stormpike dwarves of Ironforge, who came to dig.",
+        "Their war never stops. Both sides recruit at the valley's mouth, and their officers count out ranks and insignia for every soldier who joins."
+      ],
+      "sources": ["creatures 13840, 13841 gossip", "creatures 13776, 13777 gossip", "pre-Cataclysm lore: the Frostwolf and Stormpike in Alterac Valley"]
+    },
+    {
+      "id": 36030,
+      "kind": "person",
+      "title": "Lord Aliden Perenolde",
+      "triggers": [{ "kill": 2423 }, { "talk": 2317 }],
+      "body": [
+        "The son of Aiden Perenolde, the last king of Alterac, who sold his kingdom's loyalty to the Horde. Aliden lives in his family's manor in the Uplands, among the Syndicate that his father's nobles built.",
+        "He has a lover, Elysa, who would like to see him again."
+      ],
+      "sources": ["creatures 2423, 2317", "pre-Cataclysm lore: the Perenolde line"]
+    },
+    {
+      "id": 36050,
+      "kind": "history",
+      "title": "The Treason of Alterac",
+      "triggers": [{ "complete": 512 }, { "complete": 523 }, { "complete": 537 }],
+      "body": [
+        "Alterac was one of the seven human kingdoms that formed the Alliance of Lordaeron. In the Second War its king, Aiden Perenolde, secretly sided with the Horde, believing it would win. The treachery was discovered, Lordaeron occupied the kingdom, and Alterac never recovered.",
+        "Its nobles turned to crime. The Syndicate began as their way to win back what they had lost, and has become a gang of cutthroats that murders magistrates, robs travellers and makes alliances with stranger powers, like the Argus Wake, in the hope of restoring the old kingdom."
+      ],
+      "sources": ["quests 505, 512, 525, 537 descriptions and reward texts", "page text 1976 (The Alliance of Lordaeron)", "pre-Cataclysm lore: the betrayal of Alterac"]
+    }
+  ]
+}

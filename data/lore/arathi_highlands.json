@@ -1,0 +1,160 @@
+{
+  "zone": 45,
+  "name": "Arathi Highlands",
+  "entries": [
+    {
+      "id": 45000,
+      "kind": "zone",
+      "title": "Arathi Highlands",
+      "triggers": [{ "areaId": 45 }],
+      "body": [
+        "Rolling grassland and rocky hills north of the Thandol Span, the cradle of humanity. Here the Arathi tribe built Strom, the first great human city, and from it the empire of Arathor grew. The kingdom of Stromgarde, its heir, was among the greatest of the seven human nations.",
+        "Stromgarde is a ruin now, divided between its own militia, the Syndicate and the Boulderfist ogres in a bloody stalemate. Witherbark trolls hold the south-east, kobolds dig in the gorges, naga haunt the coast, and beneath it all, an elemental princess named Myzrael lies chained by the giants who captured her. The Alliance holds Refuge Pointe, the Horde holds Hammerfall, and both fight over the farms of Arathi Basin."
+      ],
+      "sources": ["quest 681 description", "quest 639 description", "quests 642, 677 descriptions", "quest 8438 description", "page text 1976 (The Alliance of Lordaeron)", "pre-Cataclysm lore: Strom and the Arathor Empire"]
+    },
+    {
+      "id": 45001,
+      "kind": "place",
+      "title": "Refuge Pointe",
+      "triggers": [{ "area": "Refuge Pointe" }, { "talk": 2700 }, { "accept": 681 }],
+      "body": [
+        "An Alliance camp on a hill in the centre of the highlands, held by what is left of Stromgarde's army. Captain Nials commands it.",
+        "Nials says plainly that they are fighting a war for Stromgarde and losing it. Their supplies come from Southshore along roads the Syndicate holds, they cannot spare soldiers to help the dwarves at Dun Modr, and they pay bounties for the badges the Syndicate takes from their fallen. Two mages of Stormwind also work out of the camp, recovering the belongings of the archmage Trelane from Stromgarde's Tower of Arathor."
+      ],
+      "sources": ["quests 681, 682 descriptions and reward texts", "quest 634 reward text", "quests 691, 693, 696 descriptions"]
+    },
+    {
+      "id": 45002,
+      "kind": "place",
+      "title": "Hammerfall",
+      "triggers": [{ "area": "Hammerfall" }, { "talk": 2771 }, { "talk": 2792 }],
+      "body": [
+        "A Horde outpost in the east of the highlands, built on the site of an old human internment camp for captured orcs. It was here that Thrall and Orgrim Doomhammer fought to free the camp, and here that Doomhammer, the greatest hero of the old Horde, was run through from behind by a knight's lance.",
+        "Drum Fel commands it now, fighting the Witherbark and the Boulderfist who want the orcs gone. One old orc, Gor'mul, was left behind in the chaos when the camp was freed, and has never recovered from the death of his Warchief."
+      ],
+      "sources": ["quest 655 description and reward text", "quests 677, 678, 679 descriptions", "quest 680 description"]
+    },
+    {
+      "id": 45003,
+      "kind": "place",
+      "title": "Stromgarde Keep",
+      "triggers": [{ "area": "Stromgarde Keep" }, { "kill": 2607 }, { "accept": 682 }],
+      "body": [
+        "The ruined capital of Stromgarde in the south-west of the highlands. Three forces divide it: the Stromgarde militia under Prince Galen Trollbane, son of the late King Thoras, the Syndicate, and the Boulderfist ogres. None of them can drive out the others.",
+        "In the Sanctum behind the chapel lies the tomb of Thoras Trollbane, and in it the legendary sword Trol'kalar. Galen divided the sigils that seal it among the city's last defenders and keeps one himself. The prince's cavalry still rides the countryside, though they barely hold their own city."
+      ],
+      "sources": ["quests 681, 682 descriptions", "quests 639, 640, 643, 644, 645 descriptions and reward texts"]
+    },
+    {
+      "id": 45004,
+      "kind": "place",
+      "title": "The Tower of Arathor",
+      "triggers": [{ "area": "The Tower of Arathor" }, { "accept": 696 }],
+      "body": [
+        "A mage's tower in Stromgarde, once the home of the archmage Trelane. Ogres surround it now, and the Boulderfist shaman took the gems that power its defences.",
+        "Trelane's belongings lie in chests inside: his phylactery, orb and ember agate, and his wand of invocation, which an ogre named Kor'gresh Coldrage carried off to Boulderfist Hall and learned to use to keep his kin in line."
+      ],
+      "sources": ["quests 693, 694, 696, 697 descriptions and reward texts"]
+    },
+    {
+      "id": 45005,
+      "kind": "place",
+      "title": "Northfold Manor",
+      "triggers": [{ "area": "Northfold Manor" }, { "kill": 2597 }, { "accept": 671 }],
+      "body": [
+        "A manor in the west of the highlands that the Syndicate has made its base. Lord Falconcrest leads its efforts in Arathi, and his bodyguard Otto has killed dozens of defenders.",
+        "The orcs of Hammerfall sensed demonic summoning there. The Syndicate's warlock Marez Cowl, an emissary between them and some darker power, used bloodstone amulets and an orb to call up demons in numbers."
+      ],
+      "sources": ["quests 681, 685, 671, 673, 684 descriptions and reward texts"]
+    },
+    {
+      "id": 45006,
+      "kind": "place",
+      "title": "Witherbark Village",
+      "triggers": [{ "area": "Witherbark Village" }, { "area": "Witherbark Caverns" }, { "accept": 677 }],
+      "body": [
+        "A troll village and caves in the south-east of the highlands, home of the Witherbark tribe of forest trolls. Their headhunters, axe throwers and witch doctors work together with the Boulderfist ogres to drive the Horde out of Arathi.",
+        "The Horde has learned to expect it: the trolls turned their backs on the orcs long ago, and the ogres would use them for food and bedding."
+      ],
+      "sources": ["quest 677 description", "quest 691 description"]
+    },
+    {
+      "id": 45007,
+      "kind": "place",
+      "title": "Boulderfist Hall",
+      "triggers": [{ "area": "Boulderfist Hall" }, { "area": "Boulder'gor" }, { "kill": 2793 }],
+      "body": [
+        "The cave lair of the Boulderfist ogres, south of Refuge Pointe and east of Thandol Span. Their lords and shaman also hold part of Stromgarde.",
+        "The ogres' attacks on Hammerfall have a reason the Horde's commander does not know. Or'Kalar, a pawn of the ogre warlord Mug'thol, hates Drum Fel for defeating him years ago. Drum's wife Korin hid the signs from her husband, fearing he would rush into the trap Or'Kalar had laid for him."
+      ],
+      "sources": ["quests 678, 679, 680 descriptions and reward texts", "quest 693 description"]
+    },
+    {
+      "id": 45008,
+      "kind": "place",
+      "title": "Faldir's Cove",
+      "triggers": [{ "area": "Faldir's Cove" }, { "talk": 2610 }, { "accept": 663 }],
+      "body": [
+        "A cove on the south-western coast where the Blackwater Raiders came hunting lost elven treasure. Captain Shakes O'Breen docked the Harbinger safely; the Maiden's Folly and the Spirit of Silverpine, following him in, ran aground on a sunken temple in the reef as the tide fell, and sank.",
+        "The Daggerspine naga killed every survivor they could reach. O'Breen's gnomish experts, who joined the pirates and soon learned to fear holding their treasure, built goggles to find the calcified gems on the sea floor. Now the crew waits for a high tide to sail home, fending off the naga."
+      ],
+      "sources": ["quests 663, 662, 664, 665, 666, 668, 667 descriptions and reward texts"]
+    },
+    {
+      "id": 45009,
+      "kind": "place",
+      "title": "The Circles of Binding",
+      "triggers": [{ "area": "Circle of Inner Binding" }, { "area": "Circle of East Binding" }, { "kill": 2611 }],
+      "body": [
+        "Four stone circles across Arathi, each holding a Stone of Binding, with a keystone at their centre. Stone guardians watch them. Together they pin the elemental princess Myzrael beneath the earth.",
+        "The Drywhisker kobolds of the eastern gorge guard a cluster of the iridescent shards through which she can speak. The stone watcher Fozruk carries the Rod of Order, the key to the last lock."
+      ],
+      "sources": ["quests 642, 651, 652 descriptions"]
+    },
+    {
+      "id": 45030,
+      "kind": "person",
+      "title": "Myzrael",
+      "triggers": [{ "kill": 2755 }, { "accept": 642 }, { "accept": 656 }],
+      "body": [
+        "An elemental princess of the earth, imprisoned deep under the Arathi Highlands by the giants. Through crystal shards she calls out to anyone who passes, begging to be freed.",
+        "Those who freed her learned too late whom she was working with. She sent them to the Twilight's Hammer, who meant to summon her to the surface. Theldurin the Lost, who once belonged to that order, knew better: why would the giants have chained her, he asked, if she could be controlled? She was summoned, defeated and shackled again, and her shards now pulse with open menace."
+      ],
+      "sources": ["quests 642, 651, 652, 653, 688 descriptions and reward texts", "quests 687, 656 descriptions and reward texts"]
+    },
+    {
+      "id": 45031,
+      "kind": "person",
+      "title": "Zengu",
+      "triggers": [{ "talk": 2703 }, { "accept": 639 }],
+      "body": [
+        "A Darkspear hunter sent to Hammerfall by Vol'jin to take Trol'kalar, the troll-slaying sword, out of human hands. With Thoras Trollbane dead and Stromgarde in ruins, the Darkspears saw their chance.",
+        "Trol'kalar was carried into battle against the trolls by Lord Ignaeus of Strom, named Trollbane, and for generations the forces of Strom and Arathor ravaged the tribes with it. Zengu means to turn it against the trolls of Zul'Gurub, where the Darkspears' progress has been inching and slow."
+      ],
+      "sources": ["quests 638, 639, 643, 644, 646 descriptions and reward texts"]
+    },
+    {
+      "id": 45050,
+      "kind": "history",
+      "title": "Strom and the Arathor Empire",
+      "triggers": [{ "complete": 646 }, { "complete": 644 }, { "area": "Thoradin's Wall" }],
+      "body": [
+        "Nearly three thousand years ago, the human tribes were scattered and preyed upon by the Amani trolls. The Arathi tribe united them under Thoradin and built the city of Strom. Allied with the high elves of Quel'Thalas, the humans broke the troll empire; the elves taught a hundred humans magic, and Lord Ignaeus Trollbane carried Trol'kalar.",
+        "Arathor grew into an empire, and Thoradin's Wall still runs along the highlands' western edge. When later generations moved north and founded Lordaeron and the other kingdoms, Strom remained, and became Stromgarde."
+      ],
+      "sources": ["quests 639, 646 descriptions and reward texts", "page text 1976 (The Alliance of Lordaeron: the nations of Arathor)", "pre-Cataclysm lore: Thoradin and the Troll Wars"]
+    },
+    {
+      "id": 45051,
+      "kind": "history",
+      "title": "The Death of Doomhammer",
+      "triggers": [{ "complete": 655 }, { "complete": 847 }, { "talk": 2792 }],
+      "body": [
+        "After the Second War, the orcs of the Horde were kept in human internment camps, one of them where Hammerfall stands. When Thrall rose, he and Orgrim Doomhammer, the old Warchief, freed the camps one by one.",
+        "Here, Doomhammer fell. A human knight charged him from behind on his horse and ran him through with a lance. Thrall took his armour and hammer and became Warchief. The orcs who were left behind that day, like Gor'mul, are only now learning what the new Horde and its shamans have become."
+      ],
+      "sources": ["quests 655, 672, 702, 847 descriptions and reward texts"]
+    }
+  ]
+}
