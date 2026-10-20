@@ -1,0 +1,90 @@
+{
+  "zone": 4298,
+  "name": "Plaguelands: The Scarlet Enclave",
+  "entries": [
+    {
+      "id": 4298000,
+      "kind": "zone",
+      "title": "The Scarlet Enclave",
+      "classes": 32,
+      "triggers": [{ "accept": 12593 }, { "complete": 12593 }],
+      "body": [
+        "The far eastern corner of the Plaguelands, beyond Light's Hope, where the Scarlet Crusade built its enclave: the town of New Avalon, the farms and mine of Havenshire, the Chapel of the Crimson Flame and the harbour where the Scarlet fleet lay at anchor.",
+        "The Lich King sent the necropolis Acherus, the Ebon Hold, to hang above it, and filled it with his new death knights. Their first task was to destroy the Crusade here. Their last was meant to be the destruction of Light's Hope Chapel."
+      ],
+      "sources": ["quest 12593 description", "quests 12657, 12670 descriptions", "quest 12800 description"]
+    },
+    {
+      "id": 4298001,
+      "kind": "place",
+      "title": "Acherus: The Ebon Hold",
+      "classes": 32,
+      "triggers": [{ "accept": 12636 }, { "complete": 12619 }, { "accept": 13165 }],
+      "body": [
+        "The grand citadel of death, a necropolis the Lich King boasts no fortress could withstand, not even Naxxramas. From the great eye on its face, death knights spy on the lands below; in its halls Instructor Razuvious teaches them, and their runeblades are forged.",
+        "After the battle at Light's Hope, the death knights took it back from the Scourge floor by floor, including the stitched terror Patchwerk the Lich King left behind. It is the home of the Knights of the Ebon Blade."
+      ],
+      "sources": ["quests 12636, 12641, 12619 descriptions", "quests 13165, 13166 descriptions and reward texts"]
+    },
+    {
+      "id": 4298002,
+      "kind": "place",
+      "title": "Death's Breach and Havenshire",
+      "classes": 32,
+      "triggers": [{ "accept": 12670 }, { "accept": 12678 }, { "complete": 12714 }],
+      "body": [
+        "Death's Breach, below Acherus, was the staging ground of the Scourge assault, commanded by Prince Valanar. The Crusade's people stood outside it trying to save their horses, mines, lumber and citizens.",
+        "The first lesson of Scourge warfare was terror. Havenshire fell, and a thousand corpses littered the ground awaiting rebirth. The horses of its stables were stolen and raised in the Realm of Shadows as deathchargers."
+      ],
+      "sources": ["quests 12670, 12678, 12687, 12714 descriptions and reward texts"]
+    },
+    {
+      "id": 4298003,
+      "kind": "place",
+      "title": "Light's Point and King's Harbor",
+      "classes": 32,
+      "triggers": [{ "accept": 12701 }, { "complete": 12701 }, { "accept": 12697 }],
+      "body": [
+        "When Havenshire fell, the Crusade threw everything outside New Avalon into a blockade at Light's Point, stripping the Havenshire mine and loading the fleet in King's Harbor.",
+        "They forgot to check the mine cars. Scourge hidden aboard came down on the docks, and the entire Scarlet fleet was wiped out in minutes."
+      ],
+      "sources": ["quests 12697, 12701, 12706 descriptions and reward texts"]
+    },
+    {
+      "id": 4298004,
+      "kind": "place",
+      "title": "New Avalon",
+      "classes": 32,
+      "triggers": [{ "accept": 12723 }, { "accept": 12738 }, { "complete": 12778 }],
+      "body": [
+        "The Scarlet Crusade's town at the heart of the enclave, with its town hall, forge, orchards, the Scarlet Tavern at its southern edge and the Chapel of the Crimson Flame, where death knights were imprisoned and tortured.",
+        "Orbaz, Thassarian and Koltira hid in the tavern to hunt the Crusade's courier. The chapel was burned, the courier ambushed at the Scarlet Overlook, and when the armies of Hearthglen and Tirisfal marched in to relieve the enclave, they found it in flames, and walked into a massacre."
+      ],
+      "sources": ["quests 12723, 12727, 12738, 12751, 12754, 12757, 12778 descriptions and reward texts"]
+    },
+    {
+      "id": 4298030,
+      "kind": "person",
+      "title": "Highlord Darion Mograine",
+      "classes": 32,
+      "triggers": [{ "talk": 28444 }, { "complete": 12801 }],
+      "body": [
+        "The commander of the Lich King's death knights in Acherus. In life he was a knight of the Ebon Blade's forerunners, who plunged the Ashbringer into his own heart to free his father's cursed soul. That was his last memory as a free man.",
+        "At Light's Hope, Tirion Fordring took up the Ashbringer and the Lich King showed how little his knights meant to him. The haze lifted. Mograine broke with his master and now leads the Knights of the Ebon Blade against the Scourge."
+      ],
+      "sources": ["quests 12801, 13165 descriptions and reward texts", "pre-Cataclysm lore: Darion Mograine and the Ashbringer"]
+    },
+    {
+      "id": 4298050,
+      "kind": "history",
+      "title": "The Light of Dawn",
+      "classes": 32,
+      "triggers": [{ "accept": 12801 }, { "complete": 12801 }, { "accept": 12800 }],
+      "body": [
+        "With the Scarlet Enclave destroyed, the Lich King turned all his death knights on Light's Hope Chapel, where the Argent Dawn stood defiant. The armies of the Scourge fought there to the last.",
+        "The battle was a trap: the Lich King meant to draw out Tirion Fordring. Tirion came, the Ashbringer awoke in his hand, and the Lich King was wounded and forced back to Northrend. The death knights learned there would be no atonement for them; they are damned to walk the world as monsters. But they would no longer serve him."
+      ],
+      "sources": ["quests 12800, 12801 descriptions and reward texts", "quest 13165 reward text", "pre-Cataclysm lore: the Battle for Light's Hope Chapel"]
+    }
+  ]
+}

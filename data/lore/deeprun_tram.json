@@ -1,0 +1,17 @@
+{
+  "zone": 2257,
+  "name": "Deeprun Tram",
+  "entries": [
+    {
+      "id": 2257000,
+      "kind": "zone",
+      "title": "Deeprun Tram",
+      "triggers": [{ "areaId": 2257 }],
+      "body": [
+        "A gnomish underground railway linking Stormwind and Ironforge, running through tunnels deep beneath the mountains and under the sea itself, where great fish can be seen through the glass. The gnomes built it after the Second War, and it is one of the wonders of the Alliance.",
+        "Its depots have their own small trades. Deeprun rats breed in the tunnels, and Monty the rat extermination specialist catches them alive and sends them to his brother Nipsy, who sells rat kabobs at the Stormwind end."
+      ],
+      "sources": ["quests 6661, 6662 descriptions", "pre-Cataclysm lore: the Deeprun Tram"]
+    }
+  ]
+}

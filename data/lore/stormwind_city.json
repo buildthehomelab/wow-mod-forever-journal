@@ -1,0 +1,104 @@
+{
+  "zone": 1519,
+  "name": "Stormwind City",
+  "entries": [
+    {
+      "id": 1519000,
+      "kind": "zone",
+      "title": "Stormwind City",
+      "triggers": [{ "areaId": 1519 }],
+      "body": [
+        "The capital of the human kingdom of Stormwind and the greatest city of the Alliance, built of white stone on the western edge of Elwynn Forest. It was razed by the orcish Horde in the First War and rebuilt afterwards by the stonemasons of the kingdom, behind walls and canals that guard its districts: Old Town, the Trade District, the Cathedral, the Mage Quarter and the Dwarven District.",
+        "King Varian Wrynn rules it from Stormwind Keep. His long absence, when he vanished on a diplomatic voyage, left the throne to his young son Anduin, Highlord Bolvar Fordragon as regent, and a court in which the noblewoman Katrana Prestor had more influence than she should. The king has returned, and the city now looks north, to the war against the Lich King."
+      ],
+      "sources": ["quest 337 reward text (before the rebuilding of Stormwind)", "quests 1274, 1266 descriptions (The Missing Diplomat)", "quest 6187 description", "page text 1959 (The Dark Portal and the Fall of Stormwind)", "pre-Cataclysm lore: the rebuilding of Stormwind"]
+    },
+    {
+      "id": 1519001,
+      "kind": "place",
+      "title": "Stormwind Keep",
+      "triggers": [{ "talk": 29611 }, { "talk": 1748 }, { "talk": 1749 }],
+      "body": [
+        "The royal keep at the northern end of the city, seat of the House of Wrynn. Its throne room holds the king, his son Prince Anduin, Highlord Bolvar Fordragon, and Lady Katrana Prestor, an adviser said to be learned in dragons.",
+        "Petitioners from across the kingdom come here and are often sent away. Lakeshire's plea for soldiers against the Blackrock and the black dragonflight was answered with a deputy's badge and a polite refusal, on the advice of Lady Prestor."
+      ],
+      "sources": ["quests 4184, 4185, 4186 descriptions and reward texts", "quest 396 description", "creature 1747 (Anduin Wrynn, Prince of Stormwind)"]
+    },
+    {
+      "id": 1519002,
+      "kind": "place",
+      "title": "The Cathedral of Light",
+      "triggers": [{ "talk": 1284 }, { "accept": 293 }],
+      "body": [
+        "The great cathedral in the Cathedral Square, heart of the Church of the Holy Light in Stormwind, led by Archbishop Benedictus. Its priests crafted the Eyes of Paleth long ago, and only they can cleanse one that has been corrupted.",
+        "Bishop Farthing, kind and wise, still helps the people of Darkshire, though the city has forsaken them."
+      ],
+      "sources": ["quests 293, 269 descriptions and reward texts", "quest 1274 description (Bishop DeLavey)"]
+    },
+    {
+      "id": 1519003,
+      "kind": "place",
+      "title": "Old Town and SI:7",
+      "triggers": [{ "talk": 332 }, { "accept": 393 }, { "accept": 6182 }],
+      "body": [
+        "The oldest district of the city, home of its barracks and of SI:7, Stormwind's intelligence service. Its leader, Master Mathias Shaw, keeps his thumb on most of the city's shady and underhanded dealings, and knows assassins by their faces whatever names they use.",
+        "SI:7 agents are everywhere the kingdom has interests: in Chillwind Camp, in Menethil, in the Plaguelands. Five of Shaw's best were sent after a mystery called the Blightcaller, and one came back."
+      ],
+      "sources": ["quests 393, 350 descriptions", "quests 6182, 6183, 6184 descriptions and reward texts"]
+    },
+    {
+      "id": 1519004,
+      "kind": "place",
+      "title": "The Valley of Heroes",
+      "triggers": [{ "area": "Valley of Heroes" }],
+      "body": [
+        "The great approach to Stormwind's main gate, lined with statues of the heroes of the kingdom's wars: Anduin Lothar, Uther the Lightbringer, Turalyon, Khadgar, and others who held the line against the Horde.",
+        "Visitors from Goldshire cross it to enter the city, under the gaze of the men and women who saved it."
+      ],
+      "sources": ["AreaTable: Valley of Heroes", "page text 1976 (The Alliance of Lordaeron)", "pre-Cataclysm lore: the statues of the Valley of Heroes"]
+    },
+    {
+      "id": 1519005,
+      "kind": "place",
+      "title": "Stormwind Harbor",
+      "triggers": [{ "area": "Stormwind Harbor" }],
+      "body": [
+        "The city's new harbour, built on the coast west of the walls to carry the Alliance's armies to Northrend. Gryphons and warships come and go, and the transports to Valiance Keep in the Borean Tundra sail from its docks."
+      ],
+      "sources": ["AreaTable: Stormwind Harbor", "pre-Cataclysm lore: the Alliance expedition to Northrend"]
+    },
+    {
+      "id": 1519030,
+      "kind": "person",
+      "title": "Lord Gregor Lescovar",
+      "triggers": [{ "kill": 1754 }, { "accept": 434 }],
+      "body": [
+        "A noble of Stormwind, well connected and protected by his rank. He met secretly in the castle gardens with Marzon the Silent Blade, an assassin of the Defias Brotherhood, and was helping the Brotherhood plot against the city.",
+        "With VanCleef and his lieutenant Bazil Thredd dead, the evidence against Lescovar could never have convicted him in court. Justice came another way, arranged by Shaw's old friend Elling Trias, the cheesemonger of the Trade District."
+      ],
+      "sources": ["quests 392, 393, 350, 2745, 434, 394, 396 descriptions and reward texts"]
+    },
+    {
+      "id": 1519050,
+      "kind": "history",
+      "title": "The Stonemasons and the Defias",
+      "triggers": [{ "complete": 396 }, { "complete": 434 }, { "complete": 389 }],
+      "body": [
+        "After the First War, the guild of stonemasons rebuilt Stormwind under Edwin VanCleef. When their work was done, the nobles of the House refused to pay them. The masons rioted, the city put down the riot, and VanCleef led his people into exile as the Defias Brotherhood.",
+        "Since then the Brotherhood has terrorised Westfall and reached into the city itself, through prisoners like Bazil Thredd and nobles like Lescovar. If VanCleef had succeeded, the king would no doubt have suffered considerable damage."
+      ],
+      "sources": ["quest 396 reward text", "quests 389, 392 descriptions", "pre-Cataclysm lore: the Stonemasons' Guild and the Defias Brotherhood"]
+    },
+    {
+      "id": 1519051,
+      "kind": "history",
+      "title": "The Missing King",
+      "triggers": [{ "accept": 1274 }, { "complete": 1324 }, { "complete": 1266 }],
+      "body": [
+        "King Varian Wrynn set out for Theramore on a diplomatic voyage and vanished. The court said little, and Bishop DeLavey looked quietly for discreet help. The trail ran through the Deepwater Tavern in Menethil, where a thug named Slim was caught listening, to Theramore, where a private of Lady Jaina's guard turned out to be in league with the Defias.",
+        "While the king was missing, his young son sat the throne with Bolvar Fordragon as regent. Varian has since returned to rule, harder than he left."
+      ],
+      "sources": ["quests 1274, 1249, 1266, 1324 descriptions and reward texts", "pre-Cataclysm lore: the abduction and return of Varian Wrynn"]
+    }
+  ]
+}

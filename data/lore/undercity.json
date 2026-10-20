@@ -1,0 +1,61 @@
+{
+  "zone": 1497,
+  "name": "Undercity",
+  "entries": [
+    {
+      "id": 1497000,
+      "kind": "zone",
+      "title": "Undercity",
+      "triggers": [{ "areaId": 1497 }],
+      "body": [
+        "The capital of the Forsaken, built in the catacombs and sewers beneath the ruins of Lordaeron's capital, in Tirisfal Glades. Prince Arthas began work on it as a stronghold for the Scourge; when the Lich King's power weakened, the Forsaken under Sylvanas Windrunner took it for their own.",
+        "Its rings of tunnels hold the Royal Apothecary Society's laboratories, the War Quarter, the Magic Quarter and the Rogues' Quarter, all circling the Royal Quarter where the Banshee Queen sits. Above ground, the ruined city is silent; below, the Forsaken work on a new plague meant for the living and the Scourge alike."
+      ],
+      "sources": ["quest 501 description (our New Plague)", "quest 499 description (what the Dark Lady has planned for both humans and Scourge)", "pre-Cataclysm lore: Lordaeron and the Undercity"]
+    },
+    {
+      "id": 1497001,
+      "kind": "place",
+      "title": "The Royal Quarter",
+      "triggers": [{ "talk": 10181 }, { "talk": 2425 }, { "accept": 5961 }],
+      "body": [
+        "The throne room at the bottom of the Undercity, where Lady Sylvanas Windrunner, the Banshee Queen, holds court with the dreadlord Varimathras at her side. Varimathras was once a servant of the Burning Legion; Sylvanas bent him to her will when she freed the Forsaken.",
+        "Here the Dark Lady welcomes allies to her cause, from Thrall's Horde to the blood elves of Quel'Thalas, whom she sponsored into the Horde. Her champions, like Nathanos Blightcaller, are sent out from here."
+      ],
+      "sources": ["quest 5961 description", "quest 9621 description and reward text", "quests 6145, 494 descriptions", "pre-Cataclysm lore: Sylvanas and Varimathras"]
+    },
+    {
+      "id": 1497002,
+      "kind": "place",
+      "title": "The Apothecarium",
+      "triggers": [{ "talk": 2055 }, { "accept": 513 }, { "accept": 3568 }],
+      "body": [
+        "The laboratories of the Royal Apothecary Society, in one of the Undercity's quarters. Master Apothecary Faranell and his colleagues study poisons, plagues and corruption from every corner of the world, from Azshara's tide pools to the slimes of Un'Goro, and test their brews on whatever is at hand.",
+        "Their great work is a new plague, one that will kill the living and the Scourge both. The Horde's other races are not always comfortable with what the apothecaries consider an experiment."
+      ],
+      "sources": ["quests 513, 515 descriptions and reward texts", "quests 3568, 4293, 4561 descriptions", "quests 496, 501 descriptions"]
+    },
+    {
+      "id": 1497003,
+      "kind": "place",
+      "title": "The Ruins of Lordaeron",
+      "triggers": [{ "area": "Elevator" }, { "accept": 13267 }],
+      "body": [
+        "Above the Undercity stand the ruins of the capital of Lordaeron, its throne room broken and its courtyards overgrown. Here Prince Arthas returned from Northrend and murdered his father, King Terenas, and the kingdom fell.",
+        "Elevators carry the living and the dead down from the ruins into the city below."
+      ],
+      "sources": ["AreaTable: Elevator (Undercity)", "pre-Cataclysm lore: the death of King Terenas"]
+    },
+    {
+      "id": 1497050,
+      "kind": "history",
+      "title": "The Battle for the Undercity",
+      "triggers": [{ "complete": 13267 }, { "accept": 13267 }, { "talk": 32518 }],
+      "body": [
+        "At the Wrathgate in Northrend, Grand Apothecary Putress unleashed the new plague on Alliance and Horde soldiers alike, killing Highlord Bolvar Fordragon and Thrall's own envoy. At the same moment, Varimathras rose against Sylvanas and seized the Undercity, driving her out.",
+        "Thrall and Sylvanas marched back on the city together. The Horde fought its way down through the quarters to the Royal Quarter and destroyed the traitors, and Thrall declared the Undercity the Horde's once more. He warned that the days of Alliance and Horde fighting side by side were over."
+      ],
+      "sources": ["quest 13267 description and reward text", "creature 32365 lines", "creature 32518 lines", "pre-Cataclysm lore: the Wrathgate and the Battle for the Undercity"]
+    }
+  ]
+}

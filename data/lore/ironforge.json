@@ -1,0 +1,72 @@
+{
+  "zone": 1537,
+  "name": "Ironforge",
+  "entries": [
+    {
+      "id": 1537000,
+      "kind": "zone",
+      "title": "Ironforge",
+      "triggers": [{ "areaId": 1537 }],
+      "body": [
+        "The capital of the dwarves, carved deep into the mountain of Ironforge in the snows of Dun Morogh. At its heart the Great Forge burns day and night, and around it lie the Military Ward, the Mystic Ward, the Commons, the Hall of Explorers, and Tinker Town, home to the gnomes since they lost Gnomeregan.",
+        "King Magni Bronzebeard rules from the High Seat. His brother Muradin was lost in Northrend; his brother Brann roams the world with the Explorers' League, whose scholars believe the dwarves were made by the titans themselves, and dig all over Azeroth to prove it."
+      ],
+      "sources": ["quests 686, 700 descriptions", "quest 2439 description (the Creators are the link to our enchanted creation)", "creature 7937 gossip (Tinker Town)", "pre-Cataclysm lore: the Bronzebeard brothers"]
+    },
+    {
+      "id": 1537001,
+      "kind": "place",
+      "title": "The High Seat",
+      "triggers": [{ "talk": 2784 }, { "talk": 2918 }, { "accept": 683 }],
+      "body": [
+        "King Magni Bronzebeard's throne room, beside the Great Forge. His advisers speak on the king's authority, and act swiftly when Ironforge is threatened, as Advisor Belgrum did against the Shadowforge in the Badlands.",
+        "Magni feels every dwarf lost in the Alliance's wars. When the widow Sara Balloo wrote to him of her husband, drowned in the Wetlands, he had the stonecutters raise a memorial in granite from Lordaeron, and hoped it would stand as long as the dwarf's memory."
+      ],
+      "sources": ["quests 683, 686, 700 descriptions and reward texts", "quests 726, 762 descriptions"]
+    },
+    {
+      "id": 1537002,
+      "kind": "place",
+      "title": "The Hall of Explorers",
+      "triggers": [{ "talk": 2916 }, { "talk": 5387 }, { "talk": 8256 }],
+      "body": [
+        "The headquarters and library of the Explorers' League, with its museum of finds and the bones of great beasts. Historian Karnik, High Explorer Magellas, Prospector Stormpike, Curator Thorius and Royal Historian Archesonus work here.",
+        "The League's great quest is the origin of the dwarves. The platinum discs found in Uldaman spoke of the titans as the Creators, and of the dwarves' enchanted creation; they also pointed to the Plates of Uldum, wherever those may be. Not every find is happy: Thorius learned his own brother had betrayed Ironforge in the Searing Gorge."
+      ],
+      "sources": ["quests 2439, 2963, 2964 descriptions", "quests 514, 554 descriptions (Prospector Stormpike, master of decryption)", "quests 3566, 3701 descriptions and reward texts"]
+    },
+    {
+      "id": 1537003,
+      "kind": "place",
+      "title": "Tinker Town",
+      "triggers": [{ "talk": 7937 }],
+      "body": [
+        "The noisy district of gnomish workshops in Ironforge's lower levels, where the gnomes have lived since they abandoned Gnomeregan. High Tinker Mekkatorque, King of Gnomes, holds court here.",
+        "Gnomeregan fell when troggs burst up from below, and the gnomes flooded it with radiation trying to save it. Mekkatorque has never stopped planning to take it back."
+      ],
+      "sources": ["creature 7937 gossip", "pre-Cataclysm lore: the fall of Gnomeregan"]
+    },
+    {
+      "id": 1537004,
+      "kind": "place",
+      "title": "The Forlorn Cavern",
+      "triggers": [{ "area": "The Forlorn Cavern" }, { "talk": 2786 }],
+      "body": [
+        "A dim, half-forgotten cave off Ironforge's Mystic Ward, home to a few shops and to whoever does not wish to be found.",
+        "One of its shopkeepers, Gerrig Bonegrip, belongs to the Twilight's Hammer, a secret order that keeps cells in the great cities. He greets those who show the order's sigil as brothers, keeps copies of its sacred writings, and serves the Lady beneath the Arathi Highlands."
+      ],
+      "sources": ["quests 727, 735, 737 descriptions and reward texts", "quests 653, 687 descriptions and reward texts"]
+    },
+    {
+      "id": 1537050,
+      "kind": "history",
+      "title": "The Three Hammers",
+      "triggers": [{ "complete": 3701 }, { "complete": 3702 }, { "talk": 8879 }],
+      "body": [
+        "In ancient times all the dwarves lived under High King Modimus Anvilmar in Ironforge. When he died, the Bronzebeard, Wildhammer and Dark Iron clans went to war for the throne. The Bronzebeards won.",
+        "The Wildhammers went north to Grim Batol, and the Dark Irons under Thaurissan went south to found their city at Blackrock. Thaurissan's attempt to summon power for revenge brought Ragnaros into the world. The Royal Historian of Ironforge still studies what is left of that city, in the smoldering ruins of the Burning Steppes."
+      ],
+      "sources": ["page text 1914 (War of the Three Hammers)", "quests 3701, 3702 descriptions and reward texts"]
+    }
+  ]
+}

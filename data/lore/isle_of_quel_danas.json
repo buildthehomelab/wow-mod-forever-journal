@@ -1,0 +1,82 @@
+{
+  "zone": 4080,
+  "name": "Isle of Quel'Danas",
+  "entries": [
+    {
+      "id": 4080000,
+      "kind": "zone",
+      "title": "Isle of Quel'Danas",
+      "triggers": [{ "areaId": 4080 }],
+      "body": [
+        "An island off the northern coast of Eversong, home of the Sunwell, the fount of the high elves' magic. Arthas defiled it to raise Kel'Thuzad, and the blood elves have lived with the loss of it ever since.",
+        "Now Kael'thas Sunstrider has turned against his people and returned to the isle to re-ignite the Sunwell, not for them, but to bring the demon lord Kil'jaeden into the world. The Aldor and Scryers of Shattrath have set their differences aside as the Shattered Sun Offensive to stop him."
+      ],
+      "sources": ["quests 11481, 11482 descriptions", "quest 11550 description (re-ignited in preparation for the Deceiver's arrival)", "quest 11539 description", "pre-Cataclysm lore: the Sunwell"]
+    },
+    {
+      "id": 4080001,
+      "kind": "place",
+      "title": "Sun's Reach",
+      "triggers": [{ "area": "Sun's Reach Sanctum" }, { "area": "Sun's Reach Harbor" }, { "talk": 24932 }],
+      "body": [
+        "The harbour, sanctum and armoury on the southern shore of the isle, taken back by the Shattered Sun Offensive from the Wretched, Kael's Dawnblade army and the Burning Legion. Once the sanctum was secured, its power opened a portal to Shattrath.",
+        "The victory cost many lives. A memorial was raised for the fallen, and an anchorite collects donations for their widows and orphans."
+      ],
+      "sources": ["quests 11496, 11538, 11539, 11540 descriptions", "quests 11545, 11548 descriptions"]
+    },
+    {
+      "id": 4080002,
+      "kind": "place",
+      "title": "The Dead Scar",
+      "triggers": [{ "area": "The Dead Scar" }, { "accept": 11532 }, { "talk": 37552 }],
+      "body": [
+        "The scar of blighted earth that Arthas' army left on its march to the Sunwell runs across the isle. The Scourge and the Burning Legion fight each other along it.",
+        "At its southern end lie the remains of Thalorien Dawnseeker, who carried the sword Quel'Delar in defence of the Sunwell and fell here buying time for his men. His spirit decides who is worthy to bear the blade."
+      ],
+      "sources": ["quests 11532, 11533 descriptions", "quests 24535, 24563 descriptions and reward texts"]
+    },
+    {
+      "id": 4080003,
+      "kind": "place",
+      "title": "Magisters' Terrace",
+      "triggers": [{ "area": "Magisters' Terrace" }],
+      "body": [
+        "A palace on the eastern edge of the isle, where Kael'thas Sunstrider has made his last stand. From here he draws on the power of the Sunwell and prepares the way for his master."
+      ],
+      "sources": ["AreaTable: Magisters' Terrace", "pre-Cataclysm lore: Kael'thas at Magisters' Terrace"]
+    },
+    {
+      "id": 4080004,
+      "kind": "place",
+      "title": "The Sunwell Plateau",
+      "triggers": [{ "area": "Sunwell Plateau" }, { "accept": 11550 }, { "talk": 25169 }],
+      "body": [
+        "The plateau around the Sunwell itself, sealed behind mighty barriers raised by its new masters. Three gates guard the inner chambers.",
+        "Inside, the Burning Legion prepares for Kil'jaeden the Deceiver to step into the world through the re-ignited well."
+      ],
+      "sources": ["quests 11550, 11551, 11552, 11553 descriptions"]
+    },
+    {
+      "id": 4080005,
+      "kind": "place",
+      "title": "Greengill Coast",
+      "triggers": [{ "area": "Greengill Coast" }, { "accept": 11541 }],
+      "body": [
+        "The south-eastern coast of the isle, taken by naga. Their Darkspine sirens use magic orbs to enslave the island's native murlocs.",
+        "Freed of the orbs, the murlocs turn on their masters with enthusiasm."
+      ],
+      "sources": ["quest 11541 description"]
+    },
+    {
+      "id": 4080050,
+      "kind": "history",
+      "title": "The Shattered Sun Offensive",
+      "triggers": [{ "accept": 11482 }, { "accept": 11481 }, { "complete": 11496 }],
+      "body": [
+        "The Aldor and the Scryers of Shattrath have quarrelled since the day they arrived. When word came of what Kael'thas was doing at the Sunwell, both were ordered to send every able person to Azeroth, and to set their differences aside.",
+        "Together they formed the Shattered Sun Offensive, draenei and blood elf side by side, and fought for the isle one building at a time."
+      ],
+      "sources": ["quests 11481, 11482 descriptions", "quest 11496 description"]
+    }
+  ]
+}

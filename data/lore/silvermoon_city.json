@@ -1,0 +1,60 @@
+{
+  "zone": 3487,
+  "name": "Silvermoon City",
+  "entries": [
+    {
+      "id": 3487000,
+      "kind": "zone",
+      "title": "Silvermoon City",
+      "triggers": [{ "areaId": 3487 }],
+      "body": [
+        "The capital of the blood elves, a city of golden spires and floating stones in the north of Eversong Woods. Prince Arthas cut through it on his way to the Sunwell, and the eastern half of the city still lies in ruins, split by the Dead Scar.",
+        "The rest has been restored by magic. Arcane guardians patrol the streets, magisters study openly what other races fear, and the blood elves have grown strong enough to be accepted into the Horde as equals. Their prince, Kael'thas, has betrayed them; they endure, as they always have."
+      ],
+      "sources": ["creature 16802 gossip (Kael'thas has betrayed us... we will endure)", "quests 9621, 9627 descriptions", "creature 15416 gossip (the Scourge that endlessly parade down the Dead Scar)", "pre-Cataclysm lore: the fall of Quel'Thalas"]
+    },
+    {
+      "id": 3487001,
+      "kind": "place",
+      "title": "Sunfury Spire",
+      "triggers": [{ "talk": 16802 }, { "talk": 16800 }, { "talk": 16801 }],
+      "body": [
+        "The seat of government in Silvermoon, where Lor'themar Theron rules as Regent Lord of Quel'Thalas in the absent prince's name. Beside him stand Grand Magister Rommath, who brought the magisters home from Outland with new magics, and Halduron Brightwing, the Ranger General.",
+        "Lor'themar tells his people not to lose heart. Arthas did not crush their spirit when he swept through their land, and neither will Kael'thas."
+      ],
+      "sources": ["creature 16802 gossip", "creatures 16800, 16801", "pre-Cataclysm lore: Lor'themar, Rommath and Halduron"]
+    },
+    {
+      "id": 3487002,
+      "kind": "place",
+      "title": "The Shepherd's Gate",
+      "triggers": [{ "area": "The Shepherd's Gate" }],
+      "body": [
+        "The southern gate of Silvermoon, looking out over the Dead Scar towards the Ghostlands. Rangers stand on its walls cutting down the mindless Scourge that still march along the scar, endlessly, towards the city."
+      ],
+      "sources": ["creature 15416 gossip and lines"]
+    },
+    {
+      "id": 3487030,
+      "kind": "person",
+      "title": "Lady Liadrin",
+      "triggers": [{ "talk": 17076 }],
+      "body": [
+        "The Blood Knight Matriarch. She was a priestess of the Light who lost her faith when Quel'Thalas fell. The Blood Knights she leads draw the Light by force from a captive naaru, M'uru, and wield it as paladins.",
+        "Her knights are honoured in the city's streets, and the guards salute them: even the Light is no match for the indomitable will of their people."
+      ],
+      "sources": ["creature 17076", "creature 16222 lines", "pre-Cataclysm lore: the Blood Knights and M'uru"]
+    },
+    {
+      "id": 3487050,
+      "kind": "history",
+      "title": "Joining the Horde",
+      "triggers": [{ "complete": 9627 }, { "accept": 9627 }, { "complete": 9621 }],
+      "body": [
+        "After the fall of Quel'Thalas, the blood elves felt betrayed by the Alliance they had fought beside. Sylvanas, once Ranger-General of Quel'Thalas, argued for them before the Horde, but they had to prove they could deal with their own problems first.",
+        "They fought off Darnassian attacks and Ironforge spies and killed the Scourge lord Dar'Khan at their doorstep. Thrall crushed Lor'themar's letter in his hand and welcomed them. The regent was candid about one thing: the Horde hoped the elves' link to Outland would help it reach the orcs left there."
+      ],
+      "sources": ["quests 9621, 9627 descriptions and reward texts"]
+    }
+  ]
+}
