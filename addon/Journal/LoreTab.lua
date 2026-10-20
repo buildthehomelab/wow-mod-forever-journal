@@ -177,10 +177,18 @@ local function build(panel)
 	reader:SetPoint("BOTTOMRIGHT", right, "BOTTOMRIGHT", -30, 10)
 	local text = reader.content:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
 	text:SetPoint("TOPLEFT", reader.content, "TOPLEFT", 2, -2)
-	text:SetPoint("RIGHT", reader.content, "RIGHT", -2, 0)
 	text:SetJustifyH("LEFT")
 	text:SetJustifyV("TOP")
 	text:SetSpacing(3)
+
+	-- The text's width is set, not anchored: the 3.3.5 client sizes anchored strings lazily, so
+	-- GetStringHeight right after SetText measured one line, and the rest was cut off with no
+	-- scroll bar to reach it.
+	local function fitText()
+		text:SetWidth(math.max(10, reader:GetWidth() - 8))
+		reader:SetContentHeight(text:GetStringHeight() + 8)
+	end
+	reader:HookScript("OnSizeChanged", function () if text:GetText() and text:GetText() ~= "" then fitText() end end)
 
 	local placeholder = right:CreateFontString(nil, "OVERLAY", "GameFontDisable")
 	placeholder:SetPoint("TOP", right, "TOP", 0, -110)
@@ -437,7 +445,7 @@ local function build(panel)
 				end
 				text:SetText(table.concat(parts, "\n\n"))
 				reader:ScrollToTop()
-				reader:SetContentHeight(text:GetStringHeight() + 8)
+				fitText()
 				if J.LoreIsNew(entry) then
 					J.LoreMarkRead(entry.readKey)
 					entries:Render()
@@ -473,7 +481,7 @@ local function build(panel)
 			end
 			text:SetText(full.text)
 			reader:ScrollToTop()
-			reader:SetContentHeight(text:GetStringHeight() + 8)
+			fitText()
 			if J.LoreIsNew(entry) then
 				J.LoreMarkRead(entry.id)
 				entries:Render()
