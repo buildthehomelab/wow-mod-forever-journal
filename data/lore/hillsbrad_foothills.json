@@ -1,0 +1,116 @@
+{
+  "zone": 267,
+  "name": "Hillsbrad Foothills",
+  "entries": [
+    {
+      "id": 267000,
+      "kind": "zone",
+      "title": "Hillsbrad Foothills",
+      "triggers": [{ "areaId": 267 }],
+      "body": [
+        "Green hills, farms and orchards between the Alterac Mountains and the sea, south of the Plaguelands. In spring the flowers bloom and the air is fresh and brisk, which makes the Forsaken apothecaries stationed here miserable.",
+        "Its people have learned that Hillsbrad is destined to live under the shadow of war. The Forsaken hold Tarren Mill in the hills, the Alliance holds the port of Southshore, the town of Hillsbrad sits between them, and the Syndicate lurks in the ruins of Durnholde Keep, where the Warchief himself was once a slave."
+      ],
+      "sources": ["quest 501 description", "quest 9435 description (destined to live under the shadow of war)", "quests 527, 549 descriptions", "quest 506 description"]
+    },
+    {
+      "id": 267001,
+      "kind": "place",
+      "title": "Southshore",
+      "triggers": [{ "area": "Southshore" }, { "talk": 2263 }, { "talk": 2276 }],
+      "body": [
+        "An Alliance port town on Hillsbrad's southern coast, the closest town to Alterac and its troubles. Marshal Redpath commands the guard and Magistrate Henry Maleb governs it, newly appointed after the Syndicate assassinated his predecessor.",
+        "Southshore boasts some of the best cooking north of Stormwind and a tailor who calls himself the great Bartolo. It also smells of the harbour day and night, and Lieutenant Farren Orinelle, transferred from Stormwind, is doing everything he can to get transferred back. In its cemetery lies a wizard named Helcular, killed by a lynch mob just before he could become a lich."
+      ],
+      "sources": ["quests 505, 500 descriptions", "quests 555, 565 descriptions", "quests 536, 562, 563 descriptions", "quest 552 description"]
+    },
+    {
+      "id": 267002,
+      "kind": "place",
+      "title": "Tarren Mill",
+      "triggers": [{ "area": "Tarren Mill" }, { "talk": 2215 }, { "talk": 2216 }],
+      "body": [
+        "A Forsaken town in the hills of eastern Hillsbrad, under the command of High Executor Darthalia, who answers directly to Varimathras. Its mission is to quell the humans of the foothills until the Royal Apothecary Society's new plague is ready.",
+        "Apothecary Lydon spends his days brewing elixirs of suffering, pain and agony, and testing them on frogs, dogs and captured farmers. Orcs sent by the Warchief stay here too, hunting the Syndicate, and the blood elves who have newly joined the Horde have sent an adviser to help their Forsaken friends."
+      ],
+      "sources": ["quests 527, 494 descriptions", "quests 496, 499, 501, 502, 524 descriptions", "quest 498 description", "quest 9425 description"]
+    },
+    {
+      "id": 267003,
+      "kind": "place",
+      "title": "Hillsbrad",
+      "triggers": [{ "area": "Hillsbrad" }, { "area": "Hillsbrad Fields" }, { "kill": 2335 }],
+      "body": [
+        "A human farming town in the centre of the foothills, with fields and orchards spreading south. Magistrate Burnside and the town council lead it, and its people rally around their Hillsbrad Proclamation.",
+        "The Forsaken have made it their target. Their raids burn the northern farms, kill the blacksmith who arms the townsfolk, and hunt the peasants who flee to the orchards. Farmer Ray's dog Stanley was fed an elixir and grew to an immense, savage size; his owner's cousin in Southshore began to suspect a new plague."
+      ],
+      "sources": ["quests 527, 528, 529, 532 descriptions", "quest 502 description", "quest 659 description"]
+    },
+    {
+      "id": 267004,
+      "kind": "place",
+      "title": "Durnholde Keep",
+      "triggers": [{ "area": "Durnholde Keep" }, { "accept": 498 }, { "accept": 549 }],
+      "body": [
+        "A ruined fortress in the south-east of the foothills, across the river from Tarren Mill. It was once the prison-stronghold of Aedelas Blackmoore, chief warden of the orc internment camps, who raised the young Thrall here as a slave and a gladiator.",
+        "The Syndicate now gathers in its ruins. When orcs sent by the Warchief came to look around, the humans overwhelmed them and took them as slaves."
+      ],
+      "sources": ["quests 498, 549 descriptions", "page text 2030 (The New Horde)"]
+    },
+    {
+      "id": 267005,
+      "kind": "place",
+      "title": "Dun Garok",
+      "triggers": [{ "area": "Dun Garok" }, { "kill": 2304 }, { "accept": 541 }],
+      "body": [
+        "A dwarven barracks in the south-east of Hillsbrad, set into Thoradin's Wall. Captain Ironhill leads the dwarves who help the humans of the foothills, and they brew a famous Shindigger Stout.",
+        "The Forsaken take its presence as a test of the Alliance, and laid siege to it in their final battle for the foothills."
+      ],
+      "sources": ["quests 541, 517, 547 descriptions"]
+    },
+    {
+      "id": 267006,
+      "kind": "place",
+      "title": "Azurelode Mine",
+      "triggers": [{ "area": "Azurelode Mine" }, { "kill": 2305 }, { "accept": 9435 }],
+      "body": [
+        "An Alliance mine due south of Hillsbrad and a prime source of iron for the Alliance armouries. The Forsaken want it for their own soldiers.",
+        "It also yields rarer things. A crate of crystals found there, the only known samples, was intercepted by Forsaken raiders on its way to Southshore."
+      ],
+      "sources": ["quest 539 description and reward text", "quest 9435 description and reward text"]
+    },
+    {
+      "id": 267007,
+      "kind": "place",
+      "title": "The Strands",
+      "triggers": [{ "area": "Western Strand" }, { "area": "Eastern Strand" }, { "accept": 536 }],
+      "body": [
+        "The beaches west and east of Southshore. Torn Fin murlocs crowd the Western Strand; Daggerspine naga have come ashore on the Eastern Strand, worrying the Alliance's high command.",
+        "Off the south coast lies Purgation Isle, where the souls of the banished dead are said to walk."
+      ],
+      "sources": ["quests 536, 559, 561, 562 descriptions", "quest 8965 description (Purgation Isle, the banished dead)"]
+    },
+    {
+      "id": 267030,
+      "kind": "person",
+      "title": "High Executor Darthalia",
+      "triggers": [{ "talk": 2215 }, { "accept": 527 }],
+      "body": [
+        "The commander of Tarren Mill, under the direct command of Varimathras. She insists on proper discipline and tells visitors to speak only when spoken to.",
+        "Darthalia's Battle of Hillsbrad is meant to break the town completely: its food, its blacksmith, its magistrate, its council, its mine, and finally the dwarves of Dun Garok. Everything taken from Hillsbrad will be useful when the Forsaken move on to raze Southshore."
+      ],
+      "sources": ["creature 2215 gossip", "quests 527, 528, 529, 532, 539, 541 descriptions and reward texts"]
+    },
+    {
+      "id": 267050,
+      "kind": "history",
+      "title": "Taretha's Pendant",
+      "triggers": [{ "complete": 506 }, { "complete": 508 }, { "complete": 503 }],
+      "body": [
+        "Thrall grew up a slave in Durnholde Keep, and the only human who showed him kindness was a girl named Taretha Foxton. She helped him escape, and Blackmoore killed her for it.",
+        "Years later the Warchief sent orcs to Hillsbrad to recover something of hers: her pendant. Their leader Gol'dir was captured and enslaved by the Syndicate. Lord Aliden Perenolde, who had been Blackmoore's friend, gave the pendant to his mistress, and boasted of plans to enslave the orcs again. Thrall's orcs freed Gol'dir, and the pendant went home to the Warchief."
+      ],
+      "sources": ["quests 498, 503, 506, 507, 508 descriptions and reward texts", "page text 2030 (The New Horde)", "pre-Cataclysm lore: Taretha Foxton"]
+    }
+  ]
+}

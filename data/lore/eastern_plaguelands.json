@@ -1,0 +1,171 @@
+{
+  "zone": 139,
+  "name": "Eastern Plaguelands",
+  "entries": [
+    {
+      "id": 139000,
+      "kind": "zone",
+      "title": "Eastern Plaguelands",
+      "triggers": [{ "areaId": 139 }],
+      "body": [
+        "The eastern half of fallen Lordaeron, the land the plague struck hardest. Its forests are rotten, its rivers foul, and its towns are Scourge holdings full of ziggurats and slaughterhouses. Plaguebats darken the skies and plaguehounds run in packs.",
+        "Over it all floats Naxxramas, the necropolis of Kel'Thuzad, above the Plaguewood and the ruined city of Stratholme. Few living things remain: the Argent Dawn at Light's Hope Chapel, the Scarlet Crusade in its stronghold of Tyr's Hand, a disgraced paladin in a lonely hut, and the dead of Darrowshire, still fighting a battle that ended years ago."
+      ],
+      "sources": ["quests 5543, 5544 descriptions", "quest 9121 description (the dread citadel in Plaguewood)", "quest 6041 description", "quests 5142, 5211 descriptions"]
+    },
+    {
+      "id": 139001,
+      "kind": "place",
+      "title": "Light's Hope Chapel",
+      "triggers": [{ "area": "Light's Hope Chapel" }, { "talk": 11034 }, { "talk": 11039 }],
+      "body": [
+        "A chapel in the east of the Plaguelands, the headquarters of the Argent Dawn. The Dawn is no political body: it calls Alliance and Horde both its friends in the cause of stamping out evil, and here members of both stand side by side.",
+        "Lord Maxwell Tyrosus leads the order, with Duke Nicholas Zverenhoff granting its commissions. Leonid Barthalomew the Revered, an undead freed by the Banshee Queen and loyal to the Dawn, keeps its darker secrets, and Caretaker Alen tends the burial pit, where dead troll thieves come at night to steal bodies. Lately the Brotherhood of the Light has joined them, preparing the way into Naxxramas."
+      ],
+      "sources": ["creatures 10839, 10840 gossip (the Argent Dawn)", "quests 5264, 5265 descriptions", "quest 5462 description (Leonid, freed by the Banshee Queen)", "quest 6021 description", "quest 9121 description"]
+    },
+    {
+      "id": 139002,
+      "kind": "place",
+      "title": "Darrowshire",
+      "triggers": [{ "area": "Darrowshire" }, { "talk": 10926 }, { "accept": 5142 }],
+      "body": [
+        "A village in the southern hills of the Eastern Plaguelands, destroyed in one of the great battles of the plague. Its people stood against the Scourge and almost all of them died, and many rose again as the Scourge's servants.",
+        "Little Pamela Redpath still waits in her family's house, where her aunt hid her when the fighting began. She asks every visitor whether they have seen her father, who went off to fight, and tells them about the bad people who come and whisper to her at night."
+      ],
+      "sources": ["quests 5142, 5149, 5211, 5241 descriptions"]
+    },
+    {
+      "id": 139003,
+      "kind": "place",
+      "title": "Tyr's Hand",
+      "triggers": [{ "area": "Tyr's Hand" }, { "area": "The Scarlet Basilica" }, { "talk": 11898 }],
+      "body": [
+        "A walled city in the south-east of the Plaguelands, held by the Scarlet Crusade and one of its great strongholds. Its praetorians aspire to knighthood in the Crusade, and its Crusader Lord, Valdelmar, takes his orders from the Grand Crusader in Stratholme's Scarlet Bastion.",
+        "The Crusade kills any who do not bear its mark. Its chief adviser, Demetria, called the Scarlet Oracle for her otherworldly senses, has guided it to many victories against the Scourge."
+      ],
+      "sources": ["quests 6146, 6147, 6148 descriptions", "quest 8964 description", "quest 5543 description"]
+    },
+    {
+      "id": 139004,
+      "kind": "place",
+      "title": "The Marris Stead",
+      "triggers": [{ "area": "The Marris Stead" }, { "talk": 11878 }, { "accept": 6022 }],
+      "body": [
+        "A ruined farm in the south-west of the Eastern Plaguelands, home of Nathanos Blightcaller, Champion of the Banshee Queen, and his hounds.",
+        "Nathanos was once Nathanos Marris, a human ranger lord, the only human ever to earn that title from the elves of Quel'Thalas and a hero of the Alliance for a decade of wars. He died, and rose as a Forsaken. He calls everyone who works for him imbecile, sends them against the Scourge and the Crusade alike, and wants his old life's records out of the high elves' hands."
+      ],
+      "sources": ["quests 6022, 6133, 6136 descriptions and reward texts", "quest 6187 description", "quest 6184 description"]
+    },
+    {
+      "id": 139005,
+      "kind": "place",
+      "title": "Plaguewood",
+      "triggers": [{ "area": "Plaguewood" }, { "area": "Terrordale" }, { "accept": 6041 }],
+      "body": [
+        "A rotten forest in the north-west of the Plaguelands, near the gates of Stratholme. The Scourge has built its ziggurats and slaughterhouses here, and its termite mounds are full of the most terrible termites ever found.",
+        "Above Plaguewood floats Naxxramas. The town of Terrordale lies to the west, where a madman named Augustus the Touched still tries to run his shop and keeps losing his receipt book."
+      ],
+      "sources": ["quests 6041, 5903, 9121 descriptions", "quest 6164 description and reward text"]
+    },
+    {
+      "id": 139006,
+      "kind": "place",
+      "title": "Stratholme",
+      "triggers": [{ "area": "Stratholme" }, { "accept": 5281 }, { "accept": 8929 }],
+      "body": [
+        "Once the second city of Lordaeron, Stratholme is where Prince Arthas purged a plagued population before it could rise, and where his fall began. The city burned. Many of its people threw themselves into the flames rather than become Scourge, and they walk its streets now as restless spirits.",
+        "Today half the city belongs to the Scourge and half to the Scarlet Crusade, whose Grand Crusader sits in the Scarlet Bastion. Heroes who try to break in are mown down at its gates; one of them, Anthion Harmon, still waits there as a ghost for news of the woman he came to rescue."
+      ],
+      "sources": ["quest 5281 description", "quests 8929, 8946 descriptions and reward texts", "quest 6145 description", "pre-Cataclysm lore: the Culling of Stratholme"]
+    },
+    {
+      "id": 139007,
+      "kind": "place",
+      "title": "Zul'Mashar",
+      "triggers": [{ "area": "Zul'Mashar" }, { "kill": 12250 }, { "accept": 6024 }],
+      "body": [
+        "A troll city in the north-east of the Plaguelands, among the old Amani lands. The Scourge has reached it too.",
+        "A Darkspear infiltrator named Hameya and his brothers ate bad meat on the way there and changed; Hameya could feel the lich's words urging him to spread the plague among his people, and wrote a plea to be killed before his will left him. The undead troll Zaeldarr the Outcast leads a gang of dead thieves who steal bodies from Light's Hope."
+      ],
+      "sources": ["quest 6024 description", "quest 6021 description"]
+    },
+    {
+      "id": 139008,
+      "kind": "place",
+      "title": "Quel'Lithien Lodge",
+      "triggers": [{ "area": "Quel'Lithien Lodge" }, { "accept": 6133 }],
+      "body": [
+        "A lodge of high elf rangers in the far north of the Eastern Plaguelands, near the border with Quel'Thalas. Rangers, pathstriders and woodsmen still hold it.",
+        "They keep the Quel'Thalas registry, which records the life of a human who was once one of them: Nathanos Marris. Nathanos wants it back, and warns his agents not to read it."
+      ],
+      "sources": ["quest 6133 description and reward text"]
+    },
+    {
+      "id": 139009,
+      "kind": "place",
+      "title": "Acherus: The Ebon Hold",
+      "triggers": [{ "area": "Acherus: The Ebon Hold" }, { "area": "Death's Breach" }],
+      "body": [
+        "A Scourge necropolis that hangs over the Plaguelands near Light's Hope, the home of the Knights of the Ebon Blade. It was sent by the Lich King to destroy the Scarlet Crusade's enclave at New Avalon and then Light's Hope itself.",
+        "The death knights who served it broke free of the Lich King at Light's Hope, and now follow Highlord Darion Mograine against their former master."
+      ],
+      "sources": ["creature 28444 (Highlord Darion Mograine)", "pre-Cataclysm lore: Acherus and the Battle for Light's Hope Chapel"]
+    },
+    {
+      "id": 139010,
+      "kind": "place",
+      "title": "Northpass Tower",
+      "triggers": [{ "area": "Northpass Tower" }, { "talk": 10304 }],
+      "body": [
+        "One of the old watchtowers of the Plaguelands, in the north near the forest of Quel'Lithien. A night elf named Aurora Skycaller studies near it.",
+        "She is a descendant of the Highborne, and does not like to dwell on the mistakes of her ancestors. But she will help to restore the Crystal of Zin-Malor, an artifact that could contain and control strong arcane forces, so that a tormented Highborne spirit might be heard."
+      ],
+      "sources": ["quests 5246, 5247, 5248 descriptions and reward texts"]
+    },
+    {
+      "id": 139030,
+      "kind": "person",
+      "title": "Tirion Fordring",
+      "triggers": [{ "talk": 1855 }, { "accept": 5742 }],
+      "body": [
+        "Once Lord of Mardenholde and a paladin of the Silver Hand, Tirion was stripped of his title and banished for treason when he defended an orc who had saved his life. He lives alone in a hut in the Plaguelands, eating carrion worm meat, and is glad of anyone willing to share a meal and talk of days long past.",
+        "His son Taelan was told his father had died, and grew up to become Highlord of the Scarlet Crusade. Tirion's redemption, and his son's, depends on reminding Taelan who he was: his toy war hammer, the symbol of the Order he threw down at Northdale, and a family portrait painted on Caer Darrow's beach."
+      ],
+      "sources": ["quests 5542, 5544, 5742, 5781, 5845, 5846 descriptions and reward texts", "quest 5861 reward text (Lord of Mardenholde)", "pre-Cataclysm lore: Tirion and Eitrigg"]
+    },
+    {
+      "id": 139031,
+      "kind": "person",
+      "title": "The Redpaths",
+      "triggers": [{ "talk": 11063 }, { "kill": 10938 }, { "accept": 5211 }],
+      "body": [
+        "Captain Joseph Redpath led the defence of Darrowshire. During the battle he was corrupted and joined the Scourge, and the Annals of Darrowshire remember him as a betrayer. His sister Marlene's spirit wanders near Andorhal. His brother Carlin survived and serves the Argent Dawn at Light's Hope, weeping at night for the village he could not save.",
+        "Joseph's daughter Pamela is still in the house where she was hidden, waiting for him. With Chromie's help, the spirits of Darrowshire can be raised to fight the battle again, so that this time Joseph lives long enough to face what he became, and comes home."
+      ],
+      "sources": ["quests 5142, 5152, 5153, 5154, 5210, 5241 descriptions and reward texts", "quests 5721, 5941 descriptions and reward texts"]
+    },
+    {
+      "id": 139050,
+      "kind": "history",
+      "title": "The Battle of Darrowshire",
+      "triggers": [{ "complete": 5210 }, { "complete": 5181 }, { "complete": 5721 }],
+      "body": [
+        "When the Scourge came for Darrowshire, its people and Alliance soldiers fought in the town square. The paladin Davil Lightfire held the line, and the ghoul lord Horgus the Ravager was destroyed and his body thrown into a lake. Marduk the Black was never defeated, though his sword was shattered.",
+        "The battle was lost when Captain Redpath turned. Darrowshire fell, and its defenders became the cannibal ghouls and flayers that still wander the ruins. The Annals of Darrowshire, kept in Andorhal, record it all, and through Chromie's magic, they have begun to record what happened next."
+      ],
+      "sources": ["quests 5168, 5181, 5206, 5210, 5721 descriptions and reward texts", "quest 5211 description"]
+    },
+    {
+      "id": 139051,
+      "kind": "history",
+      "title": "The Ranger Lord",
+      "triggers": [{ "complete": 6185 }, { "complete": 6187 }, { "complete": 6148 }],
+      "body": [
+        "Stormwind's spies went looking for whoever was killing their agents in the Plaguelands, and found a name: Blightcaller. The truth was worse. Nathanos Marris, the only human ranger lord, a tactical genius behind a decade of Alliance victories, had become the champion of the Forsaken.",
+        "King Varian ordered an army raised to destroy him. Nathanos, for his part, plotted the Scarlet Crusade's ruin, tricking Tyr's Hand into exposing the Scarlet Oracle on the road to Stratholme. Varian took it as proof that his people are cursed to lose their greatest heroes."
+      ],
+      "sources": ["quests 6184, 6185, 6187 descriptions and reward texts", "quests 6145, 6146, 6148 descriptions and reward texts"]
+    }
+  ]
+}

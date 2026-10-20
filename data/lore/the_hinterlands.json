@@ -1,0 +1,138 @@
+{
+  "zone": 47,
+  "name": "The Hinterlands",
+  "entries": [
+    {
+      "id": 47000,
+      "kind": "zone",
+      "title": "The Hinterlands",
+      "triggers": [{ "areaId": 47 }],
+      "body": [
+        "Wild green hills and forest north-east of Hillsbrad, between Lordaeron and the Forbidding Sea. Gryphons ride the winds over it, owlbeasts and silvermane wolves hunt its valleys, and the ruins of the ancient Amani troll empire stand everywhere in the trees.",
+        "Three troll tribes live here and agree on nothing except that they are trolls: the Witherbark, who betrayed the Horde, the Vilebranch, who eat other trolls and worship Hakkar, and the Revantusk, who keep faith with Thrall. The Wildhammer dwarves rule the western heights from Aerie Peak, and the trolls see them as squatters on their ancestral land."
+      ],
+      "sources": ["quest 7844 description (three different tribes of trolls inhabit the Hinterlands)", "quest 2932 description", "quest 9470 description (trolls view the Wildhammers as squatters)", "quest 9471 description"]
+    },
+    {
+      "id": 47001,
+      "kind": "place",
+      "title": "Aerie Peak",
+      "triggers": [{ "area": "Aerie Peak" }, { "talk": 5636 }, { "talk": 5635 }],
+      "body": [
+        "The mountain town of the Wildhammer dwarves in the west of the Hinterlands, built around a great aviary where they raise and train gryphons. High Thane Falstad Wildhammer rules here, though lately he spends his time in Ironforge, and Gryphon Master Talonaxe runs the town in his place.",
+        "The Wildhammers make it clear they are NOT part of the Alliance. They trust deeds over words and remember the past more than their cousins in Ironforge. An ambassador of the Alliance waits at Aerie Peak for an audience with Falstad, trying to win their friendship."
+      ],
+      "sources": ["creature 5636 gossip", "quest 1450 description", "quest 2880 description", "quest 2877 description", "quests 9469, 9471 descriptions"]
+    },
+    {
+      "id": 47002,
+      "kind": "place",
+      "title": "Revantusk Village",
+      "triggers": [{ "area": "Revantusk Village" }, { "talk": 14736 }, { "accept": 7845 }],
+      "body": [
+        "A forest troll village on the eastern coast of the Hinterlands, home of the Revantusk tribe, allies of the Horde. Primal Torntusk leads it.",
+        "The Revantusk live surrounded by enemies. The Vilebranch raid them at night, taking captives for sacrifice, and their hunters are lost to the wolves and owlbeasts of the wilds. They hate the Wildhammer, whose gryphons are trained to kill trolls, and send the dwarves bloody messages to prove it."
+      ],
+      "sources": ["quests 7845, 7849, 7862 descriptions", "quests 7828, 7829, 7830 descriptions", "quests 7841, 7843 descriptions"]
+    },
+    {
+      "id": 47003,
+      "kind": "place",
+      "title": "Jintha'Alor",
+      "triggers": [{ "area": "Jintha'Alor" }, { "kill": 7995 }, { "accept": 2994 }],
+      "body": [
+        "The capital of the Vilebranch trolls in the south of the Hinterlands, a city of stone terraces climbing to an amphitheatre at its peak. The Vilebranch fight with supernatural ferocity, driven by vessels of tainted blood that carry the magic of Hakkar, the faceless Blood God.",
+        "Vile Priestess Hexx rules it. She prepares captives for sacrifice at the top of the city, and the young gryphon Sharpbeak, heir of Aerie Peak's mightiest gryphon, was caged on a cliff there. Behind the amphitheatre is a cave said to hide an ancient egg that can hold the essence of Hakkar."
+      ],
+      "sources": ["quests 7850, 7845, 7861 descriptions and reward texts", "quests 2993, 2994 descriptions", "quest 4787 description"]
+    },
+    {
+      "id": 47004,
+      "kind": "place",
+      "title": "Shadra'Alor",
+      "triggers": [{ "area": "Shadra'Alor" }, { "kill": 2707 }, { "accept": 9476 }],
+      "body": [
+        "A temple city of the Witherbark trolls in the south-west of the Hinterlands, with three temples. Huge spiders nest among them, and at its altar the Witherbark worship Shadra, the spider god, whose venom they keep in bottles throughout their villages.",
+        "It was here that Featherbeard, the most revered gryphon trainer of the Wildhammer, came looking for the stolen gryphon eggs. His bones were found on the altar, with his map of where the eggs were hidden still in his hand."
+      ],
+      "sources": ["quests 2934, 2937 descriptions", "quests 9475, 9476 descriptions and reward texts", "quest 2933 description"]
+    },
+    {
+      "id": 47005,
+      "kind": "place",
+      "title": "The Witherbark Villages",
+      "triggers": [{ "area": "Hiri'watha" }, { "area": "Zun'watha" }, { "kill": 17235 }],
+      "body": [
+        "Small villages of the Witherbark trolls in the western Hinterlands. The Witherbark were once allies of the Horde, but they betrayed Thrall, and the Darkspears count them as enemies.",
+        "Their witch doctor Mai'jin, who shelters with his pet spider in a cave at Bogen's Ledge, was behind a wave of raids on the Wildhammer aeries and the theft of their gryphon eggs."
+      ],
+      "sources": ["quest 2932 description", "quests 9470, 9476 descriptions", "quest 2988 description"]
+    },
+    {
+      "id": 47006,
+      "kind": "place",
+      "title": "Quel'Danil Lodge",
+      "triggers": [{ "area": "Quel'Danil Lodge" }, { "talk": 7801 }, { "kill": 2694 }],
+      "body": [
+        "A hunting lodge of the high elves in the north-west of the Hinterlands, home to the Highvale rangers and scouts. They stayed loyal to the Alliance when Quel'Thalas fell.",
+        "The Wildhammer have been striking up deals with them, which the trolls of Revantusk take as a new alliance against them. The elf Gilveradin Sunchaser packages Hinterlands honey ripple at the lodge, for a fee."
+      ],
+      "sources": ["quests 7841 description and reward text", "quest 77 description", "quest 2742 description"]
+    },
+    {
+      "id": 47007,
+      "kind": "place",
+      "title": "Skulk Rock",
+      "triggers": [{ "area": "Skulk Rock" }, { "accept": 2877 }],
+      "body": [
+        "An old Horde base in the central Hinterlands, abandoned long ago. Green sludges and jade oozes have overrun it, said to be led by a master ooze.",
+        "The Wildhammer have plans for the place, once someone clears out the slime. Crates of honey ripple still lie in its ruins."
+      ],
+      "sources": ["quests 2877, 77 descriptions and reward texts"]
+    },
+    {
+      "id": 47008,
+      "kind": "place",
+      "title": "The Altar of Zul",
+      "triggers": [{ "area": "The Altar of Zul" }, { "accept": 2989 }],
+      "body": [
+        "A great temple on the western edge of Vilebranch territory. The Vilebranch are known for performing sacrifices there.",
+        "When Sharpbeak went missing, the gryphon masters of Aerie Peak searched it first, and were relieved not to find him."
+      ],
+      "sources": ["quest 2989 description and reward text"]
+    },
+    {
+      "id": 47009,
+      "kind": "place",
+      "title": "Shindigger's Camp",
+      "triggers": [{ "area": "Shindigger's Camp" }, { "talk": 5634 }],
+      "body": [
+        "A brew camp in the hills east of Aerie Peak, set up by Rhapsody Shindigger after the Wildhammer let him go. No one could fly like Rhapsody, until he took to the liquor like a gryphon to the skies.",
+        "On his last mission he drank a whole keg of stout before the flight, fell off his gryphon over the Swamp of Sorrows, and plunged into the water above the sunken Temple of Atal'Hakkar. He swam out of a room full of trolls with a souvenir, and never told anyone."
+      ],
+      "sources": ["quests 1451, 1452, 1469 descriptions and reward texts"]
+    },
+    {
+      "id": 47030,
+      "kind": "person",
+      "title": "Sharpbeak",
+      "triggers": [{ "talk": 8023 }, { "accept": 2988 }, { "complete": 2994 }],
+      "body": [
+        "The son of Swiftwing and Keenclaw, Aerie Peak's mightiest gryphon pair, destined to lead the next generation of the Wildhammer's gryphons. He was taken while hunting with his parents.",
+        "The diviner Thadius Grimshade, a Wildhammer who left Aerie Peak to study darker things, followed the link from one of his feathers and saw him caged at the top of Jintha'Alor. When he was brought home, his parents fussed over him like new parents, and even old Talonaxe had mist in his eyes."
+      ],
+      "sources": ["quests 2988, 2990, 2993, 2994 descriptions and reward texts"]
+    },
+    {
+      "id": 47050,
+      "kind": "history",
+      "title": "The Amani and the Wildhammer",
+      "triggers": [{ "complete": 7844 }, { "complete": 9470 }, { "complete": 2880 }],
+      "body": [
+        "The Hinterlands were part of the great Amani empire of the forest trolls, which once ruled the north and warred with the high elves for millennia. When it fell, its tribes scattered; the Witherbark, Vilebranch and Revantusk are among its heirs. They still wait for Zul'jin, the great Amani war leader, to return.",
+        "After the War of the Three Hammers, the Wildhammer clan settled at Grim Batol and later moved to the Hinterlands' peaks. They have fought the trolls over these hills ever since, from the backs of their gryphons."
+      ],
+      "sources": ["quest 7844 description (if Zul'jin were here... Zul'jin has not yet returned)", "page text 1914 (War of the Three Hammers)", "pre-Cataclysm lore: the Amani Empire and the Wildhammer clan"]
+    }
+  ]
+}
