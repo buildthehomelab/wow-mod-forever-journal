@@ -35,7 +35,8 @@ CREATE TABLE IF NOT EXISTS `mod_forever_journal_collection_note` (
   PRIMARY KEY (`Kind`, `ID`, `Sort`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='mod-forever-journal: notes on where a collectible comes from';
 
-DELETE FROM `mod_forever_journal_toy`;
+-- Refresh only the built-in seed. Other modules own additional toy rows.
+DELETE FROM `mod_forever_journal_toy` WHERE `ItemID` IN (1973, 13379, 17712, 17716, 18660, 18984, 18986, 21540, 23767, 30542, 30544, 30690, 32542, 32566, 32782, 33079, 33219, 33223, 33927, 34480, 34499, 34686, 35227, 35275, 36862, 36863, 37254, 37460, 37710, 38301, 38578, 40727, 40768, 40895, 43499, 43824, 44430, 44606, 44719, 44820, 45011, 45013, 45014, 45015, 45016, 45017, 45018, 45019, 45020, 45021, 45057, 45063, 45984, 46709, 46780, 46843, 48933, 49703, 49704, 50471, 52201, 52253, 54212, 54343, 54437, 54438, 54452, 54651, 54653);
 INSERT INTO `mod_forever_journal_toy` (`ItemID`, `Comment`) VALUES
 (1973, 'Orb of Deception'),
 (13379, 'Piccolo of the Flaming Fire'),

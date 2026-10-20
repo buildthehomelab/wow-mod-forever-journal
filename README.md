@@ -589,3 +589,5 @@ Author: [buildthehomelab](https://github.com/buildthehomelab)
 ## License
 
 MIT, see [LICENSE](LICENSE).
+
+Custom toy rows added by other modules are preserved when the built-in toy seed is reapplied. Archaeology can register its new rare toys and acquisition notes without a Journal seed refresh deleting them.
