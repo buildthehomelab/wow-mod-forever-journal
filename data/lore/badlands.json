@@ -1,0 +1,171 @@
+{
+  "zone": 3,
+  "name": "Badlands",
+  "entries": [
+    {
+      "id": 3000,
+      "kind": "zone",
+      "title": "Badlands",
+      "triggers": [{ "areaId": 3 }],
+      "body": [
+        "A harsh red desert of mesas, dry canyons and bleached bones south of Loch Modan, filled with vicious predators and bold scavengers. Little grows here, and most travellers are just passing through on the way to the Searing Gorge.",
+        "What draws people is underground. At the Badlands' northern edge lies Uldaman, a titan vault the dwarves of the Explorers' League were excavating until Dark Iron dwarves of the Shadowforge clan fell on the dig. Ogres of the Dustbelcher clan camp in every valley, troggs crawl out of the earth, and in the east, Lethlor Ravine belongs to the black dragonflight."
+      ],
+      "sources": ["quest 705 description (harsh place, vicious predators and bold scavengers)", "quests 719, 721 descriptions", "quests 718, 733 descriptions", "quest 706, 793 descriptions"]
+    },
+    {
+      "id": 3001,
+      "kind": "place",
+      "title": "Kargath",
+      "triggers": [{ "area": "Kargath" }, { "talk": 1068 }, { "talk": 5394 }],
+      "body": [
+        "A Horde outpost built into the cliffs of the western Badlands, headquarters of the Kargath Expeditionary Force. Its orcs watch Blackrock Mountain to the west, where the renegade Blackrock clan and its black dragon allies still hold out.",
+        "It is a hard place, and its people like it that way. Crag coyotes creep in to steal the food, the outrunners carry reports to Stonard across hostile ground, and a blood elf advisor sent from Silvermoon was horrified to find a hovel full of sniggering savages where he expected a headquarters."
+      ],
+      "sources": ["quests 1419, 1420 descriptions", "quest 9439 description", "quest 793 reward text (towards Blackrock Spire)", "creature 9082 subname (Kargath Expeditionary Force)"]
+    },
+    {
+      "id": 3002,
+      "kind": "place",
+      "title": "Hammertoe's Digsite",
+      "triggers": [{ "area": "Hammertoe's Digsite" }, { "talk": 2910 }, { "accept": 719 }],
+      "body": [
+        "An Explorers' League excavation south of Uldaman, run by the dwarf Hammertoe Grez. Dark Iron dwarves of the Shadowforge clan attacked it without warning and killed nearly everyone there.",
+        "Prospector Ryedol escaped and camps to the south, planning how to get the supplies back, and above all his lucky pick. The dig's other survivors abandoned many wagons and crates as they fled, and the ogres of Camp Kosh have picked them over like vultures."
+      ],
+      "sources": ["quest 719 description", "quest 718 description"]
+    },
+    {
+      "id": 3003,
+      "kind": "place",
+      "title": "Uldaman",
+      "triggers": [{ "area": "Uldaman" }, { "accept": 721 }, { "accept": 709 }],
+      "body": [
+        "An ancient vault on the northern border of the Badlands, older than any dwarven work. Its stonework is titan-made, and the dwarves believe it may hold the secret of their own origins.",
+        "The Shadowforge are digging there for a different reason. They want the magic that made the vault's stone guardians, to build more powerful golems, and the strange power stones they pull from it. They took Hammertoe Grez into Uldaman alive to learn what he knew. Deep in its halls also lies the source of true indurium ore, a metal that shrugs off heat."
+      ],
+      "sources": ["quests 721, 723 descriptions", "quest 2418 description", "quests 1108, 1137 descriptions", "quest 709 description (a chest crafted before the works of any dwarf)"]
+    },
+    {
+      "id": 3004,
+      "kind": "place",
+      "title": "Angor Fortress",
+      "triggers": [{ "area": "Angor Fortress" }, { "kill": 2745 }, { "accept": 762 }],
+      "body": [
+        "A Dark Iron stronghold in the middle of the Badlands, base of the Shadowforge clan's operations in Uldaman. Prisoners are brought here to study what the diggers find; the goblin Rigglefuzz learned the secret of Uldaman's power stones in its cells, and was thrown out once he had told them.",
+        "The fortress is watched over by Ambassador Infernus, a fire elemental sent by Ragnaros himself to mind the Shadowforge. Ironforge's advisers decided that striking here was the surest way to slow the dig."
+      ],
+      "sources": ["quest 2418 description", "quests 762, 726 descriptions and reward texts", "quest 9439 description"]
+    },
+    {
+      "id": 3005,
+      "kind": "place",
+      "title": "Lethlor Ravine",
+      "triggers": [{ "area": "Lethlor Ravine" }, { "accept": 717 }, { "accept": 793 }],
+      "body": [
+        "A deep ravine in the far east of the Badlands, home to countless drakes of the black dragonflight. Black drake whelps nest there, and scorched guardian dragons patrol its edges.",
+        "Beneath it lies the prison of two of Deathwing's lieutenants, the black drakes Blacklash and Hematus. Their seal is held by three runestones set in the Pillars of Amethyst, Opal and Diamond, which only the Sign of the Earth can open. Both the Kirin Tor and the Horde concluded that the prison would not hold forever, and that the drakes must be freed so they could be killed."
+      ],
+      "sources": ["quests 717, 732, 782, 793 descriptions and reward texts", "quest 706 description", "quest 2203 description"]
+    },
+    {
+      "id": 3006,
+      "kind": "place",
+      "title": "The Ogre Camps",
+      "triggers": [{ "area": "Dustbelch Grotto" }, { "area": "Camp Boff" }, { "area": "Camp Kosh" }],
+      "body": [
+        "The Dustbelcher ogres hold camps across the Badlands: Camp Kosh, Camp Boff, Camp Cagg and Camp Wurg, and their main warren at Dustbelch Grotto to the west. They are well supplied with scrap metal, which makes the dwarves wonder whether the old stories of siege engines lost in the Badlands were true.",
+        "The ogres sell their strength to whoever pays. The Horde hired Boss Tho'grun of Camp Boff to fetch the Sign of the Earth for them; Tho'grun took it for himself instead."
+      ],
+      "sources": ["quests 718, 733 descriptions", "quests 782, 732 descriptions"]
+    },
+    {
+      "id": 3007,
+      "kind": "place",
+      "title": "Agmond's End",
+      "triggers": [{ "area": "Agmond's End" }, { "accept": 738 }, { "kill": 2945 }],
+      "body": [
+        "The southernmost dig site in the Badlands, a tiny operation past Angor Fortress, where Prospector Agmond led Ironforge's excavations until the reports stopped coming.",
+        "His bones were found picked clean. Blood smeared across the rock showed he had crawled some distance before he died, and beside his hand he had scratched a name in the sandstone: Murdaloc, a trogg of the Stonevault. Prospector Ironband preferred to believe Agmond took plenty of troggs with him."
+      ],
+      "sources": ["quest 738 description and reward text", "quest 739 description and reward text"]
+    },
+    {
+      "id": 3008,
+      "kind": "place",
+      "title": "Lotwil's Camp",
+      "triggers": [{ "talk": 2921 }, { "talk": 2920 }, { "accept": 710 }],
+      "body": [
+        "A small research camp in the Badlands where the gnome mage Lotwil Veriatus has stopped to build his shackles of elemental binding, which he believes will let mages summon far greater elementals. With him are his long-suffering assistant Lucien Tosselwrench and Servo, a mechanical servant who hopes one day to be a real boy.",
+        "The shackles were finished, and the first elemental they summoned got out of control. Lotwil is still not sure what went wrong. Lucien had seen it coming, and sensibly watched from behind cover."
+      ],
+      "sources": ["quests 710, 713, 714, 715, 734, 777, 778 descriptions and reward texts", "creature 2922 lines", "creature 2921 lines"]
+    },
+    {
+      "id": 3009,
+      "kind": "place",
+      "title": "Apocryphan's Rest",
+      "triggers": [{ "area": "Apocryphan's Rest" }, { "talk": 2785 }],
+      "body": [
+        "A lonely spot in the Badlands where Theldurin the Lost has made his camp. He is a dwarf who once belonged to a secret order, the people he fled, and he still knows their signs.",
+        "Theldurin is terrified of a doom approaching from below: beings he will not name for fear they will hear him. He collects every scrap of their lore he can, from ancient tablets in Uldaman to Yagyin's Digest, hoping to learn how to stop them, and he has helped put the elemental princess Myzrael back in her chains."
+      ],
+      "sources": ["quests 709, 727, 737 descriptions and reward texts", "quests 692, 656 descriptions", "creature 2785 lines"]
+    },
+    {
+      "id": 3030,
+      "kind": "person",
+      "title": "Hammertoe Grez",
+      "triggers": [{ "talk": 2909 }, { "accept": 721 }],
+      "body": [
+        "The Explorers' League excavator who led the dig at Uldaman. He was searching for the origins of the dwarves, and also trying to keep the Shadowforge from finding the magic they wanted for their golems.",
+        "The Dark Irons carried him into Uldaman and kept him alive to question him. He left a message scrawled in chalk on a map for Ryedol to find. He was found too late, badly hurt, and sent his amulet back to Ironforge with his last breath, so that it would not lead the Shadowforge to the scrolls he had been looking for."
+      ],
+      "sources": ["quests 720, 721, 722, 723 descriptions and reward texts", "creature 2909 lines"]
+    },
+    {
+      "id": 3031,
+      "kind": "person",
+      "title": "Garek",
+      "triggers": [{ "talk": 2888 }, { "accept": 732 }],
+      "body": [
+        "A quiet agent of the Kirin Tor, sent to the Badlands by his master Krasus to end the trouble brewing in Lethlor Ravine. He will not say much about his task, only that it is of vital importance.",
+        "Garek knows the history of the drakes' prison: the Sign of the Earth was made by the Dark Iron dwarves of Angor Fortress to bind Blacklash and Hematus. Once he had it back from the ogres, he asked for the prisoners to be destroyed, and returned to report to Krasus."
+      ],
+      "sources": ["quests 732, 717 descriptions and reward texts"]
+    },
+    {
+      "id": 3032,
+      "kind": "person",
+      "title": "Rigglefuzz",
+      "triggers": [{ "talk": 2817 }, { "accept": 2418 }],
+      "body": [
+        "A small goblin surviving the Badlands by being tricky. He keeps the wildlife away with flash bombs made from crushed blue pearls, and is known for his barbecued buzzard wings, which he will share the recipe for.",
+        "The Shadowforge once took him to Angor Fortress to study the power stones from Uldaman, and he worked out that they were steady sources of power if treated right. The dwarves threw him out once he told them, and now he wants the stones for himself."
+      ],
+      "sources": ["quests 705, 703, 2418 descriptions and reward texts", "creature 2817 lines"]
+    },
+    {
+      "id": 3050,
+      "kind": "history",
+      "title": "The Shadowforge and Uldaman",
+      "triggers": [{ "complete": 723 }, { "complete": 762 }, { "complete": 726 }],
+      "body": [
+        "The Dark Iron dwarves have been searching for ways to make stronger golems for a long time. When the Explorers' League began digging at Uldaman, the Shadowforge clan saw what the dwarves of Ironforge might find there and took the dig by force.",
+        "Their work is watched by an ambassador of Ragnaros, the Firelord the Dark Irons summoned long ago and now serve. Ironforge's historians feared how many artifacts the Shadowforge might turn against the city, and the king's adviser ordered the threat ended at Angor Fortress."
+      ],
+      "sources": ["quests 721, 724, 726, 762 descriptions and reward texts", "pre-Cataclysm lore: the Dark Iron dwarves and Ragnaros"]
+    },
+    {
+      "id": 3051,
+      "kind": "history",
+      "title": "Deathwing's Lieutenants",
+      "triggers": [{ "complete": 717 }, { "complete": 793 }, { "complete": 782 }],
+      "body": [
+        "During the Second War, the Horde fought beside Deathwing and his black dragons. Two of his lieutenants, the drakes Blacklash and Hematus, were afterwards imprisoned beneath Lethlor Ravine by the Dark Iron dwarves, sealed in with the Sign of the Earth.",
+        "The Horde of Thrall's day counts them as depraved allies of old, and sees their deaths as a way to restore the Horde's honour. The Kirin Tor simply wanted the danger gone. The black dragonflight is still allied with the renegade Blackrock orcs, and the Badlands sit between the two."
+      ],
+      "sources": ["quests 782, 793, 717, 732 descriptions and reward texts"]
+    }
+  ]
+}

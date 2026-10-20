@@ -1,0 +1,61 @@
+{
+  "zone": 25,
+  "name": "Blackrock Mountain",
+  "entries": [
+    {
+      "id": 25000,
+      "kind": "zone",
+      "title": "Blackrock Mountain",
+      "triggers": [{ "areaId": 25 }],
+      "body": [
+        "A great volcanic peak on the border of the Searing Gorge and the Burning Steppes, hollowed out and filled with fire. A chain-hung walkway crosses the burning chasm inside, between the works of two enemies.",
+        "The Dark Iron dwarves rule its depths from the city of Shadowforge, in the service of Ragnaros the Firelord. Above them, in the spire, the Blackrock orcs and the black dragon Nefarian have built their own stronghold. Both sides fight each other inside the mountain, and both send their armies out into the lands around it."
+      ],
+      "sources": ["quests 3906, 4262 descriptions", "quest 8961 description", "pre-Cataclysm lore: Blackrock Mountain, the Dark Iron dwarves and the Blackrock clan"]
+    },
+    {
+      "id": 25001,
+      "kind": "place",
+      "title": "The Blackrock Quarry",
+      "triggers": [{ "kill": 9026 }, { "accept": 3906 }, { "accept": 4262 }],
+      "body": [
+        "A quarry inside the mountain, reached through the Chasm of Flame, guarding the way down into Blackrock Depths. It is held by Overmaster Pyron, a lord of fire the Dark Irons summoned into the world.",
+        "The last five gnome mages who went snooping there came back extra crispy, or not at all. The Horde's shamans felt the disturbance from afar: a disharmony of flame threatening the land with eternal drought. And when Pyron fell, they found he was only a veil over a deeper corruption in the mountain's heart."
+      ],
+      "sources": ["quests 3906, 4262 descriptions and reward texts"]
+    },
+    {
+      "id": 25030,
+      "kind": "person",
+      "title": "Bodley",
+      "triggers": [{ "talk": 16033 }, { "accept": 8960 }, { "accept": 9032 }],
+      "body": [
+        "A member of a band of adventurers who stole the spirit amulet of Lord Valthalak, a sorcerer of Blackrock Spire, and broke it apart. The amulet held Valthalak's soul, and the curse it carried has hunted the band ever since.",
+        "Bodley went back to Blackrock Mountain to try to set it right and never came out. His ghost still lingers by the Spire, visible only through a goblin's ghost-revealing device. With help, he gathered the pieces and the means to summon Valthalak, so that the amulet could be returned and the spectral assassins called off his living friends."
+      ],
+      "sources": ["quests 8960, 9032 descriptions and reward texts", "quests 8961, 8994, 8996 descriptions and reward texts"]
+    },
+    {
+      "id": 25050,
+      "kind": "history",
+      "title": "The War of the Three Hammers",
+      "triggers": [{ "areaId": 25 }, { "complete": 3906 }],
+      "body": [
+        "Long ago the dwarves of Ironforge split into three clans: the Bronzebeards, the Wildhammers and the Dark Irons under the sorcerer-thane Thaurissan. When the Dark Irons lost the war for Ironforge, Thaurissan fled south and founded a city at Blackrock.",
+        "Seeking a power to win the war, Thaurissan summoned an elemental ally from the depths of the earth. What came was Ragnaros the Firelord. His arrival tore the land apart, created the Searing Gorge and the Burning Steppes, and enslaved the Dark Irons to his will. They have served him under the mountain ever since."
+      ],
+      "sources": ["page text 1914 (War of the Three Hammers)", "pre-Cataclysm lore: the summoning of Ragnaros"]
+    },
+    {
+      "id": 25051,
+      "kind": "history",
+      "title": "The Blackrock Clan",
+      "triggers": [{ "areaId": 25 }, { "complete": 8994 }],
+      "body": [
+        "During the Second War, the orcish Horde made Blackrock Spire its great citadel. When the Alliance broke the Horde, Anduin Lothar fell at the foot of the mountain, and Turalyon finished the siege. The orcs who escaped hid in the spire.",
+        "They are still there. The Blackrock clan has rebuilt its strength under Warchief Rend Blackhand, who rejected Thrall's new Horde, and they serve the black dragon Nefarian, son of Deathwing, who keeps his lair in the mountain's peak."
+      ],
+      "sources": ["page text 627 (Aftermath of the Second War)", "quest 8994 description (the orcs of Blackrock Spire)", "pre-Cataclysm lore: Rend Blackhand and Nefarian"]
+    }
+  ]
+}

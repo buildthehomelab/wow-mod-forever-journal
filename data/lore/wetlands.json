@@ -1,0 +1,160 @@
+{
+  "zone": 11,
+  "name": "Wetlands",
+  "entries": [
+    {
+      "id": 11000,
+      "kind": "zone",
+      "title": "Wetlands",
+      "triggers": [{ "areaId": 11 }],
+      "body": [
+        "A soggy county of fens, rivers and grey coast north of Loch Modan, the northern edge of the dwarven lands of Khaz Modan. Its one road links Ironforge's lands to the bridge of Thandol Span and the kingdoms of the north, and its harbour sends ships across the sea.",
+        "All of it is under pressure. Dark Iron dwarves blew up the Thandol Span and took Dun Modr, the Dragonmaw orcs have come down out of the hills around Grim Batol, murlocs and gnolls crowd the marshes, and the drowned ships of an old war lie just off the coast. The dwarves hold on, waiting for reserves from Ironforge that are slow to come."
+      ],
+      "sources": ["quests 455, 468 descriptions", "quests 472, 303, 631 descriptions", "quests 464, 279, 276 descriptions", "quest 288 description"]
+    },
+    {
+      "id": 11001,
+      "kind": "place",
+      "title": "Menethil Harbor",
+      "triggers": [{ "area": "Menethil Harbor" }, { "talk": 2104 }, { "talk": 1242 }],
+      "body": [
+        "The port of the Wetlands on its western coast, built by humans of Lordaeron and named for their royal house. Ironforge holds it now as its harbour and stronghold in the region. Ships sail from its docks to Auberdine and Theramore in Kalimdor, and lately to Valgarde in Northrend.",
+        "Captain Stoutfist sums up its state cheerfully: half the town is under the ocean, the keep is full of Dark Iron traitors, and he is laid up with a wound. The Merchant Marines pay for help against the murlocs, the tanner James Halloran ships his famous crocolisk leather around the world, and the Deepwater Tavern pours the best mead this side of Ironforge."
+      ],
+      "sources": ["quest 455 description (our port and stronghold in the Wetlands)", "creature 2104 gossip", "quests 279, 484 descriptions", "creature 1239 lines", "creatures 12658, 26546 gossip", "quest 1132 description"]
+    },
+    {
+      "id": 11002,
+      "kind": "place",
+      "title": "Dun Algaz",
+      "triggers": [{ "area": "Dun Algaz" }, { "accept": 455 }, { "talk": 2086 }],
+      "body": [
+        "The fortified pass through the mountains between Loch Modan and the Wetlands, the only road between Ironforge's lands and Menethil Harbor.",
+        "The Dragonmaw orcs have pushed into it. Normally they keep to the hills, and nobody knows what made them surge into the pass. If they hold it, Loch Modan is cut off from Menethil, and Menethil from any reinforcements."
+      ],
+      "sources": ["quest 455 description and reward text", "quest 465 description"]
+    },
+    {
+      "id": 11003,
+      "kind": "place",
+      "title": "Dun Modr and the Thandol Span",
+      "triggers": [{ "area": "Dun Modr" }, { "area": "Thandol Span" }, { "talk": 1071 }],
+      "body": [
+        "Dun Modr is the dwarven town at the northern end of the Wetlands, guarding the Thandol Span, the great bridge over the gorge to Arathi. The Span is Ironforge's major supply line to the north.",
+        "The Dark Iron dwarves laid waste to it in an ambush, destroying the western bridge, and took Dun Modr before its regiment could regroup. Longbraid the Grim, who lost his brother on the bridge, holds a camp outside the fallen town with the survivors, and Ironforge's reserves have not come."
+      ],
+      "sources": ["quests 472, 303, 304, 631, 633 descriptions and reward texts"]
+    },
+    {
+      "id": 11004,
+      "kind": "place",
+      "title": "Direforge Hill",
+      "triggers": [{ "area": "Direforge Hill" }, { "kill": 1364 }, { "accept": 304 }],
+      "body": [
+        "A hill in the south-east of the Wetlands where the Dark Iron dwarves camp. Their tunnelers, saboteurs and demolitionists work out of it.",
+        "Their leader in the Wetlands is the warlock Balgaras the Foul, who calls those who oppose him betrayers of Ragnaros and swears the Dark Irons will reclaim their rightful lands. The dwarves of Dun Modr call him a coward who sends his soldiers to do his work."
+      ],
+      "sources": ["quest 304 description", "quest 303 description", "creature 1364 lines"]
+    },
+    {
+      "id": 11005,
+      "kind": "place",
+      "title": "Whelgar's Excavation Site",
+      "triggers": [{ "area": "Whelgar's Excavation Site" }, { "talk": 1077 }, { "accept": 299 }],
+      "body": [
+        "An Explorers' League dig in the central Wetlands. The team was uncovering rare artifacts and large ancient bones when mottled raptors overran the site and killed many of the diggers.",
+        "Ormer Ironbraid saved Prospector Whelgar and Merrin Rockweaver and held them in shelter above the dig. Before the attack Whelgar had found a titan tablet, the Goaz Stone, which spoke of a divine plan and a doomed prophecy. Once its missing fragments were recovered, he could make out new words: Old Gods... Chained Beneath the Land."
+      ],
+      "sources": ["quests 294, 306, 296 descriptions and reward texts", "quest 299 description and reward text"]
+    },
+    {
+      "id": 11006,
+      "kind": "place",
+      "title": "The Lost Fleet",
+      "triggers": [{ "area": "The Lost Fleet" }, { "talk": 1239 }, { "kill": 1160 }],
+      "body": [
+        "The wrecks of the Third Fleet of Kul Tiras, burned and sunk off the northern coast by red dragons under the orcs' control during the Second War. With them sank the Flying Osprey, an elven destroyer carrying Lightforge iron.",
+        "The crew never left. Cursed sailors and marines walk the rotting hulls, held there by the power of something hidden aboard the Intrepid. Captain Halyndor still walks his ship, and his first mate, Fitzsimmons, the fleet's only survivor, drinks in Menethil and curses him for leading them to their doom."
+      ],
+      "sources": ["quests 288, 289, 290 descriptions", "quest 321 description", "creature 1239 lines"]
+    },
+    {
+      "id": 11007,
+      "kind": "place",
+      "title": "The Dragonmaw Encampments",
+      "triggers": [{ "area": "Angerfang Encampment" }, { "area": "Dragonmaw Gates" }, { "kill": 2091 }],
+      "body": [
+        "The Dragonmaw orcs' camps in the eastern hills of the Wetlands, below the gates of Grim Batol. What few Dragonmaw remained after the Second War fled here when the red dragons they had enslaved turned and hunted them.",
+        "They have regained their strength. Chieftain Nek'rosh, son of Nekros, built catapults to lay siege to Menethil Harbor while his clan held Dun Algaz to keep reinforcements out."
+      ],
+      "sources": ["quests 464, 465, 474 descriptions and reward texts"]
+    },
+    {
+      "id": 11008,
+      "kind": "place",
+      "title": "Grim Batol",
+      "triggers": [{ "area": "Grim Batol" }, { "kill": 12899 }],
+      "body": [
+        "An ancient fortress in the mountains of the eastern Wetlands, built by the Wildhammer dwarves and abandoned; some say it is cursed. During the Second War, the Dragonmaw clan made it their secret stronghold and held the Dragonqueen Alexstrasza captive there, breeding her children for war.",
+        "The queen is free now, but her red dragonflight has not forgotten. Dragonspawn, wyrmkin and scalebanes guard the mountain, and none who wander up to its gates come back unhurt."
+      ],
+      "sources": ["page text 2018 (The Battle of Grim Batol)", "quest 464 description", "creatures 1045-1050, 12899"]
+    },
+    {
+      "id": 11009,
+      "kind": "place",
+      "title": "Mosshide Fen",
+      "triggers": [{ "area": "Mosshide Fen" }, { "talk": 1244 }, { "accept": 276 }],
+      "body": [
+        "The fens of the southern Wetlands near the gate of Algaz. The Mosshide gnolls lived here peacefully for many years, until their numbers grew too large; now they trample the bushes and cut too much wood for their fires.",
+        "The marsh has a guardian of its own. Rethiel the Greenwarden, whom the people of Menethil think of as a beast that bites travellers in half, lurks east of the road among the crocolisks. He speaks for the roots and ferns, and asks only that the land be healed."
+      ],
+      "sources": ["quests 276, 277, 275 descriptions and reward texts", "quest 463 description and reward text"]
+    },
+    {
+      "id": 11010,
+      "kind": "place",
+      "title": "Ironbeard's Tomb",
+      "triggers": [{ "area": "Ironbeard's Tomb" }, { "accept": 470 }],
+      "body": [
+        "An old dwarven tomb in the north-east of the Wetlands, near Dun Modr. Sida of Menethil visits it every week.",
+        "Lately it has filled with dripping oozes, and one of them swallowed her bag whole when she threw it in panic."
+      ],
+      "sources": ["quest 470 description"]
+    },
+    {
+      "id": 11030,
+      "kind": "person",
+      "title": "Longbraid the Grim",
+      "triggers": [{ "talk": 1071 }, { "accept": 472 }],
+      "body": [
+        "The commander of the dwarven regiment that defended Dun Modr. When the Dark Irons struck after the ambush at the Thandol Span, he sounded the retreat, and most of his soldiers died anyway. His own brother perished when the western bridge was destroyed.",
+        "Longbraid holds on outside the fallen town with what is left, sending scouts and pleas for help: to Ironforge, and to the Alliance at Refuge Pointe in Arathi, whose own city of Stromgarde has fallen too."
+      ],
+      "sources": ["quests 472, 304, 631, 634 descriptions and reward texts"]
+    },
+    {
+      "id": 11050,
+      "kind": "history",
+      "title": "The Third Fleet of Kul Tiras",
+      "triggers": [{ "complete": 289 }, { "complete": 292 }, { "complete": 293 }],
+      "body": [
+        "During the Second War, Kul Tiras sent its Third Fleet north along this coast. Red dragons, enslaved by the Dragonmaw orcs, burned and sank it. Aboard the Intrepid, sealed in Captain Halyndor's strongbox, was an Eye of Paleth, one of the orbs human priests once made to shine light into dark places.",
+        "This one had seen a terrible tragedy, and its power turned. It held the souls of the drowned crew in their ships. Only the Cathedral of Light in Stormwind could cleanse it, and only then could Fitzsimmons' brothers rest."
+      ],
+      "sources": ["quests 288, 289, 290, 292, 293 descriptions and reward texts", "creature 1239 lines"]
+    },
+    {
+      "id": 11051,
+      "kind": "history",
+      "title": "The Dragonmaw",
+      "triggers": [{ "complete": 464 }, { "complete": 474 }, { "complete": 455 }],
+      "body": [
+        "The Dragonmaw clan joined the Horde's war under the warlock Nekros, who used the ancient Demon Soul to enslave Alexstrasza and her dragonflight at Grim Batol. Their dragons burned fleets and armies across the north.",
+        "When the dragons were freed, the clan was all but destroyed: the reds hunted their old masters fiercely. The survivors hid in the mountains east of Whelgar's dig. Under Nekros' son Nek'rosh they grew strong enough to threaten Menethil again, though without dragons they are not the threat they once were."
+      ],
+      "sources": ["quests 464, 474 descriptions and reward texts", "page text 2018 (The Battle of Grim Batol)"]
+    }
+  ]
+}

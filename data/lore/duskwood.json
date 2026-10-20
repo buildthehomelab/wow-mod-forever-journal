@@ -1,0 +1,226 @@
+{
+  "zone": 10,
+  "name": "Duskwood",
+  "entries": [
+    {
+      "id": 10000,
+      "kind": "zone",
+      "title": "Duskwood",
+      "triggers": [{ "areaId": 10 }],
+      "body": [
+        "A forest of black trees and perpetual twilight south of Elwynn, once the province of Brightwood and part of the kingdom of Stormwind. A taint crept through it after the Second War, and the woods have grown darker every year since. Darkness seems drawn inexorably to the place.",
+        "Undead rise from its cemeteries, worgen stalk its groves, ogres hold the southern hills, and the Dark Riders of Deadwind Pass come and go in the night. Stormwind withdrew its guards long ago. The town of Darkshire defends itself with its own Night Watch, and its people have grown used to living with ghost stories that turn out to be true."
+      ],
+      "sources": ["quests 173, 101 descriptions (darkness drawn to Duskwood, the mystical taint)", "quest 56 description (Stormwind has retracted their commissioned guards)", "quest 9429 description (a thorn in the side of the kingdom of Stormwind)", "quest 95 description"]
+    },
+    {
+      "id": 10001,
+      "kind": "place",
+      "title": "Darkshire",
+      "triggers": [{ "area": "Darkshire" }, { "talk": 264 }, { "talk": 263 }],
+      "body": [
+        "The last real town in Duskwood, in the east of the forest. Lord Ello Ebonlocke is its mayor, and his daughter-in-law Althea commands the Night Watch, the guard Darkshire raised for itself when Stormwind's soldiers left.",
+        "Life in Darkshire happens around the square: the Scarlet Raven Tavern, where Smitts pours zombie juice and knows all the local legends, the town hall, where Clerk Daltry keeps a registry of everyone who has ever lived here, and the house of Madame Eva, a seer whose premonitions the town has learned to take seriously. Even the draenei have sent an anchorite to help hold back the dark."
+      ],
+      "sources": ["quests 56, 66, 78, 79, 146 descriptions", "quest 9429 description and reward text", "quest 158 description"]
+    },
+    {
+      "id": 10002,
+      "kind": "place",
+      "title": "Raven Hill",
+      "triggers": [{ "area": "Raven Hill" }, { "talk": 288 }, { "accept": 163 }],
+      "body": [
+        "A ghost town in western Duskwood. Its houses stand empty, and the people of Darkshire swear they have seen shadows moving there at night and light in the windows.",
+        "The haunting turned out to be Jitters, a nervous, jittery man who has spent weeks hiding in the empty buildings eating grubs and weeds. He saw something terrible at the Yorgen farm and has been running from it ever since."
+      ],
+      "sources": ["quest 163 description and reward text", "quests 5, 453 descriptions and reward texts"]
+    },
+    {
+      "id": 10003,
+      "kind": "place",
+      "title": "Raven Hill Cemetery",
+      "triggers": [{ "area": "Raven Hill Cemetery" }, { "talk": 289 }, { "accept": 57 }],
+      "body": [
+        "The great graveyard of western Duskwood, below Raven Hill. Its dead do not stay buried: skeletal fiends and horrors walk the rows, rot blossoms grow inside their skulls, and the eastern mausoleum is full of plague spreaders.",
+        "An old hermit named Abercrombie lives in a shack overlooking it. He used to come into town for supplies, until the roads got too dangerous for a man his age. He has never been troubled by the ghouls. He says that just yesterday a pack of them was pounding on his walls."
+      ],
+      "sources": ["quests 57, 58, 156 descriptions", "quests 165, 133 descriptions and reward texts"]
+    },
+    {
+      "id": 10004,
+      "kind": "place",
+      "title": "Tranquil Gardens Cemetery",
+      "triggers": [{ "area": "Tranquil Gardens Cemetery" }, { "accept": 56 }, { "kill": 522 }],
+      "body": [
+        "A cemetery just south of Darkshire, a short walk from the town's gates. Skeletons rise among its graves, and the Night Watch hunts them there.",
+        "One weathered grave marker reads only MORGAN LADIMORE. The earth over it has been disturbed, and the thing that climbed out of it now wanders a strange and meandering path through the cemetery, calling itself Mor'Ladim."
+      ],
+      "sources": ["quest 56 description", "quests 225, 227, 228 descriptions and reward texts", "quest 177 description"]
+    },
+    {
+      "id": 10005,
+      "kind": "place",
+      "title": "Sven's Camp and the Yorgen Farmstead",
+      "triggers": [{ "area": "The Yorgen Farmstead" }, { "talk": 311 }, { "talk": 893 }],
+      "body": [
+        "Sven Yorgen once worked a farm in the south-east of Duskwood. One night, while he was away, Dark Riders from Deadwind Pass descended on it and slaughtered his family. When he returned, he saw a shadowy figure burying something behind the old stump by his barn.",
+        "Sven now keeps a camp on the forest's western border with his companion Lars, hunting their own food among the dire wolves and preparing to fight the necromancer who rides with the Riders. Darkshire calls him a man who does the work of the Light, and the Carevins send him supplies when they can."
+      ],
+      "sources": ["quest 95 description", "quests 164, 226 descriptions and reward texts"]
+    },
+    {
+      "id": 10006,
+      "kind": "place",
+      "title": "Forlorn Rowe",
+      "triggers": [{ "area": "Forlorn Rowe" }, { "kill": 1200 }, { "accept": 55 }],
+      "body": [
+        "A house on the hill east of the Raven Hill cemetery, overlooking it. It is the lair of the necromancer Morbent Fel.",
+        "Morbent Fel is an ally of the Dark Riders, and the skeletal raiders, healers and warders around the cemetery are his. He has cast dark enchantments about himself that protect him from any ordinary weapon."
+      ],
+      "sources": ["quests 55, 268, 323, 269 descriptions and reward texts"]
+    },
+    {
+      "id": 10007,
+      "kind": "place",
+      "title": "Manor Mistmantle",
+      "triggers": [{ "area": "Manor Mistmantle" }, { "kill": 315 }, { "accept": 98 }],
+      "body": [
+        "A cottage just north of Darkshire, home to a man the town knew only as a crazy hermit in the woods. Commander Ebonlocke had had her eye on him for a long time.",
+        "His name was Stalvan Mistmantle, and the town registry remembered him. Years ago visiting nobles were slaughtered in the woods; pages found at the scene were never matched to anyone. A trail of letters and journal pages, from Moonbrook to Goldshire to Stormwind's Canal District, finally proved the handwriting was his."
+      ],
+      "sources": ["quests 66, 67, 79, 80, 98 descriptions and reward texts"]
+    },
+    {
+      "id": 10008,
+      "kind": "place",
+      "title": "Addle's Stead",
+      "triggers": [{ "area": "Addle's Stead" }, { "talk": 302 }, { "accept": 149 }],
+      "body": [
+        "An old farmhouse in the hills south of Darkshire, haunted by the ghost of Blind Mary. She was once known around these parts for always carrying a looking glass.",
+        "After the incident that made her what she is, she threw the glass away behind the barn. She still asks for a mirror when someone combs her hair, and still screams when she remembers why she cannot look in one."
+      ],
+      "sources": ["quests 149, 154 descriptions", "quests 175, 177 descriptions and reward texts"]
+    },
+    {
+      "id": 10009,
+      "kind": "place",
+      "title": "Brightwood Grove and the Rotting Orchard",
+      "triggers": [{ "area": "Brightwood Grove" }, { "area": "The Rotting Orchard" }, { "accept": 173 }],
+      "body": [
+        "Brightwood Grove takes its name from the province's old name. It is not bright now: worgen of the Nightbane pack have made it their home, and the Rotting Orchard south-west of Darkshire has been overrun by them too.",
+        "Nobody knows where they came from. They seemed to appear out of thin air, and however many are killed, more spring up to fill their ranks. Shadow weavers, dark runners, vile fangs and tainted ones stalk the forest, and the strongest have settled in the caves and the mine to the south, where their bonfires can be seen from far away."
+      ],
+      "sources": ["quests 173, 221, 222 descriptions and reward texts"]
+    },
+    {
+      "id": 10010,
+      "kind": "place",
+      "title": "Vul'Gol Ogre Mound",
+      "triggers": [{ "area": "Vul'Gol Ogre Mound" }, { "kill": 300 }, { "accept": 134 }],
+      "body": [
+        "A great mound in southern Duskwood, home to the Splinter Fist ogres. They raid as far as the cemeteries; once they chased the hermit Abercrombie away from his herb-picking and carried off his crate.",
+        "Their leader Zzarc'Vul wears a monocle large enough to serve as the lens of a telescope, which made him the target of Darkshire's astronomer, Viktori Prism'Antras."
+      ],
+      "sources": ["quest 134 description", "quest 181 description"]
+    },
+    {
+      "id": 10011,
+      "kind": "place",
+      "title": "Twilight Grove",
+      "triggers": [{ "area": "Twilight Grove" }, { "area": "The World Tree" }, { "kill": 14890 }],
+      "body": [
+        "A grove in the centre of Duskwood, around a huge, ancient tree. It holds one of the great portals to the Emerald Dream.",
+        "Something has come through it. The green dragon Taerar, once a guardian of the Dream, now raves that peace is a fleeting dream and that the nightmare will reign, and releases his children of madness upon the world. Sometimes it is one of his kin instead: Ysondre, Lethon or Emeriss."
+      ],
+      "sources": ["creature 14890 lines", "pre-Cataclysm lore: the Emerald Dream portals and the corrupted dragons of Ysera"]
+    },
+    {
+      "id": 10012,
+      "kind": "place",
+      "title": "Beggar's Haunt",
+      "triggers": [{ "area": "Beggar's Haunt" }, { "talk": 5418 }, { "accept": 1372 }],
+      "body": [
+        "A ruined house in the north-west of Duskwood, where a small expeditionary force of the Forsaken camps in secret. They were sent by Varimathras to survey the southern lands.",
+        "Deathstalker Zraedus and Apothecary Faustin of the Royal Apothecary Society work there. When a human infiltrator was caught spying on the camp and taken to Stonard, they offered the orcs a truth serum to help with the questioning. They made very sure the orcs never saw the camp."
+      ],
+      "sources": ["quests 1372, 1383, 1388, 1391 descriptions and reward texts"]
+    },
+    {
+      "id": 10030,
+      "kind": "person",
+      "title": "Commander Althea Ebonlocke",
+      "triggers": [{ "talk": 264 }, { "accept": 56 }],
+      "body": [
+        "The leader of the Night Watch. With Stormwind's guards gone, it is her sworn duty to keep the people of Darkshire safe, and she never has enough Watchers to do it.",
+        "Ebonlocke handles the town's worst troubles personally, from the undead Mor'Ladim to the madman Stalvan Mistmantle, whom she suspected long before she could prove anything. She keeps a few hard truths to herself until it is time to tell them."
+      ],
+      "sources": ["quests 56, 57, 58 descriptions and reward texts", "quests 227, 229, 80, 98 descriptions"]
+    },
+    {
+      "id": 10031,
+      "kind": "person",
+      "title": "Madame Eva",
+      "triggers": [{ "talk": 265 }, { "accept": 66 }],
+      "body": [
+        "A seer who lives on the Darkshire square, and who reads the cards, the winds and the impressions left on things by those who touched them. She makes thread from ghost hair, with a thousand uses, from binding spirits to sewing life into inanimate things.",
+        "It was her premonition that started the hunt for Stalvan. She felt her granddaughter Alyssa was in danger, consulted the cards, and saw Death. A name came to her in a trance, and it led to the truth."
+      ],
+      "sources": ["quests 66, 98 descriptions and reward texts", "quests 101, 149, 157, 262 descriptions and reward texts"]
+    },
+    {
+      "id": 10032,
+      "kind": "person",
+      "title": "Abercrombie the Hermit",
+      "triggers": [{ "talk": 289 }, { "accept": 165 }],
+      "body": [
+        "A frail old man who lives out by the Raven Hill cemetery and asks passers-by for small favours: some ghost hair thread, a bottle of zombie juice, ribs from ghouls for a scarecrow, a crate of tools left near the ogre mound. He once nearly thanked \"the Nec-\" before catching himself.",
+        "He then sent a friendly note to the mayor in an ancient script. Translated, it revealed that every favour had gone into the making of something unspeakable, and that it was already lumbering towards Darkshire. Abercrombie was the Embalmer of the children's story, and the thing he made was called Stitches."
+      ],
+      "sources": ["quests 165, 148, 158, 133, 134, 160 descriptions and reward texts", "quests 251, 252, 401 descriptions and reward texts", "creature 412 (Stitches, Gift from the Embalmer)"]
+    },
+    {
+      "id": 10033,
+      "kind": "person",
+      "title": "Morgan Ladimore",
+      "triggers": [{ "kill": 522 }, { "talk": 576 }, { "accept": 225 }],
+      "body": [
+        "A noble and good man of Darkshire who went away to war. Darkshire's historian knew him well before he left; his story afterwards was long and sorrowful, and he came to believe his whole family was dead.",
+        "He rose from his grave as Mor'Ladim. His daughter Sarah survived, and became a Watcher; she wished she had spoken to him before the end. Once Mor'Ladim was laid to rest, she sent her ring to his grave, and a ghostly voice on the wind gave up his sword, Archeus, to carry on the Light he felt unworthy of."
+      ],
+      "sources": ["quests 225, 227, 228, 229, 231 descriptions and reward texts"]
+    },
+    {
+      "id": 10034,
+      "kind": "person",
+      "title": "Jonathan Carevin",
+      "triggers": [{ "talk": 661 }, { "talk": 663 }, { "accept": 223 }],
+      "body": [
+        "The head of the Carevin family of Darkshire, who has made the expulsion of evil and heresy his life's work. He fights demons and the undead, and refuses to sit and wait as the Night Watch does.",
+        "His followers are few and hand-picked. His ranger Calor, who joined after growing disillusioned with the Watch's complacency, tests newcomers against the worgen, and hopes that with a few more like them they will one day outnumber the Watch."
+      ],
+      "sources": ["quests 173, 222, 223 descriptions and reward texts", "quest 164 description"]
+    },
+    {
+      "id": 10050,
+      "kind": "history",
+      "title": "The Dark Riders",
+      "triggers": [{ "complete": 230 }, { "complete": 268 }, { "complete": 55 }],
+      "body": [
+        "Horsemen out of Deadwind Pass who descend on Duskwood's farms by night. They slaughtered Sven Yorgen's family, and the only witness, a stranger who had come to Duskwood and bought a journal in Darkshire, fled and hid for weeks in Raven Hill.",
+        "Jitters' journal set Sven against the Riders and their ally, the necromancer Morbent Fel. Bishop Farthing of Stormwind thought the quest worth helping, though Stormwind had forsaken Darkshire, and a blessed weapon forged from Lightforge iron from the sunken Third Fleet of Kul Tiras broke the necromancer's protections. Morbent Fel died. The Riders are still out there."
+      ],
+      "sources": ["quests 95, 230, 268, 269, 270, 325, 55 descriptions and reward texts"]
+    },
+    {
+      "id": 10051,
+      "kind": "history",
+      "title": "The Embalmer",
+      "triggers": [{ "complete": 252 }, { "complete": 253 }, { "accept": 253 }],
+      "body": [
+        "Darkshire's children grow up on the story of the Embalmer: a kindly alchemist driven mad by the death of his wife, Eliza. To restore her he used dark magic to place his own heart in her breast. She came back to life, cursed with a hunger for human flesh, and he had to keep her buried.",
+        "Her tombstone still reads: Beloved wife, may the earth sate your hunger. The Embalmer's heart is his power, and Lord Ebonlocke believes that while it beats in his bride, he cannot be stopped. Taken out of her grave, it becomes a ward over Darkshire instead."
+      ],
+      "sources": ["quest 253 description and reward text", "quest 254 reward text", "page text 731 (Eliza's Tombstone)"]
+    }
+  ]
+}

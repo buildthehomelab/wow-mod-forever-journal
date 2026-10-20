@@ -1,0 +1,127 @@
+{
+  "zone": 4,
+  "name": "Blasted Lands",
+  "entries": [
+    {
+      "id": 4000,
+      "kind": "zone",
+      "title": "Blasted Lands",
+      "triggers": [{ "areaId": 4 }],
+      "body": [
+        "A scorched red wasteland at the southern tip of the Eastern Kingdoms, below the Swamp of Sorrows. This is where the Dark Portal stands, the gate through which the orcish Horde first came to Azeroth, and the land around it has never recovered.",
+        "Little lives here that is not tough or vicious: redstone basilisks, ash-mane boars and helboars, snickerfang hyenas, and vultures that feed on the corpses of fallen explorers. Ogres of the Dreadmaul clan hold the north, and the demons who never left after the Horde's coming still rule the high places. For twenty years the Portal stood silent. It is silent no longer."
+      ],
+      "sources": ["quests 2583, 2601, 2603 descriptions", "quests 10119, 9407 descriptions", "creature 16841 gossip"]
+    },
+    {
+      "id": 4001,
+      "kind": "place",
+      "title": "The Dark Portal",
+      "triggers": [{ "area": "The Dark Portal" }, { "talk": 16841 }, { "talk": 19254 }],
+      "body": [
+        "The great stone gate at the heart of the Blasted Lands, built to let the Horde through from Draenor. After the Second War it was closed, and for years it loomed silent, a monument to a war many hoped was over.",
+        "Not long ago it opened again, and a wave of demons surged out of it. The defenders of Nethergarde and the Argent Dawn held the line until the kingdoms of Azeroth came to their aid and pushed the demons back. Then the Alliance and the Horde marched through the portal themselves. The fighting now rages on the other side, in Outland, and the camps at the foot of the portal send fresh soldiers through every day."
+      ],
+      "sources": ["creature 16841 gossip", "creature 19254 gossip", "quests 10119, 9407 descriptions and reward texts", "quest 10259 description"]
+    },
+    {
+      "id": 4002,
+      "kind": "place",
+      "title": "Nethergarde Keep",
+      "triggers": [{ "area": "Nethergarde Keep" }, { "talk": 7505 }, { "talk": 7826 }],
+      "body": [
+        "An Alliance fortress in the north-east of the Blasted Lands, built to keep watch on the Dark Portal. Its garrison and mages were the first line of defence when the demons came through.",
+        "Its bloodmages believe that the energy released when the Dark Portal opened soaked into the wasteland's animals and forced them to evolve into what they are now. They study those beasts: the jaws of snickerfang hyenas that snap through thorium, the near-immortal stamina of the helboars, the cunning of the basilisks. They brew remarkable elixirs from what they learn, and warn their test subjects not to grow too fond of them."
+      ],
+      "sources": ["creature 16841 gossip (We of Nethergarde)", "quests 2581, 2583, 2585, 2601, 2603 descriptions and reward texts", "quest 2584 description"]
+    },
+    {
+      "id": 4003,
+      "kind": "place",
+      "title": "The Tainted Scar",
+      "triggers": [{ "area": "The Tainted Scar" }, { "talk": 7363 }],
+      "body": [
+        "A blighted valley in the west of the Blasted Lands, the most tortured ground in a tortured land. Demons stalk it openly.",
+        "Draenethyst crystals turn up here, and among them, very rarely, a flawless sphere. Kum'isha the Collector, a draenei far from home, hopes that with enough of them he can open a rift back to his homeland. His first attempt failed. He keeps trying, and keeps paying for even the imperfect fragments, while making very clear what he thinks of the people who bring them."
+      ],
+      "sources": ["quests 2521, 2522, 3501, 3502 descriptions and reward texts"]
+    },
+    {
+      "id": 4004,
+      "kind": "place",
+      "title": "Dreadmaul Hold",
+      "triggers": [{ "area": "Dreadmaul Hold" }, { "area": "Dreadmaul Post" }, { "area": "Altar of Storms" }],
+      "body": [
+        "The fortress of the Dreadmaul ogres in the north-west of the Blasted Lands, near the pass to the Swamp of Sorrows. Their warlocks and maulers hold the ground around it and the old ritual site of the Altar of Storms.",
+        "The Dreadmaul were part of the Horde that came through the Dark Portal, and stayed when it closed. They have no love for anyone who wanders into their land, orc or human."
+      ],
+      "sources": ["creatures 5977, 5978", "pre-Cataclysm lore: the ogres of the Blasted Lands"]
+    },
+    {
+      "id": 4005,
+      "kind": "place",
+      "title": "Rise of the Defiler",
+      "triggers": [{ "area": "Rise of the Defiler" }, { "kill": 7664 }, { "accept": 3628 }],
+      "body": [
+        "The highest mountain in the Blasted Lands, where the demon lord Razelikh the Defiler keeps his lair. It cannot be climbed; the only way up is through teleport runes near its foot, which answer only to someone carrying Razelikh's own amulet.",
+        "At the top stands the Altar of the Defiler. From there Razelikh rules the wasteland as its demonic overlord."
+      ],
+      "sources": ["quest 3628 description and reward text"]
+    },
+    {
+      "id": 4030,
+      "kind": "person",
+      "title": "The Fallen Hero of the Horde",
+      "triggers": [{ "talk": 7572 }, { "accept": 2784 }, { "accept": 2783 }],
+      "body": [
+        "The ghost of Commander Trebor, an orc officer who stands at the border of the Blasted Lands and the swamp, waiting for orders. He led a regiment of the Horde called Thrall's Grasp into the wasteland without them, and every man under him was destroyed.",
+        "He blames himself for all of it. Trebor and his lieutenant Kirith were taken and tortured by the warlock Allistarj, and his soldiers' souls were bound in stones to serve the demons. He cannot act as a spirit, so he asks the living for help: to free his men, and to bring down the demon who took them. He accepts it from the Alliance too, and is amazed to see them fight beside the Horde."
+      ],
+      "sources": ["quests 2784, 2621, 2801, 2681 descriptions and reward texts", "quests 2721, 2783 descriptions and reward texts", "creature 7668 lines (Give my regards to Commander Trebor)"]
+    },
+    {
+      "id": 4031,
+      "kind": "person",
+      "title": "Razelikh the Defiler",
+      "triggers": [{ "kill": 7664 }, { "accept": 3627 }, { "complete": 2743 }],
+      "body": [
+        "The arch demon who rules the Blasted Lands. He is protected by a triad of servants, Grol the Destroyer, Lady Sevine and Archmage Allistarj, to whom he granted nearly unlimited power within the wasteland in return for their service.",
+        "Each of the three wears a third of an amulet of his making, attuned to their life force, which makes them immortal for as long as they stay in the Blasted Lands. Together, the three pieces form the key needed to summon Razelikh himself. Only weapons forged from fel-touched azsharite, prepared by the demon hunter Loramus Thalipedes in Azshara, can weaken the triad enough to kill them."
+      ],
+      "sources": ["quests 2743, 2744, 3627, 3628 descriptions and reward texts"]
+    },
+    {
+      "id": 4032,
+      "kind": "person",
+      "title": "Lieutenant Kirith",
+      "triggers": [{ "talk": 7729 }, { "accept": 2721 }],
+      "body": [
+        "Commander Trebor's lieutenant, imprisoned with him in Allistarj's cave. Trebor could hear the screams of his experiments from his cage. Kirith's will gave way under the torture, and he was not seen again.",
+        "What is left of him still knows the demon's secrets. His spirit told of the triad of power that protects Razelikh, and of the amulet they share, and sent word back to Trebor that it had not been his fault."
+      ],
+      "sources": ["quests 2721, 2743 descriptions", "creature 7668 lines"]
+    },
+    {
+      "id": 4050,
+      "kind": "history",
+      "title": "Thrall's Grasp",
+      "triggers": [{ "complete": 2621 }, { "complete": 2681 }, { "complete": 3628 }],
+      "body": [
+        "A Horde battalion sent into the Blasted Lands, and one of the Horde's best. Its commander, Trebor, chose not to wait for his orders, which might have warned him of what waited in the wasteland or sent him somewhere else. The battalion was destroyed, and its soldiers' souls were bound to stones of binding in service to Razelikh and his triad.",
+        "Years later the freed souls still asked that word reach Thrall, and that their commander be told it was not his fault. When the Defiler finally fell, Trebor asked that his severed horn be shown to all, as proof that heroes still exist in a war-torn world."
+      ],
+      "sources": ["quest 2621 description and reward text", "quest 2681 description and reward text", "creatures 7668, 7670 lines", "quest 3628 description and reward text"]
+    },
+    {
+      "id": 4051,
+      "kind": "history",
+      "title": "The Second Opening",
+      "triggers": [{ "complete": 10259 }, { "accept": 10119 }, { "accept": 9407 }],
+      "body": [
+        "The Dark Portal fell silent at the end of the Second War, when the orcish Horde's last foothold collapsed. For twenty years it stood as a memorial to that war.",
+        "Then the Burning Legion's armies poured through it. Nethergarde and the Argent Dawn fought a desperate battle at its foot, and both the Alliance and the Horde answered the call. Having stopped the assault on this side, their forces went through to meet the demons on their own ground. On the far side, the Expeditionary Forces built Honor Hold and Thrallmar, and the Legion is trying to cut them off from home."
+      ],
+      "sources": ["quests 10119, 9407 descriptions and reward texts", "quest 10259 description", "creature 16841 gossip"]
+    }
+  ]
+}
