@@ -5,57 +5,56 @@
     {
       "id": 36000,
       "kind": "zone",
-      "title": "Alterac Mountains",
+      "title": "The Alterac Mountains",
       "triggers": [{ "areaId": 36 }],
       "body": [
-        "Snowy mountains north of Hillsbrad and west of the Plaguelands, once the human kingdom of Alterac. Its king, Aiden Perenolde, betrayed the Alliance to the Horde in the Second War, and the kingdom was broken for it. Its capital is a ruin full of ogres.",
-        "Alterac's surviving nobles did not go quietly. They lead the Syndicate, a band of thieves and assassins operating out of the ruined towns of the foothills. Above them lie the empty crater where Dalaran once stood, the hidden manor of the Assassin's League, and the frozen valley where Stormpike dwarves and Frostwolf orcs fight their own war."
+        "A range of towering, snow-capped peaks in central Lordaeron, home of yetis and mountain lions, and once of the human kingdom of Alterac. Its towns are ruins now: Crushridge ogres hold the old capital, the Syndicate holds the farmlands, and in the hidden valley to the south the Frostwolf orcs and the Stormpike dwarves fight over who struck first.",
+        "Long ago the Alteraci tribe lived on these slopes and joined Arathor after their leader Ignaeus lost a duel to King Thoradin. Arathor's generals built Alterac Fortress at the foot of the mountains during the Troll Wars, and the last and greatest battle of that war, between the Amani and the armies of men and elves, was fought below it."
       ],
-      "sources": ["quests 505, 512, 523 descriptions", "quest 500 description", "quest 602 description (Dalaran moved to Northrend, leaving a crater)", "pre-Cataclysm lore: Aiden Perenolde's betrayal"]
+      "sources": ["warcraft.wiki.gg: Alterac Mountains (introduction, Troll Wars, World of Warcraft, Geography)"]
     },
     {
       "id": 36001,
       "kind": "place",
       "title": "Strahnbrad",
-      "triggers": [{ "area": "Strahnbrad" }, { "kill": 2306 }, { "accept": 512 }],
+      "triggers": [{ "area": "Strahnbrad" }, { "kill": 2306 }],
       "body": [
-        "A ruined town in the Alterac foothills that the Syndicate uses as its headquarters. Former nobles of Alterac run the gang, and some hide among their own footpads and thieves, given away only by the signet rings they still wear.",
-        "One of them is Baron Vardus, known for a cold heart and brutal practices. His seal was on the contract for the murder of Southshore's magistrate, and the Syndicate keeps prisoners here, including an orc held in chains."
+        "A ghost town in the north-eastern foothills near the Plaguelands, part of Alterac until Lordaeron annexed it after the Second War. It is said a fire elemental was bound long ago to its forge, whose bellows still work when no one is looking.",
+        "Just before the Third War, Blackrock orcs raided the town, taking slaves to sacrifice to the Burning Legion. Uther sent the young Prince Arthas to defend it; he arrived after the attack had begun, rallied the survivors, and drove the orcs off, but much of the town was already dead. After Lordaeron fell, the Syndicate took it."
       ],
-      "sources": ["quests 512, 522, 523 descriptions", "creature 2316 lines"]
+      "sources": ["warcraft.wiki.gg: Strahnbrad (introduction, History, Third War)"]
     },
     {
       "id": 36002,
       "kind": "place",
       "title": "The Syndicate Camps",
-      "triggers": [{ "area": "Sofera's Naze" }, { "area": "Corrahn's Dagger" }, { "accept": 505 }],
+      "triggers": [{ "area": "Sofera's Naze" }, { "area": "Corrahn's Dagger" }, { "area": "Dandred's Fold" }],
       "body": [
-        "Camps in the foothills north and west of Tarren Mill, at Sofera's Naze and Corrahn's Dagger, where Syndicate footpads and thieves gather.",
-        "Papers left on a table there spoke of an important mission against Southshore and asked urgently for masks, oil and poison. An encrypted letter among them was not written by any thief or noble of Alterac at all."
+        "The Syndicate is a criminal organisation led by the villainous nobles of fallen Alterac, its members masked in the kingdom's orange. It holds camps on the hills above Hillsbrad and in the mountains, and is the enemy of the Alliance, especially Stromgarde, of the Horde, and of the rogues of Ravenholdt.",
+        "At Dandred's Fold, a manor on the shore of Lordamere Lake, its leader, Lord Aliden Perenolde, keeps his mistress Elysa."
       ],
-      "sources": ["quests 505, 510, 511, 525 descriptions and reward texts"]
+      "sources": ["warcraft.wiki.gg: Syndicate (introduction)", "warcraft.wiki.gg: Corrahn's Dagger", "warcraft.wiki.gg: Dandred's Fold"]
     },
     {
       "id": 36003,
       "kind": "place",
       "title": "The Uplands",
-      "triggers": [{ "area": "The Uplands" }, { "kill": 2320 }, { "accept": 537 }],
+      "triggers": [{ "area": "The Uplands" }, { "kill": 2320 }],
       "body": [
-        "The valley north of Strahnbrad, where the Syndicate is strongest, and where Lord Aliden Perenolde, son of Alterac's traitor king, keeps his manor.",
-        "Strange allies have come to the Syndicate here: shadow mages of the Argus Wake, led by an envoy called Nagaz. Nagaz was only a servant of another. Southshore's magistrate fears the Argus Wake runs deep through Azeroth, perhaps further."
+        "The rolling hills of the north-east were the breadbasket of Alterac. Since the kingdom fell, the Syndicate has taken them over, and this is where it is strongest."
       ],
-      "sources": ["quests 537, 523 descriptions and reward texts", "creature 2423", "pre-Cataclysm lore: Aliden Perenolde"]
+      "sources": ["warcraft.wiki.gg: Uplands"]
     },
     {
       "id": 36004,
       "kind": "place",
       "title": "The Ruins of Alterac",
-      "triggers": [{ "area": "Ruins of Alterac" }, { "area": "Crushridge Hold" }, { "accept": 504 }],
+      "triggers": [{ "area": "Ruins of Alterac" }, { "area": "Crushridge Hold" }, { "area": "Gallows' Corner" }],
       "body": [
-        "The ruined capital of Alterac, high in the mountains. Crushridge ogres have dug a mound nearby and taken over the city itself, and they are not known for their cleanliness.",
-        "The marshal of Southshore worries that if the ogres feel safe up there, their next step will be down into the foothills, right to his front door."
+        "Alterac City, the old capital, was founded after the Troll Wars as a city-state of Arathor on the trade routes through the mountains. Its army became one of the empire's strongest, and Alteraci explorers helped open relations with the dwarves of Ironforge. When Arathor broke apart, it became a kingdom of its own.",
+        "After the Second War, the Alliance besieged it for its treason and placed it under martial law. The Crushridge ogres of the warlord Mug'thol hold its ruins now, and dispute the mountains with the Syndicate."
       ],
-      "sources": ["quests 500, 504 descriptions and reward texts"]
+      "sources": ["warcraft.wiki.gg: Ruins of Alterac (introduction, Early history)", "warcraft.wiki.gg: Alterac (kingdom) (Early history)"]
     },
     {
       "id": 36005,
@@ -63,10 +62,10 @@
       "title": "Dalaran Crater",
       "triggers": [{ "area": "Dalaran Crater" }, { "talk": 2543 }, { "talk": 18165 }],
       "body": [
-        "The site of the city of Dalaran, on the shore of Lordamere Lake. Archimonde destroyed it in the Third War. The Kirin Tor rebuilt it, and lately they have lifted the whole city and moved it to Northrend, leaving behind a massive crater and a shimmering violet dome.",
-        "Some mages stayed. Archmage Ansirem Runeweaver, who once wrote a tome on the legends of the Gurubashi, still studies here, and Archmage Cedric warns visitors not to be fooled by the ruins: Dalaran is as powerful as ever. Rogue summoners with their elemental slaves wander the crater's edge."
+        "The city of the Kirin Tor stood here on the shore of Lordamere Lake. In the Third War, Kel'Thuzad summoned Archimonde nearby, and the demon destroyed it with a single spell. After the war it became a battlefield between night elves, blood elves, the Scourge and Illidan's naga, and Illidan used Kel'Thuzad's rift to open a way to Outland.",
+        "The wizards rebuilt their city inside a great violet dome, guarded by their stone elementals. Then they lifted the whole of Dalaran into the sky and flew it to Northrend to fight the Lich King, leaving behind a vast crater and the faint haze of their shield."
       ],
-      "sources": ["quests 602, 603 descriptions and reward texts", "creature 18165 gossip", "creatures 2358, 2359", "pre-Cataclysm lore: Archimonde's destruction of Dalaran"]
+      "sources": ["warcraft.wiki.gg: Dalaran Crater (History, Wrath of the Lich King)", "warcraft.wiki.gg: Alterac Mountains (Third War)"]
     },
     {
       "id": 36006,
@@ -74,10 +73,10 @@
       "title": "Ravenholdt Manor",
       "triggers": [{ "area": "Ravenholdt Manor" }, { "talk": 6768 }, { "talk": 6707 }],
       "body": [
-        "A manor hidden in the forested hills of northern Alterac, home of the Assassin's League. It is ruled by Lord Jorach Ravenholdt, and the master rogue Fahrad trains there.",
-        "Strangers are not welcome. Ravenholdt's assassins ask any who blunder in how they dare set foot inside, and the guards greet the cunning ones who have earned their trust by name."
+        "A manor hidden in the mountains above Hillsbrad, reached by a winding path and a hidden cave. It belonged to Alterac before the First War, as the orange of its roof still shows. Now it is the home of Lord Jorach Ravenholdt and his guild of thieves and assassins, and outsiders are not welcome.",
+        "Years ago, Ravenholdt accepted the help of Stormwind's SI:7 to drive the Syndicate out of these hills, and ran the campaign from the manor."
       ],
-      "sources": ["creatures 6766, 6768, 6771 gossip", "creature 6707 gossip"]
+      "sources": ["warcraft.wiki.gg: Ravenholdt Manor (introduction, History)"]
     },
     {
       "id": 36007,
@@ -85,10 +84,32 @@
       "title": "Alterac Valley",
       "triggers": [{ "area": "Alterac Valley" }, { "talk": 13840 }, { "talk": 13841 }],
       "body": [
-        "A frozen valley in the far north of the mountains, claimed by two peoples at once: the Frostwolf orcs, who have lived there since they were exiled during the First War, and the Stormpike dwarves of Ironforge, who came to dig.",
-        "Their war never stops. Both sides recruit at the valley's mouth, and their officers count out ranks and insignia for every soldier who joins."
+        "Long ago Gul'dan exiled the Frostwolf clan to a valley hidden in the heart of these mountains. They scratched out a living there, and when Thrall united the orcs, they chose to stay in their valley rather than follow him to Orgrimmar.",
+        "Then the dwarves of the Stormpike Expedition came to mine its caves and dig for relics, and war broke out. Opinion is divided on who struck first: whether peaceful explorers were massacred by the orcs, or the dwarves came to poach and conquer."
       ],
-      "sources": ["creatures 13840, 13841 gossip", "creatures 13776, 13777 gossip", "pre-Cataclysm lore: the Frostwolf and Stormpike in Alterac Valley"]
+      "sources": ["warcraft.wiki.gg: Alterac Valley (Official overview)", "warcraft.wiki.gg: Alterac Mountains (First War)"]
+    },
+    {
+      "id": 36008,
+      "kind": "place",
+      "title": "Lordamere Internment Camp",
+      "triggers": [{ "area": "Lordamere Internment Camp" }, { "area": "Misty Shore" }],
+      "body": [
+        "The only orc internment camp in Alterac, on a hill over Dalaran, guarded by the city's forces. On their way to Dalaran, the young Prince Arthas and Jaina Proudmoore crept in one night to spy on the lethargic orcs. Seeing their women and children, Jaina was filled with doubt; Arthas was sure the camps were necessary.",
+        "Dalaran's people still keep the hill. Below it the Misty Shore runs along the lake towards the Fold, crowded with turtles."
+      ],
+      "sources": ["warcraft.wiki.gg: Lordamere Internment Camp", "warcraft.wiki.gg: Misty Shore"]
+    },
+    {
+      "id": 36009,
+      "kind": "place",
+      "title": "Growless Cave and the Foothill Caverns",
+      "triggers": [{ "area": "Growless Cave" }, { "area": "The Foothill Caverns" }, { "area": "Chillwind Point" }],
+      "body": [
+        "Yetis have taken over the mountain caves. They hold the lair where a man named Helcular once tried to make himself a lich, until a mob of villagers found his hidden lair and brutally killed him. His ritual flames are said to have burned in these caves.",
+        "To the east, Chillwind Point is a rise crowned by an ancient troll ruin, swept by the cold winds that blow down the ravine from the Plaguelands."
+      ],
+      "sources": ["warcraft.wiki.gg: Growless Cave", "warcraft.wiki.gg: Foothill Caverns", "warcraft.wiki.gg: Chillwind Point"]
     },
     {
       "id": 36030,
@@ -96,10 +117,9 @@
       "title": "Lord Aliden Perenolde",
       "triggers": [{ "kill": 2423 }, { "talk": 2317 }],
       "body": [
-        "The son of Aiden Perenolde, the last king of Alterac, who sold his kingdom's loyalty to the Horde. Aliden lives in his family's manor in the Uplands, among the Syndicate that his father's nobles built.",
-        "Aliden means to make slaves of the orcs who stand against him, as his father and his father's friend Aedelas Blackmoore once planned. His mistress Elysa, a wisp of a girl who says she was kept against her will, wears a pendant that once belonged to Taretha Foxton, and Thrall wants it back."
+        "A prince of fallen Alterac and the leader of the Syndicate in the mountains. He learned at Durnholde under Aedelas Blackmoore, then turned on Lordaeron, which had annexed his family's lands, and founded the Syndicate to fight it. He lives with his mistress Elysa at Dandred's Fold."
       ],
-      "sources": ["creatures 2423, 2317", "pre-Cataclysm lore: the Perenolde line"]
+      "sources": ["warcraft.wiki.gg: Alterac Mountains (Second War)", "warcraft.wiki.gg: Dandred's Fold", "warcraft.wiki.gg: Syndicate"]
     },
     {
       "id": 36050,
@@ -107,10 +127,21 @@
       "title": "The Treason of Alterac",
       "triggers": [{ "complete": 512 }, { "complete": 523 }, { "complete": 537 }],
       "body": [
-        "Alterac was one of the seven human kingdoms that formed the Alliance of Lordaeron. In the Second War its king, Aiden Perenolde, secretly sided with the Horde, believing it would win. The treachery was discovered, Lordaeron occupied the kingdom, and Alterac never recovered.",
-        "Its nobles turned to crime. The Syndicate began as their way to win back what they had lost, and has become a gang of cutthroats that murders magistrates, robs travellers and makes alliances with stranger powers, like the Argus Wake, in the hope of restoring the old kingdom."
+        "Alterac was the weakest kingdom of the Alliance of Lordaeron, and its king, Aiden Perenolde, had long feuded with Thoras Trollbane of Stromgarde over their mountain borders. At the council that founded the Alliance, he doubted the orcs were even real. As the Second War raged he lost hope that humanity could win, and made a secret pact: the Horde could pass through Alterac unopposed, in exchange for Alterac's safety.",
+        "The treason came out when Uther was ambushed by Alterac's privateers off Caer Darrow. The Alliance sent an army into the mountains, besieged the capital and placed it under martial law. The kingdom never recovered; its people are scattered, and many have joined the Syndicate."
       ],
-      "sources": ["quests 505, 512, 525, 537 descriptions and reward texts", "page text 1976 (The Alliance of Lordaeron)", "pre-Cataclysm lore: the betrayal of Alterac"]
+      "sources": ["warcraft.wiki.gg: Alterac (kingdom) (introduction, Before the Great Wars)", "warcraft.wiki.gg: Aiden Perenolde", "warcraft.wiki.gg: Caer Darrow (Second War)"]
+    },
+    {
+      "id": 36051,
+      "kind": "history",
+      "title": "The Fall of Dalaran",
+      "triggers": [{ "areaId": 36 }, { "area": "Dalaran Crater" }],
+      "body": [
+        "After Quel'Thalas fell, Arthas brought the Scourge back to Alterac. The Blackrock orcs of the mountains, still with red dragons, ogres, trolls and goblins as allies, were wiped out, and Kel'Thuzad used their demon gate to speak with Archimonde.",
+        "He opened a portal near Dalaran, and Archimonde came through. With one spell the demon destroyed the city of the Kirin Tor."
+      ],
+      "sources": ["warcraft.wiki.gg: Alterac Mountains (Third War)"]
     }
   ]
 }
