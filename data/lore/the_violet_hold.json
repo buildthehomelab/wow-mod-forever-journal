@@ -1,0 +1,46 @@
+{
+  "zone": 4415,
+  "name": "The Violet Hold",
+  "entries": [
+    {
+      "id": 4415000,
+      "kind": "zone",
+      "title": "The Violet Hold",
+      "triggers": [{ "areaId": 4415 }],
+      "body": [
+        "Among the ornate spires of Dalaran, the Violet Hold has long held the city's most dangerous threats, row upon row of deadly inmates, diligently watched by the Kirin Tor. Now the blue dragonflight, on Malygos' orders, is tearing portals open inside it, trying to break through its defences into the city, and to free what is caged here."
+      ],
+      "sources": ["warcraft.wiki.gg: Violet Hold (instance) (Dungeon Journal, Walkthrough)"]
+    },
+    {
+      "id": 4415001,
+      "kind": "place",
+      "title": "The Cells of the Hold",
+      "triggers": [{ "kill": 29315 }, { "kill": 29316 }, { "kill": 29313 }, { "kill": 29266 }, { "kill": 29312 }, { "kill": 29314 }],
+      "body": [
+        "Magically sealed cells around the prison floor, each holding something the Kirin Tor judged too dangerous to let loose. The dragons are breaking them open one by one."
+      ],
+      "sources": ["warcraft.wiki.gg: Violet Hold (instance) (Walkthrough)"]
+    },
+    {
+      "id": 4415030,
+      "kind": "person",
+      "title": "The Inmates",
+      "triggers": [{ "kill": 29315 }, { "kill": 29316 }, { "kill": 29313 }, { "kill": 29266 }, { "kill": 29312 }, { "kill": 29314 }],
+      "body": [
+        "Among the prisoners of the Violet Hold: Erekem, an arakkoa; Moragg, an observer; Ichoron, a water revenant; Xevozz, an ethereal; Lavanthor, a core hound; and Zuramat the Obliterator, a voidlord."
+      ],
+      "sources": ["warcraft.wiki.gg: Erekem", "warcraft.wiki.gg: Moragg", "warcraft.wiki.gg: Ichoron", "warcraft.wiki.gg: Xevozz", "warcraft.wiki.gg: Lavanthor", "warcraft.wiki.gg: Zuramat the Obliterator"]
+    },
+    {
+      "id": 4415031,
+      "kind": "person",
+      "title": "Cyanigosa",
+      "triggers": [{ "kill": 31134 }],
+      "body": [
+        "A zealous lieutenant of Malygos and commander of his assault on Dalaran. She slipped into the prison disguised as an elf mage, came close to freeing its inmates, and fought to the death when she was caught. With her Staff of Trickery she was perhaps the greatest threat to Dalaran in the Nexus War after Malygos himself."
+      ],
+      "sources": ["warcraft.wiki.gg: Cyanigosa"]
+    }
+  ]
+}

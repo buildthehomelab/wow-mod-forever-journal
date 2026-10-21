@@ -1,0 +1,77 @@
+{
+  "zone": 2817,
+  "name": "Crystalsong Forest",
+  "entries": [
+    {
+      "id": 2817000,
+      "kind": "zone",
+      "title": "Crystalsong Forest",
+      "triggers": [{ "areaId": 2817 }],
+      "body": [
+        "Once Moonsong Forest, at the northern edge of ancient Kalimdor, where the Highborne kept the outpost of Shandaral as a store of arcane relics. The Great Sundering cut them off from the world, and with no source of power to sustain them, they sickened.",
+        "They watched the blue dragons crystallize living things and draw power from them, and they stole the secret, and some relics, from the Nexus. When the dragons came for them, the sorcerers tried to crystallize a small part of the forest to use as a weapon. The spell went horribly wrong. The whole forest turned to crystal in an instant, and nearly every living thing in it shattered. Their spirits wander it still. It is barren, with a haunting loveliness in its strangeness."
+      ],
+      "sources": ["warcraft.wiki.gg: Crystalsong Forest (Ancient times, Geography)"]
+    },
+    {
+      "id": 2817001,
+      "kind": "place",
+      "title": "The Ruins of Shandaral",
+      "triggers": [{ "area": "Ruins of Shandaral" }, { "area": "The Unbound Thicket" }],
+      "body": [
+        "The remains of the Highborne outpost, in the middle of a thicket of crystal trees where fissures leak magic and even the wind sighs. The Unbound, the last living remnants of the Highborne of Shandaral, wander its ruins."
+      ],
+      "sources": ["warcraft.wiki.gg: Ruins of Shandaral", "warcraft.wiki.gg: Unbound Thicket"]
+    },
+    {
+      "id": 2817002,
+      "kind": "place",
+      "title": "The Violet Stand",
+      "triggers": [{ "area": "Violet Stand" }, { "talk": 32373 }],
+      "body": [
+        "A Kirin Tor outpost in night elf ruins beneath Dalaran, sheltered by a magical dome against the blue dragonflight. Dead dragonspawn and scorch marks litter the ruins."
+      ],
+      "sources": ["warcraft.wiki.gg: Violet Stand"]
+    },
+    {
+      "id": 2817003,
+      "kind": "place",
+      "title": "The Azure Front",
+      "triggers": [{ "area": "The Azure Front" }],
+      "body": [
+        "The blue dragonflight's front against Dalaran in the Nexus War, where a chain of surge needles draws power from the largest crystal tree in the forest."
+      ],
+      "sources": ["warcraft.wiki.gg: Azure Front"]
+    },
+    {
+      "id": 2817004,
+      "kind": "place",
+      "title": "Windrunner's Overlook and Sunreaver's Command",
+      "triggers": [{ "area": "Windrunner's Overlook" }, { "area": "Sunreaver's Command" }, { "talk": 30261 }, { "talk": 30259 }],
+      "body": [
+        "Two ruined Highborne towers, facing each other across the Ruins of Shandaral: one held by the high elves of the Silver Covenant, the other by the blood elves of the Sunreavers."
+      ],
+      "sources": ["warcraft.wiki.gg: Crystalsong Forest (Wrath of the Lich King)", "warcraft.wiki.gg: Windrunner's Overlook"]
+    },
+    {
+      "id": 2817005,
+      "kind": "place",
+      "title": "The Great Tree",
+      "triggers": [{ "area": "The Great Tree" }],
+      "body": [
+        "One of the branches of Nordrassil that Fandral Staghelm's druids planted across Northrend to stem the saronite. It is smaller than Vordrassil, and its surface is dotted with strange runes. Unlike Vordrassil, it is not corrupted."
+      ],
+      "sources": ["warcraft.wiki.gg: Great Tree (Crystalsong Forest)"]
+    },
+    {
+      "id": 2817006,
+      "kind": "place",
+      "title": "The Waters of Crystalsong",
+      "triggers": [{ "area": "The Decrepit Flow" }, { "area": "The Twilight Rivulet" }, { "area": "The Mirror of Twilight" }, { "area": "Forlorn Woods" }],
+      "body": [
+        "A river comes out of Icecrown into the forest, its beaches strewn with skeletons and broken siege engines, and runs through the Forlorn Woods to the Mirror of Twilight, a lake ringed with night elf arches. Muradin Bronzebeard, for one, would not trust water that came out of Icecrown."
+      ],
+      "sources": ["warcraft.wiki.gg: Decrepit Flow", "warcraft.wiki.gg: Mirror of Twilight"]
+    }
+  ]
+}
