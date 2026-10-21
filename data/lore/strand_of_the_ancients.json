@@ -1,0 +1,37 @@
+{
+  "zone": 4384,
+  "name": "Strand of the Ancients",
+  "entries": [
+    {
+      "id": 4384000,
+      "kind": "zone",
+      "title": "Strand of the Ancients",
+      "triggers": [{ "areaId": 4384 }],
+      "body": [
+        "The titans left their mark on Northrend mostly in the ground, as at Ulduar. But on a narrow chain of islands off the Dragonblight's southern coast, a sliver of their work stands in the open. As the Horde and Alliance spread across Northrend, their mystics woke to dizzying visions of an isle and a gleaming power behind walls of stone: a titan relic, said to hold vital knowledge of the titans and their ways.",
+        "The citadel's towers and great gates still loom, but its walls are crumbling and rusted. They can be brought down."
+      ],
+      "sources": ["warcraft.wiki.gg: Strand of the Ancients (Official overview, Description)"]
+    },
+    {
+      "id": 4384001,
+      "kind": "place",
+      "title": "The Gates of the Citadel",
+      "triggers": [{ "area": "Gate of the Blue Sapphire" }, { "area": "Gate of the Green Emerald" }, { "area": "Gate of the Purple Amethyst" }, { "area": "Gate of the Red Sun" }, { "area": "Gate of the Yellow Moon" }, { "area": "Landing Beach" }],
+      "body": [
+        "Three walls stand between the beach and the relic, their gates named for jewels and for the sun and moon."
+      ],
+      "sources": ["warcraft.wiki.gg: Strand of the Ancients"]
+    },
+    {
+      "id": 4384002,
+      "kind": "place",
+      "title": "The Courtyard of the Ancients",
+      "triggers": [{ "area": "Courtyard of the Ancients" }],
+      "body": [
+        "The citadel's heart, where the titan relic is kept."
+      ],
+      "sources": ["warcraft.wiki.gg: Strand of the Ancients"]
+    }
+  ]
+}
