@@ -1,0 +1,46 @@
+{
+  "zone": 4723,
+  "name": "Trial of the Champion",
+  "entries": [
+    {
+      "id": 4723000,
+      "kind": "zone",
+      "title": "Trial of the Champion",
+      "triggers": [{ "areaId": 4723 }],
+      "body": [
+        "The Crusaders' Coliseum, raised at the heart of the Argent Tournament grounds in the shadow of Icecrown. Here Tirion Fordring tests the champions of every people, mounted and on foot, against each other and against the Crusade's own best, to find those fit to stand against the Lich King."
+      ],
+      "sources": ["warcraft.wiki.gg: Crusaders' Coliseum", "warcraft.wiki.gg: Argent Tournament"]
+    },
+    {
+      "id": 4723030,
+      "kind": "person",
+      "title": "Eadric the Pure",
+      "triggers": [{ "talk": 33759 }, { "kill": 35119 }],
+      "body": [
+        "A paladin, Grand Champion of the Argent Crusade, whom Tirion asked to coordinate the training of the tournament's champions and to bolster the defences of its grounds."
+      ],
+      "sources": ["warcraft.wiki.gg: Eadric the Pure"]
+    },
+    {
+      "id": 4723031,
+      "kind": "person",
+      "title": "Argent Confessor Paletress",
+      "triggers": [{ "talk": 34102 }, { "kill": 34928 }],
+      "body": [
+        "A priestess of the Crusade who preaches to the champions in the Argent Pavilion, and hears their confessions behind her screen."
+      ],
+      "sources": ["warcraft.wiki.gg: Argent Confessor Paletress"]
+    },
+    {
+      "id": 4723032,
+      "kind": "person",
+      "title": "The Black Knight",
+      "triggers": [{ "kill": 35451 }],
+      "body": [
+        "An agent of the Lich King sent to disrupt Tirion Fordring's tournament, a murderer of its champions whose crimes were exposed and who was struck down in the Ring of Champions. He did not stay dead. In the middle of the trials, he rode down out of the rafters."
+      ],
+      "sources": ["warcraft.wiki.gg: The Black Knight", "warcraft.wiki.gg: Ring of Champions", "warcraft.wiki.gg: Trial of the Champion (The Black Knight)"]
+    }
+  ]
+}
