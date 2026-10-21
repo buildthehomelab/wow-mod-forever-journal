@@ -1,0 +1,197 @@
+{
+  "zone": 4273,
+  "name": "Ulduar",
+  "entries": [
+    {
+      "id": 4273000,
+      "kind": "zone",
+      "title": "Ulduar",
+      "triggers": [{ "areaId": 4273 }],
+      "body": [
+        "For millennia Ulduar lay undisturbed. Since its discovery, some have thought it a city built to herald its makers' glory, others a vault of the titans' treasures. They were wrong. Beyond its gates lies no city, no treasure and no final answer to the titans' mysteries: only a horror even the titans could not, or would not, destroy. They merely contained it.",
+        "Beneath ancient Ulduar, the Old God of death lies whispering. It has corrupted its guards, and it is breaking through the last of its restraints."
+      ],
+      "sources": ["warcraft.wiki.gg: Ulduar (Official Blizzard description)"]
+    },
+    {
+      "id": 4273001,
+      "kind": "place",
+      "title": "The Siege of Ulduar",
+      "triggers": [{ "area": "Expedition Base Camp" }, { "area": "Formation Grounds" }, { "kill": 33113 }],
+      "body": [
+        "The Explorers' League and its allies have camped before the gates and brought siege engines, for the city's defences are colossal. Its iron minions and towering war machines must be broken before anyone can set foot inside."
+      ],
+      "sources": ["warcraft.wiki.gg: Ulduar (Official Blizzard description)", "warcraft.wiki.gg: Flame Leviathan"]
+    },
+    {
+      "id": 4273002,
+      "kind": "place",
+      "title": "The Antechamber",
+      "triggers": [{ "area": "The Colossal Forge" }, { "area": "Razorscale's Aerie" }, { "area": "The Scrapyard" }, { "area": "Iron Concourse" }, { "kill": 33118 }, { "kill": 33186 }, { "kill": 33293 }, { "kill": 32857 }, { "kill": 32867 }, { "kill": 32927 }, { "kill": 32930 }],
+      "body": [
+        "The outer works of Ulduar: the Colossal Forge, where Ignis works his furnace; the aerie where Razorscale nests; the Scrapyard of Mimiron's mechanical son; the hall of the iron council; and the Shattered Walkway, guarded by a giant who is himself the bridge."
+      ],
+      "sources": ["warcraft.wiki.gg: Ignis the Furnace Master", "warcraft.wiki.gg: Razorscale", "warcraft.wiki.gg: XT-002 Deconstructor", "warcraft.wiki.gg: Assembly of Iron", "warcraft.wiki.gg: Kologarn"]
+    },
+    {
+      "id": 4273003,
+      "kind": "place",
+      "title": "The Keepers",
+      "triggers": [{ "area": "The Conservatory of Life" }, { "kill": 33515 }, { "kill": 32845 }, { "kill": 32865 }, { "kill": 32906 }, { "kill": 33350 }],
+      "body": [
+        "The inner halls, where the keepers of Ulduar are held captive and bent to the Old God's will: Hodir in his frozen halls, Thorim in his arena, Freya in her conservatory of life, and Mimiron in his workshop. Free them from its grip, and they may stand with Ulduar's challengers."
+      ],
+      "sources": ["warcraft.wiki.gg: Hodir", "warcraft.wiki.gg: Thorim", "warcraft.wiki.gg: Freya", "warcraft.wiki.gg: Mimiron"]
+    },
+    {
+      "id": 4273004,
+      "kind": "place",
+      "title": "The Descent into Madness",
+      "triggers": [{ "kill": 33271 }, { "kill": 33288 }],
+      "body": [
+        "The way down to the prison itself, choked with the black saronite that is the Old God's blood. At the bottom lies its prison, and its mind."
+      ],
+      "sources": ["warcraft.wiki.gg: General Vezax", "warcraft.wiki.gg: Yogg-Saron"]
+    },
+    {
+      "id": 4273005,
+      "kind": "place",
+      "title": "The Celestial Planetarium",
+      "triggers": [{ "area": "The Archivum" }, { "kill": 32871 }],
+      "body": [
+        "Ulduar's archive and, beyond it, a planetarium holding the stars themselves, where the titans' watcher arrives to pass judgment."
+      ],
+      "sources": ["warcraft.wiki.gg: Algalon the Observer"]
+    },
+    {
+      "id": 4273030,
+      "kind": "person",
+      "title": "Ignis the Furnace Master",
+      "triggers": [{ "kill": 33118 }],
+      "body": [
+        "A fire giant construct made by Loken, master of the Colossal Forge. With his brother Volkhan he enslaved the Winterskorn vrykul and forged weapons for a war against the other titan-forged."
+      ],
+      "sources": ["warcraft.wiki.gg: Ignis the Furnace Master"]
+    },
+    {
+      "id": 4273031,
+      "kind": "person",
+      "title": "Razorscale",
+      "triggers": [{ "kill": 33186 }],
+      "body": [
+        "A proto-dragon captured by Loken and twisted into a weapon. At his orders Ignis fused iron plates onto her scales."
+      ],
+      "sources": ["warcraft.wiki.gg: Razorscale"]
+    },
+    {
+      "id": 4273032,
+      "kind": "person",
+      "title": "XT-002 Deconstructor",
+      "triggers": [{ "kill": 33293 }],
+      "body": [
+        "A clockwork giant engineered by Mimiron, who rules the Scrapyard. He thinks of himself as the inventor's son, and behaves like a young boy."
+      ],
+      "sources": ["warcraft.wiki.gg: XT-002 Deconstructor"]
+    },
+    {
+      "id": 4273033,
+      "kind": "person",
+      "title": "The Assembly of Iron",
+      "triggers": [{ "kill": 32857 }, { "kill": 32867 }, { "kill": 32927 }],
+      "body": [
+        "The three generals of the iron armies, each of a different race: Stormcaller Brundir, Runemaster Molgeim, and Steelbreaker."
+      ],
+      "sources": ["warcraft.wiki.gg: Assembly of Iron"]
+    },
+    {
+      "id": 4273034,
+      "kind": "person",
+      "title": "Kologarn",
+      "triggers": [{ "kill": 32930 }],
+      "body": [
+        "A towering giant Ignis made at Loken's order to guard the Shattered Walkway into the inner sanctum, with arms massive enough to crush any intruder."
+      ],
+      "sources": ["warcraft.wiki.gg: Kologarn"]
+    },
+    {
+      "id": 4273035,
+      "kind": "person",
+      "title": "Auriaya",
+      "triggers": [{ "kill": 33515 }],
+      "body": [
+        "A watcher who roams the Observation Ring beyond the walkway with her sanctum sentries and feral defender."
+      ],
+      "sources": ["warcraft.wiki.gg: Auriaya"]
+    },
+    {
+      "id": 4273036,
+      "kind": "person",
+      "title": "Hodir",
+      "triggers": [{ "kill": 32845 }],
+      "body": [
+        "The keeper of winter, who once lived in the Temple of Winter and guided the frost giants of the peaks. The Sons of Hodir call him their father."
+      ],
+      "sources": ["warcraft.wiki.gg: Hodir"]
+    },
+    {
+      "id": 4273037,
+      "kind": "person",
+      "title": "Thorim",
+      "triggers": [{ "kill": 32865 }],
+      "body": [
+        "The Stormlord, wielder of the hammer Krolmir, who led the titan-forged armies against the Old Gods' forces. It is said his power was used only once, and turned a whole continent to dust. Loken lured him out of his temple to Ulduar, subdued him, and gave him to the Old God."
+      ],
+      "sources": ["warcraft.wiki.gg: Thorim", "warcraft.wiki.gg: Temple of Storms"]
+    },
+    {
+      "id": 4273038,
+      "kind": "person",
+      "title": "Freya",
+      "triggers": [{ "kill": 32906 }],
+      "body": [
+        "The keeper of life, who lived in the Temple of Life until Loken rebelled. The Old God took hold of her and left her dormant in Ulduar's greenery. She left an avatar in Sholazar Basin, a safeguard for the life she made there."
+      ],
+      "sources": ["warcraft.wiki.gg: Freya"]
+    },
+    {
+      "id": 4273039,
+      "kind": "person",
+      "title": "Mimiron",
+      "triggers": [{ "kill": 33350 }],
+      "body": [
+        "Mimir to his friends: the keeper of invention, given part of the titan Norgannon's intellect. Loken murdered him, but his mechagnomes saved his spirit and built him a mechanical body. He has not been entirely sane since."
+      ],
+      "sources": ["warcraft.wiki.gg: Mimiron"]
+    },
+    {
+      "id": 4273040,
+      "kind": "person",
+      "title": "General Vezax",
+      "triggers": [{ "kill": 33271 }],
+      "body": [
+        "A faceless general who guards the descent to the Old God's prison."
+      ],
+      "sources": ["warcraft.wiki.gg: General Vezax"]
+    },
+    {
+      "id": 4273041,
+      "kind": "person",
+      "title": "Yogg-Saron",
+      "triggers": [{ "kill": 33288 }],
+      "body": [
+        "One of the Old Gods, the beast with a thousand maws, defeated by the titans' armies in the world's earliest age and imprisoned in Ulduar. Trying to escape, it corrupted Loken and turned him on his brethren, and loosed the Curse of Flesh on the titans' creations. Ages later its taint rose through the roots of the World Tree Andrassil, and the night elves had to cut it down."
+      ],
+      "sources": ["warcraft.wiki.gg: Yogg-Saron"]
+    },
+    {
+      "id": 4273042,
+      "kind": "person",
+      "title": "Algalon the Observer",
+      "triggers": [{ "kill": 32871 }],
+      "body": [
+        "A constellar sent by the titans to watch over Azeroth, with the power to purge a corrupted world of all life and remake it. Loken's death summoned him. He judged the world corrupted by the Old Gods and prepared to remake it, but the mortals who fought him showed such resolve that he came to doubt his judgment of them, and let them reverse the order and spare the world."
+      ],
+      "sources": ["warcraft.wiki.gg: Algalon the Observer"]
+    }
+  ]
+}
