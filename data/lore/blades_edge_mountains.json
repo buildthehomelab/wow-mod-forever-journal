@@ -1,0 +1,157 @@
+{
+  "zone": 3522,
+  "name": "Blade's Edge Mountains",
+  "entries": [
+    {
+      "id": 3522000,
+      "kind": "zone",
+      "title": "Blade's Edge Mountains",
+      "triggers": [{ "areaId": 3522 }],
+      "body": [
+        "Barren plateaus, axe-cut valleys and forested tablelands, cut apart by crags bristling with knife-sharp spikes of stone. This was the homeland of the ogres, and it still is. Over them rule the hulking gronn, who show their lesser children no love at all.",
+        "Orcs and ogres were enemies for generations. When the Horde rose, it conquered the ogre lands and broke the clans. Gul'dan experimented on captive ogres and made the first ogre magi, and the Horde drove the ogres before it as living siege engines."
+      ],
+      "sources": ["warcraft.wiki.gg: Blade's Edge Mountains (introduction, History, Rise of the Orcish Horde)"]
+    },
+    {
+      "id": 3522001,
+      "kind": "place",
+      "title": "Thunderlord Stronghold",
+      "triggers": [{ "area": "Thunderlord Stronghold" }, { "talk": 21311 }],
+      "body": [
+        "The seat of the Thunderlord clan, abandoned when its orcs became fel orcs. The Bladespire ogres took the ruins; the Horde's expedition drove them out and now holds it in honour of the clan that built it."
+      ],
+      "sources": ["warcraft.wiki.gg: Thunderlord Stronghold"]
+    },
+    {
+      "id": 3522002,
+      "kind": "place",
+      "title": "Sylvanaar and Toshley's Station",
+      "triggers": [{ "area": "Sylvanaar" }, { "area": "The Living Grove" }, { "area": "Toshley's Station" }, { "talk": 21691 }],
+      "body": [
+        "Sylvanaar is a night elf settlement with two moonwells, in the Living Grove above the Bloodmaul Ravine. Toshley's gnomes lived there once, until the elves sent them away for the trouble their machines and experiments caused. They built their own station to the south-east."
+      ],
+      "sources": ["warcraft.wiki.gg: Sylvanaar", "warcraft.wiki.gg: Toshley's Station"]
+    },
+    {
+      "id": 3522003,
+      "kind": "place",
+      "title": "Mok'Nathal Village",
+      "triggers": [{ "area": "Mok'Nathal Village" }, { "area": "Vekhaar Stand" }, { "talk": 22004 }, { "talk": 21984 }],
+      "body": [
+        "Before the orcs were corrupted, orcs and ogres sometimes had children together: the Mok'Nathal, honoured by shaman orcs as noble and savage creatures of the land, with an orc's cunning and an ogre's strength. Their village survives here. Among them is Leoroxx, father of Rexxar, the Champion of the Horde, who came back through the Portal looking for his own people."
+      ],
+      "sources": ["warcraft.wiki.gg: Mok'Nathal Village", "warcraft.wiki.gg: Blade's Edge Mountains (Rise of the Orcish Horde)", "warcraft.wiki.gg: Thunderlord Stronghold"]
+    },
+    {
+      "id": 3522004,
+      "kind": "place",
+      "title": "The Ogre Clans",
+      "triggers": [{ "area": "Bladespire Hold" }, { "area": "Bladespire Grounds" }, { "area": "Bloodmaul Outpost" }, { "area": "Bloodmaul Ravine" }, { "area": "Bloodmaul Camp" }, { "area": "Daggermaw Canyon" }],
+      "body": [
+        "The Bladespire and the Bloodmaul fill the central valleys and raid each other's camps. Gruul the Dragonkiller rules them both, and they worship him as a god. The Bloodmaul brew a beer taught them by a troll witch doctor, T'chali, whom they repaid by burying him up to his head in the ravine."
+      ],
+      "sources": ["warcraft.wiki.gg: Bladespire Hold", "warcraft.wiki.gg: Bloodmaul Outpost", "warcraft.wiki.gg: Gruul's Lair (Description)"]
+    },
+    {
+      "id": 3522005,
+      "kind": "place",
+      "title": "Dragons' End",
+      "triggers": [{ "area": "Dragons' End" }, { "area": "Cursed Hollow" }],
+      "body": [
+        "A cleft named for the four gigantic black dragons impaled on its peaks. Deathwing came to Draenor with the Horde and scattered his eggs across it, sure that nothing there would dare challenge his flight. Gruul dared. When Deathwing fled back to Azeroth, the dragons he left behind were torn from the sky by Bladespire spells and impaled by Gruul on the spires. That is how he earned his name."
+      ],
+      "sources": ["warcraft.wiki.gg: Dragons' End", "warcraft.wiki.gg: Blade's Edge Mountains (Beyond the Dark Portal)"]
+    },
+    {
+      "id": 3522006,
+      "kind": "place",
+      "title": "The Nether Drakes",
+      "triggers": [{ "area": "Singing Ridge" }, { "area": "Crystal Spine" }, { "area": "Scalewing Shelf" }],
+      "body": [
+        "Some of Deathwing's eggs survived. When Draenor was torn apart, its wild nether energies washed over them, and they hatched into something new: the Netherwing. Their drakes nest among the singing crystals of the high ridges."
+      ],
+      "sources": ["warcraft.wiki.gg: Blade's Edge Mountains (Beyond the Dark Portal)", "warcraft.wiki.gg: Singing Ridge", "warcraft.wiki.gg: Crystal Spine"]
+    },
+    {
+      "id": 3522007,
+      "kind": "place",
+      "title": "Ruuan Weald",
+      "triggers": [{ "area": "Ruuan Weald" }, { "area": "Evergrove" }, { "talk": 22007 }],
+      "body": [
+        "A forested glade where the Cenarion Expedition keeps Evergrove, its only outpost manned almost entirely by night elves. The weald is overrun by the Wyrmcult, who serve the black dragonflight."
+      ],
+      "sources": ["warcraft.wiki.gg: Ruuan Weald", "warcraft.wiki.gg: Evergrove"]
+    },
+    {
+      "id": 3522008,
+      "kind": "place",
+      "title": "Ogri'la",
+      "triggers": [{ "area": "Ogri'la" }, { "area": "Skyguard Outpost" }, { "area": "Vortex Pinnacle" }],
+      "body": [
+        "A community of ogres who have risen above their brutish nature and the rule of the gronn, enlightened by the Apexis crystals. They fight the Legion and the black dragonflight for the crystals, with the Sha'tari Skyguard beside them. Other ogres speak of Ogri'la as a kind of promised land, and wonder if it is real."
+      ],
+      "sources": ["warcraft.wiki.gg: Ogri'la (History)", "warcraft.wiki.gg: Skyguard Outpost"]
+    },
+    {
+      "id": 3522009,
+      "kind": "place",
+      "title": "The Forge Camps",
+      "triggers": [{ "area": "Forge Camp: Anger" }, { "area": "Forge Camp: Terror" }, { "area": "Forge Camp: Wrath" }, { "area": "Death's Door" }, { "area": "Shartuul's Transporter" }],
+      "body": [
+        "The Legion holds three forge camps in the mountains, ringed with fel flak cannons against the Skyguard. At Death's Door stands one of Magtheridon's old gateways to the Twisting Nether. Illidan closed the others, but this one is still powered."
+      ],
+      "sources": ["warcraft.wiki.gg: Forge Camp: Terror", "warcraft.wiki.gg: Death's Door"]
+    },
+    {
+      "id": 3522010,
+      "kind": "place",
+      "title": "The Arakkoa of Blade's Edge",
+      "triggers": [{ "area": "Trogma's Claim" }, { "area": "Grishnath" }, { "area": "Veil Vekh" }, { "area": "Veil Ruuan" }, { "area": "Veil Lashh" }, { "talk": 22305 }],
+      "body": [
+        "Ancient arakkoa tribes still live in these mountains: the Grishna, the Lashh'an, the Ruuan'ok and the Vekh'nir. The Vekh'nir have enslaved a tribe of ogres to dig draenethyst crystals out of the cave at Trogma's Claim."
+      ],
+      "sources": ["warcraft.wiki.gg: Blade's Edge Mountains (History)", "warcraft.wiki.gg: Trogma's Claim"]
+    },
+    {
+      "id": 3522011,
+      "kind": "place",
+      "title": "The Ethereal Camps",
+      "triggers": [{ "area": "Razaan's Landing" }, { "area": "Bash'ir Landing" }],
+      "body": [
+        "Ethereals have come to the mountains too. Nexus-Prince Razaan's camp is full of floating spheres of mana and soul matter, with fleshbeasts crawling below, and his ethereals attack anyone on sight. Bash'ir's band of the Ethereum holds a plateau on the Crystal Spine."
+      ],
+      "sources": ["warcraft.wiki.gg: Razaan's Landing", "warcraft.wiki.gg: Bash'ir Landing"]
+    },
+    {
+      "id": 3522012,
+      "kind": "place",
+      "title": "Skald",
+      "triggers": [{ "area": "Skald" }],
+      "body": [
+        "Once wooded, burned to cinders when fire elementals and their imps moved in. The elementals still roam it, and they charge anyone who tries to bring green seeds back to the soil."
+      ],
+      "sources": ["warcraft.wiki.gg: Skald"]
+    },
+    {
+      "id": 3522013,
+      "kind": "place",
+      "title": "The Circle of Blood",
+      "triggers": [{ "area": "Circle of Blood" }, { "area": "Circle of Blood Arena" }],
+      "body": [
+        "A great ogre-built arena in Daggermaw Canyon, where gladiators still fight."
+      ],
+      "sources": ["warcraft.wiki.gg: Circle of Blood", "warcraft.wiki.gg: Circle of Blood Arena"]
+    },
+    {
+      "id": 3522030,
+      "kind": "person",
+      "title": "The Sons of Gruul",
+      "triggers": [{ "kill": 20555 }],
+      "body": [
+        "Gruul's powerful sons ravage the mountains and the plains of Nagrand, and hold the ogre clans under their fists."
+      ],
+      "sources": ["warcraft.wiki.gg: Gruul's Lair (Description)", "warcraft.wiki.gg: Ogri'la (History)"]
+    }
+  ]
+}
