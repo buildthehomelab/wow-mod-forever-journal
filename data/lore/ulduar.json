@@ -37,7 +37,7 @@
       "id": 4273003,
       "kind": "place",
       "title": "The Keepers",
-      "triggers": [{ "area": "The Conservatory of Life" }, { "kill": 33515 }, { "kill": 32845 }, { "kill": 32865 }, { "kill": 32906 }, { "kill": 33350 }],
+      "triggers": [{ "area": "The Conservatory of Life" }, { "kill": 33515 }, { "kill": 32845 }, { "kill": 32865 }, { "kill": 32906 }, { "kill": 33350 }, { "kill": 33288 }],
       "body": [
         "The inner halls, where the keepers of Ulduar are held captive and bent to the Old God's will: Hodir in his frozen halls, Thorim in his arena, Freya in her conservatory of life, and Mimiron in his workshop. Free them from its grip, and they may stand with Ulduar's challengers."
       ],
@@ -127,7 +127,7 @@
       "id": 4273036,
       "kind": "person",
       "title": "Hodir",
-      "triggers": [{ "kill": 32845 }],
+      "triggers": [{ "kill": 32845 }, { "kill": 33288 }],
       "body": [
         "The keeper of winter, who once lived in the Temple of Winter and guided the frost giants of the peaks. The Sons of Hodir call him their father."
       ],
@@ -137,7 +137,7 @@
       "id": 4273037,
       "kind": "person",
       "title": "Thorim",
-      "triggers": [{ "kill": 32865 }],
+      "triggers": [{ "kill": 32865 }, { "kill": 33288 }],
       "body": [
         "The Stormlord, wielder of the hammer Krolmir, who led the titan-forged armies against the Old Gods' forces. It is said his power was used only once, and turned a whole continent to dust. Loken lured him out of his temple to Ulduar, subdued him, and gave him to the Old God."
       ],
@@ -147,7 +147,7 @@
       "id": 4273038,
       "kind": "person",
       "title": "Freya",
-      "triggers": [{ "kill": 32906 }],
+      "triggers": [{ "kill": 32906 }, { "kill": 33288 }],
       "body": [
         "The keeper of life, who lived in the Temple of Life until Loken rebelled. The Old God took hold of her and left her dormant in Ulduar's greenery. She left an avatar in Sholazar Basin, a safeguard for the life she made there."
       ],
@@ -157,7 +157,7 @@
       "id": 4273039,
       "kind": "person",
       "title": "Mimiron",
-      "triggers": [{ "kill": 33350 }],
+      "triggers": [{ "kill": 33350 }, { "kill": 33288 }],
       "body": [
         "Mimir to his friends: the keeper of invention, given part of the titan Norgannon's intellect. Loken murdered him, but his mechagnomes saved his spirit and built him a mechanical body. He has not been entirely sane since."
       ],
