@@ -1,0 +1,233 @@
+{
+  "zone": 331,
+  "name": "Ashenvale",
+  "entries": [
+    {
+      "id": 331000,
+      "kind": "zone",
+      "title": "Ashenvale",
+      "triggers": [{ "areaId": 331 }],
+      "body": [
+        "A forest of ancient trees, teeming with life and deep magic, the ancestral home of the night elves, guarded by their Sentinels and the children of Cenarius. After the Sundering the night elves spread through its woods and slowly rebuilt; their ruins and moonwells lie everywhere among its lakes.",
+        "Since the Third War the Horde has pushed into the eastern woods, and the orcs' axes are not welcome. Ashenvale is also scarred by its other wars: satyrs haunt its ruins, demons linger where the Legion fell, and the corruption of Felwood has seeped into its lakes. Many of its furbolgs have gone mad."
+      ],
+      "sources": ["warcraft.wiki.gg: Ashenvale (introduction, After the Sundering, Geography)"]
+    },
+    {
+      "id": 331001,
+      "kind": "place",
+      "title": "Astranaar",
+      "triggers": [{ "area": "Astranaar" }, { "talk": 3691 }],
+      "body": [
+        "The largest night elf town in Ashenvale, on an island in a lake in the middle of the forest, reached by a pair of bridges. Raene Wolfrunner fears the corrupted Thistlefur furbolgs to the north will one day find the courage to attack it.",
+        "In the lakeside cemetery lies Valstann Staghelm, son of Fandral, buried by his family after he fell in the War of the Shifting Sands."
+      ],
+      "sources": ["warcraft.wiki.gg: Astranaar (History, World of Warcraft)"]
+    },
+    {
+      "id": 331002,
+      "kind": "place",
+      "title": "Splintertree Post",
+      "triggers": [{ "area": "Splintertree Post" }],
+      "body": [
+        "A Horde outpost in the eastern woods, founded by Grommash Hellscream's Warsong clan when the orcs first came into Ashenvale in the Third War. The night elves have not forgiven what the Warsong did here, and Splintertree draws constant retaliation, especially as raids on Astranaar are frequent."
+      ],
+      "sources": ["warcraft.wiki.gg: Splintertree Post (History)"]
+    },
+    {
+      "id": 331003,
+      "kind": "place",
+      "title": "Demon Fall Canyon",
+      "triggers": [{ "area": "Demon Fall Canyon" }, { "area": "Demon Fall Ridge" }, { "kill": 6072 }],
+      "body": [
+        "A fel-scarred canyon named for the battle fought in it. Here the pit lord Mannoroth, whose blood had cursed the orcs, faced Grommash Hellscream and Thrall. He struck Thrall down, but not before Grom's axe cleaved into his chest, and the demon's death exploded in fire and light that took Grom's life too.",
+        "Orcs come here on pilgrimage to honour the warrior who freed their people from the Legion's curse, and a monument stands to him. Lesser demons still haunt the canyon, and the dreadlord Diathorus the Seeker lairs in a barrow den on the ridge above it."
+      ],
+      "sources": ["warcraft.wiki.gg: Demon Fall Canyon", "warcraft.wiki.gg: Demon Fall Ridge"]
+    },
+    {
+      "id": 331004,
+      "kind": "place",
+      "title": "The Warsong Lumber Camp",
+      "triggers": [{ "area": "Warsong Lumber Camp" }, { "area": "Warsong Labor Camp" }, { "area": "Kargathia Keep" }],
+      "body": [
+        "Despite the objections of Thrall and his shamans, some orcs of the Warsong clan have stayed in Ashenvale and go on felling the forest to fuel the Horde's growth. Their lumber camp in the east is overseen from Kargathia Keep, named for the orc hero Kargath Bladefist, close enough to the river to be reinforced from Orgrimmar."
+      ],
+      "sources": ["warcraft.wiki.gg: Warsong Lumber Camp", "warcraft.wiki.gg: Kargathia Keep", "warcraft.wiki.gg: Warsong Gulch"]
+    },
+    {
+      "id": 331005,
+      "kind": "place",
+      "title": "Silverwing Grove and Outpost",
+      "triggers": [{ "area": "Silverwing Grove" }, { "area": "Silverwing Outpost" }, { "talk": 12860 }],
+      "body": [
+        "The night elves have begun a great push to retake their forest, and the Silverwing Sentinels have sworn not to rest until every orc is driven out of Warsong Gulch. Their grove in the south guards the way to the gulch. Silverwing Outpost under Duriel Moonfire stands on the Horde's side of the river, and fights off constant orc attacks."
+      ],
+      "sources": ["warcraft.wiki.gg: Silverwing Grove", "warcraft.wiki.gg: Silverwing Outpost", "warcraft.wiki.gg: Ashenvale (World of Warcraft)"]
+    },
+    {
+      "id": 331006,
+      "kind": "place",
+      "title": "Forest Song",
+      "triggers": [{ "area": "Forest Song" }, { "talk": 3848 }, { "talk": 17303 }],
+      "body": [
+        "An ancient night elf ruin in the north-east, almost abandoned; for a time the druid Kayneth Stillwind was its only inhabitant. Since the Exodar crashed, draenei under Vindicator Vedaar have come to help the night elves rebuild it as an outpost against the Warsong and the Legion's remnants."
+      ],
+      "sources": ["warcraft.wiki.gg: Forest Song (History)"]
+    },
+    {
+      "id": 331007,
+      "kind": "place",
+      "title": "Raynewood Retreat",
+      "triggers": [{ "area": "Raynewood Retreat" }, { "talk": 4273 }],
+      "body": [
+        "A great tree in the north of the forest, the night elf army's base in the War of the Satyr. Its keepers, wisps and blink dragons watch over the road north to Felwood. At the top of the tree hides Keeper Ordanus, one of the eldest sons of Cenarius, hunted by the Shadow Council."
+      ],
+      "sources": ["warcraft.wiki.gg: Raynewood Retreat (Background, World of Warcraft)"]
+    },
+    {
+      "id": 331008,
+      "kind": "place",
+      "title": "The Satyr Ruins",
+      "triggers": [{ "area": "Xavian" }, { "area": "Satyrnaar" }, { "area": "Night Run" }],
+      "body": [
+        "Satyrs, the Highborne the Legion twisted, hold three old elven ruins in the east. Xavian, named for Xavius, the first satyr, is the seat of their power in Ashenvale, where Prince Raze rules; Satyrnaar, the most intact, sits beside the road to Azshara; little Night Run lies on a cliff-bound naze. Each holds one of the soulgems of their allies, the Cult of the Dark Strand.",
+        "Shortly after the Sundering, it was in these woods that the War of the Satyr began."
+      ],
+      "sources": ["warcraft.wiki.gg: Xavian", "warcraft.wiki.gg: Satyrnaar", "warcraft.wiki.gg: Night Run"]
+    },
+    {
+      "id": 331009,
+      "kind": "place",
+      "title": "The Dor'Danil Barrow Den",
+      "triggers": [{ "area": "The Dor'Danil Barrow Den" }, { "talk": 3941 }, { "talk": 3940 }],
+      "body": [
+        "A resting place of sleeping night elf druids that ended up behind Horde lines. The orcs had no interest in sleeping elves, but the Forsaken did: they experimented with severing the druids from their spirits, and drove them mad. Forsaken assassins skulk in the den now among the enraged souls, the strongest of them those of Uthil Mooncall, Mavoris Cloudsbreak and Taneel Darkwood."
+      ],
+      "sources": ["warcraft.wiki.gg: Dor'Danil Barrow Den"]
+    },
+    {
+      "id": 331010,
+      "kind": "place",
+      "title": "The Zoram Strand",
+      "triggers": [{ "area": "The Zoram Strand" }, { "area": "Zoram'gar Outpost" }, { "talk": 12736 }],
+      "body": [
+        "The beach in the north-west, where the night elf city of Zoram stood until the Sundering drowned it. Naga hold the shore now, among shipwrecks and beached sea creatures. The Horde keeps a small port, Zoram'gar, from where the Earthen Ring's Je'neu Sancrea sends adventurers into Blackfathom Deeps.",
+        "Blackfathom was a temple of Elune, thought lost in the Sundering. The Twilight's Hammer, drawn by whispers and foul dreams, found it, and serves something in its depths."
+      ],
+      "sources": ["warcraft.wiki.gg: Zoram Strand", "warcraft.wiki.gg: Blackfathom Deeps", "warcraft.wiki.gg: Ashenvale (Notable characters)"]
+    },
+    {
+      "id": 331011,
+      "kind": "place",
+      "title": "Maestra's Post",
+      "triggers": [{ "area": "Maestra's Post" }, { "talk": 11806 }, { "talk": 3663 }],
+      "body": [
+        "A small camp in the west with a tower and a night elf hall, home of the only humans in Ashenvale, Feero Ironhand and Delgren the Purifier. Sentinel Onaeya holds it against Horde attacks while the Alliance's thin forces also struggle with the corrupted furbolgs nearby."
+      ],
+      "sources": ["warcraft.wiki.gg: Maestra's Post", "warcraft.wiki.gg: Ashenvale (Notable characters)"]
+    },
+    {
+      "id": 331012,
+      "kind": "place",
+      "title": "The Furbolg Villages",
+      "triggers": [{ "area": "Thistlefur Village" }, { "area": "Greenpaw Village" }, { "area": "Bloodtooth Camp" }],
+      "body": [
+        "Most of Ashenvale's furbolgs fell to the Legion's corruption and attack anyone who comes near. The Thistlefur, north of Astranaar, are led by the ferocious Dal Bloodclaw and Rorgish Jowl; the Foulweald hold Greenpaw Village; and Ran Bloodtooth's tribe camps by the Falfarren River."
+      ],
+      "sources": ["warcraft.wiki.gg: Thistlefur Village", "warcraft.wiki.gg: Greenpaw Village", "warcraft.wiki.gg: Bloodtooth Camp"]
+    },
+    {
+      "id": 331013,
+      "kind": "place",
+      "title": "The Howling Vale",
+      "triggers": [{ "area": "The Howling Vale" }],
+      "body": [
+        "A cave near the Felwood border holding the Shrine of Mel'Thandris, where the Scythe of Elune was kept after the War of the Satyr; its inscription reads \"The truth is a guiding light.\" Velinde Starsong, the niece's granddaughter, read of the scythe and came here to find it. The Terrowulf worgen have since overrun the shrine."
+      ],
+      "sources": ["warcraft.wiki.gg: Howling Vale (Background)"]
+    },
+    {
+      "id": 331014,
+      "kind": "place",
+      "title": "Bough Shadow",
+      "triggers": [{ "area": "Bough Shadow" }],
+      "body": [
+        "The north-eastern corner of the forest, beyond Forest Song, where a great tree grown from a branch of Nordrassil holds one of the four portals to the Emerald Dream. The green drakes Phantim and Dreamstalker guard it with their dragonkin."
+      ],
+      "sources": ["warcraft.wiki.gg: Bough Shadow"]
+    },
+    {
+      "id": 331015,
+      "kind": "place",
+      "title": "The Tainted Lakes",
+      "triggers": [{ "area": "Iris Lake" }, { "area": "The Ruins of Stardust" }, { "area": "Mystral Lake" }],
+      "body": [
+        "The corruption of Felwood has reached some of Ashenvale's lakes. Iris Lake's water has turned a sickly yellow-green, and twisted bog beasts roam the holy Ruins of Stardust on their island, though the stardust shrubs there remain pure and heal those who take them. The elementals of Mystral Lake, the largest in the forest, once served the night elves, until Sarilus Foulborne corrupted them."
+      ],
+      "sources": ["warcraft.wiki.gg: Iris Lake", "warcraft.wiki.gg: Ruins of Stardust", "warcraft.wiki.gg: Mystral Lake"]
+    },
+    {
+      "id": 331016,
+      "kind": "place",
+      "title": "Fire Scar Shrine and Felfire Hill",
+      "triggers": [{ "area": "Fire Scar Shrine" }, { "area": "Felfire Hill" }, { "kill": 3660 }],
+      "body": [
+        "Felfire Hill, south-east of Splintertree, is where infernals fell from the sky in the Third War; demons still swarm it, and the Horde has fortified both bridges to it. In the south-west, the Shadow Council has corrupted Fire Scar Shrine into a place of great evil, where the orc warlock Ilkrud Magthrull served Athrikus Narassin, master of the Cult of the Dark Strand."
+      ],
+      "sources": ["warcraft.wiki.gg: Felfire Hill", "warcraft.wiki.gg: Fire Scar Shrine"]
+    },
+    {
+      "id": 331017,
+      "kind": "place",
+      "title": "Bathran's Haunt",
+      "triggers": [{ "area": "Bathran's Haunt" }, { "area": "The Ruins of Ordil'Aran" }],
+      "body": [
+        "An ancient elven ruin in the north-west, long abandoned, now occupied by Forsaken herbalists and their thugs, whose presence has turned the grass brown and withered the flowers. A rare healing herb grows only here. To the south, the Cult of the Dark Strand made the Ruins of Ordil'Aran their haunt."
+      ],
+      "sources": ["warcraft.wiki.gg: Bathran's Haunt", "warcraft.wiki.gg: Ruins of Ordil'Aran"]
+    },
+    {
+      "id": 331030,
+      "kind": "person",
+      "title": "Cenarius",
+      "triggers": [{ "areaId": 331 }],
+      "body": [
+        "Lord of the Forest, son of Elune and the demigod Malorne, who taught the night elves to be druids and to embrace nature. He led Kalimdor's forces in the War of the Ancients after his father fell, and guarded the elves and their forests for ten thousand years, until the demon-blooded orcs of Grom Hellscream killed him in Ashenvale. His sons, the keepers of the grove, still watch over the forest."
+      ],
+      "sources": ["warcraft.wiki.gg: Cenarius (introduction)", "warcraft.wiki.gg: Raynewood Retreat"]
+    },
+    {
+      "id": 331050,
+      "kind": "history",
+      "title": "The Warsong in Ashenvale",
+      "triggers": [{ "areaId": 331 }, { "area": "Splintertree Post" }],
+      "body": [
+        "In the Third War, goblins began cutting Ashenvale's trees before the Warsong arrived, and Grommash Hellscream's orcs drove off the furbolgs and Sentinels to keep the work going. Cenarius came to defend his forest. The orcs, manipulated by the Legion, drank Mannoroth's blood again, and in their demonic fury killed the demigod."
+      ],
+      "sources": ["warcraft.wiki.gg: Ashenvale (The Third War)"]
+    },
+    {
+      "id": 331051,
+      "kind": "history",
+      "title": "The Legion's March",
+      "triggers": [{ "areaId": 331 }, { "area": "Felfire Hill" }],
+      "body": [
+        "Archimonde sent his forces into Ashenvale; infernals rained from the sky while undead and demons poured in from the east. The night elves, the forest spirits, and the Horde and Alliance fought on separate fronts and were overwhelmed, and the Legion trampled its way towards Mount Hyjal. Tyrande woke Malfurion, who was stunned to see what had become of his forest, as fel fire burned it and the undead blight choked it.",
+        "The dreadlord Tichondrius used the Skull of Gul'dan to corrupt the northern woods into Felwood. Illidan killed him and took the skull, and the taint spread no further."
+      ],
+      "sources": ["warcraft.wiki.gg: Ashenvale (The Third War)"]
+    },
+    {
+      "id": 331052,
+      "kind": "history",
+      "title": "The Exile of the Highborne",
+      "triggers": [{ "areaId": 331 }, { "area": "The Shrine of Aessina" }],
+      "body": [
+        "After the Sundering, the night elves forbade arcane magic. Around 7,300 years before the Dark Portal, Dath'Remar's Highborne called the druids cowards, and in protest unleashed a terrible magical storm on Ashenvale. The night elves could not bring themselves to put so many of their own kin to death, so they exiled them across the sea instead.",
+        "When Malfurion and his druids went into the Emerald Dream for their long sleep, Tyrande and the Sentinels kept watch over the forest, and the keepers of the grove helped them keep the peace."
+      ],
+      "sources": ["warcraft.wiki.gg: Ashenvale (After the Sundering)"]
+    }
+  ]
+}
