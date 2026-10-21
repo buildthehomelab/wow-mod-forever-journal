@@ -143,7 +143,7 @@
       "title": "The Howling Vale",
       "triggers": [{ "area": "The Howling Vale" }],
       "body": [
-        "A cave near the Felwood border holding the Shrine of Mel'Thandris, where the Scythe of Elune was kept after the War of the Satyr; its inscription reads \"The truth is a guiding light.\" Velinde Starsong, the niece's granddaughter, read of the scythe and came here to find it. The Terrowulf worgen have since overrun the shrine."
+        "A cave near the Felwood border holding the Shrine of Mel'Thandris, where the Scythe of Elune was kept after the War of the Satyr; its inscription reads \"The truth is a guiding light.\" The shrine was built by Mel'Thandris's niece; generations later her daughter, Velinde Starsong, read of the scythe in Darnassus and came here to find it. The Terrowulf worgen have since overrun the shrine."
       ],
       "sources": ["warcraft.wiki.gg: Howling Vale (Background)"]
     },
