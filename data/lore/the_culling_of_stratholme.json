@@ -1,0 +1,67 @@
+{
+  "zone": 4100,
+  "name": "The Culling of Stratholme",
+  "entries": [
+    {
+      "id": 4100000,
+      "kind": "zone",
+      "title": "The Culling of Stratholme",
+      "triggers": [{ "areaId": 4100 }, { "talk": 26527 }],
+      "body": [
+        "Stratholme, the second city of Lordaeron, on the day it fell. The plague came in shipments of grain from Andorhal, under the dreadlord Mal'Ganis' watchful eye; the people baked it, ate it, and began to sicken. Prince Arthas arrived with Jaina Proudmoore, and Uther and his Knights of the Silver Hand, too late.",
+        "The infinite dragonflight has come to meddle here. The bronze dragons ask a terrible thing: that this day happen exactly as it did."
+      ],
+      "sources": ["warcraft.wiki.gg: Culling of Stratholme (introduction, Prelude)", "warcraft.wiki.gg: Chrono-Lord Epoch"]
+    },
+    {
+      "id": 4100001,
+      "kind": "place",
+      "title": "The Gates of Stratholme",
+      "triggers": [{ "talk": 26499 }, { "talk": 26528 }],
+      "body": [
+        "Outside the walls, Arthas gave his order: purge the city before its people turned. To him it was mercy as much as strategy; better a clean death than to rise as a walking corpse. Uther and most of his paladins refused, and Arthas called it treason. Jaina left with them. Arthas and those who still followed him went into the city, and soon it was burning."
+      ],
+      "sources": ["warcraft.wiki.gg: Culling of Stratholme (The Culling)"]
+    },
+    {
+      "id": 4100002,
+      "kind": "place",
+      "title": "The Streets of Stratholme",
+      "triggers": [{ "kill": 26529 }, { "kill": 26530 }, { "kill": 26532 }, { "kill": 32273 }],
+      "body": [
+        "The burning streets and market rows, where the Scourge rises from the townsfolk faster than Arthas' men can cut them down, and where the infinite dragons slip in to change what happened."
+      ],
+      "sources": ["warcraft.wiki.gg: Culling of Stratholme", "warcraft.wiki.gg: Infinite Corruptor"]
+    },
+    {
+      "id": 4100030,
+      "kind": "person",
+      "title": "Meathook and Salramm",
+      "triggers": [{ "kill": 26529 }, { "kill": 26530 }],
+      "body": [
+        "An abomination who wants someone to play with, and a necromancer, Salramm the Fleshcrafter, both lying in wait in Stratholme's houses for the prince's soldiers."
+      ],
+      "sources": ["warcraft.wiki.gg: Meathook", "warcraft.wiki.gg: Salramm the Fleshcrafter"]
+    },
+    {
+      "id": 4100031,
+      "kind": "person",
+      "title": "Chrono-Lord Epoch",
+      "triggers": [{ "kill": 26532 }],
+      "body": [
+        "Sent by the master of the infinite dragonflight to twist the events of old Stratholme."
+      ],
+      "sources": ["warcraft.wiki.gg: Chrono-Lord Epoch"]
+    },
+    {
+      "id": 4100032,
+      "kind": "person",
+      "title": "Mal'Ganis",
+      "triggers": [{ "complete": 13151 }],
+      "body": [
+        "One of the most notorious of the dreadlords, set by the Legion as one of Ner'zhul's jailers. He commanded the Scourge and the Cult of the Damned in Lordaeron, and was chosen to lead the plot to turn Arthas to darkness. When Mal'Ganis came to claim Stratholme's dead, Arthas had already destroyed them, and Mal'Ganis fled to Northrend, daring the prince to follow."
+      ],
+      "sources": ["warcraft.wiki.gg: Mal'Ganis", "warcraft.wiki.gg: Culling of Stratholme"]
+    }
+  ]
+}
