@@ -1,0 +1,87 @@
+{
+  "zone": 4196,
+  "name": "Drak'Tharon Keep",
+  "entries": [
+    {
+      "id": 4196000,
+      "kind": "zone",
+      "title": "Drak'Tharon Keep",
+      "triggers": [{ "areaId": 4196 }],
+      "body": [
+        "A massive Drakkari fortress of spires and beautifully carved walls on the border of Zul'Drak. The Scourge took it whole, betrayed from within, and from it began its invasion of the ice trolls' empire in earnest. Undead Drakkari pour out of it into the Grizzly Hills and towards Zul'Drak. Even the fiercest ice troll warriors have failed to take it back, and unless it is neutralized soon, the whole empire, and the power of its gods, may fall to the Scourge.",
+        "Near here, in the Third War, Arthas found Mal'Ganis and struck him down with Frostmourne."
+      ],
+      "sources": ["warcraft.wiki.gg: Drak'Tharon Keep (History)"]
+    },
+    {
+      "id": 4196001,
+      "kind": "place",
+      "title": "The Lower Keep",
+      "triggers": [{ "kill": 26630 }, { "kill": 26631 }],
+      "body": [
+        "The keep's lower halls, where living Drakkari still storm in to be slaughtered, and a lich commands the Scourge's hold on the fortress."
+      ],
+      "sources": ["warcraft.wiki.gg: Trollgore", "warcraft.wiki.gg: Novos the Summoner"]
+    },
+    {
+      "id": 4196002,
+      "kind": "place",
+      "title": "The Raptor Pens",
+      "triggers": [{ "area": "Raptor Pens" }, { "kill": 27483 }],
+      "body": [
+        "Pens where the Drakkari kept their raptors, ruled by a devilsaur the trolls call the raptor king, immune to the plague."
+      ],
+      "sources": ["warcraft.wiki.gg: King Dred"]
+    },
+    {
+      "id": 4196003,
+      "kind": "place",
+      "title": "The Prophet's Tier",
+      "triggers": [{ "kill": 26632 }],
+      "body": [
+        "The upper tiers of the fortress, from which the prophet watches his undead pour out of the keep against Zul'Drak."
+      ],
+      "sources": ["warcraft.wiki.gg: The Prophet Tharon'ja"]
+    },
+    {
+      "id": 4196030,
+      "kind": "person",
+      "title": "Trollgore",
+      "triggers": [{ "kill": 26630 }],
+      "body": [
+        "A huge Scourge construct that feeds on the endless stream of Drakkari trying to retake the keep."
+      ],
+      "sources": ["warcraft.wiki.gg: Trollgore"]
+    },
+    {
+      "id": 4196031,
+      "kind": "person",
+      "title": "Novos the Summoner",
+      "triggers": [{ "kill": 26631 }],
+      "body": [
+        "The lich in command of the Scourge's forces in Drak'Tharon."
+      ],
+      "sources": ["warcraft.wiki.gg: Novos the Summoner"]
+    },
+    {
+      "id": 4196032,
+      "kind": "person",
+      "title": "King Dred",
+      "triggers": [{ "kill": 27483 }],
+      "body": [
+        "A devilsaur, king of the Drakkari raptors, and one of the few creatures here immune to the plague of undeath."
+      ],
+      "sources": ["warcraft.wiki.gg: King Dred"]
+    },
+    {
+      "id": 4196033,
+      "kind": "person",
+      "title": "The Prophet Tharon'ja",
+      "triggers": [{ "kill": 26632 }],
+      "body": [
+        "Once the keep's Drakkari prophet and master. He turned undead and allied with the Scourge, taking the shape of a great skeletal wind serpent. He is known for ripping the flesh from the bones of the mightiest ice troll warriors."
+      ],
+      "sources": ["warcraft.wiki.gg: The Prophet Tharon'ja", "warcraft.wiki.gg: Drak'Tharon Keep (History)"]
+    }
+  ]
+}
