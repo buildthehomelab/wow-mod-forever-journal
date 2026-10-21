@@ -1,0 +1,168 @@
+{
+  "zone": 67,
+  "name": "The Storm Peaks",
+  "entries": [
+    {
+      "id": 67000,
+      "kind": "zone",
+      "title": "The Storm Peaks",
+      "triggers": [{ "areaId": 67 }],
+      "body": [
+        "Sturmpyk, the vrykul call it: a range of some of the tallest mountains in the world, where the cold can freeze a traveller solid and the wind can pluck them off a mountainside. The Sons of Hodir advise never coming here with fewer than two companions.",
+        "This was the home of the titans' keepers, and nearly every mountain bears their mark. Here they built Ulduar, the greatest of their works on Azeroth."
+      ],
+      "sources": ["warcraft.wiki.gg: Storm Peaks (introduction, Ancient times)"]
+    },
+    {
+      "id": 67001,
+      "kind": "place",
+      "title": "The Temple of Storms",
+      "triggers": [{ "area": "Temple of Storms" }, { "talk": 29445 }],
+      "body": [
+        "An open-sided titan temple on the highest mountain in Northrend, its columns rimmed with snow. Lightning cracks here even under a clear sky, while the northern lights dance across the stars. It is the sanctum of Thorim the Stormlord, one of the keepers, who has sat here brooding for a very long time."
+      ],
+      "sources": ["warcraft.wiki.gg: Temple of Storms"]
+    },
+    {
+      "id": 67002,
+      "kind": "place",
+      "title": "Dun Niffelem",
+      "triggers": [{ "area": "Dun Niffelem" }, { "area": "Valley of Ancient Winters" }, { "talk": 30105 }],
+      "body": [
+        "A fortress of great spikes of ice and iron chains blocking off part of the Valley of Ancient Winters, home of the Sons of Hodir, a warlike clan of frost giants, under King Jokkum. Once they were friends of Thorim. That friendship ended in blood."
+      ],
+      "sources": ["warcraft.wiki.gg: Dun Niffelem", "warcraft.wiki.gg: Sons of Hodir"]
+    },
+    {
+      "id": 67003,
+      "kind": "place",
+      "title": "Thunderfall",
+      "triggers": [{ "area": "Thunderfall" }],
+      "body": [
+        "A battlefield frozen forever: giants and frost dwarves locked in combat around the crater where Thorim's hammer, Krolmir, struck the earth, killing all nearby in an instant."
+      ],
+      "sources": ["warcraft.wiki.gg: Sons of Hodir (History)"]
+    },
+    {
+      "id": 67004,
+      "kind": "place",
+      "title": "Brunnhildar Village",
+      "triggers": [{ "area": "Brunnhildar Village" }, { "area": "Sifreldar Village" }, { "area": "The Forlorn Mine" }, { "talk": 29796 }],
+      "body": [
+        "The stronghold of the Hyldnir, the frost vrykul who serve Thorim. Their women are warriors, and they compete in the Hyldsmeet to decide who shall rule at Thorim's side. Men they think good for nothing but slave labour in their mines. The Lich King sent them three emissaries; all three were dismembered. Their proto-drakes nest in the mountains above."
+      ],
+      "sources": ["warcraft.wiki.gg: Hyldnir", "warcraft.wiki.gg: Brunnhildar Village"]
+    },
+    {
+      "id": 67005,
+      "kind": "place",
+      "title": "Valkyrion",
+      "triggers": [{ "area": "Valkyrion" }, { "area": "The Blighted Pool" }],
+      "body": [
+        "A Hyldnir village whose leader, Yulda the Stormspeaker, gave it to the Lich King in return for being made a val'kyr. Its people capture proto-drakes and their eggs and drown them in the Blighted Pool to make plagued drakes. Their sisters of Brunnhildar hate them for it."
+      ],
+      "sources": ["warcraft.wiki.gg: Valkyrion"]
+    },
+    {
+      "id": 67006,
+      "kind": "place",
+      "title": "K3",
+      "triggers": [{ "area": "K3" }, { "area": "Ricket's Folly" }, { "area": "Sparksocket Minefield" }, { "area": "Garm's Bane" }],
+      "body": [
+        "An independent goblin town at the foot of the peaks, founded to get a share of the titan machines lying all over the mountains. Progress has been slow: gnolls, snobolds and magnataur keep attacking, the Hyldnir carried off all its men to their mines, and the cold freezes the motors of its flying machines."
+      ],
+      "sources": ["warcraft.wiki.gg: K3", "warcraft.wiki.gg: Sifreldar Village"]
+    },
+    {
+      "id": 67007,
+      "kind": "place",
+      "title": "Frosthold",
+      "triggers": [{ "area": "Frosthold" }, { "area": "Stormcrest" }],
+      "body": [
+        "The city of the Frostborn, the whole frost dwarf race, in and around a great pit of ice atop a mountain. No road leads there; it can only be reached by air."
+      ],
+      "sources": ["warcraft.wiki.gg: Frosthold"]
+    },
+    {
+      "id": 67008,
+      "kind": "place",
+      "title": "Grom'arsh Crash-Site",
+      "triggers": [{ "area": "Grom'arsh Crash-Site" }],
+      "body": [
+        "A Horde camp made from the wreck of a goblin zeppelin."
+      ],
+      "sources": ["warcraft.wiki.gg: Grom'arsh Crash-Site"]
+    },
+    {
+      "id": 67009,
+      "kind": "place",
+      "title": "Bouldercrag's Refuge",
+      "triggers": [{ "area": "Bouldercrag's Refuge" }, { "area": "Narvir's Cradle" }, { "area": "Snowdrift Plains" }, { "talk": 29801 }],
+      "body": [
+        "Where the earthen made their home after they were driven out of Ulduar. On the plains below, iron dwarves are building a war engine, the Iron Colossus, to turn on them."
+      ],
+      "sources": ["warcraft.wiki.gg: Bouldercrag's Refuge", "warcraft.wiki.gg: Narvir's Cradle"]
+    },
+    {
+      "id": 67010,
+      "kind": "place",
+      "title": "The Terrace of the Makers",
+      "triggers": [{ "area": "Terrace of the Makers" }, { "area": "Temple of Invention" }, { "area": "Temple of Order" }, { "area": "Temple of Winter" }, { "area": "Temple of Wisdom" }, { "area": "Hall of the Shaper" }, { "area": "The Inventor's Library" }, { "area": "Mimir's Workshop" }],
+      "body": [
+        "A complex of temples across the chasm from Ulduar, where the keepers lived and worked: Mimiron's Temple of Invention, Hodir's Temple of Winter, and Tyr's Temple of Order, its keeper long absent with no sign of a struggle. The terrace is badly damaged, its walkways shattered and columns cracked. Iron dwarves fight the earthen warders who still guard it."
+      ],
+      "sources": ["warcraft.wiki.gg: Terrace of the Makers", "warcraft.wiki.gg: Temple of Order", "warcraft.wiki.gg: Temple of Invention"]
+    },
+    {
+      "id": 67011,
+      "kind": "place",
+      "title": "The Temple of Life",
+      "triggers": [{ "area": "Temple of Life" }, { "area": "Plain of Echoes" }],
+      "body": [
+        "The post of the keeper Freya, empty now. The signs show a great battle against an opponent of her own size and strength. Its guardians are gone and its plants are dead."
+      ],
+      "sources": ["warcraft.wiki.gg: Temple of Life"]
+    },
+    {
+      "id": 67012,
+      "kind": "place",
+      "title": "Camp Tunka'lo",
+      "triggers": [{ "area": "Camp Tunka'lo" }, { "area": "Frostfloe Deep" }, { "talk": 30395 }],
+      "body": [
+        "A taunka village high in the eastern mountains, so remote that the Scourge has never found it. Long ago the hero Stormhoof, brother of Chieftain Swiftspear, fought the North Wind, the elemental lord who held the peaks and the taunka in its iron grip, and weakened it before he fell."
+      ],
+      "sources": ["warcraft.wiki.gg: Camp Tunka'lo", "warcraft.wiki.gg: Storm Peaks (The North Wind)"]
+    },
+    {
+      "id": 67013,
+      "kind": "place",
+      "title": "The Engines of the Makers",
+      "triggers": [{ "area": "Engine of the Makers" }, { "area": "Loken's Bargain" }, { "area": "Uldis" }, { "area": "The Foot Steppes" }],
+      "body": [
+        "Vast titan machines buried in the mountains, deep shafts and engine rooms of turning gears, all parts of the Forge of Wills inside Ulduar."
+      ],
+      "sources": ["warcraft.wiki.gg: Engine of the Makers", "warcraft.wiki.gg: Loken's Bargain"]
+    },
+    {
+      "id": 67014,
+      "kind": "place",
+      "title": "Ulduar",
+      "triggers": [{ "area": "Ulduar" }, { "area": "Halls of Stone" }, { "area": "Halls of Lightning" }],
+      "body": [
+        "The greatest titan complex on Azeroth, perfectly preserved in the snows. For millennia no mortal disturbed it. Since its discovery, many have wondered what it was for: a city to herald its makers' glory, perhaps, or a vault of the titans' own treasures."
+      ],
+      "sources": ["warcraft.wiki.gg: Ulduar (Official Blizzard description)"]
+    },
+    {
+      "id": 67050,
+      "kind": "history",
+      "title": "The Grief of Thorim",
+      "triggers": [{ "talk": 29445 }],
+      "body": [
+        "The Sons of Hodir were once friends of Thorim. Then his wife Sif was murdered, and he was made to believe that the frost giant king Arngrim was responsible. In a rage, he hurled his hammer Krolmir at Arngrim, who was in the middle of a battle with frost dwarves; the blast killed everyone around and froze the scene forever. Then Thorim fell into despair and has brooded in his temple for centuries.",
+        "It was his own brother, Loken, who killed Sif and framed the giants."
+      ],
+      "sources": ["warcraft.wiki.gg: Sons of Hodir (History)", "warcraft.wiki.gg: Temple of Storms"]
+    }
+  ]
+}
