@@ -1,0 +1,167 @@
+{
+  "zone": 1176,
+  "name": "Zul'Farrak",
+  "entries": [
+    {
+      "id": 1176000,
+      "kind": "zone",
+      "title": "Zul'Farrak",
+      "triggers": [{ "areaId": 1176 }],
+      "body": [
+        "A sun-blasted troll city in north-western Tanaris, once a city of the Gurubashi in the jungle that stood here before the Sundering. Its trolls were stranded in the new desert and became the sand trolls of the Sandfury tribe, known for their particular ruthlessness and dark mysticism.",
+        "Troll legend tells of a great sword, Sul'thraze the Lasher, split in half long ago; it is rumoured that both halves lie within these walls. A band of mercenaries fleeing Gadgetzan is said to have wandered in and been trapped. And there are hushed whispers of an ancient creature sleeping in a sacred pool at the city's heart."
+      ],
+      "sources": ["warcraft.wiki.gg: Zul'Farrak (History)"]
+    },
+    {
+      "id": 1176001,
+      "kind": "place",
+      "title": "The Graveyard and the Scarab Terrace",
+      "triggers": [{ "areaId": 1176 }, { "kill": 7271 }, { "kill": 7272 }],
+      "body": [
+        "Inside the walls lie the troll graves, whose dead do not rest: the witch doctor Zum'rah raises them against intruders. Scarabs swarm the terraces nearby, said to be the cursed persecutors of the martyr Theka."
+      ],
+      "sources": ["warcraft.wiki.gg: Witch Doctor Zum'rah", "warcraft.wiki.gg: Theka the Martyr"]
+    },
+    {
+      "id": 1176002,
+      "kind": "place",
+      "title": "The Altar of Sul",
+      "triggers": [{ "kill": 8127 }],
+      "body": [
+        "A cave in the hills beyond the scarab room, guarded by basilisks, where the overseer Antu'sul keeps watch over the altar of Sul."
+      ],
+      "sources": ["warcraft.wiki.gg: Antu'sul"]
+    },
+    {
+      "id": 1176003,
+      "kind": "place",
+      "title": "The Pyramid",
+      "triggers": [{ "kill": 7796 }, { "kill": 7275 }, { "kill": 7604 }],
+      "body": [
+        "A great stepped pyramid in the city, where Sergeant Bly's mercenaries are trapped in cages at the top. A hundred Sandfury trolls, led by Nekrum Gutchewer and Shadowpriest Sezz'ziz, wait below to assault anyone who sets them free."
+      ],
+      "sources": ["warcraft.wiki.gg: Nekrum Gutchewer", "warcraft.wiki.gg: Sergeant Bly", "warcraft.wiki.gg: Zul'Farrak (Tactical overview)"]
+    },
+    {
+      "id": 1176004,
+      "kind": "place",
+      "title": "The Sacred Pool",
+      "triggers": [{ "kill": 7273 }, { "kill": 7795 }],
+      "body": [
+        "The holy pool at the heart of the city, presided over by the priestess Hydromancer Velratha. From it the trolls long ago summoned the great hydra Gahz'rilla, whom they worship as a deity. How it is done is one of their best-kept secrets."
+      ],
+      "sources": ["warcraft.wiki.gg: Gahz'rilla (History)", "warcraft.wiki.gg: Hydromancer Velratha"]
+    },
+    {
+      "id": 1176030,
+      "kind": "person",
+      "title": "Antu'sul",
+      "triggers": [{ "kill": 8127 }],
+      "body": [
+        "The Overseer of Sul, who guards his cave and its altar with a host of basilisks."
+      ],
+      "sources": ["warcraft.wiki.gg: Antu'sul"]
+    },
+    {
+      "id": 1176031,
+      "kind": "person",
+      "title": "Theka the Martyr",
+      "triggers": [{ "kill": 7272 }],
+      "body": [
+        "A hero of Sandfury history who sacrificed himself for his people. Those who persecuted him were cursed forever into the shape of scarabs. He carries one of the tablets of the Mosh'aru prophecy."
+      ],
+      "sources": ["warcraft.wiki.gg: Theka the Martyr"]
+    },
+    {
+      "id": 1176032,
+      "kind": "person",
+      "title": "Witch Doctor Zum'rah",
+      "triggers": [{ "kill": 7271 }],
+      "body": [
+        "A Sandfury witch doctor who keeps to himself among the graves, until anyone comes too close."
+      ],
+      "sources": ["warcraft.wiki.gg: Witch Doctor Zum'rah"]
+    },
+    {
+      "id": 1176033,
+      "kind": "person",
+      "title": "Nekrum Gutchewer",
+      "triggers": [{ "kill": 7796 }],
+      "body": [
+        "An undead troll who co-leads the hundred-strong assault on the pyramid. His medallion is said to grant an unnaturally long life, for a price."
+      ],
+      "sources": ["warcraft.wiki.gg: Nekrum Gutchewer"]
+    },
+    {
+      "id": 1176034,
+      "kind": "person",
+      "title": "Shadowpriest Sezz'ziz",
+      "triggers": [{ "kill": 7275 }],
+      "body": [
+        "A shadowpriest, probably an important religious figure among the Sandfury, who leads the assault on the pyramid with Nekrum."
+      ],
+      "sources": ["warcraft.wiki.gg: Shadowpriest Sezz'ziz"]
+    },
+    {
+      "id": 1176035,
+      "kind": "person",
+      "title": "Sergeant Bly",
+      "triggers": [{ "kill": 7604 }, { "talk": 7604 }],
+      "body": [
+        "The leader of a band of mercenaries trapped in the city after fleeing Gadgetzan. He will fight beside his rescuers, until someone asks him about the Divino-matic Rod he took."
+      ],
+      "sources": ["warcraft.wiki.gg: Sergeant Bly"]
+    },
+    {
+      "id": 1176036,
+      "kind": "person",
+      "title": "Hydromancer Velratha",
+      "triggers": [{ "kill": 7795 }],
+      "body": [
+        "A priestess of the Sandfury, perhaps commanding their zealots and acolytes, or presiding over the secret rites of Gahz'rilla. She stole the Tiara of the Deep from the mage Tabetha, and holds the second Mosh'aru tablet."
+      ],
+      "sources": ["warcraft.wiki.gg: Hydromancer Velratha"]
+    },
+    {
+      "id": 1176037,
+      "kind": "person",
+      "title": "Gahz'rilla",
+      "triggers": [{ "kill": 7273 }],
+      "body": [
+        "A huge hydra, so fierce that her scales crackle with energy, called up from the sacred pool and worshipped by the trolls as a demigod."
+      ],
+      "sources": ["warcraft.wiki.gg: Gahz'rilla (History)"]
+    },
+    {
+      "id": 1176038,
+      "kind": "person",
+      "title": "Chief Ukorz Sandscalp",
+      "triggers": [{ "kill": 7267 }],
+      "body": [
+        "Chief of the Sandfury and ruler of Zul'Farrak, with his trusted right hand, Ruuzlu, always at his side."
+      ],
+      "sources": ["warcraft.wiki.gg: Chief Ukorz Sandscalp"]
+    },
+    {
+      "id": 1176039,
+      "kind": "person",
+      "title": "Ruuzlu",
+      "triggers": [{ "kill": 7797 }],
+      "body": [
+        "The chief's right hand and friend, who plans to retake Tanaris for the Sandfury empire with scarabs, basilisks and armies of troll zombies."
+      ],
+      "sources": ["warcraft.wiki.gg: Ruuzlu"]
+    },
+    {
+      "id": 1176040,
+      "kind": "person",
+      "title": "The Wandering Few",
+      "triggers": [{ "kill": 10082 }, { "kill": 10080 }, { "kill": 10081 }],
+      "body": [
+        "Some Sandfury are seldom seen in the city: Zerillis, Sandarr Dunereaver, and the one called Dustwraith."
+      ],
+      "sources": ["warcraft.wiki.gg: Zerillis", "warcraft.wiki.gg: Sandarr Dunereaver", "warcraft.wiki.gg: Dustwraith"]
+    }
+  ]
+}
