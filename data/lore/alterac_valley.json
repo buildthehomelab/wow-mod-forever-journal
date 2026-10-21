@@ -1,0 +1,137 @@
+{
+  "zone": 2597,
+  "name": "Alterac Valley",
+  "entries": [
+    {
+      "id": 2597000,
+      "kind": "zone",
+      "title": "Alterac Valley",
+      "triggers": [{ "areaId": 2597 }],
+      "body": [
+        "A valley hidden deep in the Alterac Mountains, home of the Frostwolf clan. Long before the First War, Gul'dan exiled the Frostwolves here, led by Durotan, Thrall's father, because they refused to drink the blood of Mannoroth. They scraped a living in its southern reaches with the frost wolves they brought from Draenor, and when Thrall united the clans they chose to stay, under the old shaman Drek'Thar.",
+        "Then the Stormpike Expedition of Ironforge came to mine its caves and dig for titan relics and links to their ancestral past, likely without knowing whose home it was. Each side says the other struck first. King Magni has since declared the valley Ironforge's by right, and war rages along its length."
+      ],
+      "sources": ["warcraft.wiki.gg: Alterac Valley (Official overview, Description, History and politics)"]
+    },
+    {
+      "id": 2597001,
+      "kind": "place",
+      "title": "Dun Baldar",
+      "triggers": [{ "area": "Dun Baldar" }, { "area": "Hall of the Stormpike" }, { "area": "Dun Baldar Pass" }],
+      "body": [
+        "The Stormpike stronghold in the north of the valley, a dwarven fortress with its bunkers on the pass before it, where General Vanndar Stormpike commands from the Hall of the Stormpike."
+      ],
+      "sources": ["warcraft.wiki.gg: Alterac Valley (Description)"]
+    },
+    {
+      "id": 2597002,
+      "kind": "place",
+      "title": "Frostwolf Keep",
+      "triggers": [{ "area": "Frostwolf Keep" }, { "area": "Hall of the Frostwolf" }, { "area": "Frostwolf Village" }],
+      "body": [
+        "The Frostwolf clan's home in the south of the valley, their village and the keep above it, where Drek'Thar commands from the Hall of the Frostwolf. Near it stands the Rock of Durotan, in memory of the chieftain who led them into exile."
+      ],
+      "sources": ["warcraft.wiki.gg: Alterac Valley (History and politics)"]
+    },
+    {
+      "id": 2597003,
+      "kind": "place",
+      "title": "The Towers and Bunkers",
+      "triggers": [{ "area": "Iceblood Garrison" }, { "area": "Stonehearth Outpost" }, { "area": "Tower Point" }],
+      "body": [
+        "Each side has fortified the valley with towers and bunkers, the Stormpike at Stonehearth, Icewing and the pass, the Frostwolves at Iceblood, Tower Point and their keep. Captain Balinda Stonehearth holds the Stormpike outpost, and Captain Galvangar the Frostwolf garrison."
+      ],
+      "sources": ["warcraft.wiki.gg: Alterac Valley (Description)"]
+    },
+    {
+      "id": 2597004,
+      "kind": "place",
+      "title": "The Mines",
+      "triggers": [{ "area": "Irondeep Mine" }, { "area": "Coldtooth Mine" }],
+      "body": [
+        "The valley's riches, which brought the dwarves here. Troggs, the titans' first failed creations, delve in the northern Irondeep Mine; kobolds hold the Coldtooth Mine in the south. Whoever holds a mine reaps its ore."
+      ],
+      "sources": ["warcraft.wiki.gg: Alterac Valley (History and politics)"]
+    },
+    {
+      "id": 2597005,
+      "kind": "place",
+      "title": "The Wild Places",
+      "triggers": [{ "area": "Winterax Hold" }, { "area": "Wildpaw Cavern" }, { "area": "The Veiled Cleft" }],
+      "body": [
+        "Not all of the valley belongs to orcs and dwarves. The Winterax ice trolls once held a hold here too, before they gave up on the valley and went looking for greener pastures. Wildpaw gnolls den in the caves, and rams, goats and owls roam the slopes."
+      ],
+      "sources": ["warcraft.wiki.gg: Alterac Valley (History and politics, Description)"]
+    },
+    {
+      "id": 2597006,
+      "kind": "place",
+      "title": "The Field of Strife",
+      "triggers": [{ "area": "Field of Strife" }, { "area": "Snowfall Graveyard" }],
+      "body": [
+        "The open ground in the middle of the valley, between the two peoples' lines, where most of the fighting is done and the snow is rarely clean."
+      ],
+      "sources": ["warcraft.wiki.gg: Alterac Valley (Description)"]
+    },
+    {
+      "id": 2597030,
+      "kind": "person",
+      "title": "Drek'Thar",
+      "triggers": [{ "kill": 11946 }, { "kill": 19604 }],
+      "body": [
+        "The old shaman who leads the Frostwolf clan, Durotan's advisor in exile and a teacher of the young Thrall. He chose to keep his people in the valley that had been their home for so long, and has vowed to drive the dwarves out."
+      ],
+      "sources": ["warcraft.wiki.gg: Alterac Valley (World of Warcraft)"]
+    },
+    {
+      "id": 2597031,
+      "kind": "person",
+      "title": "Vanndar Stormpike",
+      "triggers": [{ "kill": 11948 }],
+      "body": [
+        "General of the Stormpike Guard, the dwarves who came to the valley to mine and search for relics. He says they were attacked without provocation by the territorial Frostwolves."
+      ],
+      "sources": ["warcraft.wiki.gg: Alterac Valley (World of Warcraft)"]
+    },
+    {
+      "id": 2597032,
+      "kind": "person",
+      "title": "Captain Galvangar",
+      "triggers": [{ "kill": 11947 }, { "kill": 22606 }, { "kill": 31055 }, { "kill": 37244 }],
+      "body": [
+        "The Frostwolf captain who holds Iceblood Garrison, Drek'Thar's war leader in the field."
+      ],
+      "sources": ["warcraft.wiki.gg: Alterac Valley (Description)"]
+    },
+    {
+      "id": 2597033,
+      "kind": "person",
+      "title": "Captain Balinda Stonehearth",
+      "triggers": [{ "kill": 11949 }, { "kill": 22605 }, { "kill": 31820 }, { "kill": 37243 }],
+      "body": [
+        "The Stormpike captain who holds Stonehearth Outpost, a battle mage of the dwarves."
+      ],
+      "sources": ["warcraft.wiki.gg: Alterac Valley (Description)"]
+    },
+    {
+      "id": 2597034,
+      "kind": "person",
+      "title": "Korrak the Bloodrager",
+      "triggers": [{ "kill": 12159 }, { "kill": 22643 }, { "kill": 32027 }, { "kill": 37347 }],
+      "body": [
+        "Champion of the Winterax ice trolls, who still roams the valley his tribe gave up on."
+      ],
+      "sources": ["warcraft.wiki.gg: Alterac Valley (History and politics)"]
+    },
+    {
+      "id": 2597035,
+      "kind": "person",
+      "title": "Lokholar and Ivus",
+      "triggers": [{ "kill": 13256 }, { "kill": 22629 }, { "kill": 31822 }, { "kill": 37363 }, { "kill": 13419 }, { "kill": 22627 }, { "kill": 31821 }, { "kill": 37341 }],
+      "body": [
+        "Each side can call on the spirits of the land. The Frostwolf shamans summon Lokholar the Ice Lord, a great elemental of the frozen mountains; the Stormpike druids call Ivus the Forest Lord, a wild god of the woods."
+      ],
+      "sources": ["warcraft.wiki.gg: Alterac Valley"]
+    }
+  ]
+}
