@@ -1,0 +1,147 @@
+{
+  "zone": 2557,
+  "name": "Dire Maul",
+  "entries": [
+    {
+      "id": 2557000,
+      "kind": "zone",
+      "title": "Dire Maul",
+      "triggers": [{ "areaId": 2557 }],
+      "body": [
+        "Once Eldre'Thalas, one of the capitals of Queen Azshara's Highborne, built twelve thousand years ago to guard her most prized arcane secrets. Among its people were the Shen'dralar, \"Those Who Remain Hidden\", a society of powerful arcanists. When the Sundering came, Prince Tortheldrin and his followers shielded the city with a great spell, and it barely survived. Its stone is bound with arcane power, which is why it still stands.",
+        "Its three quarters are now overrun: spectral Highborne in the west, satyrs and twisted ancients in the east, and in the north the brutish Gordunni ogres, who have made the old city their arena."
+      ],
+      "sources": ["warcraft.wiki.gg: Dire Maul (introduction, Eldre'Thalas)", "warcraft.wiki.gg: Shen'dralar"]
+    },
+    {
+      "id": 2557001,
+      "kind": "place",
+      "title": "The Maul",
+      "triggers": [{ "area": "The Maul" }],
+      "body": [
+        "An amphitheatre outside the ruined city, where the Gordunni have their gladiatorial pit. Every year the Crimson Ring holds its championship here."
+      ],
+      "sources": ["warcraft.wiki.gg: Dire Maul (The Comic, Traveler)"]
+    },
+    {
+      "id": 2557002,
+      "kind": "place",
+      "title": "The Warpwood Quarter",
+      "triggers": [{ "kill": 14327 }, { "kill": 11490 }, { "kill": 13280 }, { "kill": 11492 }],
+      "body": [
+        "The eastern quarter, where the Highborne kept the Fruit of Fertility, a magical vine made by Millicent Serene that made the whole city flourish. A satyr has corrupted it into the Felvine. Satyrs sacrifice prisoners on their altars here, a blood elf warlock drains the place's foul energies with a web of her own making, and the old guardians of nature are enslaved."
+      ],
+      "sources": ["warcraft.wiki.gg: Dire Maul (Eldre'Thalas, World of Warcraft)", "warcraft.wiki.gg: Lethtendris", "warcraft.wiki.gg: Zevrim Thornhoof"]
+    },
+    {
+      "id": 2557003,
+      "kind": "place",
+      "title": "The Capital Gardens",
+      "triggers": [{ "kill": 11489 }, { "kill": 11488 }, { "kill": 11487 }, { "kill": 11496 }, { "kill": 11486 }],
+      "body": [
+        "The western quarter, where the last Highborne of the Shen'dralar keep to the city's heart, and the corrupted ancient Tendris Warpwood, once the city's defender, guards the way. Five crystal pylons hold something imprisoned at its centre, which feeds them its power."
+      ],
+      "sources": ["warcraft.wiki.gg: Dire Maul (Eldre'Thalas)", "warcraft.wiki.gg: Tendris Warpwood", "warcraft.wiki.gg: Immol'thar"]
+    },
+    {
+      "id": 2557004,
+      "kind": "place",
+      "title": "The Gordok Commons",
+      "triggers": [{ "kill": 14326 }, { "kill": 14322 }, { "kill": 14325 }, { "kill": 11501 }],
+      "body": [
+        "The northern quarter, home of the Gordunni ogres and their king, guarded by his captains and his drunk. Whoever kills the king becomes the king: the ogres will honour and shower with gifts any who do, but a King Gordok can never leave, or they will simply choose another."
+      ],
+      "sources": ["warcraft.wiki.gg: King Gordok"]
+    },
+    {
+      "id": 2557030,
+      "kind": "person",
+      "title": "Lethtendris",
+      "triggers": [{ "kill": 14327 }],
+      "body": [
+        "A blood elf warlock with her imp Pimgib, who has made a lair in the Warpwood Quarter and built a web to soak up its corrupted energies for herself."
+      ],
+      "sources": ["warcraft.wiki.gg: Lethtendris"]
+    },
+    {
+      "id": 2557031,
+      "kind": "person",
+      "title": "Zevrim Thornhoof and Hydrospawn",
+      "triggers": [{ "kill": 11490 }, { "kill": 13280 }],
+      "body": [
+        "A satyr who sacrifices people on his altar, holding the ancient Old Ironbark in thrall. Over the years he has used his victims' energies to whip a water elemental, Hydrospawn, into a fury, bending it bit by bit to his will."
+      ],
+      "sources": ["warcraft.wiki.gg: Zevrim Thornhoof"]
+    },
+    {
+      "id": 2557032,
+      "kind": "person",
+      "title": "Alzzin the Wildshaper",
+      "triggers": [{ "kill": 11492 }],
+      "body": [
+        "A satyr, a talented illusionist and one of the first students of Xavius. After Mount Hyjal he came south to carry on his master's mission to corrupt the forests of Kalimdor. One satyr with nothing but tricks could do little, until he came back to his old home of Eldre'Thalas, corrupted the shrine of the Fruit of Fertility, and used its power to make his illusions real."
+      ],
+      "sources": ["warcraft.wiki.gg: Alzzin the Wildshaper"]
+    },
+    {
+      "id": 2557033,
+      "kind": "person",
+      "title": "Tendris Warpwood",
+      "triggers": [{ "kill": 11489 }],
+      "body": [
+        "The ancient defender of Eldre'Thalas, now corrupted, who holds an ancient equine spirit prisoner."
+      ],
+      "sources": ["warcraft.wiki.gg: Tendris Warpwood", "warcraft.wiki.gg: Dire Maul (Eldre'Thalas)"]
+    },
+    {
+      "id": 2557034,
+      "kind": "person",
+      "title": "Immol'thar",
+      "triggers": [{ "kill": 11496 }],
+      "body": [
+        "A demon the Highborne of Eldre'Thalas imprisoned after the Sundering, when they were cut off from the Well of Eternity, and fed on for power for thousands of years."
+      ],
+      "sources": ["warcraft.wiki.gg: Dire Maul (Eldre'Thalas)", "warcraft.wiki.gg: Immol'thar"]
+    },
+    {
+      "id": 2557035,
+      "kind": "person",
+      "title": "Prince Tortheldrin",
+      "triggers": [{ "kill": 11486 }],
+      "body": [
+        "A loyal servant of Queen Azshara, ruler of the Shen'dralar and leader of Eldre'Thalas, who saved his city from the Sundering. When, twelve hundred years before the Dark Portal, holding Immol'thar took more power than the demon gave, Tortheldrin slaughtered many of his own people so that he and the rest could have more of it. The survivors have retreated ever deeper into the heart of the city."
+      ],
+      "sources": ["warcraft.wiki.gg: Prince Tortheldrin", "warcraft.wiki.gg: Dire Maul (Eldre'Thalas)"]
+    },
+    {
+      "id": 2557036,
+      "kind": "person",
+      "title": "The King's Court",
+      "triggers": [{ "kill": 14326 }, { "kill": 14321 }, { "kill": 14323 }, { "kill": 14322 }, { "kill": 14325 }, { "kill": 14324 }],
+      "body": [
+        "The guards and captains of King Gordok: Mol'dar, Fengus and Slip'kik, Stomper Kreeg the drunk, Captain Kromcrush, and the king's advisor, the ogre mage Cho'Rush the Observer."
+      ],
+      "sources": ["warcraft.wiki.gg: King Gordok"]
+    },
+    {
+      "id": 2557037,
+      "kind": "person",
+      "title": "King Gordok",
+      "triggers": [{ "kill": 11501 }],
+      "body": [
+        "The title of the king of the Gordunni. Shortly after the Second War, the first Gordok led his people across the sea to Kalimdor, and they settled in these ruins and made them an arena. The present king took the title by killing the last one, as is the custom. Terrible whispers from the Emerald Nightmare torment his mind, and he has ordered his clan to murder anyone they find."
+      ],
+      "sources": ["warcraft.wiki.gg: King Gordok", "warcraft.wiki.gg: Dire Maul (World of Warcraft)"]
+    },
+    {
+      "id": 2557038,
+      "kind": "person",
+      "title": "Pusillin",
+      "triggers": [{ "kill": 14354 }],
+      "body": [
+        "An imp who stole the book of incantations of the Highborne exile Azj'Tordin as he fled the city, and leads anyone who chases him on a merry run."
+      ],
+      "sources": ["warcraft.wiki.gg: Lariss Pavilion"]
+    }
+  ]
+}
