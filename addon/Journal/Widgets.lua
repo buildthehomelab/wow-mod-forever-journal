@@ -410,11 +410,27 @@ function J.SetTooltip(frame, text, anchor)
 	frame:SetScript("OnLeave", function () GameTooltip:Hide() end)
 end
 
+-- Whether Shift-compare is safe for this item. The 3.3.5 client crashes (#132 at 0x00620727)
+-- when it compares against worn gear whose item record isn't in its cache yet, which is
+-- common right after the cache is wiped. Anything missing is queried; the next hover compares.
+function J.CanCompare(entry)
+	local ready = GetItemInfo(entry) ~= nil
+	if not ready then J.QueryItem(entry) end
+	for slot = 1, 19 do
+		local worn = GetInventoryItemID("player", slot)
+		if worn and not GetItemInfo(worn) then
+			J.QueryItem(worn)
+			ready = false
+		end
+	end
+	return ready
+end
+
 -- An item's tooltip, with the gear you wear beside it while Shift is held.
 function J.ShowItemTooltip(owner, entry)
 	GameTooltip:SetOwner(owner, "ANCHOR_RIGHT")
 	GameTooltip:SetHyperlink("item:" .. entry)
-	if IsShiftKeyDown() and GameTooltip_ShowCompareItem then GameTooltip_ShowCompareItem(GameTooltip) end
+	if IsShiftKeyDown() and GameTooltip_ShowCompareItem and J.CanCompare(entry) then GameTooltip_ShowCompareItem(GameTooltip) end
 	GameTooltip:Show()
 end
 

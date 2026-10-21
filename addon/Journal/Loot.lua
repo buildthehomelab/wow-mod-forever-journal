@@ -266,10 +266,11 @@ local function makeRow()
 	r:SetScript("OnClick", function (self)
 		if self.data then J.HandleItemClick(self.data.item, self.data.name, self.data.quality) end
 	end)
-	-- Shift pressed or released while hovering: compare or stop comparing.
+	-- Shift pressed or released while hovering, or the gear to compare just got cached:
+	-- compare or stop comparing.
 	r:SetScript("OnUpdate", function (self)
 		if not self.data or not GameTooltip:IsOwned(self) then return end
-		local shift = IsShiftKeyDown() and true or false
+		local shift = IsShiftKeyDown() and (J.CanCompare(self.data.item) and 2 or 1) or 0
 		if shift ~= self.shift then
 			self.shift = shift
 			self:GetScript("OnEnter")(self)

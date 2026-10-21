@@ -149,6 +149,9 @@ function PanelTemplates_SelectTab(t) t.__selected = true end
 function PanelTemplates_DeselectTab(t) t.__selected = false end
 function SetPortraitToTexture(tex, path) tex.__portrait = path end
 function GameTooltip_ShowCompareItem() end
+-- FrameXML's GameTooltip colours (the stock look reads them).
+TOOLTIP_DEFAULT_COLOR = { r = 1, g = 1, b = 1 }
+TOOLTIP_DEFAULT_BACKGROUND_COLOR = { r = 0.09, g = 0.09, b = 0.19 }
 -- As 3.3.5's: the client hands the Dungeon Finder's info out as one table per LFG id, and
 -- FrameXML's LFGGetDungeonInfoByID only reads LFGDungeonInfo, which stays nil until the Dungeon
 -- Finder list has been opened.
@@ -273,6 +276,8 @@ function GetItemInfo(item)
 	if not d then return nil end
 	return d[1], "|cff0070dd|Hitem:" .. id .. ":0:0:0:0:0:0:0:0|h[" .. d[1] .. "]|h|r", d[2], 20, 15, "Weapon", "Swords", 1, "", "Interface\\Icons\\X", 100
 end
+local worn = {}
+function GetInventoryItemID(_, slot) return worn[slot] end
 -- 7777 and 8888 have no description in the client: the server writes one.
 local spellNames = { [5145] = "Arcane Explosion", [6432] = "Smite Stomp", [9999] = "Hidden Trigger", [6603] = "Attack",
 	[7777] = "Berserk", [8888] = "Shadow Prison", [7778] = "Hard Enrage", [7779] = "Blank Mechanic",
@@ -674,6 +679,19 @@ step("loot: warrior filter, slots, links", function ()
 	modified.CHATLINK = nil
 	assert(inserted and inserted:find("Cruel Barb"), "Shift-click didn't link")
 	row.__scripts.OnEnter(row)
+	-- Shift-compare waits until the worn gear is cached: the 3.3.5 client crashes otherwise.
+	local compares = 0
+	GameTooltip_ShowCompareItem = function () compares = compares + 1 end
+	worn[16] = 12345
+	modified.SHIFT = true
+	tick(0.2)
+	assert(compares == 0, "compared against worn gear the client hasn't cached")
+	items[12345] = { "Worn Blade", 2 }
+	tick(0.2)
+	assert(compares == 1, "no compare once the worn gear was cached")
+	modified.SHIFT = nil
+	worn[16] = nil
+	GameTooltip_ShowCompareItem = function () end
 	JournalCharDB.lootSlot = "back"
 	J.RefreshPage()
 	tick(0.5)
