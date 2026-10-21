@@ -8,10 +8,10 @@
       "title": "Duskwood",
       "triggers": [{ "areaId": 10 }],
       "body": [
-        "A forest of black trees and perpetual twilight south of Elwynn, once the province of Brightwood and part of the kingdom of Stormwind. A taint crept through it after the Second War, and the woods have grown darker every year since. Darkness seems drawn inexorably to the place.",
-        "Undead rise from its cemeteries, worgen stalk its groves, ogres hold the southern hills, and the Dark Riders of Deadwind Pass come and go in the night. Stormwind withdrew its guards long ago. The town of Darkshire defends itself with its own Night Watch, and its people have grown used to living with ghost stories that turn out to be true."
+        "Once called Brightwood, or \"Southern Elwynn\", a fair forest of Stormwind that held two sizable towns, Grand Hamlet and Raven Hill. When Medivh died, the fel energy unleashed by his death crept over it, and turned the woods into a land of gnarled trees and black fog under an everlasting night. The forest's spiders grew to monstrous size, and the wolves fled north to Elwynn.",
+        "A defiant people still cling to their homes here. Undead choke the graveyards, the Nightbane worgen prowl the farms, ogres have moved in from the south, and the Dark Riders hunt the roads. The Night Watch, Darkshire's militia, does what it can."
       ],
-      "sources": ["quests 173, 101 descriptions (darkness drawn to Duskwood, the mystical taint)", "quest 56 description (Stormwind has retracted their commissioned guards)", "quest 9429 description (a thorn in the side of the kingdom of Stormwind)", "quest 95 description"]
+      "sources": ["warcraft.wiki.gg: Duskwood (introduction, Early history, During the First War, World of Warcraft)"]
     },
     {
       "id": 10001,
@@ -19,109 +19,103 @@
       "title": "Darkshire",
       "triggers": [{ "area": "Darkshire" }, { "talk": 264 }, { "talk": 263 }],
       "body": [
-        "The last real town in Duskwood, in the east of the forest. Lord Ello Ebonlocke is its mayor, and his daughter-in-law Althea commands the Night Watch, the guard Darkshire raised for itself when Stormwind's soldiers left.",
-        "Life in Darkshire happens around the square: the Scarlet Raven Tavern, where Smitts pours zombie juice and knows all the local legends, the town hall, where Clerk Daltry keeps a registry of everyone who has ever lived here, and the house of Madame Eva, a seer whose premonitions the town has learned to take seriously. Even the draenei have sent an anchorite to help hold back the dark."
+        "Once the quaint woodland village of Grand Hamlet, home of the Ebonlocke family since before the First War. When Medivh went mad, several of its nobles died at a party in Karazhan, drained of life by the Guardian. The orcs destroyed the town in the First War; Turalyon oversaw its rebuilding after the Second. As the darkness spread, its people came to call it Darkshire.",
+        "Political turmoil in Stormwind has left the town without help from the army. Lord Ello Ebonlocke and the Council of Darkshire govern it, his daughter Althea leads the Night Watch, and its jumpy, suspicious folk are desperate for any aid they can get."
       ],
-      "sources": ["quests 56, 66, 78, 79, 146 descriptions", "quest 9429 description and reward text", "quest 158 description"]
+      "sources": ["warcraft.wiki.gg: Darkshire (introduction, History, First War and aftermath)"]
     },
     {
       "id": 10002,
       "kind": "place",
       "title": "Raven Hill",
-      "triggers": [{ "area": "Raven Hill" }, { "talk": 288 }, { "accept": 163 }],
+      "triggers": [{ "area": "Raven Hill" }, { "talk": 288 }],
       "body": [
-        "A ghost town in western Duskwood. Its houses stand empty, and the people of Darkshire swear they have seen shadows moving there at night and light in the windows.",
-        "The haunting turned out to be Jitters, a nervous, jittery man who has spent weeks hiding in the empty buildings eating grubs and weeds. He saw something terrible at the Yorgen farm and has been running from it ever since."
+        "One of the two towns of old Brightwood, in western Duskwood, now all but abandoned. Its only living residents are a goblin trader and a frightened man named Jitters, who hides in one of the houses and has seen more than he can bear."
       ],
-      "sources": ["quest 163 description and reward text", "quests 5, 453 descriptions and reward texts"]
+      "sources": ["warcraft.wiki.gg: Raven Hill", "warcraft.wiki.gg: Darkshire (History)"]
     },
     {
       "id": 10003,
       "kind": "place",
       "title": "Raven Hill Cemetery",
-      "triggers": [{ "area": "Raven Hill Cemetery" }, { "talk": 289 }, { "accept": 57 }],
+      "triggers": [{ "area": "Raven Hill Cemetery" }, { "area": "Dawning Wood Catacombs" }],
       "body": [
-        "The great graveyard of western Duskwood, below Raven Hill. Its dead do not stay buried: skeletal fiends and horrors walk the rows, rot blossoms grow inside their skulls, and the eastern mausoleum is full of plague spreaders.",
-        "An old hermit named Abercrombie lives in a shack overlooking it. He used to come into town for supplies, until the roads got too dangerous for a man his age. He has never been troubled by the ghouls. He says that just yesterday a pack of them was pounding on his walls."
+        "A sprawling graveyard north of Raven Hill, which grew to cover much of the area only after the darkness fell. Scores of undead walk it, among giant spiders and gangs of grave robbers who attack anyone who interrupts their work.",
+        "Beneath it lie the Dawning Wood Catacombs, home to the strongest undead in Duskwood: diseased ghouls through the eastern entrance, and halls of skeletons guarding the tombs of their brethren through the western."
       ],
-      "sources": ["quests 57, 58, 156 descriptions", "quests 165, 133 descriptions and reward texts"]
+      "sources": ["warcraft.wiki.gg: Raven Hill Cemetery", "warcraft.wiki.gg: Dawning Wood Catacombs"]
     },
     {
       "id": 10004,
       "kind": "place",
       "title": "Tranquil Gardens Cemetery",
-      "triggers": [{ "area": "Tranquil Gardens Cemetery" }, { "accept": 56 }, { "kill": 522 }],
+      "triggers": [{ "area": "Tranquil Gardens Cemetery" }, { "accept": 56 }],
       "body": [
-        "A cemetery just south of Darkshire, a short walk from the town's gates. Skeletons rise among its graves, and the Night Watch hunts them there.",
-        "One weathered grave marker reads only MORGAN LADIMORE. The earth over it has been disturbed, and the thing that climbed out of it now wanders a strange and meandering path through the cemetery, calling itself Mor'Ladim."
+        "A cemetery just south-east of Darkshire, now anything but tranquil. Its undead are the weakest in Duskwood, and a mad ghoul haunts its ruined church. Blind Mary's house stands just to the north."
       ],
-      "sources": ["quest 56 description", "quests 225, 227, 228 descriptions and reward texts", "quest 177 description"]
+      "sources": ["warcraft.wiki.gg: Tranquil Gardens Cemetery"]
     },
     {
       "id": 10005,
       "kind": "place",
       "title": "Sven's Camp and the Yorgen Farmstead",
-      "triggers": [{ "area": "The Yorgen Farmstead" }, { "talk": 311 }, { "talk": 893 }],
+      "triggers": [{ "area": "The Yorgen Farmstead" }, { "area": "The Darkened Bank" }, { "talk": 311 }],
       "body": [
-        "Sven Yorgen once worked a farm in the south-east of Duskwood. One night, while he was away, Dark Riders from Deadwind Pass descended on it and slaughtered his family. When he returned, he saw a shadowy figure burying something behind the old stump by his barn.",
-        "Sven now keeps a camp on the forest's western border with his companion Lars, hunting their own food among the dire wolves and preparing to fight the necromancer who rides with the Riders. Darkshire calls him a man who does the work of the Light, and the Carevins send him supplies when they can."
+        "The Yorgen farm in southern Duskwood was Sven Yorgen's home until the Dark Riders came looking for the Scythe of Elune and murdered his wife and children. Jitters, hiding in the barn, saw it all. Defias assassins now stalk the empty farm.",
+        "Sven lives in a refugee camp on the Darkened Bank, along the northern shore, with another refugee, Lars."
       ],
-      "sources": ["quest 95 description", "quests 164, 226 descriptions and reward texts"]
+      "sources": ["warcraft.wiki.gg: Yorgen Farmstead", "warcraft.wiki.gg: Darkened Bank", "warcraft.wiki.gg: Dark Riders (After the Third War)"]
     },
     {
       "id": 10006,
       "kind": "place",
       "title": "Forlorn Rowe",
-      "triggers": [{ "area": "Forlorn Rowe" }, { "kill": 1200 }, { "accept": 55 }],
+      "triggers": [{ "area": "Forlorn Rowe" }, { "kill": 1200 }],
       "body": [
-        "A house on the hill east of the Raven Hill cemetery, overlooking it. It is the lair of the necromancer Morbent Fel.",
-        "Morbent Fel is an ally of the Dark Riders, and the skeletal raiders, healers and warders around the cemetery are his. He has cast dark enchantments about himself that protect him from any ordinary weapon."
+        "A hill cloaked in an ominous darkness at the northern edge of Raven Hill Cemetery. On it stands the house of Morbent Fel, the necromancer who rules Duskwood's undead and is the reason they walk at all."
       ],
-      "sources": ["quests 55, 268, 323, 269 descriptions and reward texts"]
+      "sources": ["warcraft.wiki.gg: Forlorn Rowe", "warcraft.wiki.gg: Duskwood (World of Warcraft)"]
     },
     {
       "id": 10007,
       "kind": "place",
       "title": "Manor Mistmantle",
-      "triggers": [{ "area": "Manor Mistmantle" }, { "kill": 315 }, { "accept": 98 }],
+      "triggers": [{ "area": "Manor Mistmantle" }, { "kill": 315 }],
       "body": [
-        "A cottage just north of Darkshire, home to a man the town knew only as a crazy hermit in the woods. Commander Ebonlocke had had her eye on him for a long time.",
-        "His name was Stalvan Mistmantle, and the town registry remembered him. Years ago visiting nobles were slaughtered in the woods; pages found at the scene were never matched to anyone. A trail of letters and journal pages, from Moonbrook to Goldshire to Stormwind's Canal District, finally proved the handwriting was his."
+        "The house of Stalvan Mistmantle, north of Darkshire. Its grounds are rotten and overrun by ghouls. The only living thing on the property is a single flower in the garden, called the Tear of Tilloa."
       ],
-      "sources": ["quests 66, 67, 79, 80, 98 descriptions and reward texts"]
+      "sources": ["warcraft.wiki.gg: Manor Mistmantle"]
     },
     {
       "id": 10008,
       "kind": "place",
       "title": "Addle's Stead",
-      "triggers": [{ "area": "Addle's Stead" }, { "talk": 302 }, { "accept": 149 }],
+      "triggers": [{ "area": "Addle's Stead" }, { "talk": 302 }],
       "body": [
-        "An old farmhouse in the hills south of Darkshire, haunted by the ghost of Blind Mary. She was once known around these parts for always carrying a looking glass.",
-        "After the incident that made her what she is, she threw the glass away behind the barn. She still asks for a mirror when someone combs her hair, and still screams when she remembers why she cannot look in one."
+        "One of the many farms abandoned when the darkness crept into Duskwood, south of Raven Hill. Agents of the Defias Brotherhood have taken it over, creeping through the fields and the barn."
       ],
-      "sources": ["quests 149, 154 descriptions", "quests 175, 177 descriptions and reward texts"]
+      "sources": ["warcraft.wiki.gg: Addle's Stead"]
     },
     {
       "id": 10009,
       "kind": "place",
       "title": "Brightwood Grove and the Rotting Orchard",
-      "triggers": [{ "area": "Brightwood Grove" }, { "area": "The Rotting Orchard" }, { "accept": 173 }],
+      "triggers": [{ "area": "Brightwood Grove" }, { "area": "The Rotting Orchard" }, { "area": "Roland's Doom" }],
       "body": [
-        "Brightwood Grove takes its name from the province's old name. It is not bright now: worgen of the Nightbane pack have made it their home, and the Rotting Orchard south-west of Darkshire has been overrun by them too.",
-        "Nobody knows where they came from. They seemed to appear out of thin air, and however many are killed, more spring up to fill their ranks. Shadow weavers, dark runners, vile fangs and tainted ones stalk the forest, and the strongest have settled in the caves and the mine to the south, where their bonfires can be seen from far away."
+        "The Nightbane worgen have taken over the old grove west of Darkshire and the dilapidated buildings of the orchard to the south. Their shadow weavers practise magic in the camps while stalkers watch from the dark; their packleader roams between the orchard and his den.",
+        "East of the orchard is Roland's Doom, a mine where the night elf priestess Velinde Starsong died, hunted, with the Scythe of Elune in her hands. It is said her spirit can still be called there."
       ],
-      "sources": ["quests 173, 221, 222 descriptions and reward texts"]
+      "sources": ["warcraft.wiki.gg: Brightwood Grove", "warcraft.wiki.gg: Rotting Orchard", "warcraft.wiki.gg: Roland's Doom"]
     },
     {
       "id": 10010,
       "kind": "place",
       "title": "Vul'Gol Ogre Mound",
-      "triggers": [{ "area": "Vul'Gol Ogre Mound" }, { "kill": 300 }, { "accept": 134 }],
+      "triggers": [{ "area": "Vul'Gol Ogre Mound" }, { "kill": 300 }],
       "body": [
-        "A great mound in southern Duskwood, home to the Splinter Fist ogres. They raid as far as the cemeteries; once they chased the hermit Abercrombie away from his herb-picking and carried off his crate.",
-        "Their leader Zzarc'Vul wears a monocle large enough to serve as the lens of a telescope, which made him the target of Darkshire's astronomer, Viktori Prism'Antras."
+        "A small basin in southern Duskwood where humans once farmed, now overrun by the Splinter Fist ogres of Zzarc'Vul, for whom it is named. The Night Watch keeps its few men for nearer threats, and leaves the ogres to anyone who will take a bounty."
       ],
-      "sources": ["quest 134 description", "quest 181 description"]
+      "sources": ["warcraft.wiki.gg: Vul'Gol Ogre Mound"]
     },
     {
       "id": 10011,
@@ -129,21 +123,31 @@
       "title": "Twilight Grove",
       "triggers": [{ "area": "Twilight Grove" }, { "area": "The World Tree" }, { "kill": 14890 }],
       "body": [
-        "A grove in the centre of Duskwood, around a huge, ancient tree. It holds one of the great portals to the Emerald Dream.",
-        "Something has come through it. The green dragon Taerar, once a guardian of the Dream, now raves that peace is a fleeting dream and that the nightmare will reign, and releases his children of madness upon the world. Sometimes it is one of his kin instead: Ysondre, Lethon or Emeriss."
+        "A grove in the heart of Duskwood around a great tree, grown long ago by night elf druids from a branch of Nordrassil. It holds a moonwell and one of the four portals to the Emerald Dream; the others are in Feralas, the Hinterlands and Ashenvale.",
+        "Lieutenants of Ysera's green dragonflight once guarded it. Something has gone wrong in the Dream, and the dragons that come through the portals now are twisted and corrupted."
       ],
-      "sources": ["creature 14890 lines", "pre-Cataclysm lore: the Emerald Dream portals and the corrupted dragons of Ysera"]
+      "sources": ["warcraft.wiki.gg: Twilight Grove (introduction, World of Warcraft)"]
     },
     {
       "id": 10012,
       "kind": "place",
       "title": "Beggar's Haunt",
-      "triggers": [{ "area": "Beggar's Haunt" }, { "talk": 5418 }, { "accept": 1372 }],
+      "triggers": [{ "area": "Beggar's Haunt" }, { "talk": 5418 }],
       "body": [
-        "A ruined house in the north-west of Duskwood, where a small expeditionary force of the Forsaken camps in secret. They were sent by Varimathras to survey the southern lands.",
-        "Deathstalker Zraedus and Apothecary Faustin of the Royal Apothecary Society work there. When a human infiltrator was caught spying on the camp and taken to Stonard, they offered the orcs a truth serum to help with the questioning. They made very sure the orcs never saw the camp."
+        "An abandoned scout tower of the Stormwind Guard in north-eastern Duskwood, which the Forsaken have quietly taken for their experiments.",
+        "A winding path leads from the tower to a pool and waterfall, where an unmarked grave lies between two great statues like those of the Dark Portal. Nearby, in a small cemetery, lies the Unknown Soldier."
       ],
-      "sources": ["quests 1372, 1383, 1388, 1391 descriptions and reward texts"]
+      "sources": ["warcraft.wiki.gg: Beggar's Haunt"]
+    },
+    {
+      "id": 10013,
+      "kind": "place",
+      "title": "The Hushed Bank",
+      "triggers": [{ "area": "The Hushed Bank" }],
+      "body": [
+        "The western edge of Duskwood along the river, from the fork where Westfall, Elwynn and Duskwood meet down to Stranglethorn. The covered bridge to Westfall crosses here, and spiders and wolves haunt the banks."
+      ],
+      "sources": ["warcraft.wiki.gg: Hushed Bank"]
     },
     {
       "id": 10030,
@@ -151,10 +155,9 @@
       "title": "Commander Althea Ebonlocke",
       "triggers": [{ "talk": 264 }, { "accept": 56 }],
       "body": [
-        "The leader of the Night Watch. With Stormwind's guards gone, it is her sworn duty to keep the people of Darkshire safe, and she never has enough Watchers to do it.",
-        "Ebonlocke handles the town's worst troubles personally, from the undead Mor'Ladim to the madman Stalvan Mistmantle, whom she suspected long before she could prove anything. She keeps a few hard truths to herself until it is time to tell them."
+        "The commander of the Night Watch, the militia that keeps Duskwood's roads open and holds back the creeping darkness for as long as it can. She is the daughter of Lord Ello Ebonlocke, who governs Darkshire with its council."
       ],
-      "sources": ["quests 56, 57, 58 descriptions and reward texts", "quests 227, 229, 80, 98 descriptions"]
+      "sources": ["warcraft.wiki.gg: Darkshire"]
     },
     {
       "id": 10031,
@@ -162,10 +165,9 @@
       "title": "Madame Eva",
       "triggers": [{ "talk": 265 }, { "accept": 66 }],
       "body": [
-        "A seer who lives on the Darkshire square, and who reads the cards, the winds and the impressions left on things by those who touched them. She makes thread from ghost hair, with a thousand uses, from binding spirits to sewing life into inanimate things.",
-        "It was her premonition that started the hunt for Stalvan. She felt her granddaughter Alyssa was in danger, consulted the cards, and saw Death. A name came to her in a trance, and it led to the truth."
+        "A fortune teller of Darkshire. She sensed that her granddaughter Alyssa was in great danger from a man named Stalvan, and set about tracing his steps back through his life."
       ],
-      "sources": ["quests 66, 98 descriptions and reward texts", "quests 101, 149, 157, 262 descriptions and reward texts"]
+      "sources": ["warcraft.wiki.gg: Stalvan Mistmantle (World of Warcraft)"]
     },
     {
       "id": 10032,
@@ -173,10 +175,9 @@
       "title": "Abercrombie the Hermit",
       "triggers": [{ "talk": 289 }, { "accept": 165 }],
       "body": [
-        "A frail old man who lives out by the Raven Hill cemetery and asks passers-by for small favours: some ghost hair thread, a bottle of zombie juice, ribs from ghouls for a scarecrow, a crate of tools left near the ogre mound. He once nearly thanked \"the Nec-\" before catching himself.",
-        "He then sent a friendly note to the mayor in an ancient script. Translated, it revealed that every favour had gone into the making of something unspeakable, and that it was already lumbering towards Darkshire. Abercrombie was the Embalmer of the children's story, and the thing he made was called Stitches."
+        "A hermit who lives in a shack at the edge of Raven Hill Cemetery. He was once a kindly alchemist of Raven Hill, until the death of his wife Eliza drove him mad."
       ],
-      "sources": ["quests 165, 148, 158, 133, 134, 160 descriptions and reward texts", "quests 251, 252, 401 descriptions and reward texts", "creature 412 (Stitches, Gift from the Embalmer)"]
+      "sources": ["warcraft.wiki.gg: Abercrombie"]
     },
     {
       "id": 10033,
@@ -184,21 +185,31 @@
       "title": "Morgan Ladimore",
       "triggers": [{ "kill": 522 }, { "talk": 576 }, { "accept": 225 }],
       "body": [
-        "A noble and good man of Darkshire who went away to war. Darkshire's historian knew him well before he left; his story afterwards was long and sorrowful, and he came to believe his whole family was dead.",
-        "He rose from his grave as Mor'Ladim. His daughter Sarah survived, and became a Watcher; she wished she had spoken to him before the end. Once Mor'Ladim was laid to rest, she sent her ring to his grave, and a ghostly voice on the wind gave up his sword, Archeus, to carry on the Light he felt unworthy of."
+        "A great and noble knight of Grand Hamlet, married at eighteen to a girl named Lys. At thirty-two he went north to fight beside Uther in the Third War, and saw the plague, the breaking of the Silver Hand and Uther's death. He came home to find his house destroyed. Told he might find his family in the graveyard, he refused to go, until something drew him there, and after hours of searching he found the graves of Lys and two of their children.",
+        "Maddened by grief, he struck at the gravestones and cut down the attendants who tried to stop him. When he came to his senses, soaked in innocent blood, he took his own life. He was buried quietly in an obscure corner of the cemetery. Days later his grave was found empty. He walks Raven Hill now as Mor'Ladim."
       ],
-      "sources": ["quests 225, 227, 228, 229, 231 descriptions and reward texts"]
+      "sources": ["warcraft.wiki.gg: Mor'Ladim (History)"]
     },
     {
       "id": 10034,
       "kind": "person",
-      "title": "Jonathan Carevin",
-      "triggers": [{ "talk": 661 }, { "talk": 663 }, { "accept": 223 }],
+      "title": "Stalvan Mistmantle",
+      "triggers": [{ "kill": 315 }, { "complete": 98 }],
       "body": [
-        "The head of the Carevin family of Darkshire, who has made the expulsion of evil and heresy his life's work. He fights demons and the undead, and refuses to sit and wait as the Night Watch does.",
-        "His followers are few and hand-picked. His ranger Calor, who joined after growing disillusioned with the Watch's complacency, tests newcomers against the worgen, and hopes that with a few more like them they will one day outnumber the Watch."
+        "A scholar from Silverpine who came south and became headmaster of the Moonbrook schoolhouse and tutor to the Flintridge family. He fell in love with one of his students, a girl named Tilloa, who was promised to another; when she gave him a begonia, he took it for a romantic gesture. She saw him only as a teacher, and compared him to an old uncle.",
+        "It drove him to murder. He seems to have butchered Tilloa and her young groom with an axe, perhaps her whole family too, writing that the blood he spilled paled beside the tears he had shed. He shut himself away in Manor Mistmantle until the darkness consumed him, and somehow he rose as an undead."
       ],
-      "sources": ["quests 173, 222, 223 descriptions and reward texts", "quest 164 description"]
+      "sources": ["warcraft.wiki.gg: Stalvan Mistmantle (Biography)"]
+    },
+    {
+      "id": 10035,
+      "kind": "person",
+      "title": "Morbent Fel",
+      "triggers": [{ "kill": 1200 }, { "accept": 55 }, { "area": "Forlorn Rowe" }],
+      "body": [
+        "The necromancer who raised Duskwood's dead and rules them from his house on Forlorn Rowe. He is an ally of the Dark Riders, guarded by his undead and by a magical barrier that turns aside most attacks."
+      ],
+      "sources": ["warcraft.wiki.gg: Morbent Fel"]
     },
     {
       "id": 10050,
@@ -206,10 +217,10 @@
       "title": "The Dark Riders",
       "triggers": [{ "complete": 230 }, { "complete": 268 }, { "complete": 55 }],
       "body": [
-        "Horsemen out of Deadwind Pass who descend on Duskwood's farms by night. They slaughtered Sven Yorgen's family, and the only witness, a stranger who had come to Duskwood and bought a journal in Darkshire, fled and hid for weeks in Raven Hill.",
-        "Jitters' journal set Sven against the Riders and their ally, the necromancer Morbent Fel. Bishop Farthing of Stormwind thought the quest worth helping, though Stormwind had forsaken Darkshire, and a blessed weapon forged from Lightforge iron from the sunken Third Fleet of Kul Tiras broke the necromancer's protections. Morbent Fel died. The Riders are still out there."
+        "Once charlatan merchants, they tried to sell fake magical artifacts to Medivh. The Guardian, possessed by Sargeras, cursed them to pay for their dishonesty by hunting true artifacts across the kingdom and bringing them to Karazhan forever. Whether they are undead, no one knows. They are said to be invisible unless they wish to be seen, and to speak in shrill, harsh voices.",
+        "Years after the Third War, the Scythe of Elune drew them to Duskwood. Velinde Starsong had died with it in Roland's Doom. Defias diggers found it there, and Jitters picked it up, summoning worgen that tore the other men apart. He fled and lost it in the woods. The Riders came hunting it, and when the Yorgens could not tell them where it was, they killed them."
       ],
-      "sources": ["quests 95, 230, 268, 269, 270, 325, 55 descriptions and reward texts"]
+      "sources": ["warcraft.wiki.gg: Dark Riders (Early history, After the Third War)", "warcraft.wiki.gg: Duskwood (World of Warcraft)"]
     },
     {
       "id": 10051,
@@ -217,10 +228,21 @@
       "title": "The Embalmer",
       "triggers": [{ "complete": 252 }, { "complete": 253 }, { "accept": 253 }],
       "body": [
-        "Darkshire's children grow up on the story of the Embalmer: a kindly alchemist driven mad by the death of his wife, Eliza. To restore her he used dark magic to place his own heart in her breast. She came back to life, cursed with a hunger for human flesh, and he had to keep her buried.",
-        "Her tombstone still reads: Beloved wife, may the earth sate your hunger. The Embalmer's heart is his power, and Lord Ebonlocke believes that while it beats in his bride, he cannot be stopped. Taken out of her grave, it becomes a ward over Darkshire instead."
+        "Abercrombie could not let his wife go. With dark magic he placed his own heart in Eliza's breast, and she rose, but with a hunger for human flesh, and he had to keep her buried. His heart is his power.",
+        "He also made Stitches, a horrible abomination that attacked Darkshire before the Night Watch put it down. In Darkshire, the story of the Embalmer is now told to children."
       ],
-      "sources": ["quest 253 description and reward text", "quest 254 reward text", "page text 731 (Eliza's Tombstone)"]
+      "sources": ["warcraft.wiki.gg: Abercrombie (History)"]
+    },
+    {
+      "id": 10052,
+      "kind": "history",
+      "title": "The Night Falls on Brightwood",
+      "triggers": [{ "areaId": 10 }, { "area": "Darkshire" }],
+      "body": [
+        "In the First War, Blackhand sent raiding parties deep into Stormwind's lands to spread panic, and an orc army gathered against Grand Hamlet. Stormwind's armies drove it off for a time, but in the end the town fell.",
+        "In the same war, Khadgar and Anduin Lothar killed Medivh in Karazhan. The fel energy his death released spread slowly across Brightwood, turning it, over the years, into a dangerous, thorny blight. The light never came back."
+      ],
+      "sources": ["warcraft.wiki.gg: Darkshire (First War and aftermath)", "warcraft.wiki.gg: Duskwood (During the First War)"]
     }
   ]
 }
