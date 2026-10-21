@@ -1,0 +1,56 @@
+{
+  "zone": 3562,
+  "name": "Hellfire Ramparts",
+  "entries": [
+    {
+      "id": 3562000,
+      "kind": "zone",
+      "title": "The Hellfire Ramparts",
+      "triggers": [{ "areaId": 3562 }, { "area": "Hellfire Citadel" }],
+      "body": [
+        "The outer walls and towers of Hellfire Citadel, where the Shattered Hand's spearmen once held off the Sons of Lothar. For years the gargantuan fortress was thought abandoned. Now it swarms with marauding bands of red, furious fel orcs. Where this savage new breed comes from is a mystery; more disturbing still, their numbers keep growing."
+      ],
+      "sources": ["warcraft.wiki.gg: Hellfire Ramparts (Background)"]
+    },
+    {
+      "id": 3562001,
+      "kind": "place",
+      "title": "The Watch Tower",
+      "triggers": [{ "kill": 17306 }, { "kill": 17308 }],
+      "body": [
+        "The ramparts' tower, held by the captain of its defences, beyond which the walk splits: one way to the demon Omor, the other to the herald and his drake."
+      ],
+      "sources": ["warcraft.wiki.gg: Hellfire Ramparts (Overview)", "warcraft.wiki.gg: Watchkeeper Gargolmar"]
+    },
+    {
+      "id": 3562030,
+      "kind": "person",
+      "title": "Watchkeeper Gargolmar",
+      "triggers": [{ "kill": 17306 }],
+      "body": [
+        "The fel orc captain of the ramparts' defences."
+      ],
+      "sources": ["warcraft.wiki.gg: Watchkeeper Gargolmar"]
+    },
+    {
+      "id": 3562031,
+      "kind": "person",
+      "title": "Omor the Unscarred",
+      "triggers": [{ "kill": 17308 }],
+      "body": [
+        "A demon of the Legion who keeps watch on the ramparts for the citadel's masters."
+      ],
+      "sources": ["warcraft.wiki.gg: Omor the Unscarred"]
+    },
+    {
+      "id": 3562032,
+      "kind": "person",
+      "title": "Vazruden and Nazan",
+      "triggers": [{ "kill": 17307 }, { "kill": 17537 }, { "kill": 17536 }],
+      "body": [
+        "An armoured fel orc who circles the ramparts' tower on his nether drake, Nazan. He once had a riding crop; Nazan took it away from him, refusing to be hit with it."
+      ],
+      "sources": ["warcraft.wiki.gg: Vazruden"]
+    }
+  ]
+}
