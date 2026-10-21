@@ -1,0 +1,87 @@
+{
+  "zone": 4265,
+  "name": "The Nexus",
+  "entries": [
+    {
+      "id": 4265000,
+      "kind": "zone",
+      "title": "The Nexus",
+      "triggers": [{ "areaId": 4265 }],
+      "body": [
+        "The Nexus War has begun. Long ago the titans made Malygos guardian of magic. More than ten thousand years ago he watched Deathwing all but wipe out the blue flight, and grief drove him mad; he withdrew to this lair and paid little heed to the world.",
+        "Only recently has he fully come back to himself. Looking at the state of magic in Azeroth, he concluded that it was running amok, and he blames the mortal races and their reckless pursuit of power. He means to stop them, and from here, in the depths of Coldarra, his flight has begun."
+      ],
+      "sources": ["warcraft.wiki.gg: Nexus (instance) (Official descriptions)", "warcraft.wiki.gg: Malygos"]
+    },
+    {
+      "id": 4265001,
+      "kind": "place",
+      "title": "The Hall of Stasis",
+      "triggers": [{ "kill": 26796 }, { "kill": 26798 }],
+      "body": [
+        "A hall where the blue dragons hold their captives frozen in stasis, among them soldiers sent to Coldarra by the Horde and the Alliance."
+      ],
+      "sources": ["warcraft.wiki.gg: Commander Stoutbeard", "warcraft.wiki.gg: Commander Kolurg"]
+    },
+    {
+      "id": 4265002,
+      "kind": "place",
+      "title": "The Wings of the Nexus",
+      "triggers": [{ "kill": 26731 }, { "kill": 26763 }, { "kill": 26794 }],
+      "body": [
+        "Three wings, each holding one of the keys to the prison at the Nexus's heart: a hall of renegade Kirin Tor mages, a rift where raw magic pours through and has given birth to an elemental, and the Singing Grove of crystal trees, shaped by a colossus."
+      ],
+      "sources": ["warcraft.wiki.gg: Grand Magus Telestra", "warcraft.wiki.gg: Anomalus", "warcraft.wiki.gg: Ormorok the Tree-Shaper"]
+    },
+    {
+      "id": 4265003,
+      "kind": "place",
+      "title": "Keristrasza's Prison",
+      "triggers": [{ "kill": 26723 }],
+      "body": [
+        "The heart of the Nexus, where a red dragon is held in a prison of ice that only opens when its three keepers fall."
+      ],
+      "sources": ["warcraft.wiki.gg: Nexus (instance)"]
+    },
+    {
+      "id": 4265030,
+      "kind": "person",
+      "title": "Grand Magus Telestra",
+      "triggers": [{ "kill": 26731 }],
+      "body": [
+        "A high elf mage of the Kirin Tor who sided with Malygos to keep her arcane power. She guards part of Keristrasza's prison, and leads the effort to redirect the ley lines of the Dragonblight."
+      ],
+      "sources": ["warcraft.wiki.gg: Grand Magus Telestra"]
+    },
+    {
+      "id": 4265031,
+      "kind": "person",
+      "title": "Anomalus",
+      "triggers": [{ "kill": 26763 }],
+      "body": [
+        "A gigantic arcane elemental, born when the Rift formed out of the vast magic pouring through the Nexus each day. The blue dragons set it to guard the prison; it has gone out of control, and its rifts now spill elementals against the dragons themselves."
+      ],
+      "sources": ["warcraft.wiki.gg: Anomalus"]
+    },
+    {
+      "id": 4265032,
+      "kind": "person",
+      "title": "Ormorok the Tree-Shaper",
+      "triggers": [{ "kill": 26794 }],
+      "body": [
+        "A crystalline colossus who shapes the Singing Grove."
+      ],
+      "sources": ["warcraft.wiki.gg: Ormorok the Tree-Shaper"]
+    },
+    {
+      "id": 4265033,
+      "kind": "person",
+      "title": "Keristrasza",
+      "triggers": [{ "kill": 26723 }],
+      "body": [
+        "A red dragon in the service of Alexstrasza, imprisoned by Malygos when she refused to bow to him. Freed, she fought on, and lured his consort Saragosa to her death. In revenge Malygos made Keristrasza his consort in her place. He tormented her and branded her with runes until she went madder than he was. Death was the only escape left to her."
+      ],
+      "sources": ["warcraft.wiki.gg: Keristrasza"]
+    }
+  ]
+}
