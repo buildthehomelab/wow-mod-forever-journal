@@ -5,13 +5,13 @@
     {
       "id": 8000,
       "kind": "zone",
-      "title": "Swamp of Sorrows",
+      "title": "The Swamp of Sorrows",
       "triggers": [{ "areaId": 8 }],
       "body": [
-        "A humid, mist-hung marsh east of Deadwind Pass and north of the Blasted Lands, all tangled trees, black water and clouds of midges. Crocolisks, jaguars and great spiders hunt in the muck, and murlocs crowd its eastern beaches.",
-        "The swamp was once the land of the Atal'ai trolls, whose temple to the blood god Hakkar now lies sunk beneath the Pool of Tears, guarded by green dragons. The Horde holds the swamp from the fortress of Stonard. Along its western edge live the Broken and the Lost Ones, draenei who came to Azeroth long ago and were changed by the journey."
+        "Once the northern half of the Black Morass, a vast swamp that stretched south to where the Dark Portal opened. When the Portal was destroyed, its southern half was blasted into a desert, and the swamp that remained was named for those who died in the Second War.",
+        "Nature rules most of it: crocolisks, spiders and jaguars hunt the murk, and murlocs and gilblins hold the coasts and caves. The orcs of Stonard watch the southern road, and in the east the drowned Temple of Atal'Hakkar lies beneath the Pool of Tears."
       ],
-      "sources": ["quests 1396, 1426 descriptions", "quests 1424, 9610 descriptions", "quest 1389 description", "creature 27705 lines (humid air, clouds of midges)"]
+      "sources": ["warcraft.wiki.gg: Swamp of Sorrows (introduction, History, Second War, Geography)"]
     },
     {
       "id": 8001,
@@ -19,10 +19,10 @@
       "title": "Stonard",
       "triggers": [{ "area": "Stonard" }, { "talk": 1443 }, { "talk": 7623 }],
       "body": [
-        "A Horde fortress of rough-hewn stone towers squatting on the marshy ground in the middle of the swamp, the Horde's strongest outpost in the south of the Eastern Kingdoms. It keeps contact with Kargath in the Badlands through outrunners, when the route past Alliance-held Loch Modan allows.",
-        "Thrall sent its garrison to investigate the Temple of Atal'Hakkar. Stonard's alchemist calls it the best posting he could ask for, since almost any herb grows in the muck. Not everyone agrees: the blood elf portal trainer who was sent here has learned to love the smell of orc sweat and rot, and the newer arrivals keep the old hands awake with their quarrels."
+        "One of the oldest orc settlements on Azeroth, founded in the Black Morass after the first opening of the Dark Portal. With Rockard and Kyross it was one of the Horde's main bases in the First War, and the only one of the three still standing; it was badly damaged, then probably abandoned after the Second War.",
+        "The new Horde has rebuilt it to its former glory, one of the few orc towns that still has a great hall. It is the Horde's closest outpost to the Dark Portal, and a base for those who would enter the Sunken Temple."
       ],
-      "sources": ["quests 1418, 1420 descriptions", "quest 1424 description", "creature 1386 gossip and lines", "creature 27705 gossip and lines"]
+      "sources": ["warcraft.wiki.gg: Stonard (First and Second Wars, World of Warcraft)", "warcraft.wiki.gg: Swamp of Sorrows (First War)"]
     },
     {
       "id": 8002,
@@ -30,32 +30,31 @@
       "title": "The Harborage",
       "triggers": [{ "area": "The Harborage" }, { "talk": 1776 }, { "talk": 17127 }],
       "body": [
-        "A small village in the western swamp where Broken draenei live under their leader Magtoor. They came to Azeroth long before the Exodar, and the fel energies of their journey changed them from their original form.",
-        "They live uneasily beside the Horde in nearby Stonard, honouring its presence because they could not survive its anger, and they welcome visitors from both sides. Anchorite Avuun of the draenei has come to stay with them, to study the Lost Ones in hope of a cure, and the scholar Holaaru studies the history of Azeroth so that the Broken can understand the world they now live in."
+        "A small village of Broken exiles, draenei who crossed from Draenor and kept their minds when so many of their kin lost them. Led by Magtoor, they have stayed neutral, trading with the Horde as well as anyone.",
+        "Since the Exodar fell, Anchorite Avuun has come from the draenei to help their Broken cousins, studying their condition and searching for a cure, and urging the villagers to stop dealing with the Horde."
       ],
-      "sources": ["creature 1776 lines", "creature 17127 gossip and lines", "creature 18221 gossip", "quests 1389, 9610 descriptions and reward texts"]
+      "sources": ["warcraft.wiki.gg: Harborage (History)"]
     },
     {
       "id": 8003,
       "kind": "place",
       "title": "Fallow Sanctuary",
-      "triggers": [{ "area": "Fallow Sanctuary" }, { "accept": 1389 }, { "kill": 17115 }],
+      "triggers": [{ "area": "Fallow Sanctuary" }, { "kill": 17115 }],
       "body": [
-        "A village of huts and campfires east of the Harborage, home to the Lost Ones. They look like the Broken, but they are monsters now, driven mad by the rigours of the journey to Azeroth, and they catch or kill any who wander near.",
-        "They stole the Harborage's sacred draenethyst crystals, without which the Broken fear they too may lose their way, and their warrior Noboru the Cudgel killed any draenei who crossed his path. More recently a blood elf has been feeding fel-tainted morsels to their caged livestock, and some of the Lost Ones have been cursed with still more fel energy."
+        "The camp of the Lost Ones, draenei twisted further than the Broken, many reduced to savage, primitive beasts. They harass the Harborage, though its people were once their kin, and steal the draenethyst shards the Broken hold sacred and need to keep their sanity. Their leader, Noboru, and his gang kill anyone who crosses their path."
       ],
-      "sources": ["quest 1389 description", "quest 1392 description and reward text", "quests 9440, 9448 descriptions and reward texts"]
+      "sources": ["warcraft.wiki.gg: Lost One (introduction, World of Warcraft)", "warcraft.wiki.gg: Harborage"]
     },
     {
       "id": 8004,
       "kind": "place",
       "title": "The Pool of Tears",
-      "triggers": [{ "area": "Pool of Tears" }, { "accept": 1424 }, { "accept": 9610 }],
+      "triggers": [{ "area": "Pool of Tears" }, { "area": "Sorrowmurk" }, { "accept": 1424 }],
       "body": [
-        "A dark lake in the south-east of the swamp. Beneath it lies the Temple of Atal'Hakkar, built by the Atal'ai trolls, a tribe of dark casters who practised forbidden magic to call their god Hakkar into the world.",
-        "When the Horde arrived to investigate, they found the temple had been sunk. Atal'ai artifacts are still buried along the shore and in the depths, among carnivorous fish, and the ancient green dragon Somnus and his dragonkin guard the place, claiming to be protectors of Azeroth."
+        "A great lake in the eastern swamp, ringed by marsh. Beneath its waters, where Ysera sank it, lies the Temple of Atal'Hakkar, and the ruins of the Atal'ai are scattered along its shores and under its surface. Blood-thirsty fish fill the water.",
+        "Green dragonspawn and a great green drake patrol the Sorrowmurk, east of the pool, guarding the temple."
       ],
-      "sources": ["quests 1424, 9610 descriptions", "quest 1445 description"]
+      "sources": ["warcraft.wiki.gg: Pool of Tears", "warcraft.wiki.gg: Sorrowmurk"]
     },
     {
       "id": 8005,
@@ -63,10 +62,9 @@
       "title": "Itharius's Cave",
       "triggers": [{ "area": "Itharius's Cave" }, { "talk": 5353 }],
       "body": [
-        "A cave in the swamp where Itharius, a dragon of Ysera's green flight, keeps watch. He knows the names of those who come to him before they speak.",
-        "Itharius is working to redeem Eranikus, a dragon of his flight who now lies between sleep and death, twisted in a weave of nightmares. He asks for help only from those who will swear to the cause of Ysera's dragonflight, and warns them that there are correct choices to be made in what is coming."
+        "A surprisingly civilised cave in the far south-west of the swamp, home of a mysterious high elf who watches over a flock of unruly green whelps while they grow."
       ],
-      "sources": ["creature 5353 gossip and lines", "quests 3374, 3512 descriptions"]
+      "sources": ["warcraft.wiki.gg: Itharius's Cave"]
     },
     {
       "id": 8006,
@@ -74,21 +72,31 @@
       "title": "Misty Reed Strand",
       "triggers": [{ "area": "Misty Reed Strand" }, { "area": "Misty Reed Post" }, { "talk": 5593 }],
       "body": [
-        "The beaches along the swamp's eastern coast, overrun by murlocs. The Horde keeps a small post at Misty Reed to protect Stonard, or at least warn it if the force coming from the sea is too large.",
-        "Its soldiers are an odd company: Tok'Kar, who turns sawtooth claws into weapons between guard shifts and cooking duty, and Katar, who hates the sea and everything that comes out of it, and smiles only when he hears a murloc die."
+        "The gloomy coast of the swamp, a long beach of driftwood and debris, crocolisks, crabs, murlocs and gilblins. Stonard keeps a small post here between the Stagalbog and the strand, guarded by Tok'Kar, who dreams that one day it will get a burrow, or at least a tower."
       ],
-      "sources": ["quests 698, 699, 1422, 1426, 1428 descriptions and reward texts"]
+      "sources": ["warcraft.wiki.gg: Misty Reed Strand", "warcraft.wiki.gg: Misty Reed Post"]
     },
     {
       "id": 8007,
       "kind": "place",
-      "title": "The Lost Caravan",
-      "triggers": [{ "talk": 5476 }, { "accept": 1396 }, { "accept": 9609 }],
+      "title": "Splinterspear Junction",
+      "triggers": [{ "area": "Splinterspear Junction" }, { "talk": 5476 }],
       "body": [
-        "A wrecked Alliance caravan in the south of the swamp. It was travelling from Darkshire towards Nethergarde Keep with supplies, including reagents vital to the wizards' work watching the Dark Portal, when Lost Ones fell on it.",
-        "Watcher Biggs was the only survivor. He swore to protect what remained, fought off the swamp's beasts, and set to fixing his wagon with sun-dried driftwood from the coast. When his shipment finally reached Nethergarde, its quartermaster had thought both caravan and watcher long lost."
+        "The fork in the road into the swamp, north to the Harborage and Fallow Sanctuary and south to Stonard and the Blasted Lands. An old orc watchtower stands over it.",
+        "In the First War this was Kyross, the Horde outpost closest to Grand Hamlet, and Stormwind sent war parties into the swamp to destroy it. A Lordaeron officer, Lieutenant Blake Godwyn, fell in one of those battles and was buried here with his ancestral sword."
       ],
-      "sources": ["quests 1396, 1421, 1398, 1425 descriptions and reward texts", "quest 9609 description"]
+      "sources": ["warcraft.wiki.gg: Splinterspear Junction (History)"]
+    },
+    {
+      "id": 8008,
+      "kind": "place",
+      "title": "The Shifting Mire and the Stagalbog",
+      "triggers": [{ "area": "The Shifting Mire" }, { "area": "Stagalbog" }, { "area": "Stagalbog Cave" }],
+      "body": [
+        "The Shifting Mire, the heart of the swamp, is named for a mystery: the fine silt on its floor gathers and moves of its own accord, as if alive. Anchorite Avuun says the force behind it is a positive one.",
+        "South of the Pool of Tears, the Stagalbog is dense marsh against the mountains. The Marsh murlocs and their leader, the Swamp Talker, live in its cave, and wind serpents not seen there in ages have begun to emerge from the Sunken Temple."
+      ],
+      "sources": ["warcraft.wiki.gg: Shifting Mire", "warcraft.wiki.gg: Stagalbog", "warcraft.wiki.gg: Stagalbog Cave"]
     },
     {
       "id": 8030,
@@ -96,21 +104,20 @@
       "title": "Fel'zerul",
       "triggers": [{ "talk": 1443 }, { "accept": 1424 }],
       "body": [
-        "The orc of Stonard charged by the Warchief with finding out what happened to the Temple of Atal'Hakkar. He pieces the story together from Atal'ai artifacts and the testimony of an exiled Atal'ai priest living among the Witherbark trolls of the Hinterlands.",
-        "What he learned alarmed him. The prophet Jammal'an leads the Atal'ai towards Hakkar's return, believing the blood god will make them immortal. Fel'zerul calls it foolish trickery that will bring a premature doomsday, and destroys every fetish of Hakkar brought to him."
+        "An orc warlock in Stonard, sent by Thrall himself to investigate the strange happenings around the Temple of Atal'Hakkar."
       ],
-      "sources": ["quests 1424, 1429, 1445 descriptions and reward texts", "creature 1443 lines"]
+      "sources": ["warcraft.wiki.gg: Fel'zerul"]
     },
     {
       "id": 8031,
       "kind": "person",
-      "title": "Cersei Dusksinger",
-      "triggers": [{ "talk": 17109 }, { "accept": 9440 }],
+      "title": "Itharius",
+      "triggers": [{ "talk": 5353 }],
       "body": [
-        "A blood elf warlock in Stonard, convinced the orcs are fools for sitting on their hands while so much power lies unclaimed nearby. She is perfecting a weapon against the draenei, and testing it on the Lost Ones, their backward cousins.",
-        "Her method is to curse the Lost Ones' captured livestock with fel-tainted morsels, so that whoever eats the animals is cursed in turn. Anchorite Avuun has guessed what she is doing. Stonard's own trainers find her cowardly, and the Broken who trade there have heard her raving about a disease."
+        "The \"high elf\" of the cave is a green dragon in disguise: Itharius, brother of Ysera's consort Eranikus. Ysera sent them both, with the young drakes who became the Wardens of the Dream, to watch over the drowned temple.",
+        "When the dragons in the temple were driven mad by the Emerald Nightmare and the Atal'ai, Itharius called on the Cenarion Circle for help. Eranikus was among the first to fall to the corruption."
       ],
-      "sources": ["quest 9440 description and reward text", "quest 9448 description", "creature 17109 lines", "creatures 988, 1386, 1776 lines"]
+      "sources": ["warcraft.wiki.gg: Lord Itharius (Biography, World of Warcraft)"]
     },
     {
       "id": 8032,
@@ -118,21 +125,20 @@
       "title": "Magtoor",
       "triggers": [{ "talk": 1776 }, { "complete": 1392 }],
       "body": [
-        "The leader of the Broken at the Harborage. He welcomes visitors, trades with Stonard, and takes the Horde's presence seriously, because he must.",
-        "Magtoor is less sure about Anchorite Avuun. He honours the draenei's visit, but wonders aloud what she truly believes she can accomplish with the Lost Ones. For months his people lived in fear of Noboru the Cudgel, and they did not have the strength to face him."
+        "One of the draenei who came through the Dark Portal hoping for a new life. Most were driven mad by longing for their home; Magtoor leads the few who remember their noble roots. He has had the painful task of killing those who were once his brethren, and foul energies have begun to corrupt his body. Anchorite Avuun is trying to heal him."
       ],
-      "sources": ["creature 1776 lines", "quest 1392 reward text", "quest 1389 description"]
+      "sources": ["warcraft.wiki.gg: Magtoor (History)"]
     },
     {
       "id": 8050,
       "kind": "history",
       "title": "The Sinking of Atal'Hakkar",
-      "triggers": [{ "complete": 1424 }, { "complete": 1429 }, { "complete": 1445 }],
+      "triggers": [{ "complete": 1424 }, { "complete": 1429 }, { "area": "Pool of Tears" }],
       "body": [
-        "The Atal'ai were Gurubashi trolls who worshipped Hakkar the Soulflayer and tried to summon him into the world. To stop them, the Dragon Aspect Ysera sank their great temple beneath the swamp, and set her green dragons to guard it.",
-        "The Atal'ai never gave up. Their prophet Jammal'an still leads the disciples of the Chamber of Blood inside the sunken temple, gathering fetishes to complete the ritual. A priest who opposed them was exiled to the Witherbark trolls of the Hinterlands, a fate the Atal'ai consider worse than death."
+        "Over a thousand years ago the Gurubashi Empire was torn apart by civil war when the Atal'ai priests tried to summon the blood god Hakkar the Soulflayer. The priests were defeated and exiled, fled north into the swamp, and built a great temple where they could prepare for his coming. Their dark magic twisted the plants and beasts around it.",
+        "Ysera learned of their plans and drowned the temple in the largest bog. She set her consort Eranikus and loyal green dragons to guard it so it could never be used again. But some of the Atal'ai survived, and sinking the temple only let them work undisturbed."
       ],
-      "sources": ["quests 1424, 1429, 1445 descriptions and reward texts", "quest 9610 description", "pre-Cataclysm lore: Ysera sinks the Temple of Atal'Hakkar"]
+      "sources": ["warcraft.wiki.gg: Temple of Atal'Hakkar (introduction, Origins)", "warcraft.wiki.gg: Swamp of Sorrows (History)"]
     },
     {
       "id": 8051,
@@ -140,10 +146,10 @@
       "title": "The Broken and the Lost",
       "triggers": [{ "complete": 1389 }, { "complete": 9448 }, { "complete": 9610 }],
       "body": [
-        "Long before the Exodar fell, a few draenei reached Azeroth by other paths. The fel energies they met along the way changed them. Those who kept their minds are called the Broken; those who lost them are the Lost Ones, monsters who still look like their kin.",
-        "When the draenei of the Exodar learned of them, some came to see. Anchorite Avuun believes the Lost Ones can be rehabilitated by studying the fel that changed them, and grants the hopeless ones a merciful death. The Broken of the Harborage hold on to their draenethyst crystals, afraid that without them they too may lose their way."
+        "When Draenor was torn apart, some of its draenei were caught on Azeroth's side of the Portal, changed forever by the disaster. Most went mad with homesickness and separation from their land and became the hostile Lost Ones; a small band, the Broken exiles, escaped that fate.",
+        "Many of the Lost Ones still search for a way home. Draenethyst crystals are said to be able to open a rift back to what remains of Draenor."
       ],
-      "sources": ["creature 18221 gossip", "quest 1389 description", "quest 9448 description and reward text", "creature 17127 gossip and lines"]
+      "sources": ["warcraft.wiki.gg: Swamp of Sorrows (Second War)", "warcraft.wiki.gg: Lost One (World of Warcraft)"]
     }
   ]
 }
