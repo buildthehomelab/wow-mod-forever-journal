@@ -214,7 +214,7 @@ The server reads its `Achievement_Criteria.dbc` and the target-creature rows in
 `achievement_criteria_data`, so these are realm targets rather than a bundled stock checklist.
 Statistics are excluded. Emotes with no explicit creature target are omitted; unknown emotes
 point to the achievement rather than guessing a slash command. Achievement names and progress
-require matching client achievement data, including Evermore's custom DBC patches.
+require matching client achievement data, including any custom achievement DBC patches your realm ships.
 
 Items in Journal's collection catalog also show **Learn mount**, **Learn pet**, or **Collect toy**
 when missing, with class/faction and progression restrictions noted. This currently matches the
@@ -223,8 +223,7 @@ for hover hints. Toys use the server's bags/bank ownership check. Catalog loadin
 seconds after login; hover again after it finishes. Both addon and server module updates are
 required; older servers continue to support the existing Journal tabs.
 
-Implementation status: Lua tooltip regression tests and addon smoke tests pass outside the game.
-The server changes have not been compiled against the Evermore core, deployed, or checked in-client.
+Not yet checked in a game client: the hover hints and the server changes behind them.
 
 ## How it works
 
@@ -358,8 +357,7 @@ a minute or more, set when the boss is engaged and not under an `if` (heroic onl
 event doesn't repeat, and nothing during the fight resets, cancels, delays or reschedules it.
 Scripts with two different timers get none.
 
-The checked-in file was made from mod-playerbots/azerothcore-wotlk f19a187 and
-mod-individual-progression 723c510.
+The checked-in file was generated from the core and mod-individual-progression sources of the time; run the script again when either changes.
 
 ## Writing lore
 
