@@ -1,0 +1,62 @@
+-- mod-forever-journal: lore of Zangarmarsh (zone 3521).
+-- Generated from data/lore/*.json by tools/build_lore_sql.py; edit the JSON, not this file.
+
+DELETE FROM `mod_forever_journal_lore_trigger` WHERE `Entry` BETWEEN 3521000 AND 3521999;
+DELETE FROM `mod_forever_journal_lore` WHERE `ID` BETWEEN 3521000 AND 3521999;
+
+INSERT INTO `mod_forever_journal_lore` (`ID`, `Zone`, `Kind`, `SortOrder`, `Faction`, `Races`, `Classes`, `Era`, `Title`, `Body`, `Sources`) VALUES
+(3521000, 3521, 0, 1, 0, 0, 0, 0, 'Zangarmarsh', 'A hauntingly beautiful swamp under a forest of giant mushrooms, which stand over its pools like great trees. It was once the Zangar Sea. As fel energy went on killing Draenor, the sea dried into a mire, and the mushroom forests of the coast crept inland until they filled it.\n\nThough it still teems with life, parts of the marsh have begun to die, and the land''s own strange creatures are asking for help to bring it back.', 'warcraft.wiki.gg: Zangarmarsh (introduction, Zangar Sea, Rise of the Horde)'),
+(3521001, 3521, 1, 1, 0, 0, 0, 0, 'Cenarion Refuge', 'Founded by the Cenarion Circle, who came through the reopened Portal to study the surviving life of this uncharted world. Their work grew so large that it became its own organization, the Cenarion Expedition, independent of the Circle on Azeroth and led by the night elf Ysiel Windsinger. Two ancients, Ashyen and Keleth, stand guard over it.', 'warcraft.wiki.gg: Cenarion Refuge; warcraft.wiki.gg: Cenarion Expedition'),
+(3521002, 3521, 1, 2, 0, 0, 0, 0, 'Telredor', 'A draenei monastery atop a giant mushroom, centuries old, built as a retreat for anchorites and spiritualists on an island in the Zangar Sea. After the orcs sacked Shattrath, Prophet Velen led survivors here, and his artificers raised a network of crystals that hid the temple from the Horde. Survivors trickled in for months; the anchorites turned the shrine into a haven, and the refugees waited here for years in fear of discovery, until their escape aboard the Exodar.\n\nThe sea dried up around the island and became the marsh. Telredor is still the largest draenei stronghold here.', 'warcraft.wiki.gg: Telredor (History); warcraft.wiki.gg: Zangarmarsh (Rise of the Horde)'),
+(3521003, 3521, 1, 3, 0, 0, 0, 0, 'Orebor Harborage', 'Once a centre of draenei learning and trade, now home to the Kurenai, Broken who seek to restore their ties with their uncorrupted kin. Here, after Illidan took the Black Temple, Akama and Maiev Shadowsong met to speak of the Betrayer.', 'warcraft.wiki.gg: Orebor Harborage'),
+(3521004, 3521, 1, 4, 0, 0, 0, 0, 'Zabra''jin and Swamprat Post', 'The Darkspear tribe''s outposts in the marsh: Zabra''jin, a town of huts on mushrooms and planks above the water, and Swamprat Post, a fishing village in the north-east.', 'warcraft.wiki.gg: Zabra''jin; warcraft.wiki.gg: Swamprat Post; warcraft.wiki.gg: Zangarmarsh (The Burning Crusade)'),
+(3521005, 3521, 1, 5, 0, 0, 0, 0, 'Sporeggar', 'The home of the sporelings, a mostly peaceful race of mushroom-men native to Outland. The changing marsh has put them in danger. They were not always made of mushroom.', 'warcraft.wiki.gg: Sporeggar'),
+(3521006, 3521, 1, 6, 0, 0, 0, 0, 'The Spawning Glen', 'Where the sporelings have reared their young for millennia. Of late the fungal giants of Quagg Ridge have begun destroying and devouring the helpless young.', 'warcraft.wiki.gg: Spawning Glen; warcraft.wiki.gg: Quagg Ridge'),
+(3521007, 3521, 1, 7, 0, 0, 0, 0, 'The Ango''rosh', 'Ogres who came down from the northern mountains and hold a floating island fortress, reached by a fallen mushroom. Their "mushroom-cutting operation" has hacked the Hewn Bog down to stumps, and the bog lords, robbed of their food, now take out their fury on the sporelings. The tribe presses on Orebor Harborage and Zabra''jin alike.', 'warcraft.wiki.gg: Ango''rosh tribe (History); warcraft.wiki.gg: Ango''rosh Stronghold; warcraft.wiki.gg: Hewn Bog'),
+(3521008, 3521, 1, 8, 0, 0, 0, 0, 'The Dead Mire', 'Once a lake where the fungal giants spawned, now almost drained by a great naga pump. What wildlife is left has become twisted, withered and crazed with hunger.', 'warcraft.wiki.gg: Dead Mire'),
+(3521009, 3521, 1, 9, 0, 0, 0, 0, 'The Naga Pumps', 'Illidan''s naga have built pumping machines on every major lake of the marsh, from Marshlight Lake to the Lagoon, and draw the water down to Coilfang Reservoir beneath Serpent Lake. They kill the sporelings and enslave the Broken.', 'warcraft.wiki.gg: Zangarmarsh (The Burning Crusade); warcraft.wiki.gg: Bloodscale Enclave; warcraft.wiki.gg: Darkcrest Shore'),
+(3521010, 3521, 1, 10, 0, 0, 0, 0, 'The Lost Ones', 'Draenei sunk further than the Broken, the Lost Ones live in tribes across the marsh: the Daggerfen, the Umbrafen, and the Feralfen, who have built their village around the ruins of the draenei temple of Boha''mu and turned to worshipping animal spirits.', 'warcraft.wiki.gg: Zangarmarsh (introduction); warcraft.wiki.gg: Feralfen Village; warcraft.wiki.gg: Boha''mu Ruins'),
+(3521011, 3521, 1, 11, 0, 0, 0, 0, 'Twin Spire Ruins', 'The remains of a holy draenei site: a ruined tower over a burial ground, flanked by two smaller buildings. The Horde and Alliance fight over it.', 'warcraft.wiki.gg: Twin Spire Ruins'),
+(3521012, 3521, 1, 12, 0, 0, 0, 0, 'Portal Clearing', 'One of the dimensional gateways through which Magtheridon brought demons from the Twisting Nether. Illidan closed them when he conquered Outland; this one stands dark. Beneath Marshlight Lake sleeps the demon Xeleth, a defector from the Legion who was once worshipped as a god by the marsh''s primitive creatures.', 'warcraft.wiki.gg: Portal Clearing; warcraft.wiki.gg: Zangarmarsh (Warcraft III, The Burning Crusade)'),
+(3521013, 3521, 1, 13, 0, 0, 0, 0, 'Funggor Cavern', 'Home of the sporeloks, now being overrun by marsh beasts under Lord Klaq.', 'warcraft.wiki.gg: Funggor Cavern'),
+(3521014, 3521, 1, 14, 0, 0, 0, 0, 'Coilfang Reservoir', 'A vast artificial cavern under Serpent Lake, entered from beneath the water: a pumping station of gigantic caverns and huge pipes, powered by titanic crystal capacitors. From Serpentshrine Cavern within, Lady Vashj oversees the draining of the marsh. Her plan is to take control of all the waters of Outland, and through them its people.', 'warcraft.wiki.gg: Coilfang Reservoir; warcraft.wiki.gg: Zangarmarsh (The Burning Crusade)'),
+(3521050, 3521, 3, 1, 0, 0, 0, 0, 'Illidan''s Naga', 'When Illidan failed to destroy the Frozen Throne, his forces fled to Outland from Kil''jaeden''s wrath. Lady Vashj and most of her naga settled here and began to drain the marsh, working nearly the whole Wastewalker tribe of the Broken as slaves. With the naga taking the water and the ogres the mushrooms, the marsh is sickening; disease spreads through plants and animals, and food is vanishing.', 'warcraft.wiki.gg: Zangarmarsh (The Burning Crusade)');
+
+INSERT INTO `mod_forever_journal_lore_trigger` (`Entry`, `Type`, `Value`, `Area`) VALUES
+(3521000, 1, 3521, ''),
+(3521001, 1, 0, 'Cenarion Refuge'),
+(3521001, 2, 17841, ''),
+(3521002, 1, 0, 'Telredor'),
+(3521002, 2, 18003, ''),
+(3521003, 1, 0, 'Orebor Harborage'),
+(3521003, 2, 18008, ''),
+(3521004, 1, 0, 'Zabra''jin'),
+(3521004, 1, 0, 'Swamprat Post'),
+(3521005, 1, 0, 'Sporeggar'),
+(3521005, 2, 17923, ''),
+(3521006, 1, 0, 'The Spawning Glen'),
+(3521006, 1, 0, 'Quagg Ridge'),
+(3521007, 1, 0, 'Ango''rosh Stronghold'),
+(3521007, 1, 0, 'Ango''rosh Grounds'),
+(3521007, 1, 0, 'Hewn Bog'),
+(3521007, 3, 18160, ''),
+(3521008, 1, 0, 'The Dead Mire'),
+(3521009, 1, 0, 'Bloodscale Enclave'),
+(3521009, 1, 0, 'Bloodscale Grounds'),
+(3521009, 1, 0, 'Darkcrest Enclave'),
+(3521009, 1, 0, 'Darkcrest Shore'),
+(3521009, 1, 0, 'Umbrafen Lake'),
+(3521009, 1, 0, 'The Lagoon'),
+(3521009, 1, 0, 'Serpent Lake'),
+(3521010, 1, 0, 'Feralfen Village'),
+(3521010, 1, 0, 'Boha''mu Ruins'),
+(3521010, 1, 0, 'Umbrafen Village'),
+(3521010, 1, 0, 'Daggerfen Village'),
+(3521011, 1, 0, 'Twin Spire Ruins'),
+(3521012, 1, 0, 'Portal Clearing'),
+(3521012, 1, 0, 'Marshlight Lake'),
+(3521012, 3, 21894, ''),
+(3521013, 1, 0, 'Funggor Cavern'),
+(3521013, 3, 18282, ''),
+(3521014, 1, 0, 'Coilfang Reservoir'),
+(3521050, 1, 3521, '');

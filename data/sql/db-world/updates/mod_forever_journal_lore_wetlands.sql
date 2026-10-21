@@ -1,0 +1,63 @@
+-- mod-forever-journal: lore of Wetlands (zone 11).
+-- Generated from data/lore/*.json by tools/build_lore_sql.py; edit the JSON, not this file.
+
+DELETE FROM `mod_forever_journal_lore_trigger` WHERE `Entry` BETWEEN 11000 AND 11999;
+DELETE FROM `mod_forever_journal_lore` WHERE `ID` BETWEEN 11000 AND 11999;
+
+INSERT INTO `mod_forever_journal_lore` (`ID`, `Zone`, `Kind`, `SortOrder`, `Faction`, `Races`, `Classes`, `Era`, `Title`, `Body`, `Sources`) VALUES
+(11000, 11, 0, 1, 0, 0, 0, 0, 'The Wetlands', 'A vast, cold swamp north of Loch Modan, mountains on three sides and the sea to the west. Mists cloak the ground and the overcast sky turns everything a uniform grey. Many strongholds of Ironforge once stood here; war has left them in rubble.\n\nThe land belongs to wild beasts, murlocs and the Dragonmaw orcs now. While Ironforge''s soldiers fight in far-off lands for the Alliance, the Dark Iron dwarves have struck: their warlock Balgaras the Foul laid waste to the Thandol Span, and the southern end of Dun Modr fell soon after.', 'warcraft.wiki.gg: Wetlands (introduction, World of Warcraft)'),
+(11001, 11, 1, 1, 0, 0, 0, 0, 'Menethil Harbor', 'A port on a small island off the western shore, behind a thick stone wall, watched over by the four towers of Menethil Keep. It is a rough place of sailors, travellers, smugglers and pirates. Its ships link the old lands of Khaz Modan and Stormwind with the new Alliance settlements at Theramore and Auberdine.\n\nAfter the First War, Orgrim Doomhammer chose this spot to build the fleet that would carry the Horde to Lordaeron, using iron and timber stripped from the dwarves'' mines. After the Second War, Admiral Daelin Proudmoore rebuilt it as an Alliance harbour and named it for King Terenas Menethil II. Later, the orcs of the Horde of Draenor raided it to steal ships for their voyage to the Tomb of Sargeras.', 'warcraft.wiki.gg: Menethil Harbor (introduction, The Great Wars, World of Warcraft); warcraft.wiki.gg: Menethil Keep'),
+(11002, 11, 1, 2, 0, 0, 0, 0, 'Dun Algaz', 'The tunnelled mountain pass between Loch Modan and the Wetlands, and the stronghold that guards it, older than the War of the Three Hammers. The exiled Wildhammers passed through it on their way north.\n\nIn the Second War the beaten orcs fell back from Dun Modr to an outpost here; Lothar''s assault failed, and it became the Horde''s last hold. Later the Dragonmaw chieftain Nekros moved his clan into caves hidden in the pass. Now the Dragonmaw have overrun the post, forcing the dwarves back into the upper tunnel and threatening to cut Loch Modan off from Menethil Harbor.', 'warcraft.wiki.gg: Dun Algaz (History, Second War, World of Warcraft)'),
+(11003, 11, 1, 3, 0, 0, 0, 0, 'Dun Modr and the Thandol Span', 'The Thandol Span is one of the greatest works the dwarves ever built: massive stone arches over the Thandol Valley joining Khaz Modan to the Arathi Highlands, raised after the War of the Three Hammers to keep trade and kinship alive between Ironforge and the Wildhammers. The Anvilmars have guarded it for at least three generations.\n\nDun Modr, the walled dwarven town at its southern end, has always been the key to the region. In the Second War it changed hands again and again: the Horde took it, a Stromgarde task force retook it from Tol Barad, and the orcs won it back. Now the Dark Irons hold it.', 'warcraft.wiki.gg: Thandol Span (introduction, Construction); warcraft.wiki.gg: Dun Modr (introduction, Second War)'),
+(11004, 11, 1, 4, 0, 0, 0, 0, 'Direforge Hill', 'A Dark Iron war camp south-east of Dun Modr, led by the warlock Balgaras the Foul, who broke the Thandol Span.', 'warcraft.wiki.gg: Direforge Hill; warcraft.wiki.gg: Wetlands (World of Warcraft)'),
+(11005, 11, 1, 5, 0, 0, 0, 0, 'Whelgar''s Excavation Site', 'A peaceful dwarven dig east of Menethil, until mottled raptors overran it. Prospector Whelgar and his diggers are trapped on a ridge above the site. Raptors nest all through these marshes: in Black Channel Marsh along the harbour road, at Saltspray Glen, and at Raptor Ridge, where the Razormaw Matriarch keeps her brood.', 'warcraft.wiki.gg: Whelgar''s Excavation Site; warcraft.wiki.gg: Black Channel Marsh; warcraft.wiki.gg: Saltspray Glen; warcraft.wiki.gg: Raptor Ridge'),
+(11006, 11, 1, 6, 0, 0, 0, 0, 'The Lost Fleet', 'The wrecks of Kul Tiras''s Third Fleet, sunk off Bluegill Marsh in the Second War: the Wave Mistress and the Intrepid on the shore, and the Flying Osprey south of the harbour. First Mate Fitzsimmons of the Wave Mistress is the only survivor.\n\nThe drowned crews have risen as undead, cursed by a forbidden artifact one of the ships carried, the Eye of Paleth, which their greedy commander, Captain Halyndor, kept locked in the Intrepid''s hold. Only the ghost of First Mate Snellig, on the shore, has kept his mind.', 'warcraft.wiki.gg: Lost Fleet (introduction, World of Warcraft)'),
+(11007, 11, 1, 7, 0, 0, 0, 0, 'The Dragonmaw Encampments', 'The Angerfang Encampment in the central Wetlands is the largest Dragonmaw camp, led by Nek''rosh Skullcrusher, son of Nekros. He means to use it as the staging ground for a catapult attack on Menethil Harbor.\n\nFurther east, four great gates bar the winding road up to Grim Batol.', 'warcraft.wiki.gg: Angerfang Encampment; warcraft.wiki.gg: Dragonmaw Gates'),
+(11008, 11, 1, 8, 0, 0, 0, 0, 'Grim Batol', 'A mountain fortress of great walls and spires, most of it underground, founded by the Wildhammers after the War of the Three Hammers. The Dark Iron sorceress Modgud cursed it as her army broke its gates. Thane Khardros killed her, but the curse remained, and the Wildhammers abandoned their city.\n\nIn the Second War the Dragonmaw made it their fortress, and chained the Dragonqueen Alexstrasza in its depths to breed dragons for the Horde. When she was freed, she burned every orc she could find. The dwarves still sensed darkness in the mountain, so the red dragonflight sealed it, and the drake Axtroz guards its doors.', 'warcraft.wiki.gg: Grim Batol (War of the Three Hammers, Second War, Aftermath, World of Warcraft)'),
+(11009, 11, 1, 9, 0, 0, 0, 0, 'Mosshide Fen and the Green Belt', 'The Mosshide gnolls hold the fen in the east, and their leader Gnawbone has them capture and eat travellers. Nearby, in the Green Belt, bog beasts and oozes roam around the wreck of a Dragonmaw caravan, still haunted by red whelps; it was probably destroyed when the dragons broke free. Rethiel the Greenwarden, an ancient bog spirit, makes his home there.', 'warcraft.wiki.gg: Mosshide Fen; warcraft.wiki.gg: Green Belt'),
+(11010, 11, 1, 10, 0, 0, 0, 0, 'Ironbeard''s Tomb', 'A dwarven crypt and graveyard beside the road to Dun Modr, with a statue that is presumably of Ironbeard himself. Black and crimson oozes have defiled it, and no one comes to bury their dead here any more.', 'warcraft.wiki.gg: Ironbeard''s Tomb'),
+(11011, 11, 1, 11, 0, 0, 0, 0, 'Sundown Marsh and Bluegill Marsh', 'Sundown Marsh, in the north-west, is the deepest part of the Wetlands, and home to an odd couple, Fradd Swiftgear and Wenna Silkbeard, who sell whatever curious things they find in the swamp. The Bluegill murlocs and their ferocious leader, Gobbler, hold the marsh to the west.\n\nFar to the south, the caves of Thelgen Rock run deep into the mountains, crawling with poisonous spiders.', 'warcraft.wiki.gg: Sundown Marsh; warcraft.wiki.gg: Bluegill Marsh; warcraft.wiki.gg: Thelgen Rock'),
+(11030, 11, 2, 1, 0, 0, 0, 0, 'Longbraid the Grim', 'A dwarf of Ironforge holding out near fallen Dun Modr, one of the few left to stand against the Dark Irons who broke the Span.', 'warcraft.wiki.gg: Dun Modr (World of Warcraft)'),
+(11050, 11, 3, 1, 0, 0, 0, 0, 'The Third Fleet of Kul Tiras', 'In the Second War, while the fleets of the Alliance and the Horde fought the Battle of Crestfall, the Dragonmaw''s enslaved red dragons dived on the Alliance ships in sheets of fire. Derek Proudmoore, elder son of Admiral Daelin Proudmoore, commanded the Third Fleet. He tried to warn his father of the danger, and was killed by a dragon as he stood in the crow''s nest. His ship went down soon after, with most of the fleet, into Baradin Bay.', 'warcraft.wiki.gg: Lost Fleet (Second War)'),
+(11051, 11, 3, 2, 0, 0, 0, 0, 'The Dragonmaw', 'The Dragonmaw, "Cry of the Beasts", came to Azeroth under the shaman Zuluhed the Whacked. With the Demon Soul, a gift of Deathwing, their warlock Nekros Skullcrusher captured Alexstrasza, and the clan held the red dragonflight in bondage through the Second War, forcing it to fight for the Horde.\n\nThey kept the dragons long after the Horde''s defeat, until the Battle of Grim Batol set them free. The dragons destroyed the clan''s power on Azeroth; the survivors scattered into the Wetlands, and never truly regained their strength. Zuluhed and part of the clan remained on Outland.', 'warcraft.wiki.gg: Dragonmaw clan (introduction); warcraft.wiki.gg: Grim Batol (Second War, Aftermath); warcraft.wiki.gg: Wetlands (Battle of Grim Batol)'),
+(11052, 11, 3, 3, 0, 0, 0, 0, 'The Wildhammer Exodus', 'After the War of the Three Hammers left the old dwarven kingdom shattered, Thane Khardros led the Wildhammers north through Dun Algaz and founded a new capital in Grim Batol. When war came again, the Dark Iron sorcerer-thane Thaurissan struck at both Ironforge and Grim Batol at once; Ironforge threw him back, and the Wildhammers killed his wife Modgud at their gates.\n\nBut her curse had tainted the city beyond saving. Ironforge offered the Wildhammers a home, and they refused. Most went north to the Hinterlands and founded Aerie Peak; the rest settled in Northeron, not far from their cursed old home.', 'warcraft.wiki.gg: Wetlands (History); warcraft.wiki.gg: Grim Batol (War of the Three Hammers)');
+
+INSERT INTO `mod_forever_journal_lore_trigger` (`Entry`, `Type`, `Value`, `Area`) VALUES
+(11000, 1, 11, ''),
+(11001, 1, 0, 'Menethil Harbor'),
+(11001, 1, 0, 'Menethil Keep'),
+(11001, 2, 2104, ''),
+(11002, 1, 0, 'Dun Algaz'),
+(11002, 2, 2086, ''),
+(11003, 1, 0, 'Dun Modr'),
+(11003, 1, 0, 'Thandol Span'),
+(11003, 2, 1071, ''),
+(11004, 1, 0, 'Direforge Hill'),
+(11004, 3, 1364, ''),
+(11005, 1, 0, 'Whelgar''s Excavation Site'),
+(11005, 2, 1077, ''),
+(11006, 1, 0, 'The Lost Fleet'),
+(11006, 2, 1239, ''),
+(11006, 3, 1160, ''),
+(11007, 1, 0, 'Angerfang Encampment'),
+(11007, 1, 0, 'Dragonmaw Gates'),
+(11007, 3, 2091, ''),
+(11008, 1, 0, 'Grim Batol'),
+(11008, 3, 12899, ''),
+(11009, 1, 0, 'Mosshide Fen'),
+(11009, 1, 0, 'The Green Belt'),
+(11009, 2, 1244, ''),
+(11010, 1, 0, 'Ironbeard''s Tomb'),
+(11011, 1, 0, 'Sundown Marsh'),
+(11011, 1, 0, 'Bluegill Marsh'),
+(11011, 1, 0, 'Thelgen Rock'),
+(11030, 2, 1071, ''),
+(11030, 4, 472, ''),
+(11050, 5, 289, ''),
+(11050, 5, 292, ''),
+(11050, 1, 0, 'The Lost Fleet'),
+(11051, 5, 464, ''),
+(11051, 5, 474, ''),
+(11051, 5, 455, ''),
+(11052, 1, 11, ''),
+(11052, 1, 0, 'Grim Batol');
