@@ -1,0 +1,47 @@
+{
+  "zone": 3277,
+  "name": "Warsong Gulch",
+  "entries": [
+    {
+      "id": 3277000,
+      "kind": "zone",
+      "title": "Warsong Gulch",
+      "triggers": [{ "areaId": 3277 }],
+      "body": [
+        "A valley between Ashenvale and the Barrens, near where Grom Hellscream's orcs cut great swathes of forest in the Third War. Despite the objections of Thrall and his shamans, some orcs stayed and kept felling the trees to fuel the Horde's growth. They call themselves the Warsong Outriders.",
+        "To the Outriders, the purple-and-emerald forests of Ashenvale are a prize cache of planks. To the night elves' Silverwing Sentinels, they are home, and the Sentinels have sworn not to rest until every last orc is driven out of the gulch."
+      ],
+      "sources": ["warcraft.wiki.gg: Warsong Gulch (introduction, Official overview)"]
+    },
+    {
+      "id": 3277001,
+      "kind": "place",
+      "title": "The Warsong Lumber Mill",
+      "triggers": [{ "area": "Warsong Lumber Mill" }, { "area": "Warsong Flag Room" }],
+      "body": [
+        "The Outriders' stronghold, a lumber mill among the turned soil and stumps of the felled forest, where they keep their war banner."
+      ],
+      "sources": ["warcraft.wiki.gg: Warsong Gulch (Official overview)"]
+    },
+    {
+      "id": 3277002,
+      "kind": "place",
+      "title": "Silverwing Hold",
+      "triggers": [{ "area": "Silverwing Hold" }, { "area": "Silverwing Flag Room" }],
+      "body": [
+        "The Sentinels' fortress at the other end of the gulch, raised to stop the forest's disappearance, where they keep their own banner."
+      ],
+      "sources": ["warcraft.wiki.gg: Warsong Gulch (Official overview)"]
+    },
+    {
+      "id": 3277050,
+      "kind": "history",
+      "title": "The Banners",
+      "triggers": [{ "areaId": 3277 }],
+      "body": [
+        "Capturing banners may seem an odd way to settle a war over a forest, but it is symbolic, and hardly bloodless. Whoever holds the defeated foe's banner shows everyone who looks upon the forest that their claim is the strongest, and decides the future of one of the night elves' most important ancestral lands. Both sides recruit heroes from far and wide."
+      ],
+      "sources": ["warcraft.wiki.gg: Warsong Gulch (Official overview)"]
+    }
+  ]
+}
