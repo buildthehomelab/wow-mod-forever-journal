@@ -357,7 +357,7 @@ a minute or more, set when the boss is engaged and not under an `if` (heroic onl
 event doesn't repeat, and nothing during the fight resets, cancels, delays or reschedules it.
 Scripts with two different timers get none.
 
-The checked-in file was generated from the core and mod-individual-progression sources of the time; run the script again when either changes.
+Last generated from mod-playerbots/azerothcore-wotlk f19a187 and mod-individual-progression 723c510.
 
 ## Writing lore
 
