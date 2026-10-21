@@ -1,0 +1,107 @@
+{
+  "zone": 722,
+  "name": "Razorfen Downs",
+  "entries": [
+    {
+      "id": 722000,
+      "kind": "zone",
+      "title": "Razorfen Downs",
+      "triggers": [{ "areaId": 722 }],
+      "body": [
+        "The traditional capital of the quilboar, a sprawling labyrinth of thorns grown from the same mighty vines as Razorfen Kraul, and the ancestral burial ground of their race. It is said its entrance is Agamaggan's own maw. Charlga Razorflank shaped most of its great thorn dome.",
+        "After the Third War, the Scourge came. The lich Amnennar the Coldbringer took control of the quilboar here and turned the maze into a bastion of undead might, the first great Scourge outpost in Kalimdor. Its high priests, the Death's Head, now serve him."
+      ],
+      "sources": ["warcraft.wiki.gg: Razorfen Downs (introduction, History)", "warcraft.wiki.gg: Amnennar the Coldbringer"]
+    },
+    {
+      "id": 722001,
+      "kind": "place",
+      "title": "The Caller's Chamber",
+      "triggers": [{ "areaId": 722 }, { "kill": 7355 }, { "talk": 8516 }],
+      "body": [
+        "A chamber near the entrance where the quilboar hold their prisoners. One of them is a man named Belnistrasz, who is not what he seems, and cares nothing for Horde or Alliance, only for stopping the threat that grows here. Something lurks in the chamber's crypts too: the crypt fiend Tuten'kash."
+      ],
+      "sources": ["warcraft.wiki.gg: Razorfen Downs (History)", "warcraft.wiki.gg: Belnistrasz", "warcraft.wiki.gg: Tuten'kash"]
+    },
+    {
+      "id": 722002,
+      "kind": "place",
+      "title": "The Spiral of Thorns",
+      "triggers": [{ "kill": 8567 }, { "kill": 7354 }, { "kill": 7358 }],
+      "body": [
+        "A mountain of massive spiked vines in the heart of the Downs, infested with the undead, wound around a brazier burning with cold flame. Amnennar sits at its summit."
+      ],
+      "sources": ["warcraft.wiki.gg: Amnennar the Coldbringer", "warcraft.wiki.gg: Glutton"]
+    },
+    {
+      "id": 722030,
+      "kind": "person",
+      "title": "Tuten'kash",
+      "triggers": [{ "kill": 7355 }],
+      "body": [
+        "A crypt fiend of the Scourge, a nerubian made undead, lurking in the Caller's Chamber."
+      ],
+      "sources": ["warcraft.wiki.gg: Tuten'kash"]
+    },
+    {
+      "id": 722031,
+      "kind": "person",
+      "title": "Mordresh Fire Eye",
+      "triggers": [{ "kill": 7357 }],
+      "body": [
+        "In life an orc shaman; in death, a skeleton serving the Coldbringer, still wielding the fire he once called on."
+      ],
+      "sources": ["warcraft.wiki.gg: Mordresh Fire Eye"]
+    },
+    {
+      "id": 722032,
+      "kind": "person",
+      "title": "Glutton",
+      "triggers": [{ "kill": 8567 }],
+      "body": [
+        "An abomination made from the remains of Tartek the Enraged, who slew more than twelve hundred quilboar single-handed before he fell. Amnennar raised those twelve hundred dead as his army. Glutton patrols the lower spiral, and grows hungrier as he fights."
+      ],
+      "sources": ["warcraft.wiki.gg: Glutton", "warcraft.wiki.gg: Amnennar the Coldbringer"]
+    },
+    {
+      "id": 722033,
+      "kind": "person",
+      "title": "Ragglesnout",
+      "triggers": [{ "kill": 7354 }],
+      "body": [
+        "A quilboar seldom seen on the Spiral of Thorns, just beyond Glutton."
+      ],
+      "sources": ["warcraft.wiki.gg: Ragglesnout"]
+    },
+    {
+      "id": 722034,
+      "kind": "person",
+      "title": "Plaguemaw the Rotting",
+      "triggers": [{ "kill": 7356 }],
+      "body": [
+        "An undead quilboar that rises to stop anyone trying to undo the Scourge's work in the Downs."
+      ],
+      "sources": ["warcraft.wiki.gg: Plaguemaw the Rotting"]
+    },
+    {
+      "id": 722035,
+      "kind": "person",
+      "title": "Amnennar the Coldbringer",
+      "triggers": [{ "kill": 7358 }],
+      "body": [
+        "A lich of the Scourge, leader of the Death's Head and perhaps their maker, who rules their every move through the power of his vast mind. The quilboar fought a desperate battle to win back their city before he could spread his control across the Barrens, and lost."
+      ],
+      "sources": ["warcraft.wiki.gg: Amnennar the Coldbringer", "warcraft.wiki.gg: Razorfen Downs (History)"]
+    },
+    {
+      "id": 722036,
+      "kind": "person",
+      "title": "Belnistrasz",
+      "triggers": [{ "talk": 8516 }],
+      "body": [
+        "A red dragon in human guise, held prisoner by the quilboar. He cares nothing for the politics of Horde and Alliance; he is interested only in crushing the direst threats to all the races, and he has found one here."
+      ],
+      "sources": ["warcraft.wiki.gg: Belnistrasz"]
+    }
+  ]
+}
