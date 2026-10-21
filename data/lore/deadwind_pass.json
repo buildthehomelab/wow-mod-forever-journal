@@ -8,10 +8,10 @@
       "title": "Deadwind Pass",
       "triggers": [{ "areaId": 41 }],
       "body": [
-        "A grey, dead valley between Duskwood and the Swamp of Sorrows, where nothing grows and the trees stand leafless. The only road runs through ravines past the bones of something huge.",
-        "At its heart stands Karazhan, the tower of the last Guardian of Tirisfal, Medivh. The ley lines of Azeroth all converge beneath it. Since Medivh's death the tower has grown dark, and its shadow has crept over the pass and into Duskwood beyond; the Dark Riders who prey on Duskwood's farms come from here."
+        "A canyon at the southern end of the Redridge range, between Duskwood and the Swamp of Sorrows, named for the foul wind that never stops blowing through it. It is a land without life: the trees are withered husks, the marshes a dry waste, and the sky a sepulchral grey with the sun covered as if by a burial shroud. Nothing grows here and no ore is found; only carrion birds and giant spiders live in it.",
+        "At its centre stands Karazhan, the tower of Medivh, last Guardian of Tirisfal. Since his death a curse has lain over the tower and the land around it, and ghosts, demons and worse have gathered there."
       ],
-      "sources": ["creature 17613 gossip (ley lines converge under Karazhan)", "creature 18253 gossip (the darkening came with Medivh's death)", "quest 95 description (Dark Riders from Deadwind Pass)"]
+      "sources": ["warcraft.wiki.gg: Deadwind Pass (introduction, Geography)"]
     },
     {
       "id": 41001,
@@ -19,42 +19,52 @@
       "title": "Karazhan",
       "triggers": [{ "area": "Karazhan" }, { "talk": 17613 }, { "talk": 18253 }],
       "body": [
-        "The tower of Medivh, built on the point where the world's ley lines meet. It was not always ominous. It became so only with Medivh's death, or what the Kirin Tor believe was his death.",
-        "Spirits and servants still go about their duties inside as if their master were coming home. The Violet Eye, a secret order of the Kirin Tor, watches the tower from a camp nearby, led by Archmage Alturus, who means to learn what Karazhan still hides."
+        "Some six hundred years before the First War, the Guardian Aegwynn secretly raised this tower on a nexus of powerful ley lines, as a refuge from the Council of Tirisfal she had come to distrust, and a conduit she could draw power from. Her son Medivh made it his home, and filled it with a collection of writings and artifacts greater than the Kirin Tor's.",
+        "The energies coursing through it sometimes warp reality around the pass. After Medivh's death the tower sealed itself off. The Violet Eye, a secret order of the Kirin Tor set long ago to watch Medivh, still keeps watch here, so that the tower, a beacon into the Twisting Nether, never falls into the wrong hands. Lately they have found it emanating not arcane currents but a vast emptiness, with a faint demonic echo."
       ],
-      "sources": ["creatures 17613, 18253 gossip", "quest 9680 description", "pre-Cataclysm lore: the Violet Eye and Karazhan"]
+      "sources": ["warcraft.wiki.gg: Deadwind Pass (The Last Guardian, The Burning Crusade)", "warcraft.wiki.gg: Karazhan"]
     },
     {
       "id": 41002,
       "kind": "place",
-      "title": "Ariden's Camp",
+      "title": "Ariden's Camp and Deadman's Crossing",
       "triggers": [{ "area": "Ariden's Camp" }, { "area": "Deadman's Crossing" }],
       "body": [
-        "A small camp in the north of Deadwind Pass, near the road from Duskwood, where travellers rest before the long walk through the ravines.",
-        "Beyond it the road passes Deadman's Crossing and runs south along the Vice and Deadwind Ravine towards the swamp."
+        "A deserted campsite north of the road, where Ariden and his band of charlatan merchants once set up to sell fake artifacts to Medivh. He cursed them to hunt true artifacts for him forever, and as the Dark Riders they have haunted Stormwind ever since.",
+        "At Deadman's Crossing, where the roads to Duskwood, the swamp and Karazhan meet, a hangman's tree still bears two corpses beside a sign: \"Turn Back!\" and \"Abandon hope, all ye who enter here.\""
       ],
-      "sources": ["AreaTable: Ariden's Camp, Deadman's Crossing, The Vice, Deadwind Ravine"]
+      "sources": ["warcraft.wiki.gg: Ariden's Camp", "warcraft.wiki.gg: Deadman's Crossing", "warcraft.wiki.gg: Deadwind Pass (The Last Guardian)"]
     },
     {
       "id": 41003,
       "kind": "place",
-      "title": "Morgan's Plot",
+      "title": "Morgan's Plot and the Master's Cellar",
       "triggers": [{ "area": "Morgan's Plot" }, { "area": "The Master's Cellar" }],
       "body": [
-        "An old cemetery at the foot of Karazhan, full of crypts and broken stones. Unliving caretakers tend it still.",
-        "Beneath the tower's grounds lies the Master's Cellar, a second, hidden way into Karazhan."
+        "A village and its church once grew up around the tower, and both were abandoned. Behind Karazhan, Morgan's Plot is the decrepit church and graveyard, where the unliving residents still wander.",
+        "Below the ruined village, probably once the homes of the tower's servants, the Master's Cellar is a vast wine cellar full of restless shades, and a second cellar whose floor has collapsed into caves running deep underground."
       ],
-      "sources": ["creature 12379 (Unliving Caretaker)", "AreaTable: Morgan's Plot, The Master's Cellar"]
+      "sources": ["warcraft.wiki.gg: Morgan's Plot", "warcraft.wiki.gg: Master's Cellar", "warcraft.wiki.gg: Deadwind Pass (The Last Guardian)"]
     },
     {
       "id": 41004,
       "kind": "place",
-      "title": "Grosh'gok Compound",
-      "triggers": [{ "area": "Grosh'gok Compound" }, { "area": "Sleeping Gorge" }],
+      "title": "The Vice",
+      "triggers": [{ "area": "Grosh'gok Compound" }, { "area": "Sleeping Gorge" }, { "area": "The Vice" }],
       "body": [
-        "An ogre camp in the south of Deadwind Pass, near the Sleeping Gorge. The ogres who live there have no business with the tower and no love for anyone who wanders past."
+        "The Deadwind ogres have settled along the road to Karazhan, in mounds and camps across the Vice, the Sleeping Gorge and the Grosh'gok Compound. Why they chose this desolate place, with nothing but restless spirits and vultures for company, nobody knows."
       ],
-      "sources": ["AreaTable: Grosh'gok Compound, Sleeping Gorge"]
+      "sources": ["warcraft.wiki.gg: Vice", "warcraft.wiki.gg: Deadwind Pass (World of Warcraft)"]
+    },
+    {
+      "id": 41030,
+      "kind": "person",
+      "title": "Archmage Alturus",
+      "triggers": [{ "talk": 17613 }],
+      "body": [
+        "The leader of the Violet Eye's small camp outside Karazhan, one of only three who have dared the pass on Dalaran's behalf. He studies the ghosts around the tower and the strange silence that has replaced its magic, and enlists anyone brave enough to help."
+      ],
+      "sources": ["warcraft.wiki.gg: Deadwind Pass (The Burning Crusade, Notable characters)"]
     },
     {
       "id": 41050,
@@ -62,10 +72,10 @@
       "title": "Medivh and Arcanagos",
       "triggers": [{ "accept": 9680 }, { "complete": 9680 }],
       "body": [
-        "Long ago, a blue dragon named Arcanagos came to Karazhan to challenge Medivh. The young Guardian destroyed him in a battle that scorched the mountains south of the tower, and the dragon's bones still lie there under the ashes.",
-        "The Violet Eye believes Medivh wove his own essence into the magic he used that day, and that a residue of it may survive in the dragon's remains. A single charred bone fragment taken from the mountains was found teeming with energy."
+        "Medivh was the son of the Guardian Aegwynn, and possessed by the spirit of Sargeras before he was even born. Under the Dark Titan's influence he reached out to the orc warlock Gul'dan, and together they opened the Dark Portal.",
+        "When the Portal flared to life, almost every creature attuned to magic felt it. The great blue dragon Arcanagos came to Karazhan to confront the Guardian, not knowing who truly wielded him. He was hopelessly outmatched. Sargeras made Medivh burn him from the inside out until only bone was left, and the spell left something of Medivh's own essence in the dragon's remains, which still lie near the tower."
       ],
-      "sources": ["quest 9680 description and reward text", "pre-Cataclysm lore: Medivh and Arcanagos"]
+      "sources": ["warcraft.wiki.gg: Medivh (introduction)", "warcraft.wiki.gg: Arcanagos (Biography)", "quest 9680 text"]
     },
     {
       "id": 41051,
@@ -73,10 +83,10 @@
       "title": "The Last Guardian",
       "triggers": [{ "area": "Karazhan" }, { "complete": 9680 }],
       "body": [
-        "Medivh was the son of Aegwynn, the Guardian of Tirisfal who once defeated the avatar of Sargeras. The demon lord's spirit hid in her unborn child, and when Medivh came into his power, Sargeras controlled him. Through Medivh, the Dark Portal was opened and the orcish Horde was brought to Azeroth.",
-        "His friend Anduin Lothar and his apprentice Khadgar killed him in Karazhan. Years later his spirit returned, cleansed, to warn the world of the Burning Legion's coming. His tower has been dark ever since."
+        "As the First War went on, Medivh fought Sargeras for control of himself, and the struggle drove him irrevocably mad. His childhood friend Anduin Lothar and his young apprentice Khadgar stormed Karazhan and killed him. The fel energy released by his death blighted the land around the tower, and Brightwood beyond it, which became Duskwood.",
+        "In recent years, nobles of Darkshire went into the pass to find the source of the blight. None who entered the tower came out. Medivh's own story did not end in Karazhan: freed of Sargeras, he returned before the Third War as a mysterious prophet and led the races of Kalimdor to their victory at Mount Hyjal."
       ],
-      "sources": ["page text 1906 (Aegwynn and the Dragon Hunt)", "page text 1959 (The Dark Portal and the Fall of Stormwind)", "pre-Cataclysm lore: the death of Medivh"]
+      "sources": ["warcraft.wiki.gg: Deadwind Pass (The Last Guardian, World of Warcraft)", "warcraft.wiki.gg: Medivh (introduction)"]
     }
   ]
 }
