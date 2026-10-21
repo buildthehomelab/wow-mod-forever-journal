@@ -1,0 +1,107 @@
+{
+  "zone": 4494,
+  "name": "Ahn'kahet: The Old Kingdom",
+  "entries": [
+    {
+      "id": 4494000,
+      "kind": "zone",
+      "title": "Ahn'kahet: The Old Kingdom",
+      "triggers": [{ "areaId": 4494 }],
+      "body": [
+        "\"The heart of the old nerubian empire\": Ahn'kahet, the city of the nerubians' ancestors, from whence they came. Arthas and Anub'arak crossed it on their way to Icecrown, fighting living nerubians, and faceless ones, and a terrifying forgotten one.",
+        "Now another enemy stirs here: the faceless ones. Little is known of them, but rumour says they answer to an evil power lurking beneath Northrend. The Scourge holds part of the city; the Twilight's Hammer has come too."
+      ],
+      "sources": ["warcraft.wiki.gg: Ahn'kahet: The Old Kingdom (History)"]
+    },
+    {
+      "id": 4494001,
+      "kind": "place",
+      "title": "The Hall of the Conquered Kings",
+      "triggers": [{ "area": "Hall of the Conquered Kings" }, { "kill": 29309 }],
+      "body": [
+        "A great hall of the old kingdom, now a nursery for the Scourge's nerubian eggs."
+      ],
+      "sources": ["warcraft.wiki.gg: Elder Nadox"]
+    },
+    {
+      "id": 4494002,
+      "kind": "place",
+      "title": "The Desecrated Altar",
+      "triggers": [{ "area": "The Desecrated Altar" }, { "kill": 29308 }],
+      "body": [
+        "Where a prince of the San'layn sits behind a shield of power, gathering the relics of a dead empire."
+      ],
+      "sources": ["warcraft.wiki.gg: Prince Taldaram"]
+    },
+    {
+      "id": 4494003,
+      "kind": "place",
+      "title": "The Befouled Terrace",
+      "triggers": [{ "area": "Befouled Terrace" }, { "area": "Shimmering Bog" }, { "kill": 29310 }, { "kill": 30258 }],
+      "body": [
+        "A terrace above a glowing fungal bog, where the Twilight's Hammer offers up its own in sacrifice."
+      ],
+      "sources": ["warcraft.wiki.gg: Jedoga Shadowseeker", "warcraft.wiki.gg: Amanitar"]
+    },
+    {
+      "id": 4494004,
+      "kind": "place",
+      "title": "The Fallen Temple of Ahn'kahet",
+      "triggers": [{ "area": "Fallen Temple of Ahn'kahet" }, { "kill": 29311 }],
+      "body": [
+        "The deepest temple of the old kingdom, where the faceless ones' herald waits, and the walls between mind and nightmare grow thin."
+      ],
+      "sources": ["warcraft.wiki.gg: Herald Volazj"]
+    },
+    {
+      "id": 4494030,
+      "kind": "person",
+      "title": "Elder Nadox",
+      "triggers": [{ "kill": 29309 }],
+      "body": [
+        "A nerubian sage, once a leader of his people, now the Lich King's servant and guardian of the eggs."
+      ],
+      "sources": ["warcraft.wiki.gg: Elder Nadox"]
+    },
+    {
+      "id": 4494031,
+      "kind": "person",
+      "title": "Prince Taldaram",
+      "triggers": [{ "kill": 29308 }],
+      "body": [
+        "One of the Darkfallen, the San'layn, come to the nerubian city to siphon its power and collect its relics for the Scourge."
+      ],
+      "sources": ["warcraft.wiki.gg: Prince Taldaram"]
+    },
+    {
+      "id": 4494032,
+      "kind": "person",
+      "title": "Jedoga Shadowseeker",
+      "triggers": [{ "kill": 29310 }],
+      "body": [
+        "An orc, leader of the Twilight's Hammer in the Old Kingdom, and servant of an Old God."
+      ],
+      "sources": ["warcraft.wiki.gg: Jedoga Shadowseeker"]
+    },
+    {
+      "id": 4494033,
+      "kind": "person",
+      "title": "Amanitar",
+      "triggers": [{ "kill": 30258 }],
+      "body": [
+        "A great fungal creature of the Shimmering Bog."
+      ],
+      "sources": ["warcraft.wiki.gg: Amanitar"]
+    },
+    {
+      "id": 4494034,
+      "kind": "person",
+      "title": "Herald Volazj",
+      "triggers": [{ "kill": 29311 }],
+      "body": [
+        "A champion of the faceless ones, the n'raqi, and herald of the Old God whose whispers rise from beneath Northrend."
+      ],
+      "sources": ["warcraft.wiki.gg: Herald Volazj"]
+    }
+  ]
+}
