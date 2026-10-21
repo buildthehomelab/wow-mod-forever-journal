@@ -1,0 +1,168 @@
+{
+  "zone": 3521,
+  "name": "Zangarmarsh",
+  "entries": [
+    {
+      "id": 3521000,
+      "kind": "zone",
+      "title": "Zangarmarsh",
+      "triggers": [{ "areaId": 3521 }],
+      "body": [
+        "A hauntingly beautiful swamp under a forest of giant mushrooms, which stand over its pools like great trees. It was once the Zangar Sea. As fel energy went on killing Draenor, the sea dried into a mire, and the mushroom forests of the coast crept inland until they filled it.",
+        "Though it still teems with life, parts of the marsh have begun to die, and the land's own strange creatures are asking for help to bring it back."
+      ],
+      "sources": ["warcraft.wiki.gg: Zangarmarsh (introduction, Zangar Sea, Rise of the Horde)"]
+    },
+    {
+      "id": 3521001,
+      "kind": "place",
+      "title": "Cenarion Refuge",
+      "triggers": [{ "area": "Cenarion Refuge" }, { "talk": 17841 }],
+      "body": [
+        "Founded by the Cenarion Circle, who came through the reopened Portal to study the surviving life of this uncharted world. Their work grew so large that it became its own organization, the Cenarion Expedition, independent of the Circle on Azeroth and led by the night elf Ysiel Windsinger. Two ancients, Ashyen and Keleth, stand guard over it."
+      ],
+      "sources": ["warcraft.wiki.gg: Cenarion Refuge", "warcraft.wiki.gg: Cenarion Expedition"]
+    },
+    {
+      "id": 3521002,
+      "kind": "place",
+      "title": "Telredor",
+      "triggers": [{ "area": "Telredor" }, { "talk": 18003 }],
+      "body": [
+        "A draenei monastery atop a giant mushroom, centuries old, built as a retreat for anchorites and spiritualists on an island in the Zangar Sea. After the orcs sacked Shattrath, Prophet Velen led survivors here, and his artificers raised a network of crystals that hid the temple from the Horde. Survivors trickled in for months; the anchorites turned the shrine into a haven, and the refugees waited here for years in fear of discovery, until their escape aboard the Exodar.",
+        "The sea dried up around the island and became the marsh. Telredor is still the largest draenei stronghold here."
+      ],
+      "sources": ["warcraft.wiki.gg: Telredor (History)", "warcraft.wiki.gg: Zangarmarsh (Rise of the Horde)"]
+    },
+    {
+      "id": 3521003,
+      "kind": "place",
+      "title": "Orebor Harborage",
+      "triggers": [{ "area": "Orebor Harborage" }, { "talk": 18008 }],
+      "body": [
+        "Once a centre of draenei learning and trade, now home to the Kurenai, Broken who seek to restore their ties with their uncorrupted kin. Here, after Illidan took the Black Temple, Akama and Maiev Shadowsong met to speak of the Betrayer."
+      ],
+      "sources": ["warcraft.wiki.gg: Orebor Harborage"]
+    },
+    {
+      "id": 3521004,
+      "kind": "place",
+      "title": "Zabra'jin and Swamprat Post",
+      "triggers": [{ "area": "Zabra'jin" }, { "area": "Swamprat Post" }],
+      "body": [
+        "The Darkspear tribe's outposts in the marsh: Zabra'jin, a town of huts on mushrooms and planks above the water, and Swamprat Post, a fishing village in the north-east."
+      ],
+      "sources": ["warcraft.wiki.gg: Zabra'jin", "warcraft.wiki.gg: Swamprat Post", "warcraft.wiki.gg: Zangarmarsh (The Burning Crusade)"]
+    },
+    {
+      "id": 3521005,
+      "kind": "place",
+      "title": "Sporeggar",
+      "triggers": [{ "area": "Sporeggar" }, { "talk": 17923 }],
+      "body": [
+        "The home of the sporelings, a mostly peaceful race of mushroom-men native to Outland. The changing marsh has put them in danger. They were not always made of mushroom."
+      ],
+      "sources": ["warcraft.wiki.gg: Sporeggar"]
+    },
+    {
+      "id": 3521006,
+      "kind": "place",
+      "title": "The Spawning Glen",
+      "triggers": [{ "area": "The Spawning Glen" }, { "area": "Quagg Ridge" }],
+      "body": [
+        "Where the sporelings have reared their young for millennia. Of late the fungal giants of Quagg Ridge have begun destroying and devouring the helpless young."
+      ],
+      "sources": ["warcraft.wiki.gg: Spawning Glen", "warcraft.wiki.gg: Quagg Ridge"]
+    },
+    {
+      "id": 3521007,
+      "kind": "place",
+      "title": "The Ango'rosh",
+      "triggers": [{ "area": "Ango'rosh Stronghold" }, { "area": "Ango'rosh Grounds" }, { "area": "Hewn Bog" }, { "kill": 18160 }],
+      "body": [
+        "Ogres who came down from the northern mountains and hold a floating island fortress, reached by a fallen mushroom. Their \"mushroom-cutting operation\" has hacked the Hewn Bog down to stumps, and the bog lords, robbed of their food, now take out their fury on the sporelings. The tribe presses on Orebor Harborage and Zabra'jin alike."
+      ],
+      "sources": ["warcraft.wiki.gg: Ango'rosh tribe (History)", "warcraft.wiki.gg: Ango'rosh Stronghold", "warcraft.wiki.gg: Hewn Bog"]
+    },
+    {
+      "id": 3521008,
+      "kind": "place",
+      "title": "The Dead Mire",
+      "triggers": [{ "area": "The Dead Mire" }],
+      "body": [
+        "Once a lake where the fungal giants spawned, now almost drained by a great naga pump. What wildlife is left has become twisted, withered and crazed with hunger."
+      ],
+      "sources": ["warcraft.wiki.gg: Dead Mire"]
+    },
+    {
+      "id": 3521009,
+      "kind": "place",
+      "title": "The Naga Pumps",
+      "triggers": [{ "area": "Bloodscale Enclave" }, { "area": "Bloodscale Grounds" }, { "area": "Darkcrest Enclave" }, { "area": "Darkcrest Shore" }, { "area": "Umbrafen Lake" }, { "area": "The Lagoon" }, { "area": "Serpent Lake" }],
+      "body": [
+        "Illidan's naga have built pumping machines on every major lake of the marsh, from Marshlight Lake to the Lagoon, and draw the water down to Coilfang Reservoir beneath Serpent Lake. They kill the sporelings and enslave the Broken."
+      ],
+      "sources": ["warcraft.wiki.gg: Zangarmarsh (The Burning Crusade)", "warcraft.wiki.gg: Bloodscale Enclave", "warcraft.wiki.gg: Darkcrest Shore"]
+    },
+    {
+      "id": 3521010,
+      "kind": "place",
+      "title": "The Lost Ones",
+      "triggers": [{ "area": "Feralfen Village" }, { "area": "Boha'mu Ruins" }, { "area": "Umbrafen Village" }, { "area": "Daggerfen Village" }],
+      "body": [
+        "Draenei sunk further than the Broken, the Lost Ones live in tribes across the marsh: the Daggerfen, the Umbrafen, and the Feralfen, who have built their village around the ruins of the draenei temple of Boha'mu and turned to worshipping animal spirits."
+      ],
+      "sources": ["warcraft.wiki.gg: Zangarmarsh (introduction)", "warcraft.wiki.gg: Feralfen Village", "warcraft.wiki.gg: Boha'mu Ruins"]
+    },
+    {
+      "id": 3521011,
+      "kind": "place",
+      "title": "Twin Spire Ruins",
+      "triggers": [{ "area": "Twin Spire Ruins" }],
+      "body": [
+        "The remains of a holy draenei site: a ruined tower over a burial ground, flanked by two smaller buildings. The Horde and Alliance fight over it."
+      ],
+      "sources": ["warcraft.wiki.gg: Twin Spire Ruins"]
+    },
+    {
+      "id": 3521012,
+      "kind": "place",
+      "title": "Portal Clearing",
+      "triggers": [{ "area": "Portal Clearing" }, { "area": "Marshlight Lake" }, { "kill": 21894 }],
+      "body": [
+        "One of the dimensional gateways through which Magtheridon brought demons from the Twisting Nether. Illidan closed them when he conquered Outland; this one stands dark. Beneath Marshlight Lake sleeps the demon Xeleth, a defector from the Legion who was once worshipped as a god by the marsh's primitive creatures."
+      ],
+      "sources": ["warcraft.wiki.gg: Portal Clearing", "warcraft.wiki.gg: Zangarmarsh (Warcraft III, The Burning Crusade)"]
+    },
+    {
+      "id": 3521013,
+      "kind": "place",
+      "title": "Funggor Cavern",
+      "triggers": [{ "area": "Funggor Cavern" }, { "kill": 18282 }],
+      "body": [
+        "Home of the sporeloks, now being overrun by marsh beasts under Lord Klaq."
+      ],
+      "sources": ["warcraft.wiki.gg: Funggor Cavern"]
+    },
+    {
+      "id": 3521014,
+      "kind": "place",
+      "title": "Coilfang Reservoir",
+      "triggers": [{ "area": "Coilfang Reservoir" }],
+      "body": [
+        "A vast artificial cavern under Serpent Lake, entered from beneath the water: a pumping station of gigantic caverns and huge pipes, powered by titanic crystal capacitors. From Serpentshrine Cavern within, Lady Vashj oversees the draining of the marsh. Her plan is to take control of all the waters of Outland, and through them its people."
+      ],
+      "sources": ["warcraft.wiki.gg: Coilfang Reservoir", "warcraft.wiki.gg: Zangarmarsh (The Burning Crusade)"]
+    },
+    {
+      "id": 3521050,
+      "kind": "history",
+      "title": "Illidan's Naga",
+      "triggers": [{ "areaId": 3521 }],
+      "body": [
+        "When Illidan failed to destroy the Frozen Throne, his forces fled to Outland from Kil'jaeden's wrath. Lady Vashj and most of her naga settled here and began to drain the marsh, working nearly the whole Wastewalker tribe of the Broken as slaves. With the naga taking the water and the ogres the mushrooms, the marsh is sickening; disease spreads through plants and animals, and food is vanishing."
+      ],
+      "sources": ["warcraft.wiki.gg: Zangarmarsh (The Burning Crusade)"]
+    }
+  ]
+}
