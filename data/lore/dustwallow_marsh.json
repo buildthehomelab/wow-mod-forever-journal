@@ -1,0 +1,149 @@
+{
+  "zone": 15,
+  "name": "Dustwallow Marsh",
+  "entries": [
+    {
+      "id": 15000,
+      "kind": "zone",
+      "title": "Dustwallow Marsh",
+      "triggers": [{ "areaId": 15 }],
+      "body": [
+        "A vast, humid swamp on Kalimdor's eastern coast, south of the Barrens. Crocolisks, raptors, giant spiders and dragonkin hunt in its bogs, and the marsh seems to have a strange effect on the humans who live in it: some go mad simply from staying.",
+        "Lady Jaina Proudmoore's city of Theramore stands on an island off its coast, the Alliance's foothold in Kalimdor, and the Horde keeps an uneasy truce with it from the ogre village of Brackenwall. In the south, black dragons out of Onyxia's brood have driven the Stonemaul ogres from their home, and the Grimtotem tauren raid any settlers they find."
+      ],
+      "sources": ["quest 11225 description (the marsh seems to have a strange effect on humans)", "quest 1201 description (uneasy truce)", "quests 1168, 1170 descriptions", "quests 11145, 11156 descriptions"]
+    },
+    {
+      "id": 15001,
+      "kind": "place",
+      "title": "Theramore Isle",
+      "triggers": [{ "area": "Theramore Isle" }, { "talk": 4968 }, { "talk": 4944 }],
+      "body": [
+        "A fortified city on an island off the coast of Dustwallow, founded by Lady Jaina Proudmoore and the refugees and soldiers she brought across the sea from Lordaeron and Kul Tiras. It is the Alliance's foothold on the continent, and keeps the peace with Thrall's Horde as well as it can.",
+        "Captain Garran Vimes keeps order from Foothold Citadel, but the city has its troubles: guards who deserted after Jaina's father died, spies of the Horde, Defias wreckers on the northern shore, and a sea monster named Tethyr that the old lighthouse used to keep away by staying dark."
+      ],
+      "sources": ["quests 1285, 1286, 1288 descriptions", "quests 11126, 11134 descriptions and reward texts", "quests 11136, 11210 descriptions", "quest 1220 description"]
+    },
+    {
+      "id": 15002,
+      "kind": "place",
+      "title": "Brackenwall Village",
+      "triggers": [{ "area": "Brackenwall Village" }, { "talk": 4500 }, { "talk": 4926 }],
+      "body": [
+        "An ogre village in the west of the marsh, home to the Stonemaul clan since black dragons drove them from their old home. Rexxar made Mok'Morokk their overlord, and Mok'Morokk cares more for his power than for his ogres. The Horde keeps agents here to watch Theramore.",
+        "Not every ogre accepts him. Tharg wants revenge for his wife, killed by the dragons. Draz'Zilb, the clan's surprisingly well-spoken thinker, wants to know why Onyxia's brood came at all. Brogg left altogether to lay his friends' spirits to rest on his own."
+      ],
+      "sources": ["quests 1166, 1168, 1169, 1170 descriptions", "quest 11158 description", "quests 1201, 11124 descriptions"]
+    },
+    {
+      "id": 15003,
+      "kind": "place",
+      "title": "The Shady Rest Inn",
+      "triggers": [{ "area": "Shady Rest Inn" }, { "accept": 11123 }, { "accept": 11124 }],
+      "body": [
+        "The burned ruin of an inn at the western edge of the marsh, on the road from the Barrens. James Hyal of Theramore built it to give travellers a place to stop; it did well for a time. Then it burned, and his wife and son died in the fire.",
+        "Jim never recovered. The Horde and the Alliance both sent investigators. A blackened shield on the chimney, made by a tauren smith of Thunder Bluff, and the hoofprints leading away pointed to the Grimtotem tauren."
+      ],
+      "sources": ["quests 1282, 11123, 11124 descriptions and reward texts", "quests 1251, 1268, 1276, 1320 descriptions and reward texts", "quests 11143, 11200 descriptions"]
+    },
+    {
+      "id": 15004,
+      "kind": "place",
+      "title": "Blackhoof Village and Direhorn Post",
+      "triggers": [{ "area": "Blackhoof Village" }, { "area": "Direhorn Post" }, { "accept": 11150 }],
+      "body": [
+        "Grimtotem settlements in the marsh. Blackhoof Village, near Bluefen, is a large new base where the Grimtotems hold Theramore patrols prisoner; Direhorn Post stands north of Tabetha's farm, where the raiders chant at night about the settlers they have driven off.",
+        "The Grimtotems are the most warlike of the tauren clans, and have murdered and kidnapped in Thousand Needles too. A letter found on a Forsaken apothecary suggested a secret friendship between the Grimtotem leaders and the new masters of Lordaeron."
+      ],
+      "sources": ["quests 11144, 11145, 11201 descriptions", "quests 11150, 11156 descriptions", "quests 11185, 11186 descriptions"]
+    },
+    {
+      "id": 15005,
+      "kind": "place",
+      "title": "Tabetha's Farm",
+      "triggers": [{ "area": "Tabetha's Farm" }, { "talk": 6546 }, { "accept": 11212 }],
+      "body": [
+        "A small farmstead deep in the Quagmire, home of Tabetha, who seems an old hermit and is in truth a mage and scryer of renown, older than she looks. She has trained generations of apprentices here, including mages of the Horde.",
+        "Both Theramore and Brackenwall trust her and check on her, and she has helped keep the peace between them. The Grimtotems at Direhorn want her gone."
+      ],
+      "sources": ["quests 11149, 11212, 11213, 11203 descriptions and reward texts", "quest 11156 description"]
+    },
+    {
+      "id": 15006,
+      "kind": "place",
+      "title": "Swamplight Manor and Witch Hill",
+      "triggers": [{ "area": "Swamplight Manor" }, { "area": "Witch Hill" }, { "talk": 4792 }],
+      "body": [
+        "A manor at the eastern edge of the swamp. Everyone who has ever settled there has gone mad in a spectacular way. Its latest owner, \"Swamp Eye\" Jarl, took it over after the last owners vanished, and drinks spider eye juice.",
+        "Witch Hill behind it is full of ghosts and shambling corpses: the spirits of everyone who ever lived on the hill. An herbalist friend of Jarl's found a folk remedy, witchbane smoke, that drew out the evil hiding there."
+      ],
+      "sources": ["quests 11177, 11225 descriptions and reward texts", "quests 1206, 1218 descriptions", "quests 11180, 11183 descriptions and reward texts"]
+    },
+    {
+      "id": 15007,
+      "kind": "place",
+      "title": "Mudsprocket",
+      "triggers": [{ "area": "Mudsprocket" }, { "talk": 23572 }, { "accept": 11214 }],
+      "body": [
+        "A Steamwheedle Cartel outpost newly built in the south of the marsh, on the road past the Stonemaul Ruins. Its six months of supplies were lost when the zeppelin carrying them, piloted by Beezil, crashed in the swamp.",
+        "Both Theramore and the Horde see a chance for trade and lend a hand. The town's troubles include oozes eating the wreckage and a raptor called Goreclaw the Ravenous, who has killed at least two Steamwheedle engineers."
+      ],
+      "sources": ["quests 11207, 11211, 11214, 11215 descriptions", "quests 11172, 11174 descriptions", "quest 11184 description"]
+    },
+    {
+      "id": 15008,
+      "kind": "place",
+      "title": "The Stonemaul Ruins and the Den of Flame",
+      "triggers": [{ "area": "Stonemaul Ruins" }, { "area": "The Den of Flame" }, { "accept": 1168 }],
+      "body": [
+        "The old home of the Stonemaul ogres in the south of the marsh. Black dragons came and burned it, and killed every ogre who did not flee. The ogre mound where the clan's banner was kept is now called the Den of Flame, and the dragonkin of the Firemane hold it.",
+        "The spirits of the Stonemaul dead still haunt the ruins, waiting for the counterattack their overlord promised and never led."
+      ],
+      "sources": ["quests 1168, 11160, 11159 descriptions", "quest 11162 description"]
+    },
+    {
+      "id": 15009,
+      "kind": "place",
+      "title": "Wyrmbog and Onyxia's Lair",
+      "triggers": [{ "area": "Wyrmbog" }, { "area": "The Dragonmurk" }, { "accept": 1172 }],
+      "body": [
+        "The deep bog in the south of Dustwallow, where Onyxia, daughter of Deathwing, has made her lair. Her eggs are scattered across the Dragonmurk, and her brood guards them.",
+        "In a den nearby lives Emberstrife, an ancient drake and gatekeeper of Nefarian, who tests the dragonspawn who would rise to serve as Onyxia's elite guard. He sends them to bring back the skulls of the other flights' champions."
+      ],
+      "sources": ["quests 1170, 1172 descriptions", "quests 6570, 6582, 6585 descriptions"]
+    },
+    {
+      "id": 15030,
+      "kind": "person",
+      "title": "Lady Jaina Proudmoore",
+      "triggers": [{ "talk": 4968 }, { "accept": 11142 }],
+      "body": [
+        "The ruler of Theramore, a sorceress of Dalaran who led the survivors of Lordaeron across the sea and fought beside Thrall against the Burning Legion. She keeps the peace with the Horde even when her own people doubt it.",
+        "When her father, Admiral Daelin Proudmoore, attacked the Horde and was killed for it, some of his men deserted her. She would rather bring them back into the fold than punish them."
+      ],
+      "sources": ["quests 11141, 11142 descriptions and reward texts", "quest 11134 reward text", "quests 1285, 1286 descriptions", "pre-Cataclysm lore: Jaina and Daelin Proudmoore"]
+    },
+    {
+      "id": 15050,
+      "kind": "history",
+      "title": "The Lady and the Dragon",
+      "triggers": [{ "complete": 11142 }, { "complete": 11222 }, { "complete": 11141 }],
+      "body": [
+        "Defias survivors of a shipwreck washed up on Dustwallow's northern shore, and the strongboxes they lost proved they had been carrying a prisoner of importance. The trail led to Alcaz Island, where they had allied themselves with dragonkin, and to a rune circle.",
+        "Jaina understood at once whom they served: the traitor at Stormwind's court. Lady Katrana Prestor was Onyxia, daughter of Deathwing, in human form, and the Defias had kidnapped King Varian at her command. With Onyxia exposed and removed from the court, the king turned his justice on the Defias."
+      ],
+      "sources": ["quests 11137, 11140, 11141, 11142, 11222 descriptions and reward texts"]
+    },
+    {
+      "id": 15051,
+      "kind": "history",
+      "title": "Daelin's Men",
+      "triggers": [{ "complete": 1288 }, { "complete": 1273 }, { "complete": 11134 }],
+      "body": [
+        "Most of Theramore's first recruits came across the sea with Jaina, and many were marines of Kul Tiras who had served her father. When Admiral Proudmoore fell fighting the Horde, some of them could not accept her peace with the orcs, and deserted.",
+        "Lieutenant Paval Reethe was one. The deserters threw him out for raiding the ogres of Brackenwall, and he was found by the Horde, half mad in the woods. The others, under Gavis Greyshield, held out on a ship off Theramore spreading propaganda, until SI:7 made them a laughing stock."
+      ],
+      "sources": ["quests 1285, 1286, 1287 descriptions", "quests 1269, 1273 descriptions and reward texts", "quests 11126, 11128, 11133, 11134 descriptions and reward texts"]
+    }
+  ]
+}
