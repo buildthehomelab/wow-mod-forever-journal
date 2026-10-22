@@ -1,0 +1,157 @@
+{
+  "zone": 495,
+  "name": "Howling Fjord",
+  "entries": [
+    {
+      "id": 495000,
+      "kind": "zone",
+      "title": "Howling Fjord",
+      "triggers": [{ "areaId": 495 }],
+      "body": [
+        "Green meadows cut by rivers that chill to the bone, pine forests, and tall rugged fjords. This was the seat of the vrykul's power. Long ago, like many ancient races, they tried to sleep through the curse of flesh that was turning them from immortal stone into mortal people, and so slept through the Great Sundering, leaving their keeps and villages empty for thousands of years.",
+        "Now the Lich King's Scourge has gone across Northrend waking them, and they have come back to claim their homes. Many have fallen under the Frozen Throne's sway, and they hurl themselves against the newcomers from the south until their numbers are spent."
+      ],
+      "sources": ["warcraft.wiki.gg: Howling Fjord (History, Geography)"]
+    },
+    {
+      "id": 495001,
+      "kind": "place",
+      "title": "Valgarde",
+      "triggers": [{ "area": "Valgarde" }, { "talk": 23546 }],
+      "body": [
+        "The oldest Alliance settlement in Northrend, begun after the Third War by the lucky few who survived Prince Arthas' betrayal. When the Valiance Expedition arrived it was a sleepy little nothing of a town with a decent anchorage, and the vrykul across the river were still asleep. A month later they woke, and \"malformed giants appeared out of thin air\", as Vice Admiral Keller puts it. Dragonflayer raiders and their worgs and proto-drakes have attacked the walls ever since."
+      ],
+      "sources": ["warcraft.wiki.gg: Valgarde (History)"]
+    },
+    {
+      "id": 495002,
+      "kind": "place",
+      "title": "Vengeance Landing",
+      "triggers": [{ "area": "Vengeance Landing" }, { "area": "Bleeding Vale" }, { "talk": 23780 }],
+      "body": [
+        "The Forsaken's port, built and run entirely by Sylvanas Windrunner's Hand of Vengeance, with docks for ships from Tirisfal Glades. The whole town looks sickly even from a distance, with a yellow pall hanging over the vale around it."
+      ],
+      "sources": ["warcraft.wiki.gg: Vengeance Landing"]
+    },
+    {
+      "id": 495003,
+      "kind": "place",
+      "title": "New Agamand",
+      "triggers": [{ "area": "New Agamand" }, { "area": "Apothecary Camp" }, { "area": "Halgrind" }, { "talk": 24126 }],
+      "body": [
+        "A new Forsaken town in their own dark, spindly gothic style, named for the Agamand family of Tirisfal. Since Sylvanas came to power, the Royal Apothecary Society has worked on a New Plague meant to wipe out the Scourge. Here they are testing it, and the land around the town has turned dead and brown. The vrykul town of Halgrind has become their testing ground."
+      ],
+      "sources": ["warcraft.wiki.gg: New Agamand", "warcraft.wiki.gg: Halgrind"]
+    },
+    {
+      "id": 495004,
+      "kind": "place",
+      "title": "Utgarde Keep",
+      "triggers": [{ "area": "Utgarde Keep" }, { "area": "Wyrmskull Village" }, { "area": "Lake Cauldros" }, { "area": "Falls of Ymiron" }, { "area": "Utgarde Catacombs" }],
+      "body": [
+        "The seat of King Ymiron, a massive keep of stone blocks and flying buttresses on Lake Cauldros, with giant skulls carved into the cliffs beneath it. Its height mirrors the vrykul's social ladder: the higher one stands, the higher one lives. It and Wyrmskull Village below are home to the Dragonflayer clan, which leads the vrykul of Northrend."
+      ],
+      "sources": ["warcraft.wiki.gg: Utgarde Keep"]
+    },
+    {
+      "id": 495005,
+      "kind": "place",
+      "title": "Nifflevar and Baleheim",
+      "triggers": [{ "area": "Nifflevar" }, { "area": "Baleheim" }, { "area": "Skorn" }, { "kill": 24238 }],
+      "body": [
+        "The vrykul towns of the fjord. Nifflevar of the Dragonflayer clings to the cliffs above Daggercap Bay, its houses built out over the drop. The Winterskorn hold Skorn and Baleheim; they prefer to throw frostbolts from their towers rather than man harpoon guns, and they have turned against the Forsaken."
+      ],
+      "sources": ["warcraft.wiki.gg: Nifflevar", "warcraft.wiki.gg: Skorn", "warcraft.wiki.gg: Baleheim"]
+    },
+    {
+      "id": 495006,
+      "kind": "place",
+      "title": "Gjalerbron",
+      "triggers": [{ "area": "Gjalerbron" }, { "area": "The Waking Halls" }, { "area": "Gjalerhorn" }],
+      "body": [
+        "A vrykul fortress in the northern mountains where the vrykul, with the Scourge's help, perform rituals to wake their sleeping kin and to raise their dead. Its Waking Halls run down level after level, full of slumbering vrykul; one can only imagine an entire race filling such a place for thousands of years."
+      ],
+      "sources": ["warcraft.wiki.gg: Gjalerbron", "warcraft.wiki.gg: Waking Halls"]
+    },
+    {
+      "id": 495007,
+      "kind": "place",
+      "title": "Westguard Keep and Fort Wildervar",
+      "triggers": [{ "area": "Westguard Keep" }, { "area": "Fort Wildervar" }, { "area": "Steel Gate" }],
+      "body": [
+        "Westguard Keep, on the western cliffs, is the Alliance's door into Northrend by air. Fort Wildervar, at the foot of Frostblade Peak, supplies the expeditions pushing towards the Grizzly Hills and receives human colonists coming to settle the north."
+      ],
+      "sources": ["warcraft.wiki.gg: Westguard Keep", "warcraft.wiki.gg: Fort Wildervar"]
+    },
+    {
+      "id": 495008,
+      "kind": "place",
+      "title": "The Titan Statues",
+      "triggers": [{ "area": "Explorers' League Outpost" }, { "area": "Baelgun's Excavation Site" }, { "area": "Ivald's Ruin" }],
+      "body": [
+        "The Explorers' League has found huge, almost intact statues in the cliffs of the fjord, the work of the titans, and with them a new race of iron dwarves that may hint at the dwarves' own ancient origins. The iron dwarves have taken some of the sites and stopped the digging."
+      ],
+      "sources": ["warcraft.wiki.gg: Baelgun's Excavation Site", "warcraft.wiki.gg: Ivald's Ruin", "warcraft.wiki.gg: Howling Fjord (Wrath of the Lich King)"]
+    },
+    {
+      "id": 495009,
+      "kind": "place",
+      "title": "Kamagua",
+      "triggers": [{ "area": "Kamagua" }, { "area": "The Isle of Spears" }, { "area": "Iskaal" }, { "talk": 24755 }],
+      "body": [
+        "The largest tuskarr village in the fjord, its round-backed houses shaped like monstrous fish and dug down into the frozen ground to keep warm. Many wandering tuskarr clans stop here. Iskaal, to the east, is in pirate hands, and its survivors have fled to Kamagua."
+      ],
+      "sources": ["warcraft.wiki.gg: Kamagua", "warcraft.wiki.gg: Iskaal"]
+    },
+    {
+      "id": 495010,
+      "kind": "place",
+      "title": "Shield Hill and the Kvaldir",
+      "triggers": [{ "area": "Shield Hill" }, { "area": "Scalawag Point" }, { "area": "Garvan's Reef" }],
+      "body": [
+        "An ancient vrykul burial ground at the fjord's southern tip. The Northsea Freebooters, out of simple greed, robbed its graves and disturbed its dead. That brought the kvaldir to Northrend's shores: cursed souls called out of the sea to raid the coasts and carry off souls to their mistress, Helya. The tuskarr tried to return what was stolen. It was too late."
+      ],
+      "sources": ["warcraft.wiki.gg: Shield Hill", "warcraft.wiki.gg: Howling Fjord (Wrath of the Lich King)"]
+    },
+    {
+      "id": 495011,
+      "kind": "place",
+      "title": "The Ember Clutch",
+      "triggers": [{ "area": "Ember Clutch" }],
+      "body": [
+        "A forest that burns forever on ancient magic, where the proto-dragons mate. Since they woke, the Dragonflayers have invaded it to take the whelps."
+      ],
+      "sources": ["warcraft.wiki.gg: Ember Clutch"]
+    },
+    {
+      "id": 495012,
+      "kind": "place",
+      "title": "The Frozen Glade",
+      "triggers": [{ "area": "The Frozen Glade" }, { "area": "The Twisted Glade" }, { "talk": 24117 }],
+      "body": [
+        "A glade of frost nymphs still untouched by the Scourge. Another nearby, the Twisted Glade, has already been corrupted."
+      ],
+      "sources": ["warcraft.wiki.gg: Frozen Glade", "warcraft.wiki.gg: Twisted Glade"]
+    },
+    {
+      "id": 495013,
+      "kind": "place",
+      "title": "Camp Winterhoof",
+      "triggers": [{ "area": "Camp Winterhoof" }, { "talk": 24129 }],
+      "body": [
+        "A taunka village of bright totem poles and round houses built to shed snow, around hot springs that bubble up from the mountain."
+      ],
+      "sources": ["warcraft.wiki.gg: Camp Winterhoof"]
+    },
+    {
+      "id": 495050,
+      "kind": "history",
+      "title": "The Landing of Arthas",
+      "triggers": [{ "areaId": 495 }, { "area": "Daggercap Bay" }],
+      "body": [
+        "In the Third War, Prince Arthas came north with the 1st Legion to destroy the dreadlord Mal'Ganis, and Muradin Bronzebeard's expedition joined him. When his father called them home, Arthas hired mercenaries to burn his own ships and blamed them for it, so that his men would have to stay and fight. After he took up Frostmourne and slew Mal'Ganis, he slaughtered his own followers and raised them as Scourge."
+      ],
+      "sources": ["warcraft.wiki.gg: Howling Fjord (Third War)"]
+    }
+  ]
+}

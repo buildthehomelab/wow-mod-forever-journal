@@ -1,0 +1,66 @@
+{
+  "zone": 3715,
+  "name": "The Steamvault",
+  "entries": [
+    {
+      "id": 3715000,
+      "kind": "zone",
+      "title": "The Steamvault",
+      "triggers": [{ "areaId": 3715 }],
+      "body": [
+        "The mechanical heart of Coilfang Reservoir. Pumping systems run day and night across the reservoir, and here the arcane machinery that powers them drives the draining of Zangarmarsh. No wing of Coilfang matters more to stopping Lady Vashj."
+      ],
+      "sources": ["warcraft.wiki.gg: Steamvault (Background)", "warcraft.wiki.gg: Mekgineer Steamrigger (Description)"]
+    },
+    {
+      "id": 3715001,
+      "kind": "place",
+      "title": "The Pumping Halls",
+      "triggers": [{ "kill": 17797 }, { "kill": 17796 }],
+      "body": [
+        "Huge halls of pipes and pumps, held by a naga hydromancer and kept running by leper gnome engineers. Control panels behind them seal the way to the overseer's chamber."
+      ],
+      "sources": ["warcraft.wiki.gg: Steamvault", "warcraft.wiki.gg: Mekgineer Steamrigger"]
+    },
+    {
+      "id": 3715002,
+      "kind": "place",
+      "title": "The Overseer's Chamber",
+      "triggers": [{ "kill": 17798 }],
+      "body": [
+        "The warlord's seat of power, lined with tubes of rare liquids he draws on to strengthen himself."
+      ],
+      "sources": ["warcraft.wiki.gg: Warlord Kalithresh (Biography)"]
+    },
+    {
+      "id": 3715030,
+      "kind": "person",
+      "title": "Hydromancer Thespia",
+      "triggers": [{ "kill": 17797 }],
+      "body": [
+        "A naga sorceress of the waters who guards the halls of the Steamvault."
+      ],
+      "sources": ["warcraft.wiki.gg: Hydromancer Thespia"]
+    },
+    {
+      "id": 3715031,
+      "kind": "person",
+      "title": "Mekgineer Steamrigger",
+      "triggers": [{ "kill": 17796 }],
+      "body": [
+        "A renowned gnome technician hired by Lady Vashj to command the engineers who run the Steamvault's machinery. Sickness has damaged his sanity, but not his fierce dedication to his craft. He fights from inside a great bipedal machine."
+      ],
+      "sources": ["warcraft.wiki.gg: Mekgineer Steamrigger (Description)"]
+    },
+    {
+      "id": 3715032,
+      "kind": "person",
+      "title": "Warlord Kalithresh",
+      "triggers": [{ "kill": 17798 }],
+      "body": [
+        "Leader and overseer of the Steamvault in Lady Vashj's name. He relies on potent mixtures to defend it, drawn from the tubes that line his chamber."
+      ],
+      "sources": ["warcraft.wiki.gg: Warlord Kalithresh (Biography)"]
+    }
+  ]
+}

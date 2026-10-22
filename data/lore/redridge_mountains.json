@@ -1,0 +1,206 @@
+{
+  "zone": 44,
+  "name": "Redridge Mountains",
+  "entries": [
+    {
+      "id": 44000,
+      "kind": "zone",
+      "title": "The Redridge Mountains",
+      "triggers": [{ "areaId": 44 }],
+      "body": [
+        "An idyllic land of rushing rivers, towering elms and rising ridges east of Elwynn, under the protection of Stormwind. The Redridge range is the spine of the continent; its limbs and valleys have their own, often ominous names, among them Deadwind Pass and the Burning Steppes.",
+        "As Stormwind grew, small towns sprang up in these mountains. The orcs conquered them in the First War, and the humans came back and rebuilt after the Second. Now the orcs have come again: the Blackrock clan of the Dark Horde raids down from Blackrock Mountain and holds Stonewatch Keep, gnolls prowl the roads, and murlocs lurk beneath the still surface of the lake."
+      ],
+      "sources": ["warcraft.wiki.gg: Redridge Mountains (introduction, History)"]
+    },
+    {
+      "id": 44001,
+      "kind": "place",
+      "title": "Lakeshire",
+      "triggers": [{ "area": "Lakeshire" }, { "talk": 344 }, { "talk": 382 }],
+      "body": [
+        "A human town on the western bank of Lake Everstill, led by Magistrate Solomon and the Court of Lakeshire, with Marshal Marris and the Stormwind Guard in charge of its defence.",
+        "In the First War, Warchief Blackhand came to take Lakeshire with a small raiding party. Anduin Lothar's knights charged down the slopes and nearly beat them, until two Shadow Council warlocks turned the battle; weeks later the orcs returned in force and took the town. After the Second War the Alliance rebuilt it, Turalyon himself overseeing the return of its people."
+      ],
+      "sources": ["warcraft.wiki.gg: Lakeshire (First War and aftermath)"]
+    },
+    {
+      "id": 44002,
+      "kind": "place",
+      "title": "The Everstill Bridge and the Lakeridge Highway",
+      "triggers": [{ "area": "Lakeridge Highway" }, { "talk": 341 }, { "accept": 89 }],
+      "body": [
+        "Before the First War the old highway along the southern shore of Lake Everstill was busy with travellers. Since the orcs took Stonewatch it has fallen out of use, and gnolls patrol it.",
+        "The Everstill Bridge, Lakeshire's link across the lake, was damaged in one of the Blackrock assaults. Foreman Oslow's crew is repairing it, slowly, because the orcs keep taking their supplies."
+      ],
+      "sources": ["warcraft.wiki.gg: Lakeridge Highway", "warcraft.wiki.gg: Lakeshire (World of Warcraft)"]
+    },
+    {
+      "id": 44003,
+      "kind": "place",
+      "title": "Lake Everstill",
+      "triggers": [{ "area": "Lake Everstill" }, { "talk": 381 }],
+      "body": [
+        "A large, crystal-clear azure lake in the middle of Redridge, drained by a river to the east that runs past Stonewatch and tumbles down Stonewatch Falls. It was once known for its fishing, but murloc tribes have overrun it, and there are persistent rumours of a monster in its depths.",
+        "In 24 ADP a mage opened a portal at the bottom of the lake to Ironforge without a liquid filter, causing both the Great Lakeshire Drought and the Great Ironforge Flood."
+      ],
+      "sources": ["warcraft.wiki.gg: Lake Everstill", "warcraft.wiki.gg: Stonewatch Falls", "warcraft.wiki.gg: Redridge Mountains"]
+    },
+    {
+      "id": 44004,
+      "kind": "place",
+      "title": "Stonewatch Keep",
+      "triggers": [{ "area": "Stonewatch Keep" }, { "area": "Stonewatch" }, { "kill": 334 }],
+      "body": [
+        "The main hold of Stonewatch, the fortress in central Redridge raised to guard against orc raids from the Burning Steppes. A small platoon kept order in Lakeshire from here.",
+        "Then the warlock Morganth allied with the Blackrock warlord Gath'Ilzogg. Fuelled by his magic, the orcs stormed the keep with horrific savagery and defeated the 12th Sabre Regiment. They took Corporal Keeshan prisoner and dragged him north. Gath'Ilzogg and his lieutenant Tharil'zun hold the keep still."
+      ],
+      "sources": ["warcraft.wiki.gg: Stonewatch (World of Warcraft)", "warcraft.wiki.gg: Stonewatch Keep"]
+    },
+    {
+      "id": 44005,
+      "kind": "place",
+      "title": "Stonewatch Tower",
+      "triggers": [{ "area": "Stonewatch Tower" }, { "area": "Stonewatch Falls" }],
+      "body": [
+        "The armoured scout tower of Stonewatch, above the falls where the lake's river cascades into a deep pool. A small murloc tribe fishes the pool below. The tower is in the hands of Gath'Ilzogg's underlings."
+      ],
+      "sources": ["warcraft.wiki.gg: Stonewatch Tower", "warcraft.wiki.gg: Stonewatch Falls"]
+    },
+    {
+      "id": 44006,
+      "kind": "place",
+      "title": "Render's Valley and Render's Rock",
+      "triggers": [{ "area": "Render's Valley" }, { "area": "Render's Rock" }],
+      "body": [
+        "Two Blackrock strongholds named for Rend Blackhand, warchief of the Dark Horde. Render's Valley is an outpost in the south-east; Render's Rock is a great cave in the north-west near the road to the Burning Steppes, held by some of the clan's strongest warriors."
+      ],
+      "sources": ["warcraft.wiki.gg: Render's Valley", "warcraft.wiki.gg: Render's Rock"]
+    },
+    {
+      "id": 44007,
+      "kind": "place",
+      "title": "Render's Camp",
+      "triggers": [{ "area": "Render's Camp" }, { "accept": 128 }],
+      "body": [
+        "The Blackrock war camp in the north of Redridge, at the head of the road that runs down from Blackrock Mountain. From here the orcs mount their raids on Lakeshire."
+      ],
+      "sources": ["warcraft.wiki.gg: Redridge Mountains (introduction, History)"]
+    },
+    {
+      "id": 44008,
+      "kind": "place",
+      "title": "Tower of Ilgalar",
+      "triggers": [{ "area": "Tower of Ilgalar" }, { "area": "Galardell Valley" }, { "kill": 397 }],
+      "body": [
+        "A mage tower in Galardell Valley in north-eastern Redridge. Morganth took it after turning on the orcs, and continues his study of the dark arts there. The valley crawls with his Shadowhide gnolls, led by Lieutenant Fangore, who can call the whole pack to him when attacked."
+      ],
+      "sources": ["warcraft.wiki.gg: Tower of Ilgalar", "warcraft.wiki.gg: Galardell Valley"]
+    },
+    {
+      "id": 44009,
+      "kind": "place",
+      "title": "Rethban Caverns",
+      "triggers": [{ "area": "Rethban Caverns" }],
+      "body": [
+        "A long chain of caverns reaching deep into north-western Redridge, perhaps named after Bart Rethban. The Redridge gnolls under the cunning Ardo Dirtpaw hold it, and with it the rare Rethban ore."
+      ],
+      "sources": ["warcraft.wiki.gg: Rethban Caverns"]
+    },
+    {
+      "id": 44010,
+      "kind": "place",
+      "title": "Alther's Mill",
+      "triggers": [{ "area": "Alther's Mill" }],
+      "body": [
+        "An abandoned lumber mill north-east of Lakeshire, a backwater that most folk passed on the way to Stonewatch. Now spiders, buzzards and the odd stray orc roam it."
+      ],
+      "sources": ["warcraft.wiki.gg: Alther's Mill"]
+    },
+    {
+      "id": 44011,
+      "kind": "place",
+      "title": "Three Corners",
+      "triggers": [{ "area": "Three Corners" }, { "talk": 464 }],
+      "body": [
+        "A crossroads just inside Redridge, where the road splits three ways to the \"Three Shires\": Goldshire in Elwynn, Lakeshire, and Darkshire in Duskwood. In its middle stands Tower Watch, a scout tower of the Stormwind Guard."
+      ],
+      "sources": ["warcraft.wiki.gg: Three Corners"]
+    },
+    {
+      "id": 44030,
+      "kind": "person",
+      "title": "Magistrate Solomon",
+      "triggers": [{ "talk": 344 }, { "accept": 120 }],
+      "body": [
+        "The aging magistrate of Lakeshire. With his town under constant attack from the Blackrock orcs and two clans of gnolls and short of proper defences, he has pleaded with every part of the kingdom for help, but all of Stormwind is caught up in its own troubles."
+      ],
+      "sources": ["warcraft.wiki.gg: Lakeshire (World of Warcraft)", "warcraft.wiki.gg: Redridge Mountains (Notable characters)"]
+    },
+    {
+      "id": 44031,
+      "kind": "person",
+      "title": "Marshal Marris",
+      "triggers": [{ "talk": 382 }, { "accept": 20 }],
+      "body": [
+        "The commander of the Stormwind Guard in Lakeshire, posted at the fallen bridge. With too few soldiers, he sends promising young adventurers out to break the hold of the gnolls and the Blackrock orcs. The stablemaster Verner Osgood helps him in his campaign against the gnolls."
+      ],
+      "sources": ["warcraft.wiki.gg: Redridge Mountains (Notable characters)"]
+    },
+    {
+      "id": 44032,
+      "kind": "person",
+      "title": "Gath'Ilzogg",
+      "triggers": [{ "kill": 334 }, { "accept": 169 }],
+      "body": [
+        "A warlord of the Blackrock clan, who allied with Morganth to take Stonewatch Keep and leads raids against Lakeshire from it. Magistrate Solomon thinks him extremely dangerous and has put a bounty on his head.",
+        "At his side is a black dragon whelp named Singe, perhaps a gift from Lord Victor Nefarius for the taking of Stonewatch."
+      ],
+      "sources": ["warcraft.wiki.gg: Gath'Ilzogg"]
+    },
+    {
+      "id": 44033,
+      "kind": "person",
+      "title": "Morganth",
+      "triggers": [{ "kill": 397 }, { "accept": 249 }, { "area": "Tower of Ilgalar" }],
+      "body": [
+        "Long ago, three mages studied in the mage tower of Stormwind, until one of them, Morganth, fell to the dark arts. He was urged to turn away, could not, and was banished, taking with him a dangerous book, Ur's Treatise on Shadow Magic, though he has never broken the seals the mages of Stormwind placed on it.",
+        "He speaks to his gnolls through enchanted pendants. He has searched for the Scythe of Elune without success, and the artifacts in his tower show an interest in dragons. The Stormwind mages fear the day he opens the Treatise."
+      ],
+      "sources": ["warcraft.wiki.gg: Morganth (History)"]
+    },
+    {
+      "id": 44050,
+      "kind": "history",
+      "title": "The Blackrock in Redridge",
+      "triggers": [{ "complete": 20 }, { "complete": 169 }, { "area": "Render's Camp" }],
+      "body": [
+        "The Blackrock were the strongest clan of the Old Horde; both of its first warchiefs, Blackhand and Orgrim Doomhammer, were Blackrocks. After the Horde's defeat, some were sent to the internment camps and later followed Thrall. The rest gathered at Blackrock Mountain under Blackhand's sons, Rend and Maim, as the Dark Horde, and want nothing to do with Thrall.",
+        "It is the Dark Horde that raids Redridge. With Morganth's help they took Stonewatch, and though the warlock turned on them, they have pressed on against Lakeshire."
+      ],
+      "sources": ["warcraft.wiki.gg: Blackrock clan (introduction)", "warcraft.wiki.gg: Redridge Mountains (History, World of Warcraft)"]
+    },
+    {
+      "id": 44051,
+      "kind": "history",
+      "title": "Something Amiss in Stormwind",
+      "triggers": [{ "complete": 146 }, { "complete": 121 }, { "complete": 144 }],
+      "body": [
+        "Weakened by political turmoil, Stormwind sends Lakeshire almost nothing. When evidence emerged that the Blackrock were allied with the black dragonflight, Solomon begged Highlord Bolvar Fordragon to send the army. Lady Katrana Prestor advised against it.",
+        "Bolvar could not ignore Solomon, and settled on a compromise that satisfied everyone at court: he deputized adventurers to solve Lakeshire's problems instead."
+      ],
+      "sources": ["warcraft.wiki.gg: Lakeshire (World of Warcraft)", "warcraft.wiki.gg: Redridge Mountains (World of Warcraft)"]
+    },
+    {
+      "id": 44052,
+      "kind": "history",
+      "title": "The Shattered Range",
+      "triggers": [{ "areaId": 44 }, { "area": "Render's Rock" }],
+      "body": [
+        "Two centuries before the Dark Portal opened, the Dark Iron dwarves, fleeing defeat in the War of the Three Hammers, founded a kingdom in the northern reaches of the Redridge range. Their sorcerer-king Thaurissan summoned the Firelord Ragnaros to help them, and the summoning tore open a vast new volcano: Blackrock Mountain.",
+        "It destroyed the Dark Irons' new city and left the northern range an ash-choked wasteland. The Redridge Mountains of today are what remains, the green southern ridges where Stormwind's people stayed."
+      ],
+      "sources": ["warcraft.wiki.gg: Redridge Mountains (History, Redridge Range)"]
+    }
+  ]
+}

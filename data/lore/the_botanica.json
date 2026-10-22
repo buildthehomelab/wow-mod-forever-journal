@@ -1,0 +1,86 @@
+{
+  "zone": 3847,
+  "name": "The Botanica",
+  "entries": [
+    {
+      "id": 3847000,
+      "kind": "zone",
+      "title": "The Botanica",
+      "triggers": [{ "areaId": 3847 }],
+      "body": [
+        "The naaru used this satellite of Tempest Keep to gather unusual life from across Outland and keep it safe behind special wards. When Kael'thas took the keep, his blood elves set to work at once to unlock the power hidden in Outland's plants and the naaru's secrets. Their scientists experiment on the flora, and on how naaru technology can create and shape living things, and grant the blood elves new power."
+      ],
+      "sources": ["warcraft.wiki.gg: Botanica (Background)"]
+    },
+    {
+      "id": 3847001,
+      "kind": "place",
+      "title": "The Bloodwarder Halls",
+      "triggers": [{ "kill": 17976 }, { "kill": 17975 }],
+      "body": [
+        "The halls where the Bloodwarder soldiers stand guard, and the herbalists grow Thalassian trees brought from home alongside olemba trees and Zangarmarsh fungi."
+      ],
+      "sources": ["warcraft.wiki.gg: Botanica (Background)", "warcraft.wiki.gg: Commander Sarannis"]
+    },
+    {
+      "id": 3847002,
+      "kind": "place",
+      "title": "The Sunseeker Gardens",
+      "triggers": [{ "kill": 17978 }, { "kill": 17980 }, { "kill": 17977 }],
+      "body": [
+        "The deeper gardens, with red crystals like those of Bloodmyst Isle, whose radiations the Sunseekers may be learning to manipulate. In the last room an ancient of the arcane has taken root."
+      ],
+      "sources": ["warcraft.wiki.gg: Botanica (Background)", "warcraft.wiki.gg: Warp Splinter"]
+    },
+    {
+      "id": 3847030,
+      "kind": "person",
+      "title": "Commander Sarannis",
+      "triggers": [{ "kill": 17976 }],
+      "body": [
+        "A blood elf warrior in command of the Bloodwarder soldiers in the Botanica, entrusted with the Keystone."
+      ],
+      "sources": ["warcraft.wiki.gg: Commander Sarannis"]
+    },
+    {
+      "id": 3847031,
+      "kind": "person",
+      "title": "High Botanist Freywinn",
+      "triggers": [{ "kill": 17975 }],
+      "body": [
+        "An herbalist who seems to run the blood elves' experiments on plants in the Botanica. He has found time to write a comprehensive botanist's field guide."
+      ],
+      "sources": ["warcraft.wiki.gg: High Botanist Freywinn"]
+    },
+    {
+      "id": 3847032,
+      "kind": "person",
+      "title": "Thorngrin the Tender",
+      "triggers": [{ "kill": 17978 }],
+      "body": [
+        "A keeper of the Botanica's gardens."
+      ],
+      "sources": ["warcraft.wiki.gg: Thorngrin the Tender"]
+    },
+    {
+      "id": 3847033,
+      "kind": "person",
+      "title": "Laj",
+      "triggers": [{ "kill": 17980 }],
+      "body": [
+        "A great lasher grown in the Botanica's gardens."
+      ],
+      "sources": ["warcraft.wiki.gg: Laj"]
+    },
+    {
+      "id": 3847034,
+      "kind": "person",
+      "title": "Warp Splinter",
+      "triggers": [{ "kill": 17977 }],
+      "body": [
+        "A huge ancient of the arcane, the strangest growth in the naaru's garden."
+      ],
+      "sources": ["warcraft.wiki.gg: Warp Splinter"]
+    }
+  ]
+}

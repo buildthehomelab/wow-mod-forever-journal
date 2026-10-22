@@ -1,0 +1,127 @@
+{
+  "zone": 719,
+  "name": "Blackfathom Deeps",
+  "entries": [
+    {
+      "id": 719000,
+      "kind": "zone",
+      "title": "Blackfathom Deeps",
+      "triggers": [{ "areaId": 719 }],
+      "body": [
+        "Watery caverns beneath the Zoram Strand that were once a glorious temple to Elune, thought lost beneath the sea in the Sundering. Its sacred moonwell has been tainted by the corruption of an Old God seeping up from beneath the earth, and from the waters rose Aku'mai, a monstrous hydra and favoured pet of the Old Gods.",
+        "The Twilight's Hammer, drawn here by whispers and foul dreams, have come to bask in its evil presence and feed it innocents. Naga and satyrs, drawn by the ruins' ancient power, have followed to plumb its secrets."
+      ],
+      "sources": ["warcraft.wiki.gg: Blackfathom Deeps (introduction, Modern times)"]
+    },
+    {
+      "id": 719001,
+      "kind": "place",
+      "title": "The Pool of Ask'ar",
+      "triggers": [{ "areaId": 719 }, { "kill": 4887 }, { "kill": 4831 }],
+      "body": [
+        "The flooded caverns of the upper temple. On an island in the second cave, the cultists keep a giant turtle, one of the last peaceful creatures of Elune's temple, which they have tormented in mind and body for years until it went mad. Nearby, the Hammer has given the naga sorceress Lady Sarevess a cove of her own and a steady supply of sacrifices; and the murloc Gelihast keeps his shrine."
+      ],
+      "sources": ["warcraft.wiki.gg: Blackfathom Deeps (Modern times)", "warcraft.wiki.gg: Ghamoo-ra", "warcraft.wiki.gg: Lady Sarevess"]
+    },
+    {
+      "id": 719002,
+      "kind": "place",
+      "title": "The Moonshrine Ruins",
+      "triggers": [{ "kill": 6243 }, { "kill": 12876 }, { "kill": 12902 }],
+      "body": [
+        "The drowned ruins of the temple proper, where the cultists of the Twilight's Hammer gather. Most of the creatures in the waters beneath were caught and eaten once the Hammer moved in, all but the greatest thresher of them, which no one has ever managed to catch."
+      ],
+      "sources": ["warcraft.wiki.gg: Blackfathom Deeps (Modern times)", "warcraft.wiki.gg: Lorgus Jett", "warcraft.wiki.gg: Baron Aquanis"]
+    },
+    {
+      "id": 719003,
+      "kind": "place",
+      "title": "The Moonshrine Sanctum",
+      "triggers": [{ "kill": 4832 }, { "kill": 4829 }],
+      "body": [
+        "The temple's inner sanctum, where its moonwell once shone. Here Twilight Lord Kelris leads the cult's rites, and in the deepest waters beyond, Aku'mai feeds."
+      ],
+      "sources": ["warcraft.wiki.gg: Twilight Lord Kelris", "warcraft.wiki.gg: Aku'mai"]
+    },
+    {
+      "id": 719030,
+      "kind": "person",
+      "title": "Ghamoo-ra",
+      "triggers": [{ "kill": 4887 }],
+      "body": [
+        "Once a peaceful giant turtle of Elune's temple, roused and imprisoned by the cult and tortured for years until it succumbed to madness. They named it Ghamoo-ra, and use its savagery to guard their lair."
+      ],
+      "sources": ["warcraft.wiki.gg: Blackfathom Deeps (Modern times)"]
+    },
+    {
+      "id": 719031,
+      "kind": "person",
+      "title": "Lady Sarevess",
+      "triggers": [{ "kill": 4831 }],
+      "body": [
+        "A twisted naga sorceress, granted her own cove and fresh sacrifices by the Hammer, who hope her rituals will give them protection enough to worship the hydra without becoming its next meal."
+      ],
+      "sources": ["warcraft.wiki.gg: Blackfathom Deeps (Modern times)", "warcraft.wiki.gg: Lady Sarevess"]
+    },
+    {
+      "id": 719032,
+      "kind": "person",
+      "title": "Gelihast",
+      "triggers": [{ "kill": 6243 }],
+      "body": [
+        "A murloc who answered the call of the Old Gods, forced his way into the Deeps and slaughtered nearly a dozen startled cultists with his twin swords. Impressed by his brutality, the cult let him stay, and he built a shrine to receive the blessings of the presence in the ruins."
+      ],
+      "sources": ["warcraft.wiki.gg: Blackfathom Deeps (Modern times)"]
+    },
+    {
+      "id": 719033,
+      "kind": "person",
+      "title": "Lorgus Jett",
+      "triggers": [{ "kill": 12902 }],
+      "body": [
+        "A human of the Twilight's Hammer who wanders the Moonshrine Ruins."
+      ],
+      "sources": ["warcraft.wiki.gg: Lorgus Jett"]
+    },
+    {
+      "id": 719034,
+      "kind": "person",
+      "title": "Baron Aquanis",
+      "triggers": [{ "kill": 12876 }],
+      "body": [
+        "A water elemental who rises from the ruins to defend the Fathom Stone from any who would take it."
+      ],
+      "sources": ["warcraft.wiki.gg: Baron Aquanis"]
+    },
+    {
+      "id": 719035,
+      "kind": "person",
+      "title": "Old Serra'kis",
+      "triggers": [{ "kill": 4830 }],
+      "body": [
+        "The largest thresher in the waters beneath the Moonshrine Ruins, which the cultists could never catch. Those who kept trying died in the attempt."
+      ],
+      "sources": ["warcraft.wiki.gg: Blackfathom Deeps (Modern times)"]
+    },
+    {
+      "id": 719036,
+      "kind": "person",
+      "title": "Twilight Lord Kelris",
+      "triggers": [{ "kill": 4832 }],
+      "body": [
+        "The orc who leads the Twilight's Hammer in the Deeps. The Argent Dawn has long thought him dead or missing, yet wherever evil showed itself in Kalimdor, Kelris had a hand in it. He believes the hydra is a herald of the Old Gods' return and his ticket to immortality, and he feeds it his own followers."
+      ],
+      "sources": ["warcraft.wiki.gg: Twilight Lord Kelris", "warcraft.wiki.gg: Aku'mai"]
+    },
+    {
+      "id": 719037,
+      "kind": "person",
+      "title": "Aku'mai",
+      "triggers": [{ "kill": 4829 }],
+      "body": [
+        "A gargantuan three-headed hydra, an ancient evil gifted with the power of the void and a favoured pet of the Old Gods, the scourge of the Zoram Strand for ages. It carries within it a small measure of its masters' power."
+      ],
+      "sources": ["warcraft.wiki.gg: Aku'mai"]
+    }
+  ]
+}

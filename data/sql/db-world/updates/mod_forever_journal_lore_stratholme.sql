@@ -1,0 +1,63 @@
+-- mod-forever-journal: lore of Stratholme (zone 2017).
+-- Generated from data/lore/*.json by tools/build_lore_sql.py; edit the JSON, not this file.
+
+DELETE FROM `mod_forever_journal_lore_trigger` WHERE `Entry` BETWEEN 2017000 AND 2017999;
+DELETE FROM `mod_forever_journal_lore` WHERE `ID` BETWEEN 2017000 AND 2017999;
+
+INSERT INTO `mod_forever_journal_lore` (`ID`, `Zone`, `Kind`, `SortOrder`, `Faction`, `Races`, `Classes`, `Era`, `Title`, `Body`, `Sources`) VALUES
+(2017000, 2017, 0, 1, 0, 0, 0, 0, 'Stratholme', 'Once the jewel of northern Lordaeron and its second city, a holy city famous for holy water strong enough to cleanse the darkest magic. In Alonsus Chapel, Archbishop Faol inducted the first five paladins of the Silver Hand: Uther, Saidan Dathrohan, Turalyon, Gavinrad and Tirion Fordring. In its Hall of Justice, Tirion was later tried for treason for defending an orc.\n\nThen the Cult of the Damned''s plagued grain reached it from Andorhal, and Prince Arthas put the whole city to the sword before it could rise. It still burns. The Scourge holds most of it under Baron Rivendare, and the Scarlet Crusade has dug into the western districts and fights them street by street.', 'warcraft.wiki.gg: Stratholme (Early history, Second War, Of Blood and Honor, Third War)'),
+(2017001, 2017, 1, 1, 0, 0, 0, 0, 'King''s Square and Market Row', 'The burning heart of the old city behind its main gate, roamed by ghouls and the ghosts of its citizens. Among them walk the fallen: two former champions of the Light who did terrible things to innocents here in pursuit of unholy power, and are now a wraith and a ghoul.', 'warcraft.wiki.gg: The Unforgiven; warcraft.wiki.gg: Timmy the Cruel'),
+(2017002, 2017, 1, 2, 0, 0, 0, 0, 'The Scarlet Bastion', 'The Scarlet Crusade''s fortress in the western districts: its armoury and its cannons, its archives, and the hall where Grand Crusader Dathrohan, one of the first five paladins of the Silver Hand, commands the Crusade.', 'warcraft.wiki.gg: Cannon Master Willey; warcraft.wiki.gg: Archivist Galford; warcraft.wiki.gg: Stratholme (Second War)'),
+(2017003, 2017, 1, 3, 0, 0, 0, 0, 'The Gauntlet', 'The Scourge side of the city, behind the service entrance. Three ziggurats guard the way to the Slaughter House, each held by one of the Baron''s servants. The city''s old magistrate, raised as a wight, keeps the gate.', 'warcraft.wiki.gg: Nerub''enkan; warcraft.wiki.gg: Magistrate Barthilas'),
+(2017004, 2017, 1, 4, 0, 0, 0, 0, 'The Slaughter House', 'The Baron''s abattoir, where the Scourge stitches its abominations together, and where Baron Rivendare waits.', 'warcraft.wiki.gg: Nerub''enkan; warcraft.wiki.gg: Ramstein the Gorger'),
+(2017005, 2017, 1, 5, 0, 0, 0, 0, 'Alonsus Chapel', 'The chapel where the Silver Hand was born, its eternal flame still burning on consecrated ground in the dead city. A paladin whose faith wavered has taken refuge here, hoping the holy ground will keep the Scourge''s corruption at bay.', 'warcraft.wiki.gg: Aurius'),
+(2017030, 2017, 2, 1, 0, 0, 0, 0, 'The Unforgiven and Timmy the Cruel', 'Lylia and Timmison were champions, of the Light it seems, who committed heinous acts against Stratholme''s innocents to win unholy power. Lylia walks Market Row as a wraith, and Timmison as a ghoul.', 'warcraft.wiki.gg: The Unforgiven; warcraft.wiki.gg: Timmy the Cruel'),
+(2017031, 2017, 2, 2, 0, 0, 0, 0, 'Postmaster Malown', 'Stratholme''s postmaster, who could not escape the Scourge, and now haunts the city to make sure nobody tampers with the mail. Not even hail, sleet or snow will stop him.', 'warcraft.wiki.gg: Postmaster Malown'),
+(2017032, 2017, 2, 3, 0, 0, 0, 0, 'Hearthsinger Forresten', 'The ghost of a travelling musician who was in town when the Culling came.', 'warcraft.wiki.gg: Hearthsinger Forresten'),
+(2017033, 2017, 2, 4, 0, 0, 0, 0, 'Malor and Willey', 'Officers of the Scarlet Bastion: Malor the Zealous, a crazed crusader who guards a strongbox with a medallion of faith, and Cannon Master Willey, who runs its armoury.', 'warcraft.wiki.gg: Malor the Zealous; warcraft.wiki.gg: Cannon Master Willey'),
+(2017034, 2017, 2, 5, 0, 0, 0, 0, 'Archivist Galford', 'The keeper of the Crusade''s archives in the bastion, and of a painting called Of Love and Family.', 'warcraft.wiki.gg: Archivist Galford'),
+(2017035, 2017, 2, 6, 0, 0, 0, 0, 'Grand Crusader Dathrohan', 'Saidan Dathrohan was one of the first five paladins of the Silver Hand. He is the Grand Crusader of the Scarlet Crusade, and he is not himself. He died long ago, and the dreadlord Balnazzar wears his body. Balnazzar was one of the three dreadlords left to rule Lordaeron for the Legion; Sylvanas besieged him and he was thought slain, but he survived, and through Dathrohan he made the Crusade his own. It was he who drove Renault Mograine to murder his father.', 'warcraft.wiki.gg: Balnazzar (introduction); warcraft.wiki.gg: Renault Mograine'),
+(2017036, 2017, 2, 7, 0, 0, 0, 0, 'Magistrate Barthilas', 'Once the apprentice of Tirion Fordring, who held Hearthglen for a time after Tirion''s exile, then became magistrate of Stratholme until Arthas killed him with his people. The Scourge raised him as a wight to guard their side of the city.', 'warcraft.wiki.gg: Magistrate Barthilas'),
+(2017037, 2017, 2, 8, 0, 0, 0, 0, 'Nerub''enkan', 'A crypt fiend who guards one of the three ziggurats before the Slaughter House.', 'warcraft.wiki.gg: Nerub''enkan'),
+(2017038, 2017, 2, 9, 0, 0, 0, 0, 'Baroness Anastari', 'A baroness in life, brutally murdered by the Scourge and bound as a banshee to the Lich King. She guards a ziggurat, and can drive her spirit into those she touches, wearing their bodies as her own.', 'warcraft.wiki.gg: Baroness Anastari'),
+(2017039, 2017, 2, 10, 0, 0, 0, 0, 'Maleki the Pallid', 'A living human necromancer, master of frost and shadow, who guards the third ziggurat.', 'warcraft.wiki.gg: Maleki the Pallid'),
+(2017040, 2017, 2, 11, 0, 0, 0, 0, 'Ramstein the Gorger', 'An abomination, fearless, tenacious and tireless, responsible for thousands of deaths, among them that of the ranger lord Nathanos Marris, whom he killed in his own home. Nathanos, now a Forsaken, wants him dead.', 'warcraft.wiki.gg: Ramstein the Gorger'),
+(2017041, 2017, 2, 12, 0, 0, 0, 0, 'Baron Rivendare', 'Titus Rivendare, a rich landowner of Stratholme and a friend of Kel''Thuzad, who drew him into the Cult of the Damned. He was one of the chief architects of the capital''s fall; he oversaw the torture of Lordaeron''s soldiers in its sewers. The Lich King made him a death knight and master of Stratholme.', 'warcraft.wiki.gg: Baron Rivendare'),
+(2017042, 2017, 2, 13, 0, 0, 0, 0, 'Aurius', 'A paladin of the Silver Hand whose faith wavered before the Scourge, so that he nearly fell into its ranks. He fled to Alonsus Chapel, believing its holy ground would keep the corruption at bay. He is the Baron''s son.', 'warcraft.wiki.gg: Aurius'),
+(2017050, 2017, 3, 1, 0, 0, 0, 0, 'The Culling', 'The dreadlord Mal''Ganis chose Stratholme for the plague: it was crowded, and the most important city of the Eastweald. If it fell, Lordaeron would lose the east. Its people baked and ate the poisoned grain without knowing. Arthas arrived with Uther and Jaina as the first dead began to rise, and decided the only way was to purge the city.\n\nUther, Jaina and the paladins refused to take part. Arthas and the soldiers who followed him went on, and fire swallowed the city while the blood of innocents ran in the streets. Mal''Ganis waited for him at the end, and taunted him to follow to Northrend.', 'warcraft.wiki.gg: Stratholme (Third War)');
+
+INSERT INTO `mod_forever_journal_lore_trigger` (`Entry`, `Type`, `Value`, `Area`) VALUES
+(2017000, 1, 2017, ''),
+(2017001, 1, 2017, ''),
+(2017001, 3, 10516, ''),
+(2017001, 3, 10808, ''),
+(2017002, 3, 11032, ''),
+(2017002, 3, 10997, ''),
+(2017002, 3, 10811, ''),
+(2017002, 3, 10812, ''),
+(2017003, 3, 10437, ''),
+(2017003, 3, 10436, ''),
+(2017003, 3, 10438, ''),
+(2017003, 3, 10435, ''),
+(2017004, 3, 10439, ''),
+(2017004, 3, 10440, ''),
+(2017005, 3, 10917, ''),
+(2017005, 2, 10917, ''),
+(2017030, 3, 10516, ''),
+(2017030, 3, 10808, ''),
+(2017031, 3, 11143, ''),
+(2017032, 3, 10558, ''),
+(2017033, 3, 11032, ''),
+(2017033, 3, 10997, ''),
+(2017034, 3, 10811, ''),
+(2017035, 3, 10812, ''),
+(2017035, 3, 10813, ''),
+(2017036, 3, 10435, ''),
+(2017037, 3, 10437, ''),
+(2017038, 3, 10436, ''),
+(2017039, 3, 10438, ''),
+(2017040, 3, 10439, ''),
+(2017041, 3, 10440, ''),
+(2017042, 2, 10917, ''),
+(2017042, 3, 10917, ''),
+(2017050, 1, 2017, '');

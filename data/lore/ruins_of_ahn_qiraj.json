@@ -1,0 +1,107 @@
+{
+  "zone": 3429,
+  "name": "Ruins of Ahn'Qiraj",
+  "entries": [
+    {
+      "id": 3429000,
+      "kind": "zone",
+      "title": "The Ruins of Ahn'Qiraj",
+      "triggers": [{ "areaId": 3429 }],
+      "body": [
+        "In the last hours of the War of the Shifting Sands, the night elves and the four dragonflights carried the fight to the gates of Ahn'Qiraj, and there met a mass of silithid more vast than any they had faced. The qiraji were not defeated, only sealed away, and the outer city was left in ruins.",
+        "A thousand years have passed, and the qiraji have not been idle. A new and terrible army has spawned from the hives, and the ruins teem once more. Now that the gates are open, it must be destroyed before it can march on Kalimdor."
+      ],
+      "sources": ["warcraft.wiki.gg: Ruins of Ahn'Qiraj (History)"]
+    },
+    {
+      "id": 3429001,
+      "kind": "place",
+      "title": "The Scarab Terrace and the Hatchery",
+      "triggers": [{ "area": "Scarab Terrace" }, { "area": "The Hatchery" }, { "area": "The Comb" }],
+      "body": [
+        "The collapsed outer quarters of the city, honeycombed with the qiraji's hives and clutches, where a great sand reaver burrows through the marrow of the hive."
+      ],
+      "sources": ["warcraft.wiki.gg: Ruins of Ahn'Qiraj (Ahn'Qiraj War)", "warcraft.wiki.gg: Kurinnaxx"]
+    },
+    {
+      "id": 3429002,
+      "kind": "place",
+      "title": "The General's Terrace",
+      "triggers": [{ "area": "General's Terrace" }, { "kill": 15341 }, { "talk": 15471 }],
+      "body": [
+        "Where General Rajaxx musters his army in waves. Lieutenant General Andorov and his Kaldorei Elite of the Cenarion Circle have come to fight beside those who brave the ruins."
+      ],
+      "sources": ["warcraft.wiki.gg: General Rajaxx", "warcraft.wiki.gg: Ruins of Ahn'Qiraj"]
+    },
+    {
+      "id": 3429003,
+      "kind": "place",
+      "title": "The Reservoir and the Watchers' Terrace",
+      "triggers": [{ "area": "The Reservoir" }, { "area": "Watchers' Terrace" }],
+      "body": [
+        "The deeper ruins: a silithid colossus wallows in the old reservoir, a hunting wasp holds its hive above, an obsidian destroyer stands silent, and on the Watchers' Terrace waits Ossirian, the anubisath who brought down a dragon."
+      ],
+      "sources": ["warcraft.wiki.gg: Buru the Gorger", "warcraft.wiki.gg: Moam", "warcraft.wiki.gg: Ossirian the Unscarred"]
+    },
+    {
+      "id": 3429030,
+      "kind": "person",
+      "title": "Kurinnaxx",
+      "triggers": [{ "kill": 15348 }],
+      "body": [
+        "A great sand reaver that guards the ruins' outer hive, with eyes keen enough to see the stealthy."
+      ],
+      "sources": ["warcraft.wiki.gg: Kurinnaxx"]
+    },
+    {
+      "id": 3429031,
+      "kind": "person",
+      "title": "General Rajaxx",
+      "triggers": [{ "kill": 15341 }],
+      "body": [
+        "The towering commander of the qiraji armies. In the War of the Shifting Sands he led the qiraji and silithid against Fandral Staghelm and his son Valstann, and when he captured Valstann, he tore him in two with his claws before his father's eyes."
+      ],
+      "sources": ["warcraft.wiki.gg: General Rajaxx"]
+    },
+    {
+      "id": 3429032,
+      "kind": "person",
+      "title": "Moam",
+      "triggers": [{ "kill": 15340 }],
+      "body": [
+        "An obsidian destroyer made for the qiraji's return, finer than any other. Their dark master ordered Emperor Vek'lor to make it; Vek'nilash shaped its great body from volcanic rock, and Vek'lor filled it with power."
+      ],
+      "sources": ["warcraft.wiki.gg: Moam"]
+    },
+    {
+      "id": 3429033,
+      "kind": "person",
+      "title": "Buru the Gorger",
+      "triggers": [{ "kill": 15370 }],
+      "body": [
+        "A silithid colossus that wallows in the old reservoir among its eggs."
+      ],
+      "sources": ["warcraft.wiki.gg: Buru the Gorger"]
+    },
+    {
+      "id": 3429034,
+      "kind": "person",
+      "title": "Ayamiss the Hunter",
+      "triggers": [{ "kill": 15369 }],
+      "body": [
+        "A great silithid wasp that hunts from above and feeds its larvae on living prey."
+      ],
+      "sources": ["warcraft.wiki.gg: Ayamiss the Hunter"]
+    },
+    {
+      "id": 3429035,
+      "kind": "person",
+      "title": "Ossirian the Unscarred",
+      "triggers": [{ "kill": 15339 }],
+      "body": [
+        "An anubisath who did the seemingly impossible in the War of the Shifting Sands: as his kind crumbled under the bronze dragons, he hurled his obsidian sword through the wing of the great dragon Grakkarond and brought him down. Grakkarond mauled him nearly to death, but the qiraji swarmed the fallen dragon and overwhelmed him. Ossirian has never been scarred since."
+      ],
+      "sources": ["warcraft.wiki.gg: Ossirian the Unscarred"]
+    }
+  ]
+}

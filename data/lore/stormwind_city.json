@@ -1,0 +1,136 @@
+{
+  "zone": 1519,
+  "name": "Stormwind City",
+  "entries": [
+    {
+      "id": 1519000,
+      "kind": "zone",
+      "title": "Stormwind City",
+      "triggers": [{ "areaId": 1519 }],
+      "body": [
+        "The capital of the kingdom of Stormwind, the largest human city on Azeroth and the heart of the Alliance. With the northern kingdoms fallen, it is the strongest bastion of humanity, its cultural and trading centre, with the sea at its doorstep and a formidable fleet.",
+        "No city better shows human determination. The orcs reduced it to ashes in the First War, and the Stonemasons' Guild painstakingly rebuilt it in white stone after the Second, from the great Cathedral of Light to the Valley of Heroes at its gate. If Stormwind could rise from the ashes, it was said, anyone could."
+      ],
+      "sources": ["warcraft.wiki.gg: Stormwind City (introduction, The Great Wars, World of Warcraft)"]
+    },
+    {
+      "id": 1519001,
+      "kind": "place",
+      "title": "Stormwind Keep",
+      "triggers": [{ "talk": 29611 }, { "talk": 1748 }, { "talk": 1749 }],
+      "body": [
+        "The seat of the House of Wrynn, which has ruled Stormwind in peace for generations, free of the bickering that plagued the kings of Arathor. Before the First War, three full rings of walls surrounded the keep, great towers rose from the streets, and a river cascade turned massive waterwheels.",
+        "King Varian Wrynn holds court here again after years of absence. For those years Highlord Bolvar Fordragon ruled as regent for the boy king Anduin, and now he leads the Alliance's armies against the Lich King in Northrend."
+      ],
+      "sources": ["warcraft.wiki.gg: Stormwind City (Founding of Stormwind)", "warcraft.wiki.gg: Varian Wrynn", "warcraft.wiki.gg: Bolvar Fordragon"]
+    },
+    {
+      "id": 1519002,
+      "kind": "place",
+      "title": "The Cathedral of Light",
+      "triggers": [{ "talk": 1284 }, { "accept": 293 }],
+      "body": [
+        "Home of the Church of the Holy Light's high clergy and sacred to every follower of the Light, a peaceful place of prayer and the centre of healing in the city. After the Second War it was rebuilt more glorious than before, its halls inlaid with cobalt. Priests, war heroes and paladins lie in its catacombs.",
+        "It houses Stormwind's Knights of the Silver Hand. Its bell was cast in the Great Forge of Ironforge as a gift of friendship from the dwarves, like its twin in Lordaeron, which rings no longer."
+      ],
+      "sources": ["warcraft.wiki.gg: Cathedral of Light (introduction, Characteristics)"]
+    },
+    {
+      "id": 1519003,
+      "kind": "place",
+      "title": "Old Town and SI:7",
+      "triggers": [{ "talk": 332 }, { "accept": 6182 }],
+      "body": [
+        "Stormwind's oldest quarter, much of it older than the orcs' sack, never badly enough damaged to be rebuilt and never as well kept as the rest: dirtier, smellier, and home to most of the city's poor.",
+        "Here too is the army's command centre and the headquarters of SI:7, Stormwind's intelligence service, under Master Mathias Shaw, the most elite spies on Azeroth. Before the Third War, Varian used SI:7 to spy on Lordaeron and to look into the first rumours of plague. Even the ever-cynical Shaw never thought to question Lady Prestor."
+      ],
+      "sources": ["warcraft.wiki.gg: Old Town", "warcraft.wiki.gg: SI:7 (History, World of Warcraft)"]
+    },
+    {
+      "id": 1519004,
+      "kind": "place",
+      "title": "The Valley of Heroes",
+      "triggers": [{ "area": "Valley of Heroes" }],
+      "body": [
+        "The lush valley before Stormwind's gate, crossed by a stone bridge over the moat. Five statues line the path, raised to the leaders of the expedition that went through the Dark Portal and sealed it from the other side, never to return: Turalyon, Alleria Windrunner, Khadgar, Kurdran Wildhammer and Danath Trollbane."
+      ],
+      "sources": ["warcraft.wiki.gg: Valley of Heroes (introduction, Post-Second War)", "warcraft.wiki.gg: Stormwind City (The Great Wars)"]
+    },
+    {
+      "id": 1519005,
+      "kind": "place",
+      "title": "Stormwind Harbor",
+      "triggers": [{ "area": "Stormwind Harbor" }],
+      "body": [
+        "A great port and shipyard of wharfs and dry docks in the north-west of the city, the most important base of the Alliance navy. It was expanded and fortified with cannon, ballistae and steam tanks aimed out to sea. Ships sail from it all over the world, including to Valiance Keep in Northrend.",
+        "In the Scourge's second invasion, the undead came in under cover of mist and stormed the harbour. Varian and Bolvar led the defence, and the city's mages turned back a necropolis with a storm of fire and ice."
+      ],
+      "sources": ["warcraft.wiki.gg: Stormwind Harbor", "warcraft.wiki.gg: Stormwind City (Wrath of the Lich King)"]
+    },
+    {
+      "id": 1519030,
+      "kind": "person",
+      "title": "Lord Gregor Lescovar",
+      "triggers": [{ "kill": 1754 }, { "accept": 434 }],
+      "body": [
+        "A high-ranking member of the House of Nobles who secretly worked with the Defias Brotherhood, and was suspected of being a contact for the Twilight's Hammer too."
+      ],
+      "sources": ["warcraft.wiki.gg: Lord Gregor Lescovar"]
+    },
+    {
+      "id": 1519031,
+      "kind": "person",
+      "title": "King Varian Wrynn",
+      "triggers": [{ "talk": 29611 }],
+      "body": [
+        "The son of King Llane, who saw his father murdered and his city burned as a boy. Anduin Lothar took him north; Terenas supported his crowning when Stormwind was won back. His queen, Tiffin, died in the stonemason riots.",
+        "On his way to Theramore he was abducted and vanished for years. He survived without his memory, fought as a gladiator called Lo'Gosh, \"Ghost Wolf\", and came home to find a double on his throne and Onyxia at his court. With his comrades he took back his name, and slew her."
+      ],
+      "sources": ["warcraft.wiki.gg: Varian Wrynn (introduction)"]
+    },
+    {
+      "id": 1519050,
+      "kind": "history",
+      "title": "The Stonemasons and the Defias",
+      "triggers": [{ "complete": 396 }, { "complete": 434 }, { "complete": 389 }],
+      "body": [
+        "The Stonemasons' Guild under Edwin VanCleef rebuilt Stormwind, and then the nobles could not pay them: the kingdom had run up a crippling debt pushing its army into Elwynn and Stranglethorn. When VanCleef demanded what they were owed, the House of Nobles dissolved the guild. The riots that followed led to the accidental death of Queen Tiffin, who had championed the stonemasons.",
+        "King Varian vowed to punish those responsible. The stonemasons fled to Westfall, knowing his anger would never fade, and became the Defias Brotherhood. Behind both sides, Lady Katrana Prestor had stoked the quarrel all along."
+      ],
+      "sources": ["warcraft.wiki.gg: Stormwind City (Political unrest)", "warcraft.wiki.gg: Stonemasons Guild"]
+    },
+    {
+      "id": 1519051,
+      "kind": "history",
+      "title": "The Missing King",
+      "triggers": [{ "accept": 1274 }, { "complete": 1324 }, { "complete": 1266 }],
+      "body": [
+        "King Varian went missing under suspicious circumstances on a diplomatic voyage to Theramore. At the urging of the royal councillor, Lady Prestor, the crown went to his young son Anduin, with Bolvar Fordragon as regent and Prestor advising him on how to use the kingdom's resources.",
+        "The truth was that the Defias had taken Varian, and that Prestor was Onyxia. She had an enchanted amulet on Bolvar, and had even turned the eye of SI:7 away from herself."
+      ],
+      "sources": ["warcraft.wiki.gg: Stormwind City (Political unrest)", "warcraft.wiki.gg: SI:7 (World of Warcraft)", "warcraft.wiki.gg: Onyxia"]
+    },
+    {
+      "id": 1519052,
+      "kind": "history",
+      "title": "The Founding of Stormwind",
+      "triggers": [{ "areaId": 1519 }],
+      "body": [
+        "Around 1,200 years before the Dark Portal, Faldir and the last of Thoradin's line left Arathor, travelled south past the mountains of Khaz Modan, and after many seasons settled in a fertile valley in the land they named Azeroth. Their kingdom quickly became self-sufficient, and a refuge for the displaced. In the Gnoll War, King Barathen Wrynn broke the united packs and secured his dynasty's rule over the whole kingdom.",
+        "Years later, Prince Llane struck at the Gurubashi in Stranglethorn, and the trolls marched on Stormwind in revenge. Medivh, the Guardian, destroyed them at the city gates."
+      ],
+      "sources": ["warcraft.wiki.gg: Stormwind City (Founding of Stormwind)"]
+    },
+    {
+      "id": 1519053,
+      "kind": "history",
+      "title": "The Fall of Stormwind",
+      "triggers": [{ "areaId": 1519 }, { "area": "Valley of Heroes" }],
+      "body": [
+        "When strange creatures were reported in the Black Morass, King Llane sent Anduin Lothar to find out what they were. They were orcs. After Brightwood, Westfall and Redridge fell, the Horde surrounded the city. Its siege engines pounded the walls all night, and as the orcs stormed them at dawn, Lothar's knights, who had slipped around by sea, struck their rear while the gates opened behind them. The orcs fled.",
+        "They came back. In the second siege they broke the walls and fought in the streets, and the assassin Garona murdered King Llane. Stormwind was burned to ashes, and its people fled across the sea to Lordaeron in thousands of boats, Lothar ruling them as regent for the boy Varian."
+      ],
+      "sources": ["warcraft.wiki.gg: Stormwind City (The Great Wars)"]
+    }
+  ]
+}

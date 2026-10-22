@@ -1,0 +1,97 @@
+{
+  "zone": 4272,
+  "name": "Halls of Lightning",
+  "entries": [
+    {
+      "id": 4272000,
+      "kind": "zone",
+      "title": "The Halls of Lightning",
+      "triggers": [{ "areaId": 4272 }],
+      "body": [
+        "The eastern wing of Ulduar, where the treacherous keeper Loken mass-produces iron vrykul for his dark master's plans and directs his forces from his throne, guarded by storm and fire elementals and his mightiest commanders."
+      ],
+      "sources": ["warcraft.wiki.gg: Halls of Lightning"]
+    },
+    {
+      "id": 4272001,
+      "kind": "place",
+      "title": "The Unyielding Garrison",
+      "triggers": [{ "kill": 28586 }],
+      "body": [
+        "The entrance of the Halls, held by the iron vrykul under their general."
+      ],
+      "sources": ["warcraft.wiki.gg: General Bjarngrim"]
+    },
+    {
+      "id": 4272002,
+      "kind": "place",
+      "title": "Volkhan's Anvil",
+      "triggers": [{ "kill": 28587 }],
+      "body": [
+        "A forge where a fire giant beats out golems on his anvil for Loken's army."
+      ],
+      "sources": ["warcraft.wiki.gg: Volkhan"]
+    },
+    {
+      "id": 4272003,
+      "kind": "place",
+      "title": "The Thundering Overlook",
+      "triggers": [{ "kill": 28546 }],
+      "body": [
+        "The approach to Loken's inner sanctum, guarded by a lightning revenant."
+      ],
+      "sources": ["warcraft.wiki.gg: Ionar"]
+    },
+    {
+      "id": 4272004,
+      "kind": "place",
+      "title": "The Terrestrial Watchtower",
+      "triggers": [{ "kill": 28923 }],
+      "body": [
+        "Loken's inner sanctum and throne, where he made his last stand."
+      ],
+      "sources": ["warcraft.wiki.gg: Ionar", "warcraft.wiki.gg: Halls of Lightning"]
+    },
+    {
+      "id": 4272030,
+      "kind": "person",
+      "title": "General Bjarngrim",
+      "triggers": [{ "kill": 28586 }],
+      "body": [
+        "An iron vrykul warrior who commands the garrison at the entrance to the Halls."
+      ],
+      "sources": ["warcraft.wiki.gg: General Bjarngrim"]
+    },
+    {
+      "id": 4272031,
+      "kind": "person",
+      "title": "Volkhan",
+      "triggers": [{ "kill": 28587 }],
+      "body": [
+        "A fire giant made by Loken. With his brother Ignis, he saw the peaks around Ulduar as land ripe for conquest; they took the Winterskorn vrykul by force and forged their weapons and armour for a war against the other titan-forged."
+      ],
+      "sources": ["warcraft.wiki.gg: Volkhan (The Winterskorn War)"]
+    },
+    {
+      "id": 4272032,
+      "kind": "person",
+      "title": "Ionar",
+      "triggers": [{ "kill": 28546 }],
+      "body": [
+        "A lightning revenant who guards the way to his master's sanctum."
+      ],
+      "sources": ["warcraft.wiki.gg: Ionar"]
+    },
+    {
+      "id": 4272033,
+      "kind": "person",
+      "title": "Loken",
+      "triggers": [{ "kill": 28923 }],
+      "body": [
+        "One of the keepers the titans set to watch over Azeroth. The Old God imprisoned beneath Ulduar corrupted him. His first killing, of his brother Thorim's wife Sif, was an accident, but every effort to hide it, and then to hide the hiding, spiralled further out of control. In the end most of the other keepers were dead or helpless, and Loken ruled Ulduar.",
+        "Desperate that the titans never learn what he had done, he cut Ulduar off from their watcher, Algalon. Only Loken's own death would call Algalon to Azeroth."
+      ],
+      "sources": ["warcraft.wiki.gg: Loken"]
+    }
+  ]
+}

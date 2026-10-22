@@ -1,0 +1,127 @@
+{
+  "zone": 2677,
+  "name": "Blackwing Lair",
+  "entries": [
+    {
+      "id": 2677000,
+      "kind": "zone",
+      "title": "Blackwing Lair",
+      "triggers": [{ "areaId": 2677 }],
+      "body": [
+        "Nefarian's sanctum at the top of Blackrock Spire. Deathwing's son has vowed to crush Ragnaros, and to that end he is rebuilding the black dragonflight, as his father tried and failed to do long ago. Here, it seems, he is succeeding.",
+        "His methods are a mystery, but it is believed he experiments with the blood of every dragonflight to breed unstoppable warriors: the chromatic dragonflight. His mad bid for power has alarmed the red dragonflight, the black flight's oldest enemy."
+      ],
+      "sources": ["warcraft.wiki.gg: Blackwing Lair (History)"]
+    },
+    {
+      "id": 2677001,
+      "kind": "place",
+      "title": "The Dragonmaw Garrison",
+      "triggers": [{ "areaId": 2677 }, { "kill": 12435 }],
+      "body": [
+        "The first hall of the lair, the egg chamber, crowded with precious black dragon eggs and guarded by orcs and dragonkin under the dragonspawn Razorgore."
+      ],
+      "sources": ["warcraft.wiki.gg: Razorgore the Untamed"]
+    },
+    {
+      "id": 2677002,
+      "kind": "place",
+      "title": "The Halls of Strife",
+      "triggers": [{ "kill": 13020 }, { "kill": 12017 }],
+      "body": [
+        "The halls beyond the eggs, where a captive red dragon is kept in torment, and the drakonid Broodlord Lashlayer blocks the way to Nefarian's inner sanctum."
+      ],
+      "sources": ["warcraft.wiki.gg: Vaelastrasz the Corrupt", "warcraft.wiki.gg: Broodlord Lashlayer"]
+    },
+    {
+      "id": 2677003,
+      "kind": "place",
+      "title": "The Crimson Laboratories",
+      "triggers": [{ "kill": 11983 }, { "kill": 14601 }, { "kill": 11981 }, { "kill": 14020 }],
+      "body": [
+        "Nefarian's laboratories, where he experiments with dragon bones, eggs and blood, guarded by three powerful black drakes and by his creation Chromaggus."
+      ],
+      "sources": ["warcraft.wiki.gg: Blackwing Lair (History)", "warcraft.wiki.gg: Ebonroc"]
+    },
+    {
+      "id": 2677004,
+      "kind": "place",
+      "title": "Nefarian's Lair",
+      "triggers": [{ "kill": 11583 }],
+      "body": [
+        "The inner sanctum at the very top of the mountain, where Lord Victor Nefarius sheds his mortal guise."
+      ],
+      "sources": ["warcraft.wiki.gg: Nefarian"]
+    },
+    {
+      "id": 2677030,
+      "kind": "person",
+      "title": "Razorgore the Untamed",
+      "triggers": [{ "kill": 12435 }],
+      "body": [
+        "A black dragonspawn charged by Nefarian with guarding the black dragon eggs, given command of a cohort of orcs for the task, who will stop at nothing to keep his charges from harm."
+      ],
+      "sources": ["warcraft.wiki.gg: Razorgore the Untamed"]
+    },
+    {
+      "id": 2677031,
+      "kind": "person",
+      "title": "Vaelastrasz the Corrupt",
+      "triggers": [{ "kill": 13020 }],
+      "body": [
+        "A red dragon who led his flight's fight against Nefarian, and for nearly a thousand years kept the red dragons' shard of the Scepter of the Shifting Sands. Nefarian captured him, corrupted him and bent him to his will. He serves unwillingly; it is said that with his last breath, he apologised to those who killed him."
+      ],
+      "sources": ["warcraft.wiki.gg: Vaelastrasz (introduction, War of the Shifting Sands)"]
+    },
+    {
+      "id": 2677032,
+      "kind": "person",
+      "title": "Broodlord Lashlayer",
+      "triggers": [{ "kill": 12017 }],
+      "body": [
+        "A black drakonid in Nefarian's service, who guards the Halls of Strife and the way to his master's sanctum."
+      ],
+      "sources": ["warcraft.wiki.gg: Broodlord Lashlayer"]
+    },
+    {
+      "id": 2677033,
+      "kind": "person",
+      "title": "Firemaw, Ebonroc and Flamegor",
+      "triggers": [{ "kill": 11983 }, { "kill": 14601 }, { "kill": 11981 }],
+      "body": [
+        "Three powerful black drakes who patrol the Crimson Laboratories and guard the way to their master."
+      ],
+      "sources": ["warcraft.wiki.gg: Firemaw", "warcraft.wiki.gg: Ebonroc", "warcraft.wiki.gg: Flamegor"]
+    },
+    {
+      "id": 2677034,
+      "kind": "person",
+      "title": "Chromaggus",
+      "triggers": [{ "kill": 14020 }],
+      "body": [
+        "A two-headed creation of Nefarian, a dragon-beast that looks almost like a hound, which guards the lair and shimmers in every colour of the flights it was bred from. Those its breath afflicts are changed into drakonid."
+      ],
+      "sources": ["warcraft.wiki.gg: Chromaggus"]
+    },
+    {
+      "id": 2677035,
+      "kind": "person",
+      "title": "Nefarian",
+      "triggers": [{ "kill": 11583 }],
+      "body": [
+        "Eldest son of Deathwing and twin brother of Onyxia, known among mortals as Lord Victor Nefarius of Blackrock. He holds the Blackrock clan and many ogre clans under his rule from the top of the Spire, and means to raise an army of chromatic dragons that will conquer Azeroth where his father failed."
+      ],
+      "sources": ["warcraft.wiki.gg: Nefarian (introduction)", "warcraft.wiki.gg: Blackwing Lair (History)"]
+    },
+    {
+      "id": 2677050,
+      "kind": "history",
+      "title": "The Head of Nefarian",
+      "triggers": [{ "kill": 11583 }],
+      "body": [
+        "Moira Thaurissan's spies made sure word of Nefarian and the Dark Horde reached Orgrimmar, and the Horde learned the truth about their orc brethren in the mountain. Its champions stormed the lair, cut through the twisted experiments and slew Nefarian in his sanctuary, and carried his head back to Orgrimmar."
+      ],
+      "sources": ["warcraft.wiki.gg: Blackwing Lair (World of Warcraft)"]
+    }
+  ]
+}

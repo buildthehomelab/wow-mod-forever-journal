@@ -1,0 +1,97 @@
+{
+  "zone": 3711,
+  "name": "Sholazar Basin",
+  "entries": [
+    {
+      "id": 3711000,
+      "kind": "zone",
+      "title": "Sholazar Basin",
+      "triggers": [{ "areaId": 3711 }],
+      "body": [
+        "After the bitter cold of the rest of Northrend, Sholazar is like stepping onto another plane: a tropical jungle, hot and beard-curlingly humid. When the titans shaped Azeroth, the keeper Freya made this basin a cradle of life, like Un'Goro Crater, a place where the power of the Well of Eternity had gathered. The keepers took an interest here in creatures great and small, and moved their most promising experiments to the basin.",
+        "Its warmth and its safety from the Scourge are the work of the pillars the titans left around it, which pour pure life magic into the basin, all for love of the life they made."
+      ],
+      "sources": ["warcraft.wiki.gg: Sholazar Basin (introduction, History, Geography)"]
+    },
+    {
+      "id": 3711001,
+      "kind": "place",
+      "title": "The Pillars",
+      "triggers": [{ "area": "The Glimmering Pillar" }, { "area": "The Mosslight Pillar" }, { "area": "The Skyreach Pillar" }, { "area": "The Suntouched Pillar" }],
+      "body": [
+        "A rough ring of tall, narrow buttes around the basin, each with a long device hovering above it, swirling with magic, sprouting crystals. They are what keep Sholazar what it is."
+      ],
+      "sources": ["warcraft.wiki.gg: Sholazar Basin (Geography)", "warcraft.wiki.gg: Glimmering Pillar"]
+    },
+    {
+      "id": 3711002,
+      "kind": "place",
+      "title": "The Lost Lands",
+      "triggers": [{ "area": "The Lifeblood Pillar" }, { "area": "The Avalanche" }, { "area": "The Lost Lands" }, { "area": "Mosswalker Village" }, { "area": "Death's Hand Encampment" }, { "area": "The Blight Line" }, { "kill": 28659 }],
+      "body": [
+        "The Cult of the Damned sabotaged the Lifeblood Pillar, whose heart was a glowing red crystal, and it fell. The snows of Icecrown collapsed into the basin, and the Scourge came down the avalanche. The east of Sholazar is now blighted and dying, its air fouled with yellow haze, its ground thick with undead."
+      ],
+      "sources": ["warcraft.wiki.gg: Lifeblood Pillar", "warcraft.wiki.gg: The Avalanche", "warcraft.wiki.gg: Lost Lands"]
+    },
+    {
+      "id": 3711003,
+      "kind": "place",
+      "title": "The Avatar of Freya",
+      "triggers": [{ "area": "Rainspeaker Rapids" }, { "talk": 27801 }],
+      "body": [
+        "A failsafe the keeper Freya left behind. Her avatar fights ceaselessly to hold back the spreading blight."
+      ],
+      "sources": ["warcraft.wiki.gg: Sholazar Basin (Wrath of the Lich King)", "warcraft.wiki.gg: Rainspeaker Rapids"]
+    },
+    {
+      "id": 3711004,
+      "kind": "place",
+      "title": "The Oracles",
+      "triggers": [{ "area": "Rainspeaker Canopy" }, { "area": "Mistwhisper Refuge" }, { "area": "Sparktouched Haven" }, { "talk": 28027 }],
+      "body": [
+        "Gorlocs, arctic cousins of the murlocs, whose tribes have banded together as the Oracles. They live in open-sided houses on stilts, thatched against the rain, and hang wind chimes tipped with crystal from the pillars."
+      ],
+      "sources": ["warcraft.wiki.gg: Sholazar Basin (introduction)", "warcraft.wiki.gg: Rainspeaker Canopy"]
+    },
+    {
+      "id": 3711005,
+      "kind": "place",
+      "title": "The Frenzyheart",
+      "triggers": [{ "area": "Frenzyheart Hill" }, { "area": "Kartak's Hold" }, { "area": "Spearborn Encampment" }, { "talk": 28082 }],
+      "body": [
+        "Wolvar driven from their lands by the Scourge, who came to the basin and built their low round huts on a hill they named for themselves. They hate the Oracles, and the two are always at war."
+      ],
+      "sources": ["warcraft.wiki.gg: Frenzyheart Hill", "warcraft.wiki.gg: Sholazar Basin (Notable characters)"]
+    },
+    {
+      "id": 3711006,
+      "kind": "place",
+      "title": "Nesingwary Base Camp",
+      "triggers": [{ "area": "Nesingwary Base Camp" }, { "area": "Swindlegrin's Dig" }, { "talk": 27986 }],
+      "body": [
+        "Where Hemet Nesingwary's ship ended up when it crashed into the basin. He and his hunters are after new game, and the greatest challenge of all, the Broodmother Slivina. The Venture Company is digging the gems out of a pillar nearby."
+      ],
+      "sources": ["warcraft.wiki.gg: Nesingwary Base Camp", "warcraft.wiki.gg: Swindlegrin's Dig"]
+    },
+    {
+      "id": 3711007,
+      "kind": "place",
+      "title": "The Makers' Overlook",
+      "triggers": [{ "area": "The Makers' Overlook" }, { "area": "The Makers' Perch" }],
+      "body": [
+        "Titan halls cut into the mountains high over the basin, where rune-inscribed gears the size of a keep turn slowly in a vast machine. No one knows what it does. From here, and from the lesser Makers' Perch, the titans watched over their creations."
+      ],
+      "sources": ["warcraft.wiki.gg: Makers' Overlook", "warcraft.wiki.gg: Makers' Perch"]
+    },
+    {
+      "id": 3711008,
+      "kind": "place",
+      "title": "The Waters of Sholazar",
+      "triggers": [{ "area": "Bittertide Lake" }, { "area": "River's Heart" }, { "area": "The Seabreach Flow" }, { "area": "Wildgrowth Mangal" }],
+      "body": [
+        "A river runs in from the northern sea and collects in brackish Bittertide Lake, where hydras live, then pours down the falls into River's Heart. The dense jungle of the Wildgrowth Mangal spreads across the middle of the basin, shot through with streams."
+      ],
+      "sources": ["warcraft.wiki.gg: Bittertide Lake", "warcraft.wiki.gg: Sholazar Basin (Geography)"]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "zone": 3557,
+  "name": "The Exodar",
+  "entries": [
+    {
+      "id": 3557000,
+      "kind": "zone",
+      "title": "The Exodar",
+      "triggers": [{ "areaId": 3557 }],
+      "body": [
+        "The capital of the draenei on Azuremyst Isle: the largest surviving piece of a dimensional ship, one of the satellites of the fortress Tempest Keep, which once could cross dimensions and warp time itself. Its districts were designed by the naaru, and pillars of lavender lightning carry threads of arcane power through its halls.",
+        "Prophet Velen and his people seized it from Kael'thas's forces in Outland to escape to Azeroth. Blood elves aboard sabotaged it, and it blazed across the skies of northern Kalimdor, shedding crystals, before it crashed here. The survivors made the smoking wreck their new home."
+      ],
+      "sources": ["warcraft.wiki.gg: Exodar (introduction, History, The Burning Crusade)"]
+    },
+    {
+      "id": 3557001,
+      "kind": "place",
+      "title": "The Seat of the Naaru",
+      "triggers": [{ "talk": 17538 }],
+      "body": [
+        "The central hall of the Exodar, shimmering with purple flux, where the naaru O'ros dwells on the lower levels. O'ros came to Outland with A'dal and M'uru, and when Kael'thas seized Tempest Keep, it used its magic to keep the elves out of this ship."
+      ],
+      "sources": ["warcraft.wiki.gg: Seat of the Naaru", "warcraft.wiki.gg: Exodar (History)"]
+    },
+    {
+      "id": 3557002,
+      "kind": "place",
+      "title": "The Vault of Lights",
+      "triggers": [{ "talk": 17468 }],
+      "body": [
+        "The wing designed by the naaru K'yal and the favourite haunt of Prophet Velen. Most of it is a holographic museum of the Burning Legion's servants: tour groups walk from image to image as the emitters recite each demon's name, kind and purpose. The draenei mean to know their enemy when it comes again."
+      ],
+      "sources": ["warcraft.wiki.gg: Vault of Lights", "warcraft.wiki.gg: Exodar (History)"]
+    },
+    {
+      "id": 3557003,
+      "kind": "place",
+      "title": "The Crystal Hall",
+      "triggers": [{ "areaId": 3557 }],
+      "body": [
+        "The wing designed by the naaru E'ira, home of Farseer Nobundo, first shaman of the draenei, and his trainers, around a pool called the Light Blessed Waters, with a small crystal mine worked by Broken draenei. Those given the sight of the sapta can see the hall is full of elementals."
+      ],
+      "sources": ["warcraft.wiki.gg: Crystal Hall", "warcraft.wiki.gg: Exodar (History)"]
+    },
+    {
+      "id": 3557004,
+      "kind": "place",
+      "title": "The Trader's Tier",
+      "triggers": [{ "areaId": 3557 }],
+      "body": [
+        "The wing designed by the naaru M'iri to draw talented tradesfolk, where most of the city's merchants and craftsmen work beneath a glass mural of its maker. Above it are the Hunter's Sanctum and the Ring of Arms."
+      ],
+      "sources": ["warcraft.wiki.gg: Trader's Tier"]
+    },
+    {
+      "id": 3557030,
+      "kind": "person",
+      "title": "Prophet Velen",
+      "triggers": [{ "talk": 17468 }],
+      "body": [
+        "Leader of the draenei since they fled Argus, thirteen thousand years before the orcs came to Azeroth. Gifted with the Sight and guided by the Light, he refused Sargeras's offer of dark power when his friends Kil'jaeden and Archimonde accepted it, and has led his people in flight and in war against the Legion ever since. Kil'jaeden, once his closest friend, is his greatest enemy.",
+        "Sensing great courage in the Alliance, he pledged his people to it. At the Sunwell, he used the heart of the naaru M'uru to make the blood elves' corrupted fount whole again, burning with both holy and arcane light."
+      ],
+      "sources": ["warcraft.wiki.gg: Prophet Velen (introduction)"]
+    },
+    {
+      "id": 3557050,
+      "kind": "history",
+      "title": "The Crash",
+      "triggers": [{ "areaId": 3557 }],
+      "body": [
+        "A'dal urged Velen to go to Azeroth in search of new allies against the Legion. With Farseer Nobundo at his side, the Prophet led the raid that took the Exodar from Tempest Keep and escaped with O'ros. When it came down, its crystals rained across the islands, a \"crystal storm\" to the furbolgs; its menagerie scattered, loosing ravagers into the woods, and its leaking power core poisoned Bloodmyst. Even the first red elekk ever seen were born after the crash, perhaps changed by its radiation."
+      ],
+      "sources": ["warcraft.wiki.gg: Exodar (History, The Burning Crusade)"]
+    }
+  ]
+}

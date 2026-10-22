@@ -8,11 +8,10 @@
       "title": "Elwynn Forest",
       "triggers": [{ "areaId": 12 }],
       "body": [
-        "Elwynn is the green heart of the kingdom of Stormwind: oak woods, quiet lakes and farmland folded between the mountains, with the white walls of Stormwind City rising at its north-western edge. Farmsteads, vineyards and logging camps are strung along the roads that meet at Goldshire.",
-        "It has not always been peaceful. When the orcish Horde first came through the Dark Portal, it burned its way north through these woods and razed Stormwind itself. The forest grew back and the city was rebuilt, but the land never quite settled. Today kobolds dig in its mines, Riverpaw gnolls prowl its southern edge, murlocs creep up its streams, and a gang of masked thieves called the Defias works the roads.",
-        "With so much of the army away on distant fronts, the forest's defence falls to a handful of marshals, their deputies, and whoever is willing to pick up a sword and help."
+        "A great woodland of stately hardwoods, rushing rivers and lakes, lying below the foothills of Blackrock Mountain. It is the heartland of the kingdom of Stormwind. The capital stands proudly in the north-western hills, and the forest's farms, lumber camps and mines have fed and supplied it for twelve centuries.",
+        "Its people are hardy and hard-working: loggers, farmers, fishers and miners, and breeders of the Evendale horses prized across the kingdom. Much of the forest burned during the First War, when the orcs swept through on their way to the capital, but the trees and glades have grown back, and today only a few broken orcish catapults, rotting in the grass, remember the occupation."
       ],
-      "sources": ["quest 783 offer text (forces marshaled abroad, lawless groups within)", "quest 54 offer text (army busy elsewhere)", "quests 7, 11, 35, 18 descriptions", "pre-Cataclysm lore: First War, sack of Stormwind"]
+      "sources": ["warcraft.wiki.gg: Elwynn Forest (History, People and culture, Geography)"]
     },
     {
       "id": 12001,
@@ -20,10 +19,10 @@
       "title": "Northshire Valley",
       "triggers": [{ "area": "Northshire Valley" }, { "accept": 783 }],
       "body": [
-        "A sheltered valley in the hills north of Goldshire, closed off from the rest of Elwynn by a gate on the southern road. The abbey stands at its centre, surrounded by vineyards, a stable and the farmers' wagons.",
-        "Northshire has long been a place where new defenders of the kingdom learn their trade. Lately it has needed them: kobolds have crept down from the woods to the north, the wolves of the valley are falling sick, and thieves in red bandanas have been seen across the river to the east."
+        "A pristine valley in the hills east of Stormwind, ringed by impassable mountains. Its only entrance, a pass to the south, is closed by thick stone walls and a guarded gate. A river runs through it and down into Crystal Lake.",
+        "The valley has not always been so peaceful. During the Second War, while the Horde held the ruins of the south, the abbey grounds served as the headquarters of Cho'gall's Twilight's Hammer clan. Today the Stormwind Guard keeps a garrison here under Marshal McBride, and the valley's vineyards were once the pride of the kingdom."
       ],
-      "sources": ["quest 783, 7, 33, 18 descriptions", "quest 54 description (Goldshire lies along the southern road, past the border gates)"]
+      "sources": ["warcraft.wiki.gg: Northshire Valley (History, Geography)", "warcraft.wiki.gg: Northshire Vineyards"]
     },
     {
       "id": 12002,
@@ -31,21 +30,10 @@
       "title": "Northshire Abbey",
       "triggers": [{ "area": "Northshire Abbey" }, { "talk": 197 }, { "talk": 952 }],
       "body": [
-        "The abbey is a house of the Holy Light, a place of prayer, healing and study whose monks also tend the valley's vines and keep its stores of food and wine. Brother Neals, who manages those stores, likes to do his tasting up in the bell tower.",
-        "Its halls double as a training ground. Priests and paladins learn their first lessons here, and Marshal McBride runs the valley's defence from inside its doors, sending each new volunteer out to deal with whatever trouble is nearest."
+        "The seat of the Brotherhood of Northshire. Centuries ago, clerics of the young Church of the Holy Light came south from Lordaeron to spread their faith, founded the Holy Order of Northshire Clerics, and built this abbey. Since then the clerics have comforted Stormwind's people in hard times and fought beside its armies. It was here that the young Guardian Medivh was cared for during the years he lay in a coma.",
+        "In the First War the clerics followed their abbot into battle, and the sacred Tome of Divinity, once stolen by ogres and recovered from the Deadmines, was kept here. The abbey was destroyed in the orcish onslaught, but refugees carried its holy books out of the rubble to Lordaeron. After the Second War, Archbishop Alonsus Faol helped rebuild it."
       ],
-      "sources": ["quest 3905 description and offer text (Brother Neals, bell tower, food and drink)", "quest 783 (McBride inside the abbey)", "creature 925 Brother Sammuel, Paladin Trainer"]
-    },
-    {
-      "id": 12003,
-      "kind": "place",
-      "title": "Echo Ridge Mine",
-      "triggers": [{ "area": "Echo Ridge Mine" }, { "accept": 15 }],
-      "body": [
-        "A mine in the ridge at the valley's northern end. The kobolds who took it are not mere scavengers: they came in numbers, set up camp outside, and work the tunnels for themselves, carrying candles on their heads against the dark.",
-        "Marshal McBride's scouts first took them for a nuisance. The deeper anyone goes into Echo Ridge, the clearer it becomes that the kobolds mean to stay."
-      ],
-      "sources": ["quest 15, 21 descriptions and offer texts", "kobold candles: quest 60"]
+      "sources": ["warcraft.wiki.gg: Northshire Abbey (History, First War)", "warcraft.wiki.gg: Elwynn Forest (Great Wars and aftermath)"]
     },
     {
       "id": 12004,
@@ -53,10 +41,10 @@
       "title": "Northshire Vineyards",
       "triggers": [{ "area": "Northshire Vineyards" }, { "talk": 9296 }],
       "body": [
-        "Rows of vines in the south-east of the valley, tended by the farmer Milly Osworth. The grapes go to the abbey, where they become the brothers' wine.",
-        "The Defias moved into the vineyards in the middle of a harvest. Milly had already gathered most of her grapes into buckets, and had to leave them standing among the vines when she fled."
+        "The vineyards just east of the abbey, sheltered by the valley's walls. Their wine was the pride of Stormwind's cellars.",
+        "Lately the vineyards have been overrun by bandits of the Defias Brotherhood, who drove off the farmers and occupied the fields almost within sight of the abbey's guards."
       ],
-      "sources": ["quest 3904, 3905 descriptions and offer texts"]
+      "sources": ["warcraft.wiki.gg: Northshire Vineyards", "warcraft.wiki.gg: Elwynn Forest (Geography)"]
     },
     {
       "id": 12005,
@@ -64,10 +52,10 @@
       "title": "Goldshire",
       "triggers": [{ "area": "Goldshire" }, { "talk": 240 }],
       "body": [
-        "The largest town in Elwynn sits where the road from Stormwind meets the road east, a cluster of timber houses around the Lion's Pride Inn, a smithy and a town square. Travellers, farmers and would-be heroes all pass through, and most of them stop for a drink.",
-        "Goldshire is also where the forest's defence is run. Marshal Dughan keeps watch from the square, taking in reports of gnolls in the west, kobolds in the mines and murlocs in the east, and trying to make too few soldiers cover all of them."
+        "The largest town in Elwynn after the capital itself, at the crossroads of the roads to Stormwind, Northshire, Westfall and Redridge. Goldshire grew up soon after the kingdom's founding, as Stormwind's population spread into the forest. In the Gnoll War, seventy-five years before the Dark Portal opened, Redridge gnolls attacked it and were driven off by the Stormwind Army.",
+        "In the First War, Goldshire and Moonbrook were the last two towns to fall to the Horde, taken so that Warchief Blackhand could cut King Llane off from his people before the sack of the capital. After the Second War, the Alliance rebuilt it under Turalyon's supervision. Marshal Dughan of the Stormwind Guard keeps order there now."
       ],
-      "sources": ["quests 40, 39, 62, 76, 239 (Dughan in Goldshire, reports from every side)", "quest 2158 (the Lion's Pride, road south from Stormwind)"]
+      "sources": ["warcraft.wiki.gg: Goldshire (History)", "warcraft.wiki.gg: Elwynn Forest (Founding of Stormwind, Great Wars)"]
     },
     {
       "id": 12006,
@@ -75,10 +63,10 @@
       "title": "The Lion's Pride Inn",
       "triggers": [{ "talk": 295 }, { "accept": 2158 }],
       "body": [
-        "Goldshire's inn and the forest's best-known meeting place. Innkeeper Farley keeps a fire burning for the tired and the cold, and his friends in the city send newcomers his way for a bed and a meal.",
-        "Upstairs and at the back, all sorts of people take rooms. The apothecary William Pestle has been staying here while he gathers ingredients in the countryside."
+        "Goldshire's inn, one of the most respectable ale houses in Azeroth, whose motto is \"Rest and relaxation for the tired and cold.\" The Farley family has run it since the days of King Llane Wrynn, and they take care to run an honest house.",
+        "It is perhaps the busiest inn outside any city. Travellers, soldiers and adventurers bound for every corner of the kingdom pass through its doors, and the green outside rarely goes a day without a duel."
       ],
-      "sources": ["quest 2158 description and offer text", "quest 107 (William Pestle staying at the Lion's Pride)"]
+      "sources": ["warcraft.wiki.gg: Lion's Pride Inn"]
     },
     {
       "id": 12007,
@@ -86,10 +74,10 @@
       "title": "Fargodeep Mine",
       "triggers": [{ "area": "Fargodeep Mine" }, { "accept": 62 }, { "kill": 327 }],
       "body": [
-        "A mine almost due south of Goldshire, between the Stonefield and Maclure homesteads. Kobolds overran it, as they did Northshire's, and some of them carry gold dust and wax candles out of its tunnels.",
-        "Among them is a big kobold with a gold tooth who has a habit of picking up shiny things that aren't his, including, the farmers say, at least one widow's necklace."
+        "An old Stormwind gold mine south of Goldshire, with a lower gallery known simply as the Lower Mines. Its gold helped pay for the kingdom's wars.",
+        "It was abandoned, and a clan of kobolds has moved in. Kobolds are territorial and greedy, and they defend their candles and tunnels fiercely against anyone who comes looking for the gold."
       ],
-      "sources": ["quest 62 description and offer text", "quests 47, 60 (gold dust, candles)", "quest 87 (Goldtooth and Bernice's necklace)"]
+      "sources": ["warcraft.wiki.gg: Fargodeep Mine"]
     },
     {
       "id": 12008,
@@ -97,21 +85,21 @@
       "title": "Jasperlode Mine",
       "triggers": [{ "area": "Jasperlode Mine" }, { "accept": 76 }],
       "body": [
-        "A mine in the foothills north of the Tower of Azora, east along the road from Goldshire. It was the farther of the forest's two troubled mines, and for a while the marshals hoped it had been spared.",
-        "It had not. Kobolds hold Jasperlode too, and with both mines lost, the gold that should flow from Elwynn's hills to the crown has found other hands to fall into."
+        "Like Fargodeep, Jasperlode was one of Elwynn's key mining sites, supplying Stormwind with the raw materials it needed for its wars. Kobolds have since overrun it, and with the army stretched thin, the kingdom has no soldiers to spare to drive them out.",
+        "The kobolds are not the mine's only tenants. A colony of mine spiders has taken its deepest tunnels and treats the kobolds as a ready meal, and their queen, Mother Fang, does not welcome visitors."
       ],
-      "sources": ["quest 76 description and offer text", "quest 123, 147 (gold from the Elwynn mines going to the Collector)"]
+      "sources": ["warcraft.wiki.gg: Jasperlode Mine"]
     },
     {
       "id": 12009,
       "kind": "place",
       "title": "The Stonefield and Maclure Farms",
-      "triggers": [{ "area": "The Stonefield Farm" }, { "area": "The Maclure Vineyards" }, { "talk": 246 }, { "talk": 247 }, { "talk": 244 }],
+      "triggers": [{ "area": "The Stonefield Farm" }, { "area": "The Maclure Vineyards" }, { "talk": 246 }],
       "body": [
-        "Two neighbouring farms south of Goldshire, the Stonefields' fields to the west and the Maclures' vineyards to the east, and between them a feud older than anyone can explain. The families don't speak, don't trade and don't trust each other's children.",
-        "The quarrels are small and endless. Auntie Bernice Stonefield is sure young Billy Maclure took her necklace. Ma Stonefield blames a prize pig from the Brackwell farm for her vegetables. And the youngest of each family are in love with each other, which helps nobody."
+        "Two farmsteads in southern Elwynn, the Stonefield farm and the Maclure vineyards, whose families have been bitter rivals for as long as anyone remembers. The Maclures' vineyards and the Stonefields' fields lie close enough for every slight to be noticed.",
+        "Despite the feud, a son of one family and a daughter of the other have fallen in love, and some hope their love may yet bring the two families together."
       ],
-      "sources": ["quests 85, 86, 87, 88, 106 descriptions", "quest 62 (mine between the Stonefield and Maclure homesteads)"]
+      "sources": ["warcraft.wiki.gg: Stonefield Farm", "warcraft.wiki.gg: Maclure Vineyards"]
     },
     {
       "id": 12010,
@@ -119,10 +107,10 @@
       "title": "Brackwell Pumpkin Patch",
       "triggers": [{ "area": "Brackwell Pumpkin Patch" }, { "kill": 330 }, { "kill": 473 }],
       "body": [
-        "The Brackwell farm lies east of the Maclure vineyards. Its most famous resident was a sow called Princess, a prize-winner grown enormous on her neighbours' vegetables.",
-        "The farm has fallen into worse company since. The Defias camp among its pumpkins, and a schedule taken from one of them named it as the hideout of a man known only as the Collector, who received the gold stolen from Elwynn's mines."
+        "A farmstead in south-eastern Elwynn, once the home of the Brackwell family, best known in the county for Princess, their huge prize-winning sow, who grew fat on the Stonefields' vegetables.",
+        "Bandits of the Defias Brotherhood have since taken the farm, and no one knows what became of the Brackwells."
       ],
-      "sources": ["quest 88 description (Princess, the Brackwells)", "quest 123 description (the Collector's schedule)", "quest 147"]
+      "sources": ["warcraft.wiki.gg: Brackwell Pumpkin Patch"]
     },
     {
       "id": 12011,
@@ -130,10 +118,10 @@
       "title": "Tower of Azora",
       "triggers": [{ "area": "Tower of Azora" }, { "talk": 313 }],
       "body": [
-        "A slender mage tower beside the eastern road, a landmark for travellers heading toward Redridge and for anyone looking for the path north to Jasperlode Mine. The mage Theocritus keeps it now.",
-        "Wizards rarely explain themselves to farmers, and the people of eastern Elwynn are content to leave the tower and its keeper alone, so long as nothing strange comes out of it."
+        "A small mage tower on the road between Goldshire and Eastvale, home of the Archmage Theocritus and his household of gnomish servants. Things that stray too near it tend to be changed by its magical aura; the servants have to fight off living buckets and mutant butterflies.",
+        "Azora's masters have long feuded with the Tower of Ilgalar in Redridge, and each side spies on the other by magic. At the top of the tower, the Eye of Azora lets its keeper watch Ilgalar from afar."
       ],
-      "sources": ["quest 76 (tower on the east road, mine to its north)", "creature 313 Theocritus <Mage of Tower Azora>"]
+      "sources": ["warcraft.wiki.gg: Tower of Azora", "warcraft.wiki.gg: Theocritus"]
     },
     {
       "id": 12012,
@@ -141,21 +129,21 @@
       "title": "Eastvale Logging Camp",
       "triggers": [{ "area": "Eastvale Logging Camp" }, { "talk": 278 }, { "talk": 10616 }],
       "body": [
-        "Elwynn's oaks have built much of Stormwind, and much of the lumber comes from this camp in the eastern woods, beyond the bridge Guard Thomas watches. Supervisor Raelen runs the work; Sara Timberlain makes cloth and leather armour here for those who defend the forest.",
-        "Life at the camp is not easy. Wolves and bears press in from the forest, bolder every season, and workers have fled from bundles of wood they had already cut. The camp has deadlines to meet all the same."
+        "A string of lumber mills and homes in eastern Elwynn near the Redridge border, the centre of the forest's timber trade. Orders pour in from buyers across the kingdom, and the lumberjacks work to hard deadlines.",
+        "The noble house of Lord Joran Tremaind made its fortune in Eastvale lumber, and says it owes much to the people of Westfall. Marshal Haggard, once leader of the Stormwind Guard, retired to a manor here a few years ago."
       ],
-      "sources": ["quest 52 (Eastvale suffers attacks from wolves and bears)", "quest 5545", "quest 59 (Sara Timberlain beyond Guard Thomas' post)", "quest 83"]
+      "sources": ["warcraft.wiki.gg: Eastvale Logging Camp"]
     },
     {
       "id": 12013,
       "kind": "place",
-      "title": "Stone Cairn Lake",
-      "triggers": [{ "area": "Stone Cairn Lake" }, { "accept": 45 }],
+      "title": "Stone Cairn Lake and Heroes' Vigil",
+      "triggers": [{ "area": "Stone Cairn Lake" }, { "area": "Heroes' Vigil" }, { "accept": 45 }],
       "body": [
-        "A lake in north-eastern Elwynn, north of the bridge on the east road. Murlocs have built a village of huts on its eastern shore, one of several they have raised along the streams of the forest.",
-        "Two of Stormwind's footmen, Rolf Hartford and Malakai Stone, were sent up the river to find out why. Neither came back. Their medallions were found on the shore and in the village, and with them the proof that the murlocs were more than a rumour."
+        "A ring-shaped lake in north-eastern Elwynn around a large island. On the island stands Heroes' Vigil, a circle of stones around the Stone of Remembrance, a monument to those who died when the orcs sacked Goldshire and the lands around it in the First War. The lake takes its name from the cairn.",
+        "It was once a quiet place of pilgrimage. Now rogue wizards have settled on the island, and murlocs have raised their huts along the southern shore."
       ],
-      "sources": ["quests 37, 45, 71, 46 descriptions and offer texts", "quest 11 (gnolls near Stone Cairn Lake)"]
+      "sources": ["warcraft.wiki.gg: Stone Cairn Lake", "warcraft.wiki.gg: Heroes' Vigil"]
     },
     {
       "id": 12014,
@@ -163,10 +151,10 @@
       "title": "Westbrook Garrison",
       "triggers": [{ "area": "Westbrook Garrison" }, { "talk": 963 }],
       "body": [
-        "A small garrison on Elwynn's western border, just past the brook on the road to Westfall. Deputy Rainer commands it, with fewer soldiers than he needs.",
-        "The garrison watches the edge of the forest where it meets the Westfall farmlands, and the edge is restless: gnolls of the Riverpaw pack have crossed into the woods to the south, and thieves move freely along the road."
+        "A barracks of the Stormwind Guard at Forest's Edge, guarding Elwynn's western border with Westfall.",
+        "Its soldiers have had a hard time of it. With the bulk of the army abroad and the court troubled by Lady Katrana Prestor's influence, they barely have the men to keep the roads safe from the gnolls and thieves coming out of Westfall."
       ],
-      "sources": ["quest 239 description and offer text", "quest 11 (gnolls south of the guard tower)"]
+      "sources": ["warcraft.wiki.gg: Westbrook Garrison"]
     },
     {
       "id": 12015,
@@ -174,10 +162,30 @@
       "title": "Ridgepoint Tower",
       "triggers": [{ "area": "Ridgepoint Tower" }],
       "body": [
-        "A watchtower at the forest's far eastern edge, where the road climbs out of Elwynn toward the red hills of Redridge and the town of Lakeshire.",
-        "It marks the end of the forest's gentler country. Beyond it, the kingdom's soldiers face orcs of the Blackrock clan and gnolls far more dangerous than any that trouble Goldshire."
+        "One of the Stormwind Guard's scout towers in Elwynn, standing over the south-eastern road. It watches for gnolls and orcs coming from Redridge, undead from Duskwood, and the Defias from their nearby camps."
       ],
-      "sources": ["pre-Cataclysm geography of the Elwynn-Redridge border"]
+      "sources": ["warcraft.wiki.gg: Ridgepoint Tower"]
+    },
+    {
+      "id": 12016,
+      "kind": "place",
+      "title": "Mirror Lake",
+      "triggers": [{ "area": "Mirror Lake" }, { "area": "Mirror Lake Orchard" }],
+      "body": [
+        "A small lake with a beautiful waterfall in western Elwynn, below the walls of the capital, beside an orchard and a cottage. The sewers of the Stormwind Stockade empty into it.",
+        "It would be an ideal spot for swimming and fishing, if Defias bandits had not taken over the orchard. The mages of the city's Wizard's Sanctum keep an eye on its waters too: the magical upheavals of recent years have altered the flow of magic around Stormwind, and they fear what it may do to those who drink here."
+      ],
+      "sources": ["warcraft.wiki.gg: Mirror Lake", "warcraft.wiki.gg: Mirror Lake Orchard"]
+    },
+    {
+      "id": 12017,
+      "kind": "place",
+      "title": "Jerod's Landing",
+      "triggers": [{ "area": "Jerod's Landing" }],
+      "body": [
+        "A boat landing on the Elwynn bank of the Nazferiti river, on the border with Duskwood. The Defias Brotherhood has taken it over, and its dockmaster and his men smuggle stolen goods from Redridge downriver to the Brotherhood's tower in Westfall."
+      ],
+      "sources": ["warcraft.wiki.gg: Jerod's Landing"]
     },
     {
       "id": 12030,
@@ -185,10 +193,9 @@
       "title": "Marshal McBride",
       "triggers": [{ "talk": 197 }],
       "body": [
-        "The marshal of Northshire, who commands the valley's defence from inside the abbey. He is brisk with volunteers, and he has seen a great many of them.",
-        "McBride knows how thin the kingdom's forces are stretched, and he treats the valley's kobolds, wolves and thieves as one more front in a long campaign. Those who prove themselves to him are sent south to Goldshire with papers naming them acting deputies of the Stormwind Marshals."
+        "Marshal Douglas McBride of the Stormwind Guard commands the garrison of Northshire Abbey and the defence of the valley. The abbey serves as a recruiting and training ground for anyone brave enough to help keep the kingdom's peace, and McBride is the first officer many of them meet."
       ],
-      "sources": ["quests 783, 7, 15, 21, 54 descriptions and offer texts"]
+      "sources": ["warcraft.wiki.gg: Northshire Valley", "warcraft.wiki.gg: Douglas McBride"]
     },
     {
       "id": 12031,
@@ -196,10 +203,10 @@
       "title": "Marshal Dughan",
       "triggers": [{ "talk": 240 }],
       "body": [
-        "The marshal of Goldshire, responsible for most of Elwynn. Reports reach him from every direction: gnolls in the west, kobolds in two mines, murlocs in the east, thieves on the roads and a giant gnoll in the south-western woods.",
-        "Dughan is a careful commander with too few soldiers, and he does not move them on rumour. It took the deaths of two footmen to convince him the murlocs were a real threat. He has found more use for the adventurers who pass through town, and pays them from the army's bounties."
+        "The officer of the Stormwind Army in charge of Goldshire and the lands around it. He worries about the kobolds to the north and the gnolls and thieves to the west, and wants to know how far they have spread.",
+        "Dughan is a practical man who keeps the peace with few soldiers, and has the habit of seeing the town's young troublemakers as future inmates of the Stockade."
       ],
-      "sources": ["quests 35, 39, 40 offer texts (Dughan not convinced until the military report)", "quests 62, 76, 147, 176, 239"]
+      "sources": ["warcraft.wiki.gg: Marshal Dughan"]
     },
     {
       "id": 12032,
@@ -207,88 +214,54 @@
       "title": "Hogger",
       "triggers": [{ "kill": 448 }, { "accept": 176 }],
       "body": [
-        "A gnoll of enormous size who roams the woods of south-western Elwynn, near the Westfall border. Every attempt to capture him has failed, and the Stormwind Army has put a generous bounty on his head.",
-        "Hogger runs with the Riverpaw gnolls who have spread out of Westfall into the forest, and he is the closest thing they have to a leader there. To the soldiers of Goldshire he is a constant headache; to young adventurers he is the first real test of their courage."
+        "The chieftain of the Riverpaw gnolls, a huge gnoll who has overpowered every attempt to capture him. In the years after the Third War, his pack became an ominous threat to the kingdom, raiding farms and villages throughout Elwynn.",
+        "The Riverpaws are not acting alone. The Defias Brotherhood supplies them with weapons, tactics and magic. The Stormwind Army has placed a generous bounty on Hogger's head, and wanted posters for him hang on every guard post on the western road."
       ],
-      "sources": ["quest 176 description and offer text", "quest 11 (Riverpaw gnolls on Elwynn's borders)"]
+      "sources": ["warcraft.wiki.gg: Hogger (Biography)", "warcraft.wiki.gg: Westbrook Garrison"]
     },
     {
-      "id": 12033,
+      "id": 12037,
       "kind": "person",
-      "title": "Tommy Joe and Maybell",
-      "triggers": [{ "talk": 251 }, { "talk": 252 }, { "accept": 106 }],
+      "title": "Archmage Theocritus",
+      "triggers": [{ "talk": 313 }],
       "body": [
-        "Tommy Joe Stonefield and Maybell Maclure are young, in love, and on opposite sides of a family feud. Maybell passes letters to Tommy Joe, who waits by the river west of his family's farm, while their elders glare at each other across the fields.",
-        "Gramma Stonefield, who remembers being young, took their side, and William Pestle at the Lion's Pride brewed an invisibility liquor so Maybell could slip away unseen. Whether the families ever learn of it is another matter."
+        "An eccentric archmage who once belonged to the Kirin Tor of Dalaran, and left to live independently in the Tower of Azora. He keeps a coterie of attendants, from legions of gnomish servants to his own personal clothier.",
+        "Theocritus takes little interest in the daily affairs of the kingdom, but considers it his duty to oppose the fallen mage Morganth of Redridge, both as a personal enemy and as a threat to Stormwind. He has spent months learning to listen through the pendants Morganth's gnolls wear."
       ],
-      "sources": ["quests 106, 111, 107, 112, 114 descriptions and offer texts"]
-    },
-    {
-      "id": 12034,
-      "kind": "person",
-      "title": "William Pestle",
-      "triggers": [{ "talk": 253 }],
-      "body": [
-        "An apothecary who runs Pestle's Apothecary in Stormwind's Trade District with his brother Morgan. William spends much of his time in Goldshire, buying what the countryside can offer: wax from kobold candles, kelp from the murlocs of Crystal Lake.",
-        "He is a kindly man with a soft spot for the young lovers of the Stonefield and Maclure farms, and he would rather solve a problem with the right potion than with a sword."
-      ],
-      "sources": ["quests 60, 61, 107, 112, 114 descriptions and offer texts"]
-    },
-    {
-      "id": 12035,
-      "kind": "person",
-      "title": "Remy \"Two Times\"",
-      "triggers": [{ "talk": 241 }],
-      "body": [
-        "A merchant of Goldshire known for saying everything twice. Remy buys gold dust from anyone willing to take it off the kobolds, at the best price in town, the best price in town.",
-        "Remy was among the first to warn Marshal Dughan about murlocs moving up the eastern streams. He also mentions, now and then, associates whose tokens he hands out with his payments. Nobody in Goldshire asks who they are."
-      ],
-      "sources": ["quests 40, 47 descriptions and offer texts"]
-    },
-    {
-      "id": 12036,
-      "kind": "person",
-      "title": "Morgan the Collector",
-      "triggers": [{ "kill": 473 }, { "complete": 147 }],
-      "body": [
-        "A Defias thief who hid among the pumpkins of the Brackwell farm and received gold taken from Elwynn's mines on a fixed schedule, which is how the marshals learned of him.",
-        "On his finger he wore a ring of the old Stonemasons' Guild of Stormwind. Why a common thief should carry an artisan's guild ring, and why the Defias were collecting gold from the kingdom's mines, were questions Marshal Dughan could not answer."
-      ],
-      "sources": ["quests 123, 147 descriptions and offer texts"]
+      "sources": ["warcraft.wiki.gg: Theocritus (History)"]
     },
     {
       "id": 12050,
       "kind": "history",
-      "title": "The Stonemasons' Debt",
-      "triggers": [{ "complete": 147 }, { "accept": 18 }],
+      "title": "The Founding of Stormwind",
+      "triggers": [{ "areaId": 12 }, { "area": "Goldshire" }],
       "body": [
-        "After the Second War, Stormwind City had to be raised again from its ruins. The work fell to the Stonemasons' Guild, led by a master builder named Edwin VanCleef, who rebuilt the capital stone by stone.",
-        "When the walls were finished, the city's House of Nobles refused to pay what the masons were owed. The masons rioted, and in the trouble that followed the queen was killed. The guild was driven out of the city.",
-        "Many of the masons did not scatter. Under VanCleef they became a brotherhood of thieves who call themselves the Defias, and they have spread through Elwynn and Westfall, robbing the kingdom that robbed them. The red bandanas worn by the bandits of Northshire are the sign of that old grudge."
+        "About twelve hundred years before the Dark Portal opened, descendants of the Arathi bloodline, led by Faldir, left the empire of Arathor in the north and travelled south past the mountains of Khaz Modan. After many long seasons they settled in a fertile valley, in the land they named Azeroth, and founded the kingdom of Stormwind.",
+        "The kingdom quickly became a power in its own right. Its farmsteads prospered, its people multiplied, and towns like Goldshire grew up in the forest around the capital. Clerics came from Lordaeron and built Northshire Abbey, and the realm stood largely untroubled until the orcs came through the Dark Portal."
       ],
-      "sources": ["quest 147 offer text (Stonemasons' Guild ring on a Defias thief)", "quest 18 (Defias Brotherhood in Northshire)", "pre-Cataclysm lore: Stonemasons' Guild, House of Nobles, VanCleef, death of Queen Tiffin"]
+      "sources": ["warcraft.wiki.gg: Elwynn Forest (Founding of Stormwind)", "warcraft.wiki.gg: Goldshire", "warcraft.wiki.gg: Northshire Abbey"]
     },
     {
       "id": 12051,
       "kind": "history",
-      "title": "Murlocs in the Streams",
-      "triggers": [{ "complete": 39 }, { "complete": 71 }, { "accept": 35 }],
+      "title": "The First War in Elwynn",
+      "triggers": [{ "area": "Heroes' Vigil" }, { "area": "Stone Cairn Lake" }, { "complete": 54 }],
       "body": [
-        "In recent months murlocs have been moving up the streams of eastern Elwynn, from the rivers toward Crystal Lake and Stone Cairn Lake. They have built villages, driven off the fish and attacked anyone who comes near.",
-        "Nobody knows why they came. The guards who have fought them say they are aggressive and cleverer than they look. For a long time Goldshire treated the reports as merchants' gossip; it was only after two footmen died at Stone Cairn Lake that the Stormwind Army put a bounty on their fins."
+        "When the orcish Horde came, Brightwood, Westfall and Redridge fell first. Thousands of orcs marched through Elwynn and surrounded the capital, cutting it off from everything but the sea. When the Bleeding Hollow and Twilight's Hammer clans assaulted the walls, Anduin Lothar led the Knights of Stormwind through the forest and fell on their rear, and the orcs fled.",
+        "A year later they returned. Goldshire and Moonbrook fell, Stormwind Keep was sacked, and King Llane was dead. Lothar, now regent, led the survivors north to Lordaeron aboard thousands of boats, and the Stormreaver clan lorded over the ruins. The Stone of Remembrance at Heroes' Vigil honours the dead of those years."
       ],
-      "sources": ["quests 35, 39, 40, 46, 71 descriptions and offer texts", "quest 112 (murlocs near Crystal Lake)"]
+      "sources": ["warcraft.wiki.gg: Elwynn Forest (Great Wars and aftermath)", "warcraft.wiki.gg: Heroes' Vigil"]
     },
     {
       "id": 12052,
       "kind": "history",
-      "title": "An Army Abroad",
-      "triggers": [{ "complete": 783 }, { "complete": 54 }],
+      "title": "The Stonemasons' Debt",
+      "triggers": [{ "complete": 147 }, { "accept": 18 }, { "area": "Northshire Vineyards" }],
       "body": [
-        "Stormwind has fought war after war for a generation, and much of its army still serves far from home. What soldiers remain are spread thinly across the kingdom's many borders.",
-        "Into that gap have come thieves, gnolls and worse, and the marshals of Elwynn have come to rely on volunteers: farmers' sons and daughters, travellers, adventurers of every race of the Alliance. They are given papers, a few coins from the army's bounties, and a long list of troubles to deal with."
+        "After the Second War, rebuilding Stormwind became the kingdom's first task, and Turalyon oversaw the return of its people to Elwynn. The Stonemasons' Guild under Edwin VanCleef spent years raising the capital again from its ruins.",
+        "When the time came to pay them, the House of Nobles could not: it had run up a huge debt expanding the army through Elwynn and into Stranglethorn. When VanCleef demanded restitution, the nobles ordered the guild disbanded. Riots followed, in which Queen Tiffin Wrynn was killed, and the masons who fled the city became the Defias Brotherhood."
       ],
-      "sources": ["quest 783 offer text (forces marshaled abroad)", "quest 54 offer text (Acting Deputy Status; army busy for the nobles)"]
+      "sources": ["warcraft.wiki.gg: Elwynn Forest (Great Wars and aftermath)"]
     }
   ]
 }

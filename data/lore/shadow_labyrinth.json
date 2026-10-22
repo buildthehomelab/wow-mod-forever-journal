@@ -1,0 +1,76 @@
+{
+  "zone": 3789,
+  "name": "Shadow Labyrinth",
+  "entries": [
+    {
+      "id": 3789000,
+      "kind": "zone",
+      "title": "The Shadow Labyrinth",
+      "triggers": [{ "areaId": 3789 }],
+      "body": [
+        "Long ago, it is said, a shadowy cult invaded Auchindoun. In its depths the cult released an immensely powerful, malevolent being from arcane captivity, and the city was blasted apart. The Shadow Council still holds these halls, with its fel orcs and demons, plotting the domination of Outland. The thing it summoned is held captive in the deepest chamber, and threatens to overwhelm its jailers."
+      ],
+      "sources": ["warcraft.wiki.gg: Shadow Labyrinth (Background)", "warcraft.wiki.gg: Auchindoun (Official description)"]
+    },
+    {
+      "id": 3789001,
+      "kind": "place",
+      "title": "The Cabal's Halls",
+      "triggers": [{ "kill": 18731 }, { "kill": 18667 }],
+      "body": [
+        "The outer labyrinth, where Cabal cultists feed prisoners who have outlived their usefulness to a demon ambassador, and an ogre stirs the Council's followers to fury."
+      ],
+      "sources": ["warcraft.wiki.gg: Ambassador Hellmaw", "warcraft.wiki.gg: Blackheart the Inciter"]
+    },
+    {
+      "id": 3789002,
+      "kind": "place",
+      "title": "The Screaming Hall",
+      "triggers": [{ "kill": 18732 }, { "kill": 18708 }],
+      "body": [
+        "The heart of the labyrinth, where the grandmaster channels the void, and below, in the deepest chamber, the essence of sound is held in bonds."
+      ],
+      "sources": ["warcraft.wiki.gg: Grandmaster Vorpil", "warcraft.wiki.gg: Murmur"]
+    },
+    {
+      "id": 3789030,
+      "kind": "person",
+      "title": "Ambassador Hellmaw",
+      "triggers": [{ "kill": 18731 }],
+      "body": [
+        "A demon of the Legion kept in the Shadow Labyrinth, fed on prisoners the Cabal has no further use for."
+      ],
+      "sources": ["warcraft.wiki.gg: Ambassador Hellmaw"]
+    },
+    {
+      "id": 3789031,
+      "kind": "person",
+      "title": "Blackheart the Inciter",
+      "triggers": [{ "kill": 18667 }],
+      "body": [
+        "One of the few two-headed ogres in the Shadow Council. Gul'dan sent him with Vorpil to investigate Auchindoun near the end of the war on the draenei. When Ner'zhul, Teron Gorefiend and Kilrogg Deadeye fled the Alliance here, Blackheart and Vorpil took them in. When Danath broke in to rescue Kurdran Wildhammer, they fought him among the ghosts of the draenei dead, then fled back into the labyrinth, where they have stayed ever since."
+      ],
+      "sources": ["warcraft.wiki.gg: Blackheart the Inciter (History)"]
+    },
+    {
+      "id": 3789032,
+      "kind": "person",
+      "title": "Grandmaster Vorpil",
+      "triggers": [{ "kill": 18732 }],
+      "body": [
+        "An orc warlock of the Shadow Council, sent by Gul'dan with Blackheart to investigate Auchindoun. He survived the explosion that destroyed most of it, and has lingered in the labyrinth for many years. When he learned of Gul'dan's betrayal, he pledged himself to Ner'zhul."
+      ],
+      "sources": ["warcraft.wiki.gg: Grandmaster Vorpil (History)", "warcraft.wiki.gg: Blackheart the Inciter (History)"]
+    },
+    {
+      "id": 3789033,
+      "kind": "person",
+      "title": "Murmur",
+      "triggers": [{ "kill": 18708 }],
+      "body": [
+        "A cosmic being, a warp-beast, the essence of sound: an otherworldly elemental from a distant corner of the universe. According to the Codex of Blood, its birth shattered all reality around it. It is mindless and lives only for chaos, and its barest whisper can destroy worlds. Its coming blew Auchindoun apart."
+      ],
+      "sources": ["warcraft.wiki.gg: Murmur (Background)", "warcraft.wiki.gg: Sethekk Halls (History)"]
+    }
+  ]
+}

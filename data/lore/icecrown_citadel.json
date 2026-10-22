@@ -1,0 +1,178 @@
+{
+  "zone": 4812,
+  "name": "Icecrown Citadel",
+  "entries": [
+    {
+      "id": 4812000,
+      "kind": "zone",
+      "title": "Icecrown Citadel",
+      "triggers": [{ "areaId": 4812 }],
+      "body": [
+        "The greatest fortress of the Scourge and the Lich King's last bastion: layer upon layer of cursed saronite wrapped around the Frozen Throne that once held Ner'zhul's spirit, a fortress as big as a city, its halls crawling with the most vile and loyal of the undead. The Scourge and the dreadlords built it as the Lich King's power spread across Northrend. Here Arthas defeated Illidan, shattered Ner'zhul's prison, and became one with the Lich King.",
+        "The Argent Crusade and the Knights of the Ebon Blade have joined as the Ashen Verdict, under Tirion Fordring and Darion Mograine, for the final assault."
+      ],
+      "sources": ["warcraft.wiki.gg: Icecrown Citadel (introduction, Creation)"]
+    },
+    {
+      "id": 4812001,
+      "kind": "place",
+      "title": "The Lower Spire",
+      "triggers": [{ "kill": 36612 }, { "kill": 36855 }, { "kill": 37540 }, { "kill": 37215 }, { "kill": 37813 }],
+      "body": [
+        "The citadel's lowest levels: the bone-strewn Oratory of the Damned, the ramparts where the Skybreaker and Orgrim's Hammer fight above the walls, and the Deathbringer's Rise."
+      ],
+      "sources": ["warcraft.wiki.gg: Icecrown Citadel"]
+    },
+    {
+      "id": 4812002,
+      "kind": "place",
+      "title": "The Plagueworks",
+      "triggers": [{ "area": "Putricide's Laboratory of Alchemical Horrors and Fun" }, { "kill": 36626 }, { "kill": 36627 }, { "kill": 36678 }],
+      "body": [
+        "Professor Putricide's domain, his laboratory of alchemical horrors and fun, where he brews the plagues of the Scourge and his creations grow fat on them."
+      ],
+      "sources": ["warcraft.wiki.gg: Icecrown Citadel"]
+    },
+    {
+      "id": 4812003,
+      "kind": "place",
+      "title": "The Crimson Hall",
+      "triggers": [{ "area": "The Crimson Hall" }, { "area": "The Sanctum of Blood" }, { "kill": 37970 }, { "kill": 37972 }, { "kill": 37973 }, { "kill": 37955 }],
+      "body": [
+        "The halls of the San'layn, the Darkfallen, where the blood princes keep their council and their queen holds court in the Sanctum of Blood."
+      ],
+      "sources": ["warcraft.wiki.gg: Icecrown Citadel"]
+    },
+    {
+      "id": 4812004,
+      "kind": "place",
+      "title": "The Frostwing Halls",
+      "triggers": [{ "area": "The Frost Queen's Lair" }, { "kill": 36853 }],
+      "body": [
+        "The wing of the frost wyrms, where a green dragon is held captive, and at its end Sindragosa's lair."
+      ],
+      "sources": ["warcraft.wiki.gg: Icecrown Citadel"]
+    },
+    {
+      "id": 4812005,
+      "kind": "place",
+      "title": "The Frozen Throne",
+      "triggers": [{ "area": "The Frozen Throne" }, { "area": "Frostmourne" }, { "kill": 36597 }],
+      "body": [
+        "The top of the citadel, where the Lich King sits on the throne made of Ner'zhul's prison, and waits."
+      ],
+      "sources": ["warcraft.wiki.gg: Icecrown Citadel"]
+    },
+    {
+      "id": 4812030,
+      "kind": "person",
+      "title": "Lord Marrowgar",
+      "triggers": [{ "kill": 36612 }],
+      "body": [
+        "Pieced together by the Lich King from the bones of a thousand vanquished adventurers, a guardian of the Frozen Throne within the Spire who wields the power of the throne itself, and the axe Bryntroll, the Bone Arbiter."
+      ],
+      "sources": ["warcraft.wiki.gg: Lord Marrowgar"]
+    },
+    {
+      "id": 4812031,
+      "kind": "person",
+      "title": "Lady Deathwhisper",
+      "triggers": [{ "kill": 36855 }],
+      "body": [
+        "A lich, Supreme Overseer of the Cult of the Damned, who preaches the Lich King's will to his fanatics in the Oratory of the Damned."
+      ],
+      "sources": ["warcraft.wiki.gg: Lady Deathwhisper"]
+    },
+    {
+      "id": 4812032,
+      "kind": "person",
+      "title": "The Gunship Battle",
+      "triggers": [{ "kill": 37540 }, { "kill": 37215 }],
+      "body": [
+        "The Skybreaker, under Muradin Bronzebeard, and Orgrim's Hammer, under High Overlord Saurfang, both came to carry their forces up the citadel's walls, and met each other in the sky over the ramparts."
+      ],
+      "sources": ["warcraft.wiki.gg: Skybreaker (Icecrown Citadel)"]
+    },
+    {
+      "id": 4812033,
+      "kind": "person",
+      "title": "Deathbringer Saurfang",
+      "triggers": [{ "kill": 37813 }],
+      "body": [
+        "The Lich King's champion: Dranosh Saurfang, son of the High Overlord, who fell at the Wrathgate. Arthas took his body and raised him as a death knight to command his armies. When he fell again, his father came for his body, to carry it home."
+      ],
+      "sources": ["warcraft.wiki.gg: Deathbringer Saurfang"]
+    },
+    {
+      "id": 4812034,
+      "kind": "person",
+      "title": "Festergut and Rotface",
+      "triggers": [{ "kill": 36626 }, { "kill": 36627 }],
+      "body": [
+        "Two of Professor Putricide's abominations, swollen with his plagues: Festergut on gas, Rotface on ooze."
+      ],
+      "sources": ["warcraft.wiki.gg: Festergut", "warcraft.wiki.gg: Rotface"]
+    },
+    {
+      "id": 4812035,
+      "kind": "person",
+      "title": "Professor Putricide",
+      "triggers": [{ "kill": 36678 }],
+      "body": [
+        "The Scourge's master of plagues, whose laboratory crowns the Plagueworks, and whose creations are Festergut and Rotface."
+      ],
+      "sources": ["warcraft.wiki.gg: Professor Putricide"]
+    },
+    {
+      "id": 4812036,
+      "kind": "person",
+      "title": "The Blood Prince Council",
+      "triggers": [{ "kill": 37970 }, { "kill": 37972 }, { "kill": 37973 }],
+      "body": [
+        "Princes Valanar, Keleseth and Taldaram of the San'layn, raised again by the Lich King to take revenge on their slayers and to guard their queen."
+      ],
+      "sources": ["warcraft.wiki.gg: Prince Taldaram"]
+    },
+    {
+      "id": 4812037,
+      "kind": "person",
+      "title": "Blood-Queen Lana'thel",
+      "triggers": [{ "kill": 37955 }],
+      "body": [
+        "A battle-hardened blood elf warrior who followed Prince Kael'thas through every danger, from Lordaeron to Outland to Icecrown, sent there to destroy the Lich King, eager for revenge on the Scourge that ravaged her home. Instead she was raised as one of the Darkfallen, and she rules the San'layn, the Lich King's vampiric elves."
+      ],
+      "sources": ["warcraft.wiki.gg: Prince Taldaram", "warcraft.wiki.gg: Blood-Queen Lana'thel"]
+    },
+    {
+      "id": 4812038,
+      "kind": "person",
+      "title": "Valithria Dreamwalker",
+      "triggers": [{ "kill": 36853 }],
+      "body": [
+        "A green dragon captured by the Scourge and used as a test subject in the Frostwing Halls. The Lich King has ordered her destroyed, leaving only bones and sinew to raise. Healed, she knows something of Sindragosa."
+      ],
+      "sources": ["warcraft.wiki.gg: Valithria Dreamwalker"]
+    },
+    {
+      "id": 4812039,
+      "kind": "person",
+      "title": "Sindragosa",
+      "triggers": [{ "kill": 36853 }],
+      "body": [
+        "Once the beloved prime consort of Malygos, one of the first blue dragons, who died in the War of the Ancients trying to reach the Dragonblight. The Lich King raised her as queen of the Frostbrood, his undead frost wyrms."
+      ],
+      "sources": ["warcraft.wiki.gg: Sindragosa's Fall"]
+    },
+    {
+      "id": 4812040,
+      "kind": "person",
+      "title": "The Lich King",
+      "triggers": [{ "kill": 36597 }],
+      "body": [
+        "Arthas Menethil, prince of Lordaeron, who took up Frostmourne to save his people and lost his soul to it. He murdered his father, destroyed Quel'Thalas, and came north to merge with Ner'zhul on the Frozen Throne.",
+        "He fell to Tirion Fordring, with Ashbringer in his hand, and Frostmourne broke. But the Scourge without a master would overrun the world. Bolvar Fordragon, who did not die at the Wrathgate but lay burned by the red dragons' fire, took up the Helm of Domination, and became the new Lich King, the jailer of the damned."
+      ],
+      "sources": ["warcraft.wiki.gg: Icecrown (Wrath of the Lich King)", "warcraft.wiki.gg: Icecrown Citadel"]
+    }
+  ]
+}

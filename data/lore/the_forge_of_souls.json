@@ -1,0 +1,56 @@
+{
+  "zone": 4809,
+  "name": "The Forge of Souls",
+  "entries": [
+    {
+      "id": 4809000,
+      "kind": "zone",
+      "title": "The Forge of Souls",
+      "triggers": [{ "areaId": 4809 }],
+      "body": [
+        "The first of the Frozen Halls, the citadel's wings that covert agents have managed, against all odds, to scout while the Lich King's attention is on the Ashen Verdict's assault. Jaina Proudmoore leads the Alliance in, Sylvanas Windrunner the Horde. Here the Lich King's soul grinders, twisted engines, tear the souls of the dead into his service."
+      ],
+      "sources": ["warcraft.wiki.gg: Forge of Souls (Background)", "warcraft.wiki.gg: Halls of Reflection (Lore)"]
+    },
+    {
+      "id": 4809001,
+      "kind": "place",
+      "title": "The Soul Forges",
+      "triggers": [{ "kill": 36497 }],
+      "body": [
+        "The forges themselves, where captured souls are kept, until their keeper falls and the forges go dark."
+      ],
+      "sources": ["warcraft.wiki.gg: Bronjahm"]
+    },
+    {
+      "id": 4809002,
+      "kind": "place",
+      "title": "The Devourer's Hall",
+      "triggers": [{ "kill": 36502 }],
+      "body": [
+        "The heart of the Forge, where the soul grinders' master waits, and beyond which the way leads down to the Pit of Saron."
+      ],
+      "sources": ["warcraft.wiki.gg: Devourer of Souls", "warcraft.wiki.gg: Pit of Saron (Background)"]
+    },
+    {
+      "id": 4809030,
+      "kind": "person",
+      "title": "Bronjahm, Godfather of Souls",
+      "triggers": [{ "kill": 36497 }],
+      "body": [
+        "The keeper of the souls in the Forge. With him dead, the forges power down."
+      ],
+      "sources": ["warcraft.wiki.gg: Bronjahm"]
+    },
+    {
+      "id": 4809031,
+      "kind": "person",
+      "title": "The Devourer of Souls",
+      "triggers": [{ "kill": 36502 }],
+      "body": [
+        "Chief operator of the Lich King's soul grinders, a thing of many faces dedicated to making sure no soul escapes his master's machines."
+      ],
+      "sources": ["warcraft.wiki.gg: Devourer of Souls"]
+    }
+  ]
+}

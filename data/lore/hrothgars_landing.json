@@ -1,0 +1,36 @@
+{
+  "zone": 4742,
+  "name": "Hrothgar's Landing",
+  "entries": [
+    {
+      "id": 4742000,
+      "kind": "zone",
+      "title": "Hrothgar's Landing",
+      "triggers": [{ "areaId": 4742 }, { "area": "Hrothgar's Landing" }],
+      "body": [
+        "A small island off Icecrown's northern coast. There was a tuskarr village here until Drottinn Hrothgar and his kvaldir took it, killing or driving off every one of its people, and named it for himself. Now it is a mist-shrouded staging point from which the sea vrykul strike at the ships of the Silver Covenant and the Sunreavers."
+      ],
+      "sources": ["warcraft.wiki.gg: Hrothgar's Landing (History)"]
+    },
+    {
+      "id": 4742001,
+      "kind": "place",
+      "title": "The Sea Reaver's Run",
+      "triggers": [{ "area": "The Sea Reaver's Run" }],
+      "body": [
+        "The strait between the island and Icecrown, where the kvaldir's deepcallers summon krakens against any ship that tries to pass."
+      ],
+      "sources": ["warcraft.wiki.gg: Hrothgar's Landing"]
+    },
+    {
+      "id": 4742030,
+      "kind": "person",
+      "title": "Drottinn Hrothgar",
+      "triggers": [{ "kill": 34980 }],
+      "body": [
+        "The Sea Reaver, the kvaldir lord who conquered the island and gave it his name."
+      ],
+      "sources": ["warcraft.wiki.gg: Hrothgar's Landing (History)"]
+    }
+  ]
+}

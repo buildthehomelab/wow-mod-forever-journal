@@ -1,0 +1,77 @@
+{
+  "zone": 1196,
+  "name": "Utgarde Pinnacle",
+  "entries": [
+    {
+      "id": 1196000,
+      "kind": "zone",
+      "title": "Utgarde Pinnacle",
+      "triggers": [{ "areaId": 1196 }],
+      "body": [
+        "The top of Utgarde Keep, where the mightiest of the vrykul live. Before the Sundering, King Ymiron ruled from here, and ordered his people into the long sleep to escape the curse of flesh. Queen Angerboda tried to wake him beneath Gjalerbron so that they could serve the new god of death together. The Lich King came for Ymiron himself, and brought him here."
+      ],
+      "sources": ["warcraft.wiki.gg: Utgarde Pinnacle", "warcraft.wiki.gg: Utgarde Keep (History)"]
+    },
+    {
+      "id": 1196001,
+      "kind": "place",
+      "title": "The Lower Pinnacle",
+      "triggers": [{ "kill": 26668 }, { "kill": 26687 }],
+      "body": [
+        "Ritual halls and the Trophy Hall of the keep, where the vrykul keep their greatest kills frozen on display."
+      ],
+      "sources": ["warcraft.wiki.gg: Utgarde Pinnacle (Geography)", "warcraft.wiki.gg: Gortok Palehoof"]
+    },
+    {
+      "id": 1196002,
+      "kind": "place",
+      "title": "The Upper Pinnacle",
+      "triggers": [{ "kill": 26693 }, { "kill": 26861 }],
+      "body": [
+        "A long open gauntlet patrolled by harpooners and a proto-drake, and at its end the king's own hall."
+      ],
+      "sources": ["warcraft.wiki.gg: Skadi the Ruthless", "warcraft.wiki.gg: King Ymiron"]
+    },
+    {
+      "id": 1196030,
+      "kind": "person",
+      "title": "Svala Sorrowgrave",
+      "triggers": [{ "kill": 26668 }],
+      "body": [
+        "A vrykul made into a val'kyr by the Lich King. It was she who learned that the Horde and Alliance meant to strike at Utgarde, and gave the vrykul time to prepare. An image of the Lich King himself appeared to thank her for it."
+      ],
+      "sources": ["warcraft.wiki.gg: Svala Sorrowgrave"]
+    },
+    {
+      "id": 1196031,
+      "kind": "person",
+      "title": "Gortok Palehoof",
+      "triggers": [{ "kill": 26687 }],
+      "body": [
+        "A magnataur, frozen in the Trophy Hall among the vrykul's other prizes."
+      ],
+      "sources": ["warcraft.wiki.gg: Gortok Palehoof"]
+    },
+    {
+      "id": 1196032,
+      "kind": "person",
+      "title": "Skadi the Ruthless",
+      "triggers": [{ "kill": 26693 }],
+      "body": [
+        "A frost vrykul who guards the long outer hall of the pinnacle with his faithful proto-drake, Grauf."
+      ],
+      "sources": ["warcraft.wiki.gg: Skadi the Ruthless"]
+    },
+    {
+      "id": 1196033,
+      "kind": "person",
+      "title": "King Ymiron",
+      "triggers": [{ "kill": 26861 }],
+      "body": [
+        "King of the vrykul and lord of the Dragonflayer, who led them before the Sundering, when they were still beings of titan-forged iron. When the curse of flesh began, he ordered his people into hibernation to escape it.",
+        "He proved himself to the Lich King, and was raised as one of the undead to rule the vrykul in the Frozen Throne's name."
+      ],
+      "sources": ["warcraft.wiki.gg: King Ymiron", "warcraft.wiki.gg: Utgarde Keep (History)"]
+    }
+  ]
+}

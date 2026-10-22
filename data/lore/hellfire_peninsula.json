@@ -1,0 +1,180 @@
+{
+  "zone": 3483,
+  "name": "Hellfire Peninsula",
+  "entries": [
+    {
+      "id": 3483000,
+      "kind": "zone",
+      "title": "Hellfire Peninsula",
+      "triggers": [{ "areaId": 3483 }],
+      "body": [
+        "Once Tanaan Jungle, a wide forested wilderness of Draenor surrounded by sea, where the orcs built the citadel of their first warchief, Blackhand. When they abandoned the spirits for warlock magic, the land withered under its corruption: the forests gave way to red dust and hard-packed mud, and even the daytime sky turned the colour of blood. They named it Hellfire.",
+        "It is a grim place. The bones of countless draenei crack underfoot, slaughtered by the blood-crazed Horde before it marched on Azeroth. Here stands the other end of the Dark Portal, and here, more than anywhere, the wars of Draenor were fought."
+      ],
+      "sources": ["warcraft.wiki.gg: Hellfire Peninsula (introduction, Before the First War)"]
+    },
+    {
+      "id": 3483001,
+      "kind": "place",
+      "title": "The Stair of Destiny",
+      "triggers": [{ "area": "The Stair of Destiny" }],
+      "body": [
+        "The massive foundation of the Dark Portal at the edge of the world, on what was a convergence of ley lines before Draenor shattered. The Portal on this side is far larger and more richly carved than on Azeroth's. The Horde and Alliance both hold it, and the Legion attacks it constantly."
+      ],
+      "sources": ["warcraft.wiki.gg: Stair of Destiny"]
+    },
+    {
+      "id": 3483002,
+      "kind": "place",
+      "title": "The Path of Glory",
+      "triggers": [{ "area": "The Path of Glory" }, { "area": "The Path of Anguish" }],
+      "body": [
+        "The road from the Stair of Destiny to Hellfire Citadel, paved with the trampled bones of the draenei the Horde murdered in its demon-maddened genocide, lined with the wrecked cannons and blade throwers of the Second War. The orcs named it; to the canyon beside it, full of infernals and dreadlords, they gave a different name: the Path of Anguish."
+      ],
+      "sources": ["warcraft.wiki.gg: Path of Glory", "warcraft.wiki.gg: Path of Anguish"]
+    },
+    {
+      "id": 3483003,
+      "kind": "place",
+      "title": "Honor Hold",
+      "triggers": [{ "area": "Honor Hold" }, { "talk": 16819 }],
+      "body": [
+        "The fortress of the Sons of Lothar, the veterans of the Alliance expedition that came through the Portal after the Second War and never went home. Besieged for months during that war, it still stands, though most of its soldiers have grown old. Now Stormwind, Ironforge and Nethergarde send it supplies and soldiers.",
+        "Danath Trollbane commands it, a hero of Stromgarde who, with Khadgar and Kurdran, spent eighteen years slowing Magtheridon's conquest of this broken world. Only now has he learned what became of his kingdom, and he has sworn to restore it once his duty here is done."
+      ],
+      "sources": ["warcraft.wiki.gg: Honor Hold", "warcraft.wiki.gg: Danath Trollbane", "warcraft.wiki.gg: Hellfire Peninsula (Aftermath of the Second War)"]
+    },
+    {
+      "id": 3483004,
+      "kind": "place",
+      "title": "Thrallmar",
+      "triggers": [{ "area": "Thrallmar" }],
+      "body": [
+        "The new Horde's foothold in Outland, founded by Nazgrel, commander of Thrall's guard, to win resources and keep watch on this demon-infested land. Legion forge camps overlook it with fel cannons trained on its walls."
+      ],
+      "sources": ["warcraft.wiki.gg: Thrallmar", "warcraft.wiki.gg: Forge Camp: Rage"]
+    },
+    {
+      "id": 3483005,
+      "kind": "place",
+      "title": "Hellfire Citadel",
+      "triggers": [{ "area": "Hellfire Citadel" }, { "area": "Southern Rampart" }, { "area": "Hellfire Basin" }],
+      "body": [
+        "A nearly impenetrable fortress, the headquarters of the Old Horde in the First and Second Wars, where the slaughter of the draenei and the march on Azeroth were planned. The Alliance expedition stormed it searching for Ner'zhul. Now Warchief Kargath Bladefist and his Fel Horde hold it, and in its depths the pit lord Magtheridon lies chained, his blood drained to make new fel orcs."
+      ],
+      "sources": ["warcraft.wiki.gg: Hellfire Citadel", "warcraft.wiki.gg: Hellfire Peninsula (After the Third War)"]
+    },
+    {
+      "id": 3483006,
+      "kind": "place",
+      "title": "The Throne of Kil'jaeden",
+      "triggers": [{ "area": "Throne of Kil'jaeden" }, { "kill": 18728 }],
+      "body": [
+        "A great mountain north of Thrallmar, named by Gul'dan. Here, before the Portal opened, he called the clans to drink the blood of Mannoroth and bound them to the Legion. It lies on a great flaw in the fabric of the universe, once linked to Kil'jaeden's lair on Argus. Doom Lord Kazzak has taken it as his seat."
+      ],
+      "sources": ["warcraft.wiki.gg: Throne of Kil'jaeden (History)"]
+    },
+    {
+      "id": 3483007,
+      "kind": "place",
+      "title": "The Temple of Telhamat",
+      "triggers": [{ "area": "Temple of Telhamat" }, { "talk": 16796 }],
+      "body": [
+        "A draenei stronghold and holy site in the north-west, home of the Omenai under Amaan the Wise, who stayed on Outland when Velen left, to keep their holy places. When the Watchers came hunting Illidan, Maiev Shadowsong asked here about Akama."
+      ],
+      "sources": ["warcraft.wiki.gg: Temple of Telhamat"]
+    },
+    {
+      "id": 3483008,
+      "kind": "place",
+      "title": "Falcon Watch",
+      "triggers": [{ "area": "Falcon Watch" }, { "talk": 16789 }],
+      "body": [
+        "A blood elf settlement in the west of the peninsula, allied with the Horde and led by Ranger Captain Venn'ren. Near it, the Ruins of Sha'naar, an old draenei temple, are being dug up by Illidan's demons and their Broken slaves, searching for a crystal of power."
+      ],
+      "sources": ["warcraft.wiki.gg: Falcon Watch", "warcraft.wiki.gg: Ruins of Sha'naar"]
+    },
+    {
+      "id": 3483009,
+      "kind": "place",
+      "title": "The Mag'har",
+      "triggers": [{ "area": "Mag'har Post" }, { "area": "Mag'har Grounds" }, { "talk": 16845 }],
+      "body": [
+        "In the northern hills live orcs the demon blood never touched: the Mag'har, \"the uncorrupted\". How they have hidden from the Legion for so long is a wonder. Their post is full of wounded warriors, and Kilrogg Deadeye's son Jorin leads what is left of the Bleeding Hollow among them."
+      ],
+      "sources": ["warcraft.wiki.gg: Mag'har Post", "warcraft.wiki.gg: Hellfire Peninsula (The Burning Crusade)"]
+    },
+    {
+      "id": 3483010,
+      "kind": "place",
+      "title": "The Legion Front",
+      "triggers": [{ "area": "The Legion Front" }, { "area": "The Abyssal Shelf" }, { "area": "Invasion Point: Annihilator" }],
+      "body": [
+        "The Burning Legion has dug in across the peninsula: forge camps, fel reavers stalking the plains, mo'arg engineers on the Abyssal Shelf. The Wildhammer of Shatter Point and the wind riders of the Horde fly bombing runs over them."
+      ],
+      "sources": ["warcraft.wiki.gg: Abyssal Shelf", "warcraft.wiki.gg: Invasion Point: Annihilator", "warcraft.wiki.gg: Shatter Point"]
+    },
+    {
+      "id": 3483011,
+      "kind": "place",
+      "title": "The Expedition Armory",
+      "triggers": [{ "area": "Expedition Armory" }],
+      "body": [
+        "A ruined base of the Sons of Lothar, destroyed by orcs and death knights at the end of the expedition. The death knights cursed its defenders, who haunt it still as vengeful ghosts locked in endless battle with the Fel Horde. The Sons of Lothar will not speak of it."
+      ],
+      "sources": ["warcraft.wiki.gg: Expedition Armory"]
+    },
+    {
+      "id": 3483012,
+      "kind": "place",
+      "title": "The Pools of Aggonar",
+      "triggers": [{ "area": "Pools of Aggonar" }, { "kill": 19191 }],
+      "body": [
+        "Once sacred springs of the draenei, fouled by the blood of a dying pit lord, Aggonar, whose bones still lie in them. Above them, the eredar Arazzius the Cruel, a servant of Kil'jaeden, sits on his throne among his demons."
+      ],
+      "sources": ["warcraft.wiki.gg: Pools of Aggonar"]
+    },
+    {
+      "id": 3483013,
+      "kind": "place",
+      "title": "Zeth'Gor",
+      "triggers": [{ "area": "Zeth'Gor" }, { "kill": 16964 }],
+      "body": [
+        "A ruined orc base in the south-eastern mountains, overrun by fel orcs of the Bleeding Hollow. When the expedition came, it attacked the Horde's shipyards here."
+      ],
+      "sources": ["warcraft.wiki.gg: Zeth'Gor", "warcraft.wiki.gg: Hellfire Peninsula (Aftermath of the Second War)"]
+    },
+    {
+      "id": 3483014,
+      "kind": "place",
+      "title": "Fallen Sky Ridge",
+      "triggers": [{ "area": "Fallen Sky Ridge" }, { "area": "Cenarion Post" }],
+      "body": [
+        "A ridge in the north-west, prowled by great colossi, with an enormous red crystal that seemed to fall from the sky. It did not fall: it was planted, to corrupt and call the colossi. The Cenarion Expedition camps nearby, at its first post in Outland."
+      ],
+      "sources": ["warcraft.wiki.gg: Fallen Sky Ridge", "warcraft.wiki.gg: Cenarion Post"]
+    },
+    {
+      "id": 3483050,
+      "kind": "history",
+      "title": "The Alliance Expedition",
+      "triggers": [{ "areaId": 3483 }, { "area": "Honor Hold" }],
+      "body": [
+        "After the Second War, Kilrogg Deadeye fled back through the Portal, and Ner'zhul resolved to open portals to new worlds for the orcs to conquer. The Alliance sent the Sons of Lothar through after him. They held Honor Hold through months of siege, stormed Hellfire Citadel, and nearly wiped out the clans.",
+        "It did not stop Ner'zhul. His portals tore Draenor apart, and the sea became the Twisting Nether. The expedition destroyed the Portal from this side to save Azeroth, knowing they could never go home."
+      ],
+      "sources": ["warcraft.wiki.gg: Hellfire Peninsula (Aftermath of the Second War)"]
+    },
+    {
+      "id": 3483051,
+      "kind": "history",
+      "title": "Magtheridon and the Fel Horde",
+      "triggers": [{ "areaId": 3483 }, { "area": "Hellfire Citadel" }],
+      "body": [
+        "After Draenor shattered, the pit lord Magtheridon ruled the broken world, bringing demons through Ner'zhul's portals. Illidan came, was caught by Maiev, and was freed by Kael'thas and Lady Vashj; then he closed the portals, beat Magtheridon, and took his fel orcs for his own. Kargath Bladefist went over to him.",
+        "Magtheridon lies chained in Hellfire Citadel, his blood drawn off to make more fel orcs, as the dead Mannoroth's once was."
+      ],
+      "sources": ["warcraft.wiki.gg: Hellfire Peninsula (After the Third War)"]
+    }
+  ]
+}

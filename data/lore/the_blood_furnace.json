@@ -1,0 +1,66 @@
+{
+  "zone": 3713,
+  "name": "The Blood Furnace",
+  "entries": [
+    {
+      "id": 3713000,
+      "kind": "zone",
+      "title": "The Blood Furnace",
+      "triggers": [{ "areaId": 3713 }],
+      "body": [
+        "The answer to the mystery of the fel orcs' growing numbers lies here, in the Blood Furnace beneath Hellfire Citadel. Magtheridon's tainted blood is drained and pooled, and the fel orcs are made with it, a new army of barbaric warriors stronger and more savage than the Horde that drank Mannoroth's blood long ago."
+      ],
+      "sources": ["warcraft.wiki.gg: The Blood Furnace (Background)", "warcraft.wiki.gg: Magtheridon's Lair (Description)"]
+    },
+    {
+      "id": 3713001,
+      "kind": "place",
+      "title": "The Cells",
+      "triggers": [{ "kill": 17381 }, { "kill": 17380 }],
+      "body": [
+        "Holding cells where fel orcs are kept and tested before they are loosed, watched over by the Maker, whose experiments make them, and by Broggok, a floating eye of corruption behind its gate."
+      ],
+      "sources": ["warcraft.wiki.gg: The Maker", "warcraft.wiki.gg: Broggok"]
+    },
+    {
+      "id": 3713002,
+      "kind": "place",
+      "title": "The Furnace",
+      "triggers": [{ "kill": 17377 }],
+      "body": [
+        "The heart of the furnace, where Magtheridon's jailor holds his circle of channellers drawing the pit lord's power."
+      ],
+      "sources": ["warcraft.wiki.gg: Keli'dan the Breaker"]
+    },
+    {
+      "id": 3713030,
+      "kind": "person",
+      "title": "The Maker",
+      "triggers": [{ "kill": 17381 }],
+      "body": [
+        "The fel orc who oversees the making of the new breed in the Blood Furnace."
+      ],
+      "sources": ["warcraft.wiki.gg: The Maker"]
+    },
+    {
+      "id": 3713031,
+      "kind": "person",
+      "title": "Broggok",
+      "triggers": [{ "kill": 17380 }],
+      "body": [
+        "A great floating eye that watches over the Blood Furnace's cells, spewing poison. It promised, in Zeth'Gor, to meet those who came for it in the citadel."
+      ],
+      "sources": ["warcraft.wiki.gg: Broggok", "warcraft.wiki.gg: Zeth'Gor"]
+    },
+    {
+      "id": 3713032,
+      "kind": "person",
+      "title": "Keli'dan the Breaker",
+      "triggers": [{ "kill": 17377 }],
+      "body": [
+        "The fel orc jailor of Magtheridon, master of the Blood Furnace."
+      ],
+      "sources": ["warcraft.wiki.gg: Keli'dan the Breaker"]
+    }
+  ]
+}

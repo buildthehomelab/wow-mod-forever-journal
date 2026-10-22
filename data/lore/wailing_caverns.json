@@ -1,0 +1,147 @@
+{
+  "zone": 718,
+  "name": "Wailing Caverns",
+  "entries": [
+    {
+      "id": 718000,
+      "kind": "zone",
+      "title": "The Wailing Caverns",
+      "triggers": [{ "areaId": 718 }],
+      "body": [
+        "A network of caverns beneath the heart of the Barrens, whose rivers run for miles under the savannah and bubble up as its oases. The night elf druid Naralex discovered them and named them for the mournful howl of the wind through the caves and the steam venting from the rock.",
+        "Naralex believed that if he joined these waters to the Emerald Dream, he could make the Barrens green again. He went down with his disciples and settled into meditation, letting the Dream flow into Azeroth through his body. Then the Emerald Nightmare overwhelmed him. He cannot wake, and the caverns have twisted around his dreams."
+      ],
+      "sources": ["warcraft.wiki.gg: Wailing Caverns (History)"]
+    },
+    {
+      "id": 718001,
+      "kind": "place",
+      "title": "The Druids of the Fang",
+      "triggers": [{ "areaId": 718 }, { "talk": 3678 }],
+      "body": [
+        "Most of Naralex's disciples were driven mad by his nightmare and became the Druids of the Fang, who take the shape of serpents. Four Fanglords lead them. One disciple, the tauren Muyoh, kept his mind, and waits near the entrance: he cannot wake his master until the Fanglords fall."
+      ],
+      "sources": ["warcraft.wiki.gg: Naralex", "warcraft.wiki.gg: Disciple of Naralex"]
+    },
+    {
+      "id": 718002,
+      "kind": "place",
+      "title": "The Deviate Caverns",
+      "triggers": [{ "kill": 3653 }, { "kill": 3674 }, { "kill": 5775 }],
+      "body": [
+        "Deeper in, the nightmare has bred strange things: deviate raptors, pythons, shamblers and faerie dragons, a monstrous thunder lizard, and a bog beast that will not stay dead. Only the turtles seem untouched, oblivious to the evil around them. A goblin, Mebok Mizzyrix, believes an ectoplasmic \"wailing essence\" gathering in the caves is behind the strange plants and beasts of the Barrens."
+      ],
+      "sources": ["warcraft.wiki.gg: Kresh", "warcraft.wiki.gg: Wailing Caverns (World of Warcraft)"]
+    },
+    {
+      "id": 718003,
+      "kind": "place",
+      "title": "Naralex's Rest",
+      "triggers": [{ "kill": 3654 }, { "talk": 3679 }],
+      "body": [
+        "In the depths of the caverns, the druid Naralex lies asleep, dreaming the nightmare that has poisoned his caves, guarded by what his dreams have made."
+      ],
+      "sources": ["warcraft.wiki.gg: Naralex"]
+    },
+    {
+      "id": 718030,
+      "kind": "person",
+      "title": "Lady Anacondra",
+      "triggers": [{ "kill": 3671 }],
+      "body": [
+        "Once called Scarletleaf, one of Naralex's disciples, now a Fanglord of the Druids of the Fang."
+      ],
+      "sources": ["warcraft.wiki.gg: Lady Anacondra"]
+    },
+    {
+      "id": 718031,
+      "kind": "person",
+      "title": "Lord Cobrahn",
+      "triggers": [{ "kill": 3669 }],
+      "body": [
+        "Once Jarlaxla, now a Fanglord, larger than the other druids, with a claw for a right hand and deviate pythons all around him."
+      ],
+      "sources": ["warcraft.wiki.gg: Lord Cobrahn"]
+    },
+    {
+      "id": 718032,
+      "kind": "person",
+      "title": "Lord Pythas",
+      "triggers": [{ "kill": 3670 }],
+      "body": [
+        "Once Aryn, a seasoned warrior of Naralex's personal guard. Corrupted, he uses his skill in battle for the Druids of the Fang."
+      ],
+      "sources": ["warcraft.wiki.gg: Lord Pythas"]
+    },
+    {
+      "id": 718033,
+      "kind": "person",
+      "title": "Lord Serpentis",
+      "triggers": [{ "kill": 3673 }],
+      "body": [
+        "Once a druid of great power and prestige, now corrupted by Naralex's nightmare, he leads the Druids of the Fang."
+      ],
+      "sources": ["warcraft.wiki.gg: Lord Serpentis"]
+    },
+    {
+      "id": 718034,
+      "kind": "person",
+      "title": "Kresh",
+      "triggers": [{ "kill": 3653 }],
+      "body": [
+        "An ancient tortoise who wanders the cavern rivers, oddly untouched by the nightmare, living his life as if nothing were wrong."
+      ],
+      "sources": ["warcraft.wiki.gg: Kresh"]
+    },
+    {
+      "id": 718035,
+      "kind": "person",
+      "title": "Skum",
+      "triggers": [{ "kill": 3674 }],
+      "body": [
+        "A great thunder lizard of the caverns, swollen and twisted by the nightmare."
+      ],
+      "sources": ["warcraft.wiki.gg: Skum"]
+    },
+    {
+      "id": 718036,
+      "kind": "person",
+      "title": "Verdan the Everliving",
+      "triggers": [{ "kill": 5775 }],
+      "body": [
+        "A huge bog beast of the deep caverns, swollen with the nightmare's growth."
+      ],
+      "sources": ["warcraft.wiki.gg: Verdan the Everliving"]
+    },
+    {
+      "id": 718037,
+      "kind": "person",
+      "title": "Mutanus the Devourer",
+      "triggers": [{ "kill": 3654 }],
+      "body": [
+        "A colossal albino murloc, made out of Naralex's nightmare, sent by whatever has infected his dreams to stop anyone from waking him. He brought from the Nightmare things that should not exist in Azeroth."
+      ],
+      "sources": ["warcraft.wiki.gg: Mutanus the Devourer"]
+    },
+    {
+      "id": 718038,
+      "kind": "person",
+      "title": "Naralex",
+      "triggers": [{ "talk": 3679 }, { "kill": 3654 }],
+      "body": [
+        "A night elf druid who meant to use the Emerald Dream to return the Barrens to the forest it once was. When he joined the caverns to the Dream, the Nightmare took him instead, and most of his disciples went mad around him."
+      ],
+      "sources": ["warcraft.wiki.gg: Naralex"]
+    },
+    {
+      "id": 718039,
+      "kind": "person",
+      "title": "The Deviate Faerie Dragon",
+      "triggers": [{ "kill": 5912 }],
+      "body": [
+        "A faerie dragon twisted by the nightmare, rarely seen on the way to Lord Serpentis."
+      ],
+      "sources": ["warcraft.wiki.gg: Deviate Faerie Dragon"]
+    }
+  ]
+}

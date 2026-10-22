@@ -1,0 +1,149 @@
+{
+  "zone": 1581,
+  "name": "The Deadmines",
+  "entries": [
+    {
+      "id": 1581000,
+      "kind": "zone",
+      "title": "The Deadmines",
+      "triggers": [{ "areaId": 1581 }],
+      "body": [
+        "Expansive, winding tunnels dug beneath Westfall, reaching under the hills to the sea. Before the First War they were the richest gold mines in the human lands; it is said their gold once made up a third of Stormwind's treasury. They also yielded whitestone oak, prized for tools and lattices that must bear great heat and pressure.",
+        "The mines were abandoned in the First War and thought haunted afterwards, so they were left alone. That made them perfect for Edwin VanCleef. His Defias Brotherhood made them its headquarters, and at the bottom, with the help of hired goblins, he is building a weapon."
+      ],
+      "sources": ["warcraft.wiki.gg: Deadmines (introduction, First War, Aftermath)"]
+    },
+    {
+      "id": 1581001,
+      "kind": "place",
+      "title": "The Mine Tunnels",
+      "triggers": [{ "areaId": 1581 }, { "kill": 644 }],
+      "body": [
+        "The upper galleries, still worked by Defias miners, kobolds and goblin crews under the ogre foreman Rhahk'Zor. Not long ago the Miners' League had men down here under Foreman Thistlenettle; the Defias attacked them as they worked, and the tunnel collapsed on them. Only his brother Wilder escaped. The rest of the crew still walk the tunnels as restless dead."
+      ],
+      "sources": ["warcraft.wiki.gg: Deadmines (World of Warcraft)", "warcraft.wiki.gg: Rhahk'Zor"]
+    },
+    {
+      "id": 1581002,
+      "kind": "place",
+      "title": "The Mast Room",
+      "triggers": [{ "kill": 643 }, { "kill": 642 }],
+      "body": [
+        "A great lumber hall where whitestone oak is cut and shaped into the masts and beams of VanCleef's ship, run by the goblin lumbermaster Sneed from the seat of his shredder."
+      ],
+      "sources": ["warcraft.wiki.gg: Sneed", "warcraft.wiki.gg: Deadmines (First War)"]
+    },
+    {
+      "id": 1581003,
+      "kind": "place",
+      "title": "The Goblin Foundry",
+      "triggers": [{ "kill": 1763 }],
+      "body": [
+        "The Brotherhood's forge deep in the mines, crowded with goblin engineers and their machines and wreathed in the heat of the smelters, where the metal for the ship is poured. The goblin Gilnid, VanCleef's head smelter, runs it, and reaching him is harder than fighting him."
+      ],
+      "sources": ["warcraft.wiki.gg: Gilnid"]
+    },
+    {
+      "id": 1581004,
+      "kind": "place",
+      "title": "Ironclad Cove",
+      "triggers": [{ "area": "Ironclad Cove" }],
+      "body": [
+        "A vast walled-in cove at the bottom of the mines, now a monumental cavern holding the Defias juggernaut at its docks. On one side is a great door built to let the ship out to sea; its far side opens in the cliffs of northern Stranglethorn.",
+        "A pirate crew under Captain Bramblebeard held the cove once. The Defias murdered them all when they took it."
+      ],
+      "sources": ["warcraft.wiki.gg: Ironclad Cove", "warcraft.wiki.gg: Deadmines (Aftermath)"]
+    },
+    {
+      "id": 1581005,
+      "kind": "place",
+      "title": "The Juggernaut",
+      "triggers": [{ "kill": 646 }, { "kill": 647 }],
+      "body": [
+        "VanCleef's greatest weapon: an ironclad warship, a juggernaut built in secret at the bottom of the Deadmines, meant to sail out and destroy Stormwind from the sea. The goblin Captain Greenskin commands it, with his first mate Mr. Smite and his cook."
+      ],
+      "sources": ["warcraft.wiki.gg: Deadmines (Aftermath)", "warcraft.wiki.gg: Captain Greenskin", "warcraft.wiki.gg: Westfall"]
+    },
+    {
+      "id": 1581030,
+      "kind": "person",
+      "title": "Rhahk'Zor",
+      "triggers": [{ "kill": 644 }],
+      "body": [
+        "An ogre, the foreman in charge of Edwin VanCleef's construction in the mines."
+      ],
+      "sources": ["warcraft.wiki.gg: Rhahk'Zor"]
+    },
+    {
+      "id": 1581031,
+      "kind": "person",
+      "title": "Sneed",
+      "triggers": [{ "kill": 643 }],
+      "body": [
+        "A goblin, VanCleef's lumbermaster, who works his timber from the cockpit of a shredder."
+      ],
+      "sources": ["warcraft.wiki.gg: Sneed"]
+    },
+    {
+      "id": 1581032,
+      "kind": "person",
+      "title": "Gilnid",
+      "triggers": [{ "kill": 1763 }],
+      "body": [
+        "A goblin, the head smelter of the Brotherhood's foundry, who keeps the forges of the juggernaut burning."
+      ],
+      "sources": ["warcraft.wiki.gg: Gilnid"]
+    },
+    {
+      "id": 1581033,
+      "kind": "person",
+      "title": "Mr. Smite",
+      "triggers": [{ "kill": 646 }],
+      "body": [
+        "A tauren, first mate to Captain Greenskin. He likes to play with his victims, letting them believe they can win while he reaches for one deadlier weapon after another."
+      ],
+      "sources": ["warcraft.wiki.gg: Mr. Smite"]
+    },
+    {
+      "id": 1581034,
+      "kind": "person",
+      "title": "Captain Greenskin",
+      "triggers": [{ "kill": 647 }],
+      "body": [
+        "A goblin sea captain in Edwin VanCleef's employ, master of the juggernaut, with Mr. Smite as his first mate and a murloc for a cook."
+      ],
+      "sources": ["warcraft.wiki.gg: Captain Greenskin"]
+    },
+    {
+      "id": 1581035,
+      "kind": "person",
+      "title": "Cookie",
+      "triggers": [{ "kill": 645 }],
+      "body": [
+        "A murloc, the ship's cook, in the service of Captain Greenskin and VanCleef. Nobody knows what goes into his stew."
+      ],
+      "sources": ["warcraft.wiki.gg: Cookie"]
+    },
+    {
+      "id": 1581036,
+      "kind": "person",
+      "title": "Edwin VanCleef",
+      "triggers": [{ "kill": 639 }],
+      "body": [
+        "Once the elected Guildmaster of the Stonemasons, an architect who helped rebuild Stormwind and led the building of Nethergarde Keep. His childhood friend Mathias Shaw trained him as a rogue and hoped he would one day join him; another friend called him a peerless fighter, an idealist and a romantic.",
+        "When the nobles refused to pay, he swore the House of Nobles, and all of Stormwind, would answer for their crimes against his guild. He made the Defias Brotherhood, and here he died, at the foot of the ship he built to take his revenge."
+      ],
+      "sources": ["warcraft.wiki.gg: Edwin VanCleef (introduction, The reconstruction of Stormwind)", "warcraft.wiki.gg: Deadmines (World of Warcraft)"]
+    },
+    {
+      "id": 1581050,
+      "kind": "history",
+      "title": "Lothar in the Deadmines",
+      "triggers": [{ "areaId": 1581 }],
+      "body": [
+        "In the First War, Sir Anduin Lothar went into the Deadmines in search of the Tome of Divinity, and was captured by ogres and held for twenty months before he was rescued and completed his quest. Blackhand's daughter Griselda fled to the dungeons below the mines with the ogre Turok; an orc raid killed them both."
+      ],
+      "sources": ["warcraft.wiki.gg: Deadmines (First War)"]
+    }
+  ]
+}

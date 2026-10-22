@@ -1,0 +1,119 @@
+{
+  "zone": 51,
+  "name": "Searing Gorge",
+  "entries": [
+    {
+      "id": 51000,
+      "kind": "zone",
+      "title": "The Searing Gorge",
+      "triggers": [{ "areaId": 51 }],
+      "body": [
+        "Probably once a green valley of the Redridge range, until the summoning of Ragnaros raised Blackrock Mountain out of the ridge and blackened the land around it forever. North of the mountain the valley became this gorge of ash and fire.",
+        "When the Dark Irons had finished their new city under the mountain, they turned to the gorge for their industry, and dug the vast pit of the Cauldron into its floor, worked mostly by captured slaves. Now a band of Dark Irons who broke with their clan, the Thorium Brotherhood, watch them from the cliffs."
+      ],
+      "sources": ["warcraft.wiki.gg: Searing Gorge (introduction, History, World of Warcraft)"]
+    },
+    {
+      "id": 51001,
+      "kind": "place",
+      "title": "The Cauldron",
+      "triggers": [{ "area": "The Cauldron" }, { "area": "The Slag Pit" }, { "accept": 7729 }],
+      "body": [
+        "An enormous excavation in the heart of the gorge, rimmed by the Dark Irons' giant digging machines, while fire and magma elementals move through the burning crevices below. Captured slaves toil in it endlessly. Driven mad by their masters, the work and the crushing heat, they attack anyone who interferes, even those who would free them.",
+        "Deep inside lies the Slag Pit, a mine rich in many ores, run by cruel taskmasters and haunted by ravenous incendosaurs."
+      ],
+      "sources": ["warcraft.wiki.gg: Cauldron", "warcraft.wiki.gg: Slag Pit", "warcraft.wiki.gg: Searing Gorge (History)"]
+    },
+    {
+      "id": 51002,
+      "kind": "place",
+      "title": "Thorium Point",
+      "triggers": [{ "area": "Thorium Point" }, { "talk": 14624 }, { "talk": 14625 }],
+      "body": [
+        "A small neutral town on the cliffs over the Cauldron, base of the Thorium Brotherhood. Its smiths are said to be among the finest Azeroth has ever seen. They know how to make the arms and armour of Ragnaros himself, but lack the hands to gather the materials, and will share their secrets with those who prove loyal in their struggle against their former brethren."
+      ],
+      "sources": ["warcraft.wiki.gg: Thorium Point", "warcraft.wiki.gg: Thorium Brotherhood"]
+    },
+    {
+      "id": 51003,
+      "kind": "place",
+      "title": "Firewatch Ridge",
+      "triggers": [{ "area": "Firewatch Ridge" }, { "talk": 8436 }],
+      "body": [
+        "The main Dark Iron camp in the gorge, on the ridge above the Cauldron, with watch towers along its length. Dark Irons, their golems and giant flame spiders cover it, and the Twilight's Hammer keeps a cave at its north-western end."
+      ],
+      "sources": ["warcraft.wiki.gg: Firewatch Ridge"]
+    },
+    {
+      "id": 51004,
+      "kind": "place",
+      "title": "Grimesilt Dig Site",
+      "triggers": [{ "area": "Grimesilt Dig Site" }, { "accept": 4449 }],
+      "body": [
+        "An Ironforge dig site that the Dark Irons have taken over. One of its original workers, Dorius Stonetender, lies hurt at the bottom of the pit, and another is trapped in an outhouse nearby."
+      ],
+      "sources": ["warcraft.wiki.gg: Grimesilt Dig Site"]
+    },
+    {
+      "id": 51005,
+      "kind": "place",
+      "title": "Stonewrought Pass and Dustfire Valley",
+      "triggers": [{ "area": "Stonewrought Pass" }, { "area": "Dustfire Valley" }, { "talk": 3836 }],
+      "body": [
+        "A tunnel designed by Franclorn Forgewright, like the great dam of Loch Modan, running from the windswept Dustfire Valley to the Valley of Kings. Its gates have been locked for years, and Mountaineer Pebblebitty turns away anyone who wants to pass without a key."
+      ],
+      "sources": ["warcraft.wiki.gg: Stonewrought Pass", "warcraft.wiki.gg: Dustfire Valley", "warcraft.wiki.gg: Searing Gorge (World of Warcraft)"]
+    },
+    {
+      "id": 51006,
+      "kind": "place",
+      "title": "The Sea of Cinders",
+      "triggers": [{ "area": "The Sea of Cinders" }, { "area": "Blackchar Cave" }],
+      "body": [
+        "A flat wasteland in the south of the gorge below Blackrock Mountain, burned and scoured by wind. Cinders and ash from the still-smouldering ground fly constantly through the air."
+      ],
+      "sources": ["warcraft.wiki.gg: Sea of Cinders"]
+    },
+    {
+      "id": 51030,
+      "kind": "person",
+      "title": "Kalaran Windblade",
+      "triggers": [{ "talk": 8479 }, { "accept": 3441 }],
+      "body": [
+        "A man south-east of Thorium Point, beside the mutilated remains of Dark Iron dwarves, with a story to tell: of his father, slaughtered by the Dark Irons, and of the revenge he means to have on them."
+      ],
+      "sources": ["warcraft.wiki.gg: Kalaran"]
+    },
+    {
+      "id": 51031,
+      "kind": "person",
+      "title": "Kalaran the Deceiver",
+      "triggers": [{ "complete": 3463 }, { "kill": 8480 }],
+      "body": [
+        "Kalaran's tale was a lie. He is a drake of the black dragonflight, and when he had what he wanted, the watch towers of the Dark Irons set ablaze, he took his true form and flew off to Blackrock Mountain. He let those who had helped him live, and had his servant give them \"trinkets\"."
+      ],
+      "sources": ["warcraft.wiki.gg: Kalaran (World of Warcraft)"]
+    },
+    {
+      "id": 51050,
+      "kind": "history",
+      "title": "Obsidion and the Suntara Stones",
+      "triggers": [{ "complete": 3368 }, { "complete": 3566 }, { "kill": 8400 }],
+      "body": [
+        "Curator Thorius of Ironforge sent archaeologists to the gorge to find the Suntara Stones. They never came back. His brother Dorius Stonetender seemed to have been shot and left dying with a letter about them, but it was a staged assassination.",
+        "Dorius was Lathoric the Black. Corrupted, he had betrayed his brother, enslaved the archaeologists Ironforge sent, and set them to building the golem Obsidion deep in the Slag Pit."
+      ],
+      "sources": ["warcraft.wiki.gg: Lathoric the Black", "warcraft.wiki.gg: Suntara Stones", "quest 3566 text"]
+    },
+    {
+      "id": 51051,
+      "kind": "history",
+      "title": "The Thorium Brotherhood",
+      "triggers": [{ "areaId": 51 }, { "area": "Thorium Point" }],
+      "body": [
+        "Not every Dark Iron serves Ragnaros. The Thorium Brotherhood left their clan and set up at Thorium Point to watch the Dark Irons in the gorge and beyond. They are few, and stout, and their war with their own people never ends; anyone who aids them can expect great rewards."
+      ],
+      "sources": ["warcraft.wiki.gg: Thorium Brotherhood", "warcraft.wiki.gg: Searing Gorge (introduction)"]
+    }
+  ]
+}

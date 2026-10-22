@@ -1,0 +1,108 @@
+{
+  "zone": 3607,
+  "name": "Serpentshrine Cavern",
+  "entries": [
+    {
+      "id": 3607000,
+      "kind": "zone",
+      "title": "Serpentshrine Cavern",
+      "triggers": [{ "areaId": 3607 }],
+      "body": [
+        "\"Whoever controls the water controls Outland.\" So Illidan told his most trusted lieutenant, Lady Vashj, who answered his call with her naga after the Third War and has served him fiercely ever since.",
+        "From this cavern, far more at home among the waters of the reservoir than in the cold stone of the Black Temple, she watches over Coilfang and oversees the draining of Zangarmarsh herself. Whether her loyalty belongs to Illidan alone remains to be seen."
+      ],
+      "sources": ["warcraft.wiki.gg: Serpentshrine Cavern (Background)"]
+    },
+    {
+      "id": 3607001,
+      "kind": "place",
+      "title": "The Filters",
+      "triggers": [{ "kill": 21216 }, { "kill": 21217 }],
+      "body": [
+        "The cavern's entrance, where a water elemental is held between two columns that keep his body pure, and a strange pool hides something that waits below."
+      ],
+      "sources": ["warcraft.wiki.gg: Hydross the Unstable", "warcraft.wiki.gg: The Lurker Below"]
+    },
+    {
+      "id": 3607002,
+      "kind": "place",
+      "title": "The Bridges",
+      "triggers": [{ "kill": 21215 }, { "kill": 21214 }, { "kill": 21213 }],
+      "body": [
+        "The main cavern, a maze of great bridges and platforms over the water, with several roads to the matron's seat. Along them, Vashj's servants hold a mad demon hunter prisoner, the fathom-lord keeps his court, and a sea giant guards the deep."
+      ],
+      "sources": ["warcraft.wiki.gg: Serpentshrine Cavern (Geography)"]
+    },
+    {
+      "id": 3607003,
+      "kind": "place",
+      "title": "Vashj's Seat",
+      "triggers": [{ "kill": 21212 }],
+      "body": [
+        "Lady Vashj's own platform, where she watches over all of Coilfang."
+      ],
+      "sources": ["warcraft.wiki.gg: Serpentshrine Cavern (Background)"]
+    },
+    {
+      "id": 3607030,
+      "kind": "person",
+      "title": "Hydross the Unstable",
+      "triggers": [{ "kill": 21216 }, { "kill": 21932 }],
+      "body": [
+        "A water elemental, Duke of Currents, held between two columns whose beams keep his body pure. Beyond them he turns tainted and poisonous, in great pain. He is, more or less, Lady Vashj's prisoner, forced to guard the way; he may even be part of a great filter, cleansing the reservoir's water."
+      ],
+      "sources": ["warcraft.wiki.gg: Hydross the Unstable"]
+    },
+    {
+      "id": 3607031,
+      "kind": "person",
+      "title": "The Lurker Below",
+      "triggers": [{ "kill": 21217 }],
+      "body": [
+        "A monster of the deep water that hides in a strange pool in Serpentshrine, rising only when something disturbs it."
+      ],
+      "sources": ["warcraft.wiki.gg: The Lurker Below"]
+    },
+    {
+      "id": 3607032,
+      "kind": "person",
+      "title": "Leotheras the Blind",
+      "triggers": [{ "kill": 21215 }, { "kill": 21845 }, { "kill": 21875 }],
+      "body": [
+        "Kael'thas sent Illidan five blood elves to train as demon hunters. Three died in the training, and one, Varedis Felsoul, mastered it and now trains others at the Black Temple. The fifth, Leotheras, went mad, and the demon within him seems to have taken hold. Somehow he came here, where Vashj's spellbinders keep him subdued and banished."
+      ],
+      "sources": ["warcraft.wiki.gg: Leotheras the Blind (Background)"]
+    },
+    {
+      "id": 3607033,
+      "kind": "person",
+      "title": "Fathom-Lord Karathress",
+      "triggers": [{ "kill": 21214 }, { "kill": 21964 }, { "kill": 21965 }, { "kill": 21966 }],
+      "body": [
+        "A naga lord who holds court with his three fathom-guards, and keeps the draenei Seer Olum as his prisoner."
+      ],
+      "sources": ["warcraft.wiki.gg: Fathom-Lord Karathress"]
+    },
+    {
+      "id": 3607034,
+      "kind": "person",
+      "title": "Morogrim Tidewalker",
+      "triggers": [{ "kill": 21213 }],
+      "body": [
+        "A sea giant who serves Vashj in the depths of Serpentshrine, calling murlocs to his aid."
+      ],
+      "sources": ["warcraft.wiki.gg: Morogrim Tidewalker"]
+    },
+    {
+      "id": 3607035,
+      "kind": "person",
+      "title": "Lady Vashj",
+      "triggers": [{ "kill": 21212 }],
+      "body": [
+        "Once the foremost of Queen Azshara's Highborne handmaidens, whose only care was to keep the queen's favour. When Azshara and her followers were drawn to the bottom of the sea in the Great Sundering, Vashj became one of the first of the naga.",
+        "Ten thousand years later, she answered Illidan's call: to Lordaeron, where she rallied Kael'thas and his blood elves to Illidan's cause, and then to Outland, where Illidan overthrew Magtheridon. As leader of his naga, she means to win Outland for him by its water."
+      ],
+      "sources": ["warcraft.wiki.gg: Lady Vashj (introduction, Biography)"]
+    }
+  ]
+}

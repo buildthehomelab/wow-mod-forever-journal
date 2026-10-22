@@ -1,0 +1,89 @@
+{
+  "zone": 4298,
+  "name": "Plaguelands: The Scarlet Enclave",
+  "entries": [
+    {
+      "id": 4298000,
+      "kind": "zone",
+      "title": "The Scarlet Enclave",
+      "classes": 32,
+      "triggers": [{ "accept": 12593 }, { "complete": 12593 }],
+      "body": [
+        "The far south-eastern corner of the Plaguelands, beyond Light's Hope Chapel: the old holy city of Tyr's Hand, the town of New Avalon and the farms of Havenshire, green and untouched by death, the last stronghold of the Scarlet Crusade in the east.",
+        "The Lich King sent the necropolis Acherus to hang above it, filled with his new death knights. Their task was to destroy the Scarlet Crusade and the Argent Dawn, the last bastions of the Light in the Plaguelands."
+      ],
+      "sources": ["warcraft.wiki.gg: Plaguelands: The Scarlet Enclave (Description)", "warcraft.wiki.gg: Acherus: The Ebon Hold (Wrath of the Lich King)"]
+    },
+    {
+      "id": 4298001,
+      "kind": "place",
+      "title": "Acherus: The Ebon Hold",
+      "classes": 32,
+      "triggers": [{ "accept": 12636 }, { "complete": 12619 }, { "accept": 13165 }],
+      "body": [
+        "A necropolis built by the skeletal architect Obrahiim, said to be strong enough that not even Naxxramas could withstand it. Its halls were heaped with the bodies of fallen heroes. Under the eye of Instructor Razuvious, necromancers raised the ones he chose and judged them: the worthy were dressed as heralds of Arthas, and the unworthy fed to the ghouls. At its runeforges the death knights inscribe their blades.",
+        "After Light's Hope, the freed death knights took Acherus from Patchwerk and the Scourge left inside it. It flies the banner of the Ebon Blade now, a silent shadow in the orange sky over the chapel."
+      ],
+      "sources": ["warcraft.wiki.gg: Acherus: The Ebon Hold (Wrath of the Lich King)"]
+    },
+    {
+      "id": 4298002,
+      "kind": "place",
+      "title": "Death's Breach and Havenshire",
+      "classes": 32,
+      "triggers": [{ "accept": 12670 }, { "accept": 12678 }, { "complete": 12714 }],
+      "body": [
+        "Death's Breach, the plateau beneath Acherus, was the Scourge's staging ground for the assault on the Crusade, under the San'layn prince Valanar.",
+        "Below it lay Havenshire, the Crusade's farms, mill, mine and stables, defended by a few guards behind carts and barrels. The Scourge overran it, its people fled to New Avalon pleading for help, its horses were made into deathchargers, and Noth the Plaguebringer set a plague cauldron in the pumpkin patch."
+      ],
+      "sources": ["warcraft.wiki.gg: Death's Breach", "warcraft.wiki.gg: Havenshire", "warcraft.wiki.gg: Havenshire Farms", "warcraft.wiki.gg: Havenshire Stables"]
+    },
+    {
+      "id": 4298003,
+      "kind": "place",
+      "title": "Light's Point and King's Harbor",
+      "classes": 32,
+      "triggers": [{ "accept": 12701 }, { "complete": 12701 }, { "accept": 12697 }],
+      "body": [
+        "Light's Point, on the beach below its watch tower, and King's Harbor beneath the bluffs of New Avalon, where the Scarlet Fleet lay at anchor. The last Scarlet ships left the harbour shortly before the massacre; among them was the Sinner's Folly, High General Abbendis's flagship."
+      ],
+      "sources": ["warcraft.wiki.gg: Light's Point Tower", "warcraft.wiki.gg: King's Harbor", "warcraft.wiki.gg: Sinner's Folly", "warcraft.wiki.gg: Ruins of the Scarlet Enclave"]
+    },
+    {
+      "id": 4298004,
+      "kind": "place",
+      "title": "New Avalon",
+      "classes": 32,
+      "triggers": [{ "accept": 12723 }, { "accept": 12738 }, { "complete": 12778 }],
+      "body": [
+        "The town east of Tyr's Hand: the Scarlet Hold, the orchard, the Scarlet Tavern, the forge, the Chapel of the Crimson Flame and the town hall where Mayor Quimby ruled. As the Scourge closed in, frightened citizens gathered before the Scarlet Hold to protest to High Abbot Landgren and High General Abbendis.",
+        "Now it is a ruin, its corpses still in the streets, some hearths still warm, showing how recently the refuge ended."
+      ],
+      "sources": ["warcraft.wiki.gg: New Avalon", "warcraft.wiki.gg: New Avalon Town Hall", "warcraft.wiki.gg: Scarlet Hold", "warcraft.wiki.gg: Ruins of the Scarlet Enclave"]
+    },
+    {
+      "id": 4298030,
+      "kind": "person",
+      "title": "Highlord Darion Mograine",
+      "classes": 32,
+      "triggers": [{ "talk": 28444 }, { "complete": 12801 }],
+      "body": [
+        "The son of Alexandros Mograine, first bearer of the Ashbringer. He followed his father as a paladin of the Argent Dawn, went into Naxxramas to free his father's soul, and at the first battle of Light's Hope drove the corrupted blade through his own heart to save the chapel.",
+        "Kel'Thuzad raised him as a death knight, still bearing the corrupted Ashbringer, and the Lich King made him Highlord of the death knights of Acherus. He broke with his master at Light's Hope, and leads the Knights of the Ebon Blade."
+      ],
+      "sources": ["warcraft.wiki.gg: Darion Mograine (introduction)"]
+    },
+    {
+      "id": 4298050,
+      "kind": "history",
+      "title": "The Light of Dawn",
+      "classes": 32,
+      "triggers": [{ "accept": 12801 }, { "complete": 12801 }, { "accept": 12800 }],
+      "body": [
+        "Ten thousand Scourge marched on Light's Hope under Darion Mograine, Koltira Deathweaver, Thassarian and Orbaz Bloodbane, against some three hundred defenders. Arthas's real aim was Tirion Fordring: to destroy him before he could rally the world. Tirion came, and with the Silver Hand broke the assault. The ghost of Alexandros appeared before his son, and the Lich King himself appeared and cast it into the abyss, revealing that the battle had only ever been a lure.",
+        "Frostmourne began to drain Tirion's soul. Darion, cast aside by his master, found the strength to throw Tirion the corrupted Ashbringer, and Tirion cleansed it in a blinding flash. Arthas retreated, promising their next meeting would not be on holy ground. Tirion joined the Argent Dawn and the Silver Hand as the Argent Crusade, and the death knights freed that day became the Knights of the Ebon Blade."
+      ],
+      "sources": ["warcraft.wiki.gg: Second Battle for Light's Hope Chapel (History)"]
+    }
+  ]
+}

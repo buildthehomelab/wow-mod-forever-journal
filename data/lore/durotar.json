@@ -8,11 +8,10 @@
       "title": "Durotar",
       "triggers": [{ "areaId": 14 }],
       "body": [
-        "A hard red land of canyons, scrub and stony coast on the eastern shore of Kalimdor. After the Burning Legion was defeated at Mount Hyjal, Thrall led the orcs here and named the country after his father, Durotan, chieftain of the Frostwolf clan. Its capital, Orgrimmar, carries the name of Orgrim Doomhammer, the Warchief who came before him.",
-        "The orcs chose Durotar because it was harsh. It asks for strength to live in, and it was far from the human kingdoms that had kept them in camps for years. They share it with the Darkspear trolls, sworn allies since Thrall helped them escape their old islands.",
-        "Not everything here welcomes them. Quilboars, centaurs and harpies held this land first and still fight for it, human soldiers of Kul Tiras cling to a keep on the southern coast, and a demon cult called the Burning Blade has taken root among the orcs themselves."
+        "A harsh land of red, cracked earth, crags and canyons on Kalimdor's eastern coast, cut off from the Barrens by the Southfury River. It is dry and hot, its plants are sparse, and its scorpids, boars, raptors and thunder lizards are hardy. The orcs see a harsh beauty in it: it reminds them of the red plains of their lost homeland, Draenor.",
+        "After the Battle of Mount Hyjal, Warchief Thrall led the orcs here, drove off the Razormane quilboar who held it, and with the help of the tauren founded a new homeland. He named it after his murdered father, Durotan. Its capital, Orgrimmar, lies in the north, and the land has become a home for the whole Horde, not least the Darkspear trolls of the southern coast."
       ],
-      "sources": ["quest 784 description (pact with Jaina Proudmoore to defeat Archimonde)", "quest 785 (pact with the Darkspear)", "quests 837, 786, 834 (quilboars, centaurs, harpies)", "quest 792 (Burning Blade)", "pre-Cataclysm lore: naming of Durotar and Orgrimmar, internment camps"]
+      "sources": ["warcraft.wiki.gg: Durotar (introduction, History, Geography)"]
     },
     {
       "id": 14001,
@@ -20,10 +19,10 @@
       "title": "Valley of Trials",
       "triggers": [{ "area": "Valley of Trials" }, { "accept": 4641 }, { "accept": 787 }],
       "body": [
-        "A dry valley in western Durotar where young orcs and trolls come of age as fighters of the Horde. Recruits arrive with nothing but their weapons and are tested against the valley's boars and scorpids before anyone trusts them with more.",
-        "The valley is no longer as safe as its teachers would like. Cultists of the Burning Blade have dug into a cave at its northern end, and their summoned beasts have spilled out into the valley."
+        "A valley in southern Durotar where young orcs and trolls are tested before they are counted as recruits of the Horde. By the time they leave its tall walls, they are ready for what waits beyond. Those who fail and die are left to bake in the desert sun.",
+        "The caves in the northern cliffs have lately filled with demons. They are weak, but their presence suggests the rumours are true: the Shadow Council has found a foothold in the land."
       ],
-      "sources": ["quests 4641, 787, 788, 789 descriptions", "quest 792 description"]
+      "sources": ["warcraft.wiki.gg: Valley of Trials"]
     },
     {
       "id": 14002,
@@ -31,10 +30,9 @@
       "title": "The Den",
       "triggers": [{ "area": "The Den" }, { "talk": 3143 }],
       "body": [
-        "The great hut at the heart of the Valley of Trials, where the trainers live and the recruits report. Gornek runs it with little patience for the soft and less for the boastful.",
-        "Every recruit learns the same lessons here: kill what threatens the Horde, take nothing for granted, and never think a small enemy can't kill you."
+        "A small cave carved out of the cliff in the middle of the Valley of Trials, fitted with the basic comforts of living. It is the starting camp for young orcs, and its trainers give them their first lessons."
       ],
-      "sources": ["quests 787, 788, 789 descriptions and offer texts", "quest 4641 (the Den, to the west)"]
+      "sources": ["warcraft.wiki.gg: The Den", "warcraft.wiki.gg: Valley of Trials (Geography)"]
     },
     {
       "id": 14003,
@@ -42,21 +40,21 @@
       "title": "Burning Blade Coven",
       "triggers": [{ "area": "Burning Blade Coven" }, { "kill": 3183 }, { "accept": 794 }],
       "body": [
-        "A cave in the northern hills of the Valley of Trials, with a waterfall chamber deep inside. The foreman Thazz'ril went in looking for ore and came out without his pick.",
-        "The Burning Blade made it a coven. Imps and felstalkers guard its tunnels, and an orc warlock named Yarrog Baneshadow keeps a medallion of the cult at its far end. That a cult of demon-worshippers could hide within sight of the Horde's training grounds worried the valley's teachers more than any beast."
+        "Caves in the red mountains on the northern edge of the Valley of Trials. Imps and other minor demons spill out of their mouth, and some say stronger demons inside have more than mischief in mind.",
+        "The cult of the Burning Blade, led here by the warlock Yarrog Baneshadow, has made the caverns its own."
       ],
-      "sources": ["quests 792, 794 descriptions and offer texts", "quest 6394 (chamber with waterfalls, Thazz'ril's pick)", "creatures 3101 Vile Familiar, 3102 Felstalker, 3183 Yarrog Baneshadow"]
+      "sources": ["warcraft.wiki.gg: Burning Blade Coven"]
     },
     {
       "id": 14004,
       "kind": "place",
       "title": "Razor Hill",
-      "triggers": [{ "area": "Razor Hill" }, { "talk": 3139 }],
+      "triggers": [{ "area": "Razor Hill" }, { "area": "Razor Hill Barracks" }, { "talk": 3139 }],
       "body": [
-        "The fortified town at the centre of Durotar, on the road between the Valley of Trials, Sen'jin Village and Orgrimmar. Its spiked walls and watchtower guard the Horde's southern lands; a horn from the tower once called its warriors out often, and these days does so less and less.",
-        "Gar'Thok commands the town and its barracks. Orgnil Soulscar hunts down the Burning Blade from here, and the inn is the first warm meal many new warriors have outside the valley."
+        "An orcish town at the crossroads of central Durotar, where the roads run north to Orgrimmar, south to Sen'jin and west across the river to the Barrens. Its barracks are the largest building in town.",
+        "It was once just a hill. Soon after the Third War, the forces of Kul Tiras arranged a summit with Thrall here that was really an ambush. Rexxar went in the Warchief's place and killed the assassins. Today Gar'Thok commands the town, and Orgnil Soulscar hunts the Burning Blade from it."
       ],
-      "sources": ["quests 791 (watchtower, signal horn), 784, 837 (Gar'Thok), 806, 823 (Orgnil), 2161 (the inn)"]
+      "sources": ["warcraft.wiki.gg: Razor Hill (History)", "warcraft.wiki.gg: Razor Hill Barracks"]
     },
     {
       "id": 14005,
@@ -64,10 +62,10 @@
       "title": "Sen'jin Village",
       "triggers": [{ "area": "Sen'jin Village" }, { "talk": 3188 }],
       "body": [
-        "The Darkspear trolls' village on Durotar's southern coast, named after Sen'jin, the old witch doctor who led the tribe when Thrall found them and who died before they reached these shores. His son, Vol'jin, now leads the Darkspear.",
-        "The village looks out at the Echo Isles, the tribe's former home, which it has had to give up. Master Gadrin and the elders keep the old ways of voodoo here, and the hunters bring in tiger hides and crocolisk meat from the coast."
+        "A Darkspear fishing village of huts and a dock on Durotar's southern coast. Vol'jin moved his people here when they were driven from the Echo Isles, and named it after his father Sen'jin, who died saving his people from murlocs during the Third War.",
+        "Many of its people are herbalists and alchemists, and its witch doctors keep the loa close."
       ],
-      "sources": ["quests 805, 808, 826, 817 descriptions", "quest 826 (the isles we once called home)", "pre-Cataclysm lore: Sen'jin, Vol'jin, the Darkspear's flight from the Broken Isles"]
+      "sources": ["warcraft.wiki.gg: Sen'jin Village (History, Overview)"]
     },
     {
       "id": 14006,
@@ -75,10 +73,10 @@
       "title": "The Echo Isles",
       "triggers": [{ "area": "Echo Isles" }, { "kill": 3205 }],
       "body": [
-        "A chain of jungle islands off Durotar's south-eastern coast, once the Darkspear tribe's home. The trolls left them when the witch doctor Zalazane turned his voodoo on his own people.",
-        "Zalazane now rules the largest island from a circle of power where he keeps the skulls of trolls whose spirits he has trapped. His hexed and voodoo trolls, Darkspear no longer, cross to the mainland to drag others under his spell. Taillashers nest all over the islands, and the cooks of Razor Hill send people for their eggs."
+        "A cluster of tropical islands off Durotar's south-eastern coast, teeming with raptors, lynxes and other predators. At the height of the Gurubashi Empire, the jungle trolls ruled from Stranglethorn all the way to these isles.",
+        "The Darkspears settled here after the Third War, but soon had to flee when Admiral Proudmoore's fleet attacked. When he was defeated, they returned, and had only a moment's peace before one of their own, the witch doctor Zalazane, betrayed them and drove them out again with his dark magic."
       ],
-      "sources": ["quests 808, 826 descriptions and offer texts", "quest 815 (taillasher eggs on the Echo Isles)"]
+      "sources": ["warcraft.wiki.gg: Echo Isles (History)"]
     },
     {
       "id": 14007,
@@ -86,10 +84,10 @@
       "title": "Tiragarde Keep",
       "triggers": [{ "area": "Tiragarde Keep" }, { "kill": 3192 }, { "accept": 784 }],
       "body": [
-        "A stone keep on the southern coast, built by soldiers of Kul Tiras when Admiral Daelin Proudmoore brought his fleet to Kalimdor to make war on the orcs. The Horde took it when the admiral's campaign failed.",
-        "The admiral's reserves, under a Lieutenant Benedict, took it back. Sailors and marines hold the walls, and just off the coast the wreckage of Proudmoore's fleet still lies in the water, full of tools the Horde's engineers would very much like to study."
+        "A ruined Alliance stronghold on Durotar's eastern coast. Grand Admiral Daelin Proudmoore built it hastily during his war on the orcs, and it fell when the Horde threw him back.",
+        "After the admiral's death, orders he had written before leaving Kul Tiras came to light. Lieutenant Benedict was sent with a reserve force to retake the keep and continue his crusade, and his men still hold the ruins, a stubborn thorn in the Horde's side."
       ],
-      "sources": ["quest 784 description (Tiragarde Keep fell, retaken by Benedict)", "quest 825 (wreckage east of Tiragarde Keep, gnomish tools)", "quests 830, 831"]
+      "sources": ["warcraft.wiki.gg: Tiragarde Keep (History)"]
     },
     {
       "id": 14008,
@@ -97,10 +95,9 @@
       "title": "Kolkar Crag",
       "triggers": [{ "area": "Kolkar Crag" }, { "accept": 786 }],
       "body": [
-        "A camp of the Kolkar centaurs just over the ridge west of Sen'jin Village. The Kolkar raid Durotar from here and have planned far worse.",
-        "The troll scout Lar Prowltusk slipped into the camp during one of their raids and found that the centaurs meant to strike the orcs and trolls of Durotar in three waves. Their leaders each carried a part of the plan."
+        "A craggy gorge in southern Durotar, named for the Kolkar centaurs who hold it. Under Warlord Kolkanis they plot to attack the towns of Durotar: the Valley of Trials, Sen'jin, Razor Hill, even the gates of Orgrimmar."
       ],
-      "sources": ["quest 786 description and offer text"]
+      "sources": ["warcraft.wiki.gg: Kolkar Crag (History)"]
     },
     {
       "id": 14009,
@@ -108,10 +105,10 @@
       "title": "Thunder Ridge",
       "triggers": [{ "area": "Thunder Ridge" }, { "kill": 3203 }],
       "body": [
-        "A rocky ridge north-west of Razor Hill, where shimmerweed grows among the stones.",
-        "The Burning Blade has a camp here too. Its leader is Fizzle Darkstorm, a goblin warlock who joined the cult and spreads its chaos with a band of cultists. That the cult takes goblins shows it cares more for power than for clan."
+        "A gorge south-west of Orgrimmar that was once an ancient forest, where trees grew in harmony with herds of thunder lizards under the watch of the spirit Owa'nohe.",
+        "Soon after Durotar was founded, a Kul Tiran lumber operation began cutting the forest and drove the lizards mad. Years later the Burning Blade razed what was left with demonic magic, to unsettle the region, and the lizards stampeded into Drygulch Ravine. Thrall asked Jaina Proudmoore's help to move them. The cultists still camp among the stumps."
       ],
-      "sources": ["quest 806 description (Fizzle Darkstorm in Thunder Ridge)", "quest 820 description (shimmerweed in Thunder Ridge)"]
+      "sources": ["warcraft.wiki.gg: Thunder Ridge (History)", "warcraft.wiki.gg: Durotar (Cycle of Hatred)"]
     },
     {
       "id": 14010,
@@ -119,21 +116,20 @@
       "title": "Skull Rock",
       "triggers": [{ "area": "Skull Rock" }, { "kill": 3204 }, { "accept": 827 }],
       "body": [
-        "A cave in the mountains just outside Orgrimmar's gates, so close to the city that the Burning Blade's presence there is an insult as much as a danger. Inside, cultists perform their rituals and wear searing collars that burn their flesh.",
-        "The shaman Margoz believes the collars bind their wearers to demonic power. Deep in the cave, a cultist named Gazz'uz carried a pendant through which a distant voice gave orders, and threatened him with the wrath of Neeru Fireblade."
+        "A cave in north-eastern Durotar, one of the Burning Blade's holdouts in the region, led by the orc warlock Gazz'uz. It overlooks Bladefist Bay, named after Kargath Bladefist, the old chieftain of the Shattered Hand clan."
       ],
-      "sources": ["quests 827, 829, 832 descriptions and offer texts"]
+      "sources": ["warcraft.wiki.gg: Skull Rock", "warcraft.wiki.gg: Bladefist Bay"]
     },
     {
       "id": 14011,
       "kind": "place",
-      "title": "Razorwind Canyon",
+      "title": "Razorwind Canyon and Drygulch Ravine",
       "triggers": [{ "area": "Razorwind Canyon" }, { "area": "Drygulch Ravine" }, { "accept": 834 }],
       "body": [
-        "A canyon running south from Orgrimmar, with Drygulch Ravine cut into its eastern wall. The Dustwind harpies nest in the ravine and swoop down on the caravans that pass below.",
-        "The goblins of the Tinkers' Union have suffered most. Rezlak, one of the trade prince Gazlowe's men, lost shipment after shipment to the harpies and finally decided the only way to keep the road open was to clear the ravine."
+        "Canyons on either side of the road between Razor Hill and Orgrimmar, nesting grounds of the Dustwind harpies. Drygulch Ravine, reached through a cave from the canyon, is where the stampeding thunder lizards ran when Thunder Ridge was razed.",
+        "The harpies have taken to banditry, robbing caravans and hoarding the loot on their cliffs, where their strongest guard the eggs."
       ],
-      "sources": ["quests 834, 835 descriptions and offer texts", "creature 3293 Rezlak <Tinkers' Union>"]
+      "sources": ["warcraft.wiki.gg: Razorwind Canyon", "warcraft.wiki.gg: Drygulch Ravine (History)"]
     },
     {
       "id": 14012,
@@ -141,10 +137,31 @@
       "title": "Southfury River",
       "triggers": [{ "area": "Southfury River" }, { "accept": 816 }],
       "body": [
-        "The river that forms Durotar's western border with the Barrens. A bridge carries the road west to the Far Watch outpost and the plains beyond.",
-        "Its banks belong to the crocolisks. A young hunter named Kron went west to hunt them and never came back, and his mother Misha still waits at her farm north-west of Razor Hill."
+        "Probably Kalimdor's greatest river. It begins in a lake on Mount Hyjal, falls into the lands below in spectacular waterfalls, and runs south between Ashenvale and Azshara, then between the Barrens and Durotar, before emptying into the Great Sea near Ratchet. Three bridges cross it. Crocolisks hunt in its shallows."
       ],
-      "sources": ["quest 816 description and offer text", "quest 840 (western road from Razor Hill over a bridge)"]
+      "sources": ["warcraft.wiki.gg: Southfury River"]
+    },
+    {
+      "id": 14013,
+      "kind": "place",
+      "title": "Scuttle Coast and Deadeye Shore",
+      "triggers": [{ "area": "Scuttle Coast" }, { "area": "Deadeye Shore" }],
+      "body": [
+        "Durotar's eastern shore. The Scuttle Coast is littered with Kul Tiran ships smashed on the rocks in the great battles between the orcs and Admiral Proudmoore's fleet, and is a favourite spot for scavengers.",
+        "Deadeye Shore, to the north, is named after Kilrogg Deadeye, the orcish hero who led the Bleeding Hollow clan; a skull-shaped patch of sand missing one eye marks it."
+      ],
+      "sources": ["warcraft.wiki.gg: Scuttle Coast", "warcraft.wiki.gg: Deadeye Shore", "warcraft.wiki.gg: Durotar (Geography)"]
+    },
+    {
+      "id": 14014,
+      "kind": "place",
+      "title": "Spirit Rock and the Shrine of the Dormant Flame",
+      "triggers": [{ "area": "Spirit Rock" }, { "area": "Shrine of the Dormant Flame" }, { "area": "Hidden Path" }],
+      "body": [
+        "Places sacred to the shaman of the Horde, in the mountains around the Valley of Trials. Spirit Rock, reached by the Hidden Path, is where young shaman drink a sapta to commune with the earth.",
+        "The Shrine of the Dormant Flame stands atop the tallest peak north-west of the valley, at the end of a secret spiral path. Shaman who have mastered fire light its brazier with the ember of a fire elemental they have defeated."
+      ],
+      "sources": ["warcraft.wiki.gg: Spirit Rock", "warcraft.wiki.gg: Shrine of the Dormant Flame", "warcraft.wiki.gg: Hidden Path"]
     },
     {
       "id": 14030,
@@ -152,10 +169,10 @@
       "title": "Eitrigg",
       "triggers": [{ "talk": 3144 }],
       "body": [
-        "An old orc veteran whom Thrall has charged with watching over the recruits of the Valley of Trials. He greets each newcomer with the old orcish word throm'ka.",
-        "Eitrigg left the Horde once, sickened by what it had become under the influence of the Burning Legion. In his exile he was taken prisoner by humans, and it was Thrall who freed him. Thrall's vision of a new Horde, guided by shamans rather than warlocks, brought him back."
+        "An aging orc warrior of the Blackrock clan, born on Draenor, and a veteran of the First and Second Wars. Warchief Blackhand named him one of his lieutenants alongside Orgrim Doomhammer and Varok Saurfang, and he served Doomhammer just as faithfully.",
+        "After the wars, in Lordaeron, he met a human paladin, Tirion Fordring, who spared him and was stripped of his title for defending an orc. The two old warriors came to respect each other and became friends despite everything between their peoples. Eitrigg now serves Thrall as a trusted adviser."
       ],
-      "sources": ["quest 787 description"]
+      "sources": ["warcraft.wiki.gg: Eitrigg (introduction, The First and Second Wars)"]
     },
     {
       "id": 14031,
@@ -163,10 +180,9 @@
       "title": "Gar'Thok",
       "triggers": [{ "talk": 3139 }],
       "body": [
-        "The commander of Razor Hill. Gar'Thok fought alongside humans against the Legion and never trusted them, and the return of Proudmoore's soldiers to Tiragarde Keep has only hardened him.",
-        "He is determined to make Durotar secure: to throw the Razormane quilboars out of their bramble camps, to drive the Kul Tirans back into the sea, and to learn from every scrap of Alliance machinery that washes up on his coast."
+        "The orc commander of Razor Hill. In the first days of Durotar, his outpost was one of the orcs' first footholds in the land, and he still holds the crossroads against quilboar, centaurs, harpies and the humans of Tiragarde."
       ],
-      "sources": ["quests 784, 825, 831, 837 descriptions and offer texts"]
+      "sources": ["warcraft.wiki.gg: Razor Hill (History)"]
     },
     {
       "id": 14032,
@@ -174,10 +190,9 @@
       "title": "Master Gadrin",
       "triggers": [{ "talk": 3188 }],
       "body": [
-        "An elder of Sen'jin Village and one of the Darkspear's wisest witch doctors. His brother Minshina was taken by Zalazane, killed, and his spirit bound inside his own skull, and Gadrin hears him calling in his dreams.",
-        "Gadrin is the voice of Sen'jin to outsiders. He sends word of the Burning Blade on to Razor Hill, and asks the orcs, as friends, for help with the trouble on the isles."
+        "A witch doctor of the Darkspear tribe at Sen'jin Village, and one of its keepers of lore. He knows the other troll tribes, and their magic, as well as any troll in Durotar."
       ],
-      "sources": ["quests 805, 808, 823, 826 descriptions and offer texts"]
+      "sources": ["warcraft.wiki.gg: Sen'jin Village"]
     },
     {
       "id": 14033,
@@ -185,21 +200,21 @@
       "title": "Zalazane",
       "triggers": [{ "kill": 3205 }, { "accept": 826 }],
       "body": [
-        "A Darkspear witch doctor who turned his voodoo against his own tribe. He took the Echo Isles, enslaved the trolls who stayed with hexes, and trapped the spirits of those he killed in a circle of skulls.",
-        "From the isles Zalazane sends his hexed followers to the mainland to bring back more. As long as he lives, the Darkspear cannot go home."
+        "A Darkspear witch doctor and once Vol'jin's best friend. Old Sen'jin himself encouraged him to study witchcraft, and some Darkspears thought he was being groomed to lead the tribe one day. Both young trolls believed in Sen'jin's dream of a Darkspear homeland.",
+        "Zalazane betrayed it. On the Echo Isles he turned to dark voodoo, bent the minds of his own people into mindless thralls, and drove the rest of the tribe from their home. The Horde has tried to deal with him, and failed."
       ],
-      "sources": ["quests 808, 826 descriptions"]
+      "sources": ["warcraft.wiki.gg: Sen'jin (Biography)", "warcraft.wiki.gg: Echo Isles", "warcraft.wiki.gg: Durotar (World of Warcraft)"]
     },
     {
       "id": 14034,
       "kind": "person",
-      "title": "Hana'zua",
-      "triggers": [{ "talk": 3287 }, { "kill": 3281 }],
+      "title": "Sen'jin",
+      "triggers": [{ "area": "Sen'jin Village" }, { "talk": 3188 }],
       "body": [
-        "A young orc who went hunting scorpids in the Valley of Trials and met Sarkoth, a scorpid much larger and meaner than the rest, on the plateau to the south. Hana'zua cracked its claw before it stung him and left him bleeding on the ground.",
-        "He cares less about his wounds than about his honour. Hearing that someone finished the fight he started gave him the strength to wait until help arrived from the Den."
+        "The late chieftain of the Darkspear tribe, a powerful witch doctor and spiritual leader. For years he led his people in peace on the remote Darkspear Islands. He saw the folly in other trolls' dreams of rebuilding their ancient empires, and dreamed instead of a home where the Darkspears could live free from fear, led by a shadow hunter as they had been long ago.",
+        "When Thrall's Horde came to his islands before the Third War, Sen'jin allied with them against the enemies threatening his people, and was killed. His son Vol'jin led the Darkspears into the Horde."
       ],
-      "sources": ["quests 790, 804 descriptions and offer texts"]
+      "sources": ["warcraft.wiki.gg: Sen'jin (introduction, Biography)", "warcraft.wiki.gg: Darkspear tribe"]
     },
     {
       "id": 14035,
@@ -207,10 +222,9 @@
       "title": "Orgnil Soulscar",
       "triggers": [{ "talk": 3142 }],
       "body": [
-        "An orc of Razor Hill whose work is to police Durotar against evils like the Burning Blade. He collects every report of the cult, sends young warriors after its leaders and trusts nobody who deals in demons.",
-        "Orgnil prefers a direct answer to a cult: find it, and crush it. When the shaman Margoz learned more of the cult's secrets, Orgnil sent warriors to hear him out, but told them to crush the cultists whatever Margoz said."
+        "An orc of Razor Hill who has taken on the task of investigating the Burning Blade's activities in Durotar, and of rooting out the cultists before they can do more harm."
       ],
-      "sources": ["quests 806, 823, 828 descriptions"]
+      "sources": ["warcraft.wiki.gg: Razor Hill"]
     },
     {
       "id": 14050,
@@ -218,11 +232,10 @@
       "title": "The Burning Blade",
       "triggers": [{ "complete": 794 }, { "accept": 827 }, { "complete": 806 }],
       "body": [
-        "When the orcs first came to Azeroth they were already in thrall to the Burning Legion, whose blood had driven them to war. Thrall freed his people from it, and the new Horde turned to its shamans and its ancestors. Not every orc let go of the old power.",
-        "The Burning Blade is a cult of those who did not. Its members, orcs and others, seek demonic power through dark rituals, burning collars and an object they call the Demon Seed. It has covens in the Valley of Trials, at Thunder Ridge, at Skull Rock beside Orgrimmar itself, and beyond Durotar's border in the Barrens.",
-        "The cult works in secret, and it seems to know a great deal about those who hunt it."
+        "The Burning Blade was once a clan of the old Horde, its warriors so drunk on demon blood they burned with fel fire. It survives as a cult of warlocks and fanatics who still serve the Burning Legion and answer to the Shadow Council.",
+        "About three years after Hyjal, the cult came to Durotar to tear down Thrall's peace. It razed Thunder Ridge with demonic magic, set its hidden cells in the caves and canyons of the land, and works to set the Horde and Theramore against each other. As Warchief Thrall's general and chief of security, Nazgrel's duty is to root them out."
       ],
-      "sources": ["quests 792, 794, 806, 827, 832, 809, 924 descriptions and offer texts", "quest 787 (Horde free of demonic influence, guided by the shamans)", "pre-Cataclysm lore: the blood of Mannoroth, Thrall's new Horde"]
+      "sources": ["warcraft.wiki.gg: Durotar (Cycle of Hatred, World of Warcraft)", "warcraft.wiki.gg: Thunder Ridge", "warcraft.wiki.gg: Valley of Trials"]
     },
     {
       "id": 14051,
@@ -230,22 +243,21 @@
       "title": "Proudmoore's War",
       "triggers": [{ "complete": 831 }, { "complete": 830 }, { "complete": 784 }],
       "body": [
-        "To defeat the demon lord Archimonde at Mount Hyjal, Thrall's Horde fought beside the humans of Lordaeron led by Jaina Proudmoore. The alliance was meant to last.",
-        "Jaina's father, Admiral Daelin Proudmoore of Kul Tiras, would not accept it. He brought his fleet to Kalimdor and attacked the orcs in their new homeland. The Horde struck back, his keep in Durotar fell, and the admiral himself was killed.",
-        "His war did not end with him. Orders found among his soldiers show that he had laid his plans well before his death, and his remaining forces still hold Tiragarde Keep. Vol'jin has warned Thrall more than once that the humans cannot be trusted."
+        "Soon after Durotar was founded, a massive fleet from Kul Tiras arrived under Grand Admiral Daelin Proudmoore, a hero of the Second War and a staunch enemy of the orcs, determined to destroy Durotar before they could take root.",
+        "His daughter Jaina, lady of Theramore, chose to help Thrall rather than her father. Daelin died in the battle before she could reconcile with him or show him the orcs were no longer bloodthirsty monsters. In gratitude, the orcs let Jaina's forces return home in peace. Kul Tiras' wrecks still lie along the coast, and its last soldiers still hold Tiragarde."
       ],
-      "sources": ["quest 784 description", "quests 830, 831 descriptions and offer texts", "pre-Cataclysm lore: Warcraft III, the Frozen Throne Horde campaign"]
+      "sources": ["warcraft.wiki.gg: Durotar (Invasion of Durotar)", "warcraft.wiki.gg: Tiragarde Keep"]
     },
     {
       "id": 14052,
       "kind": "history",
       "title": "The Darkspear Pact",
-      "triggers": [{ "complete": 805 }, { "talk": 3188 }],
+      "triggers": [{ "complete": 805 }, { "talk": 3188 }, { "area": "Sen'jin Village" }],
       "body": [
-        "The Darkspear trolls met Thrall when his storm-wrecked fleet landed on their island on its way to Kalimdor. Their islands were overrun by murlocs and a sea witch; Thrall helped them escape, and the tribe followed him across the sea.",
-        "Since then orcs and trolls have been sworn to protect each other. The Darkspear settled Durotar's southern coast and the Echo Isles, and fight beside the orcs in every war of the Horde. When Zalazane took the isles, it was the orcs whom Sen'jin's people asked for help."
+        "The Darkspears were once part of the Gurubashi Empire and suffered when it split into tribes, being smaller than the rest. They are mortal enemies of the Amani, and fought the Skullsplitters and Bloodscalps for years.",
+        "When Thrall led the Horde out of Lordaeron, his ships came to the Darkspears' islands and rescued them from the naga sea witch Zar'jira. The Darkspears owed the orcs a great debt, and allied themselves with the Horde in gratitude. Vol'jin has been one of Thrall's most trusted advisers ever since."
       ],
-      "sources": ["quest 785 description (pact of protection with the Darkspear)", "quest 805 offer text", "pre-Cataclysm lore: Warcraft III, Thrall's voyage and Sen'jin's death"]
+      "sources": ["warcraft.wiki.gg: Darkspear tribe (introduction, History)", "warcraft.wiki.gg: Sen'jin"]
     }
   ]
 }

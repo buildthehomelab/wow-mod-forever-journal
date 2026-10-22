@@ -1,0 +1,141 @@
+{
+  "zone": 3519,
+  "name": "Terokkar Forest",
+  "entries": [
+    {
+      "id": 3519000,
+      "kind": "zone",
+      "title": "Terokkar Forest",
+      "triggers": [{ "areaId": 3519 }],
+      "body": [
+        "Once Talador, a forest of red and orange olemba trees that bathed the land in a perpetual autumn. Around the trees and the draenei's great gardens stood their greatest city, Shattrath, and their holy mausoleum, Auchindoun.",
+        "When the Horde drank the blood of Mannoroth, it broke through to Shattrath and sacked it. Its fel magic turned the bright forest a pale, dusky green, a dark and eerie woodland. Once most of the Horde had gone to Azeroth, the arakkoa outcasts took the forest and renamed it for Terokk, their lost king."
+      ],
+      "sources": ["warcraft.wiki.gg: Terokkar Forest (introduction, History)"]
+    },
+    {
+      "id": 3519001,
+      "kind": "place",
+      "title": "Allerian Stronghold",
+      "triggers": [{ "area": "Allerian Stronghold" }, { "area": "Allerian Post" }],
+      "body": [
+        "When the Sons of Lothar hunted Ner'zhul across Draenor, they camped here for a night, worn out. The high elf Talthressar and the human Herrick marked it to honour the sacrifices of the Wildhammer, a symbol of the alliance between elves, men and dwarves, and named it for Alleria Windrunner.",
+        "Its high elves have only now learned that the Scourge overran Quel'Thalas and that their kin follow Kael'thas into the Horde. Many have chosen to stay in Outland, under Captain Auric Sunchaser."
+      ],
+      "sources": ["warcraft.wiki.gg: Allerian Stronghold (History)"]
+    },
+    {
+      "id": 3519002,
+      "kind": "place",
+      "title": "Stonebreaker Hold",
+      "triggers": [{ "area": "Stonebreaker Hold" }, { "area": "Stonebreaker Camp" }],
+      "body": [
+        "The Horde's town in the forest, built in old Mag'har style around a town hall and watchtowers. From the camp nearby, its scouts keep watch on the blood elves of Firewing Point."
+      ],
+      "sources": ["warcraft.wiki.gg: Stonebreaker Hold", "warcraft.wiki.gg: Stonebreaker Camp"]
+    },
+    {
+      "id": 3519003,
+      "kind": "place",
+      "title": "The Bone Wastes",
+      "triggers": [{ "area": "The Bone Wastes" }, { "area": "Auchenai Grounds" }, { "kill": 22441 }],
+      "body": [
+        "Once forest, like the rest of Talador. For thousands of years the draenei laid their dead to rest at Auchindoun, their most sacred temple. Then agents of the Shadow Council crept in to summon a creature of immense evil, and their magic ended in a vast explosion that blew the temple apart, levelled the forest around it, and tore a rift in the Nether itself.",
+        "Bones and ashes are all that remain. The interred dead walk the ruins as restless spirits, and Teribus the Cursed circles the mausoleum on great wings."
+      ],
+      "sources": ["warcraft.wiki.gg: Bone Wastes", "warcraft.wiki.gg: Auchindoun (Official description)", "warcraft.wiki.gg: Terokkar Forest (Geography)"]
+    },
+    {
+      "id": 3519004,
+      "kind": "place",
+      "title": "Auchindoun",
+      "triggers": [{ "area": "Auchindoun" }, { "area": "Ring of Observance" }],
+      "body": [
+        "The draenei city of the dead. Since its ruin it has been overrun from every side: Nexus-Prince Shaffar's ethereals drain the Mana-Tombs, the Legion harvests souls in the Auchenai Crypts, renegade arakkoa work dark magic in the Sethekk Halls, and the Shadow Council plots in the Shadow Labyrinth, where the horror it summoned threatens to overwhelm its jailers. The four wings meet at the Ring of Observance, the ruined inner cloister."
+      ],
+      "sources": ["warcraft.wiki.gg: Auchindoun (introduction, The Burning Crusade)", "warcraft.wiki.gg: Ring of Observance"]
+    },
+    {
+      "id": 3519005,
+      "kind": "place",
+      "title": "The Shadow Council",
+      "triggers": [{ "area": "Grangol'var Village" }, { "area": "Shadow Tomb" }, { "kill": 18720 }, { "kill": 22381 }],
+      "body": [
+        "Shadow Council warlocks hold the ruins of Grangol'var Village under Shadowmaster Grieve, and their Cabal cultists fill the Shadow Tomb, where the shivarra Hathyss the Wicked's admonishments echo through the halls. They prey on the roads to Auchindoun."
+      ],
+      "sources": ["warcraft.wiki.gg: Grangol'var Village", "warcraft.wiki.gg: Shadow Tomb", "warcraft.wiki.gg: Refugee Caravan"]
+    },
+    {
+      "id": 3519006,
+      "kind": "place",
+      "title": "Tuurem and Firewing Point",
+      "triggers": [{ "area": "Tuurem" }, { "area": "Firewing Point" }, { "area": "Cenarion Thicket" }, { "kill": 18554 }],
+      "body": [
+        "Tuurem sat at the crossroads between Shattrath and Karabor and was one of the first draenei cities the orcs overran. Now Wrekt Broken and Lost Ones live in it, allied with Kael'thas' blood elves at Firewing Point, who keep a mana bomb in their courtyard like the one that destroyed Kirin'Var Village.",
+        "Together they sent a Broken suicide bomber into the Cenarion Thicket nearby, as vengeance for the druids' destruction of the colossi. Moths and poison gases overran it, and only three druids survived."
+      ],
+      "sources": ["warcraft.wiki.gg: Tuurem", "warcraft.wiki.gg: Firewing Point", "warcraft.wiki.gg: Cenarion Thicket", "warcraft.wiki.gg: Terokkar Forest (History)"]
+    },
+    {
+      "id": 3519007,
+      "kind": "place",
+      "title": "The Veils of the Arakkoa",
+      "triggers": [{ "area": "Veil Shienor" }, { "area": "Veil Reskk" }, { "area": "Veil Lithic" }, { "area": "Veil Rhaze" }, { "area": "Veil Shalas" }, { "area": "Lower Veil Shil'ak" }],
+      "body": [
+        "Colonies of Skettis scattered across the forest, each doing evil in Terokk's name. At Shienor and Reskk the Eyes of Skettis spy for him; at Lithic his minions corrupt the kaliri into his service; at Rhaze the spirits of arakkoa killed when Auchindoun exploded still linger under his influence; at Shalas, the strongest, his sages wage war against the Light."
+      ],
+      "sources": ["warcraft.wiki.gg: Terokk (The Burning Crusade)", "warcraft.wiki.gg: Veil Lithic", "warcraft.wiki.gg: Veil Rhaze", "warcraft.wiki.gg: Veil Shalas"]
+    },
+    {
+      "id": 3519008,
+      "kind": "place",
+      "title": "Skettis",
+      "triggers": [{ "area": "Skettis" }, { "area": "Blackwind Valley" }, { "area": "Blackwind Lake" }, { "area": "Veil Ala'rak" }, { "area": "Veil Harr'ik" }, { "area": "Upper Veil Shil'ak" }, { "area": "Blackwind Landing" }],
+      "body": [
+        "The hidden capital of the arakkoa, in a valley among the Skethyl Mountains that only fliers can reach. King Terokk built it six hundred years before the Dark Portal opened, among ancient ruins, as a refuge for the outcast and unwanted of arakkoa society. When the flying arakkoa died in Draenor's destruction, it became the capital of their whole race. The Sha'tari Skyguard keep watch on it from Blackwind Landing."
+      ],
+      "sources": ["warcraft.wiki.gg: Skettis", "warcraft.wiki.gg: Blackwind Landing"]
+    },
+    {
+      "id": 3519009,
+      "kind": "place",
+      "title": "Terokk's Rest",
+      "triggers": [{ "area": "Terokk's Rest" }, { "kill": 21838 }],
+      "body": [
+        "An island in Blackwind Lake at the heart of Skettis, where the Talon King waits for the stars to align and herald his return. His talonpriests hold descendants of his ancient enemies prisoner, it is said, to kill when the time comes; when the last of them is gone, he will return."
+      ],
+      "sources": ["warcraft.wiki.gg: Terokk's Rest", "warcraft.wiki.gg: Terokk (The Burning Crusade, Terokk's ancient enemies)"]
+    },
+    {
+      "id": 3519010,
+      "kind": "place",
+      "title": "The Bleeding Hollow and Bonechewer Ruins",
+      "triggers": [{ "area": "Bleeding Hollow Ruins" }, { "area": "Bonechewer Ruins" }],
+      "body": [
+        "Ruined villages of the old orc clans. Fel orcs fill the Bonechewer ruins; the Bleeding Hollow village, once home to Mag'har, has been overrun by Boulderfist ogres driven out of Nagrand by the Warmaul."
+      ],
+      "sources": ["warcraft.wiki.gg: Bleeding Hollow Ruins", "warcraft.wiki.gg: Bonechewer Ruins"]
+    },
+    {
+      "id": 3519011,
+      "kind": "place",
+      "title": "The Refugee Caravan",
+      "triggers": [{ "area": "Refugee Caravan" }, { "area": "Sha'tari Base Camp" }],
+      "body": [
+        "A makeshift camp of Shattrath's refugees, of many races, who set out to assault Auchindoun and were ambushed by Shadow Council raiders before they reached it. Sha'tar vindicators guard them while they mend their wagons; some of their children were carried off to Skettis."
+      ],
+      "sources": ["warcraft.wiki.gg: Refugee Caravan", "warcraft.wiki.gg: Sha'tari Base Camp"]
+    },
+    {
+      "id": 3519030,
+      "kind": "person",
+      "title": "Terokk",
+      "triggers": [{ "kill": 21838 }],
+      "body": [
+        "The greatest king and hero of the arakkoa. He was betrayed by his own allies and afflicted with the Curse of Sethe; even so, he built Skettis with his own claws for his fellow refugees. As the curse drove him mad, his talonpriests sealed him away in the shadows, hoping to restore him.",
+        "During his long imprisonment he gave himself over to the madness. Some arakkoa, exiled to Shattrath, call him a false prophet who will lead their people to ruin, and the Talon King Ikiss claims to be Terokk reborn."
+      ],
+      "sources": ["warcraft.wiki.gg: Terokk (introduction, The Burning Crusade)"]
+    }
+  ]
+}
