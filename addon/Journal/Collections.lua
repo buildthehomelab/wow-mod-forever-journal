@@ -416,6 +416,11 @@ local function buildTab(kind, panel)
 	-- Summon (mounts, pets) or Use (toys, a secure button so the item can be used).
 	local action = J.CreateButton(right, "Summon", 110, 24)
 	action:SetPoint("BOTTOMRIGHT", model, "BOTTOMRIGHT", -6, 6)
+	-- The model takes the mouse (drag to turn) and in the client it ends up above this button,
+	-- a sibling made after it: clicks on Summon turned the model instead. So the button sits a
+	-- level above the model, re-pinned on every render in case the window is re-levelled.
+	local function raiseAction() action:SetFrameLevel(model:GetFrameLevel() + 1) end
+	raiseAction()
 	action:SetScript("OnClick", function ()
 		local e = state.selected
 		local c = e and J.CompanionNow(kind, e)
@@ -644,6 +649,7 @@ local function buildTab(kind, panel)
 			model:Show()
 			showCreature(e.creature)
 			local c = J.Companion(kind, e)
+			raiseAction()
 			setShown(action, c ~= nil)
 			if c then
 				local mounted = kind == "mounts" and IsMounted and IsMounted()
