@@ -112,6 +112,15 @@ function methods:GetCenter() return 500, 400 end
 function methods:HasFocus() return rawget(self, "__focus") end
 function methods:SetFocus() self.__focus = true end
 function methods:ClearFocus() self.__focus = nil end
+-- Model frames: a creature shows (GetModel names a file) only once the client has it cached.
+local cachedCreatures = { [308] = true, [7385] = true, [639] = true }
+function methods:SetCreature(entry) self.__creature = entry end
+function methods:ClearModel() self.__creature = nil end
+function methods:GetModel()
+	local c = rawget(self, "__creature")
+	return c and cachedCreatures[c] and ("Creature\\C" .. c .. ".m2") or ""
+end
+function methods:SetLight(on, omni, x, y, z, ambient) self.__ambient = ambient end
 frameMeta.__index = function (t, k)
 	if methods[k] then return methods[k] end
 	if type(k) == "string" and k:match("^%u") then return function () end end
@@ -839,6 +848,26 @@ step("mounts: summon, filters, search", function ()
 	assert(summon:GetFrameLevel() > summon:GetParent():GetFrameLevel() + 1, "Summon button not above the model")
 	summon.__scripts.OnClick(summon)
 	assert(called == "MOUNT:1", "CallCompanion not called")
+	local model = find(function (f) return f.__kind == "PlayerModel" and f:IsVisible() and f.__creature == 308 end)
+	assert(model and model:GetModel() ~= "", "collected mount has no model")
+	assert(not (model.lockLayer and model.lockLayer:IsVisible()), "a collected mount shows the padlock")
+	-- One you haven't collected: still previewed, dimmed and locked, once the client has the creature.
+	local horse = find(function (f) return f.__kind == "Button" and type(rawget(f, "entry")) == "table" and f.entry.id == 458 and f:IsVisible() end)
+	horse.__scripts.OnClick(horse)
+	tick(0.2)
+	assert(model.__creature == 284 and model:IsVisible(), "an uncollected mount isn't previewed")
+	assert(model.lockLayer and model.lockLayer:IsVisible(), "no padlock on an uncollected mount")
+	assert(model.lockLayer:GetFrameLevel() > model:GetFrameLevel(), "padlock under the model")
+	assert(not buttonShown("Summon"), "Summon offered for an uncollected mount")
+	tick(1)
+	assert(model:GetModel() == "", "test: the creature shouldn't be cached yet")
+	cachedCreatures[284] = true
+	tick(1)
+	assert(model:GetModel() ~= "" and model.__ambient == 0.3, "the uncollected mount didn't load dimmed")
+	local stallion = find(function (f) return f.__kind == "Button" and type(rawget(f, "entry")) == "table" and f.entry.id == 470 and f:IsVisible() end)
+	stallion.__scripts.OnClick(stallion)
+	tick(0.2)
+	assert(model.__creature == 308 and not model.lockLayer:IsVisible() and model.__ambient == 0.7, "back on a collected one: still locked")
 	local f = J.Filters("mounts")
 	f.collected = false
 	J.Fire("COLLECTION_FILTER", "mounts")

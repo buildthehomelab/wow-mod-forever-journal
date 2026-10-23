@@ -136,25 +136,6 @@ local function setModelShown(shown)
 end
 setModelShown(false)
 
-local function showCreature(entry)
-	if not entry or entry == 0 then
-		model:ClearModel()
-		model.shownEntry = nil
-		return
-	end
-	if model.shownEntry == entry then return end
-	model.shownEntry = entry
-	model:SetCreature(entry)
-	model:SetFacing(model.facing)
-	-- A creature the client hasn't seen yet only shows once its query comes back.
-	J.After(0.8, function ()
-		if model.shownEntry == entry and model:IsVisible() then
-			model:SetCreature(entry)
-			model:SetFacing(model.facing)
-		end
-	end)
-end
-
 -----------------------------------------
 -- instance overview
 
@@ -265,7 +246,7 @@ local function bossOverview(ctx)
 	local st = ctx.status and ctx.status.inst == inst.id and ctx.status.value or nil
 
 	if boss.display and boss.display > 0 then
-		showCreature(pane.unit or boss.display)
+		J.ShowCreature(model, pane.unit or boss.display)
 	end
 
 	text(boss.name, GameFontNormalHuge, GOLD, 0, 2)
@@ -298,7 +279,7 @@ local function bossOverview(ctx)
 			if u.health and u.health > 0 then line = line .. "  -  " .. J.Number(u.health) .. " health" end
 			text(line, GameFontHighlight, nil, 0, 4)
 			if #mains > 1 and boss.display and boss.display > 0 then
-				local b = button("Show " .. u.name, function () pane.unit = u.entry ; showCreature(u.entry) end, 12)
+				local b = button("Show " .. u.name, function () pane.unit = u.entry ; J.ShowCreature(model, u.entry) end, 12)
 				b:SetHeight(20)
 				y = y + 24
 			end

@@ -386,25 +386,6 @@ local function buildTab(kind, panel)
 	modelHint:SetPoint("BOTTOMLEFT", model, "BOTTOMLEFT", 6, 4)
 	modelHint:SetText("Drag to turn")
 
-	local function showCreature(entry)
-		if not entry or entry == 0 then
-			model:ClearModel()
-			model.shownEntry = nil
-			return
-		end
-		if model.shownEntry == entry then return end
-		model.shownEntry = entry
-		model:SetCreature(entry)
-		model:SetFacing(model.facing)
-		-- A creature the client hasn't seen yet only shows once its query comes back.
-		J.After(0.8, function ()
-			if model.shownEntry == entry and model:IsVisible() then
-				model:SetCreature(entry)
-				model:SetFacing(model.facing)
-			end
-		end)
-	end
-
 	-- Toys have no model: their icon and what using them does.
 	local toyIcon = right:CreateTexture(nil, "ARTWORK")
 	toyIcon:SetSize(96, 96)
@@ -647,7 +628,8 @@ local function buildTab(kind, panel)
 			toyIcon:Hide()
 			toyText:Hide()
 			model:Show()
-			showCreature(e.creature)
+			-- One you haven't collected still shows, dimmed and with a padlock.
+			J.ShowCreature(model, e.creature, not e.mine)
 			local c = J.Companion(kind, e)
 			raiseAction()
 			setShown(action, c ~= nil)
