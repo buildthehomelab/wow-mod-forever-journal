@@ -145,7 +145,8 @@ Entries are discovered by playing, not by reading a list:
 
 - walking into a zone or one of its places, alive and on foot or your own mount, the way the
   game's own exploration works (on a flight path, the place you land in counts once you're down);
-- talking to someone (opening their chat or quest window);
+- talking to someone: opening their chat or quest window, or, for someone with nothing to say,
+  clicking them from within 10 yards;
 - defeating someone (everyone in the group who shares the kill);
 - taking a quest, or turning one in.
 

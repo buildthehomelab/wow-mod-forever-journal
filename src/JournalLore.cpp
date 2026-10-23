@@ -1127,7 +1127,7 @@ public:
     bool CanPacketReceive(WorldSession* session, WorldPacket const& packet) override
     {
         uint16 opcode = packet.GetOpcode();
-        if ((opcode != CMSG_READ_ITEM && opcode != CMSG_GAMEOBJ_REPORT_USE) || !session)
+        if ((opcode != CMSG_READ_ITEM && opcode != CMSG_GAMEOBJ_REPORT_USE && opcode != CMSG_SET_SELECTION) || !session)
             return true;
         Player* player = session->GetPlayer();
         if (!player || !player->IsInWorld())
@@ -1135,6 +1135,11 @@ public:
         if (opcode == CMSG_GAMEOBJ_REPORT_USE)
         {
             ReportedUse(player, packet);
+            return true;
+        }
+        if (opcode == CMSG_SET_SELECTION)
+        {
+            Selected(player, packet);
             return true;
         }
         if (packet.size() < 2)
@@ -1157,6 +1162,25 @@ public:
             return;
         if (uint32 page = Lore::PageOf(go->GetGOInfo()))
             Lore::ReadBook(player, page, go->GetZoneId());
+    }
+
+    // Clicking someone up close counts as talking to them, for the many who have no chat or quest
+    // window to open. Runs on the map thread with the selection handler (PROCESS_THREADSAFE).
+    static void Selected(Player* player, WorldPacket const& packet)
+    {
+        constexpr float TALK_DISTANCE = 10.0f;
+        if (packet.size() < 8)
+            return;
+        ObjectGuid guid(packet.read<uint64>(0));
+        if (!guid.IsCreature())
+            return;
+        Creature* creature = ObjectAccessor::GetCreature(*player, guid);
+        if (!creature || !Lore::sData.byTrigger.count(Lore::Key(Lore::TRIGGER_TALK, creature->GetEntry())))
+            return;
+        if (!creature->IsAlive() || creature->IsInCombat() || !player->IsAlive()
+            || !creature->IsWithinDistInMap(player, TALK_DISTANCE))
+            return;
+        Lore::Discover(player, Lore::TRIGGER_TALK, creature->GetEntry());
     }
 };
 
