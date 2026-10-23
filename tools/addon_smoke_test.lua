@@ -73,7 +73,13 @@ function methods:SetWidth(w) self.__width = w end
 function methods:SetHeight(h) self.__height = h end
 function methods:SetSize(w, h) self.__width, self.__height = w, h end
 function methods:GetName() return self.__name end
-function methods:GetFrameLevel() return 1 end
+function methods:GetFrameLevel()
+	local own = rawget(self, "__level")
+	if own then return own end
+	local p = rawget(self, "__parent")
+	return p and p.GetFrameLevel and p:GetFrameLevel() + 1 or 1
+end
+function methods:SetFrameLevel(l) self.__level = l end
 function methods:GetObjectType() return self.__kind end
 function methods:GetRegions() return end
 function methods:CreateTexture() return newObject("Texture", nil, self) end
@@ -829,6 +835,8 @@ step("mounts: summon, filters, search", function ()
 	tick(0.5)
 	local summon = buttonShown("Summon")
 	assert(summon, "no Summon button for a collected mount")
+	-- Above the model (a sibling at the pane's level + 1), or the model's drag handler gets the click.
+	assert(summon:GetFrameLevel() > summon:GetParent():GetFrameLevel() + 1, "Summon button not above the model")
 	summon.__scripts.OnClick(summon)
 	assert(called == "MOUNT:1", "CallCompanion not called")
 	local f = J.Filters("mounts")
