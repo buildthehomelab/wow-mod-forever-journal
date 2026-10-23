@@ -33,6 +33,7 @@
  *   V:<req>:<entry>                   -> VR, VD rows, VE        lore: a discovered entry's text
  *   J:<req>                           -> JR, JD rows, JE        library: the books the player has read
  *   P:<req>:<book>                    -> PR, PD rows, PE        library: a book's pages
+ *   R:<req>:<entry>[,<entry>...]      -> R:<req>:<sent>         creature records for previews
  *
  * The server sends three messages unasked. LN:0:<entry>:<zone>:<kind>:<title> tells the addon a
  * lore entry was discovered, and BN:0:<book>:<title> that a book went on the shelf
@@ -314,7 +315,7 @@ namespace Journal
                 sFeatures[player->GetGUID().GetCounter()] = features;
             }
 
-            uint32 flags = HELLO_JOURNAL | HELLO_MAP_PINS | HELLO_HINTS;
+            uint32 flags = HELLO_JOURNAL | HELLO_MAP_PINS | HELLO_HINTS | HELLO_MODELS;
             if (sConfig.progressionEnabled && sConfig.eraLocks)
                 flags |= HELLO_PROGRESSION;
             if (sConfig.learnAbilities)
@@ -438,6 +439,30 @@ namespace Journal
             Send(player, "EE:" + req);
         }
 
+        // A 3.3.5 model frame's SetCreature reads the client's creature cache and never asks the
+        // server for a creature missing from it, so a mount, pet or boss the player has never met
+        // stays blank. The client takes a creature query answer it didn't ask for into its cache,
+        // so the addon names the creatures its previews lack and they are answered here as if
+        // queried. Up to 8 per request; anything else a client could query itself anyway.
+        void HandleCreatureRecords(Player* player, std::string const& req, std::vector<std::string_view> const& args)
+        {
+            uint32 sent = 0;
+            if (args.size() > 2)
+            {
+                for (std::string_view field : Split(args[2], ','))
+                {
+                    uint32 entry = 0;
+                    if (sent >= 8 || !ParseUInt(field, entry) || !sObjectMgr->GetCreatureTemplate(entry))
+                        continue;
+                    WorldPacket query(CMSG_CREATURE_QUERY, 12);
+                    query << entry << uint64(0);
+                    player->GetSession()->HandleCreatureQueryOpcode(query);
+                    ++sent;
+                }
+            }
+            Send(player, "R:" + req + ":" + std::to_string(sent));
+        }
+
         void Dispatch(Player* player, std::string_view message)
         {
             std::vector<std::string_view> args = Split(message, ':');
@@ -516,6 +541,8 @@ namespace Journal
                 Lore::HandleLibrary(player, req);
             else if (command == "P" && Lore::Ready())
                 Lore::HandleBook(player, req, args);
+            else if (command == "R")
+                HandleCreatureRecords(player, req, args);
             else
                 SendError(player, req, "unknown");
         }

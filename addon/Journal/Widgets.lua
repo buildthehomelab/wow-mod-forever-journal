@@ -401,8 +401,9 @@ function J.CreatePool(make)
 end
 
 -- Creature previews. A 3.3.5 model frame shows a creature only once the client has it cached,
--- so one it hasn't met (a mount or pet you don't own, a boss you never saw) stayed blank. The
--- creature is set again until the frame reports a model file (GetModel), like Transmog's tiles.
+-- and SetCreature never asks the server for one it lacks, so one it hasn't met (a mount or pet
+-- you don't own, a boss you never saw) stayed blank. The server sends the creature's record on
+-- request (R), and the creature is set again until the frame reports a model file (GetModel).
 -- A locked one keeps its colours under a dim light, with a padlock in the corner.
 local MODEL_LIGHT = { 1, 0, 0, -0.707, -0.707, 0.7, 1.0, 1.0, 1.0, 0.8, 1.0, 1.0, 0.8 }
 local MODEL_DIM = { 1, 0, 0, -0.707, -0.707, 0.3, 1.0, 1.0, 1.0, 0.3, 1.0, 1.0, 0.8 }
@@ -412,6 +413,15 @@ local MODEL_TRIES = 30 -- 12 seconds
 local function modelLoaded(model)
 	local file = model.GetModel and model:GetModel()
 	return type(file) == "string" and file ~= ""
+end
+
+-- Creatures whose record was asked for this session: the client keeps it from then on.
+local recordAsked = {}
+
+local function askRecord(entry)
+	if recordAsked[entry] or not J.Has(J.HELLO_MODELS) then return end
+	recordAsked[entry] = true
+	J.Request("R", { tostring(entry) })
 end
 
 local function frameCreature(model)
@@ -488,6 +498,7 @@ function J.ShowCreature(model, entry, locked)
 	if modelLoaded(model) then
 		frameCreature(model)
 	else
+		askRecord(entry)
 		modelLoader.pending[model] = true
 		modelLoader:Show()
 	end

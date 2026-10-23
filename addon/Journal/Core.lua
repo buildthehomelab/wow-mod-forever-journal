@@ -18,6 +18,7 @@ J.HELLO_DIRECTORY = 64
 J.HELLO_LORE = 128
 J.HELLO_LIBRARY = 256
 J.HELLO_HINTS = 512
+J.HELLO_MODELS = 1024
 
 -- What this addon can do, sent with HELLO (AddonFeatureFlags in src/Journal.h): open a tab when
 -- the server says OPEN (the Town Guide spell and .find), and answer OPENED.
@@ -408,8 +409,8 @@ local function onAddonMessage(message)
 		return
 	end
 
-	-- Single answers: H and M, to a request of the same kind.
-	if p and (code == "H" or code == "M") and p.cmd == code then
+	-- Single answers: H, M and R, to a request of the same kind.
+	if p and (code == "H" or code == "M" or code == "R") and p.cmd == code then
 		finish(req, splitFields(rest))
 	end
 end
