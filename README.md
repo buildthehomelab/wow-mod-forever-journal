@@ -163,11 +163,12 @@ With mod-individual-progression, lore in Outland, on the Isle of Quel'Danas and 
 with the stage that opens those lands (an entry can also name its own stage). Until then it carries
 a lock and the stage it opens at.
 
-Lore so far covers the starting zones of every race and the zones that follow them: **Elwynn
-Forest**, **Westfall**, **Dun Morogh**, **Loch Modan**, **Teldrassil**, **Darkshore**, **Azuremyst
-Isle**, **Bloodmyst Isle**, **Durotar**, **Mulgore**, **The Barrens**, **Tirisfal Glades**,
-**Silverpine Forest**, **Eversong Woods** and **Ghostlands**. More zones are added as they're written
-(see [Writing lore](#writing-lore)).
+Lore covers every zone and city of Azeroth, Outland and Northrend, and every dungeon, raid and
+battleground up to Wrath of the Lich King. Each dungeon and raid has its own zone in the list: its
+rooms and wings open as you clear them, and each boss has an entry that opens when it falls.
+Lore is written from the setting's history, not from the quests you'll play anyway, and stays in
+the Wrath era. Twists are kept behind the kill or the quest that reveals them. To add or change
+lore, see [Writing lore](#writing-lore).
 
 **The Library**, at the top of the zone list, is your bookshelf. Every book, plaque, tablet or
 letter you read in the world (anything that opens a page of text, on a table, a wall or in your

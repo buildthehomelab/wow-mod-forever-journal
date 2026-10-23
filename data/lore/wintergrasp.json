@@ -1,0 +1,47 @@
+{
+  "zone": 4197,
+  "name": "Wintergrasp",
+  "entries": [
+    {
+      "id": 4197000,
+      "kind": "zone",
+      "title": "Wintergrasp",
+      "triggers": [{ "areaId": 4197 }],
+      "body": [
+        "A high plateau overlooking the Dragonblight and the Borean Tundra, undisturbed for ages, its icy winds howling unheard among ancient titan fortifications. It was once a vast lake, Lake Wintergrasp; the lake has shrunk, leaving its basin open.",
+        "Its wealth of elemental materials, its titan fortifications, and the rumours of an ancient vault beneath its keep have made it the prize of a vicious tug-of-war between the Horde and the Alliance."
+      ],
+      "sources": ["warcraft.wiki.gg: Wintergrasp (History)", "warcraft.wiki.gg: Vault of Archavon (History)"]
+    },
+    {
+      "id": 4197001,
+      "kind": "place",
+      "title": "Wintergrasp Fortress",
+      "triggers": [{ "area": "Wintergrasp Fortress" }],
+      "body": [
+        "A titan fortress of two walls, with domed watchtowers, guarding the entrance to the Vault of Archavon. Whoever holds it holds the way into the vault."
+      ],
+      "sources": ["warcraft.wiki.gg: Wintergrasp Fortress", "warcraft.wiki.gg: Wintergrasp"]
+    },
+    {
+      "id": 4197002,
+      "kind": "place",
+      "title": "The Towers and Workshops",
+      "triggers": [{ "area": "Flamewatch Tower" }, { "area": "Shadowsight Tower" }, { "area": "Winter's Edge Tower" }, { "area": "Eastspark Workshop" }, { "area": "Westspark Workshop" }, { "area": "The Sunken Ring" }, { "area": "The Broken Temple" }],
+      "body": [
+        "Towers and old titan ruins across the plateau, where the factions build their siege engines and fight to cut off each other's attack on the fortress."
+      ],
+      "sources": ["warcraft.wiki.gg: Wintergrasp"]
+    },
+    {
+      "id": 4197003,
+      "kind": "place",
+      "title": "The Wilds of Wintergrasp",
+      "triggers": [{ "area": "The Cauldron of Flames" }, { "area": "The Chilled Quagmire" }, { "area": "The Forest of Shadows" }, { "area": "The Steppe of Life" }, { "area": "Glacial Falls" }, { "area": "Windy Bluffs" }],
+      "body": [
+        "Beyond the battle lines, the plateau holds pools of fire, frozen bogs and dark forests, each rich in the elemental materials both armies covet."
+      ],
+      "sources": ["warcraft.wiki.gg: Vault of Archavon (History)"]
+    }
+  ]
+}

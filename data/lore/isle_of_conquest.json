@@ -1,0 +1,36 @@
+{
+  "zone": 4710,
+  "name": "Isle of Conquest",
+  "entries": [
+    {
+      "id": 4710000,
+      "kind": "zone",
+      "title": "The Isle of Conquest",
+      "triggers": [{ "areaId": 4710 }],
+      "body": [
+        "Off the coast of Northrend, a small rocky island rich in resources: docks, a cobalt quarry, an oil refinery, a siege workshop and a fully equipped gunship hangar. Its closeness to Icecrown makes it a prized base in the war against the Lich King, and the Horde and Alliance are locked in a bloody struggle for it. Day and night the ground trembles under siege engines, while airships pound the enemy's positions."
+      ],
+      "sources": ["warcraft.wiki.gg: Isle of Conquest (introduction, Official overview)"]
+    },
+    {
+      "id": 4710001,
+      "kind": "place",
+      "title": "The Island's Prizes",
+      "triggers": [{ "area": "Docks" }, { "area": "Hangar" }, { "area": "Quarry" }, { "area": "Refinery" }, { "area": "Workshop" }],
+      "body": [
+        "The docks, the hangar and the siege workshop give whoever holds them a way into the enemy's keep; the quarry and refinery feed the war."
+      ],
+      "sources": ["warcraft.wiki.gg: Isle of Conquest (Description)"]
+    },
+    {
+      "id": 4710002,
+      "kind": "place",
+      "title": "The Keeps",
+      "triggers": [{ "area": "Alliance Keep" }, { "area": "Horde Keep" }, { "kill": 34924 }, { "kill": 34922 }],
+      "body": [
+        "The two strongholds of the isle, held for the Alliance by High Commander Halford Wyrmbane of the 7th Legion, and for the Horde by Overlord Agmar."
+      ],
+      "sources": ["warcraft.wiki.gg: Isle of Conquest (Description)"]
+    }
+  ]
+}

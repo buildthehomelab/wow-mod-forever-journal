@@ -1,0 +1,57 @@
+{
+  "zone": 3790,
+  "name": "Auchenai Crypts",
+  "entries": [
+    {
+      "id": 3790000,
+      "kind": "zone",
+      "title": "The Auchenai Crypts",
+      "triggers": [{ "areaId": 3790 }],
+      "body": [
+        "The seat of the Auchenai, once the guardians of Auchindoun, now a renegade sect under Exarch Maladaar. Their old warning still stands: those who do not respect the dead may become entombed along with them. Undead draenei walk the crypts, and many spirits have been tortured or destroyed here in the pursuit of necromancy.",
+        "The most important remains in the crypts are those of D'ore, a naaru that died in the crash that brought the draenei to Draenor. In death D'ore entered its void stage, and the dark energies it gives off lie, directly or indirectly, behind the evils that have befallen all of Auchindoun."
+      ],
+      "sources": ["warcraft.wiki.gg: Auchenai Crypts (introduction, Background)"]
+    },
+    {
+      "id": 3790001,
+      "kind": "place",
+      "title": "The Bridge of Souls",
+      "triggers": [{ "kill": 18371 }],
+      "body": [
+        "A bridge through the crypts, watched over at its end by a construct of the dead."
+      ],
+      "sources": ["warcraft.wiki.gg: Auchenai Crypts (Geography)", "warcraft.wiki.gg: Shirrak the Dead Watcher"]
+    },
+    {
+      "id": 3790002,
+      "kind": "place",
+      "title": "The Halls of the Hereafter",
+      "triggers": [{ "kill": 18373 }],
+      "body": [
+        "The deepest crypts, where Maladaar keeps his vigil over the dead."
+      ],
+      "sources": ["warcraft.wiki.gg: Auchenai Crypts (Geography)"]
+    },
+    {
+      "id": 3790030,
+      "kind": "person",
+      "title": "Shirrak the Dead Watcher",
+      "triggers": [{ "kill": 18371 }],
+      "body": [
+        "It looks like an observer, but it is an undead construct made by Exarch Maladaar to guard the fallen draenei spirits who wander the crypts."
+      ],
+      "sources": ["warcraft.wiki.gg: Shirrak the Dead Watcher", "warcraft.wiki.gg: Exarch Maladaar"]
+    },
+    {
+      "id": 3790031,
+      "kind": "person",
+      "title": "Exarch Maladaar",
+      "triggers": [{ "kill": 18373 }],
+      "body": [
+        "Leader of the Auchenai and once a member of the Council of Exarchs. He lost everyone and everything he ever loved, and it drove him mad. His lunatic devotion to keeping their memory led him to master the dark arts."
+      ],
+      "sources": ["warcraft.wiki.gg: Exarch Maladaar (Biography)"]
+    }
+  ]
+}

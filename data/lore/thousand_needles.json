@@ -1,0 +1,118 @@
+{
+  "zone": 400,
+  "name": "Thousand Needles",
+  "entries": [
+    {
+      "id": 400000,
+      "kind": "zone",
+      "title": "Thousand Needles",
+      "triggers": [{ "areaId": 400 }],
+      "body": [
+        "A great canyon in southern Kalimdor, crowded with towering mesas, needles of rock cut and sharpened by water over the centuries. It has a harsh beauty of its own, and many of its spires are crowned with camps and whole towns. In the east the canyon opens onto the white salt of the Shimmering Flats.",
+        "Tauren live on the high mesas, out of reach of the centaur warbands below. The druid Quentin believes that the sharp difference between the arid Needles and the jungle of Feralas next door is the work of strange magic."
+      ],
+      "sources": ["warcraft.wiki.gg: Thousand Needles (introduction, History)", "warcraft.wiki.gg: Freewind Post"]
+    },
+    {
+      "id": 400001,
+      "kind": "place",
+      "title": "Freewind Post",
+      "triggers": [{ "area": "Freewind Post" }, { "talk": 10537 }],
+      "body": [
+        "A Horde town high on a mesa, reached by the tauren's ingenious wooden lifts and a chain of rope bridges between the pinnacles. Its tauren fight the Galak centaur and the screeching harpies, and grow ever more wary of the Grimtotem on Darkcloud Pinnacle.",
+        "Young tauren are sent from here to study the wyverns of Highperch and gather eggs from their ancestral nests, to be raised as mounts for the Horde."
+      ],
+      "sources": ["warcraft.wiki.gg: Freewind Post"]
+    },
+    {
+      "id": 400002,
+      "kind": "place",
+      "title": "Darkcloud Pinnacle",
+      "triggers": [{ "area": "Darkcloud Pinnacle" }, { "kill": 10896 }],
+      "body": [
+        "The home of the Grimtotem tauren: three mesas joined by rope bridges, with only two well-guarded ways in. Secret letters pass here between the Grimtotem leaders and some unknown dark power. Its chieftain, Arnak Grimtotem, is held to blame for murders and kidnappings of Freewind's people. When Lakota Windsong refused his advances, he took her by force and killed her brother, who tried to defend her."
+      ],
+      "sources": ["warcraft.wiki.gg: Darkcloud Pinnacle", "warcraft.wiki.gg: Freewind Post"]
+    },
+    {
+      "id": 400003,
+      "kind": "place",
+      "title": "The Great Lift",
+      "triggers": [{ "area": "The Great Lift" }],
+      "body": [
+        "A tauren-built elevator that carries travellers between the Barrens and the floor of the Needles. The quilboar of the southern Barrens have pushed their territory up to it and threaten the road."
+      ],
+      "sources": ["warcraft.wiki.gg: Great Lift"]
+    },
+    {
+      "id": 400004,
+      "kind": "place",
+      "title": "Highperch",
+      "triggers": [{ "area": "Highperch" }, { "talk": 10427 }],
+      "body": [
+        "The western heights, home of the proud Highperch wyverns and their nests. Pao'ka Swiftmountain was once trapped here; after he was rescued, he came back to watch over the wyverns."
+      ],
+      "sources": ["warcraft.wiki.gg: Highperch"]
+    },
+    {
+      "id": 400005,
+      "kind": "place",
+      "title": "The Galak Lands",
+      "triggers": [{ "area": "Splithoof Crag" }, { "area": "Splithoof Hold" }, { "area": "Camp E'thok" }],
+      "body": [
+        "The Galak centaur have a village against the northern wall at Splithoof Crag, and a stronghold in the cave beside it, where they guard an ancient brazier whose sacred flame never goes out, and an artifact called the Cloven Hoof. From Camp E'thok in the north-west they raid caravans on the road."
+      ],
+      "sources": ["warcraft.wiki.gg: Splithoof Crag", "warcraft.wiki.gg: Splithoof Hold", "warcraft.wiki.gg: Camp E'thok"]
+    },
+    {
+      "id": 400006,
+      "kind": "place",
+      "title": "The Shimmering Flats",
+      "triggers": [{ "area": "The Shimmering Flats" }, { "area": "Mirage Raceway" }, { "talk": 4630 }],
+      "body": [
+        "A dried lakebed of salt in the south-east, bare of plants, with a wrecked sailing ship stranded in the north of it to prove there was once water. Its flatness drew the goblin Pozzik and the gnome Fizzle Brassbolts, who built the Mirage Raceway to settle which race has the better engineers, at least until the next race. The flats are littered with the wreckage of failed racers and the craters they left; crowds of both factions come to cheer, and bookies come to take their bets."
+      ],
+      "sources": ["warcraft.wiki.gg: Shimmering Flats", "warcraft.wiki.gg: Mirage Raceway", "warcraft.wiki.gg: Weazel's Crater"]
+    },
+    {
+      "id": 400007,
+      "kind": "place",
+      "title": "The Rustmaul Dig Site",
+      "triggers": [{ "area": "The Rustmaul Dig Site" }, { "area": "Ironstone Camp" }, { "talk": 4483 }],
+      "body": [
+        "An Explorers' League dig on the flats. A Horde war party under Moktar Krin attacked and killed the archaeologists, and the fight stirred up a nest of silithid from a cave in the dig; the swarm drove off the weakened orcs. Krin's survivors hold Ironstone Camp nearby."
+      ],
+      "sources": ["warcraft.wiki.gg: Rustmaul Dig Site", "warcraft.wiki.gg: Ironstone Camp"]
+    },
+    {
+      "id": 400008,
+      "kind": "place",
+      "title": "Tahonda Ruins",
+      "triggers": [{ "area": "Tahonda Ruins" }],
+      "body": [
+        "A tauren village that fell into ruin long ago and slipped beneath the sands of the Shimmering Flats. Little is known of it. Saltstone basilisks live there now, which might be why it was abandoned, but the parallel tears in the leather of one hut suggest something worse attacked it."
+      ],
+      "sources": ["warcraft.wiki.gg: Tahonda Ruins"]
+    },
+    {
+      "id": 400009,
+      "kind": "place",
+      "title": "The Canyons",
+      "triggers": [{ "area": "Windbreak Canyon" }, { "area": "The Screeching Canyon" }, { "area": "Roguefeather Den" }],
+      "body": [
+        "Wind serpents nest in Windbreak Canyon between Freewind and the flats, and harpies screech from the cliffs; the Roguefeather harpies hoard their food in a den in the south. In a hidden cave on the northern wall, the Weathered Nook, Dorn Plainstalker teaches the Horde's young of faith, endurance and strength."
+      ],
+      "sources": ["warcraft.wiki.gg: Windbreak Canyon", "warcraft.wiki.gg: Roguefeather Den", "warcraft.wiki.gg: Weathered Nook"]
+    },
+    {
+      "id": 400010,
+      "kind": "place",
+      "title": "Razorfen Downs",
+      "triggers": [{ "areaId": 400 }],
+      "body": [
+        "The ancestral burial grounds of the quilboar and their traditional capital, a dome of mighty thorns in the north of the Needles, grown from the same vines as Razorfen Kraul. Its entrance is said to be the maw of the demigod Agamaggan. The Death's Head priests rule it, and something dead has come among them."
+      ],
+      "sources": ["warcraft.wiki.gg: Razorfen Downs (introduction, History)"]
+    }
+  ]
+}

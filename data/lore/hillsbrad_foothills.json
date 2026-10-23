@@ -1,0 +1,154 @@
+{
+  "zone": 267,
+  "name": "Hillsbrad Foothills",
+  "entries": [
+    {
+      "id": 267000,
+      "kind": "zone",
+      "title": "The Hillsbrad Foothills",
+      "triggers": [{ "areaId": 267 }],
+      "body": [
+        "The best-preserved land of fallen Lordaeron, which escaped the Scourge almost untouched: pine-dotted farmland and rolling pastures crossed by roads, with a river running south from Darrowmere Lake. It gives the traveller a feeling of what the kingdom was before the plague.",
+        "For all its pastoral beauty, it is the most blood-soaked battlefield on Azeroth. The first battle between the Alliance and the Horde was fought here in the Second War, and now the humans of Southshore and the Forsaken of Tarren Mill fight over it again."
+      ],
+      "sources": ["warcraft.wiki.gg: Hillsbrad Foothills (introduction, History, Geography)"]
+    },
+    {
+      "id": 267001,
+      "kind": "place",
+      "title": "Southshore",
+      "triggers": [{ "area": "Southshore" }, { "talk": 2263 }, { "talk": 2276 }],
+      "body": [
+        "A simple fishing village until thousands of boats arrived carrying the refugees of Stormwind after the First War. They settled here and pledged themselves to the new Alliance, and Southshore became a busy military port, rich with the oil the Horde coveted. The orcs took it anyway, and anchored their fleet in its harbour. At the start of the Third War, Thrall's orcs slipped in by night and stole its ships to sail for Kalimdor.",
+        "Rebuilt, it is a quiet port and one of the few pockets of human civilisation left in Lordaeron, home to old knights of the Silver Hand and mages of the Kirin Tor. Magistrate Henry Maleb is sure the Syndicate assassinated his predecessor and means to destroy the town."
+      ],
+      "sources": ["warcraft.wiki.gg: Southshore (Second War, Third War, World of Warcraft)"]
+    },
+    {
+      "id": 267002,
+      "kind": "place",
+      "title": "Tarren Mill",
+      "triggers": [{ "area": "Tarren Mill" }, { "talk": 2215 }, { "talk": 2216 }],
+      "body": [
+        "Once a thriving human town. In the Second War, elven archers sent to see the orcish threat for themselves were ambushed near here and held in a prison camp; King Terenas sent Alliance troops to free them, and their rescue persuaded Silvermoon to join the Alliance.",
+        "The Forsaken have since made it their southernmost holding and their staging ground against Southshore and the dwarves of Dun Garok."
+      ],
+      "sources": ["warcraft.wiki.gg: Tarren Mill (introduction, The Second War)", "warcraft.wiki.gg: Hillsbrad Foothills (Sunwell Trilogy)"]
+    },
+    {
+      "id": 267003,
+      "kind": "place",
+      "title": "Hillsbrad Fields",
+      "triggers": [{ "area": "Hillsbrad" }, { "area": "Hillsbrad Fields" }, { "kill": 2335 }],
+      "body": [
+        "The town of Hillsbrad and its fertile fields, apples and pumpkins and cattle that feed Southshore and the foothills. With Southshore it is one of the only parts of Lordaeron neither ruined by the Third War nor won over by the Scarlet Crusade; its guards still wear the kingdom's tabard. Magistrate Burnside governs it with the Council of Hillsbrad.",
+        "In the Second War, Doomhammer ordered the town destroyed in a gruesome display to make an example, and news of it spread through all the human kingdoms. It was rebuilt after the war."
+      ],
+      "sources": ["warcraft.wiki.gg: Hillsbrad Fields (Second War, World of Warcraft)"]
+    },
+    {
+      "id": 267004,
+      "kind": "place",
+      "title": "Durnholde Keep",
+      "triggers": [{ "area": "Durnholde Keep" }, { "accept": 498 }, { "accept": 549 }],
+      "body": [
+        "A ruined fortress east of Tarren Mill, once with a mage tower, an arena and a village living off the keep. In the Second War Orgrim Doomhammer himself raided it to free Zul'jin. Afterwards it became the command centre of the orc internment camps, under Lieutenant General Aedelas Blackmoore.",
+        "Thrall grew up here as Blackmoore's slave, and escaped. When he came back, it was with an army: he killed Blackmoore in single combat and called on the spirit of the earth to level the keep. The Syndicate has since claimed its ruins."
+      ],
+      "sources": ["warcraft.wiki.gg: Durnholde Keep (introduction, Second War, Lord of the Clans)"]
+    },
+    {
+      "id": 267005,
+      "kind": "place",
+      "title": "Dun Garok",
+      "triggers": [{ "area": "Dun Garok" }, { "kill": 2304 }],
+      "body": [
+        "A dwarven keep in the south-eastern hills, where Captain Ironhill's dwarves help protect the humans of Hillsbrad and the Azurelode Mine. The Forsaken loathe their presence."
+      ],
+      "sources": ["warcraft.wiki.gg: Dun Garok"]
+    },
+    {
+      "id": 267006,
+      "kind": "place",
+      "title": "Azurelode Mine",
+      "triggers": [{ "area": "Azurelode Mine" }, { "kill": 2305 }],
+      "body": [
+        "A mine in the south-west, part of Gilneas until the Greymane Wall was built. Miners from Hillsbrad under Foreman Bonds work it under guard, supplying iron to the Alliance's armouries."
+      ],
+      "sources": ["warcraft.wiki.gg: Azurelode Mine (History)"]
+    },
+    {
+      "id": 267007,
+      "kind": "place",
+      "title": "The Strands",
+      "triggers": [{ "area": "Western Strand" }, { "area": "Eastern Strand" }, { "accept": 536 }],
+      "body": [
+        "The southern coasts of the foothills. The Torn Fin murlocs have built camps along the Western Strand, and the Daggerspine naga hold the beaches and waters of the Eastern Strand. Off the coast, in the Second War, the Horde kept a secret base in the Channel Islands, until Admiral Proudmoore's ships landed troops and destroyed it."
+      ],
+      "sources": ["warcraft.wiki.gg: Western Strand", "warcraft.wiki.gg: Eastern Strand", "warcraft.wiki.gg: Hillsbrad Fields (Second War)"]
+    },
+    {
+      "id": 267008,
+      "kind": "place",
+      "title": "Nethander Stead and Darrow Hill",
+      "triggers": [{ "area": "Nethander Stead" }, { "area": "Darrow Hill" }],
+      "body": [
+        "Nethander Stead, east of Southshore, has been overrun by the Mudsnout gnolls; strange white mushrooms grow in its abandoned fields. To the north, mountain lions and stags roam Darrow Hill, and yetis live in its caves."
+      ],
+      "sources": ["warcraft.wiki.gg: Nethander Stead", "warcraft.wiki.gg: Darrow Hill"]
+    },
+    {
+      "id": 267009,
+      "kind": "place",
+      "title": "Purgation Isle",
+      "triggers": [{ "area": "Purgation Isle" }],
+      "body": [
+        "A spiral-shaped island off the southern coast with a cemetery and a ruined tower, once Kul Tiran territory. Its recent history is unknown. It is haunted by condemned spirits of humans and dwarves, paladins, priests and mages among them, and it is said an ogre necromancer, Kormok, delights in calling them up to serve him."
+      ],
+      "sources": ["warcraft.wiki.gg: Purgation Isle"]
+    },
+    {
+      "id": 267030,
+      "kind": "person",
+      "title": "High Executor Darthalia",
+      "triggers": [{ "talk": 2215 }, { "accept": 527 }],
+      "body": [
+        "The commander of the Forsaken at Tarren Mill, who leads their war against Southshore and the dwarves of Dun Garok."
+      ],
+      "sources": ["warcraft.wiki.gg: Tarren Mill", "warcraft.wiki.gg: Hillsbrad Foothills (Notable characters)"]
+    },
+    {
+      "id": 267031,
+      "kind": "person",
+      "title": "Taretha Foxton",
+      "triggers": [{ "complete": 508 }, { "area": "Durnholde Keep" }],
+      "body": [
+        "The daughter of Blackmoore's secretary, and the closest thing to family Thrall had. When he was a baby she was the only one in Durnholde to realise he could not eat the guards' meat because he had no teeth; her mother nursed him. Later she wrote him letters in his cell, and when he told her he would escape, she made a diversion and met him outside with supplies.",
+        "Her part was small, a footnote in history, but it changed the fate of the orcs. Blackmoore had her killed for helping him."
+      ],
+      "sources": ["warcraft.wiki.gg: Taretha Foxton (introduction, Life in Durnholde Keep)", "warcraft.wiki.gg: Durnholde Keep (Lord of the Clans)"]
+    },
+    {
+      "id": 267050,
+      "kind": "history",
+      "title": "Thrall and Blackmoore",
+      "triggers": [{ "complete": 506 }, { "complete": 503 }, { "area": "Durnholde Keep" }],
+      "body": [
+        "Aedelas Blackmoore found an orc baby among the bodies of his murdered parents and took him to Durnholde. He named him Thrall, and beat him and tortured him in the ring to win himself rank and prestige. Blackmoore was the son of a general convicted of selling state secrets, a ferocious fighter against the orcs, and a heavy drinker whose courage often came from the bottle.",
+        "After Thrall escaped, he rallied the free orcs, broke the smaller camps one by one, and finally besieged Durnholde. Blackmoore died at his hand."
+      ],
+      "sources": ["warcraft.wiki.gg: Aedelas Blackmoore (Early life)", "warcraft.wiki.gg: Durnholde Keep (Lord of the Clans)"]
+    },
+    {
+      "id": 267051,
+      "kind": "history",
+      "title": "The Battle of Hillsbrad",
+      "triggers": [{ "areaId": 267 }, { "area": "Hillsbrad Fields" }],
+      "body": [
+        "Early in the Second War, orc marauders began raiding the coastal towns. The Horde built facilities to support its armada around Southshore, and Zul'jin's axethrowers, eager for revenge on the humans who had imprisoned them, joined the assault. Hillsbrad, Southshore and Tarren Mill were all attacked.",
+        "The Alliance drove the Horde out of southern Lordaeron and destroyed its secret base in the Channel Islands, but Hillsbrad and Southshore were left in ruins."
+      ],
+      "sources": ["warcraft.wiki.gg: Hillsbrad Foothills (Second War)", "warcraft.wiki.gg: Hillsbrad Fields (Second War)"]
+    }
+  ]
+}

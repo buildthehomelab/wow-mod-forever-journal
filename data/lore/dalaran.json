@@ -1,0 +1,87 @@
+{
+  "zone": 4395,
+  "name": "Dalaran",
+  "entries": [
+    {
+      "id": 4395000,
+      "kind": "zone",
+      "title": "Dalaran",
+      "triggers": [{ "areaId": 4395 }],
+      "body": [
+        "The city of the Kirin Tor, founded by the magi of Arathor after the Troll Wars, with the greatest concentration of magic in the world outside Quel'Thalas. In the Third War the Scourge besieged it, and Archimonde destroyed it. The survivors came back, rebuilt it under a vast dome, and then lifted the whole city into the sky, so that no undead army could ever reach it on foot again.",
+        "Now it floats over Crystalsong Forest, a stone's throw from Icecrown. The Kirin Tor have brought their city to the war, against the Lich King and against Malygos, and opened it to heroes of every people."
+      ],
+      "sources": ["warcraft.wiki.gg: Dalaran (introduction)", "warcraft.wiki.gg: Crystalsong Forest (Wrath of the Lich King)"]
+    },
+    {
+      "id": 4395001,
+      "kind": "place",
+      "title": "The Violet Citadel",
+      "triggers": [{ "area": "The Violet Citadel" }, { "area": "The Violet Citadel Spire" }, { "area": "Violet Citadel Balcony" }, { "talk": 16128 }],
+      "body": [
+        "The fortress at the heart of Dalaran, a sanctum and haven for mages, its great halls roofed in slate the colour of lapis lazuli. Archmage Rhonin, leader of the Kirin Tor, rules the city from it."
+      ],
+      "sources": ["warcraft.wiki.gg: Violet Citadel"]
+    },
+    {
+      "id": 4395002,
+      "kind": "place",
+      "title": "The Antonidas Memorial",
+      "triggers": [{ "area": "Antonidas Memorial" }],
+      "body": [
+        "A monument to Archmage Antonidas, leader of the Kirin Tor, killed by Arthas just before Dalaran fell. His student Jaina Proudmoore designed it, chose the artist and paid for it herself. The statue floats six feet above the grass."
+      ],
+      "sources": ["warcraft.wiki.gg: Antonidas Memorial"]
+    },
+    {
+      "id": 4395003,
+      "kind": "place",
+      "title": "The Silver Enclave",
+      "triggers": [{ "area": "The Silver Enclave" }, { "talk": 30115 }],
+      "body": [
+        "When the Kirin Tor asked Quel'Thalas for help against Malygos, the blood elf Archmage Aethas Sunreaver of the Council of Six pushed to readmit his people to the Kirin Tor. High elves loyal to the Alliance rejected it, and formed the Silver Covenant under Ranger-General Vereesa Windrunner as a guard against Sunreaver treachery. This is their district."
+      ],
+      "sources": ["warcraft.wiki.gg: Silver Covenant (History)", "warcraft.wiki.gg: Silver Enclave"]
+    },
+    {
+      "id": 4395004,
+      "kind": "place",
+      "title": "Sunreaver's Sanctuary",
+      "triggers": [{ "area": "Sunreaver's Sanctuary" }, { "talk": 30116 }],
+      "body": [
+        "The Horde's district of Dalaran, held by the blood elf Sunreavers, the followers of Archmage Aethas Sunreaver of the Council of Six."
+      ],
+      "sources": ["warcraft.wiki.gg: Sunreaver's Sanctuary"]
+    },
+    {
+      "id": 4395005,
+      "kind": "place",
+      "title": "The Underbelly",
+      "triggers": [{ "area": "The Underbelly" }, { "area": "Circle of Wills" }],
+      "body": [
+        "Dalaran's sewers, and its slums: home to many races, mostly goblins, with a tavern, an inn, and dueling circles in the great hall of the Circle of Wills."
+      ],
+      "sources": ["warcraft.wiki.gg: Underbelly"]
+    },
+    {
+      "id": 4395006,
+      "kind": "place",
+      "title": "Runeweaver Square and the Eventide",
+      "triggers": [{ "area": "Runeweaver Square" }, { "area": "The Eventide" }, { "area": "Magus Commerce Exchange" }, { "area": "Krasus' Landing" }],
+      "body": [
+        "The squares of the city, with their fountains and floating sculptures, its markets and its bank. In the Eventide fountain lie lucky coins thrown by some of Azeroth's most influential figures."
+      ],
+      "sources": ["warcraft.wiki.gg: Runeweaver Square", "warcraft.wiki.gg: Eventide"]
+    },
+    {
+      "id": 4395007,
+      "kind": "place",
+      "title": "The Violet Hold",
+      "triggers": [{ "area": "The Violet Hold" }],
+      "body": [
+        "The Kirin Tor's great prison, its cells magically shielded, destroyed and rebuilt in the Third War, now holding a number of very powerful prisoners."
+      ],
+      "sources": ["warcraft.wiki.gg: Violet Hold"]
+    }
+  ]
+}

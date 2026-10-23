@@ -1,0 +1,77 @@
+{
+  "zone": 4228,
+  "name": "The Oculus",
+  "entries": [
+    {
+      "id": 4228000,
+      "kind": "zone",
+      "title": "The Oculus",
+      "triggers": [{ "areaId": 4228 }],
+      "body": [
+        "A tower of floating rings above the Nexus. Malygos uses the Arcanomicon to find the ley lines and tap them, diverting the magic that runs beneath the earth to the Nexus. Here the stolen energies are focused through the ascending rings and blasted into the Twisting Nether.",
+        "The Kirin Tor have allied with the red dragonflight against him. Together they are undermining his offensive, but time is running out."
+      ],
+      "sources": ["warcraft.wiki.gg: Oculus (History)"]
+    },
+    {
+      "id": 4228001,
+      "kind": "place",
+      "title": "The Band of Variance",
+      "triggers": [{ "kill": 27654 }],
+      "body": [
+        "The lowest ring of the Oculus, where the dragonspawn Drakos holds captive three dragons of other flights, one red, one green, one bronze."
+      ],
+      "sources": ["warcraft.wiki.gg: Band of Variance"]
+    },
+    {
+      "id": 4228002,
+      "kind": "place",
+      "title": "The Upper Rings",
+      "triggers": [{ "kill": 27447 }, { "kill": 27655 }, { "kill": 27656 }],
+      "body": [
+        "The Bands of Acceleration, Transmutation and Alignment, rising one above another, each a stage in turning the world's magic towards the Nether. Only on dragonback can they be reached."
+      ],
+      "sources": ["warcraft.wiki.gg: Oculus (Geography, Flying combat)"]
+    },
+    {
+      "id": 4228030,
+      "kind": "person",
+      "title": "Drakos the Interrogator",
+      "triggers": [{ "kill": 27654 }],
+      "body": [
+        "A blue dragonspawn who interrogates the captives of the Oculus."
+      ],
+      "sources": ["warcraft.wiki.gg: Drakos the Interrogator", "warcraft.wiki.gg: Band of Variance"]
+    },
+    {
+      "id": 4228031,
+      "kind": "person",
+      "title": "Varos Cloudstrider",
+      "triggers": [{ "kill": 27447 }],
+      "body": [
+        "One of the azure-lords of the blue dragonflight, and captain of its forces in the Oculus."
+      ],
+      "sources": ["warcraft.wiki.gg: Varos Cloudstrider"]
+    },
+    {
+      "id": 4228032,
+      "kind": "person",
+      "title": "Mage-Lord Urom",
+      "triggers": [{ "kill": 27655 }],
+      "body": [
+        "A mage of the Kirin Tor who went over to Malygos."
+      ],
+      "sources": ["warcraft.wiki.gg: Mage-Lord Urom"]
+    },
+    {
+      "id": 4228033,
+      "kind": "person",
+      "title": "Ley-Guardian Eregos",
+      "triggers": [{ "kill": 27656 }],
+      "body": [
+        "The blue dragon who commands the Oculus and the whole work of turning the ley lines."
+      ],
+      "sources": ["warcraft.wiki.gg: Ley-Guardian Eregos"]
+    }
+  ]
+}

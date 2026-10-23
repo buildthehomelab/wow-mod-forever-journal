@@ -1,0 +1,102 @@
+{
+  "zone": 4080,
+  "name": "Isle of Quel'Danas",
+  "entries": [
+    {
+      "id": 4080000,
+      "kind": "zone",
+      "title": "The Isle of Quel'Danas",
+      "triggers": [{ "areaId": 4080 }],
+      "body": [
+        "The island north of Silvermoon, home of the Sunwell and the heart of Quel'Thalas. Around 6,800 years before the Dark Portal, Dath'Remar poured a stolen vial from the Well of Eternity into a lake here, on a convergence of mighty ley lines, and a fount of light tore through the skies of Azeroth. He swore it would one day surpass the Well that birthed it. Over time his people lost their night elf looks, turned from the moon to the sun, and became the high elves.",
+        "The isle has been reclaimed. Silvermoon's builders are repairing it, Halduron Brightwing's rangers guard the renewed Sunwell, and the Shattered Sun Offensive still keeps watch."
+      ],
+      "sources": ["warcraft.wiki.gg: Isle of Quel'Danas (Creation of the Sunwell, Wrath of the Lich King)"]
+    },
+    {
+      "id": 4080001,
+      "kind": "place",
+      "title": "Sun's Reach",
+      "triggers": [{ "area": "Sun's Reach Sanctum" }, { "area": "Sun's Reach Harbor" }, { "talk": 24932 }],
+      "body": [
+        "The port town on the north-western tip of the island, base of the Shattered Sun Offensive. When the Offensive landed, it held only a few elven ships. Demons held the armoury and the Wretched held the sanctum. It took the town back piece by piece: it burned the Dawnblade destroyers in the harbour with dragonhawk strikes, turned the sanctum's broken arcane sentries against their masters, and opened portals straight to Shattrath."
+      ],
+      "sources": ["warcraft.wiki.gg: Sun's Reach Harbor", "warcraft.wiki.gg: Sun's Reach Sanctum", "warcraft.wiki.gg: Sun's Reach Armory", "warcraft.wiki.gg: Shattered Sun Offensive"]
+    },
+    {
+      "id": 4080002,
+      "kind": "place",
+      "title": "The Dead Scar",
+      "triggers": [{ "area": "The Dead Scar" }, { "accept": 11532 }, { "talk": 37552 }],
+      "body": [
+        "The Scourge's path of ruin picks up again on the island's southern tip, where Arthas crossed from the mainland on a bridge of ice made with Frostmourne, and runs on to the Sunwell.",
+        "Here Thalorien Dawnseeker, a hero of the Troll Wars and wielder of the blade Quel'Delar, made his last stand, holding back wave after wave so his men could reach the Sunwell. The death knight Morlen Coldgrip killed him, and his body still lies where he fell."
+      ],
+      "sources": ["warcraft.wiki.gg: Isle of Quel'Danas (Fall of Quel'Thalas)", "warcraft.wiki.gg: Thalorien Dawnseeker"]
+    },
+    {
+      "id": 4080003,
+      "kind": "place",
+      "title": "Magisters' Terrace",
+      "triggers": [{ "area": "Magisters' Terrace" }],
+      "body": [
+        "The terraces of the Magisters overlooking the Sunwell. In the Third War, the traitor Dar'Khan hid here, began his spell to bind the Sunwell, and sent a fireball into the sky to tell Arthas it was time.",
+        "In the battle for Quel'Danas, Prince Kael'thas made it his base while his master's portal was prepared on the plateau, and it was here that Lady Liadrin and the Horde's champions brought down the last of the Sunstriders. The terrace was left in ruins."
+      ],
+      "sources": ["warcraft.wiki.gg: Magisters' Terrace (Blood of the Highborne, The Burning Crusade)"]
+    },
+    {
+      "id": 4080004,
+      "kind": "place",
+      "title": "The Sunwell Plateau",
+      "triggers": [{ "area": "Sunwell Plateau" }, { "accept": 11550 }, { "talk": 25169 }],
+      "body": [
+        "The plateau the Highborne raised around their fount of power. In the Third War Dar'Khan lowered its shields, murdered the members of the Convocation he found there, and bound its energies for Arthas, who plunged Kel'Thuzad's remains into the water and raised him as a lich. The ritual fouled the Sunwell beyond saving, and Kael'thas destroyed it.",
+        "Now it burns again, a fount of both arcane and holy light. Only those with the Ranger-General's permission may enter, but some high elves of the Alliance have been allowed to make pilgrimage."
+      ],
+      "sources": ["warcraft.wiki.gg: Sunwell Plateau (Background, Third War)", "warcraft.wiki.gg: Isle of Quel'Danas (Wrath of the Lich King)"]
+    },
+    {
+      "id": 4080005,
+      "kind": "place",
+      "title": "Greengill Coast",
+      "triggers": [{ "area": "Greengill Coast" }, { "accept": 11541 }],
+      "body": [
+        "A stretch of the south-eastern shore where the Greengill murlocs have a village. During the battle for the island, Darkspine naga allied with the Legion enslaved them with mind-controlling sirens to dig iron ore, and raised a shrine to Queen Azshara on a ley line offshore."
+      ],
+      "sources": ["warcraft.wiki.gg: Greengill Coast"]
+    },
+    {
+      "id": 4080006,
+      "kind": "place",
+      "title": "Dawnstar Village",
+      "triggers": [{ "area": "Dawnstar Village" }, { "area": "The Dawning Square" }],
+      "body": [
+        "A blood elf village on the island, which Prince Kael'thas's Dawnblade elves occupied in the battle for Quel'Danas while Wretched and demons infested the land around it. It is back in the hands of Quel'Thalas."
+      ],
+      "sources": ["warcraft.wiki.gg: Dawnstar Village"]
+    },
+    {
+      "id": 4080050,
+      "kind": "history",
+      "title": "The Shattered Sun Offensive",
+      "triggers": [{ "accept": 11482 }, { "accept": 11481 }, { "complete": 11496 }],
+      "body": [
+        "Defeated at Tempest Keep, Prince Kael'thas came back, revived and twisted, through a portal to Quel'Danas, meaning to rekindle the Sunwell, not for his people, but as a gate for his master Kil'jaeden. He attacked his own capital to seize the naaru M'uru and kidnapped Anveena, the living embodiment of the Sunwell's power.",
+        "Lady Liadrin renounced the house of Sunstrider and went to warn the naaru of Shattrath. The rival Aldor and Scryers put aside their quarrel and joined as the Shattered Sun Offensive. Kael'thas fell in the Magisters' Terrace. When Kil'jaeden began to emerge, Anveena gave her life to weaken him, and he was driven back into the Nether. Then Prophet Velen used M'uru's heart to cleanse the Sunwell, and it was reborn."
+      ],
+      "sources": ["warcraft.wiki.gg: Isle of Quel'Danas (The Burning Crusade)", "warcraft.wiki.gg: Shattered Sun Offensive (Battle for Sun's Reach)"]
+    },
+    {
+      "id": 4080051,
+      "kind": "history",
+      "title": "The Last Stand of the Quel'dorei",
+      "triggers": [{ "areaId": 4080 }, { "area": "Sunwell Plateau" }],
+      "body": [
+        "When Silvermoon could not be held, King Anasterian and the survivors sailed to Quel'Danas: they could rebuild their capital, but the Sunwell could never be replaced. Arthas froze a bridge across the strait. The old king met him with the fiery blade Felo'melorn and melted the path, but in their duel Frostmourne shattered his sword and pierced his heart.",
+        "High Priest Vandellor, Grand Magister Belo'vir and the whole Convocation died on the island. The brothers Solanar and Falon carried away the king's body, so he at least was spared undeath."
+      ],
+      "sources": ["warcraft.wiki.gg: Isle of Quel'Danas (Fall of Quel'Thalas)"]
+    }
+  ]
+}

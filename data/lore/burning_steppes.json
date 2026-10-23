@@ -1,0 +1,130 @@
+{
+  "zone": 46,
+  "name": "Burning Steppes",
+  "entries": [
+    {
+      "id": 46000,
+      "kind": "zone",
+      "title": "The Burning Steppes",
+      "triggers": [{ "areaId": 46 }],
+      "body": [
+        "Once part of the green Redridge range, and held by Stormwind. Two centuries before the Dark Portal, the summoning of Ragnaros melted the mountains here and raised a volcano at the heart of the blast. North of the ridge became the Searing Gorge; south of it, the Burning Steppes. The rock itself melted, and the land is still scarred, hot and dry, with almost nothing growing.",
+        "It is the only land road between Stormwind and the north, but Stormwind has all but abandoned it. The Blackrock orcs, the black dragonflight and the servants of Ragnaros rule the steppes now."
+      ],
+      "sources": ["warcraft.wiki.gg: Burning Steppes (introduction, History, Geography)"]
+    },
+    {
+      "id": 46001,
+      "kind": "place",
+      "title": "Morgan's Vigil",
+      "triggers": [{ "area": "Morgan's Vigil" }, { "talk": 9560 }, { "talk": 9177 }],
+      "body": [
+        "A ruined village in the south-east of the steppes, its houses burned to the ground and its one mage tower crumbled. The Alliance clings to it in tents. Long before the volcano, these lands belonged to the ancestors of Morgan, for whom it is named, and she and Marshal Maxwell keep watch here on the mountain."
+      ],
+      "sources": ["warcraft.wiki.gg: Morgan's Vigil", "warcraft.wiki.gg: Burning Steppes (History)"]
+    },
+    {
+      "id": 46002,
+      "kind": "place",
+      "title": "Flame Crest",
+      "triggers": [{ "area": "Flame Crest" }, { "talk": 10267 }],
+      "body": [
+        "A small, neutral outpost on an outcrop in the north, reached only by a crude bridge, close enough to the mountain to watch it. In a cave at the back lives Kibler, with a talkative parrot named Opus."
+      ],
+      "sources": ["warcraft.wiki.gg: Flame Crest"]
+    },
+    {
+      "id": 46003,
+      "kind": "place",
+      "title": "Dreadmaul Rock",
+      "triggers": [{ "area": "Dreadmaul Rock" }, { "kill": 8977 }],
+      "body": [
+        "The stronghold of the Firegut ogres, a great rock with paths winding to its top and a maze of ogre caves within."
+      ],
+      "sources": ["warcraft.wiki.gg: Dreadmaul Rock"]
+    },
+    {
+      "id": 46004,
+      "kind": "place",
+      "title": "Blackrock Stronghold",
+      "triggers": [{ "area": "Blackrock Stronghold" }, { "area": "Blackrock Pass" }, { "kill": 9176 }],
+      "body": [
+        "A massive stronghold of the Blackrock clan just outside the Spire, hidden from the road. Its warriors gather on the Fields of Honor, kept in line by their sergeants under General Thorg'izog. These orcs are of the old kind, bloodthirsty and savage, nothing like Thrall's Horde. They mine the mountains for the metal of their weapons and armour.",
+        "Blackrock Pass, the old gate to Redridge, is the main way into the steppes from the south. No young traveller should take it lightly."
+      ],
+      "sources": ["warcraft.wiki.gg: Blackrock Stronghold", "warcraft.wiki.gg: Blackrock Pass", "warcraft.wiki.gg: Burning Steppes (introduction)"]
+    },
+    {
+      "id": 46005,
+      "kind": "place",
+      "title": "The Ruins of Thaurissan",
+      "triggers": [{ "area": "Ruins of Thaurissan" }, { "accept": 4296 }],
+      "body": [
+        "The first capital of the Dark Iron clan, founded when they were exiled from Ironforge and Thaurissan led them south into the Redridge Mountains. It stood in a lush land of valleys and steppes.",
+        "With his army destroyed in its attacks on Ironforge and Grim Batol, the sorcerer-thane and seven of his most powerful followers called on the ancient powers sleeping beneath the world for help. What came was Ragnaros. The volcano that marked his coming wiped the city out, and the survivors were enslaved. Ironforge's Royal Historian Archesonus is studying the ruins."
+      ],
+      "sources": ["warcraft.wiki.gg: Ruins of Thaurissan (History)"]
+    },
+    {
+      "id": 46006,
+      "kind": "place",
+      "title": "Draco'dar and the Dragonkin",
+      "triggers": [{ "area": "Draco'dar" }, { "area": "Terror Wing Path" }, { "area": "Slither Rock" }],
+      "body": [
+        "The black dragonflight holds the eastern steppes. Terror Wing Path is full of their whelps and dragonkin, and Draco'dar is their stronghold. In a small cave at Slither Rock, beyond Terror Wing, lives a lone black dragonspawn, Cyrus Therepentous, who will help adventurers against a common enemy, though never without plenty of rude remarks."
+      ],
+      "sources": ["warcraft.wiki.gg: Terror Wing Path", "warcraft.wiki.gg: Slither Rock"]
+    },
+    {
+      "id": 46007,
+      "kind": "place",
+      "title": "The Altar of Storms",
+      "triggers": [{ "area": "Altar of Storms" }, { "area": "The Pillar of Ash" }],
+      "body": [
+        "One of the altars the Horde carved in the Second War from the elven runestone of Caer Darrow, using its bronze figures to twist the stone's magic into the powers of its ogre magi. The rest of the Horde avoided them; the energies coming off their cold surfaces could be unhealthy. The elves swore to destroy every one."
+      ],
+      "sources": ["warcraft.wiki.gg: Altar of Storms (Second War)"]
+    },
+    {
+      "id": 46030,
+      "kind": "person",
+      "title": "Cyrus Therepentous",
+      "triggers": [{ "talk": 9459 }, { "accept": 4023 }],
+      "body": [
+        "A black dragonspawn who lives alone at Slither Rock and has his own reasons for wanting other black dragons dead. He is happy to point adventurers at them, and to insult them while he does."
+      ],
+      "sources": ["warcraft.wiki.gg: Slither Rock", "warcraft.wiki.gg: Cyrus Therepentous"]
+    },
+    {
+      "id": 46031,
+      "kind": "person",
+      "title": "Franclorn Forgewright",
+      "triggers": [{ "talk": 8888 }],
+      "body": [
+        "The ghost of the Dark Iron architect who built Blackrock Spire, haunting his tomb in the heart of the mountain. Only the dead can see him."
+      ],
+      "sources": ["warcraft.wiki.gg: Franclorn Forgewright"]
+    },
+    {
+      "id": 46050,
+      "kind": "history",
+      "title": "The True Masters",
+      "triggers": [{ "complete": 4183 }, { "complete": 4185 }, { "complete": 4224 }],
+      "body": [
+        "The black dragons of the steppes do not act alone. The black dragonflight was charged by the titans to guard the earth, until its Aspect Neltharion was corrupted by the Old Gods and became Deathwing; since then the flight has sown discord and chaos. Its masters now are Deathwing's children, Nefarian at the top of Blackrock Spire, and his sister Onyxia, whose reach extends further than anyone suspected."
+      ],
+      "sources": ["warcraft.wiki.gg: Black dragonflight (introduction)", "warcraft.wiki.gg: Blackrock Mountain"]
+    },
+    {
+      "id": 46051,
+      "kind": "history",
+      "title": "The Death of Lothar",
+      "triggers": [{ "areaId": 46 }, { "area": "Blackrock Stronghold" }],
+      "body": [
+        "Orcs came here in the First War, liking the heat, and the Horde made the Spire its base. In the last days of the Second War, the Alliance marched into the steppes and laid siege to Blackrock Spire. Orgrim Doomhammer met Sir Anduin Lothar at the foot of the volcano and killed him.",
+        "Lothar's death did not break the Alliance. It enraged it, and Turalyon led it on to crush the failing Horde. The Blackrock orcs came back to the steppes later, and have never left."
+      ],
+      "sources": ["warcraft.wiki.gg: Burning Steppes (History)"]
+    }
+  ]
+}

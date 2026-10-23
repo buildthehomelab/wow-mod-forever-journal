@@ -1,0 +1,96 @@
+{
+  "zone": 4416,
+  "name": "Gundrak",
+  "entries": [
+    {
+      "id": 4416000,
+      "kind": "zone",
+      "title": "Gundrak",
+      "triggers": [{ "areaId": 4416 }],
+      "body": [
+        "The capital of the Drakkari and the last bastion of their empire. In its depths, the most sacred shrines are steeped in the mojo of slain gods. Surrounded by that dark energy, twisted high prophets grow in power and fill their followers with terrible strength. Left alone, they may soon unleash it and plunge the whole region into chaos."
+      ],
+      "sources": ["warcraft.wiki.gg: Gundrak (introduction, Wrath of the Lich King)"]
+    },
+    {
+      "id": 4416001,
+      "kind": "place",
+      "title": "The Den of Sseratus",
+      "triggers": [{ "kill": 29304 }],
+      "body": [
+        "A subterranean shrine of the serpent god, guarded by the prophet who killed him."
+      ],
+      "sources": ["warcraft.wiki.gg: Slad'ran"]
+    },
+    {
+      "id": 4416002,
+      "kind": "place",
+      "title": "The Shrines of the Fallen",
+      "triggers": [{ "kill": 29307 }, { "kill": 29305 }, { "kill": 29932 }],
+      "body": [
+        "The shrines of the slain loa, where a golem of fused mojo stands guard, Mam'toth's prophet waits, and something ferocious lurks in the waters beyond."
+      ],
+      "sources": ["warcraft.wiki.gg: Drakkari Colossus", "warcraft.wiki.gg: Moorabi", "warcraft.wiki.gg: Eck the Ferocious"]
+    },
+    {
+      "id": 4416003,
+      "kind": "place",
+      "title": "The Mosaic Circle",
+      "triggers": [{ "kill": 29306 }],
+      "body": [
+        "The great mosaic before the steps of Gundrak, where the prophets held the last of their gods, Akali the rhino. Before he could be freed, his prophet drank his blood and took his power."
+      ],
+      "sources": ["warcraft.wiki.gg: Gundrak (Wrath of the Lich King)"]
+    },
+    {
+      "id": 4416030,
+      "kind": "person",
+      "title": "Slad'ran",
+      "triggers": [{ "kill": 29304 }],
+      "body": [
+        "High prophet of Sseratus, the serpent god. He took no pleasure in killing his god, but he did it, hoping it might save his home, and the sacrifice made him something half-serpent. He swore vengeance on the Scourge for what it had made him do."
+      ],
+      "sources": ["warcraft.wiki.gg: Slad'ran"]
+    },
+    {
+      "id": 4416031,
+      "kind": "person",
+      "title": "The Drakkari Colossus",
+      "triggers": [{ "kill": 29307 }],
+      "body": [
+        "A Drakkari golem made of mojo fused together."
+      ],
+      "sources": ["warcraft.wiki.gg: Drakkari Colossus"]
+    },
+    {
+      "id": 4416032,
+      "kind": "person",
+      "title": "Moorabi",
+      "triggers": [{ "kill": 29305 }],
+      "body": [
+        "High prophet of Mam'toth, the mammoth god. When the god died, his power passed to Moorabi."
+      ],
+      "sources": ["warcraft.wiki.gg: Moorabi"]
+    },
+    {
+      "id": 4416033,
+      "kind": "person",
+      "title": "Eck the Ferocious",
+      "triggers": [{ "kill": 29932 }],
+      "body": [
+        "A gorloc lurking in the waters beneath Gundrak."
+      ],
+      "sources": ["warcraft.wiki.gg: Eck the Ferocious"]
+    },
+    {
+      "id": 4416034,
+      "kind": "person",
+      "title": "Gal'darah",
+      "triggers": [{ "kill": 29306 }],
+      "body": [
+        "High prophet of Akali, the rhino god, who killed his god and drank his blood for his power."
+      ],
+      "sources": ["warcraft.wiki.gg: Gal'darah"]
+    }
+  ]
+}

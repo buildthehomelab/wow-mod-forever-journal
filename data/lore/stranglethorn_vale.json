@@ -1,0 +1,243 @@
+{
+  "zone": 33,
+  "name": "Stranglethorn Vale",
+  "entries": [
+    {
+      "id": 33000,
+      "kind": "zone",
+      "title": "Stranglethorn Vale",
+      "triggers": [{ "areaId": 33 }],
+      "body": [
+        "A vast jungle at the southern tip of the Eastern Kingdoms, known for three things. Its wildlife and fevers are deadly, and no one should travel it without antidotes. It was the heart of the Gurubashi Empire, and its ruins are full of jungle trolls. And its pirates: the Blackwater Raiders of Booty Bay and their sworn enemies, the Bloodsail Buccaneers.",
+        "Everyone wants a piece of it. Goblin trade princes cut its trees and mine its hills, Stormwind sent an expedition that went mad, hunters come for its game, and the trolls grow ever more determined to purge their ancient land of every outsider."
+      ],
+      "sources": ["warcraft.wiki.gg: Stranglethorn Vale (introduction, World of Warcraft)"]
+    },
+    {
+      "id": 33001,
+      "kind": "place",
+      "title": "Booty Bay",
+      "triggers": [{ "area": "Booty Bay" }, { "area": "Blackwater Cove" }, { "talk": 2496 }],
+      "body": [
+        "A pirate port built into the cliffs around a blue lagoon at the southern tip of the vale, entered on foot through the bleached jaws of a giant shark. Life is cheap, no one is to be trusted, and it is a rogue's paradise full of information and informants.",
+        "The cove was once called Blackwater Cove, a small human port that the trolls overran. Before the First War, the goblins of the Steamwheedle Cartel drove the trolls out and made it their centre in the Eastern Kingdoms. Baron Revilgaz runs it with the Blackwater Raiders."
+      ],
+      "sources": ["warcraft.wiki.gg: Booty Bay (introduction, History)"]
+    },
+    {
+      "id": 33002,
+      "kind": "place",
+      "title": "Grom'gol Base Camp",
+      "triggers": [{ "area": "Grom'gol Base Camp" }, { "talk": 2464 }, { "talk": 2497 }],
+      "body": [
+        "An orc camp on the western coast under Commander Aggro'gosh, guarding the supply line to Stonard. It is heavily fortified against trolls, naga and the Alliance travellers who pass between Booty Bay and Duskwood. Its zeppelins fly to Orgrimmar and the Undercity."
+      ],
+      "sources": ["warcraft.wiki.gg: Grom'gol Base Camp"]
+    },
+    {
+      "id": 33003,
+      "kind": "place",
+      "title": "Nesingwary's Expedition",
+      "triggers": [{ "area": "Nesingwary's Expedition" }, { "talk": 715 }],
+      "body": [
+        "The base camp of the dwarf Hemet Nesingwary, said to be the greatest hunter on Azeroth, a war hero of the Alliance and author of The Green Hills of Stranglethorn. He came to hunt the jungle's game; when the Dark Portal reopened, he left the camp to his son, Hemet Jr., and went to Nagrand in search of more dangerous prey."
+      ],
+      "sources": ["warcraft.wiki.gg: Nesingwary's Expedition", "warcraft.wiki.gg: Hemet Nesingwary"]
+    },
+    {
+      "id": 33004,
+      "kind": "place",
+      "title": "The Rebel Camp",
+      "triggers": [{ "area": "Rebel Camp" }, { "talk": 469 }],
+      "body": [
+        "A camp in the far north of the vale, near the road from Duskwood, founded by soldiers of Stormwind's Kurzen expedition who escaped the madness that took the rest. Lieutenant Doren leads them against their former comrades, with land mines bought from a Booty Bay goblin."
+      ],
+      "sources": ["warcraft.wiki.gg: Rebel Camp (History)"]
+    },
+    {
+      "id": 33005,
+      "kind": "place",
+      "title": "Kurzen's Compound",
+      "triggers": [{ "area": "Kurzen's Compound" }, { "area": "The Stockpile" }, { "kill": 813 }],
+      "body": [
+        "A fortified human camp east of the Rebel Camp, base of the expedition Stormwind sent into the vale under Colonel Kurzen. Something has gone terribly wrong with it: Kurzen has fallen into madness, and his jungle fighters attack anyone who comes near. They train caged panthers and tigers for war, and keep their equipment in the Stockpile, a cave at the back of the compound."
+      ],
+      "sources": ["warcraft.wiki.gg: Kurzen's Compound", "warcraft.wiki.gg: Stranglethorn Vale (World of Warcraft)"]
+    },
+    {
+      "id": 33006,
+      "kind": "place",
+      "title": "The Mosh'Ogg Mound",
+      "triggers": [{ "area": "Mosh'Ogg Ogre Mound" }, { "area": "Mizjah Ruins" }, { "kill": 818 }],
+      "body": [
+        "Long before ogres came, this cave held a shrine to Lukou, a loa of the Darkspear trolls; when the Darkspear were driven out, his worship was mostly forgotten. Now the Mosh'Ogg ogres live in it. Their brutes and witch doctors in the Mizjah Ruins ambush the caravans to Stonard, and deep inside, their leader, the ogre mage Mai'Zoth, keeps a powerful relic."
+      ],
+      "sources": ["warcraft.wiki.gg: Mosh'Ogg Ogre Mound", "warcraft.wiki.gg: Mizjah Ruins"]
+    },
+    {
+      "id": 33007,
+      "kind": "place",
+      "title": "The Bloodscalp Ruins",
+      "triggers": [{ "area": "Bal'lal Ruins" }, { "area": "Tkashi Ruins" }, { "area": "Ruins of Zul'Kunda" }],
+      "body": [
+        "The Bloodscalp tribe lives in the old Gurubashi ruins of the north-west: Bal'lal on the coast by the Vile Reef, Tkashi near Nesingwary's camp, and the great ruins of Zul'Kunda, where their leaders, Nezzliok the Dire and Gan'zulah, hold court. They are bloodthirsty enemies of everyone, Grom'gol included."
+      ],
+      "sources": ["warcraft.wiki.gg: Bal'lal Ruins", "warcraft.wiki.gg: Tkashi Ruins", "warcraft.wiki.gg: Ruins of Zul'Kunda"]
+    },
+    {
+      "id": 33008,
+      "kind": "place",
+      "title": "The Skullsplitter Ruins",
+      "triggers": [{ "area": "Balia'mah Ruins" }, { "area": "Ziata'jai Ruins" }, { "area": "Ruins of Zul'Mamwe" }],
+      "body": [
+        "The second great troll tribe of the vale, the Skullsplitters, hold the ruins east of Grom'gol, Balia'mah and Ziata'jai, and the mountain-ringed ruins of Zul'Mamwe south of the ogre mound, where their vicious chieftain, Ana'thek the Cruel, rules."
+      ],
+      "sources": ["warcraft.wiki.gg: Balia'mah Ruins", "warcraft.wiki.gg: Ziata'jai Ruins", "warcraft.wiki.gg: Ruins of Zul'Mamwe"]
+    },
+    {
+      "id": 33009,
+      "kind": "place",
+      "title": "Zul'Gurub and Yojamba Isle",
+      "triggers": [{ "area": "Zul'Gurub" }, { "area": "Yojamba Isle" }, { "talk": 14875 }],
+      "body": [
+        "Zul'Gurub, the temple city in the north-east, was the capital of the Gurubashi Empire, and now only of the Gurubashi tribe. The influence of Hakkar lingers there; its trolls are brutal, violent and fast, and few who go in looking for treasure come out.",
+        "The Zandalar tribe has come to Yojamba Isle, off the north-western coast, to recruit champions of every race, for the Atal'ai have summoned Hakkar into the world in the city's heart."
+      ],
+      "sources": ["warcraft.wiki.gg: Zul'Gurub (introduction, History)", "warcraft.wiki.gg: Yojamba Isle", "warcraft.wiki.gg: Stranglethorn Vale (World of Warcraft)"]
+    },
+    {
+      "id": 33010,
+      "kind": "place",
+      "title": "The Gurubashi Arena",
+      "triggers": [{ "area": "Gurubashi Arena" }, { "area": "Battle Ring" }, { "talk": 14508 }],
+      "body": [
+        "An arena left by the Gurubashi Empire, where in ancient times fights were to the death and the sand was muddy with troll blood. Once a generation, the greatest trolls from all over Azeroth come here to fight for the glory of the loa, in a rite presided over by the Zandalari king.",
+        "Now Short John Mithril oversees less lethal matches for ruffians after fame and treasure. Old stories say that whoever finds a blood-red amulet here at midnight will have their soul devoured by a demon before daybreak."
+      ],
+      "sources": ["warcraft.wiki.gg: Gurubashi Arena"]
+    },
+    {
+      "id": 33011,
+      "kind": "place",
+      "title": "The Ruins of Aboraz and Jubuwal",
+      "triggers": [{ "area": "Ruins of Aboraz" }, { "area": "Ruins of Jubuwal" }, { "kill": 2534 }],
+      "body": [
+        "Old troll ruins in the south of the vale, home of the witch doctor Zanzil the Outcast and his ghouls, naga and troll thralls. Among his bewitched victims wander debtors of \"Sea Wolf\" MacKinley of Booty Bay, and a captured young Darkspear named Yenniku."
+      ],
+      "sources": ["warcraft.wiki.gg: Ruins of Aboraz", "warcraft.wiki.gg: Ruins of Jubuwal"]
+    },
+    {
+      "id": 33012,
+      "kind": "place",
+      "title": "The Vile Reef",
+      "triggers": [{ "area": "The Vile Reef" }, { "accept": 629 }],
+      "body": [
+        "A colourful reef off the western coast near Grom'gol, where murlocs live among sunken troll ruins and the Altar of the Tides. Giant clams on the reef are said to hold blue pearls.",
+        "The trolls tell of the Stone of the Tides, which washed up on this coast and gave its finder power over water. He took it to the emperor in Zul'Gurub and became the Tidebearer, but the stone was cursed; its bearer slowly faded. He walked into the sea where he had found it and vanished, and generations later the stone washed ashore again for a new Tidebearer."
+      ],
+      "sources": ["warcraft.wiki.gg: Vile Reef", "warcraft.wiki.gg: Stranglethorn Vale (Ancient history)"]
+    },
+    {
+      "id": 33013,
+      "kind": "place",
+      "title": "Jaguero Isle",
+      "triggers": [{ "area": "Jaguero Isle" }, { "kill": 1559 }, { "talk": 2634 }],
+      "body": [
+        "An island off the south-eastern coast, full of panthers and gorillas. An enormous ape, King Mukla, keeps a captive tauren there, Princess Poobah."
+      ],
+      "sources": ["warcraft.wiki.gg: Jaguero Isle"]
+    },
+    {
+      "id": 33014,
+      "kind": "place",
+      "title": "Janeiro's Point",
+      "triggers": [{ "area": "Janeiro's Point" }, { "kill": 1493 }],
+      "body": [
+        "A small island outside Booty Bay with a giant statue of an unknown goblin, arms outstretched, welcoming ships to the port. The sea giant Mok'rash the Cleaver has made it his home."
+      ],
+      "sources": ["warcraft.wiki.gg: Janeiro's Point"]
+    },
+    {
+      "id": 33015,
+      "kind": "place",
+      "title": "The Wild Shore",
+      "triggers": [{ "area": "Wild Shore" }, { "area": "Bloodsail Compound" }, { "kill": 2546 }],
+      "body": [
+        "The southernmost coast of the Eastern Kingdoms, where the Bloodsail Buccaneers have anchored their three frigates, the Riptide, the Damsel's Luck and their flagship, the Crimson Veil, under Fleet Master Firallon, ready to plunder and cripple Booty Bay. A scouting party has landed just west of the town."
+      ],
+      "sources": ["warcraft.wiki.gg: Wild Shore", "warcraft.wiki.gg: The Crimson Veil", "warcraft.wiki.gg: Stranglethorn Vale (World of Warcraft)"]
+    },
+    {
+      "id": 33016,
+      "kind": "place",
+      "title": "The Venture Company in the Vale",
+      "triggers": [{ "area": "Venture Co. Base Camp" }, { "area": "Venture Co. Operations Center" }, { "area": "Crystalvein Mine" }],
+      "body": [
+        "The Venture Company has set up a logging camp by Lake Nazferiti under Foreman Cozzle, with an oil platform on the lake. At the Crystalvein Mine it hopes to dig the singing crystals found only in Stranglethorn, which are very valuable to certain parties. But the basilisks there eat the crystals, which harden their hides, and have made mining impossible."
+      ],
+      "sources": ["warcraft.wiki.gg: Stranglethorn Vale (World of Warcraft)", "warcraft.wiki.gg: Crystalvein Mine", "warcraft.wiki.gg: Venture Co. Operations Center"]
+    },
+    {
+      "id": 33017,
+      "kind": "place",
+      "title": "Nek'mani Wellspring",
+      "triggers": [{ "area": "Nek'mani Wellspring" }],
+      "body": [
+        "A sacred spring high in the cliffs over the southern coast, the only clean fresh water south of Duskwood. Scholars argue endlessly over it, for every race on Azeroth claims its waters were blessed for them. A band of naga explorers has seized it and guards it ferociously."
+      ],
+      "sources": ["warcraft.wiki.gg: Nek'mani Wellspring"]
+    },
+    {
+      "id": 33030,
+      "kind": "person",
+      "title": "Yenniku",
+      "triggers": [{ "talk": 2530 }, { "accept": 581 }],
+      "body": [
+        "A young troll of the Darkspear tribe, captured and made a thrall by Zanzil the Outcast in the Ruins of Aboraz."
+      ],
+      "sources": ["warcraft.wiki.gg: Ruins of Aboraz"]
+    },
+    {
+      "id": 33031,
+      "kind": "person",
+      "title": "Colonel Kurzen",
+      "triggers": [{ "kill": 813 }, { "accept": 202 }],
+      "body": [
+        "The commander of Stormwind's expedition into Stranglethorn. Soon after it reached the vale, he descended into madness and took most of his men with him; only Lieutenant Doren's small band broke away."
+      ],
+      "sources": ["warcraft.wiki.gg: Kurzen's Compound", "warcraft.wiki.gg: Rebel Camp"]
+    },
+    {
+      "id": 33050,
+      "kind": "history",
+      "title": "The Gurubashi Empire",
+      "triggers": [{ "complete": 629 }, { "complete": 207 }, { "area": "Zul'Gurub" }],
+      "body": [
+        "At its height the Gurubashi Empire ruled from Stranglethorn to the Echo Isles. Fifteen hundred years before the Dark Portal, its priests called forth the avatar of the blood god Hakkar, and the empire conquered gnolls, murlocs and every troll who opposed him. The Zandalari saw that Hakkar's bloodlust would destroy not only the trolls but the world, joined with the Gurubashi who still resisted, and stormed Zul'Gurub. They cast Hakkar down on his own bloodstained shrine.",
+        "His most zealous priests, the Atal'ai, escaped north to the Swamp of Sorrows. The empire collapsed and its tribes splintered. One of them, the Darkspear, was driven from the vale altogether."
+      ],
+      "sources": ["warcraft.wiki.gg: Stranglethorn Vale (Gurubashi civil war)", "warcraft.wiki.gg: Gurubashi Empire"]
+    },
+    {
+      "id": 33051,
+      "kind": "history",
+      "title": "The Blackwater Raiders and the Bloodsail",
+      "triggers": [{ "complete": 608 }, { "complete": 604 }, { "area": "Wild Shore" }],
+      "body": [
+        "Booty Bay's Blackwater Raiders and the Bloodsail Buccaneers are sworn enemies. The Bloodsail fleet lies off the southern coast, waiting to plunder the town. Neither side wants to commit its own crews to open battle, so each looks for adventurers willing to fight for it."
+      ],
+      "sources": ["warcraft.wiki.gg: Stranglethorn Vale (introduction, World of Warcraft)"]
+    },
+    {
+      "id": 33052,
+      "kind": "history",
+      "title": "Stranglethorn and the Orcs",
+      "triggers": [{ "areaId": 33 }, { "area": "Grom'gol Base Camp" }],
+      "body": [
+        "In the First War, Kilrogg Deadeye led his Bleeding Hollow clan into Stranglethorn; its jungles reminded them of Tanaan on Draenor, and they meant to keep it. The Gurubashi refused to share. Weakened as they were, they knew the land, and fought a guerrilla war that bled the orcs until Blackhand ordered them out, judging that too many were dying for nothing.",
+        "After the Second War, Stormwind spent heavily to push its army through Elwynn and into the vale, and the debt crippled the kingdom's economy."
+      ],
+      "sources": ["warcraft.wiki.gg: Stranglethorn Vale (First War and aftermath)"]
+    }
+  ]
+}

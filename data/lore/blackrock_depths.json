@@ -1,0 +1,237 @@
+{
+  "zone": 1584,
+  "name": "Blackrock Depths",
+  "entries": [
+    {
+      "id": 1584000,
+      "kind": "zone",
+      "title": "Blackrock Depths",
+      "triggers": [{ "areaId": 1584 }],
+      "body": [
+        "Immense volcanic tunnels at the roots of Blackrock Mountain, the home of the Dark Iron dwarves and of the black forge where they smelt their namesake ore. Much of it was built by the architect Franclorn Forgewright. It holds a prison, an arena, a tavern and Shadowforge City, the vast capital of the Dark Irons.",
+        "Emperor Dagran Thaurissan rules it, the latest of a line of sorcerer-thanes who have served in the shadow of Ragnaros since his ancestor summoned the Firelord. The Dark Irons labour for Ragnaros's elementals, and worship them, and are led by them towards ever more dangerous and apocalyptic deeds."
+      ],
+      "sources": ["warcraft.wiki.gg: Blackrock Depths (introduction, History)"]
+    },
+    {
+      "id": 1584001,
+      "kind": "place",
+      "title": "The Detention Block",
+      "triggers": [{ "areaId": 1584 }, { "kill": 9018 }, { "kill": 9020 }],
+      "body": [
+        "The Dark Irons' prison, run with the help of the Twilight's Hammer. Its cells hold enemies of every kind, Horde officers of the Kargath Expeditionary Force and Alliance agents among them, and its interrogator is a woman of the Twilight's Hammer."
+      ],
+      "sources": ["warcraft.wiki.gg: Blackrock Depths (Dungeon denizens)", "warcraft.wiki.gg: General Angerforge"]
+    },
+    {
+      "id": 1584002,
+      "kind": "place",
+      "title": "The Ring of Law",
+      "triggers": [{ "kill": 9027 }, { "kill": 9028 }, { "kill": 9029 }, { "kill": 9030 }, { "kill": 9031 }, { "kill": 9032 }],
+      "body": [
+        "The Dark Irons' arena of justice, overseen by High Justice Grimstone. Anyone who steps into it is sentenced on the spot, and has to survive whatever beasts and champions the crowd's justice sends against them."
+      ],
+      "sources": ["warcraft.wiki.gg: Ring of Law"]
+    },
+    {
+      "id": 1584003,
+      "kind": "place",
+      "title": "The Halls of the Law and Franclorn's Monument",
+      "triggers": [{ "kill": 9025 }, { "kill": 9319 }, { "kill": 9024 }],
+      "body": [
+        "Halls of fire elementals and Dark Iron hounds beyond the prison. Past the arena stands the monument to Franclorn Forgewright, before which a tauren shaman of the Twilight's Hammer kneels."
+      ],
+      "sources": ["warcraft.wiki.gg: Lord Roccor", "warcraft.wiki.gg: Pyromancer Loregrain"]
+    },
+    {
+      "id": 1584004,
+      "kind": "place",
+      "title": "The Dark Iron Highway",
+      "triggers": [{ "kill": 9016 }, { "kill": 9033 }],
+      "body": [
+        "The great road through the depths, with a molten giant born of Ragnaros's fires at one end, and the West Garrison, where the venerable General Angerforge commands the Dark Iron armies."
+      ],
+      "sources": ["warcraft.wiki.gg: Bael'Gar", "warcraft.wiki.gg: General Angerforge"]
+    },
+    {
+      "id": 1584005,
+      "kind": "place",
+      "title": "The Manufactory",
+      "triggers": [{ "kill": 8983 }],
+      "body": [
+        "The golem factory of the Dark Irons, full of technicians and their creations, ruled from a private chamber by the Golem Lord."
+      ],
+      "sources": ["warcraft.wiki.gg: Golem Lord Argelmach"]
+    },
+    {
+      "id": 1584006,
+      "kind": "place",
+      "title": "The Grim Guzzler",
+      "triggers": [{ "kill": 9537 }, { "kill": 9502 }, { "kill": 9499 }, { "kill": 9543 }],
+      "body": [
+        "A two-storey tavern in Shadowforge City, packed with drunken patrons who are friendly enough, until someone breaks the kegs. Its ale is famous; one Hurley Blackbreath stole the recipe for it, and both Ragnar Thunderbrew and the Horde would like it back. It is said the Grim Guzzler and its Brewfest are worth a detour into the depths of the world."
+      ],
+      "sources": ["warcraft.wiki.gg: Grim Guzzler", "warcraft.wiki.gg: Hurley Blackbreath"]
+    },
+    {
+      "id": 1584007,
+      "kind": "place",
+      "title": "Shadowforge City",
+      "triggers": [{ "kill": 9017 }, { "kill": 9041 }, { "kill": 9042 }, { "kill": 9476 }, { "kill": 9056 }],
+      "body": [
+        "The capital of the Dark Irons: the Hall of Crafting and the Black Anvil, guarded by the fire elemental Lord Incendius; the Black Vault, the Dark Irons' bank; and the homes of their architects and nobles. Elite warriors and Twilight cultists walk its streets among the common citizens."
+      ],
+      "sources": ["warcraft.wiki.gg: Lord Incendius", "warcraft.wiki.gg: Black Vault", "warcraft.wiki.gg: Blackrock Depths (Dungeon denizens)"]
+    },
+    {
+      "id": 1584008,
+      "kind": "place",
+      "title": "The Lyceum and the Summoners' Tomb",
+      "triggers": [{ "kill": 9156 }, { "kill": 9039 }],
+      "body": [
+        "In the Chamber of Enchantment, an envoy of Ragnaros's Flamewakers holds audience. Nearby, in the Summoners' Tomb, the Seven lie: the patriarchs of the Dark Iron nation who summoned Ragnaros with Thaurissan, and died doing it."
+      ],
+      "sources": ["warcraft.wiki.gg: Ambassador Flamelash", "warcraft.wiki.gg: The Seven"]
+    },
+    {
+      "id": 1584009,
+      "kind": "place",
+      "title": "The Imperial Seat",
+      "triggers": [{ "kill": 9938 }, { "kill": 9019 }],
+      "body": [
+        "The throne room of the Emperor at the heart of Shadowforge City, reached through the Iron Hall, where a molten giant guards the way and the statues breathe fire."
+      ],
+      "sources": ["warcraft.wiki.gg: Magmus"]
+    },
+    {
+      "id": 1584030,
+      "kind": "person",
+      "title": "High Interrogator Gerstahn",
+      "triggers": [{ "kill": 9018 }],
+      "body": [
+        "A Twilight's Hammer interrogator who serves the Dark Irons in their prison, and is very good at it."
+      ],
+      "sources": ["warcraft.wiki.gg: Blackrock Depths (Lower City)"]
+    },
+    {
+      "id": 1584031,
+      "kind": "person",
+      "title": "Lord Roccor",
+      "triggers": [{ "kill": 9025 }],
+      "body": [
+        "A lava elemental who guards the Halls of the Law."
+      ],
+      "sources": ["warcraft.wiki.gg: Lord Roccor"]
+    },
+    {
+      "id": 1584032,
+      "kind": "person",
+      "title": "Pyromancer Loregrain",
+      "triggers": [{ "kill": 9024 }],
+      "body": [
+        "A tauren shaman of the Twilight's Hammer, who kneels before the monument of Franclorn Forgewright."
+      ],
+      "sources": ["warcraft.wiki.gg: Pyromancer Loregrain"]
+    },
+    {
+      "id": 1584033,
+      "kind": "person",
+      "title": "Bael'Gar",
+      "triggers": [{ "kill": 9016 }],
+      "body": [
+        "A molten giant at one end of the Dark Iron Highway, \"a being of pure flame, born of the fires of Ragnaros\"."
+      ],
+      "sources": ["warcraft.wiki.gg: Bael'Gar"]
+    },
+    {
+      "id": 1584034,
+      "kind": "person",
+      "title": "General Angerforge",
+      "triggers": [{ "kill": 9033 }],
+      "body": [
+        "The venerable general of the Dark Iron armies, who commands from the West Garrison. His forces slaughtered the 109th division of the Kargath Expeditionary Force, and the Horde has not forgotten."
+      ],
+      "sources": ["warcraft.wiki.gg: General Angerforge"]
+    },
+    {
+      "id": 1584035,
+      "kind": "person",
+      "title": "Golem Lord Argelmach",
+      "triggers": [{ "kill": 8983 }],
+      "body": [
+        "Master of the Manufactory, guarded by his elite golems, who calls every technician and construct in the factory to his defence when threatened."
+      ],
+      "sources": ["warcraft.wiki.gg: Golem Lord Argelmach"]
+    },
+    {
+      "id": 1584036,
+      "kind": "person",
+      "title": "Fineous Darkvire",
+      "triggers": [{ "kill": 9056 }],
+      "body": [
+        "The Chief Architect of Shadowforge City, who was given Franclorn Forgewright's hammer Ironfel when the great architect died. His reputation is poor; it may not be all his own doing."
+      ],
+      "sources": ["warcraft.wiki.gg: Fineous Darkvire"]
+    },
+    {
+      "id": 1584037,
+      "kind": "person",
+      "title": "Lord Incendius",
+      "triggers": [{ "kill": 9017 }],
+      "body": [
+        "A fire elemental who guards the Black Anvil, where the Dark Irons forge their dark iron."
+      ],
+      "sources": ["warcraft.wiki.gg: Lord Incendius"]
+    },
+    {
+      "id": 1584038,
+      "kind": "person",
+      "title": "Ambassador Flamelash",
+      "triggers": [{ "kill": 9156 }],
+      "body": [
+        "A Flamewaker, envoy of Ragnaros's lieutenant Sulfuron Harbinger, who holds court in the Chamber of Enchantment, his burning spirits about him."
+      ],
+      "sources": ["warcraft.wiki.gg: Ambassador Flamelash"]
+    },
+    {
+      "id": 1584039,
+      "kind": "person",
+      "title": "The Seven",
+      "triggers": [{ "kill": 9039 }],
+      "body": [
+        "Dark Iron dwarves of great knowledge and power, the patriarchs of their nation, who summoned Ragnaros with Sorcerer-Thane Thaurissan and died doing it. Their people were enslaved because of them, yet their spirits seem to think the Firelord's coming a blessing."
+      ],
+      "sources": ["warcraft.wiki.gg: The Seven"]
+    },
+    {
+      "id": 1584040,
+      "kind": "person",
+      "title": "Magmus",
+      "triggers": [{ "kill": 9938 }],
+      "body": [
+        "A molten giant who guards the Iron Hall and the way to the Emperor's seat."
+      ],
+      "sources": ["warcraft.wiki.gg: Magmus"]
+    },
+    {
+      "id": 1584041,
+      "kind": "person",
+      "title": "Emperor Dagran Thaurissan",
+      "triggers": [{ "kill": 9019 }],
+      "body": [
+        "Emperor of the Dark Iron clan, descendant of the sorcerer-thane who summoned Ragnaros, who has pledged his people to the Firelord's service. His wife is Moira, daughter of King Magni Bronzebeard, taken by his order; Magni believes she is under a spell, and has sent agents to kill the Emperor and bring her home. Moira, who has come to love him, and carries his heir, may not want to be rescued."
+      ],
+      "sources": ["warcraft.wiki.gg: Emperor Dagran Thaurissan", "warcraft.wiki.gg: Blackrock Depths (World of Warcraft)", "warcraft.wiki.gg: Moira Thaurissan"]
+    },
+    {
+      "id": 1584042,
+      "kind": "person",
+      "title": "Hurley Blackbreath",
+      "triggers": [{ "kill": 9537 }],
+      "body": [
+        "A Dark Iron who stole a famous ale recipe and hides out in the Grim Guzzler. The surest way to bring him running is to break his kegs."
+      ],
+      "sources": ["warcraft.wiki.gg: Hurley Blackbreath"]
+    }
+  ]
+}

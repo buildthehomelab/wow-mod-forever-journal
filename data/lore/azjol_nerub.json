@@ -1,0 +1,76 @@
+{
+  "zone": 4277,
+  "name": "Azjol-Nerub",
+  "entries": [
+    {
+      "id": 4277000,
+      "kind": "zone",
+      "title": "Azjol-Nerub",
+      "triggers": [{ "areaId": 4277 }],
+      "body": [
+        "The great underground empire of the nerubians. When the Lich King came to Northrend, the spider-folk made war on him, the War of the Spider, and lost. Their dead rose to serve him. Now undead nerubians patrol the ruins of the Upper Kingdom, guarding clutches of eggs that will one day hatch a new generation of Scourge warriors. Pockets of living nerubians still fight on, losing."
+      ],
+      "sources": ["warcraft.wiki.gg: Azjol-Nerub (instance) (introduction, History)", "warcraft.wiki.gg: Anub'arak"]
+    },
+    {
+      "id": 4277001,
+      "kind": "place",
+      "title": "The Gate of Azjol-Nerub",
+      "triggers": [{ "kill": 28684 }],
+      "body": [
+        "The way into the hidden empire, kept by its old guardian."
+      ],
+      "sources": ["warcraft.wiki.gg: Krik'thir the Gatewatcher"]
+    },
+    {
+      "id": 4277002,
+      "kind": "place",
+      "title": "The Passage of Lost Fiends",
+      "triggers": [{ "area": "Passage of Lost Fiends" }, { "kill": 28921 }],
+      "body": [
+        "A deep shaft where the Anub'ar fight to bring down a huge spider, perhaps to make a weapon of it for the Scourge."
+      ],
+      "sources": ["warcraft.wiki.gg: Hadronox"]
+    },
+    {
+      "id": 4277003,
+      "kind": "place",
+      "title": "The Brood Pit",
+      "triggers": [{ "kill": 29120 }],
+      "body": [
+        "The deepest chamber of the Upper Kingdom, where the old king of Azjol-Nerub now holds court for the Lich King."
+      ],
+      "sources": ["warcraft.wiki.gg: Anub'arak"]
+    },
+    {
+      "id": 4277030,
+      "kind": "person",
+      "title": "Krik'thir the Gatewatcher",
+      "triggers": [{ "kill": 28684 }],
+      "body": [
+        "Guardian of the gates of Azjol-Nerub, keeper of the key to the hidden empire. He fell in the War of the Spider defending his home, and was raised to serve the Lich King. Even in undeath he did his duty well, and kept most of the empire closed off."
+      ],
+      "sources": ["warcraft.wiki.gg: Krik'thir the Gatewatcher (Background)"]
+    },
+    {
+      "id": 4277031,
+      "kind": "person",
+      "title": "Hadronox",
+      "triggers": [{ "kill": 28921 }],
+      "body": [
+        "A huge spider of the deep, under attack by the Anub'ar, who may mean to make it undead, as Maexxna was."
+      ],
+      "sources": ["warcraft.wiki.gg: Hadronox"]
+    },
+    {
+      "id": 4277032,
+      "kind": "person",
+      "title": "Anub'arak",
+      "triggers": [{ "kill": 29120 }],
+      "body": [
+        "Proud, strong and mighty, the last king of Azjol-Nerub. He was slain in the War of the Spider and raised by the Lich King as a crypt lord. When the Lich King's power began to fail, Anub'arak led Arthas through the Old Kingdom to reach Icecrown before Illidan's forces. To the nerubians who still live, he is the traitor king."
+      ],
+      "sources": ["warcraft.wiki.gg: Anub'arak", "warcraft.wiki.gg: Ahn'kahet: The Old Kingdom (The Frozen Throne)"]
+    }
+  ]
+}

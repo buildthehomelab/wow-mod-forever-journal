@@ -1,0 +1,58 @@
+{
+  "zone": 2159,
+  "name": "Onyxia's Lair",
+  "entries": [
+    {
+      "id": 2159000,
+      "kind": "zone",
+      "title": "Onyxia's Lair",
+      "triggers": [{ "areaId": 2159 }],
+      "body": [
+        "A fiery cave beneath the Wyrmbog of Dustwallow Marsh, built by the broodmother of the black dragonflight herself. Its entrance is carved in the likeness of her own jaws. Inside, the path is lined with magma, the cracked floor glows with fire from beneath, the stone ceiling groans and shifts with constant rockfalls, and the walls spill lava where the heat cannot be held back.",
+        "Here Onyxia retreated when she was unmasked in Stormwind, guarded by the last of the insidious black dragonflight."
+      ],
+      "sources": ["warcraft.wiki.gg: Onyxia's Lair (Background, World of Warcraft)"]
+    },
+    {
+      "id": 2159001,
+      "kind": "place",
+      "title": "The Tunnels of Fire",
+      "triggers": [{ "areaId": 2159 }, { "kill": 12129 }],
+      "body": [
+        "The magma-lined passage down into the lair, watched by Onyxia's warders, great dragonspawn wreathed in fire."
+      ],
+      "sources": ["warcraft.wiki.gg: Onyxia's Lair (Background)", "warcraft.wiki.gg: Onyxian Warder"]
+    },
+    {
+      "id": 2159002,
+      "kind": "place",
+      "title": "The Broodmother's Chamber",
+      "triggers": [{ "kill": 10184 }, { "kill": 11262 }],
+      "body": [
+        "Onyxia's great cavern, its corners heaped with nests of her eggs, which hatch into whelps when anything disturbs them. From its heights she rains fire on all who come."
+      ],
+      "sources": ["warcraft.wiki.gg: Onyxian Whelp", "warcraft.wiki.gg: Onyxia's Lair (The Comic)"]
+    },
+    {
+      "id": 2159030,
+      "kind": "person",
+      "title": "Onyxia",
+      "triggers": [{ "kill": 10184 }],
+      "body": [
+        "Daughter of Deathwing and twin sister of Nefarian, and broodmother of the black dragonflight on Azeroth. Where her father favours brute force and her brother breeds abominations, she prefers subtle manipulation, and delights in meddling in the affairs of mortals. Her breath can melt iron, and for all that she is small for a black dragon her age, her strikes are lightning-quick and nearly unstoppable.",
+        "As Lady Katrana Prestor she stoked the quarrel that killed Queen Tiffin, had King Varian abducted, and ruled Stormwind through its regent, until she was unmasked and fled here."
+      ],
+      "sources": ["warcraft.wiki.gg: Onyxia (introduction)", "warcraft.wiki.gg: Onyxia's Lair (World of Warcraft)"]
+    },
+    {
+      "id": 2159050,
+      "kind": "history",
+      "title": "The King's Revenge",
+      "triggers": [{ "kill": 10184 }],
+      "body": [
+        "When her disguise fell, Onyxia snatched young Prince Anduin and carried him to her lair, daring the king to follow. Varian came with a band of champions. In the battle, one of her spells went astray and made the king whole again, and he struck off her head himself. It was hung from the gates of Stormwind. The druid Broll Bearmantle called roots from the ground to seal the lair, and kill her unhatched brood."
+      ],
+      "sources": ["warcraft.wiki.gg: Onyxia's Lair (The Comic)"]
+    }
+  ]
+}

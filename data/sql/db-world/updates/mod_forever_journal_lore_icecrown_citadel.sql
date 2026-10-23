@@ -1,0 +1,62 @@
+-- mod-forever-journal: lore of Icecrown Citadel (zone 4812).
+-- Generated from data/lore/*.json by tools/build_lore_sql.py; edit the JSON, not this file.
+
+DELETE FROM `mod_forever_journal_lore_trigger` WHERE `Entry` BETWEEN 4812000 AND 4812999;
+DELETE FROM `mod_forever_journal_lore` WHERE `ID` BETWEEN 4812000 AND 4812999;
+
+INSERT INTO `mod_forever_journal_lore` (`ID`, `Zone`, `Kind`, `SortOrder`, `Faction`, `Races`, `Classes`, `Era`, `Title`, `Body`, `Sources`) VALUES
+(4812000, 4812, 0, 1, 0, 0, 0, 0, 'Icecrown Citadel', 'The greatest fortress of the Scourge and the Lich King''s last bastion: layer upon layer of cursed saronite wrapped around the Frozen Throne that once held Ner''zhul''s spirit, a fortress as big as a city, its halls crawling with the most vile and loyal of the undead. The Scourge and the dreadlords built it as the Lich King''s power spread across Northrend. Here Arthas defeated Illidan, shattered Ner''zhul''s prison, and became one with the Lich King.\n\nThe Argent Crusade and the Knights of the Ebon Blade have joined as the Ashen Verdict, under Tirion Fordring and Darion Mograine, for the final assault.', 'warcraft.wiki.gg: Icecrown Citadel (introduction, Creation)'),
+(4812001, 4812, 1, 1, 0, 0, 0, 0, 'The Lower Spire', 'The citadel''s lowest levels: the bone-strewn Oratory of the Damned, the ramparts where the Skybreaker and Orgrim''s Hammer fight above the walls, and the Deathbringer''s Rise.', 'warcraft.wiki.gg: Icecrown Citadel'),
+(4812002, 4812, 1, 2, 0, 0, 0, 0, 'The Plagueworks', 'Professor Putricide''s domain, his laboratory of alchemical horrors and fun, where he brews the plagues of the Scourge and his creations grow fat on them.', 'warcraft.wiki.gg: Icecrown Citadel'),
+(4812003, 4812, 1, 3, 0, 0, 0, 0, 'The Crimson Hall', 'The halls of the San''layn, the Darkfallen, where the blood princes keep their council and their queen holds court in the Sanctum of Blood.', 'warcraft.wiki.gg: Icecrown Citadel'),
+(4812004, 4812, 1, 4, 0, 0, 0, 0, 'The Frostwing Halls', 'The wing of the frost wyrms, where a green dragon is held captive, and at its end Sindragosa''s lair.', 'warcraft.wiki.gg: Icecrown Citadel'),
+(4812005, 4812, 1, 5, 0, 0, 0, 0, 'The Frozen Throne', 'The top of the citadel, where the Lich King sits on the throne made of Ner''zhul''s prison, and waits.', 'warcraft.wiki.gg: Icecrown Citadel'),
+(4812030, 4812, 2, 1, 0, 0, 0, 0, 'Lord Marrowgar', 'Pieced together by the Lich King from the bones of a thousand vanquished adventurers, a guardian of the Frozen Throne within the Spire who wields the power of the throne itself, and the axe Bryntroll, the Bone Arbiter.', 'warcraft.wiki.gg: Lord Marrowgar'),
+(4812031, 4812, 2, 2, 0, 0, 0, 0, 'Lady Deathwhisper', 'A lich, Supreme Overseer of the Cult of the Damned, who preaches the Lich King''s will to his fanatics in the Oratory of the Damned.', 'warcraft.wiki.gg: Lady Deathwhisper'),
+(4812032, 4812, 2, 3, 0, 0, 0, 0, 'The Gunship Battle', 'The Skybreaker, under Muradin Bronzebeard, and Orgrim''s Hammer, under High Overlord Saurfang, both came to carry their forces up the citadel''s walls, and met each other in the sky over the ramparts.', 'warcraft.wiki.gg: Skybreaker (Icecrown Citadel)'),
+(4812033, 4812, 2, 4, 0, 0, 0, 0, 'Deathbringer Saurfang', 'The Lich King''s champion: Dranosh Saurfang, son of the High Overlord, who fell at the Wrathgate. Arthas took his body and raised him as a death knight to command his armies. When he fell again, his father came for his body, to carry it home.', 'warcraft.wiki.gg: Deathbringer Saurfang'),
+(4812034, 4812, 2, 5, 0, 0, 0, 0, 'Festergut and Rotface', 'Two of Professor Putricide''s abominations, swollen with his plagues: Festergut on gas, Rotface on ooze.', 'warcraft.wiki.gg: Festergut; warcraft.wiki.gg: Rotface'),
+(4812035, 4812, 2, 6, 0, 0, 0, 0, 'Professor Putricide', 'The Scourge''s master of plagues, whose laboratory crowns the Plagueworks, and whose creations are Festergut and Rotface.', 'warcraft.wiki.gg: Professor Putricide'),
+(4812036, 4812, 2, 7, 0, 0, 0, 0, 'The Blood Prince Council', 'Princes Valanar, Keleseth and Taldaram of the San''layn, raised again by the Lich King to take revenge on their slayers and to guard their queen.', 'warcraft.wiki.gg: Prince Taldaram'),
+(4812037, 4812, 2, 8, 0, 0, 0, 0, 'Blood-Queen Lana''thel', 'A battle-hardened blood elf warrior who followed Prince Kael''thas through every danger, from Lordaeron to Outland to Icecrown, sent there to destroy the Lich King, eager for revenge on the Scourge that ravaged her home. Instead she was raised as one of the Darkfallen, and she rules the San''layn, the Lich King''s vampiric elves.', 'warcraft.wiki.gg: Prince Taldaram; warcraft.wiki.gg: Blood-Queen Lana''thel'),
+(4812038, 4812, 2, 9, 0, 0, 0, 0, 'Valithria Dreamwalker', 'A green dragon captured by the Scourge and used as a test subject in the Frostwing Halls. The Lich King has ordered her destroyed, leaving only bones and sinew to raise. Healed, she knows something of Sindragosa.', 'warcraft.wiki.gg: Valithria Dreamwalker'),
+(4812039, 4812, 2, 10, 0, 0, 0, 0, 'Sindragosa', 'Once the beloved prime consort of Malygos, one of the first blue dragons, who died in the War of the Ancients trying to reach the Dragonblight. The Lich King raised her as queen of the Frostbrood, his undead frost wyrms.', 'warcraft.wiki.gg: Sindragosa''s Fall'),
+(4812040, 4812, 2, 11, 0, 0, 0, 0, 'The Lich King', 'Arthas Menethil, prince of Lordaeron, who took up Frostmourne to save his people and lost his soul to it. He murdered his father, destroyed Quel''Thalas, and came north to merge with Ner''zhul on the Frozen Throne.\n\nHe fell to Tirion Fordring, with Ashbringer in his hand, and Frostmourne broke. But the Scourge without a master would overrun the world. Bolvar Fordragon, who did not die at the Wrathgate but lay burned by the red dragons'' fire, took up the Helm of Domination, and became the new Lich King, the jailer of the damned.', 'warcraft.wiki.gg: Icecrown (Wrath of the Lich King); warcraft.wiki.gg: Icecrown Citadel');
+
+INSERT INTO `mod_forever_journal_lore_trigger` (`Entry`, `Type`, `Value`, `Area`) VALUES
+(4812000, 1, 4812, ''),
+(4812001, 3, 36612, ''),
+(4812001, 3, 36855, ''),
+(4812001, 3, 37540, ''),
+(4812001, 3, 37215, ''),
+(4812001, 3, 37813, ''),
+(4812002, 1, 0, 'Putricide''s Laboratory of Alchemical Horrors and Fun'),
+(4812002, 3, 36626, ''),
+(4812002, 3, 36627, ''),
+(4812002, 3, 36678, ''),
+(4812003, 1, 0, 'The Crimson Hall'),
+(4812003, 1, 0, 'The Sanctum of Blood'),
+(4812003, 3, 37970, ''),
+(4812003, 3, 37972, ''),
+(4812003, 3, 37973, ''),
+(4812003, 3, 37955, ''),
+(4812004, 1, 0, 'The Frost Queen''s Lair'),
+(4812004, 3, 36853, ''),
+(4812005, 1, 0, 'The Frozen Throne'),
+(4812005, 1, 0, 'Frostmourne'),
+(4812005, 3, 36597, ''),
+(4812030, 3, 36612, ''),
+(4812031, 3, 36855, ''),
+(4812032, 3, 37540, ''),
+(4812032, 3, 37215, ''),
+(4812033, 3, 37813, ''),
+(4812034, 3, 36626, ''),
+(4812034, 3, 36627, ''),
+(4812035, 3, 36678, ''),
+(4812036, 3, 37970, ''),
+(4812036, 3, 37972, ''),
+(4812036, 3, 37973, ''),
+(4812037, 3, 37955, ''),
+(4812038, 3, 36853, ''),
+(4812039, 3, 36853, ''),
+(4812040, 3, 36597, '');

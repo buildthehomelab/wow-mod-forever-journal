@@ -1,0 +1,158 @@
+{
+  "zone": 440,
+  "name": "Tanaris",
+  "entries": [
+    {
+      "id": 440000,
+      "kind": "zone",
+      "title": "Tanaris",
+      "triggers": [{ "areaId": 440 }],
+      "body": [
+        "A blazing desert of rolling dunes under a cloudless sky in southern Kalimdor, scoured by sandstorms. Its south is mountainous, honeycombed with great caverns that run deep underground, largely unexplored, and rumoured to hide creatures that kill trespassers without hesitation.",
+        "Tanaris was once a lush jungle, home to tauren tribes and part of the Gurubashi Empire. The Great Sundering turned it to desert in a moment. It is the ancestral home of the bronze dragonflight, and the titans left a gate here into the hidden land of Uldum."
+      ],
+      "sources": ["warcraft.wiki.gg: Tanaris (introduction, History, Geography)"]
+    },
+    {
+      "id": 440001,
+      "kind": "place",
+      "title": "Gadgetzan",
+      "triggers": [{ "area": "Gadgetzan" }, { "talk": 7564 }, { "talk": 7407 }],
+      "body": [
+        "The capital of the Steamwheedle Cartel, greatest of the goblin cartels, rising out of the northern desert under a blanket of black fumes. Some of the best goblin engineers, miners and alchemists ply their trade here. Goblins value profit over loyalty, so the town is neutral ground; both the Alliance and the Horde recognise it, and the goblin bruisers in the streets pound anyone who disturbs business into a pulp. Baron Marin Noggenfogger runs it.",
+        "Its water comes from the Gadgetzan Water Company's towers, pumping from reserves deep underground."
+      ],
+      "sources": ["warcraft.wiki.gg: Gadgetzan", "warcraft.wiki.gg: Waterspring Field"]
+    },
+    {
+      "id": 440002,
+      "kind": "place",
+      "title": "The Caverns of Time",
+      "triggers": [{ "area": "Caverns of Time" }, { "kill": 15192 }],
+      "body": [
+        "The home of the Dragon Aspect Nozdormu and his bronze dragonflight in eastern Tanaris. Through its winding labyrinth run portals to the great moments of history, crossroads of the timeways branching from the one true timeline. Since the world was young the bronze dragons have guarded it and watched over the balance of time, the sacred charge the titans gave them: mortals must never be allowed to meddle with what has been."
+      ],
+      "sources": ["warcraft.wiki.gg: Caverns of Time (introduction)"]
+    },
+    {
+      "id": 440003,
+      "kind": "place",
+      "title": "Steamwheedle Port",
+      "triggers": [{ "area": "Steamwheedle Port" }, { "talk": 8579 }],
+      "body": [
+        "A goblin port on the eastern coast, joined by road to Gadgetzan, with ships to the goblins' home isles. A troll named Yeh'kinya lives here, who knows more than a little about the blood god Hakkar."
+      ],
+      "sources": ["warcraft.wiki.gg: Steamwheedle Port"]
+    },
+    {
+      "id": 440004,
+      "kind": "place",
+      "title": "Zul'Farrak",
+      "triggers": [{ "area": "Zul'Farrak" }, { "area": "Sandsorrow Watch" }],
+      "body": [
+        "A troll city of the Gurubashi in the jungle that was. When the Sundering made the desert, the Farraki trolls were stranded, adapted, and became sand trolls, the Sandfury, known for their ruthlessness and dark mysticism. Their sun-blasted city stands in the north-west, and their zombies and blood drinkers fill the sands of Sandsorrow nearby."
+      ],
+      "sources": ["warcraft.wiki.gg: Zul'Farrak (History)", "warcraft.wiki.gg: Sandsorrow Watch"]
+    },
+    {
+      "id": 440005,
+      "kind": "place",
+      "title": "Waterspring Field",
+      "triggers": [{ "area": "Waterspring Field" }, { "area": "Noonshade Ruins" }, { "talk": 7724 }],
+      "body": [
+        "Named for the goblins' water towers, which pump water from deep underground for their desert operations. A band of nomad bandits calling themselves the Wastewanders strolled in, claimed the field and hijacked the towers. They hope this home will be better than the last one, an ogre camp; they still shiver when they think of it."
+      ],
+      "sources": ["warcraft.wiki.gg: Waterspring Field", "warcraft.wiki.gg: Eastmoon Ruins"]
+    },
+    {
+      "id": 440006,
+      "kind": "place",
+      "title": "Lost Rigger Cove",
+      "triggers": [{ "area": "Lost Rigger Cove" }, { "area": "Southbreak Shore" }, { "area": "Wavestrider Beach" }],
+      "body": [
+        "A hidden port of the Southsea pirates on the eastern coast, walled by mountains on three sides, where a new ship is being built in their shipyard. South of it, Captain Dreadbeard commands the pirates of Southbreak Shore, and somehow has sea giants helping him."
+      ],
+      "sources": ["warcraft.wiki.gg: Lost Rigger Cove", "warcraft.wiki.gg: Southbreak Shore"]
+    },
+    {
+      "id": 440007,
+      "kind": "place",
+      "title": "The Silithid Hives",
+      "triggers": [{ "area": "The Gaping Chasm" }, { "area": "The Noxious Lair" }],
+      "body": [
+        "The silithid have dug hives in the remote parts of the desert: the Gaping Chasm in the south-east, swarming with Hazzali silithid, and the Noxious Lair in the south-west, the Centipaar hive. Where it lies there was once a broad river or shallow lake; the silithid have drained the land of its water, and their great claws twitch from the sand. From these hives they once attacked the bronze dragon Anachronos and the Caverns of Time."
+      ],
+      "sources": ["warcraft.wiki.gg: Gaping Chasm", "warcraft.wiki.gg: Noxious Lair", "warcraft.wiki.gg: Tanaris (History)"]
+    },
+    {
+      "id": 440008,
+      "kind": "place",
+      "title": "The Southmoon Ruins and the Valley of the Watchers",
+      "triggers": [{ "area": "Southmoon Ruins" }, { "area": "Valley of the Watchers" }, { "talk": 5389 }],
+      "body": [
+        "Ancient troll ruins in the south where tablets thought to hold titan knowledge have been found; the Explorers' League, from Prospector Gunstan's camp, and the blood elf Reliquary fight over them. Beyond lies the Valley of the Watchers, with an impenetrable titan gate into the land of Uldum, guarded by mountain giants."
+      ],
+      "sources": ["warcraft.wiki.gg: Southmoon Ruins", "warcraft.wiki.gg: Valley of the Watchers", "warcraft.wiki.gg: Gunstan's Dig"]
+    },
+    {
+      "id": 440009,
+      "kind": "place",
+      "title": "Dunemaul Compound",
+      "triggers": [{ "area": "Dunemaul Compound" }, { "area": "Eastmoon Ruins" }],
+      "body": [
+        "The mound of the Dunemaul ogres, whose leader Sandscraper keeps a cave inside. They hold the Eastmoon Ruins too, old troll ruins beside the Gaping Chasm."
+      ],
+      "sources": ["warcraft.wiki.gg: Dunemaul Compound", "warcraft.wiki.gg: Eastmoon Ruins"]
+    },
+    {
+      "id": 440010,
+      "kind": "place",
+      "title": "The Broken Pillar",
+      "triggers": [{ "area": "Broken Pillar" }, { "talk": 7771 }],
+      "body": [
+        "A small group of troll ruins south of Gadgetzan, where the goblin scientist Marvon Rivetseeker of Ratchet has camped in search of answers. He has been into the Sunken Temple, and barely got out."
+      ],
+      "sources": ["warcraft.wiki.gg: Broken Pillar", "warcraft.wiki.gg: Temple of Atal'Hakkar"]
+    },
+    {
+      "id": 440011,
+      "kind": "place",
+      "title": "Thistleshrub Valley and the Abyssal Sands",
+      "triggers": [{ "area": "Thistleshrub Valley" }, { "area": "Abyssal Sands" }, { "area": "Land's End Beach" }],
+      "body": [
+        "A valley thick with giant cacti, strangely alive for Tanaris, and with the restless desert thistleshrubs; west of it stretch the open dunes of the Abyssal Sands. At the far south-east corner of Kalimdor, Land's End Beach looks out to sea."
+      ],
+      "sources": ["warcraft.wiki.gg: Thistleshrub Valley", "warcraft.wiki.gg: Land's End Beach"]
+    },
+    {
+      "id": 440030,
+      "kind": "person",
+      "title": "Narain Soothfancy",
+      "triggers": [{ "talk": 11811 }],
+      "body": [
+        "A gnome \"master soothsayer\" who lives in a hut north of Steamwheedle Port. The blue dragon Azuregos, an old acquaintance, calls him a terrible, terrible psychic but an amazing engineer. When his flying machine crashed near Land's End Beach, a naga rescued him, and she has loved him, unrequited, ever since."
+      ],
+      "sources": ["warcraft.wiki.gg: Tanaris (Notable characters)"]
+    },
+    {
+      "id": 440031,
+      "kind": "person",
+      "title": "Anachronos",
+      "triggers": [{ "kill": 15192 }, { "talk": 15192 }],
+      "body": [
+        "An ancient bronze dragon, the chosen heir of Nozdormu, who keeps watch at the entrance to the Caverns of Time. A thousand years ago he fought at the gates of Ahn'Qiraj in the War of the Shifting Sands, and he has not forgotten what was sealed behind them. The Timeless One knows exactly where and when he himself will die, so he named his successor long in advance."
+      ],
+      "sources": ["warcraft.wiki.gg: Tanaris (History)", "warcraft.wiki.gg: Caverns of Time"]
+    },
+    {
+      "id": 440050,
+      "kind": "history",
+      "title": "Cho'gall in the Caves",
+      "triggers": [{ "areaId": 440 }],
+      "body": [
+        "About four years after the Second War, Cho'gall and his Twilight's Hammer came to Tanaris and made a base in its caves. Soon after, cultists began to go missing, or turned up dead: Garona Halforcen was hunting them. The cult abandoned the caves."
+      ],
+      "sources": ["warcraft.wiki.gg: Tanaris (History)"]
+    }
+  ]
+}

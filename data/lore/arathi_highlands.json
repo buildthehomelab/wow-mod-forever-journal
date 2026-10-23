@@ -1,0 +1,184 @@
+{
+  "zone": 45,
+  "name": "Arathi Highlands",
+  "entries": [
+    {
+      "id": 45000,
+      "kind": "zone",
+      "title": "The Arathi Highlands",
+      "triggers": [{ "areaId": 45 }],
+      "body": [
+        "Rolling green hills dotted with pines in south-eastern Lordaeron, cool and semi-arid and poor in resources, between Hillsbrad and the Thandol Span. They are central to the history of humankind: here stood Strom, capital of Arathor, the first human empire, and later the kingdom of Stromgarde.",
+        "Stromgarde kept the plague out of Arathi, but fell soon after to the Syndicate and the Boulderfist ogres. Now the highlands are a battleground of many sides: Stromgarde's remnants and the Alliance at Refuge Pointe, the Horde at Hammerfall, the Syndicate, the ogres, and the Witherbark trolls, who would drive all the others out."
+      ],
+      "sources": ["warcraft.wiki.gg: Arathi Highlands (introduction, World of Warcraft, Geography)"]
+    },
+    {
+      "id": 45001,
+      "kind": "place",
+      "title": "Refuge Pointe",
+      "triggers": [{ "area": "Refuge Pointe" }, { "talk": 2700 }],
+      "body": [
+        "When Stromgarde fell, most of its people fled south, but the proud remnant of its army stayed behind in a small canyon north of the capital, determined to win back their land. From this camp the Alliance works to help them retake the city and to secure the highlands' resources. Its captain, Nials, has too few soldiers to spare any, even for the dwarves of the broken Thandol Span."
+      ],
+      "sources": ["warcraft.wiki.gg: Refuge Pointe (History, World of Warcraft)", "warcraft.wiki.gg: Arathi Highlands (World of Warcraft)"]
+    },
+    {
+      "id": 45002,
+      "kind": "place",
+      "title": "Hammerfall",
+      "triggers": [{ "area": "Hammerfall" }, { "talk": 2771 }, { "talk": 2792 }],
+      "body": [
+        "After the Second War this was one of the largest internment camps in Lordaeron. Thrall and Orgrim Doomhammer led an army against it to free the orcs inside, and in the chaos of the retreat a charging knight drove his lance through Doomhammer's back with such force it dented his breastplate from the inside. The warchief died of the wound.",
+        "After the Third War the Horde took the ruins back and named them for him. It is a forward base in the highlands, and an unofficial refuge for orcs who feel they have no place in the world."
+      ],
+      "sources": ["warcraft.wiki.gg: Hammerfall (introduction, Lord of the Clans, World of Warcraft)"]
+    },
+    {
+      "id": 45003,
+      "kind": "place",
+      "title": "Stromgarde Keep",
+      "triggers": [{ "area": "Stromgarde Keep" }, { "kill": 2607 }, { "accept": 682 }],
+      "body": [
+        "Once Strom, the cradle of human civilisation and the capital of Arathor; later the capital of Stromgarde and a great power of the Alliance. After the Third War it was sacked and left in ruins.",
+        "The city is split three ways. The Syndicate holds the inner keep, the Boulderfist ogres and their Witherbark allies hold the old mage district, and Prince Galen Trollbane holds the last quarter with what remains of his army."
+      ],
+      "sources": ["warcraft.wiki.gg: Stromgarde Keep (introduction)"]
+    },
+    {
+      "id": 45004,
+      "kind": "place",
+      "title": "The Tower of Arathor",
+      "triggers": [{ "area": "The Tower of Arathor" }, { "accept": 696 }],
+      "body": [
+        "A mage tower in Stromgarde's old mage district. Archmage Trelane studied here and built it a magical defence that an enchanted gem could wake. When the Syndicate and the ogres besieged the city, he failed to hold the tower and fled. The ogre mage Ruul Onestone lives in it now, and Trelane's treasures are still inside."
+      ],
+      "sources": ["warcraft.wiki.gg: Tower of Arathor (After the Third War, World of Warcraft)"]
+    },
+    {
+      "id": 45005,
+      "kind": "place",
+      "title": "Northfold Manor",
+      "triggers": [{ "area": "Northfold Manor" }, { "kill": 2597 }],
+      "body": [
+        "A farm on the north-western edge of the highlands, taken by the Syndicate as an outpost after Stromgarde fell. The troll shaman Tor'gan felt something wrong in the air there, and found the residue of demonic summoning: the Syndicate is dabbling in dark magic, with amulets of bloodstone."
+      ],
+      "sources": ["warcraft.wiki.gg: Northfold Manor (World of Warcraft)"]
+    },
+    {
+      "id": 45006,
+      "kind": "place",
+      "title": "Witherbark Village",
+      "triggers": [{ "area": "Witherbark Village" }, { "area": "Witherbark Caverns" }, { "accept": 677 }],
+      "body": [
+        "A forest troll village around a small lake in the south-east, with a great cavern behind it where the tribe's leaders gather. For generations the Trollbanes fought the Witherbark, sworn enemies of Stromgarde and, to the humans, a curse upon Arathi. Now they have made a loose alliance with the Boulderfist ogres against Stromgarde and Hammerfall alike."
+      ],
+      "sources": ["warcraft.wiki.gg: Witherbark Village", "warcraft.wiki.gg: Arathi Highlands (Arathor)"]
+    },
+    {
+      "id": 45007,
+      "kind": "place",
+      "title": "Boulderfist Hall",
+      "triggers": [{ "area": "Boulderfist Hall" }, { "area": "Boulder'gor" }, { "kill": 2793 }],
+      "body": [
+        "The Boulderfist ogres crossed the Dark Portal before or during the Second War and have lived in the highlands ever since. Their strongly fortified hall stands in the south near the Thandol Span, where their chief, Kor'gresh Coldrage, holds the great cave; another band holds the hill of Boulder'gor north of Stromgarde."
+      ],
+      "sources": ["warcraft.wiki.gg: Boulderfist Hall", "warcraft.wiki.gg: Boulder'gor", "warcraft.wiki.gg: Arathi Highlands (Second War and aftermath)"]
+    },
+    {
+      "id": 45008,
+      "kind": "place",
+      "title": "Faldir's Cove",
+      "triggers": [{ "area": "Faldir's Cove" }, { "area": "The Drowned Reef" }, { "talk": 2610 }],
+      "body": [
+        "A natural harbour on the southern shore, said to mark the spot where Faldir, last heir of Thoradin, set sail with his followers to found Stormwind.",
+        "The Drowned Reef off the cove has wrecked many ships. Beneath it lies a sunken elven city, held by the Daggerspine naga of Prince Nazjak, who seem to control the tides. A Blackwater Raiders expedition came looking for elven treasure, and lost two of its three ships here."
+      ],
+      "sources": ["warcraft.wiki.gg: Faldir's Cove", "warcraft.wiki.gg: Drowned Reef"]
+    },
+    {
+      "id": 45009,
+      "kind": "place",
+      "title": "The Circles of Binding",
+      "triggers": [{ "area": "Circle of Inner Binding" }, { "area": "Circle of East Binding" }, { "area": "Circle of West Binding" }],
+      "body": [
+        "Great stone circles across the highlands, guarded by elementals, that keep something imprisoned deep beneath the earth. The Stone of Inner Binding, near Stromgarde, is the strongest of them. Through its shard, and another hidden in the kobold caves of Drywhisker Gorge, a voice calls to travellers for help."
+      ],
+      "sources": ["warcraft.wiki.gg: Arathi Highlands (Geography)", "warcraft.wiki.gg: Circle of Inner Binding", "warcraft.wiki.gg: Drywhisker Gorge"]
+    },
+    {
+      "id": 45010,
+      "kind": "place",
+      "title": "Go'Shek Farm",
+      "triggers": [{ "area": "Go'Shek Farm" }],
+      "body": [
+        "A farm once owned by Primwell Skye, a veteran of the Second War. After the Third War, orcs and Forsaken from Hammerfall took it. The orcs use it to supply Hammerfall; the Forsaken use it for alchemical experiments of their own."
+      ],
+      "sources": ["warcraft.wiki.gg: Go'Shek Farm (World of Warcraft)"]
+    },
+    {
+      "id": 45011,
+      "kind": "place",
+      "title": "Dabyrie's Farmstead",
+      "triggers": [{ "area": "Dabyrie's Farmstead" }],
+      "body": [
+        "The farm of the Dabyrie family, Kenata and her sons Fardel and Marcel, citizens of Stromgarde who came through the Third War and prospered. A Forsaken woman, Genavie Callow, who lost her family to the plague and her estate to looters, hates them for it, and says they stole the last things she owned."
+      ],
+      "sources": ["warcraft.wiki.gg: Dabyrie's Farmstead"]
+    },
+    {
+      "id": 45030,
+      "kind": "person",
+      "title": "Myzrael",
+      "triggers": [{ "kill": 2755 }, { "accept": 656 }],
+      "body": [
+        "She calls herself a princess of the earth, trapped deep beneath the highlands by the mountain giants and the Circles of Binding. The truth is that the Old Gods drove her mad, and the giants, made by the titans to protect the world, imprisoned her for it.",
+        "The Twilight's Hammer wanted her freed; a deserter from the cult stole the Scroll of Myzrael to keep them from it."
+      ],
+      "sources": ["warcraft.wiki.gg: Myzrael (Background)", "warcraft.wiki.gg: Theldurin the Lost"]
+    },
+    {
+      "id": 45031,
+      "kind": "person",
+      "title": "Prince Galen Trollbane",
+      "triggers": [{ "talk": 2607 }, { "area": "Stromgarde Keep" }],
+      "body": [
+        "The son of King Thoras Trollbane, who led Stromgarde after his father's death. Under him the kingdom could not withstand its many enemies, and he holds a single quarter of his capital, with the old sword Trol'kalar."
+      ],
+      "sources": ["warcraft.wiki.gg: Arathi Highlands (introduction)", "warcraft.wiki.gg: Stromgarde Keep"]
+    },
+    {
+      "id": 45050,
+      "kind": "history",
+      "title": "Strom and the Arathor Empire",
+      "triggers": [{ "complete": 646 }, { "complete": 644 }, { "area": "Thoradin's Wall" }],
+      "body": [
+        "Around 2,800 years before the Dark Portal, King Thoradin of the Arathi tribe united the human tribes against the Amani. Legend says a dream told him to seek an arid land in the south-east where his people would prosper. There he built Strom, the first human capital, where the dry hills gave the trolls no forest to ambush from, and a great wall to the west, Thoradin's Wall, now collapsed and gaping.",
+        "Strom was the heart of the empire through the Troll Wars and for a thousand years after. But as Arathor spread, the city, hemmed in by mountains and poor in resources, could not compete with its own colonies. Many noble families left for the fertile north, Thoradin's last heirs under Faldir sailed south to found Stormwind, and the few families who stayed made Strom into Stromgarde."
+      ],
+      "sources": ["warcraft.wiki.gg: Arathi Highlands (Arathor)", "warcraft.wiki.gg: Thoradin's Wall", "warcraft.wiki.gg: Arathor"]
+    },
+    {
+      "id": 45051,
+      "kind": "history",
+      "title": "The Death of Doomhammer",
+      "triggers": [{ "complete": 655 }, { "talk": 2792 }, { "area": "Hammerfall" }],
+      "body": [
+        "Orgrim Doomhammer, the last warchief of the Old Horde, escaped the camps and lived in hiding until the young Thrall found him. Together they marched on the internment camps. At Hammerfall the old warchief was mortally wounded; before he died he gave Thrall his black plate armour and his great hammer, and the mantle of warchief with them.",
+        "Not long before the Third War, Thrall and his orcs were still in these highlands when a prophet warned them to gather their people and go. They fought their way through ogres and trolls to Hillsbrad, and from there sailed for Kalimdor."
+      ],
+      "sources": ["warcraft.wiki.gg: Hammerfall (Lord of the Clans)", "warcraft.wiki.gg: Arathi Highlands (Second War and aftermath, Third War)"]
+    },
+    {
+      "id": 45052,
+      "kind": "history",
+      "title": "Stromgarde in the Second War",
+      "triggers": [{ "areaId": 45 }, { "area": "Stromgarde Keep" }],
+      "body": [
+        "In the Second War, King Thoras Trollbane's Stromgarde was one of the pillars of the Alliance's ground forces, split between the main army and the defence of the homeland. When Alterac's treason came to light, Thoras sent every soldier he had left into the mountains after his old enemy, Aiden Perenolde.",
+        "The Horde overran the highlands and Stromgarde itself, and pushed into Khaz Modan. After savage battles the Alliance drove it back to the Thandol Span and beyond, and Stromgarde was won back."
+      ],
+      "sources": ["warcraft.wiki.gg: Arathi Highlands (Second War and aftermath)"]
+    }
+  ]
+}

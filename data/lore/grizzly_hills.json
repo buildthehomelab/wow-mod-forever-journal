@@ -1,0 +1,148 @@
+{
+  "zone": 394,
+  "name": "Grizzly Hills",
+  "entries": [
+    {
+      "id": 394000,
+      "kind": "zone",
+      "title": "Grizzly Hills",
+      "triggers": [{ "areaId": 394 }],
+      "body": [
+        "Low green foothills laced with pine, craggy mountains and picturesque rivers. Countless millennia ago the bear gods Ursoc and Ursol roamed these hills as cubs before they grew into Wild Gods, and Ursoc ruled here with his children, Orsonn and Kodian. It is the ancestral home of the furbolgs.",
+        "To the Alliance and the Horde it was an untamed, forgotten frontier, known to human trappers who keep their own trading posts and a goblin Venture Company busy cutting down the forest."
+      ],
+      "sources": ["warcraft.wiki.gg: Grizzly Hills (introduction, History, Geography)"]
+    },
+    {
+      "id": 394001,
+      "kind": "place",
+      "title": "Grizzlemaw",
+      "triggers": [{ "area": "Grizzlemaw" }, { "area": "Rage Fang Shrine" }, { "area": "Heart's Blood Shrine" }, { "kill": 26633 }, { "talk": 27274 }, { "talk": 27275 }],
+      "body": [
+        "The furbolg city, built in the stump of a fallen World Tree. Its Redfang and Frostpaw tribes are mad and constantly at war. Ursoc's children, the ancients Orsonn and Kodian, are all but prisoners of their own people at the shrines nearby: the furbolgs will not let them leave, and they love them too much to fight their way out."
+      ],
+      "sources": ["warcraft.wiki.gg: Grizzlemaw", "warcraft.wiki.gg: Rage Fang Shrine", "warcraft.wiki.gg: Heart's Blood Shrine"]
+    },
+    {
+      "id": 394002,
+      "kind": "place",
+      "title": "Vordrassil",
+      "triggers": [{ "area": "Vordrassil's Heart" }, { "area": "Vordrassil's Limb" }, { "area": "Vordrassil's Tears" }, { "area": "Vordrassil Pass" }],
+      "body": [
+        "Some 4,500 years before the First War, Fandral Staghelm cut branches from Nordrassil and planted them where saronite had begun to spread. The largest he planted here, over a great saronite deposit, and named it Andrassil, \"Crown of the Snow\". Malfurion and the Circle were furious, but for decades the tree towered over Northrend and all seemed well.",
+        "Then the taunka and the forest nymphs, peaceful peoples both, fell on each other with vile barbarity. The druids found that the tree's roots had reached down to the prison of an Old God, and its taint was driving everything near it mad. They cut it down and renamed it Vordrassil, the \"Broken Crown\". The roots are still there."
+      ],
+      "sources": ["warcraft.wiki.gg: Vordrassil (introduction, History)"]
+    },
+    {
+      "id": 394003,
+      "kind": "place",
+      "title": "Amberpine Lodge",
+      "triggers": [{ "area": "Amberpine Lodge" }, { "talk": 26875 }],
+      "body": [
+        "A meeting hall built by Alliance woodsmen long before the war, now commandeered by the Valiance Expedition."
+      ],
+      "sources": ["warcraft.wiki.gg: Amberpine Lodge"]
+    },
+    {
+      "id": 394004,
+      "kind": "place",
+      "title": "The Westfall Brigade",
+      "triggers": [{ "area": "Westfall Brigade Encampment" }, { "talk": 30561 }],
+      "body": [
+        "The People's Militia of Westfall has come north to fight the Scourge under its old captain, Gryan Stoutmantle, renamed the Westfall Brigade, and built its camp here."
+      ],
+      "sources": ["warcraft.wiki.gg: Westfall Brigade Encampment"]
+    },
+    {
+      "id": 394005,
+      "kind": "place",
+      "title": "Conquest Hold",
+      "triggers": [{ "area": "Conquest Hold" }, { "talk": 26860 }],
+      "body": [
+        "The Horde's stronghold, its walls built around a deep fighting pit, ruled by Conqueror Krenna, an orc aggressive and ill-tempered even by the Horde's measure."
+      ],
+      "sources": ["warcraft.wiki.gg: Conquest Hold"]
+    },
+    {
+      "id": 394006,
+      "kind": "place",
+      "title": "Camp Oneqwah",
+      "triggers": [{ "area": "Camp Oneqwah" }, { "talk": 27221 }],
+      "body": [
+        "The taunka camp of Tormak the Scarred, where taunka from villages across Northrend plan to take refuge."
+      ],
+      "sources": ["warcraft.wiki.gg: Camp Oneqwah"]
+    },
+    {
+      "id": 394007,
+      "kind": "place",
+      "title": "The Trappers",
+      "triggers": [{ "area": "Silverbrook" }, { "area": "Silverbrook Hills" }, { "area": "Solstice Village" }, { "area": "Ashwood Post" }, { "area": "Aspen Grove Post" }, { "area": "Forest's Edge Post" }, { "area": "Redwood Trading Post" }],
+      "body": [
+        "The human trappers of the hills are an independent people who live in palisaded villages like Silverbrook and Solstice and trade from their own posts. Many of them have joined something called the Wolfcult."
+      ],
+      "sources": ["warcraft.wiki.gg: Grizzly Hills (introduction)", "warcraft.wiki.gg: Silverbrook"]
+    },
+    {
+      "id": 394008,
+      "kind": "place",
+      "title": "Bloodmoon Isle",
+      "triggers": [{ "area": "Bloodmoon Isle" }, { "area": "Shadowfang Tower" }, { "area": "Hollowstone Mine" }, { "kill": 27018 }],
+      "body": [
+        "The Lich King found Archmage Arugal's work with the worgen of Silverpine, and raised him from his death in Shadowfang Keep to serve the Scourge. His shade leads the Wolfcult from a new Shadowfang Tower on this island, slowly turning the trappers into worgen. The miners of Hollowstone refused him; he made them all undead."
+      ],
+      "sources": ["warcraft.wiki.gg: Shadowfang Tower", "warcraft.wiki.gg: Bloodmoon Isle", "warcraft.wiki.gg: Hollowstone Mine"]
+    },
+    {
+      "id": 394009,
+      "kind": "place",
+      "title": "Thor Modan",
+      "triggers": [{ "area": "Thor Modan" }, { "area": "Boulder Hills" }, { "area": "Dun Argol" }, { "kill": 26260 }],
+      "body": [
+        "The ancient home of the iron dwarves, built much like Ironforge, down to a statue like that of Modimus Anvilmar. Thousands of years ago the stone giants, long at war with the iron dwarves, tore the land open and brought much of the city down. The dwarves are rebuilding it with grim determination, while the giants batter it with boulders and whole trees. The iron dwarves now rule from Dun Argol."
+      ],
+      "sources": ["warcraft.wiki.gg: Thor Modan", "warcraft.wiki.gg: Dun Argol", "warcraft.wiki.gg: Boulder Hills"]
+    },
+    {
+      "id": 394010,
+      "kind": "place",
+      "title": "The Drakkari Ruins",
+      "triggers": [{ "area": "Drakil'jin Ruins" }, { "area": "Ruins of Drak'Zin" }, { "area": "Drak'Tharon Keep" }, { "area": "Harkor's Camp" }],
+      "body": [
+        "The Drakkari ice trolls once ruled the north of the hills. Drakil'jin was a burial ground for their people and their ancient kings, its walls decorated with piles of skulls. Drak'Tharon Keep, their great fortress on the border of Zul'Drak, is now held by the Scourge."
+      ],
+      "sources": ["warcraft.wiki.gg: Drakil'jin Ruins", "warcraft.wiki.gg: Drak'Tharon Keep"]
+    },
+    {
+      "id": 394011,
+      "kind": "place",
+      "title": "Venture Bay and the Logging Camps",
+      "triggers": [{ "area": "Venture Bay" }, { "area": "Blue Sky Logging Grounds" }, { "area": "Blackriver Logging Camp" }],
+      "body": [
+        "The Venture Company came here to clear-cut the forest. The Horde and Alliance drove it off, and now fight each other for its camps and its bay."
+      ],
+      "sources": ["warcraft.wiki.gg: Blue Sky Logging Grounds", "warcraft.wiki.gg: Blackriver Logging Camp"]
+    },
+    {
+      "id": 394012,
+      "kind": "place",
+      "title": "Ashwood Lake",
+      "triggers": [{ "area": "Ashwood Lake" }],
+      "body": [
+        "A legend says that a maiden of these hills guarded a powerful blade, and to keep anyone from wielding it she was cursed into the shape of a frog. She lives among the frogs of the lake still. A kiss, they say, would break the curse."
+      ],
+      "sources": ["warcraft.wiki.gg: Ashwood Lake"]
+    },
+    {
+      "id": 394030,
+      "kind": "person",
+      "title": "Ursoc",
+      "triggers": [{ "kill": 26633 }],
+      "body": [
+        "The bear god, who once ruled these hills. He was reborn among the furbolgs, horribly twisted by the taint beneath Vordrassil."
+      ],
+      "sources": ["warcraft.wiki.gg: Grizzly Hills (History, Notable characters)"]
+    }
+  ]
+}

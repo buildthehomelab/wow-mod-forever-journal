@@ -1,0 +1,56 @@
+{
+  "zone": 4820,
+  "name": "Halls of Reflection",
+  "entries": [
+    {
+      "id": 4820000,
+      "kind": "zone",
+      "title": "The Halls of Reflection",
+      "triggers": [{ "areaId": 4820 }],
+      "body": [
+        "The Lich King's private chambers, the only place in all his citadel where Arthas lets his guard down. In them lies Frostmourne itself, the runeblade that made him what he is. Jaina and Sylvanas have come for it, to learn whatever it can tell them, but these halls may be the death of anyone who enters."
+      ],
+      "sources": ["warcraft.wiki.gg: Halls of Reflection (Lore)"]
+    },
+    {
+      "id": 4820001,
+      "kind": "place",
+      "title": "The Hall of Frostmourne",
+      "triggers": [{ "kill": 38112 }, { "kill": 38113 }],
+      "body": [
+        "Where Frostmourne rests, and where the souls it has taken rise, mirrors of the past, to defend it."
+      ],
+      "sources": ["warcraft.wiki.gg: Halls of Reflection"]
+    },
+    {
+      "id": 4820002,
+      "kind": "place",
+      "title": "The Hidden Passage",
+      "triggers": [{ "area": "The Hidden Passage" }, { "area": "The Shadow Throne" }],
+      "body": [
+        "The way out of the Lich King's chambers, with the master of the citadel at the escapees' heels."
+      ],
+      "sources": ["warcraft.wiki.gg: Halls of Reflection"]
+    },
+    {
+      "id": 4820030,
+      "kind": "person",
+      "title": "Falric",
+      "triggers": [{ "kill": 38112 }],
+      "body": [
+        "Captain of the King's Guard of Lordaeron, Arthas' right-hand man in the Third War, thought to be the Scourge's second death knight. His father wanted him to be a farmer. Arthas befriended him while he stood guard in the capital, bringing him a warm drink when the weather was foul, and won his respect for decades."
+      ],
+      "sources": ["warcraft.wiki.gg: Falric"]
+    },
+    {
+      "id": 4820031,
+      "kind": "person",
+      "title": "Marwyn",
+      "triggers": [{ "kill": 38113 }],
+      "body": [
+        "A captain of the King's Guard who had known Arthas all his life, and saw him not just as his prince but as a true friend. He was at Arthas' side when they drove into the heart of Northrend after Mal'Ganis, and when Arthas took up Frostmourne."
+      ],
+      "sources": ["warcraft.wiki.gg: Marwyn"]
+    }
+  ]
+}

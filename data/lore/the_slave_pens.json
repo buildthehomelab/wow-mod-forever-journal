@@ -1,0 +1,77 @@
+{
+  "zone": 3717,
+  "name": "The Slave Pens",
+  "entries": [
+    {
+      "id": 3717000,
+      "kind": "zone",
+      "title": "The Slave Pens",
+      "triggers": [{ "areaId": 3717 }],
+      "body": [
+        "Here, concealed by the cold fathoms, Lady Vashj's naga turn every resource of the reservoir (the exotic life of the Underbog, the Broken who toil in the Slave Pens, the arcane machinery of the Steamvault) towards a catastrophic goal set by Illidan. Unopposed, they will drain Zangarmarsh and claim dominion over the dry bog that remains.",
+        "In the Slave Pens, Broken taken from the marsh are caged and worked to exhaustion for their naga masters."
+      ],
+      "sources": ["warcraft.wiki.gg: Slave Pens (Background)"]
+    },
+    {
+      "id": 3717001,
+      "kind": "place",
+      "title": "The Pens",
+      "triggers": [{ "kill": 17941 }, { "kill": 17991 }],
+      "body": [
+        "Cages of Broken line the caverns, many of them put there by one of their own, and a giant lobstrok guards the waters beyond."
+      ],
+      "sources": ["warcraft.wiki.gg: Mennu the Betrayer", "warcraft.wiki.gg: Rokmar the Crackler"]
+    },
+    {
+      "id": 3717002,
+      "kind": "place",
+      "title": "The Bog Lord's Hollow",
+      "triggers": [{ "kill": 17942 }],
+      "body": [
+        "The deepest cave of the pens, home to an ancient bog lord who lived in these caverns long before the naga came."
+      ],
+      "sources": ["warcraft.wiki.gg: Quagmirran"]
+    },
+    {
+      "id": 3717030,
+      "kind": "person",
+      "title": "Mennu the Betrayer",
+      "triggers": [{ "kill": 17941 }],
+      "body": [
+        "A Broken who betrayed his own kind to Lady Vashj's naga, and won their favour by it. Many of the Broken caged in Coilfang are there because of him. His treachery has tainted his shaman's training, and he now wields corrupted totems."
+      ],
+      "sources": ["warcraft.wiki.gg: Mennu the Betrayer"]
+    },
+    {
+      "id": 3717031,
+      "kind": "person",
+      "title": "Rokmar the Crackler",
+      "triggers": [{ "kill": 17991 }],
+      "body": [
+        "Lord of the Zangarmarsh lobstroks, grown to insane proportions. He lived in these caverns before the naga came; they enslaved him and used him to subjugate the caves' other creatures, until his will broke and he was past saving."
+      ],
+      "sources": ["warcraft.wiki.gg: Rokmar the Crackler"]
+    },
+    {
+      "id": 3717032,
+      "kind": "person",
+      "title": "Quagmirran",
+      "triggers": [{ "kill": 17942 }],
+      "body": [
+        "An ancient bog lord who lived in these caves for ages, until the naga enslaved him with Rokmar and made him help bend the caverns' other creatures to their will. His will is broken, and he is too far gone to save."
+      ],
+      "sources": ["warcraft.wiki.gg: Quagmirran"]
+    },
+    {
+      "id": 3717033,
+      "kind": "person",
+      "title": "Ahune, the Frost Lord",
+      "triggers": [{ "kill": 25740 }],
+      "body": [
+        "A frost elemental lord. At the height of the Midsummer Fire Festival, the Twilight's Hammer tried to summon him into the Slave Pens, so that he would pass through the Dark Portal and battle Ragnaros on Azeroth: an elemental war to rend the foundations of the world and make it a frozen paradise."
+      ],
+      "sources": ["warcraft.wiki.gg: Ahune", "warcraft.wiki.gg: Zangarmarsh (The Burning Crusade)"]
+    }
+  ]
+}

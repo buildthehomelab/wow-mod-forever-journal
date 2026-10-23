@@ -8,11 +8,10 @@
       "title": "The Barrens",
       "triggers": [{ "areaId": 17 }],
       "body": [
-        "A vast, dry savannah in the heart of Kalimdor, stretching from the edge of Ashenvale in the north to the cliffs of Thousand Needles in the south, and from the mountains of Stonetalon to the sea. Long grass, thorn trees and baked red earth cover most of it, and zhevra, kodo, lions and raptors roam the plains.",
-        "Long ago the land was green, until war and upheaval scorched it. Yet in the past few years new oases have appeared, and the druids sense a strange power seeping up from below that changes the plants and beasts that drink from them.",
-        "The Horde holds the roads. Its fortress at the Crossroads links Durotar, Mulgore and Ashenvale, and goblins run the free port of Ratchet on the coast. Everything else is contested: quilboars, centaurs and harpies raid the caravans, goblin prospectors and dwarven diggers tear at the earth, and soldiers of Theramore hold a fort on the southern shore."
+        "A vast, sun-scorched savanna in the heart of Kalimdor, ringed by low mountains, one of the largest lands in the world. It was not always barren. Long ago it was forest, tended by the night elves; Queen Azshara's expeditions built outposts in its wilds, and it is said the demigod Lo'Gosh faced the Burning Legion there in the War of the Ancients. War, the Legion and the Great Sundering turned the woodland into the dry plain it is today.",
+        "Life clings on around a few oases in the north, fed by waters rising from the Wailing Caverns, whose springs invigorate the plants and beasts that drink them. For generations the tauren roamed the plains hunting kodo and thunder lizards, until the Horde came and made the Barrens the heart of its territory. Now orcish farms, watch towers and caravans dot the land, contested by quilboar, centaurs, harpies, goblins, dwarves and the Alliance."
       ],
-      "sources": ["quest 870 description (the Barrens once lush, new oases, power leaking)", "quests 848, 880 (oases alter beasts)", "quests 871, 850, 867 (quilboars, centaurs, harpies)", "quests 894, 843, 891 (Venture Company, Bael Modan dwarves, Northwatch Hold)", "creature 3387 Jorn Skyseer gossip", "pre-Cataclysm lore: geography of the Barrens"]
+      "sources": ["warcraft.wiki.gg: Barrens (introduction, History, World of Warcraft)"]
     },
     {
       "id": 17001,
@@ -20,11 +19,10 @@
       "title": "The Crossroads",
       "triggers": [{ "area": "The Crossroads" }, { "talk": 3489 }, { "accept": 869 }],
       "body": [
-        "A walled Horde town where the roads of the northern Barrens meet: east to Durotar, west to Stonetalon, north to Ashenvale and south towards Camp Taurajo and Ratchet. Orcs and tauren live side by side here, and it has become the meeting place of both peoples in the Barrens.",
-        "Thork commands its defences in the Warchief's name. Wind riders carry travellers to Orgrimmar and Thunder Bluff, the inn and the merchants do lively business with the hunters who pass through, and supplies come in by caravan from Durotar when the quilboars let them through.",
-        "It is a busy, slightly harried place. Even the guards' wages are not safe: a shipment of payroll silver was carried off from the watch tower by raptors, which nobody believed until one of the thieves was caught."
+        "The largest Horde town in the northern Barrens, where the Gold Road from the north meets the road running from Ratchet on the coast to the Stonetalon Mountains in the west. Its wind riders fly to nearly every Horde outpost in Kalimdor.",
+        "It has few lodgings but is a bustling trade centre, full of traders shouting their wares, and the first place outside the capitals where travellers of the Horde gather in numbers. Just outside the walls is a burial ground where the Horde pays its respects to the dead."
       ],
-      "sources": ["creature 3429 Thork gossip", "creature 3433 Tatternack Steelforge gossip (hub of orc and tauren cultures)", "quests 6361, 6365 (wind riders)", "quest 6364 offer text (business is lively)", "quests 871, 5041 (Durotar caravans)", "quest 869 description (stolen silver)", "quests 860, 886, 1061 (roads)"]
+      "sources": ["warcraft.wiki.gg: Crossroads"]
     },
     {
       "id": 17002,
@@ -32,21 +30,20 @@
       "title": "Far Watch Post",
       "triggers": [{ "area": "Far Watch Post" }, { "talk": 3337 }, { "accept": 842 }],
       "body": [
-        "A Horde watch post on the Barrens side of the Southfury River, guarding the road that crosses over from Durotar. It is the first stop for orcs and trolls heading west into the savannah.",
-        "Kargal Battlescar runs it with the help of his scout, Takrin Pathseeker, and signs up every capable recruit for duty in the Barrens before sending them on to the Crossroads. The shaman Ak'Zeloth works nearby on behalf of Neeru Fireblade of Orgrimmar, keeping an eye on the demonic cult that has a foothold in the hills to the north-west."
+        "A small Horde outpost just west of the bridge between Durotar and the Barrens: a watch tower, an orc burrow and a few catapults. It is not a welcoming spot, but it is vital for protecting the supply caravans and keeping Durotar safe from the Alliance and the quilboar."
       ],
-      "sources": ["quests 840, 842 descriptions and offer texts", "quest 809 description (Far Watch Post on the border, Ak'Zeloth, Neeru's assistant)", "quest 924 description"]
+      "sources": ["warcraft.wiki.gg: Far Watch Post"]
     },
     {
       "id": 17003,
       "kind": "place",
       "title": "Dreadmist Peak",
-      "triggers": [{ "area": "Dreadmist Peak" }, { "area": "Dreadmist Den" }, { "talk": 3521 }, { "kill": 3380 }],
+      "triggers": [{ "area": "Dreadmist Peak" }, { "area": "Dreadmist Den" }, { "kill": 3380 }],
       "body": [
-        "A steep hill in the northern Barrens, its summit wrapped in a cave where the Burning Blade keeps an altar of fire. Above the altar rested the Demon Seed, the object of demonic power around which the cult gathers, and acolytes and bruisers of the cult guard the slopes.",
-        "Neeru Fireblade sent word that the Seed must be destroyed, and his assistant Ak'Zeloth prepared power stones to break its link with the Burning Legion. Ak'Zeloth found it strange that Neeru wanted the Seed gone. When it shattered, the blast rippled out through the ether, and he warned that whoever had been using it would want to know why."
+        "A mountain north-west of the Crossroads. Climbing it, the air turns red and foggy: the orange miasma is the residue of an ancient demonic curse. Burning Blade cultists live at the top, guarding the Demon Seed in Dreadmist Den.",
+        "Three years after the Third War, the demon Zmodlor, who pulled the strings of the Burning Blade and tried to start a war between the Horde and Theramore, was confronted here by Jaina Proudmoore and the ancient Guardian Aegwynn, and banished into the Twisting Nether."
       ],
-      "sources": ["quests 809, 924 descriptions and offer texts", "creatures 3379 Burning Blade Bruiser, 3380 Burning Blade Acolyte"]
+      "sources": ["warcraft.wiki.gg: Dreadmist Peak", "warcraft.wiki.gg: Dreadmist Den", "warcraft.wiki.gg: Barrens (Cycle of Hatred)"]
     },
     {
       "id": 17004,
@@ -54,10 +51,9 @@
       "title": "The Forgotten Pools",
       "triggers": [{ "area": "The Forgotten Pools" }, { "kill": 3394 }, { "accept": 870 }],
       "body": [
-        "A cluster of pools north-west of the Crossroads, one of the new oases that have sprung up in the Barrens in recent years. At the bottom of its waters is a fissure in the earth, with gas bubbling up from below: the first clue the druids found to the source of the oases' power.",
-        "The Kolkar centaurs camp nearby. Barak Kodobane, one of the new leaders who rallied the Kolkar into a real threat, made his camp beside the pools."
+        "The northernmost of the Barrens' oases, off the western road from the Crossroads. Kolkar centaurs patrol its banks among the turtles, and mushrooms found nowhere else grow along its shore."
       ],
-      "sources": ["quest 870 description and offer text", "quest 850 description"]
+      "sources": ["warcraft.wiki.gg: Forgotten Pools"]
     },
     {
       "id": 17005,
@@ -65,10 +61,9 @@
       "title": "The Stagnant Oasis",
       "triggers": [{ "area": "The Stagnant Oasis" }, { "kill": 3395 }, { "accept": 877 }],
       "body": [
-        "A murky oasis south-east of the Crossroads. Like the Forgotten Pools it hides a bubbling fissure, and dead seeds placed inside it sprouted into life, proof that whatever lies beneath can make life out of nothing.",
-        "The Kolkar have their command tent here, and the dervish Verog roams out from it across the plains. South-west of the oasis are the nests of the scytheclaw raptors."
+        "An oasis between the Merchant Coast and the Gold Road, with Kolkar centaurs camped on its fringes. Lost kodo wander here, weak and alone and far from their herds."
       ],
-      "sources": ["quest 877 description and offer text", "quest 851 description", "quest 905 description (scytheclaw nests south-west of the Stagnant Oasis)"]
+      "sources": ["warcraft.wiki.gg: Stagnant Oasis"]
     },
     {
       "id": 17006,
@@ -76,21 +71,20 @@
       "title": "Lushwater Oasis",
       "triggers": [{ "area": "Lushwater Oasis" }, { "kill": 3396 }, { "accept": 852 }],
       "body": [
-        "The largest and greenest of the oases, south of the Crossroads. Snapjaw turtles swim in its waters, and their shells have taken on an inner glow and a taint that the druids had never seen before.",
-        "Hezrul Bloodmark, warlord of all the Kolkar in the Barrens, leads his people from here. The Horde believes that without him the Kolkar would split apart."
+        "One of the three great oases of the northern Barrens, just south of the Crossroads. Kolkar centaurs stalk between its trees, hunting the beasts that come to drink. On its northern side lies the entrance to the Wailing Caverns."
       ],
-      "sources": ["quest 852 description", "quests 880, 1489, 3301 (snapjaw shells, taint, inner glow)"]
+      "sources": ["warcraft.wiki.gg: Lushwater Oasis"]
     },
     {
       "id": 17007,
       "kind": "place",
       "title": "The Wailing Caverns",
-      "triggers": [{ "area": "Lushwater Oasis" }, { "talk": 5767 }, { "talk": 5768 }, { "accept": 1486 }],
+      "triggers": [{ "area": "Lushwater Oasis" }, { "talk": 5767 }, { "talk": 5768 }],
       "body": [
-        "A cave system beneath the Barrens, entered through a mound in the hills near Lushwater Oasis. The night elf druid Naralex went down into it with his disciples, meaning to enter the Emerald Dream and grow the Barrens back into a forest.",
-        "His dream turned into a nightmare. Strange deviate beasts crawled up from below, and some of his followers, the Druids of the Fang, have gone over to the nightmare and want to remake the Barrens in its image. The remaining Disciples of Naralex camp at the entrance, some hoping to wake their master and others simply trying to clear the caves of the creatures his dreaming has spawned."
+        "A network of caverns beneath the Barrens whose underground rivers run for miles and bubble up as the land's oases. The night elf druid Naralex discovered them and named them for the mournful howls of the wind and steam moving through their cracks.",
+        "Naralex believed that by joining these waters to the Emerald Dream he could make the Barrens green again. He went into the caverns with his disciples and sank into meditation, letting the Dream flow through him into Azeroth. Instead, the Emerald Nightmare overwhelmed him. Unable to wake, he channels its energies into the caverns, corrupting the waters, twisting the beasts into deviate forms, and driving most of his disciples mad. They call themselves the Druids of the Fang."
       ],
-      "sources": ["quests 1486, 1487 descriptions", "quests 914, 1490 descriptions (Druids of the Fang)", "quest 1489 description (the Wailing Caverns as source of the taint)", "pre-Cataclysm lore: Naralex"]
+      "sources": ["warcraft.wiki.gg: Wailing Caverns (History)"]
     },
     {
       "id": 17008,
@@ -98,10 +92,10 @@
       "title": "Ratchet",
       "triggers": [{ "area": "Ratchet" }, { "talk": 3453 }, { "accept": 865 }],
       "body": [
-        "A goblin port on the eastern coast, the main harbour of the Barrens. Ships sail from its docks to Booty Bay, and like other goblin towns it trades with anyone who pays and keeps the peace with hired bruisers.",
-        "Gazlowe runs the town. Wharfmaster Dizzywig keeps the shipping ledgers, the Tinkers' Union tests its shredders here under Sputtervalve, and every other goblin on the docks has a scheme going, from smart drinks brewed out of raptor horn to spider-egg omelettes for the Booty Bay market."
+        "A goblin port on the Barrens coast, halfway between Orgrimmar and Theramore, doing most of its business with Booty Bay across the sea. Thrall paid Gazlowe well for his help building Orgrimmar, and with the money Gazlowe founded Ratchet.",
+        "It was started by smugglers and filled with their kind, and with everyone else various societies had cast out. Orcs and humans both trade here under the watch of the goblin bruisers, and when the Burning Blade stirred up trouble between Durotar and Theramore, the docks of Ratchet were where tempers flared first."
       ],
-      "sources": ["quests 1492, 890, 892, 896 (Dizzywig, shipping to Booty Bay)", "creature 3442 Sputtervalve gossip", "quests 865, 1069, 1491 descriptions (Mebok's schemes)", "creature 3502 Ratchet Bruiser", "pre-Cataclysm lore: Steamwheedle ports"]
+      "sources": ["warcraft.wiki.gg: Ratchet (Foundation, Cycle of Hatred)"]
     },
     {
       "id": 17009,
@@ -109,10 +103,9 @@
       "title": "The Merchant Coast",
       "triggers": [{ "area": "The Merchant Coast" }, { "kill": 3467 }, { "accept": 887 }],
       "body": [
-        "The sandy shore that runs south from Ratchet towards Northwatch Hold. Just south of the town the Southsea Freebooters have set up a pirate camp, and they raid the trading ships coming in and out of the harbour.",
-        "Their best-known captain is Baron Longshore of Gilneas, master of a ship called the Heedless, with a price on his head for piracy. Gazlowe blames the trade fleets of Undermine for letting the pirates run loose, and has lost goods meant for his observatory to them."
+        "The Barrens' short stretch of coastline, named for the lucrative trade that passes through Ratchet's thrifty goblin hands. Fray Island lies offshore, once a training ground for warriors of every race. The southern part of the coast is held by the Southsea Freebooters, pirates who prey on that trade."
       ],
-      "sources": ["quests 887, 888, 895 descriptions and offer texts", "quest 891 (south along the Merchant Coast to the Hold)"]
+      "sources": ["warcraft.wiki.gg: Merchant Coast", "warcraft.wiki.gg: Fray Island"]
     },
     {
       "id": 17010,
@@ -120,10 +113,10 @@
       "title": "Northwatch Hold",
       "triggers": [{ "area": "Northwatch Hold" }, { "kill": 3393 }, { "accept": 891 }],
       "body": [
-        "A fortress of Theramore on the southern coast of the Barrens, with cannons trained on the sea. Its soldiers are nervous and quick to shoot, and under Captain Fairmount they have sunk ship after ship, among them the privateers of Captain Thalo'thas Brightsun out of Ratchet.",
-        "The garrison treats any vessel as an enemy. When a moonshine runner went down off the coast, its only survivor, a deckhand named Gilthares Firebough, was locked in the Hold as a threat to the Alliance."
+        "A massive Alliance fortress on a mountain between the Merchant Coast and Dustwallow Marsh, built after the Battle of Mount Hyjal by the human survivors of the expedition to Kalimdor. It blocks the coastal approach to Theramore, and it has its own scrying stone to speak with Jaina's city.",
+        "Standing in what was then neutral ground, it has always been a source of distrust between orcs and humans. When it grew, the orc Burx led an army against it without leave, and Thrall stopped the battle himself, learned that Burx served the Burning Blade, and killed him with the Doomhammer."
       ],
-      "sources": ["quests 891, 898 descriptions and offer texts", "quest 874 (the coast is held by humans)", "creatures 3385 Theramore Marine, 3386 Theramore Preserver"]
+      "sources": ["warcraft.wiki.gg: Northwatch Hold (introduction, Invasion of Durotar)", "warcraft.wiki.gg: Barrens (Cycle of Hatred)"]
     },
     {
       "id": 17011,
@@ -131,32 +124,31 @@
       "title": "Camp Taurajo",
       "triggers": [{ "area": "Camp Taurajo" }, { "talk": 3433 }, { "accept": 893 }],
       "body": [
-        "A tauren camp in the southern Barrens, on the road towards Thousand Needles. Its people share the Horde's war against the quilboars of the south, and its hunters, led by Jorn Skyseer, follow the great beasts of the plains.",
-        "Two of its residents are not tauren. Tatternack Steelforge, an orc smith, was sent by the Warchief to study the weapons of every people in the Barrens, even quilboar and centaur. And in a cage at the edge of camp sits Mangletooth, a Razormane quilboar prisoner with a grudge against his own kind."
+        "A tauren outpost in the southern Barrens near the pass into Mulgore, the largest Horde settlement in the south. It watches the road and the plains, where the tauren once lived as nomads before they had a homeland."
       ],
-      "sources": ["quests 893, 1153 descriptions and progress texts", "creature 3433 Tatternack Steelforge gossip", "creature 3430 Mangletooth gossip", "quests 3261, 907 (Jorn Skyseer)", "quest 899 (Mankrik thought of Taurajo)"]
+      "sources": ["warcraft.wiki.gg: Camp Taurajo", "warcraft.wiki.gg: Barrens (World of Warcraft)"]
     },
     {
       "id": 17012,
       "kind": "place",
       "title": "Bael Modan",
-      "triggers": [{ "area": "Bael Modan" }, { "area": "Bael'dun Keep" }, { "kill": 3392 }, { "talk": 3341 }],
+      "triggers": [{ "area": "Bael Modan" }, { "area": "Bael'dun Keep" }, { "talk": 3341 }],
       "body": [
-        "A dwarven excavation in the southern Barrens, blasted into land that was once the birthplace of a tauren tribe. The dwarves' explosives and machines tear open the hills, and a keep built to defend the dig is now strong enough to strike out from it. Prospector Khazgorm ran the digging and General Twinbraid commands the keep, where a great flying machine is the site's pride.",
-        "The dig's first great find was a gem called the Tear of the Moons. Twinbraid called it cursed and locked it in the keep, driving off the one who first claimed it, an exile named Feegly who still raves about getting it back. The tauren Gann Stonespire walks the nearby roads alone, determined to reclaim his people's land."
+        "A dwarven fortress and excavation in the southern Barrens, with a great cannon on its walls. Beneath it lies an ancient titan complex, and the dwarves of Ironforge under General Twinbraid dig for the relics and knowledge it holds.",
+        "Before they came, the land belonged to the Stonespire tauren. The dwarves blasted holy ground with their explosives, and in the conflict that followed most of the Stonespire were killed or driven out. Their village is now torn apart by digging machines. Gann Stonespire tried to make peace with the dwarves, failed, and now seeks revenge."
       ],
-      "sources": ["quests 843, 846, 849 descriptions, progress and offer texts", "quest 857 description", "creature 3341 Gann Stonespire gossip", "creatures 3392 Prospector Khazgorm, 3414 General Twinbraid"]
+      "sources": ["warcraft.wiki.gg: Bael Modan (introduction, World of Warcraft)", "warcraft.wiki.gg: Bael'dun Keep"]
     },
     {
       "id": 17013,
       "kind": "place",
-      "title": "The Sludge Fen",
-      "triggers": [{ "area": "The Sludge Fen" }, { "area": "Boulder Lode Mine" }, { "accept": 894 }, { "kill": 9336 }],
+      "title": "The Sludge Fen and Boulder Lode Mine",
+      "triggers": [{ "area": "The Sludge Fen" }, { "area": "Boulder Lode Mine" }, { "kill": 9336 }],
       "body": [
-        "An oily marsh in the northern Barrens where the Venture Company drills for oil, with derricks, shredders and a small research site full of experimental machinery. Nearby the company also works the Boulder Lode Mine, where one miner dug up an emerald the size of a fist.",
-        "Goblins of the rival Tinkers' Union watch the site closely. One of their pilots slipped into a Venture shredder and drove it out, and a strange device called the samophlange was taken from the research console. Boss Copperplug of the mine holds the device's manual and hands out its secrets only to a trusted few."
+        "Venture Company holdings in the north-east of the Barrens. The Sludge Fen was once a pool of crystal-blue water; the goblins built an oil rig on it and turned it into a mire of industrial waste. Nearby, Boulder Lode Mine still bears orcish banners from when it belonged to the Horde, before the Venture Company took it.",
+        "Ratchet's own goblins of the Tinkers' Union eye the Company's new shredders with envy, and have tried to steal one."
       ],
-      "sources": ["quests 858, 863 descriptions and offer texts", "quests 894, 900, 901, 902 descriptions", "quest 896 description", "quests 3922, 3924 descriptions"]
+      "sources": ["warcraft.wiki.gg: Sludge Fen (History)", "warcraft.wiki.gg: Boulder Lode Mine"]
     },
     {
       "id": 17014,
@@ -164,10 +156,10 @@
       "title": "Field of Giants",
       "triggers": [{ "area": "Field of Giants" }, { "kill": 3253 }, { "accept": 868 }],
       "body": [
-        "A stretch of the southern Barrens dotted with the earthen mounds of insect-like creatures, the silithid. Nobody in the Horde knows much about them, but they seem cleverer than any normal beast and swarm anyone who disturbs their eggs.",
-        "The troll Korran watches them from the Crossroads for his masters in Orgrimmar, and the more travellers tell him, the more worried he becomes. A huge silithid known as the Harvester roams the field, and even the hunter Jorn Skyseer believes such creatures do not belong in the Barrens and may herald a grim future."
+        "The plains of the far southern Barrens between Camp Taurajo and Dustwallow, where herds of thunder lizards, kodo and other great beasts roam. The watch towers along this stretch of the Gold Road have been abandoned.",
+        "The great concern of the region is the appearance of silithid hives, the northernmost in all Kalimdor. No one knows yet why the insects have come so far north."
       ],
-      "sources": ["quests 868, 1145 descriptions", "quest 897 description and offer text", "creatures 3250-3253 Silithid Creeper, Grub, Swarmer, Harvester"]
+      "sources": ["warcraft.wiki.gg: Field of Giants (History)"]
     },
     {
       "id": 17015,
@@ -175,10 +167,9 @@
       "title": "The Dry Hills",
       "triggers": [{ "area": "The Dry Hills" }, { "kill": 3276 }, { "accept": 867 }],
       "body": [
-        "Rough, dusty hills in the north-western Barrens where the Witchwing harpies have their nests. They raid the Horde's caravans relentlessly, and their flocks are organised in ranks of slayers, ambushers and windcallers beneath a single leader.",
-        "The harpies are not native to the Barrens; they came from the Stonetalon Mountains. Their leader, Serena Bloodfeather, wages her war on the Horde for a personal reason: revenge for her sister, killed years ago by Rexxar."
+        "The foothills of the Stonetalon Mountains in the far north-west, which despite their name are one of the greener parts of the Barrens. Witchwing harpies nest there and raid the caravans on the northern Gold Road."
       ],
-      "sources": ["quests 867, 875, 876, 1060 descriptions", "creatures 3276-3280 Witchwing harpies"]
+      "sources": ["warcraft.wiki.gg: Dry Hills"]
     },
     {
       "id": 17016,
@@ -186,54 +177,70 @@
       "title": "Raptor Grounds",
       "triggers": [{ "area": "Raptor Grounds" }, { "kill": 3256 }, { "accept": 3281 }],
       "body": [
-        "A large field of raptor nests south of Ratchet. The raptors of the Barrens are cleverer than raptors elsewhere: they raided the Crossroads watch tower, carried off a chest of silver and hid it among their nests.",
-        "Nobody can say what a raptor wants with silver. The goblins of Ratchet are convinced the cleverness lives in their horns, and have tried to grind them into drinks."
+        "A small valley in the southern Barrens west of Northwatch Hold, home of the Sunscale raptors. They are odd among their kind, unnaturally intelligent, building crude huts and tools, and drawn to anything shiny, which they steal from the Horde's camps."
       ],
-      "sources": ["quests 869, 3281 descriptions and offer texts", "quest 865 description"]
+      "sources": ["warcraft.wiki.gg: Raptor Grounds"]
     },
     {
       "id": 17017,
       "kind": "place",
-      "title": "Razorfen Kraul and Razorfen Downs",
-      "triggers": [{ "area": "Razorfen Kraul" }, { "area": "Razorfen Downs" }, { "accept": 879 }, { "accept": 1221 }],
+      "title": "The Razorfens",
+      "triggers": [{ "area": "Razorfen Kraul" }, { "area": "Razorfen Downs" }, { "area": "Blackthorn Ridge" }],
       "body": [
-        "Two vast warrens of thorn at the southern edge of the Barrens, the holiest places of the quilboars. They believe the thorns grew from the body of their fallen god Agamaggan; the Kraul is his resting place, and the entrance to the Downs is his great maw.",
-        "Both have turned dark. A crone named Charlga Razorflank musters an army in the Kraul, and the raiders who torment the Crossroads came out of it. In the Downs the quilboars have struck a bargain with the Scourge, and the dead walk among them."
+        "At the far southern edge of the Barrens rise the great thorn-mounds of the quilboar. Razorfen Kraul, their ancestral home, grew from the thorns said to have sprung from the corpse of the demigod Agamaggan; the crone Charlga Razorflank rules it now. Razorfen Downs, nearby, is the burial ground and traditional capital of their race.",
+        "Since the Third War, agents of the Scourge led by the lich Amnennar the Coldbringer have taken the Downs, and whispers say Charlga has been bargaining with them."
       ],
-      "sources": ["quest 5052 progress text (Agamaggan's body, the Downs as his maw)", "quests 879, 1101, 1102 descriptions", "quest 3523 description (Scourge deal in the Downs)", "quest 1221 description (Razorfen Kraul)"]
+      "sources": ["warcraft.wiki.gg: Razorfen Kraul (Lore)", "warcraft.wiki.gg: Razorfen Downs (History)", "warcraft.wiki.gg: Blackthorn Ridge"]
     },
     {
       "id": 17018,
       "kind": "place",
       "title": "The Mor'shan Rampart",
-      "triggers": [{ "area": "The Mor'shan Rampart" }, { "area": "Mor'shan Base Camp" }, { "talk": 8582 }, { "accept": 6541 }],
+      "triggers": [{ "area": "The Mor'shan Rampart" }, { "area": "Mor'shan Base Camp" }, { "talk": 8582 }],
       "body": [
-        "A Horde fortification with a tall watch tower on the northern edge of the Barrens, where the road climbs into the forests of Ashenvale. It is the gateway of the Horde's campaign against the night elves.",
-        "Kadrak commands the tower and sends recruits on to the outposts at Splintertree and the Zoram Strand. He keeps a hard watch on the road and deals harshly with the Alliance runners who try to carry messages across the Barrens."
+        "A defensive post at the northern end of the Gold Road, built to hold back the Alliance pushing south out of Ashenvale. Its watch towers serve as a launching point for raids on the night elf town of Astranaar, and the nearby base camp is home to the Warsong Outriders."
       ],
-      "sources": ["quests 6541, 3513, 3514 descriptions and offer texts", "quest 3921 (Mor'shan Rampart between the Barrens and Ashenvale)"]
+      "sources": ["warcraft.wiki.gg: Mor'shan Rampart", "warcraft.wiki.gg: Mor'shan Base Camp"]
+    },
+    {
+      "id": 17019,
+      "kind": "place",
+      "title": "Honor's Stand",
+      "triggers": [{ "area": "Honor's Stand" }],
+      "body": [
+        "An orcish outpost of burrows and watch towers guarding the western road between the Crossroads and the Stonetalon Mountains. It has seen many great battles in its short life, and the orcs stationed there, even the peons repairing its walls, are proud of its history. The Kolkar centaurs harry it constantly."
+      ],
+      "sources": ["warcraft.wiki.gg: Honor's Stand"]
+    },
+    {
+      "id": 17020,
+      "kind": "place",
+      "title": "The Great Lift",
+      "triggers": [{ "area": "The Great Lift" }],
+      "body": [
+        "An elevator built by the tauren to carry travellers between the southern Barrens and the canyons of Thousand Needles far below. The quilboar of the south have spread across the path to it, and the tauren who kept it are not always safe."
+      ],
+      "sources": ["warcraft.wiki.gg: Great Lift"]
     },
     {
       "id": 17030,
       "kind": "person",
-      "title": "Thork",
-      "triggers": [{ "talk": 3429 }, { "accept": 871 }],
+      "title": "Gazlowe",
+      "triggers": [{ "talk": 3391 }, { "complete": 888 }],
       "body": [
-        "The orc who commands the Crossroads for the Warchief. He welcomes anyone who minds their own business and has no time for anyone who doesn't, and his main concern is the caravans from Durotar that keep his town fed and armed.",
-        "Thork thinks like a soldier: find the enemy's leader and cut it off. He sent warriors after the Razormane raider Kreenig Snarlsnout, and was astonished to learn that the true leaders of the raids were quilboars he had never heard of. He has less patience for grief: when the widowed Mankrik came asking for help, Thork told him his rage was clouding his judgement."
+        "The goblin baron of Ratchet. He and his workers helped Thrall build Orgrimmar and were paid handsomely for it, and Gazlowe put the money into his own port. He keeps Ratchet neutral and profitable, and dislikes anything, pirates especially, that gets in the way of trade."
       ],
-      "sources": ["creature 3429 Thork gossip", "quests 871, 872, 5041, 906 descriptions and offer texts", "creature 3432 Mankrik gossip"]
+      "sources": ["warcraft.wiki.gg: Ratchet (Foundation)", "warcraft.wiki.gg: Merchant Coast"]
     },
     {
       "id": 17031,
       "kind": "person",
-      "title": "Sergra Darkthorn",
-      "triggers": [{ "talk": 3338 }, { "accept": 844 }],
+      "title": "Gann Stonespire",
+      "triggers": [{ "talk": 3341 }],
       "body": [
-        "An orc shaman at the Crossroads who takes charge of new arrivals and teaches the hunt of the Barrens, from plainstriders and zhevra up to the prowlers and the great cat Echeyakee. Thrall believes she is something special. Kargal Battlescar at Far Watch is less sure.",
-        "Sergra demands respect and does not tolerate insolence. She is proud that Thrall has declared the Horde's women equal to its men. She is not without doubts, though: after sending hunters to defile the raptors' nests, she wondered aloud whether she had been too heavy-handed."
+        "One of the last of the Stonespire tauren, whose village stood beside Bael Modan before the dwarves came. He tried to settle the quarrel over the holy ground peacefully and failed. Now he wanders the roads near the keep, mourning his tribe and seeking revenge."
       ],
-      "sources": ["quest 842 description and offer text", "quests 844, 845, 903, 881 descriptions", "quest 905 offer text"]
+      "sources": ["warcraft.wiki.gg: Bael Modan", "warcraft.wiki.gg: Bael'dun Keep"]
     },
     {
       "id": 17032,
@@ -241,10 +248,9 @@
       "title": "Tonga Runetotem",
       "triggers": [{ "talk": 3448 }, { "complete": 880 }],
       "body": [
-        "A tauren druid sent from Thunder Bluff to find the source of the strange power seeping into the Barrens. He works from the Crossroads, sending helpers out to the oases to search their waters and test what they find.",
-        "Tonga is patient and quietly sad about the land. He believes in holding on to what is true and lasting in a changeable world, and he shares what he learns: samples of the oases' altered shells went to his clanmate Mura in Silverpine Forest, in the hope they might help heal that dying forest."
+        "A tauren druid of the Cenarion Circle. With Hamuul Runetotem, he sensed the power of the Wailing Caverns leaking up into the oases, and discovered that it had been tainted, and that the night elf druids who went down into the caverns had been twisted by the Emerald Nightmare."
       ],
-      "sources": ["quests 886, 870, 877, 880, 3301 descriptions and offer texts", "creature 3448 Tonga Runetotem gossip"]
+      "sources": ["warcraft.wiki.gg: Barrens (World of Warcraft)"]
     },
     {
       "id": 17033,
@@ -252,10 +258,9 @@
       "title": "Regthar Deathgate",
       "triggers": [{ "talk": 3389 }, { "accept": 850 }, { "kill": 9456 }],
       "body": [
-        "An orc who holds the Horde's bunkers west of the Crossroads and leads the war against the Kolkar centaurs. The centaurs have hounded the tauren for years, but they used to be scattered; now new leaders have rallied them, and Regthar means to kill each one.",
-        "He collects their heads: Barak Kodobane, Verog the Dervish and finally the warlord Hezrul Bloodmark. The Kolkar answered by sending a war party from their homeland in Desolace under Warlord Krom'zar to attack his bunkers, and when it was defeated, Regthar made sure word reached Thrall."
+        "An orc commander who wages the Horde's war against the Kolkar centaurs of the Barrens, the same raiders who hunted the tauren for generations."
       ],
-      "sources": ["quests 850, 851, 852, 855, 4021 descriptions and offer texts", "creature 3389 Regthar Deathgate gossip"]
+      "sources": ["warcraft.wiki.gg: Barrens (History)"]
     },
     {
       "id": 17034,
@@ -263,10 +268,9 @@
       "title": "Mankrik",
       "triggers": [{ "talk": 3432 }, { "accept": 4921 }, { "talk": 10668 }],
       "body": [
-        "An orc warrior who stands at the edge of the Crossroads every day, watching the horizon for quilboars. He and his wife were caught by Bristlebacks at a small tauren camp in the south; she held off three of them alone before more arrived, and he was beaten down trying to draw them away.",
-        "A tauren druid found Mankrik on the Gold Road and tended his wounds. He came north to ask for help, found little, and now feeds his grief with hatred, killing every quilboar he meets. Her body was later found where the battle took place."
+        "An orc warrior of the Crossroads whose wife, Olgra, went out into the Barrens and never came back. He asks everyone he meets to look for her."
       ],
-      "sources": ["quests 4921, 899 descriptions and offer texts", "creature 3432 Mankrik gossip", "creature 10668 Beaten Corpse gossip"]
+      "sources": ["warcraft.wiki.gg: Grol'dom Farm", "warcraft.wiki.gg: Gold Road"]
     },
     {
       "id": 17035,
@@ -274,21 +278,9 @@
       "title": "Mangletooth",
       "triggers": [{ "talk": 3430 }, { "accept": 878 }],
       "body": [
-        "A Razormane quilboar held in a cage at Camp Taurajo. His own tribe turned their backs on him and left him to rot, and he expects to die there, but he is not finished: he trades secrets and the magic of Agamaggan for help against his enemies.",
-        "Mangletooth hates the rival Bristleback tribe and the Razormane leaders who abandoned him in equal measure. It was he who revealed that the raids on the Crossroads were led by Nak, Kuz and Lok Orcbane, three Razormane who came out of Razorfen Kraul."
+        "A quilboar exile held at Camp Taurajo, who trades the blessings of Agamaggan for the blood shards the Bristleback warriors carry. He is no friend of the leaders of his own people."
       ],
-      "sources": ["creature 3430 Mangletooth gossip", "quests 878, 5052, 879, 906 descriptions, progress and offer texts"]
-    },
-    {
-      "id": 17036,
-      "kind": "person",
-      "title": "Gazlowe",
-      "triggers": [{ "talk": 3391 }, { "complete": 888 }],
-      "body": [
-        "The goblin boss of Ratchet, with a warehouse, an observatory waiting for its lens and a firm grip on the town's business. He pays well for good work and remembers who helped him.",
-        "Gazlowe takes losses personally. When the Southsea pirates began raiding his shipments and set up camp on his doorstep, he grumbled that the fleets the trade princes paid for were doing nothing, and hired adventurers to deal with the pirates himself."
-      ],
-      "sources": ["quests 887, 888, 890, 892, 895 descriptions and offer texts", "quest 959 offer text (Gazlowe)"]
+      "sources": ["warcraft.wiki.gg: Agama'gor"]
     },
     {
       "id": 17050,
@@ -296,11 +288,10 @@
       "title": "The Living Oases",
       "triggers": [{ "complete": 870 }, { "complete": 877 }, { "complete": 880 }],
       "body": [
-        "For a long time the Barrens was a dry husk, scorched by ancient war. Then, within the past few years, oases began to form, and plants and animals clustered around them, growing in strange ways.",
-        "The druids of Thunder Bluff traced the power to fissures beneath the oases' waters, which could bring dead seeds to life, and found a taint in the shells of the turtles that swim in them. It felt to them as though the land were dreaming and could not wake.",
-        "The trail led to the Wailing Caverns, where the druid Naralex lies trapped in a nightmare of his own making. The water that brings life to the Barrens is the same water that carries his nightmare to the surface."
+        "The oases of the Barrens are fed by the underground rivers of the Wailing Caverns, and their waters carry a life energy that invigorates everything that drinks them. Even the herbs of the Barrens grow slightly differently, changed by the oasis water.",
+        "Naralex's dream of a green Barrens made them grow; the Nightmare that took him is making them sick. New oases have sprung up, and so have deviate creatures and corrupted druids."
       ],
-      "sources": ["quests 870, 877, 880 descriptions and offer texts", "quests 1489, 1490, 1486 descriptions", "quest 848 description (oases invigorating and altering)"]
+      "sources": ["warcraft.wiki.gg: Barrens (introduction, World of Warcraft, Geography)", "warcraft.wiki.gg: Wailing Caverns"]
     },
     {
       "id": 17051,
@@ -308,11 +299,10 @@
       "title": "Agamaggan, the Boar God",
       "triggers": [{ "talk": 3430 }, { "complete": 5052 }, { "complete": 879 }],
       "body": [
-        "The quilboars tell of a battle of gods in the War of the Ancients, ten thousand years ago. Agamaggan, the great boar demigod, fell in that war, his blood raining onto the earth and his bones torn apart.",
-        "Where his blood touched the ground, giant thorns burst out of the soil. The quilboars gather wherever the thorns grow, and the greatest of these places is the Razorfen, which they believe is made of his body. Red stones laced with his blood are dug up there, and quilboar shamans draw his power from them for their magic.",
-        "Both the Razormane and the Bristleback revere Agamaggan, and both claim his strength for their war over the Barrens."
+        "Ten thousand years ago, in the War of the Ancients, the demigod Agamaggan, a colossal boar, came forth to fight the Burning Legion. He fell in battle, but helped save the world. Where his blood soaked the earth, great thorny vines sprouted.",
+        "The quilboar, who believe they are his mortal children, settled in those places and hold them sacred. The heart of each thorn colony is called a Razorfen. The tribes are spiritual, and their greatest warriors are said to carry Agamaggan's strength; they war with each other as readily as with the Horde."
       ],
-      "sources": ["creature 3430 Mangletooth gossip (Agamaggan fell in the War of the Ancients)", "quest 5052 description and progress text", "quest 878 description", "pre-Cataclysm lore: Agamaggan as a demigod"]
+      "sources": ["warcraft.wiki.gg: Razorfen Kraul (Lore)", "warcraft.wiki.gg: Razormane tribe (Culture)", "warcraft.wiki.gg: Bramblescar"]
     },
     {
       "id": 17052,
@@ -320,32 +310,31 @@
       "title": "The Horde Crosses the Barrens",
       "triggers": [{ "complete": 842 }, { "complete": 4021 }, { "complete": 906 }],
       "body": [
-        "When Thrall led the orcs to Kalimdor, their journey took them across the Barrens. It was a hard crossing through unknown country, and Thrall sent Grom Hellscream and his Warsong clan north into the forests of Ashenvale for timber, where they soon came to blows with the night elves. But on these plains the orcs also met Cairne Bloodhoof and his tauren, and won the friendship that brought the tauren into the Horde.",
-        "After the war, with Durotar settled, the Barrens became the land that bound the Horde together. The Crossroads guards the roads between orc and tauren country, the Mor'shan Rampart faces the night elves, and Thrall keeps watch over all of it: his officers send their reports to Orgrimmar, and a defeat of the Kolkar or the death of a Razormane chief soon reaches the Warchief's ears."
+        "When Thrall's orcs and the Darkspear trolls landed in Kalimdor in the Third War, they marched across the Barrens. Grom Hellscream's Warsong clan crossed it first. Thrall gathered his scattered warriors on the shore, came to the aid of the Bloodhoof tauren, and escorted them across the plains, past the oases, to Mulgore, defeating the centaur warbands on the way.",
+        "After Hyjal, the Horde claimed the eastern Barrens as Durotar. The rest of the plains stayed neutral ground between Orgrimmar and Theramore for a time, until the Horde built its towns and watch towers there and made the Barrens the heart of its lands."
       ],
-      "sources": ["page text 175758 (orcs crossed Kalimdor's Barrens, befriended Cairne, Hellscream in Ashenvale)", "quest 842 (Thrall and Sergra)", "quest 4021 offer text (Thrall receives word)", "quest 6541 (Ashenvale campaign)", "creature 3433 Tatternack Steelforge gossip", "pre-Cataclysm lore: Warcraft III orc campaign"]
+      "sources": ["warcraft.wiki.gg: Barrens (Third War and aftermath, Cycle of Hatred, World of Warcraft)"]
     },
     {
       "id": 17053,
       "kind": "history",
-      "title": "Rexxar's Trail",
-      "triggers": [{ "complete": 876 }, { "complete": 819 }, { "complete": 1060 }],
+      "title": "The Wandering Tribes",
+      "triggers": [{ "complete": 876 }, { "complete": 819 }, { "area": "Camp Taurajo" }],
       "body": [
-        "In the years after the Horde settled Durotar, the half-ogre wanderer Rexxar, last of the mok'nathal, travelled the Barrens on Thrall's business. With him went the troll Rokhan and the pandaren brewmaster Chen Stormstout.",
-        "Their path left marks that are still found today. Rexxar killed a harpy called Bloodfeather, whose sister Serena led the Witchwing harpies against the Horde to avenge her. One of Chen's empty kegs still turns up on the plains, and a brewmaster in Ratchet keeps his recipes, handed down through his own teacher."
+        "For countless generations the tauren roamed the Barrens, hunting kodo, thunder lizards, cheetah and zhevra, and seeking the wisdom of the Earth Mother. Their tent villages moved with the seasons and the weather. The wandering tribes were united only by their hatred of the centaurs, who hunted them for sport.",
+        "The tauren made the centaurs pay for every attack, but they had no love for war, and always chose to move on rather than throw their lives away. A year of peace was always followed by a year of war. They accepted the cycle as the only life they knew, until the orcs came."
       ],
-      "sources": ["quest 876 description (Rexxar slew Bloodfeather)", "quest 1060 offer text (Rokhan went with the mok'nathal)", "quests 819, 821, 822 descriptions and offer texts (Chen traveled with Rexxar, recipe passed down)", "pre-Cataclysm lore: Warcraft III The Frozen Throne, Rexxar's campaign"]
+      "sources": ["warcraft.wiki.gg: Barrens (History)"]
     },
     {
       "id": 17054,
       "kind": "history",
       "title": "The Great Beasts of the Plains",
-      "triggers": [{ "complete": 881 }, { "kill": 3257 }, { "kill": 3474 }, { "complete": 873 }],
+      "triggers": [{ "complete": 881 }, { "kill": 3257 }, { "kill": 3474 }],
       "body": [
-        "To the tauren hunters of the Barrens, certain beasts are more than prey. Each has a name in their tongue, Taurahe, and a hunter who defeats one is said to carry its spirit afterwards.",
-        "Echeyakee, Whitemist, is the king of the savannah cats, both mercy and death. Ishamuhale, Speartooth, is a raptor that kills simply because it is in its nature. The kodo Lakota'mani, Earthshaker, walks with steps like thunder; the thunder lizard Owatanka, Bluebolt, was struck by lightning long ago and never tires; and the thunderhawk Washte Pawne, Spirit Biter, teaches the pain of regret. Off the coast swims Isha Awak, the Deep Doom, a sea beast whom even the Theramore soldiers fear."
+        "The Barrens are still a land of great beasts: kodo herds and thunder lizards on the Field of Giants, zhevra and cheetah on the open plains, and the rare, legendary creatures the tauren hunt to prove themselves. A tauren who brings back the trophy of one of these beasts has earned a name among the hunters."
       ],
-      "sources": ["quests 881, 882, 883, 884, 885, 873 descriptions and offer texts", "creature 3387 Jorn Skyseer gossip"]
+      "sources": ["warcraft.wiki.gg: Barrens (History)", "warcraft.wiki.gg: Field of Giants"]
     }
   ]
 }

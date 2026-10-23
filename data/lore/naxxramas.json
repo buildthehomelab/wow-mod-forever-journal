@@ -1,0 +1,198 @@
+{
+  "zone": 3456,
+  "name": "Naxxramas",
+  "entries": [
+    {
+      "id": 3456000,
+      "kind": "zone",
+      "title": "Naxxramas",
+      "triggers": [{ "areaId": 3456 }],
+      "body": [
+        "Once an ancient nerubian ziggurat underground. In the War of the Spider, Anub'arak took it for the Lich King, and the Scourge made it a war machine. When Kel'Thuzad came north, Anub'arak led him through its four wings, stacked with plague cauldrons; horrified, Kel'Thuzad tried to flee, but the Lich King caught him and bound him to it. Cultists tore it out of the earth and made it a flying necropolis, and Kel'Thuzad brought it to Lordaeron.",
+        "Heroes stormed it once in the Plaguelands and destroyed Kel'Thuzad. Now he has been reborn by the Lich King's power, and the necropolis has come north, over the Dragonblight."
+      ],
+      "sources": ["warcraft.wiki.gg: Naxxramas (Road to Damnation, World of Warcraft, Wrath of the Lich King)"]
+    },
+    {
+      "id": 3456001,
+      "kind": "place",
+      "title": "The Arachnid Quarter",
+      "triggers": [{ "kill": 15956 }, { "kill": 15953 }, { "kill": 15952 }],
+      "body": [
+        "The wing where the necropolis' nerubian heritage shows most: webs, crypt lords and spiders, ruled by Anub'Rekhan and the widow Faerlina, with Maexxna at its heart."
+      ],
+      "sources": ["warcraft.wiki.gg: Naxxramas"]
+    },
+    {
+      "id": 3456002,
+      "kind": "place",
+      "title": "The Plague Quarter",
+      "triggers": [{ "kill": 15954 }, { "kill": 15936 }, { "kill": 16011 }],
+      "body": [
+        "Where the plague itself is brewed and studied, under the plaguebringer and the unclean."
+      ],
+      "sources": ["warcraft.wiki.gg: Naxxramas"]
+    },
+    {
+      "id": 3456003,
+      "kind": "place",
+      "title": "The Military Quarter",
+      "triggers": [{ "kill": 16061 }, { "kill": 16060 }, { "kill": 16063 }, { "kill": 16064 }, { "kill": 16065 }, { "kill": 30549 }],
+      "body": [
+        "Where the Scourge trains its death knights, harvests souls, and keeps its four mounted champions, the Horsemen."
+      ],
+      "sources": ["warcraft.wiki.gg: Naxxramas"]
+    },
+    {
+      "id": 3456004,
+      "kind": "place",
+      "title": "The Construct Quarter",
+      "triggers": [{ "kill": 16028 }, { "kill": 15931 }, { "kill": 15932 }, { "kill": 15928 }],
+      "body": [
+        "The workshops of the abominations, where flesh is stitched together into the Scourge's monstrosities."
+      ],
+      "sources": ["warcraft.wiki.gg: Naxxramas"]
+    },
+    {
+      "id": 3456005,
+      "kind": "place",
+      "title": "The Frostwyrm Lair",
+      "triggers": [{ "kill": 15989 }, { "kill": 15990 }],
+      "body": [
+        "The top of the necropolis, where a frost wyrm guards the way to Kel'Thuzad's own chamber."
+      ],
+      "sources": ["warcraft.wiki.gg: Naxxramas"]
+    },
+    {
+      "id": 3456030,
+      "kind": "person",
+      "title": "Anub'Rekhan",
+      "triggers": [{ "kill": 15956 }],
+      "body": [
+        "In life one of the most powerful spider lords of the nerubians; raised by the Lich King as a crypt lord, he guards the doors of the Arachnid Quarter."
+      ],
+      "sources": ["warcraft.wiki.gg: Anub'Rekhan"]
+    },
+    {
+      "id": 3456031,
+      "kind": "person",
+      "title": "Grand Widow Faerlina",
+      "triggers": [{ "kill": 15953 }],
+      "body": [
+        "Once a high-ranking member of the Cult of the Damned under Kel'Thuzad. In death she tends the endless arachnids swarming from the depths of the citadel. A master of poisons, she knows well what makes mortals suffer; her poisons come from the spiderlings Maexxna bears."
+      ],
+      "sources": ["warcraft.wiki.gg: Grand Widow Faerlina"]
+    },
+    {
+      "id": 3456032,
+      "kind": "person",
+      "title": "Maexxna",
+      "triggers": [{ "kill": 15952 }],
+      "body": [
+        "A massive spider taken from the depths of Northrend's mountains ages ago. She breeds her brood in Naxxramas, feeding them on those foolish enough to enter, and Kel'Thuzad uses her spawn to his own foul ends."
+      ],
+      "sources": ["warcraft.wiki.gg: Maexxna"]
+    },
+    {
+      "id": 3456033,
+      "kind": "person",
+      "title": "Noth the Plaguebringer",
+      "triggers": [{ "kill": 15954 }],
+      "body": [
+        "Once a reputable mage of Dalaran, who heard the Lich King's call as Kel'Thuzad did and went to serve him. When he saw how many innocents the Third War was killing, he began to doubt. Kel'Thuzad dealt with his growing compassion by freezing the living heart in his chest."
+      ],
+      "sources": ["warcraft.wiki.gg: Noth the Plaguebringer"]
+    },
+    {
+      "id": 3456034,
+      "kind": "person",
+      "title": "Heigan the Unclean",
+      "triggers": [{ "kill": 15936 }],
+      "body": [
+        "The mastermind behind the cauldrons that spread the plague through Lordaeron, corrupting not only its people but its plants and beasts. That the land is now called the Plaguelands is thanks in no small part to Heigan's work."
+      ],
+      "sources": ["warcraft.wiki.gg: Heigan the Unclean"]
+    },
+    {
+      "id": 3456035,
+      "kind": "person",
+      "title": "Loatheb",
+      "triggers": [{ "kill": 16011 }],
+      "body": [
+        "A twisted fen creeper, an example of what the plague does to plants. In a mockery of nature's power to heal, his spores spread a miasma that turns healing magic against those who use it."
+      ],
+      "sources": ["warcraft.wiki.gg: Loatheb"]
+    },
+    {
+      "id": 3456036,
+      "kind": "person",
+      "title": "Instructor Razuvious",
+      "triggers": [{ "kill": 16061 }],
+      "body": [
+        "The most feared of the Scourge's death knight trainers."
+      ],
+      "sources": ["warcraft.wiki.gg: Instructor Razuvious"]
+    },
+    {
+      "id": 3456037,
+      "kind": "person",
+      "title": "Gothik the Harvester",
+      "triggers": [{ "kill": 16060 }],
+      "body": [
+        "A necromancer who reaps the living and sends their dead back against them."
+      ],
+      "sources": ["warcraft.wiki.gg: Gothik the Harvester"]
+    },
+    {
+      "id": 3456038,
+      "kind": "person",
+      "title": "The Four Horsemen",
+      "triggers": [{ "kill": 16063 }, { "kill": 16064 }, { "kill": 16065 }, { "kill": 30549 }],
+      "body": [
+        "The Lich King's death knight champions: Thane Korth'azz, Lady Blaumeux, Sir Zeliek, and Baron Rivendare, once lord of Stratholme."
+      ],
+      "sources": ["warcraft.wiki.gg: Naxxramas", "warcraft.wiki.gg: Baron Rivendare"]
+    },
+    {
+      "id": 3456039,
+      "kind": "person",
+      "title": "The Abominations",
+      "triggers": [{ "kill": 16028 }, { "kill": 15931 }, { "kill": 15932 }],
+      "body": [
+        "Patchwerk, one of Kel'Thuzad's mightiest abominations, terribly fast and strong. Grobbulus, the first successful flesh giant, made to inject the living with plague slime and send them back to infect their allies. Gluth, a plague hound so hungry that the living were not enough; Feugen is said to feed him an army of zombies every day."
+      ],
+      "sources": ["warcraft.wiki.gg: Patchwerk", "warcraft.wiki.gg: Grobbulus", "warcraft.wiki.gg: Gluth"]
+    },
+    {
+      "id": 3456040,
+      "kind": "person",
+      "title": "Thaddius",
+      "triggers": [{ "kill": 15928 }],
+      "body": [
+        "A massive abomination pieced together from the flesh of innocent women and children, flanked by two huge wights, Stalagg and Feugen, and supercharged with lightning. The souls bound inside him, it is said, are fused together forever in that foul prison of flesh."
+      ],
+      "sources": ["warcraft.wiki.gg: Thaddius"]
+    },
+    {
+      "id": 3456041,
+      "kind": "person",
+      "title": "Sapphiron",
+      "triggers": [{ "kill": 15989 }],
+      "body": [
+        "One of the most ancient blue dragons, entrusted by Malygos with a key to the Focusing Iris. He lived with his brood near the entrance to Azjol-Nerub, guarding a hoard of artifacts gathered over centuries, until Arthas killed him and raised him as a frost wyrm to guard Kel'Thuzad's sanctum."
+      ],
+      "sources": ["warcraft.wiki.gg: Sapphiron"]
+    },
+    {
+      "id": 3456042,
+      "kind": "person",
+      "title": "Kel'Thuzad",
+      "triggers": [{ "kill": 15990 }],
+      "body": [
+        "A member of the Council of Six of Dalaran who turned to necromancy, answered the Lich King's call, and founded the Cult of the Damned to spread the plague through Lordaeron. Arthas killed him and later raised him as a lich in the Sunwell. His phylactery let him rise again after the heroes of the Plaguelands destroyed him once already.",
+        "He is the archlich, master of Naxxramas, and the Lich King's most trusted lieutenant."
+      ],
+      "sources": ["warcraft.wiki.gg: Kel'Thuzad", "warcraft.wiki.gg: Naxxramas"]
+    }
+  ]
+}

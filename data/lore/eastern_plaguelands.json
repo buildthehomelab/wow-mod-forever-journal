@@ -1,0 +1,211 @@
+{
+  "zone": 139,
+  "name": "Eastern Plaguelands",
+  "entries": [
+    {
+      "id": 139000,
+      "kind": "zone",
+      "title": "The Eastern Plaguelands",
+      "triggers": [{ "areaId": 139 }],
+      "body": [
+        "Once the Eastweald, a beautiful land of farms and villages governed from Stratholme, the second city of Lordaeron, with Darrowshire, Corin's Crossing and Tyr's Hand nearby and the pass to Quel'Thalas to the north-east. Now it is the worst-blighted part of the Plaguelands: the ground brown and dead, giant mushrooms everywhere, sick beasts running wild and an orange mist in the air.",
+        "Stratholme became the Scourge's southern capital, and the necropolis Naxxramas hung over the Plaguewood until it vanished, to reappear over Northrend. In its place a new necropolis, Acherus, appeared above Light's Hope Chapel, and its death knights fell on the Scarlet Crusade's last strongholds."
+      ],
+      "sources": ["warcraft.wiki.gg: Eastern Plaguelands (introduction, History, World of Warcraft, Wrath of the Lich King)"]
+    },
+    {
+      "id": 139001,
+      "kind": "place",
+      "title": "Light's Hope Chapel",
+      "triggers": [{ "area": "Light's Hope Chapel" }, { "talk": 11034 }, { "talk": 11039 }],
+      "body": [
+        "One of the oldest and most revered holy sites of the Church of the Holy Light, on the mountain slopes of the eastern Plaguelands. The Argent Dawn holds it now under Lord Maxwell Tyrosus, a place of comfort for anyone who reaches it.",
+        "During the Scourging, Maxwell Tyrosus and a chosen few secretly dug up the bodies of a thousand fallen heroes of the Light and reburied them in the chapel's sacred ground, so the Lich King could never raise them. The Scourge has thrown its armies against the chapel again and again. In the lich Kirkessen's Siege of the Sanguine, Tyrosus struck him such a blow that he can no longer take bodily form."
+      ],
+      "sources": ["warcraft.wiki.gg: Light's Hope Chapel (introduction, Founding, Ashbringer, World of Warcraft)", "warcraft.wiki.gg: Eastern Plaguelands (Notable characters)"]
+    },
+    {
+      "id": 139002,
+      "kind": "place",
+      "title": "Darrowshire",
+      "triggers": [{ "area": "Darrowshire" }, { "talk": 10926 }],
+      "body": [
+        "A village in the south of the Plaguelands, silent and in ruins, where only ghosts and memories remain. It fell in one of the bloodiest battles of the Third War, and its defenders now walk the Plaguelands as ghouls of the Scourge, their spirits trapped in their rotting bodies. Sometimes, it is said, the ghosts fight the battle all over again."
+      ],
+      "sources": ["warcraft.wiki.gg: Darrowshire"]
+    },
+    {
+      "id": 139003,
+      "kind": "place",
+      "title": "Tyr's Hand",
+      "triggers": [{ "area": "Tyr's Hand" }, { "area": "The Scarlet Basilica" }, { "talk": 11898 }],
+      "body": [
+        "A fortified city in the south-east, one of the oldest holy sites of the Church, named for a hero of legend who lost his hand and was given one of silver. After Lordaeron fell it became one of the last strongholds of the living, and a fortress of the Scarlet Crusade. Its lands are greener than the rest of the Plaguelands, though even here the trees are slowly dying.",
+        "At its heart stands the Scarlet Basilica, the Crusade's high seat of religious power, where Crusader Lord Valdelmar rules."
+      ],
+      "sources": ["warcraft.wiki.gg: Tyr's Hand (introduction, Description)", "warcraft.wiki.gg: Scarlet Basilica"]
+    },
+    {
+      "id": 139004,
+      "kind": "place",
+      "title": "The Marris Stead",
+      "triggers": [{ "area": "The Marris Stead" }, { "talk": 11878 }],
+      "body": [
+        "The old home of Nathanos Marris and his family, on a ridge in the south-west. Sylvanas Windrunner visited him here sometimes. After Stratholme fell, the Scourge swept over the stead, and Nathanos, for all his skill, was killed in his own house by the abomination Ramstein the Gorger and raised as a mindless thrall.",
+        "Sylvanas's dark rangers tracked him down near the stead and she freed him. Nathanos Blightcaller has come home on her orders with his blighthounds, to recruit the Horde against the Scourge and the Scarlet Crusade."
+      ],
+      "sources": ["warcraft.wiki.gg: Marris Stead (Before and during the Third War, World of Warcraft)"]
+    },
+    {
+      "id": 139005,
+      "kind": "place",
+      "title": "The Plaguewood",
+      "triggers": [{ "area": "Plaguewood" }, { "area": "Terrordale" }, { "area": "Terrorweb Tunnel" }],
+      "body": [
+        "Once Greenwood, a lovely forest like Elwynn, with a small village at its entrance. The poisoned grain of Andorhal reached it too; a soldier of the village, Sergeant Morigan, was the first to see that something was wrong. Arthas rode through it on his way to Stratholme.",
+        "Now the Scourge fills it with ziggurats and slaughterhouses, and Scarlet patrols on the road kill anyone they meet. Terrordale at its edge is a ghost town, and the Terrorweb Tunnel beyond it crawls with crypt fiends."
+      ],
+      "sources": ["warcraft.wiki.gg: Plaguewood (introduction, Third War)", "warcraft.wiki.gg: Terrordale", "warcraft.wiki.gg: Terrorweb Tunnel"]
+    },
+    {
+      "id": 139006,
+      "kind": "place",
+      "title": "Stratholme",
+      "triggers": [{ "area": "Stratholme" }, { "area": "Eastwall Gate" }, { "accept": 5281 }],
+      "body": [
+        "The northernmost city of Lordaeron and its second-largest, an old holy city of the Church, where the Order of the Silver Hand was founded before the Second War. The Cult of the Damned poisoned its people with grain from Andorhal, and Prince Arthas purged them. The Scourge moved in afterwards and made it their capital in Lordaeron. It still burns.",
+        "The Scarlet Crusade holds its western districts, fighting Baron Rivendare's undead for the rest."
+      ],
+      "sources": ["warcraft.wiki.gg: Stratholme (introduction)", "warcraft.wiki.gg: Eastern Plaguelands (Third War and aftermath)"]
+    },
+    {
+      "id": 139007,
+      "kind": "place",
+      "title": "Zul'Mashar",
+      "triggers": [{ "area": "Zul'Mashar" }, { "area": "Mazra'Alor" }, { "kill": 12250 }],
+      "body": [
+        "Once the capital of the Mossflayer forest trolls in the north-east. Long wars with Lordaeron's humans left their land in disarray, and the plague did the rest; it is a shadow of what it was, and its people are being secretly turned into undead.",
+        "In the Undercroft, a crypt in the south-west, an undead dire troll named Zaeldarr the Outcast leads raids on the grave pit at Light's Hope to steal bodies."
+      ],
+      "sources": ["warcraft.wiki.gg: Zul'Mashar", "warcraft.wiki.gg: Undercroft"]
+    },
+    {
+      "id": 139008,
+      "kind": "place",
+      "title": "Quel'Lithien Lodge",
+      "triggers": [{ "area": "Quel'Lithien Lodge" }, { "accept": 6133 }],
+      "body": [
+        "A high elf hunting lodge near the pass to Quel'Thalas, once a Farstrider camp where Lor'themar Theron was always warmly welcomed; it holds elven records, some about the royal family and the Ranger-General. Renthar Hawkspear led its hunters in the Second War.",
+        "When Grand Magister Rommath brought back from Outland the art of drawing mana from living things, Renthar's rangers refused it on moral grounds. To keep Quel'Thalas from splitting over it, Lor'themar exiled them south, and they have lived at the lodge since."
+      ],
+      "sources": ["warcraft.wiki.gg: Quel'Lithien Lodge (History, Third War and aftermath)"]
+    },
+    {
+      "id": 139009,
+      "kind": "place",
+      "title": "Acherus: The Ebon Hold",
+      "triggers": [{ "area": "Acherus: The Ebon Hold" }, { "area": "Death's Breach" }, { "area": "Ruins of the Scarlet Enclave" }],
+      "body": [
+        "A Scourge necropolis built by the skeletal architect Obrahiim, said to be strong enough that not even Naxxramas could withstand it. The Lich King sent it to the Scarlet Enclave to train his death knights for one purpose: to destroy the Scarlet Crusade and the Argent Dawn, the last bastions of the Light in the Plaguelands.",
+        "The death knights of Acherus laid waste to New Avalon and Havenshire below it; the Ruins of the Scarlet Enclave are all that is left. Then they turned on Light's Hope, and there, everything changed. The necropolis now flies the banner of the Knights of the Ebon Blade."
+      ],
+      "sources": ["warcraft.wiki.gg: Acherus: The Ebon Hold (Wrath of the Lich King)", "warcraft.wiki.gg: Ruins of the Scarlet Enclave", "warcraft.wiki.gg: Eastern Plaguelands (Wrath of the Lich King)"]
+    },
+    {
+      "id": 139010,
+      "kind": "place",
+      "title": "The Watchtowers",
+      "triggers": [{ "area": "Northpass Tower" }, { "area": "Crown Guard Tower" }, { "area": "Eastwall Tower" }],
+      "body": [
+        "Lordaeron's scout towers across the Eastweald were destroyed in the Scourge invasion. The Alliance and the Horde fight over their ruins, each seeking a foothold in the Plaguelands: Crown Guard in the south, Eastwall in the east, Northpass on the road to Quel'Thalas, and the tower of the Plaguewood."
+      ],
+      "sources": ["warcraft.wiki.gg: Northpass Tower", "warcraft.wiki.gg: Crown Guard Tower", "warcraft.wiki.gg: Eastwall Tower", "warcraft.wiki.gg: Eastern Plaguelands (World of Warcraft)"]
+    },
+    {
+      "id": 139011,
+      "kind": "place",
+      "title": "Corin's Crossing and the Infectis Scar",
+      "triggers": [{ "area": "Corin's Crossing" }, { "area": "The Infectis Scar" }, { "area": "Lake Mereldar" }],
+      "body": [
+        "Corin's Crossing, a ruined town on the crossroads between Andorhal, Darrowshire, Stratholme and Tyr's Hand, is filled with the Scourge, and with unseen servants that even the stealthiest cannot slip past.",
+        "Beside it runs the Infectis Scar. It is no natural gorge: when the death knight Marduk Blackpool broke his runeblade on a dwarf captain's shield nearby, he threw away the blade, and its evil sank into the earth and split it open."
+      ],
+      "sources": ["warcraft.wiki.gg: Corin's Crossing", "warcraft.wiki.gg: Infectis Scar"]
+    },
+    {
+      "id": 139012,
+      "kind": "place",
+      "title": "Blackwood Lake and Browman Mill",
+      "triggers": [{ "area": "Blackwood Lake" }, { "area": "Browman Mill" }, { "area": "Northdale" }],
+      "body": [
+        "In the Second War a band of orcs broke away from the army marching on Quel'Thalas and burned the town of Blackwood to the ground, killing everyone despite the brave defence of its lord. It was the home of Othmar Garithos. Its lake is polluted now and full of corrupted water elementals.",
+        "Browman Mill, north of Light's Hope, crawls with skeletons, banshees and abominations; its owner, Stephen Browman, stands guard inside as a ghoul. Further north lies ruined Northdale, where Taelan Fordring renounced the Silver Hand and joined the Scarlet Crusade."
+      ],
+      "sources": ["warcraft.wiki.gg: Eastern Plaguelands (History)", "warcraft.wiki.gg: Blackwood Lake", "warcraft.wiki.gg: Browman Mill", "warcraft.wiki.gg: Northdale"]
+    },
+    {
+      "id": 139030,
+      "kind": "person",
+      "title": "Tirion Fordring",
+      "triggers": [{ "talk": 1855 }, { "accept": 5742 }],
+      "body": [
+        "One of the first five paladins of the Silver Hand, chosen by Alonsus Faol with Uther, Turalyon, Saidan Dathrohan and Gavinrad. A hero of the Second War and Lord of Mardenholde, he was stripped of his titles, cast out of the order and exiled for defending an old orc, Eitrigg, who had once saved his life.",
+        "He has lived alone for years as an outcast, in a hut by the Thondroril River. His wife told their son Taelan he was dead."
+      ],
+      "sources": ["warcraft.wiki.gg: Tirion Fordring (introduction)", "warcraft.wiki.gg: Thondroril River", "warcraft.wiki.gg: Taelan Fordring"]
+    },
+    {
+      "id": 139031,
+      "kind": "person",
+      "title": "The Redpaths",
+      "triggers": [{ "talk": 11063 }, { "kill": 10938 }, { "accept": 5211 }],
+      "body": [
+        "Captain Joseph Redpath led the Darrowshire militia in the town's last battle. The death knight Marduk Blackpool tore out his soul and twisted it into the Scourge's service, and Redpath the Corrupted turned on his own people and killed everyone hiding in their homes, among them his little daughter Pamela, whose ghost still waits in the ruins. His brother Carlin survived."
+      ],
+      "sources": ["warcraft.wiki.gg: Eastern Plaguelands (Third War and aftermath)", "warcraft.wiki.gg: Darrowshire"]
+    },
+    {
+      "id": 139050,
+      "kind": "history",
+      "title": "The Battle of Darrowshire",
+      "triggers": [{ "complete": 5210 }, { "complete": 5181 }, { "complete": 5721 }],
+      "body": [
+        "The ghoul Horgus the Ravager and the death knight Marduk the Black led a Scourge army against Darrowshire. Only the surviving paladins under Davil Crokford and the town militia under Joseph Redpath stood in their way. They fought valiantly, but there were too many.",
+        "Davil killed Horgus, and died of the wounds the ghoul gave him; Horgus's head was thrown into Blackwood Lake. Redpath fell to Marduk's necromancy and was turned against the town he defended."
+      ],
+      "sources": ["warcraft.wiki.gg: Eastern Plaguelands (Third War and aftermath)", "warcraft.wiki.gg: Blackwood Lake"]
+    },
+    {
+      "id": 139051,
+      "kind": "history",
+      "title": "The Ranger Lord",
+      "triggers": [{ "complete": 6185 }, { "complete": 6187 }, { "complete": 6148 }],
+      "body": [
+        "Nathanos Marris was the only human ever made a ranger lord of Quel'Thalas, trained by Sylvanas herself. Raised as a Forsaken, he serves her still as Nathanos Blightcaller, and from his old home he wages his own war on the Scourge and the Scarlet Crusade in the name of the Banshee Queen."
+      ],
+      "sources": ["warcraft.wiki.gg: Marris Stead (World of Warcraft)", "warcraft.wiki.gg: Nathanos Blightcaller"]
+    },
+    {
+      "id": 139052,
+      "kind": "history",
+      "title": "The Culling and the Crusade",
+      "triggers": [{ "areaId": 139 }, { "area": "Stratholme" }],
+      "body": [
+        "Kel'Thuzad sent Arthas after the dreadlord Mal'Ganis in Stratholme. When the prince found its people already infected, he ordered the city purged. Uther refused, so Arthas relieved him, disbanded the Silver Hand, and slaughtered the townsfolk himself. He followed Mal'Ganis to Northrend, and came back as the Lich King's death knight.",
+        "After Lordaeron fell, Alexandros Mograine led what was left of the Silver Hand in a crusade to retake the kingdom, taking Tyr's Hand and part of Stratholme. When he was murdered, his crusade split: the Brotherhood of the Light and the Argent Dawn made Light's Hope Chapel their home, and the rest became the Scarlet Crusade."
+      ],
+      "sources": ["warcraft.wiki.gg: Eastern Plaguelands (Third War and aftermath)"]
+    },
+    {
+      "id": 139053,
+      "kind": "history",
+      "title": "Naxxramas and the Ashbringer",
+      "triggers": [{ "areaId": 139 }, { "area": "Light's Hope Chapel" }],
+      "body": [
+        "Kel'Thuzad returned to the Plaguelands in the floating citadel of Naxxramas. Darion Mograine, with volunteers from the Argent Dawn, got inside to free the soul of his father Alexandros, the bearer of the Ashbringer, who had been raised as one of its Four Horsemen.",
+        "Then Kel'Thuzad marched two armies on Light's Hope. Had the chapel fallen, the Lich King would have claimed the thousand righteous souls buried there. As the battle turned against the living, Darion ran the Ashbringer through his own chest, praying that his father's soul could save them. His sacrifice woke the thousand souls beneath the chapel, and their fury broke the Scourge. In time the Argent Dawn stormed Naxxramas itself, and soon after, the citadel vanished from the Plaguelands."
+      ],
+      "sources": ["warcraft.wiki.gg: Eastern Plaguelands (World of Warcraft)", "warcraft.wiki.gg: Light's Hope Chapel (Ashbringer)"]
+    }
+  ]
+}
