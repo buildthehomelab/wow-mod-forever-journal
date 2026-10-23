@@ -114,6 +114,7 @@ function methods:SetFocus() self.__focus = true end
 function methods:ClearFocus() self.__focus = nil end
 -- Model frames: a creature shows (GetModel names a file) only once the client has it cached.
 local cachedCreatures = { [308] = true, [7385] = true, [639] = true }
+local creatureRecordsSent = {}
 function methods:SetCreature(entry) self.__creature = entry end
 function methods:ClearModel() self.__creature = nil end
 function methods:GetModel()
@@ -358,7 +359,7 @@ local function serve(msg)
 	print("  -> " .. msg)
 	if cmd == "HELLO" then
 		assert(args[4] == "1", "HELLO without the addon's features: " .. msg)
-		reply("HELLO:" .. req .. ":2:511:4242:3")
+		reply("HELLO:" .. req .. ":2:1535:4242:3")
 	elseif cmd == "D" then
 		list("D", req, "3", {
 			"I,6,36,0,0,15,25,19,6,Deadmines,Westfall",
@@ -416,6 +417,15 @@ local function serve(msg)
 			"I,3637,1,Head of VanCleef", "P,155,1,The Defias Brotherhood" })
 	elseif cmd == "H" then
 		reply("H:" .. req .. ":159:101")
+	elseif cmd == "R" then
+		-- The server pushes the creature records; the client caches them as if it had asked.
+		local n = 0
+		for entry in args[3]:gmatch("%d+") do
+			creatureRecordsSent[tonumber(entry)] = (creatureRecordsSent[tonumber(entry)] or 0) + 1
+			cachedCreatures[tonumber(entry)] = true
+			n = n + 1
+		end
+		reply("R:" .. req .. ":" .. n)
 	elseif cmd == "OPENED" then
 		-- the addon's answer to OPEN; nothing comes back
 	elseif cmd == "N" then
@@ -859,10 +869,10 @@ step("mounts: summon, filters, search", function ()
 	assert(model.lockLayer and model.lockLayer:IsVisible(), "no padlock on an uncollected mount")
 	assert(model.lockLayer:GetFrameLevel() > model:GetFrameLevel(), "padlock under the model")
 	assert(not buttonShown("Summon"), "Summon offered for an uncollected mount")
+	-- SetCreature never queries a creature the client lacks: the addon asks the server for it.
 	tick(1)
-	assert(model:GetModel() == "", "test: the creature shouldn't be cached yet")
-	cachedCreatures[284] = true
-	tick(1)
+	assert(creatureRecordsSent[284] == 1, "the uncached creature's record wasn't asked for")
+	assert(not creatureRecordsSent[308], "asked for a creature the client already had")
 	assert(model:GetModel() ~= "" and model.__ambient == 0.3, "the uncollected mount didn't load dimmed")
 	local stallion = find(function (f) return f.__kind == "Button" and type(rawget(f, "entry")) == "table" and f.entry.id == 470 and f:IsVisible() end)
 	stallion.__scripts.OnClick(stallion)

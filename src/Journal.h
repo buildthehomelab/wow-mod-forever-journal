@@ -65,6 +65,7 @@ namespace Journal
         HELLO_LORE        = 0x80, // Y, U, V: the lore codex, LN announces discoveries
         HELLO_HINTS       = 0x200, // E: achievement actions for hover tooltips
         HELLO_LIBRARY     = 0x100, // J, P: books read, BN announces a new one
+        HELLO_MODELS      = 0x400, // R: creature records for previews of creatures never seen
     };
 
     // What the addon can do, sent as HELLO's second field.
