@@ -122,6 +122,24 @@ function J.Companion(kind, e)
 	return owned[kind][e.id]
 end
 
+-- The companion as the client lists it right now: its index and whether it's out. The client
+-- renumbers the list without warning (a creature name arriving re-sorts it), so a summon
+-- takes this, not the index read earlier, and the stored one is refreshed on the way.
+function J.CompanionNow(kind, e)
+	local info = J.KINDS[kind]
+	if not (info and info.companion and GetNumCompanions) then return J.Companion(kind, e) end
+	for i = 1, GetNumCompanions(info.companion) do
+		local _, _, spell, _, active = GetCompanionInfo(info.companion, i)
+		if spell == e.id then
+			local c = { index = i, active = active and true or false }
+			owned[kind][e.id] = c
+			return c
+		end
+	end
+	owned[kind][e.id] = nil
+	return nil
+end
+
 -- A toy in the bags (or worn) can be used; one only in the bank is collected but can't.
 function J.ToyInBags(e)
 	local t = owned.toys[e.id]

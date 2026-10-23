@@ -418,7 +418,7 @@ local function buildTab(kind, panel)
 	action:SetPoint("BOTTOMRIGHT", model, "BOTTOMRIGHT", -6, 6)
 	action:SetScript("OnClick", function ()
 		local e = state.selected
-		local c = e and J.Companion(kind, e)
+		local c = e and J.CompanionNow(kind, e)
 		if not c then return end
 		if kind == "mounts" and IsMounted and IsMounted() then
 			Dismount()
