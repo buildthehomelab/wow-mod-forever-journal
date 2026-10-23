@@ -400,6 +400,99 @@ function J.CreatePool(make)
 	return pool
 end
 
+-- Creature previews. A 3.3.5 model frame shows a creature only once the client has it cached,
+-- so one it hasn't met (a mount or pet you don't own, a boss you never saw) stayed blank. The
+-- creature is set again until the frame reports a model file (GetModel), like Transmog's tiles.
+-- A locked one keeps its colours under a dim light, with a padlock in the corner.
+local MODEL_LIGHT = { 1, 0, 0, -0.707, -0.707, 0.7, 1.0, 1.0, 1.0, 0.8, 1.0, 1.0, 0.8 }
+local MODEL_DIM = { 1, 0, 0, -0.707, -0.707, 0.3, 1.0, 1.0, 1.0, 0.3, 1.0, 1.0, 0.8 }
+local MODEL_RETRY = 0.4
+local MODEL_TRIES = 30 -- 12 seconds
+
+local function modelLoaded(model)
+	local file = model.GetModel and model:GetModel()
+	return type(file) == "string" and file ~= ""
+end
+
+local function frameCreature(model)
+	model:SetFacing(model.facing or 0.5)
+	if model.SetLight then model:SetLight(unpack(model.locked and MODEL_DIM or MODEL_LIGHT)) end
+end
+
+local modelLoader = CreateFrame("Frame")
+modelLoader:Hide()
+modelLoader.pending = {}
+modelLoader.wait = 0
+modelLoader:SetScript("OnUpdate", function (self, elapsed)
+	self.wait = self.wait - elapsed
+	if self.wait > 0 then return end
+	self.wait = MODEL_RETRY
+	for model in pairs(self.pending) do
+		if not model:IsVisible() or not model.shownEntry then
+			self.pending[model] = nil
+		elseif modelLoaded(model) then
+			frameCreature(model)
+			self.pending[model] = nil
+		else
+			model.tries = model.tries + 1
+			if model.tries > MODEL_TRIES then
+				self.pending[model] = nil
+			else
+				model:SetCreature(model.shownEntry)
+			end
+		end
+	end
+	if not next(self.pending) then self:Hide() end
+end)
+
+-- The padlock sits on a layer a level above the model (a sibling: the model draws over its own
+-- regions' children), re-pinned on every call in case the window is re-levelled.
+local function modelLock(model)
+	local layer = model.lockLayer
+	if not layer then
+		layer = CreateFrame("Frame", nil, model:GetParent())
+		layer:SetAllPoints(model)
+		layer:EnableMouse(false)
+		layer.icon = layer:CreateTexture(nil, "OVERLAY")
+		layer.icon:SetTexture("Interface\\LFGFrame\\UI-LFG-ICON-LOCK")
+		layer.icon:SetTexCoord(0, 0.71875, 0, 0.875)
+		layer.icon:SetSize(23, 28)
+		layer.icon:SetPoint("TOPRIGHT", layer, "TOPRIGHT", -10, -10)
+		model:HookScript("OnHide", function () layer:Hide() end)
+		model.lockLayer = layer
+	end
+	layer:SetFrameLevel(model:GetFrameLevel() + 1)
+	return layer
+end
+
+-- Shows a creature in a model frame; locked dims it and adds the padlock. Entry nil or 0 clears it.
+function J.ShowCreature(model, entry, locked)
+	locked = locked and true or false
+	if locked or model.lockLayer then J.SetShown(modelLock(model), locked and entry and entry ~= 0) end
+	if not entry or entry == 0 then
+		model:ClearModel()
+		model.shownEntry = nil
+		modelLoader.pending[model] = nil
+		return
+	end
+	local relight = model.locked ~= locked
+	model.locked = locked
+	if model.shownEntry ~= entry then
+		model.shownEntry = entry
+		model.tries = 0
+		model:ClearModel()
+		model:SetCreature(entry)
+	elseif not relight then
+		return
+	end
+	if modelLoaded(model) then
+		frameCreature(model)
+	else
+		modelLoader.pending[model] = true
+		modelLoader:Show()
+	end
+end
+
 -- Puts a tooltip on a frame: text is a string or fn(tooltip).
 function J.SetTooltip(frame, text, anchor)
 	frame:SetScript("OnEnter", function (self)
