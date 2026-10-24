@@ -64,7 +64,7 @@ J.dungeonPanel = dungeonPanel
 
 -----------------------------------------
 -- view state: which window tab (section), and in Dungeons and Raids which page, tier, instance,
--- boss, tab and difficulty
+-- boss, tab and difficulty; collection = the last of Mounts and Pets shown
 
 J.view = { section = "dungeons", page = "home", tier = 0, raids = false, instance = nil, boss = nil, variant = nil,
 	tab = "overview" }
@@ -73,7 +73,7 @@ local function saveView()
 	if JournalCharDB then
 		local v = J.view
 		JournalCharDB.view = { section = v.section, page = v.page, tier = v.tier, raids = v.raids, instance = v.instance,
-			boss = v.boss, variant = v.variant, tab = v.tab }
+			boss = v.boss, variant = v.variant, tab = v.tab, collection = v.collection }
 	end
 end
 
@@ -92,6 +92,7 @@ function J.Show(changes)
 	if changes.raids ~= nil and (v.section == "dungeons" or v.section == "raids") then
 		v.section = v.raids and "raids" or "dungeons"
 	end
+	if v.section == "mounts" or v.section == "pets" then v.collection = v.section end
 	saveView()
 	J.Fire("VIEW")
 end
@@ -651,6 +652,23 @@ end
 function J.ToggleSection(key)
 	if frame:IsShown() and J.view.section == key then frame:Hide() return end
 	J.OpenSection(key)
+end
+
+-- DragonUI's Pets & Mounts micro button, key binding and slash command call this retail global
+-- when it exists instead of opening DragonUI's own window. Retail's tab numbers: 1 mounts, 2 pets.
+-- Without one it opens on whichever of the two was shown last.
+if not ToggleCollectionsJournal then
+	function ToggleCollectionsJournal(tab)
+		local key = (tab == 1 and "mounts") or (tab == 2 and "pets") or nil
+		if not key then
+			if frame:IsShown() and (J.view.section == "mounts" or J.view.section == "pets") then
+				frame:Hide()
+				return
+			end
+			key = J.view.collection or "mounts"
+		end
+		J.ToggleSection(key)
+	end
 end
 
 J.On("ZONE", function () openedHere = false end)
