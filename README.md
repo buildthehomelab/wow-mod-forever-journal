@@ -23,7 +23,8 @@ An [AzerothCore](https://www.azerothcore.org/) (WotLK 3.3.5a) module and addon t
   **Appearances** show up here when they're installed.
 
 Open it with **Shift-J**, the minimap button, `/journal`, `/quests`, `/directory`, `/lore`, `/mounts`,
-`/pets` or `/toys`.
+`/pets` or `/toys`. With DragonUI, its Pets & Mounts micro button (and its key binding) opens the
+journal's Mounts or Pets tab instead of DragonUI's own window.
 
 Everything comes from your realm's own data, so custom loot, custom mounts and pets,
 mod-individual-progression's vanilla raids and other modules' changes show up as they are on your
@@ -547,7 +548,7 @@ Guide's OPEN message and its answer, `.find <words>`, one request per pick), the
 entries by kind, hints, text in pieces, New until read, the discovery banner and its queue, the
 Library's shelf, a book's pages in order and a book's banner), the
 Mounts, Pets and Toys tabs (sources, map flags, boss links, Summon, filters) and a tab registered by
-another addon.
+another addon, and DragonUI's Pets & Mounts button.
 `DRAGON=1` runs it with a DragonUI stand-in.
 
 ## Troubleshooting
