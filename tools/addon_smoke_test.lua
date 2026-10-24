@@ -282,6 +282,25 @@ if os.getenv("DRAGON") == "1" then
 			end, ModernizeCloseButton = function () end,
 			SkinCheckbox = function () end, ReskinScrollBar = function () end,
 			SyncScrollThumb = function (scroll) scroll.__thumbSynced = (rawget(scroll, "__thumbSynced") or 0) + 1 end },
+		-- Its Mounts and Pets window: the art, and favourites per kind keyed by creature.
+		GOLD_ICON_FRAME = { texture = "DUI\\IconFrameGold", open = 0.4922, cx = 0.4727, cy = 0.4336 },
+		LayoutGoldIconFrame = function (tex, icon) tex:SetTexture("DUI\\IconFrameGold") end,
+		Collections = {
+			TEX = { rows = "DUI\\ListButtons", favorite = "DUI\\FavoritesIcon", modelBg = "DUI\\MountJournal-BG",
+				faction = "DUI\\MountJournalIcons" },
+			ROW_COORDS = { background = { 0, 1, 0, 0.2 }, highlight = { 0, 1, 0.2, 0.4 }, selected = { 0, 1, 0.4, 0.6 } },
+			FAV_COORD = { 0, 1, 0, 1 }, MODEL_BG_COORD = { 0, 0.8, 0, 1 },
+			FACTION_COORDS = { [0] = { 0.4, 0.8, 0, 0.75 }, [1] = { 0, 0.4, 0, 0.75 } },
+			RandomIcon = { MOUNT = "Interface\\Icons\\RandomMount", CRITTER = "Interface\\Icons\\RandomPet" },
+			favorites = { MOUNT = {}, CRITTER = {} },
+			IsFavorite = function (kind, id) return DragonUI.Collections.favorites[kind][id] == true end,
+			ToggleFavorite = function (kind, id)
+				local t = DragonUI.Collections.favorites[kind]
+				t[id] = (not t[id]) or nil
+				return t[id] == true
+			end,
+			SummonRandomFavorite = function (kind) DragonUI.Collections.randomCalled = kind end,
+		},
 	}
 end
 
@@ -905,6 +924,63 @@ step("mounts: summon, filters, search", function ()
 	J.Fire("COLLECTION_FILTER", "mounts")
 	tick(0.5)
 end)
+
+if DragonUI then
+	step("mounts with DragonUI: its row plates, backdrop, favourites, random favourite", function ()
+		local CO = DragonUI.Collections
+		-- A second mount owned for this step, so favourites have something to jump ahead of.
+		companions.MOUNT[2] = { 284, "Brown Horse", 458, "Interface\\Icons\\H", false }
+		J.Fire("COMPANIONS")
+		J.OpenSection("mounts")
+		tick(0.5)
+		local function row(id)
+			return find(function (f) return f.__kind == "Button" and type(rawget(f, "entry")) == "table" and f.entry.id == id and f:IsVisible() end)
+		end
+		local function firstRow()
+			return findAll(function (f) return f.__kind == "Button" and type(rawget(f, "entry")) == "table" and f:IsVisible()
+				and rawget(f, "star") ~= nil end)[1]
+		end
+		assert(find(function (f) return f.__kind == "Texture" and f.__texture == CO.TEX.rows and f:IsVisible() end),
+			"list rows don't wear DragonUI's plates")
+		assert(find(function (f) return f.__kind == "Texture" and f.__texture == CO.TEX.modelBg and f:IsVisible() end),
+			"no DragonUI backdrop behind the selected mount")
+		assert(not find(function (f) return f.__kind == "Texture" and f.__texture == "Interface\\LFGFrame\\UI-LFG-BACKGROUND-QUESTPAPER"
+			and f:IsVisible() end), "the stock model backdrop still shows")
+		assert(firstRow().entry.id == 470, "Black Stallion should lead before any favourite")
+		local horse = row(458)
+		horse.__scripts.OnClick(horse)
+		tick(0.2)
+		local star = find(function (f) return f.__kind == "Button" and type(rawget(f, "tex")) == "table"
+			and f.tex.__texture == CO.TEX.favorite and f:IsVisible() end)
+		assert(star, "no favourite star for a collected mount")
+		assert(not horse.star:IsVisible(), "row starred before it was a favourite")
+		star.__scripts.OnClick(star)
+		tick(0.2)
+		assert(CO.favorites.MOUNT[284], "the star didn't set DragonUI's favourite (keyed by the companion's creature)")
+		assert(firstRow().entry.id == 458 and firstRow().star:IsVisible(), "the favourite isn't first with a star")
+		local rider = row(32244)
+		rider.__scripts.OnClick(rider)
+		tick(0.2)
+		assert(not star:IsVisible(), "an uncollected mount offers the favourite star")
+		local caption = find(function (f) return f.__kind == "FontString" and f.__text == "Random favorite" and f:IsVisible() end)
+		assert(caption, "no Random favorite button")
+		local random = caption.__point[2]
+		random.__scripts.OnClick(random)
+		assert(CO.randomCalled == "MOUNT", "Random favorite didn't call DragonUI's picker")
+		J.OpenSection("pets")
+		tick(0.5)
+		random = find(function (f) return f.__kind == "FontString" and f.__text == "Random favorite" and f:IsVisible() end).__point[2]
+		random.__scripts.OnClick(random)
+		assert(CO.randomCalled == "CRITTER", "pets' Random favorite didn't summon a pet")
+		J.OpenSection("toys")
+		tick(0.5)
+		assert(not textShown("^Random favorite$"), "toys offer a random favourite")
+		-- Back to how the next steps expect it.
+		CO.favorites.MOUNT[284] = nil
+		companions.MOUNT[2] = nil
+		J.Fire("COMPANIONS")
+	end)
+end
 
 step("pets and toys tabs", function ()
 	J.OpenSection("pets")

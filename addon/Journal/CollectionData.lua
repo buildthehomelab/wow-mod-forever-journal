@@ -100,14 +100,14 @@ end
 local owned = { mounts = {}, pets = {}, toys = {} }
 local ownedToysAt = nil
 
--- Mounts and pets: spell -> companion index, read from the client.
+-- Mounts and pets: spell -> companion index (and creature), read from the client.
 local function readCompanions()
 	for kind, info in pairs(J.KINDS) do
 		if info.companion and GetNumCompanions then
 			local have = {}
 			for i = 1, GetNumCompanions(info.companion) do
-				local _, _, spell, _, active = GetCompanionInfo(info.companion, i)
-				if spell then have[spell] = { index = i, active = active and true or false } end
+				local creature, _, spell, _, active = GetCompanionInfo(info.companion, i)
+				if spell then have[spell] = { index = i, active = active and true or false, creature = creature } end
 			end
 			owned[kind] = have
 		end
@@ -129,9 +129,9 @@ function J.CompanionNow(kind, e)
 	local info = J.KINDS[kind]
 	if not (info and info.companion and GetNumCompanions) then return J.Companion(kind, e) end
 	for i = 1, GetNumCompanions(info.companion) do
-		local _, _, spell, _, active = GetCompanionInfo(info.companion, i)
+		local creature, _, spell, _, active = GetCompanionInfo(info.companion, i)
 		if spell == e.id then
-			local c = { index = i, active = active and true or false }
+			local c = { index = i, active = active and true or false, creature = creature }
 			owned[kind][e.id] = c
 			return c
 		end
