@@ -1,0 +1,76 @@
+{
+  "zone": 3714,
+  "name": "The Shattered Halls",
+  "entries": [
+    {
+      "id": 3714000,
+      "kind": "zone",
+      "title": "The Shattered Halls",
+      "triggers": [{ "areaId": 3714 }],
+      "body": [
+        "The inner halls of Hellfire Citadel, the seat of Warchief Kargath Bladefist and his Shattered Hand clan, the heart of the Fel Horde that now serves Illidan."
+      ],
+      "sources": ["warcraft.wiki.gg: Hellfire Citadel", "warcraft.wiki.gg: Kargath Bladefist"]
+    },
+    {
+      "id": 3714001,
+      "kind": "place",
+      "title": "The Gauntlet",
+      "triggers": [{ "kill": 16807 }, { "kill": 20923 }],
+      "body": [
+        "A long hall beyond the warlock's chambers, where archers rain burning arrows on anyone who passes and the Shattered Hand pour out in endless waves. Gladiators train and fight among themselves in the rooms beyond."
+      ],
+      "sources": ["warcraft.wiki.gg: The Shattered Halls (Overview)"]
+    },
+    {
+      "id": 3714002,
+      "kind": "place",
+      "title": "Kargath's Throne",
+      "triggers": [{ "kill": 16809 }, { "kill": 16808 }],
+      "body": [
+        "The warchief's hall at the end of the Shattered Halls, its approaches crawling with stealthy assassins and guarded by a two-headed ogre warbringer."
+      ],
+      "sources": ["warcraft.wiki.gg: The Shattered Halls (Overview)", "warcraft.wiki.gg: Warbringer O'mrogg"]
+    },
+    {
+      "id": 3714030,
+      "kind": "person",
+      "title": "Grand Warlock Nethekurse",
+      "triggers": [{ "kill": 16807 }],
+      "body": [
+        "A fel orc warlock who serves the Fel Horde in the Shattered Halls, and feeds on the deaths of his own followers."
+      ],
+      "sources": ["warcraft.wiki.gg: Grand Warlock Nethekurse"]
+    },
+    {
+      "id": 3714031,
+      "kind": "person",
+      "title": "Blood Guard Porung",
+      "triggers": [{ "kill": 20923 }],
+      "body": [
+        "A fel orc blood guard who holds the end of the Gauntlet."
+      ],
+      "sources": ["warcraft.wiki.gg: Blood Guard Porung"]
+    },
+    {
+      "id": 3714032,
+      "kind": "person",
+      "title": "Warbringer O'mrogg",
+      "triggers": [{ "kill": 16809 }],
+      "body": [
+        "A two-headed ogre in the Fel Horde's service, whose heads cannot agree on whom to hit."
+      ],
+      "sources": ["warcraft.wiki.gg: Warbringer O'mrogg"]
+    },
+    {
+      "id": 3714033,
+      "kind": "person",
+      "title": "Warchief Kargath Bladefist",
+      "triggers": [{ "kill": 16808 }],
+      "body": [
+        "Founder and chieftain of the Shattered Hand and warchief of the Fel Horde. He was raised a slave of the ogres and made to fight as a gladiator; when his freedom proved a lie, he cut off his own shackled hand to escape, and replaced it with a deadly blade. His followers cut off their hands too, and the Shattered Hand was born. He has gone over to Illidan, and rules Hellfire Citadel in his name."
+      ],
+      "sources": ["warcraft.wiki.gg: Kargath Bladefist", "warcraft.wiki.gg: Hellfire Peninsula (After the Third War)"]
+    }
+  ]
+}

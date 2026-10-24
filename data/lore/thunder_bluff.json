@@ -1,0 +1,78 @@
+{
+  "zone": 1638,
+  "name": "Thunder Bluff",
+  "entries": [
+    {
+      "id": 1638000,
+      "kind": "zone",
+      "title": "Thunder Bluff",
+      "triggers": [{ "areaId": 1638 }],
+      "body": [
+        "The tauren capital, built atop a series of windswept mesas hundreds of feet above the green plains of northern Mulgore. Long bridges of rope and wood span the chasms between the rises, each crowned with tents, longhouses, painted totems and spirit lodges. Visitors reach it by wyvern, by zeppelin from Orgrimmar, or on the tauren's own wooden elevators from the plains below.",
+        "The tauren were nomads for countless generations, always harried by centaur. With the Horde's help in the Third War, Cairne Bloodhoof drove the centaur back and built a refuge here where tauren of every tribe are welcome; for the first time in hundreds of years, his people had a land of their own."
+      ],
+      "sources": ["warcraft.wiki.gg: Thunder Bluff (introduction, Founding, World of Warcraft)"]
+    },
+    {
+      "id": 1638001,
+      "kind": "place",
+      "title": "Elder Rise",
+      "triggers": [{ "area": "Elder Rise" }, { "talk": 5769 }, { "talk": 4046 }],
+      "body": [
+        "The rise east of the central bluff, home of the Council of Elders and of the Cenarion Circle in Thunder Bluff, where tauren druids and priests train. Arch Druid Hamuul Runetotem, Cairne's childhood friend, lives here. So does the crone Magatha Grimtotem, in her hut between the bridges."
+      ],
+      "sources": ["warcraft.wiki.gg: Elder Rise", "warcraft.wiki.gg: Thunder Bluff (Notable characters)"]
+    },
+    {
+      "id": 1638002,
+      "kind": "place",
+      "title": "Hunter Rise",
+      "triggers": [{ "area": "Hunter Rise" }],
+      "body": [
+        "The rise south of the central bluff, home of the tauren's hunters and warriors, trappers, trackers and tanners, with the renowned Hunter's Hall. Thunder Bluff is a refuge for the many hunters who stalk the dangerous beasts of the Barrens."
+      ],
+      "sources": ["warcraft.wiki.gg: Hunter Rise", "warcraft.wiki.gg: Thunder Bluff (World of Warcraft)"]
+    },
+    {
+      "id": 1638003,
+      "kind": "place",
+      "title": "Spirit Rise",
+      "triggers": [{ "area": "Spirit Rise" }],
+      "body": [
+        "The rise north-west of the central bluff, the centre of the tauren's shamanic studies, where the Skychaser tribe holds great influence, and where the zeppelins tie up from Orgrimmar."
+      ],
+      "sources": ["warcraft.wiki.gg: Spirit Rise"]
+    },
+    {
+      "id": 1638004,
+      "kind": "place",
+      "title": "The Pools of Vision",
+      "triggers": [{ "area": "The Pools of Vision" }],
+      "body": [
+        "Steamy pools in the tunnels beneath Spirit Rise, where the Forsaken keep their quarters in the city, with mages and priests to train their own. Not long ago a powerful earth elemental haunted them; it was said Magatha Grimtotem had summoned it."
+      ],
+      "sources": ["warcraft.wiki.gg: Pools of Vision", "warcraft.wiki.gg: Thunder Bluff (The Comic)"]
+    },
+    {
+      "id": 1638030,
+      "kind": "person",
+      "title": "Cairne Bloodhoof",
+      "triggers": [{ "talk": 3057 }],
+      "body": [
+        "High Chieftain of the united tauren tribes and chief of the Bloodhoof, a peerless warrior and a wise leader, slowed somewhat by age. He grew up near the shores of the Great Sea in the Barrens with his friend Hamuul. His lifemate Tamaala bore him a son, Baine, and died before the Third War.",
+        "He allied with the Horde when it came to Kalimdor and is among its wisest and most honoured leaders. A few tribes argue about where the tauren should go, but all agree that Cairne is best suited to lead them there."
+      ],
+      "sources": ["warcraft.wiki.gg: Cairne Bloodhoof (introduction, Early history)", "warcraft.wiki.gg: Thunder Bluff (Founding)"]
+    },
+    {
+      "id": 1638050,
+      "kind": "history",
+      "title": "Rexxar and the Bloodhoof",
+      "triggers": [{ "areaId": 1638 }],
+      "body": [
+        "After Mount Hyjal, harpies from Stonetalon slaughtered the tauren's kodo herds and left the bodies to rot, and Rexxar was sent to drive them off. The centaur of Mulgore captured Cairne's son Baine, throwing the old chieftain into despair. With Bovan Windtotem's help, Rexxar rescued Baine, and brought the tauren back into the Horde."
+      ],
+      "sources": ["warcraft.wiki.gg: Thunder Bluff (Founding)"]
+    }
+  ]
+}

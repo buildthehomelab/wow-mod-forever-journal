@@ -1,0 +1,76 @@
+{
+  "zone": 3792,
+  "name": "Mana-Tombs",
+  "entries": [
+    {
+      "id": 3792000,
+      "kind": "zone",
+      "title": "The Mana-Tombs",
+      "triggers": [{ "areaId": 3792 }],
+      "body": [
+        "When the Shadow Council's summoning blew Auchindoun apart, it tore a rift in the Nether that drew the ethereals into Outland. In the northern wing of the ruins, a faction of them under Nexus-Prince Shaffar now drains the arcane energy of the tombs."
+      ],
+      "sources": ["warcraft.wiki.gg: Mana-Tombs (History)", "warcraft.wiki.gg: Auchindoun (Official description)"]
+    },
+    {
+      "id": 3792001,
+      "kind": "place",
+      "title": "The Halls of the Void",
+      "triggers": [{ "kill": 18341 }, { "kill": 18343 }],
+      "body": [
+        "The outer tombs, where the ethereals' servants stand guard: a voidlord armoured in plates, and a colossus of light-blue crystal."
+      ],
+      "sources": ["warcraft.wiki.gg: Pandemonius", "warcraft.wiki.gg: Tavarok"]
+    },
+    {
+      "id": 3792002,
+      "kind": "place",
+      "title": "The Nexus-Prince's Court",
+      "triggers": [{ "kill": 18344 }, { "kill": 22930 }],
+      "body": [
+        "The heart of the Mana-Tombs, where Shaffar holds court among his ethereal beacons, and keeps a stasis chamber of his own."
+      ],
+      "sources": ["warcraft.wiki.gg: Nexus-Prince Shaffar", "warcraft.wiki.gg: Yor"]
+    },
+    {
+      "id": 3792030,
+      "kind": "person",
+      "title": "Pandemonius",
+      "triggers": [{ "kill": 18341 }],
+      "body": [
+        "A gigantic voidlord clad in armour plates, in the ethereals' service."
+      ],
+      "sources": ["warcraft.wiki.gg: Pandemonius"]
+    },
+    {
+      "id": 3792031,
+      "kind": "person",
+      "title": "Tavarok",
+      "triggers": [{ "kill": 18343 }],
+      "body": [
+        "A colossus of light-blue crystal that guards the way through the tombs."
+      ],
+      "sources": ["warcraft.wiki.gg: Tavarok"]
+    },
+    {
+      "id": 3792032,
+      "kind": "person",
+      "title": "Nexus-Prince Shaffar",
+      "triggers": [{ "kill": 18344 }],
+      "body": [
+        "One of the ethereal nexus-princes who rule factions in Outland, rival to Nexus-Prince Haramad of the Consortium. He leads his ethereals in the Mana-Tombs against the Consortium."
+      ],
+      "sources": ["warcraft.wiki.gg: Nexus-Prince Shaffar"]
+    },
+    {
+      "id": 3792033,
+      "kind": "person",
+      "title": "Yor",
+      "triggers": [{ "kill": 22930 }],
+      "body": [
+        "A void hound Shaffar keeps sealed in his stasis chamber."
+      ],
+      "sources": ["warcraft.wiki.gg: Yor"]
+    }
+  ]
+}

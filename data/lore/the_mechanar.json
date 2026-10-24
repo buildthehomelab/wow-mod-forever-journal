@@ -1,0 +1,86 @@
+{
+  "zone": 3849,
+  "name": "The Mechanar",
+  "entries": [
+    {
+      "id": 3849000,
+      "kind": "zone",
+      "title": "The Mechanar",
+      "triggers": [{ "areaId": 3849 }],
+      "body": [
+        "Of Tempest Keep's satellites, the Mechanar is the one Kael'thas chose as a factory of power. Naaru technology makes the energy, and it is stored in mana cells piled into walls and heaps. Blood elves guard and handle the cells under Pathaleon the Calculator, Kael'thas' prime deviser, and alongside them work a great many demons of the Burning Legion."
+      ],
+      "sources": ["warcraft.wiki.gg: Mechanar (introduction, Background)"]
+    },
+    {
+      "id": 3849001,
+      "kind": "place",
+      "title": "The Gatewatchers' Wings",
+      "triggers": [{ "kill": 19218 }, { "kill": 19710 }, { "kill": 19219 }],
+      "body": [
+        "The lower level, where two mo'arg gatewatchers guard the lift to the upper level, and an arcane titan works on the making of the mana cells."
+      ],
+      "sources": ["warcraft.wiki.gg: Gatewatcher Gyro-Kill", "warcraft.wiki.gg: Gatewatcher Iron-Hand", "warcraft.wiki.gg: Mechano-Lord Capacitus"]
+    },
+    {
+      "id": 3849002,
+      "kind": "place",
+      "title": "The Calculator's Bridge",
+      "triggers": [{ "kill": 19221 }, { "kill": 19220 }],
+      "body": [
+        "The upper level, where the mana cells are made and stored, and Pathaleon directs it all."
+      ],
+      "sources": ["warcraft.wiki.gg: Mechanar (Geography)", "warcraft.wiki.gg: Nethermancer Sepethrea"]
+    },
+    {
+      "id": 3849030,
+      "kind": "person",
+      "title": "The Gatewatchers",
+      "triggers": [{ "kill": 19218 }, { "kill": 19710 }],
+      "body": [
+        "Gyro-Kill and Iron-Hand, two mo'arg engineers of the Legion who keep the gates to the Mechanar's upper level."
+      ],
+      "sources": ["warcraft.wiki.gg: Gatewatcher Gyro-Kill", "warcraft.wiki.gg: Gatewatcher Iron-Hand"]
+    },
+    {
+      "id": 3849031,
+      "kind": "person",
+      "title": "Mechano-Lord Capacitus",
+      "triggers": [{ "kill": 19219 }],
+      "body": [
+        "An arcane titan that seems to make the power of the Mechanar from the naaru's technology."
+      ],
+      "sources": ["warcraft.wiki.gg: Mechano-Lord Capacitus", "warcraft.wiki.gg: Mechanar (Background)"]
+    },
+    {
+      "id": 3849032,
+      "kind": "person",
+      "title": "Nethermancer Sepethrea",
+      "triggers": [{ "kill": 19221 }],
+      "body": [
+        "Pathaleon's apprentice, who may be in charge of making the mana cells."
+      ],
+      "sources": ["warcraft.wiki.gg: Nethermancer Sepethrea"]
+    },
+    {
+      "id": 3849033,
+      "kind": "person",
+      "title": "Pathaleon the Calculator",
+      "triggers": [{ "kill": 19220 }],
+      "body": [
+        "The mouthpiece of his demon-crazed master, Kael'thas, and the head of all the blood elves' schemes in Outland: the great red crystal at Fallen Sky Ridge that called up the colossi, the project at Firewing Point, and the manaforges, between which he is Kael's envoy. He followed Kael'thas to Outland and into Illidan's service, and then out of it, to the Legion."
+      ],
+      "sources": ["warcraft.wiki.gg: Pathaleon the Calculator"]
+    },
+    {
+      "id": 3849050,
+      "kind": "history",
+      "title": "The Mana Cells",
+      "triggers": [{ "kill": 19220 }],
+      "body": [
+        "The mana cells made in the Mechanar are smuggled away by ethereals, to Bash'ir Landing and beyond, to the Isle of Quel'Danas. Kael'thas means to use their power at the Sunwell, to summon Kil'jaeden."
+      ],
+      "sources": ["warcraft.wiki.gg: Mechanar (Background)"]
+    }
+  ]
+}

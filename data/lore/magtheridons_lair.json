@@ -1,0 +1,27 @@
+{
+  "zone": 3836,
+  "name": "Magtheridon's Lair",
+  "entries": [
+    {
+      "id": 3836000,
+      "kind": "zone",
+      "title": "Magtheridon's Lair",
+      "triggers": [{ "areaId": 3836 }],
+      "body": [
+        "The pit beneath Hellfire Citadel where the former Lord of Outland lies bound in chains both physical and magical, on the brink of death. Each day Illidan's servants drain his tainted blood and pool it for a purpose as malevolent as Magtheridon himself: the making of a new army of fel orcs. Hellfire channellers keep him bound."
+      ],
+      "sources": ["warcraft.wiki.gg: Magtheridon's Lair (Description)"]
+    },
+    {
+      "id": 3836030,
+      "kind": "person",
+      "title": "Magtheridon",
+      "triggers": [{ "kill": 17257 }],
+      "body": [
+        "A pit lord the Legion sent to seize the broken world in Kil'jaeden's name after Draenor shattered. He hunted down the remnants of the Horde, enslaved those who surrendered and butchered those who resisted, made the orcs drink his blood, and ruled all of Outland but a few pockets of resistance from the Black Temple.",
+        "Illidan took him by surprise. Many thought him slain, but when Illidan found that his blood could corrupt and transform the orcs, he had the beaten pit lord dragged here to be drained."
+      ],
+      "sources": ["warcraft.wiki.gg: Magtheridon (introduction)", "warcraft.wiki.gg: Magtheridon's Lair (Description)"]
+    }
+  ]
+}

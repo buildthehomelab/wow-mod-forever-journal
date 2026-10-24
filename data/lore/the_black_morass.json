@@ -1,0 +1,58 @@
+{
+  "zone": 2366,
+  "name": "The Black Morass",
+  "entries": [
+    {
+      "id": 2366000,
+      "kind": "zone",
+      "title": "The Black Morass",
+      "triggers": [{ "areaId": 2366 }, { "talk": 20201 }],
+      "body": [
+        "Before it was the Blasted Lands and the Swamp of Sorrows, this was the Black Morass: marshes and low hills, bayous and failed settlements, crossed by the Morass Road. The men of Stormwind kept to the road, which gave the orcs the advantage once they came, for they soon knew the swamp better than its natives.",
+        "In this moment, Medivh is opening the Dark Portal. The infinite dragonflight is tearing rifts in time to stop him. The Keepers of Time ask a strange thing: that the Portal open, the Horde come, and history happen as it did."
+      ],
+      "sources": ["warcraft.wiki.gg: Black Morass (History)", "warcraft.wiki.gg: Medivh"]
+    },
+    {
+      "id": 2366001,
+      "kind": "place",
+      "title": "The Dark Portal",
+      "triggers": [{ "area": "The Dark Portal" }, { "talk": 15608 }],
+      "body": [
+        "Here, under the Last Guardian's spell, the gate between Azeroth and Draenor is coming into being. Through it the Horde will march, and the orcs will build Stonard and Rockard and their first Temple of the Damned in the swamp."
+      ],
+      "sources": ["warcraft.wiki.gg: Black Morass (First War)"]
+    },
+    {
+      "id": 2366030,
+      "kind": "person",
+      "title": "Medivh",
+      "triggers": [{ "talk": 15608 }],
+      "body": [
+        "The last Guardian of Tirisfal, son of Aegwynn and Nielas Aran, possessed even before his birth by the spirit of Sargeras. Under that influence he reached out to the orc warlock Gul'dan to open the Dark Portal. His best friend Anduin Lothar and his apprentice Khadgar will kill him for it.",
+        "Long after, his mother will bring him back, freed of Sargeras, and he will return as a prophet to lead the mortal races to victory at Mount Hyjal."
+      ],
+      "sources": ["warcraft.wiki.gg: Medivh"]
+    },
+    {
+      "id": 2366031,
+      "kind": "person",
+      "title": "The Infinite Dragonflight",
+      "triggers": [{ "kill": 17879 }, { "kill": 17880 }],
+      "body": [
+        "Drakes and drakonid of a flight no one has ever seen before, pouring through rifts in time to kill Medivh before he can finish. The drake Temporus leads the attack."
+      ],
+      "sources": ["warcraft.wiki.gg: Chrono Lord Deja", "warcraft.wiki.gg: Temporus"]
+    },
+    {
+      "id": 2366032,
+      "kind": "person",
+      "title": "Aeonus",
+      "triggers": [{ "kill": 17881 }],
+      "body": [
+        "A dragon of the infinite flight who came through the last rift with a spell to stop time itself, the final attempt to prevent the opening of the Dark Portal."
+      ],
+      "sources": ["warcraft.wiki.gg: Aeonus"]
+    }
+  ]
+}

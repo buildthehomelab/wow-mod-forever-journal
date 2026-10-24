@@ -1,0 +1,79 @@
+{
+  "zone": 493,
+  "name": "Moonglade",
+  "entries": [
+    {
+      "id": 493000,
+      "kind": "zone",
+      "title": "Moonglade",
+      "triggers": [{ "areaId": 493 }],
+      "body": [
+        "A hidden vale in northern Kalimdor, walled by tall mountains, the haven of the druids and the home of the Cenarion Circle. Its ancient forest, untouched by corruption, is dotted with mounds beneath which druids sleep, and at its centre lies the sacred Lake Elune'ara. Its reflection in the Emerald Dream is the holiest place in all that realm.",
+        "Tauren and night elves live here in peace, united by their reverence for nature, and the Moonglade Wardens tolerate no violence. The only road in runs through the mountains by way of Timbermaw Hold."
+      ],
+      "sources": ["warcraft.wiki.gg: Moonglade (introduction, Geography)"]
+    },
+    {
+      "id": 493001,
+      "kind": "place",
+      "title": "Nighthaven",
+      "triggers": [{ "area": "Nighthaven" }, { "talk": 11802 }, { "talk": 11801 }],
+      "body": [
+        "The village of the Cenarion Circle on the shore of Lake Elune'ara, built in night elf style with stone walls and a pair of moonwells. It is remote and usually closed to outsiders, a place where young druids of every race learn from their masters. Once a year, for the Lunar Festival, it opens its gates to all."
+      ],
+      "sources": ["warcraft.wiki.gg: Nighthaven"]
+    },
+    {
+      "id": 493002,
+      "kind": "place",
+      "title": "Lake Elune'ara",
+      "triggers": [{ "area": "Lake Elune'ara" }, { "kill": 15467 }],
+      "body": [
+        "A lake of crystal water in the heart of the glade, named for Elune herself. In its depths lies the mad demigod Omen, defeated many centuries ago. Every year around the Lunar Festival he wakes, and every year he is put back to rest."
+      ],
+      "sources": ["warcraft.wiki.gg: Lake Elune'ara", "warcraft.wiki.gg: Moonglade (introduction)"]
+    },
+    {
+      "id": 493003,
+      "kind": "place",
+      "title": "The Shrine of Remulos",
+      "triggers": [{ "area": "Shrine of Remulos" }, { "talk": 11832 }],
+      "body": [
+        "The shrine of Keeper Remulos, son of Cenarius and guardian of the Moonglade. Here he works to cleanse the corruption that has taken the four green dragons who guard the portals of the Dream."
+      ],
+      "sources": ["warcraft.wiki.gg: Moonglade (Notable characters)"]
+    },
+    {
+      "id": 493004,
+      "kind": "place",
+      "title": "The Stormrage Barrow Dens",
+      "triggers": [{ "area": "Stormrage Barrow Dens" }, { "talk": 22834 }],
+      "body": [
+        "The sacred barrow dens where many night elf druids sleep in the Emerald Dream, named for Malfurion Stormrage, who slept deep within them for ages. In the Third War, Tichondrius's Scourge nearly destroyed the dens trying to reach his body, and Tyrande woke him with the Horn of Cenarius. Lately, strange creatures from the Emerald Nightmare have found a way into one wing."
+      ],
+      "sources": ["warcraft.wiki.gg: Stormrage Barrow Dens", "warcraft.wiki.gg: Moonglade (Third War, World of Warcraft)"]
+    },
+    {
+      "id": 493030,
+      "kind": "person",
+      "title": "Keeper Remulos",
+      "triggers": [{ "talk": 11832 }],
+      "body": [
+        "An immortal keeper of the grove, son of Cenarius, who has ruled the Moonglade since it was opened to druids of all races, and led the Cenarion Circle with Fandral Staghelm and Hamuul Runetotem while Cenarius and Malfurion were gone.",
+        "His brother was Zaetar. Remulos was strong and beautiful, Zaetar cunning and slight, and always jealous of him. When Zaetar fell in love with Princess Theradras, Remulos knew the union was cursed and tried to stop him. Zaetar would not listen."
+      ],
+      "sources": ["warcraft.wiki.gg: Remulos (introduction, The sons of Cenarius)", "warcraft.wiki.gg: Moonglade (World of Warcraft)"]
+    },
+    {
+      "id": 493050,
+      "kind": "history",
+      "title": "The Cenarion Circle",
+      "triggers": [{ "areaId": 493 }, { "area": "Nighthaven" }],
+      "body": [
+        "In the War of the Ancients, Cenarius dwelt in the Moonglade. When the night elves could not stand alone against the Legion, Malfurion brought Tyrande and his brother Illidan here to beg the demigod for aid. After the Sundering the keepers and dryads came out of the glade into the world, and night elf society turned to nature.",
+        "In the War of the Satyr, Malfurion called druids here to found a new order to fight the Druids of the Scythe: the Cenarion Circle."
+      ],
+      "sources": ["warcraft.wiki.gg: Moonglade (Ancient times)"]
+    }
+  ]
+}

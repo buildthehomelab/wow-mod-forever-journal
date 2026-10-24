@@ -1,0 +1,157 @@
+{
+  "zone": 209,
+  "name": "Shadowfang Keep",
+  "entries": [
+    {
+      "id": 209000,
+      "kind": "zone",
+      "title": "Shadowfang Keep",
+      "triggers": [{ "areaId": 209 }],
+      "body": [
+        "Once Silverlaine Keep, home of the lords of Pyrewood, who answered to the Crowleys of Gilneas. Baron Silverlaine ruled it, and a paladin of the Silver Hand, Commander Springvale, led his soldiers.",
+        "When Arugal's worgen turned on Gilneas and ran wild through Silverpine, they overwhelmed the keep and slaughtered the Baron and his household. Arugal, broken and mad with guilt, took the worgen as his children and retreated here. He named it Shadowfang Keep, and from it he spreads the curse through the forest, while the ghosts of the keep's dead walk its halls."
+      ],
+      "sources": ["warcraft.wiki.gg: Shadowfang Keep (History, World of Warcraft)"]
+    },
+    {
+      "id": 209001,
+      "kind": "place",
+      "title": "The Courtyard and the Cells",
+      "triggers": [{ "areaId": 209 }, { "kill": 3914 }, { "talk": 3850 }],
+      "body": [
+        "The keep's gate opens on a courtyard, and beside it the cells where Arugal keeps those caught breaking in. A Forsaken deathstalker, Adamant, and a sorcerer of the Kirin Tor, Ashcrombe, sent by Dalaran to check on Arugal's progress against the undead and unaware that he had gone mad, are locked in neighbouring cells, guarded by the vicious worgen Rethilgore."
+      ],
+      "sources": ["warcraft.wiki.gg: Rethilgore", "warcraft.wiki.gg: Sorcerer Ashcrombe", "warcraft.wiki.gg: Arugal (World of Warcraft)"]
+    },
+    {
+      "id": 209002,
+      "kind": "place",
+      "title": "The Kitchen and the Dining Hall",
+      "triggers": [{ "kill": 3886 }, { "kill": 3887 }],
+      "body": [
+        "In the old kitchen, the worgen Razorclaw slaughtered many of the humans Arugal brought him. Beyond it, in the dining hall where Baron Silverlaine once sat with his family, his ghost still holds court."
+      ],
+      "sources": ["warcraft.wiki.gg: Razorclaw the Butcher", "warcraft.wiki.gg: Baron Silverlaine"]
+    },
+    {
+      "id": 209003,
+      "kind": "place",
+      "title": "The Ramparts and the Chapel",
+      "triggers": [{ "kill": 4278 }, { "kill": 4279 }, { "kill": 3872 }],
+      "body": [
+        "The walls of the keep, where the ghost of a captain killed in Arugal's raid still patrols, and its chapel, haunted by Commander Springvale. Hanging precariously off the side of the keep is a rickety wooden hut, home of the blind worgen Odo and his bats."
+      ],
+      "sources": ["warcraft.wiki.gg: Commander Springvale", "warcraft.wiki.gg: Odo the Blindwatcher", "warcraft.wiki.gg: Deathsworn Captain"]
+    },
+    {
+      "id": 209004,
+      "kind": "place",
+      "title": "Arugal's Chambers",
+      "triggers": [{ "kill": 4274 }, { "kill": 3927 }, { "kill": 4275 }],
+      "body": [
+        "The upper keep and the archmage's study, guarded by his monstrous worg Fenrus and by Wolf Master Nandos and his pack. Above them all, at the top of the tower, Arugal waits among his worgen children."
+      ],
+      "sources": ["warcraft.wiki.gg: Fenrus the Devourer", "warcraft.wiki.gg: Wolf Master Nandos"]
+    },
+    {
+      "id": 209030,
+      "kind": "person",
+      "title": "Rethilgore",
+      "triggers": [{ "kill": 3914 }],
+      "body": [
+        "One of the most vicious of Arugal's worgen, the keeper of his cells, set to guard those caught breaking into the keep."
+      ],
+      "sources": ["warcraft.wiki.gg: Rethilgore"]
+    },
+    {
+      "id": 209031,
+      "kind": "person",
+      "title": "Razorclaw the Butcher",
+      "triggers": [{ "kill": 3886 }],
+      "body": [
+        "A worgen who made his lair in the keep's old kitchen, and earned his name by slaughtering the many humans his master brought to him."
+      ],
+      "sources": ["warcraft.wiki.gg: Razorclaw the Butcher"]
+    },
+    {
+      "id": 209032,
+      "kind": "person",
+      "title": "Baron Silverlaine",
+      "triggers": [{ "kill": 3887 }],
+      "body": [
+        "The lord of the keep, killed with his family when Arugal's worgen overran it. His ghost still haunts the hall, and it is said he will haunt it as long as the keep stands."
+      ],
+      "sources": ["warcraft.wiki.gg: Baron Silverlaine"]
+    },
+    {
+      "id": 209033,
+      "kind": "person",
+      "title": "Commander Springvale",
+      "triggers": [{ "kill": 4278 }],
+      "body": [
+        "A paladin of the Silver Hand, commander of Baron Silverlaine's soldiers, killed with everyone else in the keep. His ghost haunts it, striking with unholy power to avenge his lord."
+      ],
+      "sources": ["warcraft.wiki.gg: Commander Springvale"]
+    },
+    {
+      "id": 209034,
+      "kind": "person",
+      "title": "Odo the Blindwatcher",
+      "triggers": [{ "kill": 4279 }],
+      "body": [
+        "A worgen who lives in the wooden hut hanging off the keep with two pet bats. He lost his sight long ago, and like his bats, learned to hunt by his other senses."
+      ],
+      "sources": ["warcraft.wiki.gg: Odo the Blindwatcher"]
+    },
+    {
+      "id": 209035,
+      "kind": "person",
+      "title": "The Deathsworn Captain",
+      "triggers": [{ "kill": 3872 }],
+      "body": [
+        "A captain of the keep killed in Arugal's raid, whose ghost still patrols the walls he died defending."
+      ],
+      "sources": ["warcraft.wiki.gg: Deathsworn Captain"]
+    },
+    {
+      "id": 209036,
+      "kind": "person",
+      "title": "Fenrus the Devourer",
+      "triggers": [{ "kill": 4274 }],
+      "body": [
+        "Arugal's pet, a worg of unbelievable size, perhaps grown so by the archmage's dark magic. When he scents an intruder, his roar can be heard throughout the keep."
+      ],
+      "sources": ["warcraft.wiki.gg: Fenrus the Devourer"]
+    },
+    {
+      "id": 209037,
+      "kind": "person",
+      "title": "Wolf Master Nandos",
+      "triggers": [{ "kill": 3927 }],
+      "body": [
+        "The worgen master of the lesser worgs, with a pack of his own, and the last of Arugal's henchmen to bar the way to his master."
+      ],
+      "sources": ["warcraft.wiki.gg: Wolf Master Nandos"]
+    },
+    {
+      "id": 209038,
+      "kind": "person",
+      "title": "Archmage Arugal",
+      "triggers": [{ "kill": 4275 }],
+      "body": [
+        "A royal archmage of Gilneas and a member of the Kirin Tor, whom his peers thought a charlatan who propped up weak magic with enchanted trinkets. Using the research of the mage Ur, he called the worgen into the world to save Gilneas from the Scourge, and they turned on everyone. Driven mad with guilt, he now serves the worgen leader Alpha Prime, and is protected by his worgen and haunted by the ghost of the baron whose keep he took."
+      ],
+      "sources": ["warcraft.wiki.gg: Arugal (The Third War)", "warcraft.wiki.gg: Shadowfang Keep (World of Warcraft)"]
+    },
+    {
+      "id": 209050,
+      "kind": "history",
+      "title": "The Pyrewood Council",
+      "triggers": [{ "areaId": 209 }],
+      "body": [
+        "In time Arugal's curse took the whole of Pyrewood Village below the keep: its people are human by day and worgen by night, ruled by a council who all serve him. The Forsaken grew suspicious, especially after one of their apothecaries, Berard, vanished. When they learned Arugal had turned him into a worgen, they assassinated the council."
+      ],
+      "sources": ["warcraft.wiki.gg: Shadowfang Keep (World of Warcraft)"]
+    }
+  ]
+}

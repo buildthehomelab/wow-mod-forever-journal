@@ -1,0 +1,157 @@
+{
+  "zone": 3959,
+  "name": "Black Temple",
+  "entries": [
+    {
+      "id": 3959000,
+      "kind": "zone",
+      "title": "The Black Temple",
+      "triggers": [{ "areaId": 3959 }],
+      "body": [
+        "The fortress of Illidan Stormrage, Lord of Outland. When he fled here after the Third War, he cast out its ruler, Magtheridon, and took his throne. After Arthas beat him at Icecrown, he came back here consumed by the defeat, replaying it in his mind again and again with himself as the victor. Since the Portal reopened, he has tightened his grip on Outland from within, but lives in fear of being found by his enemies: Arthas, or the lords of the Legion."
+      ],
+      "sources": ["warcraft.wiki.gg: Black Temple (The Burning Crusade)"]
+    },
+    {
+      "id": 3959001,
+      "kind": "place",
+      "title": "Karabor Sewers and the Sanctuary",
+      "triggers": [{ "kill": 22887 }, { "kill": 22898 }],
+      "body": [
+        "The way in, through the breached southern battlements: past the naga lord set to guard the temple, and the infernal gatekeeper beyond."
+      ],
+      "sources": ["warcraft.wiki.gg: Black Temple", "warcraft.wiki.gg: Supremus"]
+    },
+    {
+      "id": 3959002,
+      "kind": "place",
+      "title": "The Halls of Anguish",
+      "triggers": [{ "kill": 22841 }, { "kill": 22871 }, { "kill": 22948 }, { "kill": 23418 }, { "kill": 23419 }, { "kill": 23420 }],
+      "body": [
+        "The temple's inner halls: the refectory where Akama's shade is held, Gorefiend's chamber, the fel orcs' blood pits, and a reliquary where the souls of the dead are drawn in."
+      ],
+      "sources": ["warcraft.wiki.gg: Black Temple", "warcraft.wiki.gg: Reliquary of Souls"]
+    },
+    {
+      "id": 3959003,
+      "kind": "place",
+      "title": "The Den of Mortal Delights",
+      "triggers": [{ "kill": 22947 }, { "kill": 22949 }, { "kill": 22950 }, { "kill": 22951 }, { "kill": 22952 }],
+      "body": [
+        "The temple's upper halls, given over to Illidan's concubines and their mother, and the chamber of his blood elf council."
+      ],
+      "sources": ["warcraft.wiki.gg: Mother Shahraz", "warcraft.wiki.gg: Illidari Council"]
+    },
+    {
+      "id": 3959004,
+      "kind": "place",
+      "title": "The Temple Summit",
+      "triggers": [{ "kill": 22917 }],
+      "body": [
+        "The roof of the Black Temple, where the Betrayer waits for all who would challenge his rule."
+      ],
+      "sources": ["warcraft.wiki.gg: Black Temple (The Burning Crusade)"]
+    },
+    {
+      "id": 3959030,
+      "kind": "person",
+      "title": "High Warlord Naj'entus",
+      "triggers": [{ "kill": 22887 }],
+      "body": [
+        "Few naga matched his strength. A champion of Lady Vashj, entrusted by her with the temple's protection, he wraps himself in deadly cold, and his spines inflict horrific wounds."
+      ],
+      "sources": ["warcraft.wiki.gg: High Warlord Naj'entus"]
+    },
+    {
+      "id": 3959031,
+      "kind": "person",
+      "title": "Supremus",
+      "triggers": [{ "kill": 22898 }],
+      "body": [
+        "A gatekeeper of the temple, a giant of fel flame and molten stone."
+      ],
+      "sources": ["warcraft.wiki.gg: Supremus"]
+    },
+    {
+      "id": 3959032,
+      "kind": "person",
+      "title": "The Shade of Akama",
+      "triggers": [{ "kill": 22841 }],
+      "body": [
+        "The dark part of Akama's soul: his egoism, his vanity, his lust for power and glory, all that his outward piety hid. Akama knew it was in many ways his true face. Illidan holds it as his leash. At his whim the shade could be loosed to devour Akama from within, and through Akama's bond with his tribe, bind the Ashtongue to Illidan too."
+      ],
+      "sources": ["warcraft.wiki.gg: Shade of Akama"]
+    },
+    {
+      "id": 3959033,
+      "kind": "person",
+      "title": "Teron Gorefiend",
+      "triggers": [{ "kill": 22871 }],
+      "body": [
+        "Born Teron'gor, one of the first warlocks Gul'dan taught and a founder of the Shadow Council. In death he became the first of the Horde's death knights, and led them in the Second War and back to Draenor, where he urged Ner'zhul to invade other worlds. Turalyon slew him at the Black Temple. Years later he tricked mortals into raising him again, and he came back here to serve Illidan. He has served many masters; like all death knights, he is loyal only to himself."
+      ],
+      "sources": ["warcraft.wiki.gg: Teron Gorefiend"]
+    },
+    {
+      "id": 3959034,
+      "kind": "person",
+      "title": "Gurtogg Bloodboil",
+      "triggers": [{ "kill": 22948 }],
+      "body": [
+        "A fel orc champion of the temple's blood pits."
+      ],
+      "sources": ["warcraft.wiki.gg: Gurtogg Bloodboil"]
+    },
+    {
+      "id": 3959035,
+      "kind": "person",
+      "title": "The Reliquary of Souls",
+      "triggers": [{ "kill": 23418 }, { "kill": 23419 }, { "kill": 23420 }],
+      "body": [
+        "A vessel of the lost with three faces: the essences of Suffering, Desire and Anger, drawn out of the souls it has swallowed."
+      ],
+      "sources": ["warcraft.wiki.gg: Reliquary of Souls"]
+    },
+    {
+      "id": 3959036,
+      "kind": "person",
+      "title": "Mother Shahraz",
+      "triggers": [{ "kill": 22947 }],
+      "body": [
+        "A shivarra who rules the Den of Mortal Delights, by all signs the leader of Illidan's concubines."
+      ],
+      "sources": ["warcraft.wiki.gg: Mother Shahraz"]
+    },
+    {
+      "id": 3959037,
+      "kind": "person",
+      "title": "The Illidari Council",
+      "triggers": [{ "kill": 22949 }, { "kill": 22950 }, { "kill": 22951 }, { "kill": 22952 }],
+      "body": [
+        "Four of the most gifted blood elves Kael'thas brought to Outland, left to advise Illidan: Gathios the Shatterer in war, Veras Darkshadow in espionage, Lady Malande in keeping Illidan's other servants in line, and High Nethermancer Zerevor in the arcane. They scheme against each other for his favour, and stayed loyal to him even after their own prince went over to the Legion."
+      ],
+      "sources": ["warcraft.wiki.gg: Illidari Council (Background)"]
+    },
+    {
+      "id": 3959038,
+      "kind": "person",
+      "title": "Illidan Stormrage",
+      "triggers": [{ "kill": 22917 }],
+      "body": [
+        "The Betrayer, first of the demon hunters, twin of Malfurion. In the War of the Ancients he went over to the Legion, secretly to repel it; but when he made a second Well of Eternity, his people imprisoned him beneath Mount Hyjal for ten thousand years, under the watch of Maiev Shadowsong.",
+        "Tyrande freed him in the Third War. He took the power of the Skull of Gul'dan, became a demon to slay Tichondrius, and was banished for it. He conquered Outland, failed to destroy the Lich King, and fell back here. Here at last Akama, Maiev and their allies brought him down. Maiev's long hunt ended at his side."
+      ],
+      "sources": ["warcraft.wiki.gg: Illidan Stormrage (introduction)", "warcraft.wiki.gg: Akama"]
+    },
+    {
+      "id": 3959039,
+      "kind": "person",
+      "title": "Akama",
+      "triggers": [{ "kill": 22917 }, { "talk": 23089 }],
+      "body": [
+        "Once leader of the vindicators on Velen's Council of Exarchs. The red pox made him one of the Broken. He allied with Illidan to overthrow Magtheridon, for revenge on the orcs, only to find the new Lord of Outland no better. Outwardly he served on as leader of the Ashtongue Deathsworn; in secret he worked to end Illidan's reign. He hopes that the Light will fill these halls once more."
+      ],
+      "sources": ["warcraft.wiki.gg: Akama"]
+    }
+  ]
+}

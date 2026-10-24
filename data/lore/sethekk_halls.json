@@ -1,0 +1,66 @@
+{
+  "zone": 3791,
+  "name": "Sethekk Halls",
+  "entries": [
+    {
+      "id": 3791000,
+      "kind": "zone",
+      "title": "The Sethekk Halls",
+      "triggers": [{ "areaId": 3791 }],
+      "body": [
+        "The Sethekk are renegade arakkoa who broke away from Skettis at the urging of Talon King Ikiss and Darkweaver Syth, believing themselves the true servants of the mysterious master of all arakkoa. When Auchindoun exploded, they took it as a sign of their master's return and led their followers here. They are still searching the ruins for him."
+      ],
+      "sources": ["warcraft.wiki.gg: Sethekk Halls (History)"]
+    },
+    {
+      "id": 3791001,
+      "kind": "place",
+      "title": "The Weaver's Halls",
+      "triggers": [{ "kill": 18472 }, { "kill": 23035 }],
+      "body": [
+        "The halls where Darkweaver Syth works his dark magic, and where the cult has dragged its raven god out of the shadows."
+      ],
+      "sources": ["warcraft.wiki.gg: Darkweaver Syth", "warcraft.wiki.gg: Anzu"]
+    },
+    {
+      "id": 3791002,
+      "kind": "place",
+      "title": "The Talon King's Chamber",
+      "triggers": [{ "kill": 18473 }],
+      "body": [
+        "The deepest hall of the Sethekk, where Ikiss waits for the arakkoa to bow before him."
+      ],
+      "sources": ["warcraft.wiki.gg: Talon King Ikiss"]
+    },
+    {
+      "id": 3791030,
+      "kind": "person",
+      "title": "Darkweaver Syth",
+      "triggers": [{ "kill": 18472 }],
+      "body": [
+        "With Ikiss, one of the two leaders of the Sethekk who led the cult out of Skettis to the ruins of Auchindoun."
+      ],
+      "sources": ["warcraft.wiki.gg: Sethekk Halls (History)", "warcraft.wiki.gg: Talon King Ikiss"]
+    },
+    {
+      "id": 3791031,
+      "kind": "person",
+      "title": "Anzu",
+      "triggers": [{ "kill": 23035 }],
+      "body": [
+        "A raven god of the arakkoa and father of the dread ravens, a being of great intellect who loved the shade and the quiet of twilight. Cursed by Sethe, the wind serpent god, he can no longer fly. The Sethekk have broken his will and brought him out of the shadow realm to do their bidding."
+      ],
+      "sources": ["warcraft.wiki.gg: Anzu"]
+    },
+    {
+      "id": 3791032,
+      "kind": "person",
+      "title": "Talon King Ikiss",
+      "triggers": [{ "kill": 18473 }],
+      "body": [
+        "A charismatic leader at first, who led the Sethekk exodus from Skettis to Auchindoun. Since then he has sunk into madness, and now openly proclaims himself Terokk reborn, expecting all arakkoa to bow to him as their ruler."
+      ],
+      "sources": ["warcraft.wiki.gg: Talon King Ikiss"]
+    }
+  ]
+}

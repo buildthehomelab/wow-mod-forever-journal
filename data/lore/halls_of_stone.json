@@ -1,0 +1,87 @@
+{
+  "zone": 4264,
+  "name": "Halls of Stone",
+  "entries": [
+    {
+      "id": 4264000,
+      "kind": "zone",
+      "title": "The Halls of Stone",
+      "triggers": [{ "areaId": 4264 }],
+      "body": [
+        "A wing of Ulduar, home to the Tribunal of Ages and the Forge of Wills. The keeper Loken has turned traitor and holds the titan city. Why he did it, and what became of the other keepers, is a mystery; there are whispers of a great evil behind the city's fall. The truth, if it can be found anywhere, lies in these halls."
+      ],
+      "sources": ["warcraft.wiki.gg: Halls of Stone (introduction, Description)"]
+    },
+    {
+      "id": 4264001,
+      "kind": "place",
+      "title": "The Halls of the Watchers",
+      "triggers": [{ "kill": 27977 }, { "kill": 27975 }],
+      "body": [
+        "Great halls guarded by Loken's servants: a crystal colossus in a cavern, and a titanic watcher weeping over her new orders."
+      ],
+      "sources": ["warcraft.wiki.gg: Krystallus", "warcraft.wiki.gg: Maiden of Grief"]
+    },
+    {
+      "id": 4264002,
+      "kind": "place",
+      "title": "The Tribunal of Ages",
+      "triggers": [{ "complete": 13207 }],
+      "body": [
+        "A titan archive made by Loken to replace the Discs of Norgannon, which Tyr, Archaedas and Ironaya stole from Ulduar long ago. Loken shaped its histories to hide his crimes, and the archive is flawed, its record warped even beyond what he intended. Still, it holds more truth than he wanted."
+      ],
+      "sources": ["warcraft.wiki.gg: Tribunal of Ages"]
+    },
+    {
+      "id": 4264003,
+      "kind": "place",
+      "title": "The Forge of Wills",
+      "triggers": [{ "kill": 27978 }],
+      "body": [
+        "The titans' great forge, where the creations of Ulduar were made. Loken uses it now to make an army of iron for his master."
+      ],
+      "sources": ["warcraft.wiki.gg: Sjonnir The Ironshaper", "warcraft.wiki.gg: Halls of Stone"]
+    },
+    {
+      "id": 4264030,
+      "kind": "person",
+      "title": "Krystallus",
+      "triggers": [{ "kill": 27977 }],
+      "body": [
+        "An enormous colossus of crystal and stone at the end of a cavern."
+      ],
+      "sources": ["warcraft.wiki.gg: Krystallus"]
+    },
+    {
+      "id": 4264031,
+      "kind": "person",
+      "title": "The Maiden of Grief",
+      "triggers": [{ "kill": 27975 }],
+      "body": [
+        "A titanic watcher wracked with agony at the orders Loken has given her. No being has ever felt such sincere sorrow."
+      ],
+      "sources": ["warcraft.wiki.gg: Maiden of Grief"]
+    },
+    {
+      "id": 4264032,
+      "kind": "person",
+      "title": "Sjonnir the Ironshaper",
+      "triggers": [{ "kill": 27978 }],
+      "body": [
+        "An iron vrykul, one of Loken's most trusted servants and master of the Forge of Wills, eager to make more iron servants for his master. He holds the earthen in contempt and thinks all beings of flesh weak. Five hundred years ago a dwarf, Mina Stormsmith, came to ask the iron dwarves to remake her dead brother; Sjonnir ordered her killed for being flesh. She fought wave after wave of them until her axe broke, and fought her way out."
+      ],
+      "sources": ["warcraft.wiki.gg: Sjonnir The Ironshaper"]
+    },
+    {
+      "id": 4264050,
+      "kind": "history",
+      "title": "The Curse of Flesh",
+      "triggers": [{ "complete": 13207 }],
+      "body": [
+        "The keepers made servants of stone and metal to shape the world: the earthen, the mechagnomes, the iron vrykul, and others. In time a curse took hold of them, turning stone and iron into mortal flesh. From the earthen came the dwarves, from the mechagnomes the gnomes, and from the vrykul, it seems, the first humans.",
+        "The archive also shows Loken's hand in what befell the keepers, and behind him something older still, buried beneath Ulduar."
+      ],
+      "sources": ["warcraft.wiki.gg: Tribunal of Ages", "warcraft.wiki.gg: Loken"]
+    }
+  ]
+}

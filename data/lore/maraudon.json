@@ -1,0 +1,158 @@
+{
+  "zone": 2100,
+  "name": "Maraudon",
+  "entries": [
+    {
+      "id": 2100000,
+      "kind": "zone",
+      "title": "Maraudon",
+      "triggers": [{ "areaId": 2100 }],
+      "body": [
+        "A vast cavern beneath what was once the meadow of Mashan'she, the holiest ground of the centaur, guarded by the Maraudine clan. Only their most devout priests and the spirits of the dead may walk its halls. The ghosts of the first khans haunt it, with the elemental servants of Princess Theradras, the mother of the centaur, who sleeps and rules in its depths.",
+        "Its crystals are prized as powerful reagents for arcane magic. Before Theradras came, the mountain giant Landslide tended crystal gardens here."
+      ],
+      "sources": ["warcraft.wiki.gg: Maraudon (History)"]
+    },
+    {
+      "id": 2100001,
+      "kind": "place",
+      "title": "Zaetar's Choice",
+      "triggers": [{ "areaId": 2100 }],
+      "body": [
+        "Past the entrance tunnel, the way splits. North runs to the Wicked Grotto, east through Earth Song Gate to Earth Song Falls, and south to the Foulspore Pools and their cavern."
+      ],
+      "sources": ["warcraft.wiki.gg: Maraudon (Wings)"]
+    },
+    {
+      "id": 2100002,
+      "kind": "place",
+      "title": "The Wicked Grotto",
+      "triggers": [{ "kill": 13601 }, { "kill": 12236 }, { "kill": 12225 }],
+      "body": [
+        "The purple-crystalled northern caves, where the satyr Lord Vyletongue and his Putridus satyrs have made a home, a goblin tinkerer digs, and the cursed keeper Celebras wanders."
+      ],
+      "sources": ["warcraft.wiki.gg: Maraudon (Wings)"]
+    },
+    {
+      "id": 2100003,
+      "kind": "place",
+      "title": "Foulspore Cavern",
+      "triggers": [{ "kill": 13282 }, { "kill": 12258 }, { "kill": 12237 }],
+      "body": [
+        "The orange-crystalled southern caves, choked with poisoned pools and twisted growth, the part of Maraudon the satyrs' creatures have fouled most completely."
+      ],
+      "sources": ["warcraft.wiki.gg: Maraudon (Wings)", "warcraft.wiki.gg: Lord Vyletongue"]
+    },
+    {
+      "id": 2100004,
+      "kind": "place",
+      "title": "Earth Song Falls",
+      "triggers": [{ "kill": 12203 }, { "kill": 13596 }, { "kill": 12201 }],
+      "body": [
+        "The great falls in the heart of Maraudon, and below them the Crystal Caverns of Terramok, Theradras's secret sanctuary. Here she entombed Zaetar's body, on an island in the waters where a great white crocolisk of legend has lurked for millennia."
+      ],
+      "sources": ["warcraft.wiki.gg: Maraudon (History)", "warcraft.wiki.gg: Rotgrip"]
+    },
+    {
+      "id": 2100030,
+      "kind": "person",
+      "title": "Lord Vyletongue",
+      "triggers": [{ "kill": 12236 }],
+      "body": [
+        "Head of the Putridus satyrs, agents of the Burning Legion who came to Maraudon when they heard of its corruption. He won Theradras's trust by making creatures for her, and has stunted and tainted every part of the caverns not yet withered by her."
+      ],
+      "sources": ["warcraft.wiki.gg: Maraudon (History)", "warcraft.wiki.gg: Lord Vyletongue"]
+    },
+    {
+      "id": 2100031,
+      "kind": "person",
+      "title": "Noxxion",
+      "triggers": [{ "kill": 13282 }],
+      "body": [
+        "A water elemental of filth made by Lord Vyletongue, the living symbol of Maraudon's corruption."
+      ],
+      "sources": ["warcraft.wiki.gg: Noxxion"]
+    },
+    {
+      "id": 2100032,
+      "kind": "person",
+      "title": "Razorlash",
+      "triggers": [{ "kill": 12258 }],
+      "body": [
+        "A great lasher, another of Vyletongue's creations, which works with Noxxion to taint the caverns."
+      ],
+      "sources": ["warcraft.wiki.gg: Maraudon (History)"]
+    },
+    {
+      "id": 2100033,
+      "kind": "person",
+      "title": "Celebras the Cursed",
+      "triggers": [{ "kill": 12225 }],
+      "body": [
+        "A keeper of the grove, son of Remulos and nephew of Zaetar. He came with his dryad sisters to free his uncle's spirit, and the corruption of the caverns overcame them. He wanders blindly now, cursed. If he is defeated, he may be redeemed."
+      ],
+      "sources": ["warcraft.wiki.gg: Celebras the Cursed"]
+    },
+    {
+      "id": 2100034,
+      "kind": "person",
+      "title": "Tinkerer Gizlock",
+      "triggers": [{ "kill": 13601 }],
+      "body": [
+        "A goblin who has come into the Wicked Grotto after the riches of its crystals."
+      ],
+      "sources": ["warcraft.wiki.gg: Tinkerer Gizlock"]
+    },
+    {
+      "id": 2100035,
+      "kind": "person",
+      "title": "Meshlok the Harvester",
+      "triggers": [{ "kill": 12237 }],
+      "body": [
+        "A great bog beast, seldom seen, near the Poison Falls where the purple and orange caves meet."
+      ],
+      "sources": ["warcraft.wiki.gg: Meshlok the Harvester"]
+    },
+    {
+      "id": 2100036,
+      "kind": "person",
+      "title": "Landslide",
+      "triggers": [{ "kill": 12203 }],
+      "body": [
+        "A mountain giant who cultivated crystal gardens in these caverns before Theradras came, and still guards them."
+      ],
+      "sources": ["warcraft.wiki.gg: Maraudon (History)"]
+    },
+    {
+      "id": 2100037,
+      "kind": "person",
+      "title": "Rotgrip",
+      "triggers": [{ "kill": 13596 }],
+      "body": [
+        "A great white crocolisk of myth, said to have lived in the waters beneath Zaetar's Grave for millennia."
+      ],
+      "sources": ["warcraft.wiki.gg: Rotgrip"]
+    },
+    {
+      "id": 2100038,
+      "kind": "person",
+      "title": "Princess Theradras",
+      "triggers": [{ "kill": 12201 }],
+      "body": [
+        "An enormous earth elemental, only daughter of Therazane the Stonemother. When the titans' servants locked the elementals away, she escaped, hid beneath the earth and slept for ages, until tauren shamans mistook her whispers for the Earth Mother's and woke her. Weak from her long sleep, she drank the life of the land around her, and Mashan'she became Desolace.",
+        "She bore the centaur to Zaetar, and loves them still. Aligned with the Old Gods, she is a creature of evil and chaos in the eyes of Zaetar's kin."
+      ],
+      "sources": ["warcraft.wiki.gg: Princess Theradras (introduction, Birth of the centaur)"]
+    },
+    {
+      "id": 2100039,
+      "kind": "person",
+      "title": "Zaetar's Spirit",
+      "triggers": [{ "talk": 12238 }, { "kill": 12201 }],
+      "body": [
+        "Zaetar, son of Cenarius, came out of the Emerald Dream to learn what had happened to Mashan'she, and fell in love with Theradras. Their sons, the first centaur khans, murdered him. Theradras chastised them; they begged forgiveness and swore to revere his memory. Fearing Cenarius's wrath, she entombed his body in her sanctuary, and held his spirit captive, using its power to corrupt her home."
+      ],
+      "sources": ["warcraft.wiki.gg: Maraudon (History)"]
+    }
+  ]
+}

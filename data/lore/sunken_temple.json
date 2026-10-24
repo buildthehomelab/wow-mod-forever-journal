@@ -1,0 +1,107 @@
+{
+  "zone": 1417,
+  "name": "Sunken Temple",
+  "entries": [
+    {
+      "id": 1417000,
+      "kind": "zone",
+      "title": "The Temple of Atal'Hakkar",
+      "triggers": [{ "areaId": 1417 }],
+      "body": [
+        "The temple the exiled Atal'ai priests built to the blood god Hakkar the Soulflayer, after the Gurubashi cast them out. Believing it was where Hakkar would return, Ysera smashed it beneath the Pool of Tears and set her green dragons to guard its drowned ruins. That only let the Atal'ai work undisturbed.",
+        "Now the Emerald Nightmare has crept into the green dragons on watch. The descendants of the Atal'ai came back and found their guardians disoriented and weak, and between the Nightmare and the trolls, the dragons were dragged down into madness. The Atal'ai hold the temple again, and have begun their gruesome rites to call Hakkar back."
+      ],
+      "sources": ["warcraft.wiki.gg: Temple of Atal'Hakkar (introduction, Origins, Modern times)"]
+    },
+    {
+      "id": 1417001,
+      "kind": "place",
+      "title": "The Hall of Masks and the Chamber of Blood",
+      "triggers": [{ "areaId": 1417 }, { "kill": 8580 }],
+      "body": [
+        "Past the flooded Broken Hall, the temple's upper rings: the Hall of Masks, the Chamber of Blood and the Butchery, where the Atal'ai make their sacrifices. On the lowest level, the dire troll Atal'alarion guards a sacred idol."
+      ],
+      "sources": ["warcraft.wiki.gg: Temple of Atal'Hakkar (Walkthrough)", "warcraft.wiki.gg: Atal'alarion"]
+    },
+    {
+      "id": 1417002,
+      "kind": "place",
+      "title": "The Sanctum of the Fallen God",
+      "triggers": [{ "kill": 8443 }, { "kill": 5708 }],
+      "body": [
+        "The shrine of the Soulflayer, where the immortal presence of Hakkar still haunts the temple, waiting to regain its power. Here it can be called into a form of bone. Legend says only one thing can hold his essence and keep him from rising: an egg, hidden somewhere near the Hinterlands."
+      ],
+      "sources": ["warcraft.wiki.gg: Avatar of Hakkar"]
+    },
+    {
+      "id": 1417003,
+      "kind": "place",
+      "title": "The Central Chamber",
+      "triggers": [{ "kill": 5710 }, { "kill": 5711 }, { "kill": 5709 }],
+      "body": [
+        "The temple's great central chamber, where Jammal'an the Prophet leads the Atal'ai, and where the corrupted dragons of Ysera's watch now lair."
+      ],
+      "sources": ["warcraft.wiki.gg: Jammal'an the Prophet", "warcraft.wiki.gg: Weaver"]
+    },
+    {
+      "id": 1417030,
+      "kind": "person",
+      "title": "Atal'alarion",
+      "triggers": [{ "kill": 8580 }],
+      "body": [
+        "A dire troll, the Guardian of the Idol, sworn protector of the idol on the temple's lowest level."
+      ],
+      "sources": ["warcraft.wiki.gg: Atal'alarion"]
+    },
+    {
+      "id": 1417031,
+      "kind": "person",
+      "title": "The Avatar of Hakkar",
+      "triggers": [{ "kill": 8443 }],
+      "body": [
+        "The immortal presence of the blood god, called into a skeletal winged serpent in the sanctum, his spirit still waiting in the temple for the right time to rise."
+      ],
+      "sources": ["warcraft.wiki.gg: Avatar of Hakkar"]
+    },
+    {
+      "id": 1417032,
+      "kind": "person",
+      "title": "Jammal'an the Prophet",
+      "triggers": [{ "kill": 5710 }],
+      "body": [
+        "The spiritual leader of the Atal'ai, who believes that summoning Hakkar will make his people immortal. Itharius wants his head, and so does an Atal'ai exile who knows exactly what he is."
+      ],
+      "sources": ["warcraft.wiki.gg: Jammal'an the Prophet"]
+    },
+    {
+      "id": 1417033,
+      "kind": "person",
+      "title": "Ogom the Wretched",
+      "triggers": [{ "kill": 5711 }],
+      "body": [
+        "An undead troll who serves Jammal'an at his side."
+      ],
+      "sources": ["warcraft.wiki.gg: Ogom the Wretched"]
+    },
+    {
+      "id": 1417034,
+      "kind": "person",
+      "title": "The Wardens of the Dream",
+      "triggers": [{ "kill": 5720 }, { "kill": 5721 }, { "kill": 5719 }, { "kill": 5722 }],
+      "body": [
+        "Four young green drakes, Weaver, Dreamscythe, Morphaz and Hazzas, sent by Ysera under Eranikus to watch over the ruined temple, with an army of dragonspawn and whelps. They kept the Atal'ai in check at first, until the Nightmare took them, and the trolls captured them. Morphaz once ambushed the mage Xylem and swallowed an apprentice whole, along with the arcane shard he carried."
+      ],
+      "sources": ["warcraft.wiki.gg: Weaver", "warcraft.wiki.gg: Morphaz"]
+    },
+    {
+      "id": 1417035,
+      "kind": "person",
+      "title": "The Shade of Eranikus",
+      "triggers": [{ "kill": 5709 }],
+      "body": [
+        "Eranikus, Ysera's consort, was sent to guard the temple and was among the first green dragons to fall to the Emerald Nightmare. What haunts the temple now is his shade, a ghostly dragon of terrible might."
+      ],
+      "sources": ["warcraft.wiki.gg: Shade of Eranikus", "warcraft.wiki.gg: Lord Itharius"]
+    }
+  ]
+}

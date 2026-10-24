@@ -1,0 +1,77 @@
+{
+  "zone": 2367,
+  "name": "Old Hillsbrad Foothills",
+  "entries": [
+    {
+      "id": 2367000,
+      "kind": "zone",
+      "title": "Old Hillsbrad Foothills",
+      "triggers": [{ "areaId": 2367 }, { "talk": 18723 }],
+      "body": [
+        "The foothills as they were seven years ago, two years before the Third War. The Keepers of Time guard this moment in the Caverns, for something is trying to change it: the night a young orc slave named Thrall escaped from Durnholde Keep.",
+        "The infinite dragonflight means to stop him. If Thrall never escapes, there is no new Horde, and history unravels from there."
+      ],
+      "sources": ["warcraft.wiki.gg: Old Hillsbrad Foothills", "warcraft.wiki.gg: Epoch Hunter"]
+    },
+    {
+      "id": 2367001,
+      "kind": "place",
+      "title": "Durnholde Keep",
+      "triggers": [{ "area": "Durnholde Keep" }, { "kill": 17848 }, { "kill": 17862 }],
+      "body": [
+        "The fortress of Aedelas Blackmoore, where the orcs taken in the Second War were held in internment and where Thrall was raised as a slave and gladiator. Its lieutenants and captain will not let him go quietly."
+      ],
+      "sources": ["warcraft.wiki.gg: Old Hillsbrad Foothills", "warcraft.wiki.gg: Thrall"]
+    },
+    {
+      "id": 2367002,
+      "kind": "place",
+      "title": "Southshore, Seven Years Ago",
+      "triggers": [{ "area": "Southshore" }, { "area": "Hillsbrad Fields" }, { "area": "Nethander Stead" }],
+      "body": [
+        "The town as it was before the plague, full of familiar faces, most of them younger and none of them aware of what is coming."
+      ],
+      "sources": ["warcraft.wiki.gg: Old Hillsbrad Foothills"]
+    },
+    {
+      "id": 2367003,
+      "kind": "place",
+      "title": "Tarren Mill, Seven Years Ago",
+      "triggers": [{ "area": "Tarren Mill" }, { "kill": 18096 }],
+      "body": [
+        "A human village still, long before the Forsaken came. Thrall's escape ends here, at the inn, where Taretha Foxton waits for him."
+      ],
+      "sources": ["warcraft.wiki.gg: Epoch Hunter", "warcraft.wiki.gg: Old Hillsbrad Foothills"]
+    },
+    {
+      "id": 2367030,
+      "kind": "person",
+      "title": "Thrall",
+      "triggers": [{ "talk": 17876 }],
+      "body": [
+        "Born Go'el, son of Durotan and Draka, whose parents were murdered by Gul'dan's assassins shortly after his birth. Aedelas Blackmoore found him and raised him as a slave and a gladiator, and named him Thrall. Tonight he breaks free. He will go on to join Orgrim Doomhammer in freeing the orcs from the internment camps, and to become Warchief."
+      ],
+      "sources": ["warcraft.wiki.gg: Thrall"]
+    },
+    {
+      "id": 2367031,
+      "kind": "person",
+      "title": "Taretha Foxton",
+      "triggers": [{ "talk": 18887 }],
+      "body": [
+        "The daughter of Blackmoore's secretary, and the closest thing to family the young Thrall has: one of the few humans who taught him the meaning of honour and decency. Born anywhere else, she might have been more than she was allowed to be. Her small role in history changed the fate of the orcs forever."
+      ],
+      "sources": ["warcraft.wiki.gg: Taretha Foxton"]
+    },
+    {
+      "id": 2367032,
+      "kind": "person",
+      "title": "The Epoch Hunter",
+      "triggers": [{ "kill": 18096 }],
+      "body": [
+        "A drake of the infinite dragonflight, sent to stop Thrall's escape. It waited for him at Tarren Mill."
+      ],
+      "sources": ["warcraft.wiki.gg: Epoch Hunter"]
+    }
+  ]
+}

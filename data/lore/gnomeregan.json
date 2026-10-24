@@ -1,0 +1,118 @@
+{
+  "zone": 721,
+  "name": "Gnomeregan",
+  "entries": [
+    {
+      "id": 721000,
+      "kind": "zone",
+      "title": "Gnomeregan",
+      "triggers": [{ "areaId": 721 }],
+      "body": [
+        "The underground capital of the gnomes in Dun Morogh, wrought-iron proof of gnomish brilliance, ambition and ingenuity. The dwarves helped lay its foundations when they found the gnomes in their mountain caves. It took fifteen technicians working shifts around the clock just to keep its network of fans, vents and filters running and the city smelling fresh. In its heyday, inventors pitted their creations against each other to win status.",
+        "Then the troggs came up from below, and to stop them, the High Tinker flooded the city with radiation. Nearly eight in ten gnomes died within days. Leper gnomes, troggs and the traitor who calls himself king hold it now."
+      ],
+      "sources": ["warcraft.wiki.gg: Gnomeregan (introduction, Early history)"]
+    },
+    {
+      "id": 721001,
+      "kind": "place",
+      "title": "The Hall of Gears and the Dormitory",
+      "triggers": [{ "areaId": 721 }, { "kill": 7361 }, { "talk": 7850 }],
+      "body": [
+        "The outer halls of the city, overrun by troggs and radiation-mad leper gnomes, and the old dormitories where gnomes once slept, now stinking with troggs. Some who strayed in have been dumped there to die."
+      ],
+      "sources": ["warcraft.wiki.gg: Gnomeregan", "warcraft.wiki.gg: Kernobee"]
+    },
+    {
+      "id": 721002,
+      "kind": "place",
+      "title": "The Launch Bay and the Engineering Labs",
+      "triggers": [{ "kill": 6235 }, { "kill": 6229 }, { "kill": 7079 }],
+      "body": [
+        "The great workshops of Gnomeregan, where the gnomes once built their marvels. Their creations still stand guard, now driven by madmen: a spider tank piloted by one of Thermaplugg's lieutenants, a giant mechanical pummeler, and a slime of radioactive fallout that oozes through the flooded halls."
+      ],
+      "sources": ["warcraft.wiki.gg: Electrocutioner 6000", "warcraft.wiki.gg: Crowd Pummeler 9-60", "warcraft.wiki.gg: Viscous Fallout"]
+    },
+    {
+      "id": 721003,
+      "kind": "place",
+      "title": "The Tinkers' Court",
+      "triggers": [{ "kill": 7800 }, { "kill": 6228 }],
+      "body": [
+        "Where the elected High Tinker once held court with his councillors, now the throne room of the self-proclaimed King of Gnomeregan. The Dark Iron dwarves have an envoy here."
+      ],
+      "sources": ["warcraft.wiki.gg: Gnomeregan (Early history)", "warcraft.wiki.gg: Dark Iron Ambassador"]
+    },
+    {
+      "id": 721030,
+      "kind": "person",
+      "title": "Grubbis",
+      "triggers": [{ "kill": 7361 }],
+      "body": [
+        "A great trogg, who leads his kind up from the depths with his pet basilisk, Chomper."
+      ],
+      "sources": ["warcraft.wiki.gg: Grubbis"]
+    },
+    {
+      "id": 721031,
+      "kind": "person",
+      "title": "Viscous Fallout",
+      "triggers": [{ "kill": 7079 }],
+      "body": [
+        "A living ooze of radioactive filth, born of the poison that drowned the city."
+      ],
+      "sources": ["warcraft.wiki.gg: Viscous Fallout"]
+    },
+    {
+      "id": 721032,
+      "kind": "person",
+      "title": "Electrocutioner 6000",
+      "triggers": [{ "kill": 6235 }],
+      "body": [
+        "A spider tank on the Launch Bay platform, driven by Lieutenant Tom \"Sizzlepants\" Crankle, one of the insane leper gnomes still loyal to Thermaplugg."
+      ],
+      "sources": ["warcraft.wiki.gg: Electrocutioner 6000"]
+    },
+    {
+      "id": 721033,
+      "kind": "person",
+      "title": "Crowd Pummeler 9-60",
+      "triggers": [{ "kill": 6229 }],
+      "body": [
+        "A gnomish combat machine in the Engineering Labs, still doing what it was built to do, with no one sane to tell it to stop."
+      ],
+      "sources": ["warcraft.wiki.gg: Crowd Pummeler 9-60"]
+    },
+    {
+      "id": 721034,
+      "kind": "person",
+      "title": "The Dark Iron Ambassador",
+      "triggers": [{ "kill": 6228 }],
+      "body": [
+        "A Dark Iron dwarf, almost certainly the go-between for the traitor Thermaplugg and Emperor Dagran Thaurissan."
+      ],
+      "sources": ["warcraft.wiki.gg: Dark Iron Ambassador"]
+    },
+    {
+      "id": 721035,
+      "kind": "person",
+      "title": "Mekgineer Thermaplugg",
+      "triggers": [{ "kill": 7800 }],
+      "body": [
+        "Sicco Thermaplugg was an ambitious engineer, chief advisor and best friend to High Tinker Mekkatorque, who secretly envied him and wanted his place. When the troggs came, he persuaded Mekkatorque to flood the city with radiation, meaning to let many gnomes die and blame the deaths on the High Tinker. The gas was deadlier than he imagined. Most of the gnomes died, and many survivors, Thermaplugg among them, became leper gnomes. Driven mad, he proclaimed himself King of Gnomeregan."
+      ],
+      "sources": ["warcraft.wiki.gg: Mekgineer Thermaplugg"]
+    },
+    {
+      "id": 721050,
+      "kind": "history",
+      "title": "The Fall of Gnomeregan",
+      "triggers": [{ "areaId": 721 }],
+      "body": [
+        "In the Second War the gnomes ringed their city with booby traps and an iron gate that held through weeks of bombardment, and Doomhammer had to settle for besieging them. In the Third War the troggs came, woken by upheavals at the titans' sites, and for five years the gnomes held them off while the creatures simply dug around their defences.",
+        "At last Mekkatorque agreed to Thermaplugg's plan: bathe the lower levels in radiation while the gnomes waited sealed away. It went horribly wrong. The radiation killed some troggs and made others stronger, and swept through the city. The survivors fled to Ironforge."
+      ],
+      "sources": ["warcraft.wiki.gg: Gnomeregan (introduction, Second War, Fall of Gnomeregan)"]
+    }
+  ]
+}

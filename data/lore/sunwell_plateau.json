@@ -1,0 +1,129 @@
+{
+  "zone": 4075,
+  "name": "Sunwell Plateau",
+  "entries": [
+    {
+      "id": 4075000,
+      "kind": "zone",
+      "title": "The Sunwell Plateau",
+      "triggers": [{ "areaId": 4075 }],
+      "body": [
+        "Some 6,800 years before the Dark Portal, the Highborne exiles under Dath'Remar Sunstrider poured a stolen vial of water from the Well of Eternity into a lake on a convergence of ley lines. A fount of energy tore through the sky. They raised this plateau around it and named it the Sunwell, and in time they became the high elves.",
+        "When the Scourge came, the traitor Dar'Khan Drathir lowered its shields and bound its energies for his undead masters. Kael'thas, returning from Dalaran, found the corrupted Sunwell a greater danger to his people than the Scourge, and destroyed it in a great ritual. Now the prince's servants have retaken the plateau to bring something far worse through it."
+      ],
+      "sources": ["warcraft.wiki.gg: Sunwell Plateau (Background, Third War)"]
+    },
+    {
+      "id": 4075001,
+      "kind": "place",
+      "title": "Apex Point",
+      "triggers": [{ "area": "Parhelion Plaza" }, { "kill": 24850 }, { "kill": 24892 }],
+      "body": [
+        "A height above the Parhelion Plaza, where a blue dragon fights his own corruption, in this world and in a shadowy realm beyond it."
+      ],
+      "sources": ["warcraft.wiki.gg: Sathrovarr the Corruptor"]
+    },
+    {
+      "id": 4075002,
+      "kind": "place",
+      "title": "The Den of Iniquity",
+      "triggers": [{ "area": "The Dead Scar" }, { "kill": 24882 }, { "kill": 25038 }],
+      "body": [
+        "A hall that looks out over the Dead Scar, the path of death Arthas carved to the Sunwell. A wingless pit lord guards it, taunted from the air by a blue dragon."
+      ],
+      "sources": ["warcraft.wiki.gg: Brutallus"]
+    },
+    {
+      "id": 4075003,
+      "kind": "place",
+      "title": "The Witch's Sanctum",
+      "triggers": [{ "kill": 25165 }, { "kill": 25166 }],
+      "body": [
+        "Beyond the first gate, the sanctum of the eredar twins, warlocks of the Black Harvest."
+      ],
+      "sources": ["warcraft.wiki.gg: Lady Sacrolash"]
+    },
+    {
+      "id": 4075004,
+      "kind": "place",
+      "title": "The Shrine of the Eclipse",
+      "triggers": [{ "kill": 25741 }, { "kill": 25840 }],
+      "body": [
+        "Where the naaru M'uru, drained to the dregs by the blood elves, has been brought to finish its fall."
+      ],
+      "sources": ["warcraft.wiki.gg: M'uru"]
+    },
+    {
+      "id": 4075005,
+      "kind": "place",
+      "title": "The Sunwell",
+      "triggers": [{ "kill": 25315 }],
+      "body": [
+        "The fount of the high elves' power, through which Kil'jaeden the Deceiver is coming into the world."
+      ],
+      "sources": ["warcraft.wiki.gg: Sunwell Plateau (The Burning Crusade)"]
+    },
+    {
+      "id": 4075030,
+      "kind": "person",
+      "title": "Kalecgos and Sathrovarr",
+      "triggers": [{ "kill": 24850 }, { "kill": 24892 }],
+      "body": [
+        "Kalecgos is a blue dragon who, in his chosen guise as the half-elf Kalec, feels himself a blend of two worlds. Malygos set him to investigate the leftover energies of the Sunwell. The dreadlord Sathrovarr the Corruptor has possessed him, and in a shadow realm within, Kalec fights the demon in his elf form to stave off his corruption."
+      ],
+      "sources": ["warcraft.wiki.gg: Kalecgos", "warcraft.wiki.gg: Sathrovarr the Corruptor"]
+    },
+    {
+      "id": 4075031,
+      "kind": "person",
+      "title": "Brutallus",
+      "triggers": [{ "kill": 24882 }],
+      "body": [
+        "A giant pit lord who has lost his wings and has blades for hands. The blue dragon Madrigosa harried him from the sky until she came too close. He killed her."
+      ],
+      "sources": ["warcraft.wiki.gg: Brutallus"]
+    },
+    {
+      "id": 4075032,
+      "kind": "person",
+      "title": "Felmyst",
+      "triggers": [{ "kill": 25038 }],
+      "body": [
+        "When Brutallus died, his fel blood seeped into the ground beneath Madrigosa's corpse, and she rose again: a fel dragon."
+      ],
+      "sources": ["warcraft.wiki.gg: Felmyst"]
+    },
+    {
+      "id": 4075033,
+      "kind": "person",
+      "title": "The Eredar Twins",
+      "triggers": [{ "kill": 25165 }, { "kill": 25166 }],
+      "body": [
+        "Lady Sacrolash and Grand Warlock Alythess, eredar sisters and champions of the Black Harvest, one of shadow and one of flame."
+      ],
+      "sources": ["warcraft.wiki.gg: Lady Sacrolash", "warcraft.wiki.gg: Grand Warlock Alythess"]
+    },
+    {
+      "id": 4075034,
+      "kind": "person",
+      "title": "M'uru",
+      "triggers": [{ "kill": 25741 }, { "kill": 25840 }],
+      "body": [
+        "A naaru, guardian of Tempest Keep. When Kael'thas' forces took the keep, M'uru was sent to Silvermoon, where the magisters kept it bound and the Blood Knights drew the Light from it. The naaru knew, after a cryptic prophecy of Velen's about the redemption of a people cursed by blood, and allowed itself to be taken.",
+        "Drained of its essence, it was warped at last into a void god, Entropius. When it fell, Velen took its heart and with it rekindled the Sunwell."
+      ],
+      "sources": ["warcraft.wiki.gg: M'uru", "warcraft.wiki.gg: A'dal (The Burning Crusade)", "warcraft.wiki.gg: Entropius"]
+    },
+    {
+      "id": 4075035,
+      "kind": "person",
+      "title": "Kil'jaeden the Deceiver",
+      "triggers": [{ "kill": 25315 }],
+      "body": [
+        "Thirteen thousand years ago he ruled the eredar of Argus with Archimonde and Velen. When Sargeras offered them the answer to the question of the universe's one true flaw, Kil'jaeden accepted, and became second in rank of the Burning Legion, charged with drawing races into its fold. It was he who corrupted the orcs and made the Lich King.",
+        "He has long sought revenge on Velen and his people. Driven back through the Sunwell before he could fully enter the world, he has been denied once more."
+      ],
+      "sources": ["warcraft.wiki.gg: Kil'jaeden", "warcraft.wiki.gg: Sunwell Plateau (The Burning Crusade)"]
+    }
+  ]
+}

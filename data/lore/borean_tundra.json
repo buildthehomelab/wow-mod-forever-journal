@@ -1,0 +1,151 @@
+{
+  "zone": 3537,
+  "name": "Borean Tundra",
+  "entries": [
+    {
+      "id": 3537000,
+      "kind": "zone",
+      "title": "Borean Tundra",
+      "triggers": [{ "areaId": 3537 }],
+      "body": [
+        "The flattest part of Northrend, and a cold place where the wind can all but strip the beard off a dwarf's face. There is not a tree to be seen: just low, rolling land of red and brown with a little lichen green, crossed by herds of mammoth and woolly rhino looking for enough to eat. Stone elders carved by the tuskarr stand all over it, some no taller than a dwarf and some taller than a house, many of them marking fishing routes along the coast.",
+        "For many from the south, this is their first sight of Northrend."
+      ],
+      "sources": ["warcraft.wiki.gg: Borean Tundra (introduction, Geography)"]
+    },
+    {
+      "id": 3537001,
+      "kind": "place",
+      "title": "Valiance Keep",
+      "triggers": [{ "area": "Valiance Keep" }, { "talk": 25250 }],
+      "body": [
+        "After the Scourge struck at Stormwind, King Varian Wrynn mobilized the Alliance and sent Highlord Bolvar Fordragon north to destroy it. Bolvar's army, the Valiance Expedition, built this keep across two islands as its headquarters. The icebreaker Kraken keeps it tied to Stormwind Harbor, and the sound of its bell makes a lonely echo in the tundra's wind. Bolvar has gone on to the front, and General Arlos commands here now."
+      ],
+      "sources": ["warcraft.wiki.gg: Valiance Keep"]
+    },
+    {
+      "id": 3537002,
+      "kind": "place",
+      "title": "Warsong Hold",
+      "triggers": [{ "area": "Warsong Hold" }, { "area": "Garrosh's Landing" }, { "area": "Mightstone Quarry" }, { "talk": 25237 }],
+      "body": [
+        "A great spiked fortress, headquarters of the Horde's Warsong Offensive under Garrosh Hellscream. Garrosh led the fleet of destroyers that landed on the coast, and an army of peons from Orgrimmar cut the Mightstone Quarry out of the tundra to build its walls.",
+        "The fortress was built, unknowingly, on top of a well-travelled part of Azjol-Nerub. The peons broke through into the tunnels, and the Scourge's nerubians have been snatching them ever since."
+      ],
+      "sources": ["warcraft.wiki.gg: Warsong Hold (History)", "warcraft.wiki.gg: Garrosh's Landing"]
+    },
+    {
+      "id": 3537003,
+      "kind": "place",
+      "title": "Farshire",
+      "triggers": [{ "area": "Farshire" }, { "area": "Farshire Fields" }, { "area": "Farshire Mine" }, { "area": "Farshire Lighthouse" }],
+      "body": [
+        "The farmers of the Expedition cut their fields into the rich black soil here and their mine into the hills, and fed the keep with food and ore. Then cultists of the Cult of the Damned dropped their plague on the town and burned it. Only the town hall and the lighthouse still stand."
+      ],
+      "sources": ["warcraft.wiki.gg: Farshire"]
+    },
+    {
+      "id": 3537004,
+      "kind": "place",
+      "title": "Kaskala and Unu'pe",
+      "triggers": [{ "area": "Kaskala" }, { "area": "Unu'pe" }, { "area": "Njord's Breath Bay" }, { "area": "Pal'ea" }],
+      "body": [
+        "Kaskala was the tuskarr capital and greatest of their ports, full of the carved stone statues that hold the spirits of their long-gone elders. Then kvaldir longships came out of the mists and the slaughter began. The survivors fled east to Unu'pe. Pal'ea, founded by the explorer Shomko and watched over by the largest stone elder of any tuskarr village, lies in ruins, choked with the kvaldir's foul mist."
+      ],
+      "sources": ["warcraft.wiki.gg: Kaskala", "warcraft.wiki.gg: Unu'pe", "warcraft.wiki.gg: Pal'ea"]
+    },
+    {
+      "id": 3537005,
+      "kind": "place",
+      "title": "The Riplash Ruins",
+      "triggers": [{ "area": "Riplash Ruins" }, { "area": "Riplash Strand" }, { "area": "Shrine of Scales" }],
+      "body": [
+        "Thousands of years ago, a great night elf city stood here. A few half-standing buildings among wandering icebergs are all that is left. The most intact is a temple of Elune, where the Riplash naga replaced the goddess with a statue of Queen Azshara.",
+        "The pirates of the Northsea Freebooters stole from a vrykul burial ground, disturbed its dead, and drew the kvaldir to Northrend. One of their clans, the Skadir, came ashore here, wiped out the naga and took the ruins for themselves."
+      ],
+      "sources": ["warcraft.wiki.gg: Riplash Ruins", "warcraft.wiki.gg: Shrine of Scales"]
+    },
+    {
+      "id": 3537006,
+      "kind": "place",
+      "title": "Coldarra",
+      "triggers": [{ "area": "Coldarra" }, { "area": "Transitus Shield" }, { "area": "The Westrift" }, { "area": "Amber Ledge" }, { "area": "Beryl Point" }],
+      "body": [
+        "A high island beyond the Westrift, its cliffs too sheer to reach without wings, its air more brittle even than the tundra's. This is the ancestral home of Malygos and his blue dragonflight. Malygos lost most of his flight to Deathwing in the War of the Ancients, and hid here for thousands of years, slowly going mad.",
+        "Now rifts leaking magic have opened in the island's face and beneath the sea. The Kirin Tor watch from Amber Ledge, while blue dragonkin hunt mages at Beryl Point."
+      ],
+      "sources": ["warcraft.wiki.gg: Coldarra (History)", "warcraft.wiki.gg: Amber Ledge", "warcraft.wiki.gg: Beryl Point"]
+    },
+    {
+      "id": 3537007,
+      "kind": "place",
+      "title": "Coldrock Quarry",
+      "triggers": [{ "area": "Coldrock Quarry" }],
+      "body": [
+        "The tuskarr's holy quarry, where they carve their ancestor statues from the living rock and honour their dead elders. One day the blue dragons came down and killed every tuskarr there. They wanted the stone for themselves, to make their surge needles."
+      ],
+      "sources": ["warcraft.wiki.gg: Coldrock Quarry"]
+    },
+    {
+      "id": 3537008,
+      "kind": "place",
+      "title": "The Geyser Fields",
+      "triggers": [{ "area": "The Geyser Fields" }, { "area": "Fizzcrank Airstrip" }, { "area": "Fizzcrank Pumping Station" }, { "area": "Steam Springs" }, { "talk": 25590 }],
+      "body": [
+        "Hot springs and geysers in the north of the tundra. The gnomes of Fizzcrank Airstrip build their flying machines nearby, morning to night, and pump oil from the geyser fields for fuel. They found strange mechanical parts stuck in their pipelines, and no gnome can turn down a puzzle."
+      ],
+      "sources": ["warcraft.wiki.gg: Fizzcrank Airstrip", "warcraft.wiki.gg: Fizzcrank Pumping Station", "warcraft.wiki.gg: Geyser Fields"]
+    },
+    {
+      "id": 3537009,
+      "kind": "place",
+      "title": "The Taunka",
+      "triggers": [{ "area": "Taunka'le Village" }, { "area": "Bor'gorok Outpost" }, { "area": "Steeljaw's Caravan" }, { "talk": 24703 }],
+      "body": [
+        "Garrosh's forces have found the taunka, an ancient offshoot of the tauren thought lost forever. Their village by the hot springs used the steam to prepare hides. Their chieftain, Wintergale, fears the Scourge will fall on them next."
+      ],
+      "sources": ["warcraft.wiki.gg: Borean Tundra (History)", "warcraft.wiki.gg: Taunka'le Village"]
+    },
+    {
+      "id": 3537010,
+      "kind": "place",
+      "title": "En'kilah and Naxxanar",
+      "triggers": [{ "area": "Temple City of En'kilah" }, { "area": "Naxxanar" }, { "area": "Spire of Blood" }, { "area": "Spire of Decay" }, { "area": "Spire of Pain" }, { "area": "The Wailing Ziggurat" }, { "area": "Death's Stand" }],
+      "body": [
+        "A plagued temple city of the Scourge in the north-east, all decay and darkness behind walls that could have used a steadier hand at the level. Undead high priests work dark rites in its three spires. Above it floats the necropolis Naxxanar, the Scourge's command post in the tundra, held by Prince Valanar of the San'layn.",
+        "At Death's Stand, by the Wailing Ziggurat, the death knight Thassarian, first of his kind to join the Alliance, leads Unit S to take Scourge ground for the living."
+      ],
+      "sources": ["warcraft.wiki.gg: Temple City of En'kilah", "warcraft.wiki.gg: Naxxanar", "warcraft.wiki.gg: Death's Stand"]
+    },
+    {
+      "id": 3537011,
+      "kind": "place",
+      "title": "Talramas and the Plains of Nasam",
+      "triggers": [{ "area": "Talramas" }, { "area": "Festering Pools" }, { "area": "Plains of Nasam" }, { "area": "Sands of Nasam" }, { "kill": 25682 }],
+      "body": [
+        "A Scourge necropolis that malfunctioned and crashed by the Festering Pools; its Lich-Lord Chillwinter drives his servants to get it airborne again before the Lich King destroys them all. On the Plains of Nasam, Kel'Thuzad himself has appeared upon a dais among his undead, while plague spreaders change the land around it."
+      ],
+      "sources": ["warcraft.wiki.gg: Talramas", "warcraft.wiki.gg: Plains of Nasam"]
+    },
+    {
+      "id": 3537012,
+      "kind": "place",
+      "title": "The Dens of Dying",
+      "triggers": [{ "area": "The Dens of Dying" }, { "area": "Magnamoth Caverns" }],
+      "body": [
+        "Two caves sacred to the magnataur, where they go to die when they grow old."
+      ],
+      "sources": ["warcraft.wiki.gg: Dens of Dying"]
+    },
+    {
+      "id": 3537013,
+      "kind": "place",
+      "title": "The Elemental War",
+      "triggers": [{ "area": "Blistering Pool" }, { "area": "Charred Rise" }, { "area": "Ruins of Eldra'nath" }, { "area": "Scalding Pools" }],
+      "body": [
+        "In the middle of the tundra the elements are at war: fire from the Charred Rise against water that moved into the Blistering Pool, and the air elementals of the night elven Ruins of Eldra'nath, enraged by the fighting."
+      ],
+      "sources": ["warcraft.wiki.gg: Blistering Pool", "warcraft.wiki.gg: Ruins of Eldra'nath"]
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "zone": 15,
+  "name": "Dustwallow Marsh",
+  "entries": [
+    {
+      "id": 15000,
+      "kind": "zone",
+      "title": "Dustwallow Marsh",
+      "triggers": [{ "areaId": 15 }],
+      "body": [
+        "A vast, ancient, fog-bound swamp on the eastern coast of central Kalimdor, hot and fetid, full of raptors, spiders, crocolisks and murlocs. For ages only wild beasts lived here, until Jaina Proudmoore brought the survivors of Lordaeron to found Theramore on its coast.",
+        "Neither the Alliance nor the Horde holds much of it. Theramore's power barely reaches past its walls, the Horde has only the ogre village of Brackenwall, and between them the marsh stays wild; even the road to the Barrens is falling apart. Officially there is a truce. In practice, spies of both sides keep disappearing. In the south, the black dragons have made the swamp their own."
+      ],
+      "sources": ["warcraft.wiki.gg: Dustwallow Marsh (introduction, Third War, World of Warcraft, Geography)"]
+    },
+    {
+      "id": 15001,
+      "kind": "place",
+      "title": "Theramore Isle",
+      "triggers": [{ "area": "Theramore Isle" }, { "area": "Foothold Citadel" }, { "talk": 4968 }],
+      "body": [
+        "After the Battle of Mount Hyjal, the humans, dwarves and high elves of Jaina's expedition settled on this rocky island off the coast and built a citadel to shelter what was left of the Alliance. It is the strongest Alliance presence in Kalimdor.",
+        "Jaina and Thrall kept talking even after the war, and their uneasy truce became a lasting one: each would respect the other's land and refrain from attack. It held until Jaina's own father arrived."
+      ],
+      "sources": ["warcraft.wiki.gg: Theramore Isle (introduction, Third War)"]
+    },
+    {
+      "id": 15002,
+      "kind": "place",
+      "title": "Brackenwall Village",
+      "triggers": [{ "area": "Brackenwall Village" }, { "talk": 4500 }, { "talk": 4926 }],
+      "body": [
+        "A small Horde outpost in the north-west of the marsh, the new home of the Stonemaul ogres, who fled here when the black dragonflight destroyed their old village in the south. Overlord Mok'Morokk rules it with an iron fist.",
+        "The Stonemaul care little for the outside world, and Mok'Morokk is content to stay where no dragons are. Others in the village want their old home back."
+      ],
+      "sources": ["warcraft.wiki.gg: Brackenwall Village (History)", "warcraft.wiki.gg: Dustwallow Marsh (World of Warcraft)"]
+    },
+    {
+      "id": 15003,
+      "kind": "place",
+      "title": "The Shady Rest Inn",
+      "triggers": [{ "area": "Shady Rest Inn" }, { "accept": 11123 }],
+      "body": [
+        "A human inn near the border with the Barrens, mysteriously burned to the ground some time ago. The innkeeper, James Hyal, lost his wife and child in the fire, and has not been himself since. The men suspected of it were killed before they could tell the truth."
+      ],
+      "sources": ["warcraft.wiki.gg: Shady Rest Inn"]
+    },
+    {
+      "id": 15004,
+      "kind": "place",
+      "title": "Blackhoof Village and Direhorn Post",
+      "triggers": [{ "area": "Blackhoof Village" }, { "area": "Direhorn Post" }, { "accept": 11150 }],
+      "body": [
+        "The Grimtotem tribe, the rogue tauren who reject both Cairne and the Horde, have moved into the marsh, building Blackhoof Village in the north and Direhorn Post in the Quagmire. They hold captured Theramore guards, and they keep a secret about who burned the Shady Rest."
+      ],
+      "sources": ["warcraft.wiki.gg: Blackhoof Village", "warcraft.wiki.gg: Direhorn Post", "warcraft.wiki.gg: Dustwallow Marsh (The Burning Crusade)"]
+    },
+    {
+      "id": 15005,
+      "kind": "place",
+      "title": "Tabetha's Farm",
+      "triggers": [{ "area": "Tabetha's Farm" }, { "area": "The Quagmire" }, { "talk": 6546 }],
+      "body": [
+        "A hut and garden in the murkiest part of the Quagmire, home of the mage Tabetha and her two apprentices, with a dock for riverboats. The Quagmire around it, the great central marsh, belongs to crocolisks, spiders, oozes and the Grimtotem."
+      ],
+      "sources": ["warcraft.wiki.gg: Tabetha's Farm", "warcraft.wiki.gg: Quagmire"]
+    },
+    {
+      "id": 15006,
+      "kind": "place",
+      "title": "Swamplight Manor and Witch Hill",
+      "triggers": [{ "area": "Swamplight Manor" }, { "area": "Witch Hill" }, { "talk": 4792 }],
+      "body": [
+        "Witch Hill, on the road to Theramore, is haunted by the demon Zelfrax, and Mirefin murlocs camp on its slopes. At its centre is Swamplight Manor, a small house belonging to the famous cook \"Swamp Eye\" Jarl. Someone has buried an orc spy's report in his garden."
+      ],
+      "sources": ["warcraft.wiki.gg: Witch Hill", "warcraft.wiki.gg: Swamplight Manor"]
+    },
+    {
+      "id": 15007,
+      "kind": "place",
+      "title": "Mudsprocket",
+      "triggers": [{ "area": "Mudsprocket" }, { "talk": 23572 }],
+      "body": [
+        "A goblin town in the south-west of the marsh, built by the Steamwheedle Cartel and tied to Gadgetzan, with an inn, a forge and a goblin laboratory."
+      ],
+      "sources": ["warcraft.wiki.gg: Mudsprocket", "warcraft.wiki.gg: Dustwallow Marsh (The Burning Crusade)"]
+    },
+    {
+      "id": 15008,
+      "kind": "place",
+      "title": "The Stonemaul Ruins and the Den of Flame",
+      "triggers": [{ "area": "Stonemaul Ruins" }, { "area": "The Den of Flame" }, { "accept": 1168 }],
+      "body": [
+        "Once Stonemaul Village, home of the Stonemaul ogres after they came to Kalimdor. The black dragonflight fell on it in a terrible rout, and Firemane dragonspawn hold it now. The Den of Flame, the ogres' old mound to the west, is overrun with black dragonkin too; the clan's banner still hangs inside."
+      ],
+      "sources": ["warcraft.wiki.gg: Stonemaul Ruins", "warcraft.wiki.gg: Den of Flame", "warcraft.wiki.gg: Dustwallow Marsh (World of Warcraft)"]
+    },
+    {
+      "id": 15009,
+      "kind": "place",
+      "title": "Wyrmbog and Onyxia's Lair",
+      "triggers": [{ "area": "Wyrmbog" }, { "area": "The Dragonmurk" }, { "area": "Emberstrife's Den" }],
+      "body": [
+        "The far south of the marsh belongs to the black dragonflight. Whelps and dragonspawn swarm the Dragonmurk, and in the Wyrmbog beyond lies the lair of Onyxia, daughter of Deathwing. In a cave nearby, the drake Emberstrife tests young black dragons to see if they are worthy to enter her presence.",
+        "Years ago, word of black whelps in the south sent hunters running for Stormwind's bounty. Few ever found one."
+      ],
+      "sources": ["warcraft.wiki.gg: Wyrmbog", "warcraft.wiki.gg: Dragonmurk", "warcraft.wiki.gg: Emberstrife's Den", "warcraft.wiki.gg: Dustwallow Marsh (introduction)"]
+    },
+    {
+      "id": 15010,
+      "kind": "place",
+      "title": "The Scout Towers",
+      "triggers": [{ "area": "Lost Point" }, { "area": "North Point Tower" }, { "area": "Sentry Point" }],
+      "body": [
+        "Theramore built fortified towers along the road to the Barrens. Sentry Point, just across the bridge from the citadel, watches the road. North Point holds a blood elf prisoner of the Horde. Lost Point in the west has been taken over by Theramore deserters under Balos Jacken."
+      ],
+      "sources": ["warcraft.wiki.gg: Sentry Point", "warcraft.wiki.gg: North Point Tower", "warcraft.wiki.gg: Lost Point"]
+    },
+    {
+      "id": 15011,
+      "kind": "place",
+      "title": "Alcaz Island",
+      "triggers": [{ "area": "Alcaz Island" }, { "area": "Dreadmurk Shore" }],
+      "body": [
+        "A large island off the north-east coast, green with tropical plants like the nearby Echo Isles. Undead gnomes and strange machines under a Doctor Weavil occupy it, and it bristles with anti-aircraft guns.",
+        "It was here, on his way to a diplomatic meeting at Theramore, that King Varian Wrynn was held after the Defias abducted him."
+      ],
+      "sources": ["warcraft.wiki.gg: Alcaz Island (introduction, The Comic)"]
+    },
+    {
+      "id": 15012,
+      "kind": "place",
+      "title": "Nat's Landing and Tidefury Cove",
+      "triggers": [{ "area": "Nat's Landing" }, { "area": "Tidefury Cove" }, { "area": "Dustwallow Bay" }],
+      "body": [
+        "Tidefury Cove, south of Theramore, is dotted with islets and reefs, perilous for ships; two wrecks lie broken on its shallows, crawling with makrura. On one of its islets the famous fisherman Nat Pagle keeps his camp, where anglers come from around the world to hear his stories."
+      ],
+      "sources": ["warcraft.wiki.gg: Tidefury Cove", "warcraft.wiki.gg: Nat's Landing"]
+    },
+    {
+      "id": 15030,
+      "kind": "person",
+      "title": "Lady Jaina Proudmoore",
+      "triggers": [{ "talk": 4968 }, { "accept": 11142 }],
+      "body": [
+        "Daughter of Admiral Daelin Proudmoore of Kul Tiras, and one of the most powerful human sorceresses alive. Trained by Archmage Antonidas, she went north with Prince Arthas, her childhood friend and once her love, to investigate the plague, and saw the fall of Lordaeron begin.",
+        "Guided by a mysterious prophet, she led the survivors west to Kalimdor and fought beside the night elves and Thrall's Horde at Mount Hyjal. She founded Theramore, rejoined the Alliance, and has kept the peace with the Horde."
+      ],
+      "sources": ["warcraft.wiki.gg: Jaina Proudmoore (introduction)"]
+    },
+    {
+      "id": 15050,
+      "kind": "history",
+      "title": "The Lady and the Dragon",
+      "triggers": [{ "complete": 11142 }, { "complete": 11222 }, { "complete": 11141 }],
+      "body": [
+        "Onyxia, Deathwing's daughter and the broodmother of the black dragonflight on Azeroth, had many faces. In Stormwind she was Lady Katrana Prestor, a noblewoman at the king's court. She had King Varian abducted on his way to Theramore, and as a royal councillor ruled his young son's kingdom from behind the throne, with Highlord Bolvar bound by an enchanted amulet."
+      ],
+      "sources": ["warcraft.wiki.gg: Onyxia (introduction)"]
+    },
+    {
+      "id": 15051,
+      "kind": "history",
+      "title": "Daelin's Men",
+      "triggers": [{ "complete": 1288 }, { "complete": 1273 }, { "complete": 11134 }],
+      "body": [
+        "Admiral Daelin Proudmoore came to Kalimdor with the Kul Tiran fleet to find his daughter, took Northwatch, and then Theramore itself, meaning to strike the Horde wherever he pleased. Thrall asked Jaina to do the impossible: let the Horde into Theramore to kill her father. She did. The Horde stormed the walls, and Rexxar and his companions fought through the Admiral's guard and slew him in the Foothold Citadel.",
+        "The Horde went home and left Theramore in peace. But many of Daelin's men never forgave his daughter, and Theramore's garrison keeps shrinking as more of its soldiers desert."
+      ],
+      "sources": ["warcraft.wiki.gg: Theramore Isle (Invasion of Durotar)", "warcraft.wiki.gg: Foothold Citadel", "warcraft.wiki.gg: Dustwallow Marsh (World of Warcraft)"]
+    },
+    {
+      "id": 15052,
+      "kind": "history",
+      "title": "Rexxar and the Stonemaul",
+      "triggers": [{ "areaId": 15 }, { "area": "Brackenwall Village" }],
+      "body": [
+        "When Admiral Proudmoore attacked the Echo Isles, Vol'jin moved the Darkspear into the marsh. There a Stonemaul ogre named Crol'ka found them, fleeing his own warlord, Kor'gall, who had seized the clan with an ancient orc axe and was leading it to ruin.",
+        "Vol'jin and the half-ogre Rexxar saw a chance to win the ogres to the Horde. Rexxar fought his way into Stonemaul Village, survived Kor'gall's Gauntlet of beasts, and killed the tyrant. The Stonemaul followed him into the war against Proudmoore."
+      ],
+      "sources": ["warcraft.wiki.gg: Dustwallow Marsh (Third War)", "warcraft.wiki.gg: Stonemaul Ruins (History)"]
+    }
+  ]
+}

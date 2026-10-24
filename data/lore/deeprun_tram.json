@@ -1,0 +1,27 @@
+{
+  "zone": 2257,
+  "name": "Deeprun Tram",
+  "entries": [
+    {
+      "id": 2257000,
+      "kind": "zone",
+      "title": "The Deeprun Tram",
+      "triggers": [{ "areaId": 2257 }],
+      "body": [
+        "A long, fully enclosed underground railway of twin tracks between Stormwind and Ironforge, part of it running through glass tunnels beneath a great subterranean lake. It is fast, smooth and free to all travellers, and gnome engineers work on it every day to keep it so.",
+        "It was built after the Second War. Magni Bronzebeard was frustrated at how slowly Ironforge's aid reached Stormwind, and wanted a way to send dwarven soldiers quickly if the humans ever needed them, so he turned to High Tinker Gelbin Mekkatorque, who drew up a grand subterranean railway, and made a scale model of it out of pie tins."
+      ],
+      "sources": ["warcraft.wiki.gg: Deeprun Tram (introduction, History)"]
+    },
+    {
+      "id": 2257001,
+      "kind": "history",
+      "title": "Rats in the Tunnels",
+      "triggers": [{ "areaId": 2257 }, { "accept": 6661 }],
+      "body": [
+        "The tram had its troubles: the subterranean lake, and an invasion of rats. The lake was mastered; the rats never were. Monty, the rat extermination specialist, still hunts them in the tunnels."
+      ],
+      "sources": ["warcraft.wiki.gg: Deeprun Tram (History)"]
+    }
+  ]
+}
