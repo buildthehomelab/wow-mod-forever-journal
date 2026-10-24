@@ -48,6 +48,9 @@ Category: Interface
   tokens, the boss or creature that drops it with its drop chance (click a boss to open it in the
   Dungeons tab), the quest and who starts it, the achievement, the profession recipe, or the
   trainer for class mounts.
+  With DragonUI they wear its own Mounts window's look (row plates, red and gold backdrop, gold icon
+  frame) and share its **favorites**: star one here or there, favorites lead the list, and **Random
+  favorite** summons one (drag it to an action bar).
 - New **Toys** tab: the fun items (Orb of Deception, Piccolo of the Flaming Fire, the Brazier of
   Dancing Flames...), which ones are in your bags or bank, a Use button and where to get the rest.
 - Filters: collected or not, usable by your character, mount type, and by source (vendor, drop,

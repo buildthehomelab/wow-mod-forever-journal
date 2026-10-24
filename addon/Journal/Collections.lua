@@ -9,6 +9,11 @@ local band = bit.band
 local LIST_WIDTH = 300
 local ROW_HEIGHT = 40
 local ROWS = 11
+-- With DragonUI: its Mounts window's 46px row plate (the height the art is cut at), so fewer rows.
+local DUI_ROW_HEIGHT = 46
+local DUI_ROWS = 10
+local DUI_ROW_ICON = 38
+local DUI_INFO_ICON = 40
 
 local SOURCE_ICONS = {
 	V = "Interface\\GossipFrame\\VendorGossipIcon",
@@ -152,12 +157,38 @@ local function describe(s)
 	return title, detail, icon
 end
 
+-- DragonUI's Mounts and Pets window, when it's there: its art for the rows and the selected one,
+-- and its favourites, so a star set here shows there and the other way round.
+local function dragonCollections()
+	if not J.Dragon() then return nil end
+	local CO = _G.DragonUI and _G.DragonUI.Collections
+	if CO and CO.TEX and CO.ROW_COORDS and CO.FAV_COORD and CO.MODEL_BG_COORD and CO.IsFavorite and CO.ToggleFavorite then
+		return CO
+	end
+end
+
 -----------------------------------------
 -- one tab
 
 local function buildTab(kind, panel)
 	local info = J.KINDS[kind]
 	local state = { selected = nil, entries = {}, catalog = nil }
+	local CO = dragonCollections()
+	-- Favourites are DragonUI's, per companion kind; toys have none.
+	local favKind = CO and info.companion
+	local rowHeight, rowCount = ROW_HEIGHT, ROWS
+	if CO then rowHeight, rowCount = DUI_ROW_HEIGHT, DUI_ROWS end
+
+	-- Keyed by the creature the client lists the companion with, as DragonUI's window does; only
+	-- one you own can be a favourite.
+	local function favoriteId(e)
+		local c = favKind and J.Companion(kind, e)
+		return c and c.creature
+	end
+	local function isFavorite(e)
+		local id = favoriteId(e)
+		return id ~= nil and CO.IsFavorite(favKind, id)
+	end
 
 	local status = panel:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
 	status:SetPoint("CENTER", panel, "CENTER", 0, 20)
@@ -222,6 +253,42 @@ local function buildTab(kind, panel)
 	count:SetPoint("RIGHT", left, "RIGHT", -8, 0)
 	count:SetJustifyH("LEFT")
 
+	-- DragonUI's Random Favorite, from its window's top band: the same picker, and dragged it is
+	-- the same macro.
+	if favKind and CO.SummonRandomFavorite then
+		local random = CreateFrame("Button", nil, left)
+		random:SetSize(20, 20)
+		random:SetPoint("TOPRIGHT", left, "TOPRIGHT", -6, -25)
+		local icon = random:CreateTexture(nil, "ARTWORK")
+		icon:SetAllPoints(random)
+		icon:SetTexCoord(0.08, 0.92, 0.08, 0.92)
+		icon:SetTexture(CO.RandomIcon and CO.RandomIcon[favKind] or "Interface\\Icons\\INV_Misc_Dice_01")
+		random:SetPushedTexture("Interface\\Buttons\\UI-Quickslot-Depress")
+		random:SetHighlightTexture("Interface\\Buttons\\ButtonHilight-Square", "ADD")
+		local caption = left:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+		caption:SetPoint("RIGHT", random, "LEFT", -5, 0)
+		caption:SetText("Random favorite")
+		count:SetPoint("RIGHT", caption, "LEFT", -6, 0)
+		random:SetScript("OnClick", function ()
+			CO.SummonRandomFavorite(favKind)
+			J.Debounce("collection-companions", 0.5, function () J.Fire("COMPANIONS") end)
+		end)
+		if CO.EnsureRandomMacro then
+			random:RegisterForDrag("LeftButton")
+			random:SetScript("OnDragStart", function ()
+				local index = CO.EnsureRandomMacro(favKind)
+				if index then PickupMacro(index) end
+			end)
+		end
+		J.SetTooltip(random, function (tip)
+			tip:SetText(kind == "mounts" and "Summon Random Favorite Mount" or "Summon Random Favorite Pet", 1, 1, 1)
+			tip:AddLine(kind == "mounts" and "Summons and dismisses a favorite mount that is usable in the current area."
+				or "Summons and dismisses a favorite pet.", 1, 0.82, 0, true)
+			tip:AddLine("With no favorites it picks from your whole collection.", 1, 0.82, 0, true)
+			if CO.EnsureRandomMacro then tip:AddLine("Drag to place it on an action bar.", 0.6, 0.8, 1, true) end
+		end, "ANCHOR_LEFT")
+	end
+
 	local listInset = J.CreateInset(left)
 	listInset:SetPoint("TOPLEFT", left, "TOPLEFT", 0, -46)
 	listInset:SetPoint("BOTTOMRIGHT", left, "BOTTOMRIGHT", 0, 0)
@@ -246,16 +313,49 @@ local function buildTab(kind, panel)
 		render()
 	end
 
-	for i = 1, ROWS do
+	for i = 1, rowCount do
 		local b = CreateFrame("Button", nil, listInset)
-		b:SetHeight(ROW_HEIGHT)
-		b:SetPoint("TOPLEFT", listInset, "TOPLEFT", 6, -6 - (i - 1) * ROW_HEIGHT)
+		b:SetHeight(rowHeight)
+		b:SetPoint("TOPLEFT", listInset, "TOPLEFT", 6, -6 - (i - 1) * rowHeight)
 		b:SetPoint("RIGHT", scroll, "RIGHT", 0, 0)
-		b.icon = b:CreateTexture(nil, "ARTWORK")
-		b.icon:SetSize(32, 32)
-		b.icon:SetPoint("LEFT", b, "LEFT", 2, 0)
+		if CO then
+			-- DragonUI's row: plate, gold selected plate over the icon, its hover, a favourite star on
+			-- the icon's corner and a faint faction crest.
+			local function plate(layer, coords, sublevel)
+				local t = b:CreateTexture(nil, layer, nil, sublevel)
+				t:SetTexture(CO.TEX.rows)
+				t:SetTexCoord(unpack(coords))
+				t:SetAllPoints(b)
+				return t
+			end
+			plate("BACKGROUND", CO.ROW_COORDS.background)
+			b.selectedBg = plate("ARTWORK", CO.ROW_COORDS.selected, 1)
+			plate("HIGHLIGHT", CO.ROW_COORDS.highlight)
+			b.icon = b:CreateTexture(nil, "BORDER")
+			b.icon:SetSize(DUI_ROW_ICON, DUI_ROW_ICON)
+			b.icon:SetPoint("LEFT", b, "LEFT", 8, 0)
+			b.icon:SetTexCoord(0.08, 0.92, 0.08, 0.92)
+			b.star = b:CreateTexture(nil, "OVERLAY")
+			b.star:SetSize(20, 20)
+			b.star:SetPoint("TOPLEFT", b.icon, "TOPLEFT", -7, 7)
+			b.star:SetTexture(CO.TEX.favorite)
+			b.star:SetTexCoord(unpack(CO.FAV_COORD))
+			b.star:Hide()
+			if CO.TEX.faction and CO.FACTION_COORDS then
+				b.faction = b:CreateTexture(nil, "ARTWORK")
+				b.faction:SetSize(32, 36)
+				b.faction:SetPoint("RIGHT", b, "RIGHT", -6, 0)
+				b.faction:SetTexture(CO.TEX.faction)
+				b.faction:SetAlpha(0.55)
+				b.faction:Hide()
+			end
+		else
+			b.icon = b:CreateTexture(nil, "ARTWORK")
+			b.icon:SetSize(32, 32)
+			b.icon:SetPoint("LEFT", b, "LEFT", 2, 0)
+		end
 		b.name = b:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-		b.name:SetPoint("TOPLEFT", b.icon, "TOPRIGHT", 8, -2)
+		b.name:SetPoint("TOPLEFT", b.icon, "TOPRIGHT", CO and 10 or 8, CO and -4 or -2)
 		b.name:SetPoint("RIGHT", b, "RIGHT", -22, 0)
 		b.name:SetJustifyH("LEFT")
 		b.sub = b:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
@@ -265,16 +365,19 @@ local function buildTab(kind, panel)
 		b.lock = b:CreateTexture(nil, "OVERLAY")
 		b.lock:SetTexture("Interface\\LFGFrame\\UI-LFG-ICON-LOCK")
 		b.lock:SetSize(16, 16)
-		b.lock:SetPoint("RIGHT", b, "RIGHT", -2, 0)
-		b.selectedBg = b:CreateTexture(nil, "BACKGROUND")
-		b.selectedBg:SetAllPoints(b)
-		b.selectedBg:SetTexture("Interface\\QuestFrame\\UI-QuestLogTitleHighlight")
-		b.selectedBg:SetBlendMode("ADD")
-		b.selectedBg:SetVertexColor(1, 0.82, 0, 0.5)
-		local hl = b:CreateTexture(nil, "HIGHLIGHT")
-		hl:SetAllPoints(b)
-		hl:SetTexture("Interface\\QuestFrame\\UI-QuestTitleHighlight")
-		hl:SetBlendMode("ADD")
+		-- Over the crest's middle with DragonUI.
+		b.lock:SetPoint("RIGHT", b, "RIGHT", CO and -14 or -2, 0)
+		if not CO then
+			b.selectedBg = b:CreateTexture(nil, "BACKGROUND")
+			b.selectedBg:SetAllPoints(b)
+			b.selectedBg:SetTexture("Interface\\QuestFrame\\UI-QuestLogTitleHighlight")
+			b.selectedBg:SetBlendMode("ADD")
+			b.selectedBg:SetVertexColor(1, 0.82, 0, 0.5)
+			local hl = b:CreateTexture(nil, "HIGHLIGHT")
+			hl:SetAllPoints(b)
+			hl:SetTexture("Interface\\QuestFrame\\UI-QuestTitleHighlight")
+			hl:SetBlendMode("ADD")
+		end
 		b:SetScript("OnClick", function (self)
 			local e = self.entry
 			if not e then return end
@@ -308,13 +411,14 @@ local function buildTab(kind, panel)
 
 	local function renderList()
 		local offset = FauxScrollFrame_GetOffset(scroll)
-		for i = 1, ROWS do
+		for i = 1, rowCount do
 			local b = rows[i]
 			local e = state.entries[offset + i]
 			b.entry = e
 			if e then
 				b.icon:SetTexture(J.EntryIcon(kind, e))
 				b.icon:SetDesaturated(not e.mine)
+				if CO then b.icon:SetAlpha(e.mine and 1 or 0.35) end
 				b.name:SetText(J.EntryName(kind, e) or ("item " .. e.id))
 				if e.mine then
 					local r, g, bl = J.QualityColor(e.quality)
@@ -326,16 +430,24 @@ local function buildTab(kind, panel)
 				b.sub:SetText(locked and lockText(e.reqState) or summary(e))
 				setShown(b.lock, locked)
 				setShown(b.selectedBg, state.selected == e)
+				if b.star then setShown(b.star, isFavorite(e)) end
+				if b.faction then
+					-- DragonUI's crest sheet: 0 is the Horde's, 1 the Alliance's.
+					local side = band(e.flags, J.ENTRY.HORDE) ~= 0 and 0 or band(e.flags, J.ENTRY.ALLIANCE) ~= 0 and 1 or nil
+					local coords = side and CO.FACTION_COORDS[side]
+					if coords then b.faction:SetTexCoord(unpack(coords)) end
+					setShown(b.faction, coords ~= nil)
+				end
 				b:Show()
 			else
 				b:Hide()
 			end
 		end
-		FauxScrollFrame_Update(scroll, #state.entries, ROWS, ROW_HEIGHT)
+		FauxScrollFrame_Update(scroll, #state.entries, rowCount, rowHeight)
 	end
 
 	scroll:SetScript("OnVerticalScroll", function (self, offset)
-		FauxScrollFrame_OnVerticalScroll(self, offset, ROW_HEIGHT, renderList)
+		FauxScrollFrame_OnVerticalScroll(self, offset, rowHeight, renderList)
 	end)
 
 	-- right: the selected one
@@ -346,11 +458,58 @@ local function buildTab(kind, panel)
 
 	local bigIcon = right:CreateTexture(nil, "ARTWORK")
 	bigIcon:SetSize(40, 40)
-	bigIcon:SetPoint("TOPLEFT", right, "TOPLEFT", 12, -12)
 	local title = right:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
-	title:SetPoint("TOPLEFT", bigIcon, "TOPRIGHT", 10, -2)
-	title:SetPoint("RIGHT", right, "RIGHT", -12, 0)
 	title:SetJustifyH("LEFT")
+	local star
+	if CO then
+		-- DragonUI's pane: the red and gold backdrop behind all of it, the icon in its gold ornament
+		-- (where DragonUI pins it: 6px in, the icon hung off the ornament's opening) and the star.
+		local backdrop = right:CreateTexture(nil, "BACKGROUND", nil, -4)
+		backdrop:SetPoint("TOPLEFT", right, "TOPLEFT", 4, -4)
+		backdrop:SetPoint("BOTTOMRIGHT", right, "BOTTOMRIGHT", -4, 4)
+		backdrop:SetTexture(CO.TEX.modelBg)
+		backdrop:SetTexCoord(unpack(CO.MODEL_BG_COORD))
+		bigIcon:SetPoint("TOPLEFT", right, "TOPLEFT", 24, -21)
+		bigIcon:SetTexCoord(0.08, 0.92, 0.08, 0.92)
+		local layout = _G.DragonUI.LayoutGoldIconFrame
+		if layout and _G.DragonUI.GOLD_ICON_FRAME then
+			layout(right:CreateTexture(nil, "OVERLAY"), bigIcon, DUI_INFO_ICON)
+		end
+		title:SetPoint("LEFT", bigIcon, "RIGHT", 14, 8)
+		if favKind then
+			star = CreateFrame("Button", nil, right)
+			star:SetSize(24, 24)
+			star:SetPoint("TOPRIGHT", right, "TOPRIGHT", -14, -14)
+			star.tex = star:CreateTexture(nil, "ARTWORK")
+			star.tex:SetAllPoints(star)
+			star.tex:SetTexture(CO.TEX.favorite)
+			star.tex:SetTexCoord(unpack(CO.FAV_COORD))
+			local glow = star:CreateTexture(nil, "HIGHLIGHT")
+			glow:SetAllPoints(star)
+			glow:SetTexture(CO.TEX.favorite)
+			glow:SetTexCoord(unpack(CO.FAV_COORD))
+			glow:SetBlendMode("ADD")
+			glow:SetAlpha(0.4)
+			J.SetTooltip(star, function (tip)
+				tip:SetText("Favorite", 1, 0.82, 0)
+				tip:AddLine("Keeps it at the top of the list, here and in DragonUI's window.", 1, 1, 1, true)
+			end, "ANCHOR_LEFT")
+			title:SetPoint("RIGHT", star, "LEFT", -8, 0)
+			star:SetScript("OnClick", function ()
+				local id = state.selected and favoriteId(state.selected)
+				if not id then return end
+				CO.ToggleFavorite(favKind, id)
+				PlaySound("igMainMenuOptionCheckBoxOn")
+				render()
+			end)
+		else
+			title:SetPoint("RIGHT", right, "RIGHT", -12, 0)
+		end
+	else
+		bigIcon:SetPoint("TOPLEFT", right, "TOPLEFT", 12, -12)
+		title:SetPoint("TOPLEFT", bigIcon, "TOPRIGHT", 10, -2)
+		title:SetPoint("RIGHT", right, "RIGHT", -12, 0)
+	end
 	local subtitle = right:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
 	subtitle:SetPoint("TOPLEFT", title, "BOTTOMLEFT", 0, -4)
 	subtitle:SetPoint("RIGHT", right, "RIGHT", -12, 0)
@@ -359,7 +518,8 @@ local function buildTab(kind, panel)
 	local SOURCES_HEIGHT = 190
 
 	local model = CreateFrame("PlayerModel", nil, right)
-	model:SetPoint("TOPLEFT", right, "TOPLEFT", 8, -60)
+	-- Below the gold ornament's flourishes with DragonUI.
+	model:SetPoint("TOPLEFT", right, "TOPLEFT", 8, CO and -86 or -60)
 	model:SetPoint("BOTTOMRIGHT", right, "BOTTOMRIGHT", -8, SOURCES_HEIGHT + 8)
 	model:EnableMouse(true)
 	model.facing = 0.5
@@ -376,12 +536,15 @@ local function buildTab(kind, panel)
 		end
 	end)
 	model:SetScript("OnHide", function (self) self.shownEntry = nil end)
-	local modelBg = right:CreateTexture(nil, "BACKGROUND", nil, 1)
-	modelBg:SetPoint("TOPLEFT", model, "TOPLEFT")
-	modelBg:SetPoint("BOTTOMRIGHT", model, "BOTTOMRIGHT")
-	modelBg:SetTexture("Interface\\LFGFrame\\UI-LFG-BACKGROUND-QUESTPAPER")
-	modelBg:SetTexCoord(0, 0.6, 0, 0.55)
-	modelBg:SetVertexColor(0.35, 0.32, 0.3)
+	-- DragonUI's backdrop already runs behind the whole pane.
+	if not CO then
+		local modelBg = right:CreateTexture(nil, "BACKGROUND", nil, 1)
+		modelBg:SetPoint("TOPLEFT", model, "TOPLEFT")
+		modelBg:SetPoint("BOTTOMRIGHT", model, "BOTTOMRIGHT")
+		modelBg:SetTexture("Interface\\LFGFrame\\UI-LFG-BACKGROUND-QUESTPAPER")
+		modelBg:SetTexCoord(0, 0.6, 0, 0.55)
+		modelBg:SetVertexColor(0.35, 0.32, 0.3)
+	end
 	local modelHint = model:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
 	modelHint:SetPoint("BOTTOMLEFT", model, "BOTTOMLEFT", 6, 4)
 	modelHint:SetText("Drag to turn")
@@ -616,7 +779,6 @@ local function buildTab(kind, panel)
 
 		if kind == "toys" then
 			model:Hide()
-			modelBg:Show()
 			toyIcon:SetTexture(J.ItemIcon(e.id))
 			toyIcon:Show()
 			local text = J.ItemUseText and J.ItemUseText(e.id) or nil
@@ -633,6 +795,12 @@ local function buildTab(kind, panel)
 			local c = J.Companion(kind, e)
 			raiseAction()
 			setShown(action, c ~= nil)
+			if star then
+				setShown(star, c ~= nil and c.creature ~= nil)
+				local fav = isFavorite(e)
+				star.tex:SetDesaturated(not fav)
+				star.tex:SetAlpha(fav and 1 or 0.75)
+			end
 			if c then
 				local mounted = kind == "mounts" and IsMounted and IsMounted()
 				action:SetText((c.active or mounted) and (kind == "mounts" and "Dismount" or "Dismiss") or "Summon")
@@ -669,6 +837,13 @@ local function buildTab(kind, panel)
 		body:Show()
 		local have, total
 		state.entries, have, total = J.FilteredEntries(kind, state.catalog, search:GetText())
+		if favKind then
+			-- Favourites first, the rest in the order they came: DragonUI's window sorts the same way.
+			local favs, rest = {}, {}
+			for _, e in ipairs(state.entries) do table.insert(isFavorite(e) and favs or rest, e) end
+			for _, e in ipairs(rest) do table.insert(favs, e) end
+			state.entries = favs
+		end
 		count:SetText(string.format("Collected: |cffffffff%d|r / %d", have, total))
 		if not state.selected and JournalCharDB.collectionSelected then
 			state.selected = state.catalog.byId[JournalCharDB.collectionSelected[kind] or -1]
