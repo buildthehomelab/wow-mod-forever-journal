@@ -99,6 +99,9 @@ function methods:GetStringHeight() return 14 * math.max(1, math.ceil(#(self.__te
 function methods:GetStringWidth() return 6 * #(self.__text or "") end
 function methods:GetVerticalScroll() return self.__vscroll or 0 end
 function methods:SetVerticalScroll(v) self.__vscroll = v end
+-- A slider runs OnValueChanged on every SetValue, from code or the mouse.
+function methods:SetValue(v) self.__value = v; if self.__scripts.OnValueChanged then self.__scripts.OnValueChanged(self, v) end end
+function methods:GetValue() return rawget(self, "__value") or 0 end
 -- A texture path "loads" unless it names something the test says is missing.
 function methods:SetTexture(path) self.__texture = path; return not (type(path) == "string" and path:find("MISSING")) and 1 or nil end
 function methods:GetTexture() return self.__texture end
@@ -277,7 +280,8 @@ if os.getenv("DRAGON") == "1" then
 				t.__reskinned = (rawget(t, "__reskinned") or 0) + 1
 				t:SetWidth(math.max(62, 6 * #(t.__text or "") + 30))
 			end, ModernizeCloseButton = function () end,
-			SkinCheckbox = function () end, ReskinScrollBar = function () end },
+			SkinCheckbox = function () end, ReskinScrollBar = function () end,
+			SyncScrollThumb = function (scroll) scroll.__thumbSynced = (rawget(scroll, "__thumbSynced") or 0) + 1 end },
 	}
 end
 
@@ -826,6 +830,15 @@ step("mounts tab: catalog, collected first, owned count", function ()
 	assert(textShown("^Black Stallion$") and textShown("^Brown Horse$") and textShown("^Blue Wind Rider$"), "mount rows missing")
 	assert(textShown("Progression stage 8"), "era lock on the wind rider missing")
 	assert(textShown("Vendor: Katie Hunter"), "sources of the first (collected) mount not shown")
+	if DragonUI then
+		-- DragonUI's grip follows the slider, not the OnVerticalScroll the list sets after skinning it.
+		local bar = find(function (f) return f.__kind == "Slider" and f:IsVisible()
+			and (rawget(f, "__parent").__name or ""):find("CollectionScroll") end)
+		assert(bar, "no collection scroll bar")
+		local before = rawget(bar.__parent, "__thumbSynced") or 0
+		bar:SetValue(40)
+		assert((rawget(bar.__parent, "__thumbSynced") or 0) > before, "DragonUI scroll grip not moved by scrolling")
+	end
 end)
 
 step("mount sources: cost, boss link, quest, achievement, trainer, note, more", function ()

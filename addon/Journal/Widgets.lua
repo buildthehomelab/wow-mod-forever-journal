@@ -190,6 +190,11 @@ function J.SkinScrollBar(scroll, scrollName)
 	local _, CP = J.Dragon()
 	if CP and CP.ReskinScrollBar then
 		pcall(CP.ReskinScrollBar, scroll, scroll, -7, 18, -7, true)
+		-- DragonUI moves its grip from a hook on the scroll frame's OnVerticalScroll, which our lists
+		-- replace with SetScript afterwards; the slider's own value change still reaches it.
+		if CP.SyncScrollThumb then
+			bar:HookScript("OnValueChanged", function () CP.SyncScrollThumb(scroll) end)
+		end
 	end
 	-- Otherwise the stock scroll bar stays as it is.
 end
