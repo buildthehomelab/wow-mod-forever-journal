@@ -102,6 +102,7 @@ function methods:SetVerticalScroll(v) self.__vscroll = v end
 -- A slider runs OnValueChanged on every SetValue, from code or the mouse.
 function methods:SetValue(v) self.__value = v; if self.__scripts.OnValueChanged then self.__scripts.OnValueChanged(self, v) end end
 function methods:GetValue() return rawget(self, "__value") or 0 end
+function methods:SetBackdrop(b) self.__backdrop = b end
 -- A texture path "loads" unless it names something the test says is missing.
 function methods:SetTexture(path) self.__texture = path; return not (type(path) == "string" and path:find("MISSING")) and 1 or nil end
 function methods:GetTexture() return self.__texture end
@@ -233,6 +234,7 @@ local function chatShown(pattern)
 	return false
 end
 GameFontHighlightSmall, GameFontNormal, GameFontHighlight = {}, {}, {}
+function GameFontNormal:GetFont() return "Fonts\\FRIZQT__.TTF", 12 end
 SlashCmdList, UISpecialFrames = {}, {}
 
 -- The scan tooltip: spell descriptions come back as gold lines, like the real one.
@@ -272,7 +274,7 @@ end
 if os.getenv("DRAGON") == "1" then
 	DragonUI_NineSlice = { GetLayout = function () return {} end, ApplyLayout = function () end }
 	DragonUI = {
-		_dir = "Interface\\AddOns\\DragonUI\\Textures\\", atlasinfo = {},
+		_dir = "Interface\\AddOns\\DragonUI\\Textures\\", atlasinfo = {}, Fonts = { PRIMARY = "Fonts\\FRIZQT__.TTF" },
 		SafeSetAtlas = function () return true end, SkinRedButton = function () end,
 		-- ReskinTab sizes the tab to its label, as DragonUI's does; its PanelTemplates_TabResize
 		-- hook then calls the tab's _duiRelayout.
@@ -1180,6 +1182,12 @@ step("lore tab: zones, entries, reading, discovery banner", function ()
 	reply("LN:0:12010:12:2:Marshal Dughan")
 	tick(0.2)
 	assert(JournalLoreBanner:IsShown() and textShown("^Marshal Dughan$"), "discovery banner not shown")
+	-- with DragonUI, its level-up card (no backdrop, the icon ringed) instead of the dialog box
+	if DragonUI then
+		assert(not rawget(JournalLoreBanner, "__backdrop") and JournalLoreBanner.iconBack, "banner not in DragonUI's look")
+	else
+		assert(rawget(JournalLoreBanner, "__backdrop"), "banner lost the stock dialog box")
+	end
 	JournalLoreBanner.__scripts.OnClick(JournalLoreBanner, "LeftButton")
 	tick(1)
 	assert(J.view.section == "lore", "the banner didn't open the Lore tab")

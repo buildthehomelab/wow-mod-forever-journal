@@ -151,29 +151,124 @@ local SHOW_FOR = 4.5
 local FADE = 0.8
 
 local banner = CreateFrame("Button", "JournalLoreBanner", UIParent)
-banner:SetSize(320, 64)
 banner:SetPoint("TOP", UIParent, "TOP", 0, -150)
 banner:SetFrameStrata("HIGH")
 banner:Hide()
-banner:SetBackdrop({
-	bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background",
-	edgeFile = "Interface\\DialogFrame\\UI-DialogBox-Border",
-	tile = true, tileSize = 32, edgeSize = 24,
-	insets = { left = 6, right = 6, top = 6, bottom = 6 },
-})
-banner.icon = banner:CreateTexture(nil, "ARTWORK")
-banner.icon:SetSize(36, 36)
-banner.icon:SetPoint("LEFT", banner, "LEFT", 14, 0)
-banner.icon:SetTexture("Interface\\Icons\\INV_Misc_Book_11")
+banner.icon = banner:CreateTexture(nil, "BORDER")
 banner.label = banner:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
-banner.label:SetPoint("TOPLEFT", banner.icon, "TOPRIGHT", 10, -2)
-banner.label:SetPoint("RIGHT", banner, "RIGHT", -14, 0)
-banner.label:SetJustifyH("LEFT")
 banner.title = banner:CreateFontString(nil, "OVERLAY", "GameFontHighlightLarge")
-banner.title:SetPoint("TOPLEFT", banner.label, "BOTTOMLEFT", 0, -4)
-banner.title:SetPoint("RIGHT", banner, "RIGHT", -14, 0)
-banner.title:SetJustifyH("LEFT")
+for _, text in ipairs({ banner.label, banner.title }) do text:SetJustifyH("LEFT") end
 J.LoreBanner = banner
+
+-- Without DragonUI, a stock dialog box.
+local function dressStock()
+	banner:SetSize(320, 64)
+	banner:SetBackdrop({
+		bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background",
+		edgeFile = "Interface\\DialogFrame\\UI-DialogBox-Border",
+		tile = true, tileSize = 32, edgeSize = 24,
+		insets = { left = 6, right = 6, top = 6, bottom = 6 },
+	})
+	banner.icon:SetSize(36, 36)
+	banner.icon:SetPoint("LEFT", banner, "LEFT", 14, 0)
+	banner.label:SetPoint("TOPLEFT", banner.icon, "TOPRIGHT", 10, -2)
+	banner.label:SetPoint("RIGHT", banner, "RIGHT", -14, 0)
+	banner.title:SetPoint("TOPLEFT", banner.label, "BOTTOMLEFT", 0, -4)
+	banner.title:SetPoint("RIGHT", banner, "RIGHT", -14, 0)
+end
+
+-- With DragonUI, the card its level-up banner shows each unlock on (retail's event toast): a soft
+-- shadow between two gold lines, the icon in the action-button ring, a green line over a gold
+-- title, centred. Art and coordinates from DragonUI's modules/levelupenhance.
+local DUI_WIDTH, DUI_HEIGHT, DUI_LINES, DUI_TEXT_MAX = 326, 72, 418, 245
+local DUI_SHADOW = { 0.00195313, 0.63867188, 0.03710938, 0.23828125 }
+local DUI_LINE = { 2 / 512, 420 / 512, 44 / 64, 51 / 64 }
+local DUI_RING = { 359 / 512, 451 / 512, 649 / 2048, 739 / 2048 }
+local DUI_RING_SCALE = 36 / 45 * 1.1375
+local DUI_CROP = 0.06
+
+local function dressDragon(D)
+	local shadow = banner:CreateTexture(nil, "BACKGROUND")
+	local line = banner:CreateTexture(nil, "BORDER")
+	if not (shadow:SetTexture(D._dir .. "NewLevelUp\\levelup")
+			and line:SetTexture(D._dir .. "NewLevelUp\\levelup_retail")) then
+		shadow:Hide()
+		line:Hide()
+		return false
+	end
+	banner:SetSize(DUI_LINES, DUI_HEIGHT)
+	shadow:SetTexCoord(unpack(DUI_SHADOW))
+	shadow:SetSize(DUI_WIDTH, 103)
+	shadow:SetPoint("BOTTOM")
+	shadow:SetAlpha(0.6)
+	local bottom = banner:CreateTexture(nil, "OVERLAY")
+	bottom:SetTexture(D._dir .. "NewLevelUp\\levelup_retail")
+	line:SetPoint("TOP")
+	bottom:SetPoint("BOTTOM")
+	for _, tex in ipairs({ line, bottom }) do
+		tex:SetTexCoord(unpack(DUI_LINE))
+		tex:SetSize(DUI_LINES, 7)
+	end
+
+	-- The icon sits 1 px inside a darkened copy of itself, so the ring's round corners cover it.
+	local back = banner:CreateTexture(nil, "BACKGROUND", nil, 1)
+	back:SetSize(36, 36)
+	back:SetVertexColor(0.3, 0.3, 0.3)
+	banner.iconBack = back
+	banner.icon:SetPoint("TOPLEFT", back, "TOPLEFT", 1, -1)
+	banner.icon:SetPoint("BOTTOMRIGHT", back, "BOTTOMRIGHT", -1, 1)
+	for _, tex in ipairs({ back, banner.icon }) do tex:SetTexCoord(DUI_CROP, 1 - DUI_CROP, DUI_CROP, 1 - DUI_CROP) end
+	local ring = banner:CreateTexture(nil, "ARTWORK")
+	ring:SetTexture(D._dir .. "ActionBars\\uiactionbar2x_new")
+	ring:SetTexCoord(unpack(DUI_RING))
+	ring:SetSize(46 * DUI_RING_SCALE, 45 * DUI_RING_SCALE)
+	ring:SetPoint("TOPLEFT", back, "TOPLEFT", -1.8, 1.8)
+	local tint = D.GetDarkModeTint and D.GetDarkModeTint()
+	if tint then ring:SetVertexColor(tint[1], tint[2], tint[3]) end
+
+	banner.font = D.Fonts and D.Fonts.PRIMARY or (GameFontNormal:GetFont())
+	banner.title:SetPoint("BOTTOMLEFT", back, "BOTTOMRIGHT", 10, 4)
+	banner.title:SetTextColor(1, 0.82, 0)
+	banner.label:SetPoint("BOTTOMLEFT", banner.title, "TOPLEFT", 0, 1)
+	banner.label:SetTextColor(0.1, 1, 0.1)
+	for _, text in ipairs({ banner.label, banner.title }) do
+		text:SetWordWrap(false)
+		text:SetShadowOffset(1, -1)
+		text:SetShadowColor(0, 0, 0, 1)
+	end
+	return true
+end
+
+-- Long text shrinks to fit, as DragonUI's cards do, then the card is centred on its text.
+local function fitText(text, size, minSize)
+	text:SetWidth(0)
+	text:SetFont(banner.font, size)
+	while text:GetStringWidth() > DUI_TEXT_MAX and size > minSize do
+		size = size - 1
+		text:SetFont(banner.font, size)
+	end
+	local width = math.min(text:GetStringWidth(), DUI_TEXT_MAX)
+	text:SetWidth(width)
+	return width
+end
+
+local function layoutDragon()
+	local width = math.max(fitText(banner.title, 16, 11), fitText(banner.label, 12, 9))
+	banner.iconBack:SetTexture(banner.icon:GetTexture())
+	banner.iconBack:ClearAllPoints()
+	banner.iconBack:SetPoint("LEFT", banner, "LEFT", math.max(12, math.floor((DUI_LINES - (46 + width)) / 2)), -2)
+end
+
+local function dress()
+	if banner.dressed then return end
+	banner.dressed = true
+	local D = J.Dragon()
+	if D and dressDragon(D) then
+		banner.layout = layoutDragon
+	else
+		dressStock()
+	end
+end
 
 local queue = {}
 local shownAt
@@ -184,6 +279,7 @@ local function showNext()
 		banner:Hide()
 		return
 	end
+	dress()
 	banner.item = item
 	if item.book then
 		banner.label:SetText("Added to your library")
@@ -195,6 +291,7 @@ local function showNext()
 	end
 	banner.title:SetText(item.title)
 	if #queue > 0 then banner.label:SetText(banner.label:GetText() .. "  |cff808080(+" .. #queue .. ")|r") end
+	if banner.layout then banner.layout() end
 	banner:SetAlpha(1)
 	banner:Show()
 	shownAt = GetTime()
