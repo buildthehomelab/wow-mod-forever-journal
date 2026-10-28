@@ -389,6 +389,19 @@ local function buildTab(kind, panel)
 			end
 			select(e)
 		end)
+		-- Dragged onto an action bar like the stock companion buttons: one you own, by the index
+		-- the client lists it at right now; a toy as its item.
+		b:RegisterForDrag("LeftButton")
+		b:SetScript("OnDragStart", function (self)
+			local e = self.entry
+			if not (e and e.mine) then return end
+			if kind == "toys" then
+				PickupItem(e.id)
+			else
+				local c = J.CompanionNow(kind, e)
+				if c then PickupCompanion(info.companion, c.index) end
+			end
+		end)
 		b:SetScript("OnEnter", function (self)
 			local e = self.entry
 			if not e then return end

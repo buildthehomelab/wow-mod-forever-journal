@@ -202,6 +202,9 @@ function GetCompanionInfo(kind, i) return table.unpack(companions[kind][i]) end
 local called
 function CallCompanion(kind, i) called = kind .. ":" .. i; companions[kind][i][5] = true end
 function DismissCompanion(kind) called = "dismiss:" .. kind end
+local picked
+function PickupCompanion(kind, i) picked = kind .. ":" .. i end
+function PickupItem(id) picked = "item:" .. id end
 function IsMounted() return false end
 -- Orb of Deception (1973) is a trinket, not worn.
 function IsEquippableItem(id) return id == 1973 end
@@ -903,6 +906,9 @@ step("mounts: summon, filters, search", function ()
 	assert(model.lockLayer and model.lockLayer:IsVisible(), "no padlock on an uncollected mount")
 	assert(model.lockLayer:GetFrameLevel() > model:GetFrameLevel(), "padlock under the model")
 	assert(not buttonShown("Summon"), "Summon offered for an uncollected mount")
+	picked = nil
+	horse.__scripts.OnDragStart(horse)
+	assert(picked == nil, "dragging an uncollected mount picked something up")
 	-- SetCreature never queries a creature the client lacks: the addon asks the server for it.
 	tick(1)
 	assert(creatureRecordsSent[284] == 1, "the uncached creature's record wasn't asked for")
@@ -912,6 +918,9 @@ step("mounts: summon, filters, search", function ()
 	stallion.__scripts.OnClick(stallion)
 	tick(0.2)
 	assert(model.__creature == 308 and not model.lockLayer:IsVisible() and model.__ambient == 0.7, "back on a collected one: still locked")
+	-- Dragged to an action bar: the companion, as the stock Mounts tab hands it over.
+	stallion.__scripts.OnDragStart(stallion)
+	assert(picked == "MOUNT:1", "dragging a collected mount didn't pick it up: " .. tostring(picked))
 	local f = J.Filters("mounts")
 	f.collected = false
 	J.Fire("COLLECTION_FILTER", "mounts")
@@ -996,6 +1005,10 @@ step("pets and toys tabs", function ()
 	assert(petSummon, "no Summon button for a collected pet")
 	petSummon.__scripts.OnClick(petSummon)
 	assert(called == "CRITTER:2", "CallCompanion not called with the pet's current index: " .. tostring(called))
+	local cat = find(function (f) return f.__kind == "Button" and type(rawget(f, "entry")) == "table" and f.entry.id == 10673 and f:IsVisible() end)
+	picked = nil
+	cat.__scripts.OnDragStart(cat)
+	assert(picked == "CRITTER:2", "dragging a pet didn't pick it up by its current index: " .. tostring(picked))
 	table.remove(companions.CRITTER, 1)
 	tick(1)
 	J.OpenSection("toys")
@@ -1006,6 +1019,8 @@ step("pets and toys tabs", function ()
 	local orb = find(function (f) return f.__kind == "Button" and type(rawget(f, "entry")) == "table" and f.entry.id == 1973 and f:IsVisible() end)
 	orb.__scripts.OnClick(orb)
 	tick(0.2)
+	orb.__scripts.OnDragStart(orb)
+	assert(picked == "item:1973", "dragging a toy didn't pick up its item")
 	assert(buttonShown("Equip"), "no Equip button for a trinket toy in the bags")
 	local use = buttonShown("Equip")
 	assert(use:GetParent() == UIParent, "the secure Use button must not sit inside the journal")
