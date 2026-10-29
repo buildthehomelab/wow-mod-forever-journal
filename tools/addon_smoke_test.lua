@@ -325,7 +325,8 @@ function GetInventoryItemID(_, slot) return worn[slot] end
 -- 7777 and 8888 have no description in the client: the server writes one.
 local spellNames = { [5145] = "Arcane Explosion", [6432] = "Smite Stomp", [9999] = "Hidden Trigger", [6603] = "Attack",
 	[7777] = "Berserk", [8888] = "Shadow Prison", [7778] = "Hard Enrage", [7779] = "Blank Mechanic",
-	[470] = "Black Stallion", [458] = "Brown Horse", [32244] = "Blue Wind Rider", [10673] = "Bombay Cat", [10674] = "Cornish Rex Cat" }
+	[470] = "Black Stallion", [458] = "Brown Horse", [32244] = "Blue Wind Rider", [10673] = "Bombay Cat", [10674] = "Cornish Rex Cat",
+	[27241] = "Gurky" }
 function GetSpellInfo(id) return spellNames[id], nil, "Interface\\Icons\\S" end
 function GetSpellLink(id) return "|Hspell:" .. id .. "|h[" .. tostring(spellNames[id]) .. "]|h" end
 
@@ -1011,6 +1012,24 @@ step("pets and toys tabs", function ()
 	assert(picked == "CRITTER:2", "dragging a pet didn't pick it up by its current index: " .. tostring(picked))
 	table.remove(companions.CRITTER, 1)
 	tick(1)
+	-- A pet the character has that the catalog leaves out (nothing on the realm gives it) is
+	-- listed all the same, unobtainable, with no question to the server about its sources.
+	table.insert(companions.CRITTER, { 16069, "Gurky", 27241, "Interface\\Icons\\P", false })
+	J.Fire("COMPANIONS")
+	tick(1)
+	assert(textShown("^Gurky$"), "an owned pet the catalog lacks isn't listed")
+	assert(textShown("Collected: |cffffffff2|r / 3"), "pet count wrong with an owned pet the catalog lacks")
+	local gurky = find(function (f) return f.__kind == "Button" and type(rawget(f, "entry")) == "table" and f.entry.id == 27241 and f:IsVisible() end)
+	local before = counts.W or 0
+	gurky.__scripts.OnClick(gurky)
+	tick(0.5)
+	assert((counts.W or 0) == before, "sources asked for a pet the catalog lacks")
+	assert(textShown("Nothing on this realm gives it"), "no 'nothing gives it' for a pet the catalog lacks")
+	assert(buttonShown("Summon"), "no Summon button for an owned pet the catalog lacks")
+	table.remove(companions.CRITTER)
+	J.Fire("COMPANIONS")
+	tick(1)
+	assert(not textShown("^Gurky$"), "a pet the character no longer has is still listed")
 	J.OpenSection("toys")
 	tick(1)
 	assert(counts.O and counts.O >= 1, "owned toys not asked")

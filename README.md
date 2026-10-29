@@ -273,7 +273,9 @@ At startup the module builds an index:
   item and reference loot tables (chances worked out as above), quest rewards and their
   `creature_queststarter` / `gameobject_queststarter`, `achievement_reward`, profession spells
   that create the item, `trainer_spell`, and notes in `mod_forever_journal_collection_note`.
-  Mounts, pets and toys with no source at all (promotions, test items) are left out.
+  Mounts, pets and toys with no source at all (promotions, test items) are left out, unless the
+  character has one: the addon lists every mount and pet the character knows, marked
+  unobtainable when the catalog lacks it.
 
 Per player, the server adds lockouts and killed bosses (the instance save's encounter mask),
 entry requirements (`dungeon_access_requirements`), the progression stage and the toys in the
@@ -560,8 +562,9 @@ another addon, and DragonUI's Pets & Mounts button.
 - **Shift-J does nothing:** check that the addon is in `Interface/AddOns/Journal`. `/journal`
   and the minimap button open the journal too. If Shift-J was bound to something else before, the
   journal leaves it alone: bind "Toggle the Journal" under Key Bindings, Journal.
-- **A mount or pet is missing:** the tab lists only what something on the realm sells, drops or
-  gives. `Journal.Collections.ShowUnobtainable = 1` lists the rest too. A spell the client doesn't
+- **A mount or pet is missing:** the tab lists what something on the realm sells, drops or
+  gives, and whatever the character already has. `Journal.Collections.ShowUnobtainable = 1`
+  lists the rest under Missing too. A spell the client doesn't
   have (a custom mount without its client patch) can't be shown.
 - **A boss with a C++ script shows no abilities:** run `tools/extract_script_spells.py` against
   your core and modules to regenerate the script spell SQL. Abilities are also learned as bosses
