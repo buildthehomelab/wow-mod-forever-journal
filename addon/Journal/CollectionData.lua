@@ -220,6 +220,32 @@ function J.EntryLocked(e)
 	return J.Has(J.HELLO_PROGRESSION) and (e.reqState or 0) > (J.state or 18)
 end
 
+-- Mounts and pets the character has that the catalog leaves out (nothing on the realm gives
+-- them: a promotion like Gurky, with Journal.Collections.ShowUnobtainable off) are listed all the
+-- same, marked unobtainable: whatever the character owns shows.
+local function withOwned(kind, catalog)
+	local have = owned[kind]
+	if not have or not next(have) then return catalog.list end
+	catalog.extras = catalog.extras or {}
+	local list
+	for spell, c in pairs(have) do
+		if not catalog.byId[spell] then
+			local e = catalog.extras[spell]
+			if not e then
+				e = { id = spell, creature = c.creature or 0, item = 0, quality = 1, flags = J.ENTRY.UNOBTAINABLE,
+					classMask = 0, sources = 0, reqState = 0, extra = true }
+				catalog.extras[spell] = e
+			end
+			if not list then
+				list = {}
+				for i, x in ipairs(catalog.list) do list[i] = x end
+			end
+			table.insert(list, e)
+		end
+	end
+	return list or catalog.list
+end
+
 -- The catalog's entries the filters and the search text let through, collected ones first,
 -- then by name. Entries the client can't name (spells it doesn't have) are left out.
 function J.FilteredEntries(kind, catalog, text)
@@ -227,7 +253,7 @@ function J.FilteredEntries(kind, catalog, text)
 	local anySource = next(f.sources) ~= nil
 	local out, total, have = {}, 0, 0
 	text = text and text ~= "" and text:lower() or nil
-	for _, e in ipairs(catalog.list) do
+	for _, e in ipairs(withOwned(kind, catalog)) do
 		local name = J.EntryName(kind, e)
 		if name or kind == "toys" then
 			total = total + 1
@@ -315,6 +341,8 @@ end
 
 -- Calls done(sources) with the entry's sources, in the server's order.
 function J.LoadSources(kind, e, done)
+	-- One the catalog left out has nothing for the server to tell.
+	if e.extra then done({}) return end
 	local key = kind .. ":" .. e.id
 	if sources[key] then done(sources[key]) return end
 	J.Request("W", { J.KINDS[kind].letter, tostring(e.id) }, function (result)
