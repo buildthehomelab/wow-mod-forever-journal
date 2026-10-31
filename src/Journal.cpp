@@ -321,7 +321,7 @@ namespace Journal
             if (sConfig.learnAbilities)
                 flags |= HELLO_LEARNING;
             if (sConfig.collections)
-                flags |= HELLO_COLLECTIONS;
+                flags |= HELLO_COLLECTIONS | HELLO_LIVE;
             if (sConfig.quests)
                 flags |= HELLO_QUESTS;
             if (Directory::Ready())
@@ -523,6 +523,8 @@ namespace Journal
                 Collections::HandleSources(player, req, args);
             else if (command == "O" && sConfig.collections)
                 Collections::HandleOwnedToys(player, req);
+            else if (command == "T" && sConfig.collections)
+                Collections::HandleLive(player, req, args);
             else if (command == "G" && sConfig.quests)
                 Quests::HandleCategories(player, req);
             else if (command == "Z" && sConfig.quests)

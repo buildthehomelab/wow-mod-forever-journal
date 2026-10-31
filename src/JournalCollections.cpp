@@ -17,7 +17,11 @@
  *   A  achievement rewards (achievement_reward)
  *   C  crafted: a profession spell creates the item
  *   T  trainers (class mounts)
+ *   S  mod-boss-coins' coin shop in the launcher (mod_boss_coins_shop), price in coins
+ *   B  mod-black-market's broker (mod_black_market_template): up for bid some days
+ *   U  mod-guild-levels' guild vendors (mod_guild_levels_reward): guild level, guild reputation
  *   N  notes from mod_forever_journal_collection_note, for what the data can't tell
+ * The S, B and U tables are read when those modules are installed (the journal doesn't need them).
  * Sources nobody can reach are left out: vendors and creatures with no spawn that nothing
  * summons, quests no one hands out or the realm has disabled. Entries with no source at all
  * (promotions, test spells) are left out unless Journal.Collections.ShowUnobtainable is on.
@@ -39,14 +43,18 @@
  *   O:<req>               -> OR:<req>:<toys>, OD rows, OE              toys the character has
  *       <item>,<in bags 0/1>   (0 = only in the bank: collected, but it can't be used from there)
  *   M:<req>:S:<kind>:<id>:<source> -> M:<req>:ok:<where>               a map flag on a source
+ *   T:<req>:<kind>:<id>   -> T:<req>:<coins>:<coins in bags>:<bid>:<bids>:<seconds left>
+ *       coins: the account's coin wallet (-1 without a coin shop); bid: the entry's Black Market
+ *       auction's current bid (its starting bid while <bids> is 0), 0 when it isn't up for bid
  *
  * WD rows, each with the source's index <i> second (for M):
  *   V,<i>,<npc>,<copper>,<honor>,<arena>,<items>,<era>,<placed>,<name>,<where>,<event>
- *   D,<i>,<creature>,<chance x100>,<instance>,<boss>,<era>,<placed>,<rare>,<name>,<where>,<variant>,<tabs>
+ *   D,<i>,<creature>,<chance x100>,<instance>,<boss>,<era>,<placed>,<rare>,<name>,<where>,<variant>,<tabs>,<base>
  *   G,<i>,<object>,<chance x100>,<instance>,<boss>,<era>,<placed>,<name>,<where>,<variant>,<tabs>
  *       variant: the dungeon journal tab to open (255 = any); tabs: the difficulties it drops on
- *       ("Heroic", "25 Player"), "-" when it drops on all of them
- *   P,<i>,<creature>,<chance x100>,<era>,<placed>,<name>,<where>
+ *       ("Heroic", "25 Player"), "-" when it drops on all of them; base: the creature as spawned
+ *       (a heroic or 25 player template's normal entry, which is what its kills show)
+ *   P,<i>,<creature>,<chance x100>,<era>,<placed>,<name>,<where>,<base>
  *   F,<i>,<area>,<chance x100>,<era>,<zone>
  *   I,<i>,<container item>,<chance x100>
  *   R,<i>
@@ -54,6 +62,9 @@
  *   A,<i>,<achievement>
  *   C,<i>,<spell>,<skill>,<rank>,<profession>,<recipe item>,<specialisation spell>,<era>
  *   T,<i>,<class>,<level>,<copper>,<era>,<placed>,<trainers>,<name>,<where>
+ *   S,<i>,<offer>,<coins>,<era>
+ *   B,<i>,<template>,<starting bid copper>,<era>,<placed>,<broker>,<where>,<seller>
+ *   U,<i>,<guild level>,<guild reputation rank>,<copper>,<faction 0/1/2>,<era>,<placed>,<vendors>,<name>,<where>
  *   N,<i>,<text>
  *   +,<i>,<row kind>,<more>      more sources of that kind than were sent
  */
@@ -77,6 +88,7 @@
 #include "StringFormat.h"
 #include "Timer.h"
 #include "World.h"
+#include "WorldSession.h"
 #include <algorithm>
 #include <array>
 #include <cmath>
@@ -125,6 +137,9 @@ namespace Journal::Collections
             SRC_FISHING     = 0x080,
             SRC_EVENT       = 0x100, // a world event's vendor
             SRC_NOTE        = 0x200,
+            SRC_SHOP        = 0x400, // the coin shop
+            SRC_BLACK_MARKET = 0x800,
+            SRC_GUILD       = 0x1000, // guild vendors
         };
 
         // mod-individual-progression states (IndividualProgression.h)
@@ -142,6 +157,9 @@ namespace Journal::Collections
         constexpr uint32 COND_SOURCE_QUEST_AVAILABLE = 19;
         constexpr uint32 COND_SOURCE_NPC_VENDOR = 23;
         constexpr uint32 COND_QUESTREWARDED = 8;
+
+        // mod-boss-coins' coin (Tarnished Undermine Real), counted in the bags next to the wallet.
+        constexpr uint32 ITEM_BOSS_COIN = 90410;
 
         // Sources of one kind sent per entry; the rest are counted in a '+' row.
         constexpr std::size_t MAX_PER_KIND = 8;
@@ -191,10 +209,11 @@ namespace Journal::Collections
         {
             char kind = 'N';
             uint32 id = 0;
-            uint32 a = 0;          // V copper, D/G/P/F/I chance x100, Q level, C skill, T class
-            uint32 b = 0;          // V honor, D/G instance, C rank, T level, Q faction
-            uint32 c = 0;          // V arena, D/G boss, T copper, D rare
-            uint32 d = 0;          // T trainer count
+            uint32 a = 0;          // V copper, D/G/P/F/I chance x100, Q level, C skill, T class, S coins,
+                                   // B starting bid, U guild level
+            uint32 b = 0;          // V honor, D/G instance, C rank, T level, Q faction, U reputation rank
+            uint32 c = 0;          // V arena, D/G boss, T/U copper, D rare
+            uint32 d = 0;          // T trainer count, U vendor count
             uint8 reqState = 0;
             uint8 variant = 255;   // D/G: the dungeon journal tab it drops on (255 = any)
             uint32 recipe = 0;     // C: the recipe item that teaches the craft
@@ -203,9 +222,10 @@ namespace Journal::Collections
             std::string name;
             std::string where;
             std::string extra;     // V: event, Q: who starts it, D/G: the tabs it drops on
-            uint32 at = 0;         // T: the trainer whose spot is shown, Q: who starts it
+            uint32 at = 0;         // T/U: the trainer or vendor whose spot is shown, Q: who starts it
             bool atObject = false; // Q: started by an object
-            std::vector<uint32> trainers; // T: every trainer creature, for the nearest map flag
+            uint8 team = 0;        // U: 1 Alliance, 2 Horde, 0 both
+            std::vector<uint32> trainers; // T/U: every trainer or vendor creature, for the nearest map flag
             Spot spot;
             float sort = 0.0f;     // higher first within a kind
         };
@@ -244,6 +264,9 @@ namespace Journal::Collections
             // Every spawn of the creatures and objects a source names, for the nearest map flag.
             std::unordered_map<uint32, std::vector<Spawn>> creatureSpawns;
             std::unordered_map<uint32, std::vector<Spawn>> objectSpawns;
+            // The characters tables HandleLive reads, when their modules are installed.
+            bool coinWallet = false;
+            bool blackMarket = false;
             uint32 hash = 0;
         };
 
@@ -1471,8 +1494,9 @@ namespace Journal::Collections
             }
         }
 
-        // The trainer shown is the one in the most open era (a class trainer in a capital
-        // rather than Shattrath); the map flag picks the nearest one that isn't hostile.
+        // The trainer (or guild vendor, or Black Market broker) shown is the one in the most open
+        // era (a class trainer in a capital rather than Shattrath); the map flag picks the nearest
+        // one that isn't hostile.
         void FinishTrainers(Spots const& spots, std::vector<std::pair<Ref, Source>>& found)
         {
             for (auto& [ref, src] : found)
@@ -1493,11 +1517,140 @@ namespace Journal::Collections
                 }
                 if (!src.at && !src.trainers.empty())
                     src.at = src.trainers.front();
+                // A broker or vendor nobody can meet sells nothing.
+                if (src.kind != 'T' && !src.spot.placed)
+                    continue;
                 src.name = CreatureName(src.at);
-                src.where = PlaceName(src.spot);
-                src.reqState = SpotEra(src.spot);
+                // Guild vendors stand in every capital: the one picked is only one of them (the map
+                // flag finds the player's own), so no place is named.
+                src.where = src.kind == 'U' && src.trainers.size() > 1 ? std::string() : PlaceName(src.spot);
+                src.reqState = std::max(src.reqState, SpotEra(src.spot));
                 AddSource(ref, src);
             }
+        }
+
+        // Whether another module's table is there: the journal runs without those modules.
+        template <class Database>
+        bool HasTable(Database& db, std::string_view table)
+        {
+            return bool(db.Query(Acore::StringFormat("SELECT 1 FROM information_schema.tables "
+                "WHERE table_schema = DATABASE() AND table_name = '{}'", table)));
+        }
+
+        // A source for every catalog entry an item teaches, to be finished once the spots are known.
+        void AddFound(uint32 item, Source const& src, std::vector<std::pair<Ref, Source>>& found)
+        {
+            auto itr = sData.byItem.find(item);
+            if (itr == sData.byItem.end())
+                return;
+            for (Ref const& ref : itr->second)
+                found.emplace_back(ref, src);
+        }
+
+        // Creatures by script name: the brokers and vendors of the modules below.
+        std::vector<uint32> CreaturesWithScript(std::string_view script)
+        {
+            std::vector<uint32> out;
+            if (QueryResult result = WorldDatabase.Query(Acore::StringFormat(
+                "SELECT CAST(entry AS UNSIGNED) FROM creature_template WHERE ScriptName = '{}' ORDER BY entry", script)))
+                do
+                {
+                    out.push_back(uint32(result->Fetch()[0].Get<uint64>()));
+                } while (result->NextRow());
+            return out;
+        }
+
+        // mod-boss-coins' coin shop: bought in the launcher with the account's coins, from the
+        // offer's progression phase on.
+        void BuildCoinShop()
+        {
+            if (!HasTable(WorldDatabase, "mod_boss_coins_shop"))
+                return;
+            sData.coinWallet = HasTable(CharacterDatabase, "mod_boss_coins_wallet");
+            if (QueryResult result = WorldDatabase.Query("SELECT CAST(id AS UNSIGNED), CAST(item AS UNSIGNED), "
+                "CAST(price AS UNSIGNED), CAST(phase AS UNSIGNED) FROM mod_boss_coins_shop WHERE enabled = 1 AND item > 0"))
+                do
+                {
+                    Field* f = result->Fetch();
+                    Source src;
+                    src.kind = 'S';
+                    src.id = uint32(f[0].Get<uint64>());
+                    src.a = uint32(f[2].Get<uint64>());
+                    src.reqState = uint8(std::min<uint64>(f[3].Get<uint64>(), IP_STATE_MAX));
+                    src.sort = -float(src.a);
+                    AddSourceForItem(uint32(f[1].Get<uint64>()), src);
+                } while (result->NextRow());
+        }
+
+        // mod-black-market: its broker puts a few items up for bid each day, picked at random.
+        void BuildBlackMarket(Spots& spots, std::vector<std::pair<Ref, Source>>& found)
+        {
+            if (!HasTable(WorldDatabase, "mod_black_market_template"))
+                return;
+            sData.blackMarket = HasTable(CharacterDatabase, "mod_black_market_auction");
+            std::vector<uint32> brokers = CreaturesWithScript("npc_black_market_broker");
+            for (uint32 broker : brokers)
+                spots.WantCreature(broker);
+            if (QueryResult result = WorldDatabase.Query("SELECT CAST(id AS UNSIGNED), CAST(item AS UNSIGNED), "
+                "CAST(min_bid AS UNSIGNED), CAST(ip_state AS UNSIGNED), seller FROM mod_black_market_template "
+                "WHERE enabled = 1 AND weight > 0"))
+                do
+                {
+                    Field* f = result->Fetch();
+                    Source src;
+                    src.kind = 'B';
+                    src.id = uint32(f[0].Get<uint64>());
+                    // The table's opening bid is in gold.
+                    src.a = uint32(std::min<uint64>(f[2].Get<uint64>() * GOLD, MAX_MONEY_AMOUNT));
+                    src.reqState = uint8(std::min<uint64>(f[3].Get<uint64>(), IP_STATE_MAX));
+                    src.extra = f[4].Get<std::string>();
+                    src.trainers = brokers;
+                    src.sort = -float(src.a);
+                    AddFound(uint32(f[1].Get<uint64>()), src, found);
+                } while (result->NextRow());
+        }
+
+        // mod-guild-levels' guild vendors in the capitals: a guild level and the character's
+        // reputation with the guild, then gold.
+        void BuildGuildRewards(Spots& spots, std::vector<std::pair<Ref, Source>>& found)
+        {
+            if (!HasTable(WorldDatabase, "mod_guild_levels_reward"))
+                return;
+            // Which side each vendor serves, from its faction (one friendly to both serves both).
+            std::array<std::vector<uint32>, 3> byTeam; // 0 every vendor, 1 Alliance, 2 Horde
+            for (uint32 vendor : CreaturesWithScript("npc_guild_levels_vendor"))
+            {
+                CreatureTemplate const* t = sObjectMgr->GetCreatureTemplate(vendor);
+                FactionTemplateEntry const* faction = t ? sFactionTemplateStore.LookupEntry(t->faction) : nullptr;
+                bool alliance = !faction || (faction->ourMask & FACTION_MASK_ALLIANCE) || !(faction->ourMask & FACTION_MASK_HORDE);
+                bool horde = !faction || (faction->ourMask & FACTION_MASK_HORDE) || !(faction->ourMask & FACTION_MASK_ALLIANCE);
+                byTeam[0].push_back(vendor);
+                if (alliance)
+                    byTeam[1].push_back(vendor);
+                if (horde)
+                    byTeam[2].push_back(vendor);
+                spots.WantCreature(vendor);
+            }
+            if (byTeam[0].empty())
+                return;
+            if (QueryResult result = WorldDatabase.Query("SELECT CAST(item AS UNSIGNED), CAST(team AS UNSIGNED), "
+                "CAST(guild_level AS UNSIGNED), CAST(rep_rank AS UNSIGNED), CAST(price AS UNSIGNED) FROM mod_guild_levels_reward"))
+                do
+                {
+                    Field* f = result->Fetch();
+                    Source src;
+                    src.kind = 'U';
+                    src.id = uint32(f[0].Get<uint64>());
+                    src.team = uint8(std::min<uint64>(f[1].Get<uint64>(), 2));
+                    src.a = uint32(f[2].Get<uint64>());
+                    src.b = uint32(f[3].Get<uint64>());
+                    src.c = uint32(f[4].Get<uint64>());
+                    src.trainers = byTeam[src.team];
+                    src.d = uint32(src.trainers.size());
+                    if (src.trainers.empty())
+                        continue;
+                    AddFound(src.id, src, found);
+                } while (result->NextRow());
         }
 
         void BuildNotes()
@@ -1531,6 +1684,9 @@ namespace Journal::Collections
                 case 'I': return SRC_CONTAINER;
                 case 'F': return SRC_FISHING;
                 case 'N': return SRC_NOTE;
+                case 'S': return SRC_SHOP;
+                case 'B': return SRC_BLACK_MARKET;
+                case 'U': return SRC_GUILD;
                 default: return 0;
             }
         }
@@ -1539,7 +1695,7 @@ namespace Journal::Collections
         // MAX_PER_KIND of each kind and works out its source bits and era.
         void Finish(Entry& e)
         {
-            static std::string const ORDER = "NVQATCDGPIFR";
+            static std::string const ORDER = "NVUQATCDGPIFSBR";
             std::stable_sort(e.list.begin(), e.list.end(), [](Source const& a, Source const& b)
             {
                 std::size_t ka = ORDER.find(a.kind);
@@ -1623,6 +1779,8 @@ namespace Journal::Collections
         BuildVendors(spots, pending);
         BuildDrops(spots, pending, worldDrops);
         BuildTrainers(spots, trainers);
+        BuildBlackMarket(spots, trainers);
+        BuildGuildRewards(spots, trainers);
         BuildQuests(spots); // resolves the spots of everything wanted so far
         FinishTrainers(spots, trainers);
 
@@ -1654,6 +1812,7 @@ namespace Journal::Collections
         }
         BuildAchievements();
         BuildCrafted();
+        BuildCoinShop();
         BuildNotes();
 
         uint32 h = 2166136261u;
@@ -1753,13 +1912,13 @@ namespace Journal::Collections
                         s.reqState, placed, Escape(s.name, 40), Escape(s.where, 40), Escape(s.extra, 30));
                 case 'D':
                     return Acore::StringFormat("D,{},{},{},{},{},{},{},{},{},{},{},{}", i, s.id, s.a, s.b, s.c, s.reqState, placed, s.d,
-                        Escape(s.name, 40), Escape(s.where, 40), s.variant, Escape(s.extra, 40));
+                        Escape(s.name, 40), Escape(s.where, 40), s.variant, Escape(s.extra, 40), BaseOf(s.id));
                 case 'G':
                     return Acore::StringFormat("G,{},{},{},{},{},{},{},{},{},{},{}", i, s.id, s.a, s.b, s.c, s.reqState, placed,
                         Escape(s.name, 40), Escape(s.where, 40), s.variant, Escape(s.extra, 40));
                 case 'P':
-                    return Acore::StringFormat("P,{},{},{},{},{},{},{}", i, s.id, s.a, s.reqState, placed, Escape(s.name, 40),
-                        Escape(s.where, 40));
+                    return Acore::StringFormat("P,{},{},{},{},{},{},{},{}", i, s.id, s.a, s.reqState, placed, Escape(s.name, 40),
+                        Escape(s.where, 40), BaseOf(s.id));
                 case 'F':
                     return Acore::StringFormat("F,{},{},{},{},{}", i, s.id, s.a, s.reqState, Escape(s.name, 40));
                 case 'I':
@@ -1777,6 +1936,14 @@ namespace Journal::Collections
                 case 'T':
                     return Acore::StringFormat("T,{},{},{},{},{},{},{},{},{}", i, s.a, s.b, s.c, s.reqState, placed, s.d,
                         Escape(s.name, 40), Escape(s.where, 40));
+                case 'S':
+                    return Acore::StringFormat("S,{},{},{},{}", i, s.id, s.a, s.reqState);
+                case 'B':
+                    return Acore::StringFormat("B,{},{},{},{},{},{},{},{}", i, s.id, s.a, s.reqState, placed,
+                        Escape(s.name, 40), Escape(s.where, 40), Escape(s.extra, 40));
+                case 'U':
+                    return Acore::StringFormat("U,{},{},{},{},{},{},{},{},{},{}", i, s.a, s.b, s.c, s.team, s.reqState, placed,
+                        s.d, Escape(s.name, 40), Escape(s.where, 40));
                 case 'N':
                 default:
                     return Acore::StringFormat("N,{},{}", i, NoteText(s.name));
@@ -1860,7 +2027,7 @@ namespace Journal::Collections
         {
             case 'V': case 'D': case 'P': creatures = { s.id, BaseOf(s.id) }; break;
             case 'G': objects = { s.id }; break;
-            case 'T': creatures = s.trainers; break;
+            case 'T': case 'U': case 'B': creatures = s.trainers; break;
             case 'Q':
                 if (s.at)
                     (s.atObject ? objects : creatures).push_back(s.at);
@@ -1893,7 +2060,8 @@ namespace Journal::Collections
             // The other faction's vendors, trainers and quest givers are no use; drops and
             // pockets come from creatures you fight anyway.
             FactionTemplateEntry const* theirs = sFactionTemplateStore.LookupEntry(t->faction);
-            if ((s.kind == 'V' || s.kind == 'T' || s.kind == 'Q') && mine && theirs && theirs->IsHostileTo(*mine))
+            if ((s.kind == 'V' || s.kind == 'T' || s.kind == 'Q' || s.kind == 'U' || s.kind == 'B') && mine && theirs
+                && theirs->IsHostileTo(*mine))
                 continue;
             if (auto itr = sData.creatureSpawns.find(c); itr != sData.creatureSpawns.end())
                 consider(itr->second, s.kind == 'Q' && !s.extra.empty() ? s.extra : t->Name);
@@ -1906,5 +2074,61 @@ namespace Journal::Collections
 
         Index::SendPoi(player, spot.map, spot.x, spot.y, name);
         Send(player, "M:" + req + ":ok:" + Escape(Index::WhereText(player, spot.map, spot.x, spot.y, spot.zone), 120));
+    }
+
+    void HandleLive(Player* player, std::string const& req, std::vector<std::string_view> const& args)
+    {
+        uint8 kind = 0;
+        Entry const* e = FindEntry(args, 2, kind);
+        if (!e)
+        {
+            SendError(player, req, "none");
+            return;
+        }
+        auto has = [e](char k) { return std::any_of(e->list.begin(), e->list.end(), [k](Source const& s) { return s.kind == k; }); };
+        bool shop = sData.coinWallet && has('S');
+        bool auction = sData.blackMarket && has('B') && !e->items.empty();
+        uint32 bags = shop ? player->GetItemCount(ITEM_BOSS_COIN, false) : 0;
+        if (!shop && !auction)
+        {
+            Send(player, "T:" + req + ":-1:0:0:0:0");
+            return;
+        }
+
+        // One round trip for both: the wallet (no row = no coins) and the auction ending first.
+        std::string wallet = shop ? Acore::StringFormat("(SELECT coins FROM mod_boss_coins_wallet WHERE account = {})",
+            player->GetSession()->GetAccountId()) : "NULL";
+        std::string bid = auction ? Acore::StringFormat("(SELECT CONCAT(IF(num_bids > 0, current_bid, min_bid), ',', num_bids, ',', "
+            "CAST(end_time AS SIGNED) - UNIX_TIMESTAMP()) FROM mod_black_market_auction WHERE item IN ({}) "
+            "AND end_time > UNIX_TIMESTAMP() ORDER BY end_time LIMIT 1)", IdList(e->items, 0, e->items.size())) : "NULL";
+        WorldSession* session = player->GetSession();
+        ObjectGuid const guid = player->GetGUID();
+        session->GetQueryProcessor().AddCallback(CharacterDatabase.AsyncQuery(Acore::StringFormat("SELECT {}, {}", wallet, bid))
+            .WithCallback([session, guid, req, shop, bags](QueryResult result)
+            {
+                Player* player = session->GetPlayer();
+                if (!player || player->GetGUID() != guid)
+                    return;
+                int64 coins = shop ? 0 : -1;
+                std::string auctionText = "0:0:0";
+                if (result)
+                {
+                    Field* f = result->Fetch();
+                    if (shop && !f[0].IsNull())
+                        coins = f[0].Get<int64>();
+                    // "<bid>,<bids>,<seconds left>", all numbers
+                    if (!f[1].IsNull())
+                    {
+                        std::string text = f[1].Get<std::string>();
+                        if (std::count(text.begin(), text.end(), ',') == 2
+                            && text.find_first_not_of("0123456789,") == std::string::npos)
+                        {
+                            std::replace(text.begin(), text.end(), ',', ':');
+                            auctionText = text;
+                        }
+                    }
+                }
+                Send(player, Acore::StringFormat("T:{}:{}:{}:{}", req, coins, bags, auctionText));
+            }));
     }
 }
