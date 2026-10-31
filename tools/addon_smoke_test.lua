@@ -334,9 +334,16 @@ function GetSpellLink(id) return "|Hspell:" .. id .. "|h[" .. tostring(spellName
 -- events and the fake server
 
 local outbox = {}
+-- mod-pet-loot's auto-summon pick: the Pets tab asks it under its own prefix.
+local petLoot = { outbox = {}, sent = {}, pick = 0, online = true }
 function SendAddonMessage(prefix, msg, channel)
-	assert(prefix == "JNL" and channel == "WHISPER", "bad addon message")
+	assert(channel == "WHISPER", "bad addon message")
 	assert(#prefix + 1 + #msg <= 254, "addon message too long")
+	if prefix == "PETLOOT" then
+		table.insert(petLoot.outbox, msg)
+		return
+	end
+	assert(prefix == "JNL", "bad addon message prefix: " .. tostring(prefix))
 	table.insert(outbox, msg)
 end
 
@@ -565,6 +572,15 @@ local function tick(seconds)
 			end
 		end
 		while #outbox > 0 do serve(table.remove(outbox, 1)) end
+		while #petLoot.outbox > 0 do
+			local msg = table.remove(petLoot.outbox, 1)
+			table.insert(petLoot.sent, msg)
+			if petLoot.online then
+				local spell = msg:match("^S:(%d+)$")
+				if spell then petLoot.pick = tonumber(spell) end
+				fire("CHAT_MSG_ADDON", "PETLOOT", "A:" .. petLoot.pick, "WHISPER", "Tester")
+			end
+		end
 	end
 end
 
@@ -1007,6 +1023,30 @@ step("pets and toys tabs", function ()
 	tick(1)
 	assert(textShown("^Bombay Cat$") and textShown("^Cornish Rex Cat$"), "pet rows missing")
 	assert(textShown("Collected: |cffffffff1|r / 2"), "pet count wrong")
+	-- Auto-summon: the box shows once mod-pet-loot answers, and ticking it picks the pet.
+	local function autoBox()
+		return find(function (f) return f.__kind == "CheckButton" and rawget(f, "label") and f.label.__text == "Auto-summon" and f:IsVisible() end)
+	end
+	local box = autoBox()
+	assert(box, "no Auto-summon box for a collected pet")
+	assert(not box:GetChecked(), "Auto-summon ticked before anything was picked")
+	box:SetChecked(true)
+	box.__scripts.OnClick(box)
+	tick(0.2)
+	assert(petLoot.sent[#petLoot.sent] == "S:10673", "ticking Auto-summon didn't pick the pet: " .. tostring(petLoot.sent[#petLoot.sent]))
+	assert(autoBox():GetChecked() and textShown("Auto%-summoned"), "the picked pet isn't shown as auto-summoned")
+	box:SetChecked(false)
+	box.__scripts.OnClick(box)
+	tick(0.2)
+	assert(petLoot.sent[#petLoot.sent] == "S:0", "unticking Auto-summon didn't turn it off")
+	assert(not autoBox():GetChecked() and not textShown("Auto%-summoned"), "Auto-summon still on after unticking")
+	-- A realm without mod-pet-loot (or with auto-summon off) never answers: no box.
+	J.autoSummon = nil
+	J.Fire("AUTO_SUMMON")
+	tick(0.2)
+	assert(not autoBox(), "Auto-summon box shown with no answer from the realm")
+	fire("CHAT_MSG_ADDON", "PETLOOT", "A:0", "WHISPER", "Tester")
+	tick(0.2)
 	-- The client renumbered the list since it was read: the summon finds the pet's index afresh.
 	table.insert(companions.CRITTER, 1, { 7380, "Cornish Rex Cat", 10674, "Interface\\Icons\\P", false })
 	called = nil

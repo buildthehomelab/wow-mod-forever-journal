@@ -188,6 +188,10 @@ collected count sit above it. On the right, the one you picked:
   one faction or class, a ground, flying, or ground and flying mount (Invincible, the Headless
   Horseman's Mount...), and a **Summon**, **Dismount**, **Use** or **Equip** (trinket toys) button
   when you have it. A toy in your bank counts as collected and says so; take it out to use it;
+- for a pet you have, an **Auto-summon** box when the realm runs
+  [mod-pet-loot](https://github.com/buildthehomelab/wow-mod-pet-loot): tick it and that pet comes
+  out on its own whenever you have none (after logging in, zoning, dying or a flight), the same as
+  `.companion auto`;
 - **Where to get it**: every source the realm has, each on its own line:
 
 | Source | Shows | Click |
