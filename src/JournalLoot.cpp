@@ -208,7 +208,7 @@ namespace Journal::Loot
                 "item_loot_template", "skinning_loot_template", "pickpocketing_loot_template" })
             {
                 if (QueryResult result = WorldDatabase.Query("SELECT CAST(ABS(Reference) AS UNSIGNED), COUNT(DISTINCT Entry) "
-                    "FROM {} WHERE Reference <> 0 GROUP BY ABS(Reference)", table))
+                    "FROM {} WHERE Reference <> 0 GROUP BY CAST(ABS(Reference) AS UNSIGNED)", table))
                     do
                     {
                         Field* f = result->Fetch();
