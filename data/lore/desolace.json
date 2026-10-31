@@ -1,0 +1,159 @@
+{
+  "zone": 405,
+  "name": "Desolace",
+  "entries": [
+    {
+      "id": 405000,
+      "kind": "zone",
+      "title": "Desolace",
+      "triggers": [{ "areaId": 405 }],
+      "body": [
+        "A grey, rocky wasteland on the western coast of Kalimdor, littered with bones and dead trees, with yellow, polluted pools and skies forever black with storm. It seems almost under a curse. Mountains wall it off from the rest of Kalimdor, and only the western coast is green and sunlit.",
+        "It is the homeland of the centaur, whose tribes war endlessly among themselves. The demon-worshipping Burning Blade has its fortress in the north, satyrs haunt the elven ruins, and the Burning Legion gathers at Mannoroc Coven."
+      ],
+      "sources": ["warcraft.wiki.gg: Desolace (introduction, Geography)"]
+    },
+    {
+      "id": 405001,
+      "kind": "place",
+      "title": "Nijel's Point",
+      "triggers": [{ "area": "Nijel's Point" }, { "talk": 5396 }, { "talk": 13698 }],
+      "body": [
+        "An Alliance and Cenarion Circle outpost in the northern mountains. Stormwind sent Captain Pentigast and his guard to face the centaur, convinced that whichever clan wins the war will soon turn on the Alliance. Keeper Marandis and his dryad sisters have come from the Circle on a holier errand: to recover the body of Zaetar, son of Cenarius, from Maraudon."
+      ],
+      "sources": ["warcraft.wiki.gg: Nijel's Point (World of Warcraft)"]
+    },
+    {
+      "id": 405002,
+      "kind": "place",
+      "title": "Ghost Walker Post",
+      "triggers": [{ "area": "Ghost Walker Post" }, { "talk": 5412 }, { "talk": 5641 }],
+      "body": [
+        "A small, exposed tauren outpost beside the Kodo Graveyard, from which the Horde wages war on the Burning Blade and the centaur. Its leader, the shaman Gurda Wildmane, and her shamans ease the dying kodo into their next lives and speak with the spirits of the dead ones. Orcs sent by Thrall stand with them."
+      ],
+      "sources": ["warcraft.wiki.gg: Ghost Walker Post"]
+    },
+    {
+      "id": 405003,
+      "kind": "place",
+      "title": "Shadowprey Village",
+      "triggers": [{ "area": "Shadowprey Village" }, { "talk": 13699 }, { "talk": 11624 }],
+      "body": [
+        "A troll fishing port on the sunny southern coast, the Horde's safest haven in Desolace; its airy inn wakes travellers to a beautiful view of the sea. Its fishermen feed Ghost Walker Post, when a greedy orca called Blubbergut isn't eating all their fish. Nearby, the dryad Selendra searches for the remains of Zaetar."
+      ],
+      "sources": ["warcraft.wiki.gg: Shadowprey Village", "warcraft.wiki.gg: Desolace (Geography)"]
+    },
+    {
+      "id": 405004,
+      "kind": "place",
+      "title": "The Kodo Graveyard",
+      "triggers": [{ "area": "Kodo Graveyard" }],
+      "body": [
+        "The final resting place of the kodo, a field of great bones in the heart of Desolace. The spirits of the dead beasts rise when anyone disturbs their remains."
+      ],
+      "sources": ["warcraft.wiki.gg: Kodo Graveyard"]
+    },
+    {
+      "id": 405005,
+      "kind": "place",
+      "title": "The Centaur Clans",
+      "triggers": [{ "area": "Magram Village" }, { "area": "Gelkis Village" }, { "area": "Kolkar Village" }],
+      "body": [
+        "Four centaur tribes hold Desolace. The Kolkar, the most widespread across Kalimdor but the weakest here, hold the eastern mountains. The Magram live among the brackish yellow pools to the south of them, and are at war with the Gelkis, whose village rings a ravine near the southern coast. The Horde and the Alliance each hope to win an ally by taking a side in that feud.",
+        "In the Gelkis cave of Bolgan's Hole, reached across a rope bridge, their shamans hoard blue crystals called the tears of Theradras, believing they bring the princess's protection."
+      ],
+      "sources": ["warcraft.wiki.gg: Desolace (Geography, World of Warcraft)", "warcraft.wiki.gg: Kolkar Village", "warcraft.wiki.gg: Magram Village", "warcraft.wiki.gg: Bolgan's Hole"]
+    },
+    {
+      "id": 405006,
+      "kind": "place",
+      "title": "The Valley of Spears",
+      "triggers": [{ "area": "Valley of Spears" }],
+      "body": [
+        "A valley in the west, reached only by narrow mountain passes, home to the Maraudine centaur, the fifth and most fanatical clan. At its south-western end lies the entrance to Maraudon, the centaur's sacred burial grounds."
+      ],
+      "sources": ["warcraft.wiki.gg: Valley of Spears", "warcraft.wiki.gg: Desolace (Geography)"]
+    },
+    {
+      "id": 405007,
+      "kind": "place",
+      "title": "Thunder Axe Fortress",
+      "triggers": [{ "area": "Thunder Axe Fortress" }],
+      "body": [
+        "A stronghold of the Burning Blade in the north-west, a keep with barracks, watch towers and a cave. The cult once kept here the Hand of Iruxos, used to open demon portals at Mannoroc Coven, and the Sceptre of Light, which it stole from the naga."
+      ],
+      "sources": ["warcraft.wiki.gg: Thunder Axe Fortress (History)"]
+    },
+    {
+      "id": 405008,
+      "kind": "place",
+      "title": "Mannoroc Coven",
+      "triggers": [{ "area": "Mannoroc Coven" }, { "kill": 5760 }, { "kill": 5771 }],
+      "body": [
+        "Night elf ruins in the middle of Desolace, named for the pit lord Mannoroth, where demons have blasted the already dead earth with fel magic until a deadly pall hangs over it. Infernals, succubi, felhounds and felguards stalk it, led by Lord Azrethoc, with the orc warlock Jugkar Grim'rod speaking for the Burning Blade."
+      ],
+      "sources": ["warcraft.wiki.gg: Mannoroc Coven"]
+    },
+    {
+      "id": 405009,
+      "kind": "place",
+      "title": "Sargeron",
+      "triggers": [{ "area": "Sargeron" }],
+      "body": [
+        "A night elf city in ruins since the War of the Ancients, its old name lost. It held many holy sites of Elune, a cathedral, a temple, a sanctuary, and relics of the goddess still lie there. Hatefury satyrs have made it their home and named it after their master, Sargeras."
+      ],
+      "sources": ["warcraft.wiki.gg: Sargeron"]
+    },
+    {
+      "id": 405010,
+      "kind": "place",
+      "title": "Sar'theris Strand",
+      "triggers": [{ "area": "Sar'theris Strand" }, { "area": "Ethel Rethor" }, { "area": "Ranazjar Isle" }],
+      "body": [
+        "The western coast, sunny and grassy unlike the grey interior, crowded with sea giants, naga and makrura. The drowned elven ruins of Ethel Rethor and Ranazjar Isle lie off the north of it, parts of one ancient city; on Ranazjar, the naga lie slaughtered by a water lord, Hydronis."
+      ],
+      "sources": ["warcraft.wiki.gg: Sar'theris Strand", "warcraft.wiki.gg: Ethel Rethor", "warcraft.wiki.gg: Ranazjar Isle"]
+    },
+    {
+      "id": 405011,
+      "kind": "place",
+      "title": "The Valley of Bones",
+      "triggers": [{ "area": "Valley of Bones" }, { "area": "Tethris Aran" }, { "area": "Kormek's Hut" }],
+      "body": [
+        "A crag on the southern edge of Desolace, infested by skeletons and centaur necromancers and haunted by the ghosts of the Magram. Two massive skeletons of unknown origin, the Dead Goliaths, lie collapsed against its walls."
+      ],
+      "sources": ["warcraft.wiki.gg: Valley of Bones"]
+    },
+    {
+      "id": 405030,
+      "kind": "person",
+      "title": "Warug",
+      "triggers": [{ "talk": 5398 }],
+      "body": [
+        "A centaur of the Magram clan who knows the old stories of his people's birth, and of the princess beneath the earth who loves them."
+      ],
+      "sources": ["warcraft.wiki.gg: Desolace (World of Warcraft)"]
+    },
+    {
+      "id": 405050,
+      "kind": "history",
+      "title": "Mashan'she",
+      "triggers": [{ "areaId": 405 }, { "area": "Valley of Spears" }],
+      "body": [
+        "Eleven hundred years before the Dark Portal, this was Mashan'she, the \"Loom of the Earth Mother\", a fertile grassland of the tauren. Faint elemental whispers convinced their shamans the Earth Mother herself slept beneath it, and after decades they woke her. It was not the Earth Mother. It was Princess Theradras, a great earth elemental, daughter of Therazane, and she drank the life of the land to restore herself. The tauren named what was left Desolace.",
+        "Zaetar, son of Cenarius, came to imprison her and fell in love with her instead. Their children were the centaur, who murdered their father, spread across Kalimdor, and drove the tauren out in centuries of war."
+      ],
+      "sources": ["warcraft.wiki.gg: Desolace (History)"]
+    },
+    {
+      "id": 405051,
+      "kind": "history",
+      "title": "The Felsteeds",
+      "triggers": [{ "areaId": 405 }],
+      "body": [
+        "The remote plains of Desolace were once home to a breed of wild horse too proud to bear riders. That pride drew the elders of the Shadow Council, who bound the steeds to their service in rituals too horrific for any but the most depraved warlocks. They kept their imposing forms, but were twisted with infernal fire, and became the felsteeds."
+      ],
+      "sources": ["warcraft.wiki.gg: Desolace (History)"]
+    }
+  ]
+}

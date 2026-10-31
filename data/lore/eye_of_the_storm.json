@@ -1,0 +1,27 @@
+{
+  "zone": 3820,
+  "name": "Eye of the Storm",
+  "entries": [
+    {
+      "id": 3820000,
+      "kind": "zone",
+      "title": "The Eye of the Storm",
+      "triggers": [{ "areaId": 3820 }],
+      "body": [
+        "For most places, \"Eye of the Storm\" would be a florid name, but not for this floating isle high above the Netherstorm. Coruscating mana storms fill its towers with energy, even as they wear away the barrier between Outland and the Twisting Nether.",
+        "Its nexuses of power and its closeness to Tempest Keep make an otherwise barren rock irresistible to two peoples: the draenei of the Exodar, for its nearness to the naaru's vessel, and the blood elves of Silvermoon, for its rich deposits of energy."
+      ],
+      "sources": ["warcraft.wiki.gg: Eye of the Storm (Official overview, Description)"]
+    },
+    {
+      "id": 3820001,
+      "kind": "place",
+      "title": "The Four Towers",
+      "triggers": [{ "area": "Blood Elf Tower" }, { "area": "Draenei Ruins" }, { "area": "Fel Reaver Ruins" }, { "area": "Mage Tower" }],
+      "body": [
+        "Four towers stand on the island's corners, drawing on the storm's power: a blood elf tower, ancient draenei ruins, a mage tower, and the ruins where a fallen fel reaver lies. Whoever holds them commands the energy of the Eye."
+      ],
+      "sources": ["warcraft.wiki.gg: Eye of the Storm (Description)"]
+    }
+  ]
+}

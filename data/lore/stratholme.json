@@ -1,0 +1,208 @@
+{
+  "zone": 2017,
+  "name": "Stratholme",
+  "entries": [
+    {
+      "id": 2017000,
+      "kind": "zone",
+      "title": "Stratholme",
+      "triggers": [{ "areaId": 2017 }],
+      "body": [
+        "Once the jewel of northern Lordaeron and its second city, a holy city famous for holy water strong enough to cleanse the darkest magic. In Alonsus Chapel, Archbishop Faol inducted the first five paladins of the Silver Hand: Uther, Saidan Dathrohan, Turalyon, Gavinrad and Tirion Fordring. In its Hall of Justice, Tirion was later tried for treason for defending an orc.",
+        "Then the Cult of the Damned's plagued grain reached it from Andorhal, and Prince Arthas put the whole city to the sword before it could rise. It still burns. The Scourge holds most of it under Baron Rivendare, and the Scarlet Crusade has dug into the western districts and fights them street by street."
+      ],
+      "sources": ["warcraft.wiki.gg: Stratholme (Early history, Second War, Of Blood and Honor, Third War)"]
+    },
+    {
+      "id": 2017001,
+      "kind": "place",
+      "title": "King's Square and Market Row",
+      "triggers": [{ "areaId": 2017 }, { "kill": 10516 }, { "kill": 10808 }],
+      "body": [
+        "The burning heart of the old city behind its main gate, roamed by ghouls and the ghosts of its citizens. Among them walk the fallen: two former champions of the Light who did terrible things to innocents here in pursuit of unholy power, and are now a wraith and a ghoul."
+      ],
+      "sources": ["warcraft.wiki.gg: The Unforgiven", "warcraft.wiki.gg: Timmy the Cruel"]
+    },
+    {
+      "id": 2017002,
+      "kind": "place",
+      "title": "The Scarlet Bastion",
+      "triggers": [{ "kill": 11032 }, { "kill": 10997 }, { "kill": 10811 }, { "kill": 10812 }],
+      "body": [
+        "The Scarlet Crusade's fortress in the western districts: its armoury and its cannons, its archives, and the hall where Grand Crusader Dathrohan, one of the first five paladins of the Silver Hand, commands the Crusade."
+      ],
+      "sources": ["warcraft.wiki.gg: Cannon Master Willey", "warcraft.wiki.gg: Archivist Galford", "warcraft.wiki.gg: Stratholme (Second War)"]
+    },
+    {
+      "id": 2017003,
+      "kind": "place",
+      "title": "The Gauntlet",
+      "triggers": [{ "kill": 10437 }, { "kill": 10436 }, { "kill": 10438 }, { "kill": 10435 }],
+      "body": [
+        "The Scourge side of the city, behind the service entrance. Three ziggurats guard the way to the Slaughter House, each held by one of the Baron's servants. The city's old magistrate, raised as a wight, keeps the gate."
+      ],
+      "sources": ["warcraft.wiki.gg: Nerub'enkan", "warcraft.wiki.gg: Magistrate Barthilas"]
+    },
+    {
+      "id": 2017004,
+      "kind": "place",
+      "title": "The Slaughter House",
+      "triggers": [{ "kill": 10439 }, { "kill": 10440 }],
+      "body": [
+        "The Baron's abattoir, where the Scourge stitches its abominations together, and where Baron Rivendare waits."
+      ],
+      "sources": ["warcraft.wiki.gg: Nerub'enkan", "warcraft.wiki.gg: Ramstein the Gorger"]
+    },
+    {
+      "id": 2017005,
+      "kind": "place",
+      "title": "Alonsus Chapel",
+      "triggers": [{ "kill": 10917 }, { "talk": 10917 }],
+      "body": [
+        "The chapel where the Silver Hand was born, its eternal flame still burning on consecrated ground in the dead city. A paladin whose faith wavered has taken refuge here, hoping the holy ground will keep the Scourge's corruption at bay."
+      ],
+      "sources": ["warcraft.wiki.gg: Aurius"]
+    },
+    {
+      "id": 2017030,
+      "kind": "person",
+      "title": "The Unforgiven and Timmy the Cruel",
+      "triggers": [{ "kill": 10516 }, { "kill": 10808 }],
+      "body": [
+        "Lylia and Timmison were champions, of the Light it seems, who committed heinous acts against Stratholme's innocents to win unholy power. Lylia walks Market Row as a wraith, and Timmison as a ghoul."
+      ],
+      "sources": ["warcraft.wiki.gg: The Unforgiven", "warcraft.wiki.gg: Timmy the Cruel"]
+    },
+    {
+      "id": 2017031,
+      "kind": "person",
+      "title": "Postmaster Malown",
+      "triggers": [{ "kill": 11143 }],
+      "body": [
+        "Stratholme's postmaster, who could not escape the Scourge, and now haunts the city to make sure nobody tampers with the mail. Not even hail, sleet or snow will stop him."
+      ],
+      "sources": ["warcraft.wiki.gg: Postmaster Malown"]
+    },
+    {
+      "id": 2017032,
+      "kind": "person",
+      "title": "Hearthsinger Forresten",
+      "triggers": [{ "kill": 10558 }],
+      "body": [
+        "The ghost of a travelling musician who was in town when the Culling came."
+      ],
+      "sources": ["warcraft.wiki.gg: Hearthsinger Forresten"]
+    },
+    {
+      "id": 2017033,
+      "kind": "person",
+      "title": "Malor and Willey",
+      "triggers": [{ "kill": 11032 }, { "kill": 10997 }],
+      "body": [
+        "Officers of the Scarlet Bastion: Malor the Zealous, a crazed crusader who guards a strongbox with a medallion of faith, and Cannon Master Willey, who runs its armoury."
+      ],
+      "sources": ["warcraft.wiki.gg: Malor the Zealous", "warcraft.wiki.gg: Cannon Master Willey"]
+    },
+    {
+      "id": 2017034,
+      "kind": "person",
+      "title": "Archivist Galford",
+      "triggers": [{ "kill": 10811 }],
+      "body": [
+        "The keeper of the Crusade's archives in the bastion, and of a painting called Of Love and Family."
+      ],
+      "sources": ["warcraft.wiki.gg: Archivist Galford"]
+    },
+    {
+      "id": 2017035,
+      "kind": "person",
+      "title": "Grand Crusader Dathrohan",
+      "triggers": [{ "kill": 10812 }, { "kill": 10813 }],
+      "body": [
+        "Saidan Dathrohan was one of the first five paladins of the Silver Hand. He is the Grand Crusader of the Scarlet Crusade, and he is not himself. He died long ago, and the dreadlord Balnazzar wears his body. Balnazzar was one of the three dreadlords left to rule Lordaeron for the Legion; Sylvanas besieged him and he was thought slain, but he survived, and through Dathrohan he made the Crusade his own. It was he who drove Renault Mograine to murder his father."
+      ],
+      "sources": ["warcraft.wiki.gg: Balnazzar (introduction)", "warcraft.wiki.gg: Renault Mograine"]
+    },
+    {
+      "id": 2017036,
+      "kind": "person",
+      "title": "Magistrate Barthilas",
+      "triggers": [{ "kill": 10435 }],
+      "body": [
+        "Once the apprentice of Tirion Fordring, who held Hearthglen for a time after Tirion's exile, then became magistrate of Stratholme until Arthas killed him with his people. The Scourge raised him as a wight to guard their side of the city."
+      ],
+      "sources": ["warcraft.wiki.gg: Magistrate Barthilas"]
+    },
+    {
+      "id": 2017037,
+      "kind": "person",
+      "title": "Nerub'enkan",
+      "triggers": [{ "kill": 10437 }],
+      "body": [
+        "A crypt fiend who guards one of the three ziggurats before the Slaughter House."
+      ],
+      "sources": ["warcraft.wiki.gg: Nerub'enkan"]
+    },
+    {
+      "id": 2017038,
+      "kind": "person",
+      "title": "Baroness Anastari",
+      "triggers": [{ "kill": 10436 }],
+      "body": [
+        "A baroness in life, brutally murdered by the Scourge and bound as a banshee to the Lich King. She guards a ziggurat, and can drive her spirit into those she touches, wearing their bodies as her own."
+      ],
+      "sources": ["warcraft.wiki.gg: Baroness Anastari"]
+    },
+    {
+      "id": 2017039,
+      "kind": "person",
+      "title": "Maleki the Pallid",
+      "triggers": [{ "kill": 10438 }],
+      "body": [
+        "A living human necromancer, master of frost and shadow, who guards the third ziggurat."
+      ],
+      "sources": ["warcraft.wiki.gg: Maleki the Pallid"]
+    },
+    {
+      "id": 2017040,
+      "kind": "person",
+      "title": "Ramstein the Gorger",
+      "triggers": [{ "kill": 10439 }],
+      "body": [
+        "An abomination, fearless, tenacious and tireless, responsible for thousands of deaths, among them that of the ranger lord Nathanos Marris, whom he killed in his own home. Nathanos, now a Forsaken, wants him dead."
+      ],
+      "sources": ["warcraft.wiki.gg: Ramstein the Gorger"]
+    },
+    {
+      "id": 2017041,
+      "kind": "person",
+      "title": "Baron Rivendare",
+      "triggers": [{ "kill": 10440 }],
+      "body": [
+        "Titus Rivendare, a rich landowner of Stratholme and a friend of Kel'Thuzad, who drew him into the Cult of the Damned. He was one of the chief architects of the capital's fall; he oversaw the torture of Lordaeron's soldiers in its sewers. The Lich King made him a death knight and master of Stratholme."
+      ],
+      "sources": ["warcraft.wiki.gg: Baron Rivendare"]
+    },
+    {
+      "id": 2017042,
+      "kind": "person",
+      "title": "Aurius",
+      "triggers": [{ "talk": 10917 }, { "kill": 10917 }],
+      "body": [
+        "A paladin of the Silver Hand whose faith wavered before the Scourge, so that he nearly fell into its ranks. He fled to Alonsus Chapel, believing its holy ground would keep the corruption at bay. He is the Baron's son."
+      ],
+      "sources": ["warcraft.wiki.gg: Aurius"]
+    },
+    {
+      "id": 2017050,
+      "kind": "history",
+      "title": "The Culling",
+      "triggers": [{ "areaId": 2017 }],
+      "body": [
+        "The dreadlord Mal'Ganis chose Stratholme for the plague: it was crowded, and the most important city of the Eastweald. If it fell, Lordaeron would lose the east. Its people baked and ate the poisoned grain without knowing. Arthas arrived with Uther and Jaina as the first dead began to rise, and decided the only way was to purge the city.",
+        "Uther, Jaina and the paladins refused to take part. Arthas and the soldiers who followed him went on, and fire swallowed the city while the blood of innocents ran in the streets. Mal'Ganis waited for him at the end, and taunted him to follow to Northrend."
+      ],
+      "sources": ["warcraft.wiki.gg: Stratholme (Third War)"]
+    }
+  ]
+}

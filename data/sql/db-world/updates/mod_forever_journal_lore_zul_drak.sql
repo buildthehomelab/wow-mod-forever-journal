@@ -1,0 +1,61 @@
+-- mod-forever-journal: lore of Zul'Drak (zone 66).
+-- Generated from data/lore/*.json by tools/build_lore_sql.py; edit the JSON, not this file.
+
+DELETE FROM `mod_forever_journal_lore_trigger` WHERE `Entry` BETWEEN 66000 AND 66999;
+DELETE FROM `mod_forever_journal_lore` WHERE `ID` BETWEEN 66000 AND 66999;
+
+INSERT INTO `mod_forever_journal_lore` (`ID`, `Zone`, `Kind`, `SortOrder`, `Faction`, `Races`, `Classes`, `Era`, `Title`, `Body`, `Sources`) VALUES
+(66000, 66, 0, 1, 0, 0, 0, 0, 'Zul''Drak', 'The temple city of the Drakkari ice trolls, a region the size of the Grizzly Hills that is all one city: plazas and ziggurats, walls and aqueducts as far as the eye can see. The Drakkari are a hardy people who have endured war with Azjol-Nerub and now with the Scourge.\n\nThe Scourge is winning. In desperation, the Drakkari have turned on their own gods, the loa, sacrificing them to steal their power to fight the undead, and it has driven them mad. The whole city is stained by the suffering of its gods.', 'warcraft.wiki.gg: Zul''Drak (introduction, Geography); warcraft.wiki.gg: Drakkari tribe'),
+(66001, 66, 1, 1, 0, 0, 0, 0, 'The Argent Stand', 'The Argent Crusade''s base in Zul''Drak, set up in what might once have been an open-air Drakkari market, to keep the Scourge from taking the city''s second tier. The Crusade fights here on two fronts, against the undead and against the maddened trolls.', 'warcraft.wiki.gg: Argent Stand; warcraft.wiki.gg: Light''s Breach'),
+(66002, 66, 1, 2, 0, 0, 0, 0, 'Ebon Watch', 'A small camp of the Knights of the Ebon Blade, the free death knights, who carry on their own operations against the Scourge here.', 'warcraft.wiki.gg: Ebon Watch'),
+(66003, 66, 1, 3, 0, 0, 0, 0, 'Zim''Torga', 'A Zandalari camp in a clearing walled by thorny trees, around a statue of Zim''Torga, the Mother of Prosperity. The Zandalari have come from the South Seas to save the Drakkari''s gods if they can, and to record the end of the Drakkari empire if they cannot. Here and there, forgotten gods like Zim''Rhuk, "the Wise One", still guard their old domains.', 'warcraft.wiki.gg: Zim''Torga; warcraft.wiki.gg: Zul''Drak (Wrath of the Lich King); warcraft.wiki.gg: Zim''Rhuk'),
+(66004, 66, 1, 4, 0, 0, 0, 0, 'The Altars of the Loa', 'Great altars rise from the second tier upward, where the Drakkari once worshipped their loa. At Sseratus'' altar the high prophet Slad''ran killed the serpent god, taking no pleasure in it, and swore vengeance on the Scourge for what it had made him do. At Rhunok''s, the bear god''s body is kept alive by his twisted followers, his spirit trapped and tormented. Har''koa''s prophet held her captive instead of killing her. Quetz''lun, as her body died, made a private nightmare and dragged her worshippers into it.', 'warcraft.wiki.gg: Altar of Sseratus; warcraft.wiki.gg: Altar of Rhunok; warcraft.wiki.gg: Altar of Har''koa; warcraft.wiki.gg: Altar of Quetz''lun'),
+(66005, 66, 1, 5, 0, 0, 0, 0, 'Mam''toth Crater', 'When the mammoth god Mam''toth learned that his worshippers meant to sacrifice him and steal his power, he destroyed himself, his temple and every worshipper present. A crater crawling with blue ooze, his blood, is all that remains.', 'warcraft.wiki.gg: Altar of Mam''toth; warcraft.wiki.gg: Mam''toth Crater'),
+(66006, 66, 1, 6, 0, 0, 0, 0, 'Voltarus', 'A Scourge necropolis hovering over pools of blight near the Storm Peaks, where captured troll chieftains are infused with blight and made into undead champions.', 'warcraft.wiki.gg: Voltarus; warcraft.wiki.gg: Zul''Drak (Wrath of the Lich King)'),
+(66007, 66, 1, 7, 0, 0, 0, 0, 'Kolramas and Zeramas', 'The Drakkari did not go quietly: they brought down the necropolis Kolramas. The crash did not kill all the undead nerubians inside, and they are crawling out, led by Malas the Corrupter. Another necropolis, Zeramas, still floats above the blighted Reliquary of Agony.', 'warcraft.wiki.gg: Kolramas; warcraft.wiki.gg: Zeramas'),
+(66008, 66, 1, 8, 0, 0, 0, 0, 'Thrym''s End', 'Undead vrykul experiment here for the Scourge. In a gigantic cage they hold Gymer, king of the storm giants.', 'warcraft.wiki.gg: Thrym''s End'),
+(66009, 66, 1, 9, 0, 0, 0, 0, 'The Amphitheater of Anguish', 'A Drakkari arena that the goblin Gurgthock, last seen in Nagrand, has taken over for his deathmatches.', 'warcraft.wiki.gg: Amphitheater of Anguish'),
+(66010, 66, 1, 10, 0, 0, 0, 0, 'Drak''Sotra and Drak''Agal', 'Living districts of the city. The Drakkari farm water-poppies at Drak''Sotra, for pain salves, and call up water spirits to fight the Scourge. Drak''Agal is a flooded ruin of stagnant water, a battlefield between the Crusade and the trolls. Bat riders keep their rookery at Heb''Drakkar.', 'warcraft.wiki.gg: Drak''Sotra Fields; warcraft.wiki.gg: Drak''Agal; warcraft.wiki.gg: Heb''Drakkar; warcraft.wiki.gg: Zul''Drak (Flora)'),
+(66011, 66, 1, 11, 0, 0, 0, 0, 'Gundrak', 'The capital of the Drakkari, their last bastion, from which they rule Zul''Drak and fight the Scourge.', 'warcraft.wiki.gg: Gundrak'),
+(66030, 66, 2, 1, 0, 0, 0, 0, 'Overlord Drakuru', 'A Drakkari who betrayed his own people to the Lich King. It was his treachery that opened Drak''Tharon Keep to the Scourge. As reward he was given Voltarus, and he used it to make an undead army of troll chieftains empowered by blight crystals.', 'warcraft.wiki.gg: Voltarus; warcraft.wiki.gg: Drak''Tharon Keep (History); warcraft.wiki.gg: Zul''Drak (Wrath of the Lich King)');
+
+INSERT INTO `mod_forever_journal_lore_trigger` (`Entry`, `Type`, `Value`, `Area`) VALUES
+(66000, 1, 66, ''),
+(66001, 1, 0, 'The Argent Stand'),
+(66001, 1, 0, 'Light''s Breach'),
+(66001, 1, 0, 'Crusader Forward Camp'),
+(66001, 2, 28059, ''),
+(66001, 2, 29687, ''),
+(66002, 1, 0, 'Ebon Watch'),
+(66002, 2, 28518, ''),
+(66003, 1, 0, 'Zim''Torga'),
+(66003, 1, 0, 'Dubra''Jin'),
+(66003, 1, 0, 'Zim''Rhuk'),
+(66003, 2, 28479, ''),
+(66004, 1, 0, 'Altar of Sseratus'),
+(66004, 1, 0, 'Altar of Rhunok'),
+(66004, 1, 0, 'Altar of Har''koa'),
+(66004, 1, 0, 'Altar of Quetz''lun'),
+(66004, 2, 28401, ''),
+(66004, 3, 28416, ''),
+(66005, 1, 0, 'Mam''toth Crater'),
+(66005, 1, 0, 'Altar of Mam''toth'),
+(66006, 1, 0, 'Voltarus'),
+(66006, 1, 0, 'Reliquary of Pain'),
+(66006, 1, 0, 'Frigid Breach'),
+(66007, 1, 0, 'Kolramas'),
+(66007, 1, 0, 'Zeramas'),
+(66007, 1, 0, 'Reliquary of Agony'),
+(66007, 3, 28255, ''),
+(66008, 1, 0, 'Thrym''s End'),
+(66008, 1, 0, 'The Dead Fields'),
+(66008, 2, 29647, ''),
+(66009, 1, 0, 'Amphitheater of Anguish'),
+(66010, 1, 0, 'Drak''Sotra'),
+(66010, 1, 0, 'Drak''Sotra Fields'),
+(66010, 1, 0, 'Drak''Agal'),
+(66010, 1, 0, 'Zol''Maz Stronghold'),
+(66010, 1, 0, 'Heb''Drakkar'),
+(66011, 1, 0, 'Gundrak'),
+(66030, 3, 28503, ''),
+(66030, 3, 28998, '');

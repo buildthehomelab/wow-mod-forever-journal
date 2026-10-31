@@ -1,0 +1,87 @@
+{
+  "zone": 1657,
+  "name": "Darnassus",
+  "entries": [
+    {
+      "id": 1657000,
+      "kind": "zone",
+      "title": "Darnassus",
+      "triggers": [{ "areaId": 1657 }],
+      "body": [
+        "The capital of the night elves, high in the boughs of the World Tree Teldrassil, built along the shores of a large lake with graceful bridges spanning its crystal waters. It is open to the sky, quiet and tranquil, its lodges set wide apart among groves and leaf-carpeted paths. The Temple of the Moon rises above it like a shining beacon. Few outsiders come, for the only way in is the portal at Rut'theran Village at the foot of the tree.",
+        "It was built to honour the survival of the night elven race. Druids, hunters and warriors make their homes here, and High Priestess Tyrande Whisperwind rules it."
+      ],
+      "sources": ["warcraft.wiki.gg: Darnassus (introduction, Description, World of Warcraft)"]
+    },
+    {
+      "id": 1657001,
+      "kind": "place",
+      "title": "The Temple Gardens",
+      "triggers": [{ "area": "The Temple Gardens" }, { "talk": 7999 }],
+      "body": [
+        "The open heart of the city: the lake, its walkways and islands, and to the south the Temple of the Moon, centre of worship of Tyrande and her Sisters of Elune. The portal to Rut'theran Village stands at its western edge."
+      ],
+      "sources": ["warcraft.wiki.gg: Temple Gardens", "warcraft.wiki.gg: Darnassus (Description)"]
+    },
+    {
+      "id": 1657002,
+      "kind": "place",
+      "title": "The Cenarion Enclave",
+      "triggers": [{ "area": "Cenarion Enclave" }, { "talk": 3516 }],
+      "body": [
+        "The grove in the north-west where the city's druids live and meet, among tall oaks and ashes whose bark is shaped into mystic runes. Archdruid Fandral Staghelm leads his followers from its boughs. Hunters train in its easternmost tree, and a secretive rogues' guild meets below ground, for those who know where to look."
+      ],
+      "sources": ["warcraft.wiki.gg: Cenarion Enclave"]
+    },
+    {
+      "id": 1657003,
+      "kind": "place",
+      "title": "The Warrior's Terrace",
+      "triggers": [{ "area": "Warrior's Terrace" }],
+      "body": [
+        "The Hall of Justice at the city's main gate, where the Sentinels gather to safeguard the land, warriors hone their skills, and patrols on nightsabers guard the gates."
+      ],
+      "sources": ["warcraft.wiki.gg: Warrior's Terrace", "warcraft.wiki.gg: Darnassus (World of Warcraft)"]
+    },
+    {
+      "id": 1657004,
+      "kind": "place",
+      "title": "The Craftsmen's and Tradesmen's Terraces",
+      "triggers": [{ "area": "Craftsmen's Terrace" }, { "area": "Tradesmen's Terrace" }],
+      "body": [
+        "The Craftsmen's Terrace in the north holds most of the city's craft trainers, an inn and the embassy of the Argent Dawn; the Tradesmen's Terrace in the south is the centre of commerce, with its shops and auction house."
+      ],
+      "sources": ["warcraft.wiki.gg: Craftsmen's Terrace", "warcraft.wiki.gg: Tradesmen's Terrace"]
+    },
+    {
+      "id": 1657030,
+      "kind": "person",
+      "title": "Tyrande Whisperwind",
+      "triggers": [{ "talk": 7999 }],
+      "body": [
+        "High Priestess of Elune and head of the Sisterhood. Before the War of the Ancients, both Malfurion Stormrage and his brother Illidan loved her; she chose the druid. After the war she led the Sentinels, and through the ten thousand years of the Long Vigil she guarded Kalimdor while Malfurion and the druids slept in the Emerald Dream. With Malfurion she has led the night elves since the fall of Azshara."
+      ],
+      "sources": ["warcraft.wiki.gg: Tyrande Whisperwind (introduction)"]
+    },
+    {
+      "id": 1657031,
+      "kind": "person",
+      "title": "Arch Druid Fandral Staghelm",
+      "triggers": [{ "talk": 3516 }],
+      "body": [
+        "Archdruid of Darnassus, who leads the druids while Malfurion is lost in the Emerald Dream. He lost his only son, Valstann, to the qiraji in the War of the Shifting Sands, and it hardened him. He was one of the architects of Teldrassil, believes the night elves' future lies in expansion and military strength, and quarrels openly with the High Priestess."
+      ],
+      "sources": ["warcraft.wiki.gg: Fandral Staghelm (introduction)"]
+    },
+    {
+      "id": 1657050,
+      "kind": "history",
+      "title": "The New World Tree",
+      "triggers": [{ "areaId": 1657 }],
+      "body": [
+        "When the night elves gave up Nordrassil's blessing at Mount Hyjal, they became mortal, and many could not bear the prospect of age, sickness and frailty. A group of druids set out to plant a new World Tree to bind their spirits to the eternal again. With Malfurion missing, their leader Fandral Staghelm became Archdruid, and they planted Teldrassil off the stormy northern coast. Under their care it grew above the clouds, and Darnassus took root in its boughs. The tree was planted without the blessing of the Aspects."
+      ],
+      "sources": ["warcraft.wiki.gg: Darnassus (After the Third War)", "warcraft.wiki.gg: Teldrassil"]
+    }
+  ]
+}

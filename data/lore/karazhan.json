@@ -1,0 +1,228 @@
+{
+  "zone": 3457,
+  "name": "Karazhan",
+  "entries": [
+    {
+      "id": 3457000,
+      "kind": "zone",
+      "title": "Karazhan",
+      "triggers": [{ "areaId": 3457 }],
+      "body": [
+        "The tower of Medivh, the Last Guardian of Tirisfal. His mother, the Guardian Aegwynn, built it in secret on a nexus of ley lines some six hundred years before the First War, as a refuge from the Council of Tirisfal and a conduit for the ley lines' power. The energies running through it warped reality around it.",
+        "Medivh amassed a library of writings and artifacts that dwarfs even the Kirin Tor's. After Khadgar, Anduin Lothar and Garona slew him, the tower sealed itself off from the world. Now it has woken. An evil presence has taken it as its own, its halls crawl with spirits and demons, and Medivh's magic is so great that it still echoes through them."
+      ],
+      "sources": ["warcraft.wiki.gg: Karazhan (introduction, History)"]
+    },
+    {
+      "id": 3457001,
+      "kind": "place",
+      "title": "The Servants' Quarters and the Stables",
+      "triggers": [{ "kill": 15550 }, { "kill": 16152 }, { "kill": 16151 }, { "kill": 16179 }, { "kill": 16180 }, { "kill": 16181 }],
+      "body": [
+        "The tower's lower levels: the stables where the huntsman tends Midnight, the strongest horse in them, and the servants' quarters, where great beasts lurk in the dark."
+      ],
+      "sources": ["warcraft.wiki.gg: Attumen the Huntsman", "warcraft.wiki.gg: Karazhan"]
+    },
+    {
+      "id": 3457002,
+      "kind": "place",
+      "title": "The Banquet Hall",
+      "triggers": [{ "kill": 15687 }],
+      "body": [
+        "Where the steward still tends to the guests of a party that never ended. Medivh's celebrations here were notoriously depraved."
+      ],
+      "sources": ["warcraft.wiki.gg: Moroes", "warcraft.wiki.gg: Maiden of Virtue"]
+    },
+    {
+      "id": 3457003,
+      "kind": "place",
+      "title": "The Guest Chambers",
+      "triggers": [{ "kill": 16457 }],
+      "body": [
+        "Rooms where the tower's guests stayed, watched over by a titanic watcher who came to purify them of their corruption and never left."
+      ],
+      "sources": ["warcraft.wiki.gg: Maiden of Virtue"]
+    },
+    {
+      "id": 3457004,
+      "kind": "place",
+      "title": "The Opera Hall",
+      "triggers": [{ "kill": 17533 }, { "kill": 17534 }, { "kill": 17521 }, { "kill": 18168 }, { "kill": 17535 }, { "kill": 17546 }, { "kill": 17543 }, { "kill": 17547 }],
+      "body": [
+        "Karazhan's theatre, where the ghostly players still put on their shows for whatever audience wanders in, and Barnes the stage manager still runs the stage. The play changes from night to night: a tragedy of star-crossed lovers, a grandmother and a wolf, a girl from far away and her strange companions. The audience is cast in the leading roles."
+      ],
+      "sources": ["warcraft.wiki.gg: Romulo", "warcraft.wiki.gg: The Big Bad Wolf", "warcraft.wiki.gg: The Crone"]
+    },
+    {
+      "id": 3457005,
+      "kind": "place",
+      "title": "The Menagerie",
+      "triggers": [{ "kill": 15691 }],
+      "body": [
+        "Medivh's collection of things beautiful, magical and unique, many since lost or broken, still guarded by its arcane golem with undiminished ferocity."
+      ],
+      "sources": ["warcraft.wiki.gg: The Curator"]
+    },
+    {
+      "id": 3457006,
+      "kind": "place",
+      "title": "The Guardian's Library",
+      "triggers": [{ "kill": 16524 }, { "kill": 15688 }],
+      "body": [
+        "The greatest library of the Last Guardian. A satyr hides behind its shelves in a secret passage, calling demons into it, and in a sealed round chamber at its heart lingers the shade of Medivh's father."
+      ],
+      "sources": ["warcraft.wiki.gg: Shade of Aran", "warcraft.wiki.gg: Terestian Illhoof"]
+    },
+    {
+      "id": 3457007,
+      "kind": "place",
+      "title": "The Celestial Watch",
+      "triggers": [{ "kill": 15689 }],
+      "body": [
+        "Medivh's personal observatory, now the lair of a nether dragon."
+      ],
+      "sources": ["warcraft.wiki.gg: Netherspite"]
+    },
+    {
+      "id": 3457008,
+      "kind": "place",
+      "title": "The Gamesman's Hall",
+      "triggers": [{ "talk": 16816 }],
+      "body": [
+        "A great chessboard whose pieces are living things. The echo of Medivh waits to play against anyone who sits down across from him, and he does not always play fair."
+      ],
+      "sources": ["warcraft.wiki.gg: Chess Event"]
+    },
+    {
+      "id": 3457009,
+      "kind": "place",
+      "title": "The Netherspace",
+      "triggers": [{ "kill": 15690 }],
+      "body": [
+        "The very top of the tower, open to the Nether, where the presence that has taken Karazhan holds court."
+      ],
+      "sources": ["warcraft.wiki.gg: Prince Malchezaar"]
+    },
+    {
+      "id": 3457010,
+      "kind": "place",
+      "title": "The Master's Terrace",
+      "triggers": [{ "kill": 17225 }],
+      "body": [
+        "A terrace high on the tower, scorched long ago by dragonfire, where Medivh once fought a dragon."
+      ],
+      "sources": ["warcraft.wiki.gg: Nightbane (tactics)"]
+    },
+    {
+      "id": 3457030,
+      "kind": "person",
+      "title": "Attumen the Huntsman",
+      "triggers": [{ "kill": 15550 }, { "kill": 16152 }, { "kill": 16151 }],
+      "body": [
+        "A spectral huntsman, the proud owner of Midnight. Threaten the horse and he comes riding to its defence."
+      ],
+      "sources": ["warcraft.wiki.gg: Attumen the Huntsman"]
+    },
+    {
+      "id": 3457031,
+      "kind": "person",
+      "title": "Moroes",
+      "triggers": [{ "kill": 15687 }],
+      "body": [
+        "Medivh's steward: talented, loyal, sombre and somewhat paranoid from the strange visions that come to those who live in Karazhan. He knows he is undead, and that something raises him again each time he is destroyed. Given the choice he would rather stay dead, but he makes do, and keeps the tower clean."
+      ],
+      "sources": ["warcraft.wiki.gg: Moroes"]
+    },
+    {
+      "id": 3457032,
+      "kind": "person",
+      "title": "The Maiden of Virtue",
+      "triggers": [{ "kill": 16457 }],
+      "body": [
+        "A titanic watcher drawn to Karazhan by the depravity of Medivh's revels. She tried to purify the tower and failed. She stands motionless until roused by someone she takes for Medivh, or someone as debauched; her judgement has dulled over the years, and it takes little to set her off."
+      ],
+      "sources": ["warcraft.wiki.gg: Maiden of Virtue (Biography)"]
+    },
+    {
+      "id": 3457033,
+      "kind": "person",
+      "title": "The Opera Company",
+      "triggers": [{ "kill": 17533 }, { "kill": 17534 }, { "kill": 17521 }, { "kill": 18168 }],
+      "body": [
+        "Romulo and Julianne, the Big Bad Wolf, Dorothee and her companions and the Crone: the ghostly players of the Opera Hall, still performing for their audience long after their own deaths."
+      ],
+      "sources": ["warcraft.wiki.gg: Romulo", "warcraft.wiki.gg: The Big Bad Wolf", "warcraft.wiki.gg: The Crone"]
+    },
+    {
+      "id": 3457034,
+      "kind": "person",
+      "title": "The Curator",
+      "triggers": [{ "kill": 15691 }],
+      "body": [
+        "A massive, surprisingly fast arcane golem, made to protect Karazhan's treasures."
+      ],
+      "sources": ["warcraft.wiki.gg: The Curator"]
+    },
+    {
+      "id": 3457035,
+      "kind": "person",
+      "title": "Terestian Illhoof",
+      "triggers": [{ "kill": 15688 }],
+      "body": [
+        "A satyr hiding in a secret passage behind the library's bookshelves, from which he keeps the demons coming."
+      ],
+      "sources": ["warcraft.wiki.gg: Terestian Illhoof"]
+    },
+    {
+      "id": 3457036,
+      "kind": "person",
+      "title": "The Shade of Aran",
+      "triggers": [{ "kill": 16524 }],
+      "body": [
+        "The spirit of Nielas Aran, Medivh's father, a mage of the Council of Tirisfal, bound to his son's library."
+      ],
+      "sources": ["warcraft.wiki.gg: Shade of Aran"]
+    },
+    {
+      "id": 3457037,
+      "kind": "person",
+      "title": "Netherspite",
+      "triggers": [{ "kill": 15689 }],
+      "body": [
+        "An immense nether dragon, the only dragon inside the tower, lurking in the Celestial Watch."
+      ],
+      "sources": ["warcraft.wiki.gg: Netherspite"]
+    },
+    {
+      "id": 3457038,
+      "kind": "person",
+      "title": "Prince Malchezaar",
+      "triggers": [{ "kill": 15690 }],
+      "body": [
+        "An eredar lord of the Burning Legion, who took control of Karazhan. When he came, or what he wanted here, no one knows. He came while agents of the Violet Eye were still alive inside the tower, shortly before it sealed. He collects rare weapons."
+      ],
+      "sources": ["warcraft.wiki.gg: Prince Malchezaar"]
+    },
+    {
+      "id": 3457039,
+      "kind": "person",
+      "title": "Nightbane",
+      "triggers": [{ "kill": 17225 }],
+      "body": [
+        "A fiery skeletal dragon. Once he was Arcanagos of the blue dragonflight, who came to Karazhan and fell to Medivh. Medivh made him into this."
+      ],
+      "sources": ["warcraft.wiki.gg: Nightbane (tactics)"]
+    },
+    {
+      "id": 3457050,
+      "kind": "history",
+      "title": "The Last Guardian",
+      "triggers": [{ "kill": 15690 }, { "talk": 16816 }],
+      "body": [
+        "Medivh was the son of the Guardian Aegwynn and the mage Nielas Aran. When he came of age, the Guardian's power awoke in him, and with it the spirit of Sargeras, which Aegwynn had unknowingly carried since she defeated the Dark Titan's avatar. From this tower, possessed, Medivh reached across to Draenor, to Gul'dan, and helped open the Dark Portal.",
+        "His apprentice Khadgar, Anduin Lothar and the half-orc Garona came here and killed him. The tower has kept its secrets ever since."
+      ],
+      "sources": ["warcraft.wiki.gg: Karazhan (The Last Guardian)", "warcraft.wiki.gg: Karazhan (introduction)"]
+    }
+  ]
+}

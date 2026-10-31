@@ -1,0 +1,76 @@
+{
+  "zone": 4722,
+  "name": "Trial of the Crusader",
+  "entries": [
+    {
+      "id": 4722000,
+      "kind": "zone",
+      "title": "Trial of the Crusader",
+      "triggers": [{ "areaId": 4722 }],
+      "body": [
+        "The great arena of the Crusaders' Coliseum, where Tirion Fordring sets his greatest trials before the champions of the Horde and the Alliance: the fiercest beasts of Northrend, a demon lord of the Legion, the Lich King's own val'kyr. Only those who survive will be trusted at the front of the final assault."
+      ],
+      "sources": ["warcraft.wiki.gg: Crusaders' Coliseum", "warcraft.wiki.gg: Trial of the Crusader"]
+    },
+    {
+      "id": 4722001,
+      "kind": "place",
+      "title": "The Coliseum Floor",
+      "triggers": [{ "kill": 34796 }, { "kill": 35144 }, { "kill": 34799 }, { "kill": 34797 }, { "kill": 34780 }, { "kill": 34497 }, { "kill": 34496 }],
+      "body": [
+        "The arena itself, where the trials come one after another before Tirion's stand and the watching crowds."
+      ],
+      "sources": ["warcraft.wiki.gg: Trial of the Crusader"]
+    },
+    {
+      "id": 4722002,
+      "kind": "place",
+      "title": "The Icy Depths",
+      "triggers": [{ "kill": 34564 }],
+      "body": [
+        "Caverns beneath the coliseum floor, part of the old nerubian tunnels under Icecrown, where something from Azjol-Nerub waits."
+      ],
+      "sources": ["warcraft.wiki.gg: Anub'arak"]
+    },
+    {
+      "id": 4722030,
+      "kind": "person",
+      "title": "The Beasts of Northrend",
+      "triggers": [{ "kill": 34796 }, { "kill": 35144 }, { "kill": 34799 }, { "kill": 34797 }],
+      "body": [
+        "The first trial: Gormok the Impaler, the twin jormungar Acidmaw and Dreadscale, and Icehowl, brought from the wilds of Northrend to the arena."
+      ],
+      "sources": ["warcraft.wiki.gg: Gormok the Impaler", "warcraft.wiki.gg: Acidmaw", "warcraft.wiki.gg: Icehowl"]
+    },
+    {
+      "id": 4722031,
+      "kind": "person",
+      "title": "Lord Jaraxxus",
+      "triggers": [{ "kill": 34780 }],
+      "body": [
+        "An eredar lord of the Burning Legion, summoned into the arena by a warlock's ritual gone wrong."
+      ],
+      "sources": ["warcraft.wiki.gg: Lord Jaraxxus"]
+    },
+    {
+      "id": 4722032,
+      "kind": "person",
+      "title": "The Twin Val'kyr",
+      "triggers": [{ "kill": 34497 }, { "kill": 34496 }],
+      "body": [
+        "Fjola Lightbane and Eydis Darkbane, val'kyr of the Lich King, one of light and one of darkness, sent to the coliseum by their master."
+      ],
+      "sources": ["warcraft.wiki.gg: Fjola Lightbane", "warcraft.wiki.gg: Eydis Darkbane"]
+    },
+    {
+      "id": 4722033,
+      "kind": "person",
+      "title": "Anub'arak, the Traitor King",
+      "triggers": [{ "kill": 34564 }],
+      "body": [
+        "The last king of Azjol-Nerub, slain once in his own kingdom. The Lich King raised him again and sent him into the caverns below Icecrown to plague the tournament. Beneath the coliseum, the traitor king met his final end."
+      ],
+      "sources": ["warcraft.wiki.gg: Anub'arak"]
+    }
+  ]
+}

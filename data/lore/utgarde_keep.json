@@ -1,0 +1,77 @@
+{
+  "zone": 206,
+  "name": "Utgarde Keep",
+  "entries": [
+    {
+      "id": 206000,
+      "kind": "zone",
+      "title": "Utgarde Keep",
+      "triggers": [{ "areaId": 206 }],
+      "body": [
+        "Long thought abandoned, a relic of a lost civilization among the cliffs of the fjord. Something has roused its slumbering vrykul, and now they pour endlessly from its battle-scarred walls to assault every settlement nearby. Inside, the Dragonflayer clan forges great weapons of war in ever-burning forges. Their rune-casters draw on runes even experienced magi do not recognize, freezing foes in solid ice and shattering them.",
+        "Those who fail here will become trophies to line its ancient halls."
+      ],
+      "sources": ["warcraft.wiki.gg: Utgarde Keep (Official descriptions)"]
+    },
+    {
+      "id": 206001,
+      "kind": "place",
+      "title": "Njorndir Preparation",
+      "triggers": [{ "kill": 23953 }],
+      "body": [
+        "The lower halls of the keep, where the Scourge's envoy keeps his court among the vrykul."
+      ],
+      "sources": ["warcraft.wiki.gg: Utgarde Keep (instance) (Geography)"]
+    },
+    {
+      "id": 206002,
+      "kind": "place",
+      "title": "Dragonflayer Ascent",
+      "triggers": [{ "kill": 24200 }, { "kill": 24201 }],
+      "body": [
+        "The forges of the Dragonflayer and the climb above them, where a builder and a necromancer work together."
+      ],
+      "sources": ["warcraft.wiki.gg: Utgarde Keep (instance) (Geography)", "warcraft.wiki.gg: Skarvald the Constructor"]
+    },
+    {
+      "id": 206003,
+      "kind": "place",
+      "title": "Tyr's Terrace",
+      "triggers": [{ "kill": 23954 }, { "kill": 23980 }],
+      "body": [
+        "A balcony over the waterfall into Daggercap Bay, from which the raids on Valgarde are directed."
+      ],
+      "sources": ["warcraft.wiki.gg: Ingvar the Plunderer"]
+    },
+    {
+      "id": 206030,
+      "kind": "person",
+      "title": "Prince Keleseth",
+      "triggers": [{ "kill": 23953 }],
+      "body": [
+        "A prince of the San'layn, the Scourge's overlord in the Howling Fjord and its ambassador to the vrykul. He claims to have travelled the world and made several interesting discoveries, among them that with the proper \"encouragement\" one can draw out every truth a man dares to hide."
+      ],
+      "sources": ["warcraft.wiki.gg: Prince Keleseth"]
+    },
+    {
+      "id": 206031,
+      "kind": "person",
+      "title": "Skarvald and Dalronn",
+      "triggers": [{ "kill": 24200 }, { "kill": 24201 }],
+      "body": [
+        "Skarvald the Constructor, a vrykul builder, likely digging the tunnel to Gjalerbron, and Dalronn the Controller, the necromancer who fights beside him."
+      ],
+      "sources": ["warcraft.wiki.gg: Skarvald the Constructor", "warcraft.wiki.gg: Dalronn the Controller"]
+    },
+    {
+      "id": 206032,
+      "kind": "person",
+      "title": "Ingvar the Plunderer",
+      "triggers": [{ "kill": 23954 }, { "kill": 23980 }],
+      "body": [
+        "Known to friend and foe alike for his brute strength. From the balcony over the falls he directs the attacks on Valgarde, and his dragon riders revel in slaughtering their enemies from above without warning. His axe is duller than one might think; up close he relies on raw strength. He works with Prince Keleseth to plan the raids."
+      ],
+      "sources": ["warcraft.wiki.gg: Ingvar the Plunderer", "warcraft.wiki.gg: Utgarde Keep (Wrath of the Lich King)"]
+    }
+  ]
+}

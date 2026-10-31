@@ -1,0 +1,177 @@
+{
+  "zone": 210,
+  "name": "Icecrown",
+  "entries": [
+    {
+      "id": 210000,
+      "kind": "zone",
+      "title": "Icecrown",
+      "triggers": [{ "areaId": 210 }],
+      "body": [
+        "Dark and inescapably cold, its glaciers so hardened and desecrated that the ice has turned black. When Kil'jaeden hurled Ner'zhul's prison down onto the glacier, it made the Frozen Throne, and the impact was seen as far away as the Grizzly Hills. From here the first Lich King made the Scourge, and nearly all blight and undeath on Azeroth flows from here still.",
+        "Arthas came and freed him, and they became one. Since then, the Scourge has fortified the whole region: walls, gates and great walkways of saronite connect its fortresses, and Icecrown Citadel looms over it all."
+      ],
+      "sources": ["warcraft.wiki.gg: Icecrown (introduction, History, Wrath of the Lich King)"]
+    },
+    {
+      "id": 210001,
+      "kind": "place",
+      "title": "The Three Gates",
+      "triggers": [{ "area": "Mord'rethar: The Death Gate" }, { "area": "Aldur'thar: The Desolation Gate" }, { "area": "Corp'rethar: The Horror Gate" }, { "area": "The Valley of Lost Hope" }, { "area": "The Valley of Fallen Heroes" }],
+      "body": [
+        "Icecrown is divided by high walls, each pierced by one gate, all made almost entirely of near-indestructible saronite and manned by huge Scourge constructs: Mord'rethar, the Death Gate; Aldur'thar, the Desolation Gate; and Corp'rethar, the Horror Gate, the last before the citadel. Any army bound for the Lich King must break them in turn. In the Valley of Fallen Heroes beyond the second, fallen champions of the Horde and Alliance rise again as champions of the Scourge."
+      ],
+      "sources": ["warcraft.wiki.gg: Icecrown (Geography)", "warcraft.wiki.gg: Corp'rethar: The Horror Gate", "warcraft.wiki.gg: Valley of Fallen Heroes"]
+    },
+    {
+      "id": 210002,
+      "kind": "place",
+      "title": "The Argent Vanguard",
+      "triggers": [{ "area": "The Argent Vanguard" }, { "area": "Valley of Echoes" }, { "area": "Crusaders' Pinnacle" }, { "area": "Scourgeholme" }, { "talk": 28179 }],
+      "body": [
+        "The Argent Crusade's first foothold in Icecrown, in the Valley of Echoes, under Highlord Tirion Fordring. From it the Crusade pushes into Scourgeholme, a fortress of slaughterhouses and ziggurats, and holds Crusaders' Pinnacle, taken back from the Scourge."
+      ],
+      "sources": ["warcraft.wiki.gg: Argent Vanguard", "warcraft.wiki.gg: Scourgeholme", "warcraft.wiki.gg: Crusaders' Pinnacle"]
+    },
+    {
+      "id": 210003,
+      "kind": "place",
+      "title": "The Skybreaker",
+      "triggers": [{ "area": "The Skybreaker" }, { "talk": 30344 }],
+      "body": [
+        "A marvel of gnomish and dwarven engineering: an Alliance gunship with over twenty broadside cannons, a crew of marines and a massive bomb in its lowest deck, flying over the Lich King's walls to cover the Alliance forces on the glacier below. High Captain Justin Bartlett commands it. Since the Horde's Orgrim's Hammer arrived, the two ships have squared off as often as they have fought the Scourge."
+      ],
+      "sources": ["warcraft.wiki.gg: Skybreaker (Background)"]
+    },
+    {
+      "id": 210004,
+      "kind": "place",
+      "title": "Orgrim's Hammer",
+      "triggers": [{ "area": "Orgrim's Hammer" }, { "talk": 30824 }],
+      "body": [
+        "The Horde's gunship over Icecrown, which serves in place of a ground base, for there is nowhere safe to build one. It and the Skybreaker are each in constant danger from the other, and from the Scourge."
+      ],
+      "sources": ["warcraft.wiki.gg: Orgrim's Hammer"]
+    },
+    {
+      "id": 210005,
+      "kind": "place",
+      "title": "The Shadow Vault",
+      "triggers": [{ "area": "The Shadow Vault" }, { "area": "Weeping Quarry" }, { "area": "Death's Rise" }],
+      "body": [
+        "Like a piece of Icecrown Citadel that wandered off to brood over the North Sea, its bladed crown jutting from the mountains. The Knights of the Ebon Blade took it from the Scourge for their base against the vrykul of Jotunheim, and the Scourge attacks it constantly."
+      ],
+      "sources": ["warcraft.wiki.gg: Shadow Vault", "warcraft.wiki.gg: Death's Rise"]
+    },
+    {
+      "id": 210006,
+      "kind": "place",
+      "title": "Jotunheim",
+      "triggers": [{ "area": "Jotunheim" }, { "area": "Valhalas" }, { "area": "Balargarde Fortress" }, { "area": "Kul'galar Keep" }, { "area": "Njorndar Village" }, { "area": "Halls of the Ancestors" }, { "area": "Battlescar Spire" }],
+      "body": [
+        "The largest vrykul village in Northrend, a string of halls winding along the cliffs above the North Sea, where the vrykul first woke from their sleep. At Valhalas the vrykul fight for the right to become Ymirjar. Balargarde Fortress, at its end, tries to put Utgarde Keep to shame in size and number of skulls."
+      ],
+      "sources": ["warcraft.wiki.gg: Jotunheim", "warcraft.wiki.gg: Valhalas", "warcraft.wiki.gg: Balargarde Fortress"]
+    },
+    {
+      "id": 210007,
+      "kind": "place",
+      "title": "Ymirheim",
+      "triggers": [{ "area": "Ymirheim" }, { "area": "Saronite Mines" }],
+      "body": [
+        "A ramshackle wooden village wrapped around a high mountain valley over the saronite mines, the most important place of all to the vrykul. It is home to the Ymirjar, the elite warrior caste King Ymiron created to serve the Lich King. Their slaves work the mines, and slowly lose their minds, for the saronite is the blood of an Old God."
+      ],
+      "sources": ["warcraft.wiki.gg: Ymirheim", "warcraft.wiki.gg: Saronite Mines"]
+    },
+    {
+      "id": 210008,
+      "kind": "place",
+      "title": "Sindragosa's Fall",
+      "triggers": [{ "area": "Sindragosa's Fall" }],
+      "body": [
+        "In the War of the Ancients many blue dragons fell here, on ground the glacier later buried. Among them was Malygos' consort Sindragosa, who died trying to reach the Dragonblight. Thousands of years later, the Lich King came to her bones and raised her as a mighty frost wyrm to lead the Frostbrood, and tore the spirits of her lost whelps into undeath before her eyes."
+      ],
+      "sources": ["warcraft.wiki.gg: Sindragosa's Fall"]
+    },
+    {
+      "id": 210009,
+      "kind": "place",
+      "title": "Malykriss: The Vile Hold",
+      "triggers": [{ "area": "Malykriss: The Vile Hold" }, { "area": "The Court of Bones" }],
+      "body": [
+        "An unfinished necropolis built all of saronite, the cutting edge of Scourge craft, meant to replace Acherus. Finished, it would have been indestructible. It is the seat of the Lich King's metalworking, and in the quarry below, his new death knights are trained."
+      ],
+      "sources": ["warcraft.wiki.gg: Malykriss: The Vile Hold"]
+    },
+    {
+      "id": 210010,
+      "kind": "place",
+      "title": "The Fleshwerks",
+      "triggers": [{ "area": "The Fleshwerks" }, { "area": "Blackwatch" }],
+      "body": [
+        "A vast Scourge facility above the avalanche into Sholazar, given over to making abominations and flesh giants. Disgusting even by the Scourge's standards, it bubbles with poison and plague, and undead birds circle overhead."
+      ],
+      "sources": ["warcraft.wiki.gg: Fleshwerks"]
+    },
+    {
+      "id": 210011,
+      "kind": "place",
+      "title": "Onslaught Harbor",
+      "triggers": [{ "area": "Onslaught Harbor" }],
+      "body": [
+        "Islands off the western coast that the Scarlet Onslaught has taken for its harbour, crowned by its Crimson Cathedral."
+      ],
+      "sources": ["warcraft.wiki.gg: Onslaught Harbor"]
+    },
+    {
+      "id": 210012,
+      "kind": "place",
+      "title": "The Argent Tournament",
+      "triggers": [{ "area": "Argent Tournament Grounds" }, { "area": "Argent Pavilion" }, { "area": "Silver Covenant Pavilion" }, { "area": "Sunreaver Pavilion" }, { "area": "The Ring of Champions" }],
+      "body": [
+        "Tirion Fordring has called the champions of every people to a great tournament in the shadow of Icecrown, to find those worthy to stand at the front in the final assault on the Lich King."
+      ],
+      "sources": ["warcraft.wiki.gg: Argent Tournament", "warcraft.wiki.gg: Argent Tournament Grounds"]
+    },
+    {
+      "id": 210013,
+      "kind": "place",
+      "title": "The First Legion Forward Camp",
+      "triggers": [{ "area": "First Legion Forward Camp" }],
+      "body": [
+        "A camp of Arthas' 1st Legion, from before his fall; perhaps the first place he openly fought and killed his own men. Its footsoldiers and their captain are still here."
+      ],
+      "sources": ["warcraft.wiki.gg: First Legion Forward Camp"]
+    },
+    {
+      "id": 210014,
+      "kind": "place",
+      "title": "Silent Vigil",
+      "triggers": [{ "area": "Silent Vigil" }, { "talk": 30562 }],
+      "body": [
+        "A graveyard in the north-eastern corner of Icecrown, near where a dying crusader, Bridenbrad, has made his camp, consumed by the plague."
+      ],
+      "sources": ["warcraft.wiki.gg: Silent Vigil"]
+    },
+    {
+      "id": 210015,
+      "kind": "place",
+      "title": "Icecrown Citadel",
+      "triggers": [{ "area": "Icecrown Citadel" }, { "area": "Icecrown Glacier" }, { "area": "The Conflagration" }],
+      "body": [
+        "The Scourge's greatest fortress and the Lich King's last bastion: a fortress as big as a city, a cathedral of blades and claws of saronite rising out of a split in the Icecrown Glacier, built around the Frozen Throne."
+      ],
+      "sources": ["warcraft.wiki.gg: Icecrown Citadel", "warcraft.wiki.gg: Icecrown Glacier"]
+    },
+    {
+      "id": 210050,
+      "kind": "history",
+      "title": "The Scarlet Assault",
+      "triggers": [{ "areaId": 210 }],
+      "body": [
+        "After the Third War, the Scarlet Crusade struck north and came within sight of the Lich King's stronghold before the Scourge threw them back. Many of its high officers died here, among them Grand Admiral Barean Westwind."
+      ],
+      "sources": ["warcraft.wiki.gg: Icecrown (History)"]
+    }
+  ]
+}

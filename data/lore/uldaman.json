@@ -1,0 +1,127 @@
+{
+  "zone": 1337,
+  "name": "Uldaman",
+  "entries": [
+    {
+      "id": 1337000,
+      "kind": "zone",
+      "title": "Uldaman",
+      "triggers": [{ "areaId": 1337 }],
+      "body": [
+        "An ancient titan vault buried deep in the mountains of Khaz Modan, built by the keepers to hold the troggs, the titans' first failed creation. Later the keeper Archaedas and his companion Ironaya enlarged it to guard the Discs of Norgannon, which record the secrets of creation, and earthen were sealed away to sleep in its chambers.",
+        "Before the Third War, the dwarves of Ironforge dug into it, and woke the troggs, who slaughtered most of the explorers and followed the survivors through the earth all the way to Gnomeregan. The Dark Irons of the Shadowforge are digging here now, and the Explorers' League and the blood elves of the Reliquary are close behind."
+      ],
+      "sources": ["warcraft.wiki.gg: Uldaman (introduction, Ancient times, Recent times, World of Warcraft)"]
+    },
+    {
+      "id": 1337001,
+      "kind": "place",
+      "title": "The Hall of the Keepers",
+      "triggers": [{ "areaId": 1337 }, { "kill": 6910 }, { "kill": 6906 }],
+      "body": [
+        "The upper halls and dig sites, overrun by the Stonevault troggs. Somewhere in here, the Lost Dwarves, three brothers hired by the Explorers' League to clear a path for its researchers, got hopelessly lost just before the troggs woke, and have been trapped ever since, killing troggs and hunting for a secret chamber."
+      ],
+      "sources": ["warcraft.wiki.gg: Revelosh", "warcraft.wiki.gg: Baelog"]
+    },
+    {
+      "id": 1337002,
+      "kind": "place",
+      "title": "The Map Chamber",
+      "triggers": [{ "kill": 7228 }],
+      "body": [
+        "A sealed chamber of the titans, opened by a keystone, where Ironaya, the stone giantess who built the vault, stands guard over Uldaman's secrets."
+      ],
+      "sources": ["warcraft.wiki.gg: Ironaya"]
+    },
+    {
+      "id": 1337003,
+      "kind": "place",
+      "title": "The Stone Vault and the Dig Sites",
+      "triggers": [{ "kill": 7023 }, { "kill": 7291 }, { "kill": 4854 }],
+      "body": [
+        "The deeper caverns, where titan stone keepers still oversee the vault's workings while their masters sleep, though one of them, the Obsidian Sentinel, may have been corrupted by an Old God. The Dark Irons have their own dig in the depths under Galgann Firehammer, and the trogg chieftain Grimlok rules the Stone Vault with his pet basilisk."
+      ],
+      "sources": ["warcraft.wiki.gg: Obsidian Sentinel", "warcraft.wiki.gg: Ancient Stone Keeper", "warcraft.wiki.gg: Galgann Firehammer", "warcraft.wiki.gg: Grimlok"]
+    },
+    {
+      "id": 1337004,
+      "kind": "place",
+      "title": "The Chamber of Khaz'mul",
+      "triggers": [{ "kill": 2748 }],
+      "body": [
+        "The deepest chamber of the vault, where Archaedas sleeps, and beyond him the Discs of Norgannon."
+      ],
+      "sources": ["warcraft.wiki.gg: Archaedas", "warcraft.wiki.gg: Baelog"]
+    },
+    {
+      "id": 1337030,
+      "kind": "person",
+      "title": "Revelosh",
+      "triggers": [{ "kill": 6910 }],
+      "body": [
+        "A trogg of the Hall of the Keepers, who carries half of an ancient titan staff, the Shaft of Tsol."
+      ],
+      "sources": ["warcraft.wiki.gg: Revelosh"]
+    },
+    {
+      "id": 1337031,
+      "kind": "person",
+      "title": "The Lost Dwarves",
+      "triggers": [{ "kill": 6906 }],
+      "body": [
+        "Baelog and his brothers Eric and Olaf, adventurers hired by the League to clear a path into the vault. Baelog is the muscle of the three, with sword and bow. They got lost, the troggs woke, and they have been trapped behind enemy lines at Dig Two ever since. Baelog is certain the secret Chamber of Khaz'mul is real."
+      ],
+      "sources": ["warcraft.wiki.gg: Baelog"]
+    },
+    {
+      "id": 1337032,
+      "kind": "person",
+      "title": "Ironaya",
+      "triggers": [{ "kill": 7228 }],
+      "body": [
+        "A titan-forged stone giantess, friend of the keepers Archaedas and Tyr. She built Uldaman to hold the troggs, and stands guard over its secrets still."
+      ],
+      "sources": ["warcraft.wiki.gg: Ironaya", "warcraft.wiki.gg: Uldaman (Ancient times)"]
+    },
+    {
+      "id": 1337033,
+      "kind": "person",
+      "title": "The Stone Keepers",
+      "triggers": [{ "kill": 7023 }, { "kill": 7206 }],
+      "body": [
+        "Constructs built by the titans to protect Uldaman and oversee its workings while Ironaya and Archaedas sleep. Scholars suspect that one, the Obsidian Sentinel, has been corrupted by an Old God, while the Ancient Stone Keeper in the Temple Hall still serves as it was made to."
+      ],
+      "sources": ["warcraft.wiki.gg: Obsidian Sentinel", "warcraft.wiki.gg: Ancient Stone Keeper"]
+    },
+    {
+      "id": 1337034,
+      "kind": "person",
+      "title": "Galgann Firehammer",
+      "triggers": [{ "kill": 7291 }],
+      "body": [
+        "The Dark Iron dwarf who leads the Shadowforge's dig in the depths of the vault."
+      ],
+      "sources": ["warcraft.wiki.gg: Galgann Firehammer"]
+    },
+    {
+      "id": 1337035,
+      "kind": "person",
+      "title": "Grimlok",
+      "triggers": [{ "kill": 4854 }],
+      "body": [
+        "Chieftain of the Stonevault troggs, master of the Stone Vault, with a pet basilisk at his side."
+      ],
+      "sources": ["warcraft.wiki.gg: Grimlok"]
+    },
+    {
+      "id": 1337036,
+      "kind": "person",
+      "title": "Archaedas",
+      "triggers": [{ "kill": 2748 }],
+      "body": [
+        "A keeper of the titans, imbued by Khaz'goroth with mastery of earth and forging. He built the subterranean prisons of the Old Gods, and guards the Discs of Norgannon. He has slept for ages in the deepest chamber of Uldaman, working on a cure for the curse of flesh."
+      ],
+      "sources": ["warcraft.wiki.gg: Archaedas (introduction)", "warcraft.wiki.gg: Uldaman (Ancient times)"]
+    }
+  ]
+}

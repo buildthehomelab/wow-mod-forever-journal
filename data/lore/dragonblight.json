@@ -1,0 +1,179 @@
+{
+  "zone": 65,
+  "name": "Dragonblight",
+  "entries": [
+    {
+      "id": 65000,
+      "kind": "zone",
+      "title": "Dragonblight",
+      "triggers": [{ "areaId": 65 }],
+      "body": [
+        "For millennia the Great Dragonblight has been the heart of Northrend: forests ringing a vast arctic waste littered with the gleaming bones of dead dragons. Dragons near the end of their lives come here, by instinct, to die and enrich the land with their passing.",
+        "Malygos' blue flight guards the bones jealously, but the Scourge has taken many of them anyway, to raise as frost wyrms. It was on the edge of the Dragonblight, too, that the Lich King first loosed his plague upon a human village, years before the Third War."
+      ],
+      "sources": ["warcraft.wiki.gg: Dragonblight (introduction, Description from site, Rise of the Lich King)"]
+    },
+    {
+      "id": 65001,
+      "kind": "place",
+      "title": "Wyrmrest Temple",
+      "triggers": [{ "area": "Wyrmrest Temple" }, { "talk": 26917 }, { "talk": 26443 }],
+      "body": [
+        "An ancient titan structure, tier after tier of white columns and golden domes towering over the Dragon Wastes. The keepers raised it so that the newly made dragonflights would have a place to meet, a sanctuary and a symbol of their unity. Legend says the Aspects were blessed within it.",
+        "Here Alexstrasza, the Life-Binder, has gathered the Wyrmrest Accord of the red, bronze, green and black flights' envoys, against the blue flight's war on magic."
+      ],
+      "sources": ["warcraft.wiki.gg: Wyrmrest Temple (introduction, Ancient times)"]
+    },
+    {
+      "id": 65002,
+      "kind": "place",
+      "title": "The Dragonshrines",
+      "triggers": [{ "area": "Ruby Dragonshrine" }, { "area": "Bronze Dragonshrine" }, { "area": "Emerald Dragonshrine" }, { "area": "Azure Dragonshrine" }, { "area": "Obsidian Dragonshrine" }],
+      "body": [
+        "Five shrines surround the temple, each blessed by its flight. The Ruby shrine is an island of green life in the waste, grown, Nozdormu says, from a single drop of Alexstrasza's blood that melted through the snow and became the Crimson Oak. The Bronze shrine is an impossibly warm oasis of shifting sand where Nozdormu keeps vigil among the dead, like a pocket of a sunnier past. The Azure is a fissure pouring magic into the air; the Obsidian, a blasted place of burning trees at the foot of a volcano. Only the Emerald shrine is untouched by the Scourge."
+      ],
+      "sources": ["warcraft.wiki.gg: Ruby Dragonshrine", "warcraft.wiki.gg: Bronze Dragonshrine", "warcraft.wiki.gg: Azure Dragonshrine", "warcraft.wiki.gg: Obsidian Dragonshrine", "warcraft.wiki.gg: Emerald Dragonshrine"]
+    },
+    {
+      "id": 65003,
+      "kind": "place",
+      "title": "Galakrond's Rest",
+      "triggers": [{ "area": "Galakrond's Rest" }, { "area": "The Dragon Wastes" }],
+      "body": [
+        "A skeleton half emerged from the ice, far larger than any dragon in living memory: Galakrond, the progenitor of dragonkind, who fell here. Near this place the five proto-dragons who defeated him were made into the Aspects. The Cult of the Damned has come to dig him up and raise him as a frost wyrm."
+      ],
+      "sources": ["warcraft.wiki.gg: Galakrond's Rest", "warcraft.wiki.gg: Dragonblight (Prehistory)"]
+    },
+    {
+      "id": 65004,
+      "kind": "place",
+      "title": "Agmar's Hammer",
+      "triggers": [{ "area": "Agmar's Hammer" }, { "talk": 26379 }, { "talk": 26810 }],
+      "body": [
+        "The Horde's stronghold in the Dragonblight, held by the Kor'kron under Overlord Agmar, built in the new, more aggressive style of the Horde. Nearby lies Icemist Village, the taunka capital, overrun by nerubians boiling up out of Azjol-Nerub through the Pit of Narjun."
+      ],
+      "sources": ["warcraft.wiki.gg: Agmar's Hammer", "warcraft.wiki.gg: Icemist Village", "warcraft.wiki.gg: Pit of Narjun"]
+    },
+    {
+      "id": 65005,
+      "kind": "place",
+      "title": "Wintergarde Keep",
+      "triggers": [{ "area": "Wintergarde Keep" }, { "area": "Wintergarde Mausoleum" }, { "area": "Wintergarde Mine" }, { "area": "The Carrion Fields" }],
+      "body": [
+        "The Alliance's fortress in the east of the Dragonblight, built by the Valiance Expedition in the mountains above Wintergarde Village, whose people welcomed it in. The Scourge has struck at it from Naxxramas, floating overhead: the village is now the Carrion Fields, a breeding ground for undead, and the Scourge has found its way into the keep's crypt, its mine and its lower town."
+      ],
+      "sources": ["warcraft.wiki.gg: Wintergarde Keep", "warcraft.wiki.gg: Carrion Fields"]
+    },
+    {
+      "id": 65006,
+      "kind": "place",
+      "title": "Venomspite",
+      "triggers": [{ "area": "Venomspite" }],
+      "body": [
+        "A Forsaken town in the east, where the Hand of Vengeance carries on its plague experiments."
+      ],
+      "sources": ["warcraft.wiki.gg: Venomspite"]
+    },
+    {
+      "id": 65007,
+      "kind": "place",
+      "title": "Stars' Rest",
+      "triggers": [{ "area": "Stars' Rest" }, { "area": "Moonrest Gardens" }, { "area": "Surge Needle" }, { "talk": 26459 }],
+      "body": [
+        "A night elf outpost with a moonwell, built in Highborne ruins by Commander Saia Azuresteel's forces, helped by frost nymphs of the nearby forest. In the Highborne gardens of Moonrest, the blue dragons' attempts to turn the ley lines have woken long-dormant Highborne spirits."
+      ],
+      "sources": ["warcraft.wiki.gg: Stars' Rest", "warcraft.wiki.gg: Moonrest Gardens"]
+    },
+    {
+      "id": 65008,
+      "kind": "place",
+      "title": "Moa'ki Harbor",
+      "triggers": [{ "area": "Moa'ki Harbor" }, { "area": "Indu'le Village" }, { "area": "Lake Indu'le" }, { "area": "Lothalor Woodlands" }],
+      "body": [
+        "The largest settlement the tuskarr have left since losing Kaskala, its sky always fluttering with bright kites, full of trade, friendly talk and storytellers. Not far away, Indu'le Village was destroyed when magic poured out of the ley line under its lake; the blue dragons' work. Its dead linger as ghosts, and the ancients of the Lothalor woods have been driven mad."
+      ],
+      "sources": ["warcraft.wiki.gg: Moa'ki Harbor", "warcraft.wiki.gg: Indu'le Village", "warcraft.wiki.gg: Lothalor Woodlands"]
+    },
+    {
+      "id": 65009,
+      "kind": "place",
+      "title": "New Hearthglen",
+      "triggers": [{ "area": "New Hearthglen" }, { "area": "Crusader's Landing" }, { "area": "Scarlet Point" }, { "talk": 27210 }],
+      "body": [
+        "The fortress of the Scarlet Onslaught, the remnant of the Scarlet Crusade, raised in record time on the coast where its fleet made landfall after fleeing Tyr's Hand: walls, barracks, chapels, and a massive white cathedral. High General Brigitte Abbendis leads it, at war with the Scourge and anyone else who stands in its way. Its soldiers have fortified the cave where Frostmourne once lay, for reasons no one knows."
+      ],
+      "sources": ["warcraft.wiki.gg: New Hearthglen", "warcraft.wiki.gg: Scarlet Point"]
+    },
+    {
+      "id": 65010,
+      "kind": "place",
+      "title": "Frostmourne Cavern",
+      "triggers": [{ "area": "Frostmourne Cavern" }],
+      "body": [
+        "Here, on an altar encased in ice, the runeblade once lay, with an inscription: \"Whomsoever takes up this blade shall wield power eternal. Just as the blade rends flesh, so must power scar the spirit.\" Arthas and Muradin came here hunting Mal'Ganis. Arthas took up the sword, and the ice that held it struck Muradin down."
+      ],
+      "sources": ["warcraft.wiki.gg: Frostmourne Cavern", "warcraft.wiki.gg: Dragonblight (Rise of the Lich King)"]
+    },
+    {
+      "id": 65011,
+      "kind": "place",
+      "title": "Angrathar the Wrathgate",
+      "triggers": [{ "area": "Angrathar the Wrathgate" }, { "area": "Fordragon Hold" }, { "area": "Kor'kron Vanguard" }, { "area": "The Court of Skulls" }],
+      "body": [
+        "A towering wall of saronite knife edges barring the way into Icecrown. Highlord Bolvar Fordragon's Alliance army holds Fordragon Hold at its foot, and the Horde's Kor'kron Vanguard stands beside it under Dranosh Saurfang, son of the High Overlord. The battle at the gate is meant to be the first great blow against the Lich King, and the first in which the Horde and Alliance fight side by side."
+      ],
+      "sources": ["warcraft.wiki.gg: Angrathar the Wrathgate", "warcraft.wiki.gg: Fordragon Hold", "warcraft.wiki.gg: Kor'kron Vanguard"]
+    },
+    {
+      "id": 65012,
+      "kind": "place",
+      "title": "The Path of the Titans",
+      "triggers": [{ "area": "Path of the Titans" }, { "area": "The Crystal Vice" }],
+      "body": [
+        "A vast ruined road running from Ulduar in the Storm Peaks across Crystalsong Forest and the Dragonblight to Wyrmrest Temple, then on south into the Frozen Sea. North of it, the Crystal Vice cuts deep into the glacier, dragon skeletons jutting from its walls."
+      ],
+      "sources": ["warcraft.wiki.gg: Path of the Titans", "warcraft.wiki.gg: Crystal Vice"]
+    },
+    {
+      "id": 65013,
+      "kind": "place",
+      "title": "Nozzlerust Post",
+      "triggers": [{ "area": "Nozzlerust Post" }],
+      "body": [
+        "A goblin trading post selling weapons, materials and food to both the Alliance and the Horde, and stripping the land around it to do so."
+      ],
+      "sources": ["warcraft.wiki.gg: Nozzlerust Post"]
+    },
+    {
+      "id": 65014,
+      "kind": "place",
+      "title": "Jintha'kalar",
+      "triggers": [{ "area": "Jintha'kalar" }, { "area": "Light's Trust" }],
+      "body": [
+        "An ancient city of the Drakkari ice trolls, sacked by the Scourge, its people raised to serve it. The pass beyond leads to Zul'Drak."
+      ],
+      "sources": ["warcraft.wiki.gg: Jintha'kalar"]
+    },
+    {
+      "id": 65015,
+      "kind": "place",
+      "title": "Naxxramas",
+      "triggers": [{ "area": "Naxxramas" }],
+      "body": [
+        "The necropolis of Kel'Thuzad, floating over the Carrion Fields. When the Horde and Alliance pushed into the Dragonblight, it appeared above them, the Scourge's first great counterattack."
+      ],
+      "sources": ["warcraft.wiki.gg: Naxxramas", "warcraft.wiki.gg: Dragonblight (Wrath of the Lich King)"]
+    },
+    {
+      "id": 65050,
+      "kind": "history",
+      "title": "The Battle of Angrathar",
+      "triggers": [{ "complete": 12499 }, { "complete": 12500 }],
+      "body": [
+        "At the Wrathgate, the Alliance and Horde fought side by side, and the Lich King himself came out to face them. Then, from the cliffs, the Forsaken of Grand Apothecary Putress loosed their New Plague on everyone on the field: Scourge, Horde and Alliance alike. Bolvar Fordragon and Dranosh Saurfang were among the fallen. The Lich King, nearly overcome himself, barely escaped back through the gate.",
+        "The red dragons came from Wyrmrest and burned the field clean of the plague and the undead, and where their fire passed, grass and flowers grew."
+      ],
+      "sources": ["warcraft.wiki.gg: Angrathar the Wrathgate (Wrath of the Lich King)"]
+    }
+  ]
+}
