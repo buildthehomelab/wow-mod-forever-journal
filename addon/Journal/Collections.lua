@@ -31,6 +31,31 @@ local BOSS_ICON = "Interface\\TargetingFrame\\UI-TargetingFrame-Skull"
 local MORE_NAMES = { V = "vendors", D = "creatures", G = "chests", P = "pockets", F = "fishing spots", I = "containers",
 	Q = "quests", A = "achievements", C = "recipes", T = "trainers" }
 
+-- The pet that comes out on its own, kept by the realm's pet loot module (mod-pet-loot) under its
+-- own prefix: "G" asks, "S:<spell>" picks (0 = off); it answers "A:<spell>" or "OFF". J.autoSummon
+-- stays nil until it answers, so a realm without it never shows the box.
+local AUTO_PREFIX = "PETLOOT"
+
+local function sendAutoSummon(msg)
+	SendAddonMessage(AUTO_PREFIX, msg, "WHISPER", UnitName("player"))
+end
+
+local autoEvents = CreateFrame("Frame")
+autoEvents:RegisterEvent("CHAT_MSG_ADDON")
+autoEvents:SetScript("OnEvent", function (_, _, prefix, message, _, sender)
+	if prefix ~= AUTO_PREFIX or sender ~= UnitName("player") then return end
+	local spell = message:match("^A:(%d+)$")
+	if spell then
+		J.autoSummon = tonumber(spell)
+	elseif message == "OFF" then
+		J.autoSummon = nil
+	else
+		return
+	end
+	J.Fire("AUTO_SUMMON")
+end)
+J.On("LOGIN", function () J.After(3, function () sendAutoSummon("G") end) end)
+
 local function lockText(state)
 	return "|cffff5555Progression stage " .. state .. "|r"
 end
@@ -588,7 +613,11 @@ local function buildTab(kind, panel)
 	-- The model takes the mouse (drag to turn) and in the client it ends up above this button,
 	-- a sibling made after it: clicks on Summon turned the model instead. So the button sits a
 	-- level above the model, re-pinned on every render in case the window is re-levelled.
-	local function raiseAction() action:SetFrameLevel(model:GetFrameLevel() + 1) end
+	local auto
+	local function raiseAction()
+		action:SetFrameLevel(model:GetFrameLevel() + 1)
+		if auto then auto:SetFrameLevel(model:GetFrameLevel() + 1) end
+	end
 	raiseAction()
 	action:SetScript("OnClick", function ()
 		local e = state.selected
@@ -603,6 +632,23 @@ local function buildTab(kind, panel)
 		end
 		J.Debounce("collection-companions", 0.5, function () J.Fire("COMPANIONS") end)
 	end)
+
+	-- Pets: pick the one that comes out on its own, left of Summon.
+	if kind == "pets" then
+		auto = J.CreateCheck(right, "Auto-summon")
+		auto:SetPoint("RIGHT", action, "LEFT", -(auto.label:GetStringWidth() + 12), 0)
+		auto:SetScript("OnClick", function (self)
+			local e = state.selected
+			if not e then return end
+			sendAutoSummon("S:" .. (self:GetChecked() and e.id or 0))
+		end)
+		J.SetTooltip(auto, function (tip)
+			tip:SetText("Auto-summon", 1, 1, 1)
+			tip:AddLine("Comes out on its own whenever you have no pet: after logging in, zoning, dying or a flight. "
+				.. "Dismiss it and it stays away until you summon a pet again.", 1, 0.82, 0, true)
+		end, "ANCHOR_TOP")
+		raiseAction()
+	end
 
 	-- A secure button makes every frame it sits in protected, and the journal would then be
 	-- blocked from closing or switching tabs in combat. So it sits on UIParent, over the
@@ -799,6 +845,7 @@ local function buildTab(kind, panel)
 		else
 			table.insert(bits, e.mine and "|cff66ff66Collected|r" or "|cff9d9d9dNot collected|r")
 		end
+		if kind == "pets" and J.autoSummon == e.id then table.insert(bits, "|cff66ccffAuto-summoned|r") end
 		if J.EntryLocked(e) then table.insert(bits, lockText(e.reqState)) end
 		subtitle:SetText(table.concat(bits, " - "))
 
@@ -820,6 +867,10 @@ local function buildTab(kind, panel)
 			local c = J.Companion(kind, e)
 			raiseAction()
 			setShown(action, c ~= nil)
+			if auto then
+				setShown(auto, c ~= nil and J.autoSummon ~= nil)
+				auto:SetChecked(J.autoSummon == e.id)
+			end
 			if star then
 				setShown(star, c ~= nil and c.creature ~= nil)
 				local fav = isFavorite(e)
@@ -891,6 +942,7 @@ local function buildTab(kind, panel)
 		if J.ServerStatus() or not J.Has(J.HELLO_COLLECTIONS) then render() return end
 		J.Fire("COMPANIONS")
 		if kind == "toys" then J.RefreshToys() end
+		if kind == "pets" and J.autoSummon == nil then sendAutoSummon("G") end
 		if state.catalog then render() return end
 		render()
 		J.LoadCatalog(kind, function (catalog)
@@ -932,6 +984,7 @@ local function buildTab(kind, panel)
 		if shown() then load() end
 	end)
 	J.On("LOCKOUTS_CHANGED", function () if shown() then render() end end)
+	if kind == "pets" then J.On("AUTO_SUMMON", function () if shown() then render() end end) end
 
 	return load
 end
