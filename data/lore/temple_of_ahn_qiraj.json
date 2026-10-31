@@ -1,0 +1,157 @@
+{
+  "zone": 3428,
+  "name": "Ahn'Qiraj",
+  "entries": [
+    {
+      "id": 3428000,
+      "kind": "zone",
+      "title": "The Temple of Ahn'Qiraj",
+      "triggers": [{ "areaId": 3428 }],
+      "body": [
+        "At the heart of Ahn'Qiraj lies an ancient temple complex, built before recorded history: a monument to unspeakable gods and a vast breeding ground for the qiraji army. Since the war ended a thousand years ago, the Twin Emperors have been trapped inside, barely held behind the barrier raised by the bronze dragon Anachronos and the night elves.",
+        "Beneath it, the Old God C'Thun stirs. After thousands of years of slumber he has woken and is fast regaining his strength. The dragons who sacrificed themselves to imprison him are weakened or enslaved in the temple, and the charge of stopping him falls to mortals."
+      ],
+      "sources": ["warcraft.wiki.gg: Temple of Ahn'Qiraj (Description, Dungeon Companion)"]
+    },
+    {
+      "id": 3428001,
+      "kind": "place",
+      "title": "The Hive Undergrounds",
+      "triggers": [{ "areaId": 3428 }, { "kill": 15263 }, { "kill": 15516 }],
+      "body": [
+        "The temple's outer halls, where the Prophet Skeram preaches C'Thun's coming and Battleguard Sartura leads the qiraji guard."
+      ],
+      "sources": ["warcraft.wiki.gg: The Prophet Skeram", "warcraft.wiki.gg: Battleguard Sartura"]
+    },
+    {
+      "id": 3428002,
+      "kind": "place",
+      "title": "The Hive Tunnels",
+      "triggers": [{ "kill": 15510 }, { "kill": 15299 }, { "kill": 15509 }, { "kill": 15511 }, { "kill": 15543 }, { "kill": 15544 }],
+      "body": [
+        "Tunnels endlessly crawling with silithid soldiers and drones that breed back as fast as they die, home of a great sand reaver, a slime of living poison, a giant wasp princess and the silithid royal family."
+      ],
+      "sources": ["warcraft.wiki.gg: Fankriss the Unyielding", "warcraft.wiki.gg: Viscidus", "warcraft.wiki.gg: Bug Trio"]
+    },
+    {
+      "id": 3428003,
+      "kind": "place",
+      "title": "The Temple of the Emperors",
+      "triggers": [{ "kill": 15276 }, { "kill": 15275 }],
+      "body": [
+        "The sanctuary from which the Twin Emperors rule the qiraji, its floor crawling with scarabs and scorpions."
+      ],
+      "sources": ["warcraft.wiki.gg: Twin Emperors"]
+    },
+    {
+      "id": 3428004,
+      "kind": "place",
+      "title": "C'Thun's Chamber",
+      "triggers": [{ "kill": 15517 }, { "kill": 15589 }, { "kill": 15727 }],
+      "body": [
+        "The lair of the Old God beneath the temple, and the pit of the great sand worm Ouro, who was made by C'Thun as a mockery of life."
+      ],
+      "sources": ["warcraft.wiki.gg: Ouro", "warcraft.wiki.gg: C'Thun"]
+    },
+    {
+      "id": 3428030,
+      "kind": "person",
+      "title": "The Prophet Skeram",
+      "triggers": [{ "kill": 15263 }],
+      "body": [
+        "A great religious leader of the qiraji, author of the Prophecy of C'Thun."
+      ],
+      "sources": ["warcraft.wiki.gg: The Prophet Skeram"]
+    },
+    {
+      "id": 3428031,
+      "kind": "person",
+      "title": "The Silithid Royalty",
+      "triggers": [{ "kill": 15511 }, { "kill": 15543 }, { "kill": 15544 }],
+      "body": [
+        "Lord Kri, Princess Yauj and Vem, a family of silithid royalty who fight together and avenge one another."
+      ],
+      "sources": ["warcraft.wiki.gg: Bug Trio"]
+    },
+    {
+      "id": 3428032,
+      "kind": "person",
+      "title": "Battleguard Sartura",
+      "triggers": [{ "kill": 15516 }],
+      "body": [
+        "The leader of the qiraji battleguards, who whirls through her enemies with her guards at her side."
+      ],
+      "sources": ["warcraft.wiki.gg: Battleguard Sartura"]
+    },
+    {
+      "id": 3428033,
+      "kind": "person",
+      "title": "Fankriss the Unyielding",
+      "triggers": [{ "kill": 15510 }],
+      "body": [
+        "A great sand reaver at the end of the endless bug tunnels, who spawns worms from the ground around it."
+      ],
+      "sources": ["warcraft.wiki.gg: Fankriss the Unyielding"]
+    },
+    {
+      "id": 3428034,
+      "kind": "person",
+      "title": "Viscidus",
+      "triggers": [{ "kill": 15299 }],
+      "body": [
+        "A giant slime of living poison in the depths of the hive, which can only be shattered when frozen solid."
+      ],
+      "sources": ["warcraft.wiki.gg: Viscidus"]
+    },
+    {
+      "id": 3428035,
+      "kind": "person",
+      "title": "Princess Huhuran",
+      "triggers": [{ "kill": 15509 }],
+      "body": [
+        "An enormous silithid wasp whose poison is among the deadliest in the hive."
+      ],
+      "sources": ["warcraft.wiki.gg: Princess Huhuran"]
+    },
+    {
+      "id": 3428036,
+      "kind": "person",
+      "title": "The Twin Emperors",
+      "triggers": [{ "kill": 15276 }, { "kill": 15275 }],
+      "body": [
+        "Vek'lor and Vek'nilash, the clever brothers who rule the qiraji from their temple sanctuary, one a master of magic and the other of the blade. They made the obsidian destroyer Moam together at their dark master's order."
+      ],
+      "sources": ["warcraft.wiki.gg: Twin Emperors", "warcraft.wiki.gg: Moam"]
+    },
+    {
+      "id": 3428037,
+      "kind": "person",
+      "title": "Ouro",
+      "triggers": [{ "kill": 15517 }],
+      "body": [
+        "An ancient sand worm of legendary power, said to have been made by C'Thun himself as a mockery of life. Its hide is nearly impregnable, yet flexible enough for it to move with the speed of a far smaller creature."
+      ],
+      "sources": ["warcraft.wiki.gg: Ouro"]
+    },
+    {
+      "id": 3428038,
+      "kind": "person",
+      "title": "C'Thun",
+      "triggers": [{ "kill": 15727 }, { "kill": 15589 }],
+      "body": [
+        "The Old God of madness and chaos, one of four ancient beings who ruled Azeroth long ago before the titans' servants defeated and imprisoned them. He made the qiraji, and dwells beneath Ahn'Qiraj. His evil has seeped through the world since time began, and he is bound so deeply into Azeroth's core that tearing him out could destroy its very soul."
+      ],
+      "sources": ["warcraft.wiki.gg: C'Thun (introduction)"]
+    },
+    {
+      "id": 3428050,
+      "kind": "history",
+      "title": "The Opening of the Gates",
+      "triggers": [{ "areaId": 3428 }],
+      "body": [
+        "The qiraji began to find ways past the Scarab Wall. The bronze dragon Anachronos helped the mortal races reforge the Scepter of the Shifting Sands that Fandral had shattered, and a champion struck the Scarab Gong and opened the wall. The Horde and the Alliance drove the qiraji back into their city, and now they must go in after them, and slay a god."
+      ],
+      "sources": ["warcraft.wiki.gg: Ruins of Ahn'Qiraj (Dungeon Companion)", "warcraft.wiki.gg: Temple of Ahn'Qiraj (Description)"]
+    }
+  ]
+}

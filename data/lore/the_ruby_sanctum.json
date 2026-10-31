@@ -1,0 +1,76 @@
+{
+  "zone": 4987,
+  "name": "The Ruby Sanctum",
+  "entries": [
+    {
+      "id": 4987000,
+      "kind": "zone",
+      "title": "The Ruby Sanctum",
+      "triggers": [{ "areaId": 4987 }],
+      "body": [
+        "The stronghold of the red dragonflight beneath Wyrmrest Temple. After the twilight eggs in the Obsidian Sanctum were destroyed, all seemed quiet, until all word from the sanctum's guardians stopped. The guards at its portal were found dead and the mystic stones shattered. The black flight's numbers in Northrend seem far too few for such an attack. What power would dare strike at the red dragonflight's own stronghold, and how did it get past the guards unseen?"
+      ],
+      "sources": ["warcraft.wiki.gg: Ruby Sanctum (History)"]
+    },
+    {
+      "id": 4987001,
+      "kind": "place",
+      "title": "The Sanctum's Halls",
+      "triggers": [{ "kill": 39751 }, { "kill": 39747 }, { "kill": 39746 }],
+      "body": [
+        "Where Halion's lieutenants hunt down the last survivors and make the sanctum secure, while the black dragons seek out the red flight's eggs."
+      ],
+      "sources": ["warcraft.wiki.gg: Halion", "warcraft.wiki.gg: Ruby Sanctum (History)"]
+    },
+    {
+      "id": 4987002,
+      "kind": "place",
+      "title": "The Twilight Halls",
+      "triggers": [{ "kill": 39863 }],
+      "body": [
+        "The heart of the sanctum, where the physical realm and the Twilight Realm overlap."
+      ],
+      "sources": ["warcraft.wiki.gg: Halion"]
+    },
+    {
+      "id": 4987030,
+      "kind": "person",
+      "title": "Baltharus the Warborn",
+      "triggers": [{ "kill": 39751 }],
+      "body": [
+        "A drakonid of the black dragonflight, one of Halion's lieutenants in the assault on the Ruby Sanctum."
+      ],
+      "sources": ["warcraft.wiki.gg: Baltharus the Warborn"]
+    },
+    {
+      "id": 4987031,
+      "kind": "person",
+      "title": "Saviana Ragefire",
+      "triggers": [{ "kill": 39747 }],
+      "body": [
+        "A black dragon, one of Halion's lieutenants."
+      ],
+      "sources": ["warcraft.wiki.gg: Saviana Ragefire"]
+    },
+    {
+      "id": 4987032,
+      "kind": "person",
+      "title": "General Zarithrian",
+      "triggers": [{ "kill": 39746 }],
+      "body": [
+        "A general of the black dragonflight, who leads the assault to weaken the red flight before his master's return. A wall of fire shields him while his fellow lieutenants stand."
+      ],
+      "sources": ["warcraft.wiki.gg: General Zarithrian"]
+    },
+    {
+      "id": 4987033,
+      "kind": "person",
+      "title": "Halion the Twilight Destroyer",
+      "triggers": [{ "kill": 39863 }, { "kill": 40142 }],
+      "body": [
+        "A twilight dragon raised in captivity. He led the black flight's war party against the Ruby Sanctum to shatter the Wyrmrest Accord and crush any who would stand in the way of their master's return to Azeroth, and killed most of those within. His last words are a warning: that this world will burn when the master returns."
+      ],
+      "sources": ["warcraft.wiki.gg: Halion"]
+    }
+  ]
+}

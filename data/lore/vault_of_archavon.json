@@ -1,0 +1,26 @@
+{
+  "zone": 4603,
+  "name": "Vault of Archavon",
+  "entries": [
+    {
+      "id": 4603000,
+      "kind": "zone",
+      "title": "The Vault of Archavon",
+      "triggers": [{ "areaId": 4603 }],
+      "body": [
+        "The vault beneath Wintergrasp Fortress, holding titan relics of untold power. Ancient giants guard them, set to the task long ago, and they are bitter at the intrusion of both sides. When battle comes to Wintergrasp above, the watchers turn back to stone and wait."
+      ],
+      "sources": ["warcraft.wiki.gg: Vault of Archavon (introduction, History)"]
+    },
+    {
+      "id": 4603030,
+      "kind": "person",
+      "title": "The Watchers of the Vault",
+      "triggers": [{ "kill": 31125 }, { "kill": 33993 }, { "kill": 35013 }, { "kill": 38433 }],
+      "body": [
+        "Archavon the Stone Watcher, Emalon the Storm Watcher, Koralon the Flame Watcher and Toravon the Ice Watcher: the ancient guardians of the titan relics in the vault."
+      ],
+      "sources": ["warcraft.wiki.gg: Vault of Archavon"]
+    }
+  ]
+}

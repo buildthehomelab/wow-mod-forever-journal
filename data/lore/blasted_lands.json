@@ -1,0 +1,144 @@
+{
+  "zone": 4,
+  "name": "Blasted Lands",
+  "entries": [
+    {
+      "id": 4000,
+      "kind": "zone",
+      "title": "The Blasted Lands",
+      "triggers": [{ "areaId": 4 }],
+      "body": [
+        "This foul desert was once the southern half of the Black Morass, a dark fen whose northern half is the Swamp of Sorrows. Here the Dark Portal opened, and the orcish Horde poured into Azeroth for the first time.",
+        "The demonic magic that made the Portal twisted and dried the swamp, and its destruction warped the land forever. The soil and rocks are the colour of blood, lightning strikes constantly, and only the hardiest and most vicious creatures survive: basilisks, scorpions, hyenas, and worse."
+      ],
+      "sources": ["warcraft.wiki.gg: Blasted Lands (introduction, History, Geography)"]
+    },
+    {
+      "id": 4001,
+      "kind": "place",
+      "title": "The Dark Portal",
+      "triggers": [{ "area": "The Dark Portal" }, { "talk": 16841 }, { "talk": 19254 }],
+      "body": [
+        "The great gateway between Azeroth and Draenor, made by Medivh, possessed by Sargeras, together with Gul'dan's Shadow Council, so that the Horde could weaken Azeroth for the Burning Legion. After the Second War, the Alliance destroyed it.",
+        "Ner'zhul's Horde rebuilt it on Draenor, and for months the two sides fought for its Azerothian end. When Ner'zhul's ritual began to tear Draenor apart, Khadgar and the Sons of Lothar destroyed it again from the far side with the Skull of Gul'dan. But it proved impossible to destroy: only the stone frame was ever broken. Now it stands open once more, onto the shattered remains of Draenor, called Outland."
+      ],
+      "sources": ["warcraft.wiki.gg: Dark Portal (introduction, The first opening)", "warcraft.wiki.gg: Blasted Lands (History)"]
+    },
+    {
+      "id": 4002,
+      "kind": "place",
+      "title": "Nethergarde Keep",
+      "triggers": [{ "area": "Nethergarde Keep" }, { "area": "Garrison Armory" }, { "talk": 7505 }],
+      "body": [
+        "A Dalaran fortress on a high bluff over the only road into the Blasted Lands, built after the Second War at Khadgar's urging to make sure no invasion ever came from Draenor again. All the kingdoms of the Alliance paid for it, some more willingly than others. The Kirin Tor staffed it, and held back the taint that threatened to spread from the Portal into the human lands to the north; high elves helped too, as fascinated by the magic as they were eager to help.",
+        "Khadgar was its master until the Portal reopened. Its miners at the Garrison Armory ship ore to Stormwind for the supplies the keep needs to survive."
+      ],
+      "sources": ["warcraft.wiki.gg: Nethergarde Keep (Second War)", "warcraft.wiki.gg: Garrison Armory"]
+    },
+    {
+      "id": 4003,
+      "kind": "place",
+      "title": "The Tainted Scar",
+      "triggers": [{ "area": "The Tainted Scar" }, { "talk": 7363 }],
+      "body": [
+        "A blood-red, treeless waste in the western Blasted Lands, corrupted by the Portal's energies and teeming with demonic beasts. After the Battle of Mount Hyjal, the doomlord Lord Kazzak gathered the Burning Legion's remnants here; he was the strongest demon left on Azeroth, and the Legion's ruler in all but name. An elderly warlock, Daio the Decrepit, has settled at its altar to commune with the demons and train recruits."
+      ],
+      "sources": ["warcraft.wiki.gg: Tainted Scar (History)", "warcraft.wiki.gg: Kazzak (Third War)"]
+    },
+    {
+      "id": 4004,
+      "kind": "place",
+      "title": "Dreadmaul Hold",
+      "triggers": [{ "area": "Dreadmaul Hold" }, { "area": "Dreadmaul Post" }, { "area": "Altar of Storms" }],
+      "body": [
+        "Founded as Rockard, an orc outpost in the Black Morass after the first opening of the Portal, it is one of the oldest orc settlements on Azeroth, as old as Stonard. It survived the Second War, but the Dreadmaul ogres, who never strayed far from the Portal they came through, drove the orcs out and renamed it. Grol the Destroyer rules it in Razelikh's service.",
+        "The Altar of Storms nearby recalls the altars of the Second War, where the Horde gave its ogres the powers of the ogre magi."
+      ],
+      "sources": ["warcraft.wiki.gg: Okril'lon Hold (First War, The ogres' dominion)", "warcraft.wiki.gg: Dreadmaul Post", "warcraft.wiki.gg: Altar of Storms"]
+    },
+    {
+      "id": 4005,
+      "kind": "place",
+      "title": "Rise of the Defiler",
+      "triggers": [{ "area": "Rise of the Defiler" }, { "kill": 7664 }],
+      "body": [
+        "The high place where the dreadlord Razelikh the Defiler can be called, and fought, by those who carry the ward made from his lieutenants' amulets."
+      ],
+      "sources": ["warcraft.wiki.gg: Razelikh the Defiler"]
+    },
+    {
+      "id": 4006,
+      "kind": "place",
+      "title": "Serpent's Coil",
+      "triggers": [{ "area": "Serpent's Coil" }, { "talk": 7729 }],
+      "body": [
+        "A winding cave system in the east, among the burnt-out ruins of orc buildings from the Second War. Cultists who worship Kirith the Damned occupy it, and Archmage Allistarj runs his share of the Shadowsworn from inside. In its depths, the souls of captured Horde soldiers were used in experiments."
+      ],
+      "sources": ["warcraft.wiki.gg: Serpent's Coil", "warcraft.wiki.gg: Fallen Hero of the Horde"]
+    },
+    {
+      "id": 4030,
+      "kind": "person",
+      "title": "The Fallen Hero of the Horde",
+      "triggers": [{ "talk": 7572 }, { "accept": 2784 }],
+      "body": [
+        "The ghost of Trebor, an orc warrior chosen to lead a company into the Blasted Lands. He found the Legion and sent a scout back to Stonard, but murlocs in the swamp intercepted his orders. After weeks of waiting for orders that never came, he went in to investigate. Razelikh's servants captured his men.",
+        "Trebor escaped, only to die soon after. His lieutenant Kirith was twisted into a great felhunter in the Serpent's Coil, and the rest were bound to serve the demon's lieutenants. His ghost waits at the edge of the swamp, warning travellers and hoping someone will free his men."
+      ],
+      "sources": ["warcraft.wiki.gg: Fallen Hero of the Horde (History)"]
+    },
+    {
+      "id": 4031,
+      "kind": "person",
+      "title": "Razelikh the Defiler",
+      "triggers": [{ "kill": 7664 }, { "accept": 3627 }],
+      "body": [
+        "A dreadlord, Lord Kazzak's most fearsome lieutenant, whose true name is Rakh'likh. Kazzak ordered him to secure the Blasted Lands, and he did, by uniting sects of the Shadow Council and the Dreadmaul ogres into the Shadowsworn.",
+        "He gave each of his three chief servants, Lady Sevine, Archmage Allistarj and Grol the Destroyer, a third of an amulet of his making that bound them to their lives: while they stayed in the Blasted Lands, they could not die. The price was eternal servitude. Only a weapon bearing his true name can harm him."
+      ],
+      "sources": ["warcraft.wiki.gg: Razelikh the Defiler", "warcraft.wiki.gg: Blasted Lands (World of Warcraft)"]
+    },
+    {
+      "id": 4032,
+      "kind": "person",
+      "title": "Lieutenant Kirith",
+      "triggers": [{ "talk": 7729 }, { "accept": 2721 }],
+      "body": [
+        "Trebor's lieutenant, captured with him and tortured. Trebor escaped; Kirith did not. His soul was twisted, and he roams the back of the Serpent's Coil as a huge felhunter, the cultists' \"Kirith the Damned\"."
+      ],
+      "sources": ["warcraft.wiki.gg: Fallen Hero of the Horde (History)", "warcraft.wiki.gg: Serpent's Coil"]
+    },
+    {
+      "id": 4033,
+      "kind": "person",
+      "title": "Lord Kazzak",
+      "triggers": [{ "area": "The Tainted Scar" }],
+      "body": [
+        "A battle-hardened doomlord, summoned with Archimonde by Kel'Thuzad near Dalaran in the Third War. After the Legion's defeat at Mount Hyjal he fell back to the Blasted Lands, the most powerful demon left on Azeroth.",
+        "When the Dark Portal opened again, it was Kazzak and the doomguard Highlord Kruul, guided by Kil'jaeden, who opened it, with a great ritual on both sides of the gate. Kazzak then crossed into Outland to take command there."
+      ],
+      "sources": ["warcraft.wiki.gg: Kazzak (Third War, World of Warcraft, The Burning Crusade)"]
+    },
+    {
+      "id": 4050,
+      "kind": "history",
+      "title": "The Shadowsworn",
+      "triggers": [{ "complete": 2621 }, { "complete": 2681 }, { "complete": 3628 }],
+      "body": [
+        "Razelikh's cult unites old warlocks of the Shadow Council with the Dreadmaul ogres. Lady Sevine raised the Altar of Storms; Allistarj works in the Serpent's Coil; Grol rules the ogres. Their amulets make them immortal inside the Blasted Lands, and also its prisoners, their minds bent to the demon's service.",
+        "The way to break them is a weapon forged with Razelikh's true name. Galvan the Ancient, a smith, and Loramus Thalipedes, a demon hunter, know how. Loramus came to hunt Razelikh before, and Grol ambushed him."
+      ],
+      "sources": ["warcraft.wiki.gg: Blasted Lands (World of Warcraft)", "warcraft.wiki.gg: Razelikh the Defiler", "warcraft.wiki.gg: Okril'lon Hold (The ogres' dominion)"]
+    },
+    {
+      "id": 4051,
+      "kind": "history",
+      "title": "The Second Opening",
+      "triggers": [{ "complete": 10259 }, { "accept": 10119 }, { "accept": 9407 }],
+      "body": [
+        "For almost twenty years the Dark Portal lay dormant. Then Kazzak and Highlord Kruul, a doomguard sent by Kil'jaeden, performed a great ritual on both sides of the gate and reopened it. The Argent Dawn, the Alliance and the Horde fought the Legion at its foot, and then crossed over into Outland."
+      ],
+      "sources": ["warcraft.wiki.gg: Blasted Lands (The Burning Crusade)", "warcraft.wiki.gg: Kazzak (The Burning Crusade)"]
+    }
+  ]
+}

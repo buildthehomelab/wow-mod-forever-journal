@@ -1,0 +1,77 @@
+{
+  "zone": 3845,
+  "name": "Tempest Keep: The Eye",
+  "entries": [
+    {
+      "id": 3845000,
+      "kind": "zone",
+      "title": "The Eye",
+      "triggers": [{ "areaId": 3845 }],
+      "body": [
+        "The central palace of Tempest Keep, where Prince Kael'thas Sunstrider holds court. From here, guided by a purpose no one yet understands, he turns the naaru fortress's otherworldly technology to harnessing the chaotic energies of the Netherstorm."
+      ],
+      "sources": ["warcraft.wiki.gg: Arcatraz (Background)", "warcraft.wiki.gg: Tempest Keep"]
+    },
+    {
+      "id": 3845001,
+      "kind": "place",
+      "title": "The Halls of the Eye",
+      "triggers": [{ "kill": 19514 }, { "kill": 19516 }, { "kill": 18805 }],
+      "body": [
+        "The approaches to the throne: a chamber where the prince's phoenix circles, a hall guarded by a fel reaver, and the astromancer's observatory."
+      ],
+      "sources": ["warcraft.wiki.gg: Al'ar", "warcraft.wiki.gg: Void Reaver", "warcraft.wiki.gg: High Astromancer Solarian"]
+    },
+    {
+      "id": 3845002,
+      "kind": "place",
+      "title": "The Prince's Throne",
+      "triggers": [{ "kill": 19622 }],
+      "body": [
+        "Kael'thas' throne room at the heart of the Eye, where he sits among his four advisors."
+      ],
+      "sources": ["warcraft.wiki.gg: Kael'thas Sunstrider"]
+    },
+    {
+      "id": 3845030,
+      "kind": "person",
+      "title": "Al'ar",
+      "triggers": [{ "kill": 19514 }],
+      "body": [
+        "Kael'thas' phoenix, whom he cares for deeply. He summoned it in Quel'Thalas to burn away the undead that blocked his way to the Sunwell."
+      ],
+      "sources": ["warcraft.wiki.gg: Al'ar (Lore)"]
+    },
+    {
+      "id": 3845031,
+      "kind": "person",
+      "title": "Void Reaver",
+      "triggers": [{ "kill": 19516 }],
+      "body": [
+        "A fel reaver built by the Burning Legion, which Kael'thas took to guard his palace."
+      ],
+      "sources": ["warcraft.wiki.gg: Void Reaver"]
+    },
+    {
+      "id": 3845032,
+      "kind": "person",
+      "title": "High Astromancer Solarian",
+      "triggers": [{ "kill": 18805 }],
+      "body": [
+        "Kael'thas' astromancer, a mage who wears a warlock's raiment, and who becomes a vast voidwalker when pressed."
+      ],
+      "sources": ["warcraft.wiki.gg: High Astromancer Solarian"]
+    },
+    {
+      "id": 3845033,
+      "kind": "person",
+      "title": "Kael'thas Sunstrider",
+      "triggers": [{ "kill": 19622 }],
+      "body": [
+        "Prince of Quel'Thalas, last of the House of Sunstrider, once a member of the Kirin Tor's Council of Six. When Arthas destroyed Quel'Thalas and killed his father, Kael'thas gathered the survivors, named them sin'dorei, and led them in the Alliance resistance. Seeking a cure for his people's hunger for magic, he allied in secret with Illidan in the conquest of Outland.",
+        "Then he betrayed Illidan. Kil'jaeden promised him salvation for the blood elves and the great power of demonic magic, and Kael'thas gave himself to the Burning Legion."
+      ],
+      "sources": ["warcraft.wiki.gg: Kael'thas Sunstrider (introduction)"]
+    }
+  ]
+}

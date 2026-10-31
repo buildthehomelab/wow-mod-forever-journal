@@ -1,0 +1,107 @@
+{
+  "zone": 490,
+  "name": "Un'Goro Crater",
+  "entries": [
+    {
+      "id": 490000,
+      "kind": "zone",
+      "title": "Un'Goro Crater",
+      "triggers": [{ "areaId": 490 }],
+      "body": [
+        "A massive crater in southern Kalimdor, cut off from the world between three deserts and filled with lush jungle and teeming life. Dinosaurs roam it freely, a volcano smokes at its heart, and strange, beautiful crystals of unknown purpose dot the land. Its name means \"God Lands\" in the tongue of the Qiraji.",
+        "When the titans shaped Azeroth, the Titan Freya made Un'Goro a garden of experiment, a cradle of life, like Sholazar Basin in Northrend: a place where the power of the Well of Eternity had gathered. Its crystal pylons and the remains of titan guardians still stand among the trees."
+      ],
+      "sources": ["warcraft.wiki.gg: Un'Goro Crater (introduction, Ancient history, Geography)"]
+    },
+    {
+      "id": 490001,
+      "kind": "place",
+      "title": "Marshal's Refuge",
+      "triggers": [{ "area": "Marshal's Refuge" }, { "talk": 9270 }, { "talk": 9117 }],
+      "body": [
+        "A camp on the northern edge of the crater. Williden and Hol'anyee Marshal led an expedition into Un'Goro, underestimating its savagery; when their base camps were overrun by the crater's beasts, they fled to high ground and made this their refuge. Explorers and scientists study the crater and its crystals from here."
+      ],
+      "sources": ["warcraft.wiki.gg: Marshal's Refuge", "warcraft.wiki.gg: Un'Goro Crater (Geography)"]
+    },
+    {
+      "id": 490002,
+      "kind": "place",
+      "title": "Fire Plume Ridge",
+      "triggers": [{ "area": "Fire Plume Ridge" }, { "kill": 9376 }, { "talk": 9999 }],
+      "body": [
+        "The volcano at the heart of the crater, where the jungle meets ground scorched by lava. Fire elementals walk its slopes, and the strongest of them, Blazerunner, lives in a cave at its peak. Shallow veins of magma beneath the crater heat its steam pools and geysers. A lost explorer named Ringo is somewhere up there, suffering from the heat."
+      ],
+      "sources": ["warcraft.wiki.gg: Fire Plume Ridge", "warcraft.wiki.gg: Un'Goro Crater (Notable characters)"]
+    },
+    {
+      "id": 490003,
+      "kind": "place",
+      "title": "The Shaper's Terrace",
+      "triggers": [{ "area": "The Shaper's Terrace" }, { "area": "Waygate" }, { "kill": 28601 }],
+      "body": [
+        "A titan terrace on the bluffs above Marshal's Refuge, named for Khaz'goroth the Shaper. Its waygate links Un'Goro to Sholazar Basin in Northrend, and had been silent for seven centuries. Cultists of the Damned have found it."
+      ],
+      "sources": ["warcraft.wiki.gg: Shaper's Terrace", "warcraft.wiki.gg: Waygate", "warcraft.wiki.gg: Un'Goro Crater (Wrath of the Lich King)"]
+    },
+    {
+      "id": 490004,
+      "kind": "place",
+      "title": "The Slithering Scar",
+      "triggers": [{ "area": "The Slithering Scar" }],
+      "body": [
+        "A silithid hive filling most of the south of the crater, home of the Gorishi, who are raising a colossus to be loosed on Un'Goro when it is grown. A hive queen can be called up by meddling with the crystal in its depths."
+      ],
+      "sources": ["warcraft.wiki.gg: Slithering Scar"]
+    },
+    {
+      "id": 490005,
+      "kind": "place",
+      "title": "The Lakkari Tar Pits",
+      "triggers": [{ "area": "Lakkari Tar Pits" }],
+      "body": [
+        "Lakes of thick, foul black tar south of Marshal's Refuge, where the bones of hundreds of trapped beasts jut from the surface and scavengers wait for easy prey. Rare tarblossoms, prized for their beauty and durability, grow at the bottom. Tar beasts live in it."
+      ],
+      "sources": ["warcraft.wiki.gg: Lakkari Tar Pits"]
+    },
+    {
+      "id": 490006,
+      "kind": "place",
+      "title": "The Marshlands",
+      "triggers": [{ "area": "The Marshlands" }, { "talk": 9619 }, { "kill": 9684 }],
+      "body": [
+        "The vast marsh of the south-east, the usual way into the crater from Tanaris, full of raptors, some of them poisonous. The tauren hunter Torwa Pathfinder camps on a mound here, hunting the elusive great raptor Lar'korwi."
+      ],
+      "sources": ["warcraft.wiki.gg: Marshlands", "warcraft.wiki.gg: Un'Goro Crater (Notable characters)"]
+    },
+    {
+      "id": 490007,
+      "kind": "place",
+      "title": "Fungal Rock",
+      "triggers": [{ "area": "Fungal Rock" }, { "kill": 9622 }, { "talk": 9623 }],
+      "body": [
+        "A great cavern in the north-eastern wall, home of the crater's gorillas and their leader U'cha. By the waterfall outside sits A-Me 01, a mechanical ape built by the gnome Karna Remtravel."
+      ],
+      "sources": ["warcraft.wiki.gg: Fungal Rock"]
+    },
+    {
+      "id": 490008,
+      "kind": "place",
+      "title": "Terror Run and Golakka Hot Springs",
+      "triggers": [{ "area": "Terror Run" }, { "area": "Golakka Hot Springs" }, { "area": "Ironstone Plateau" }],
+      "body": [
+        "The wild west of the crater. Terror Run is the hunting ground of the great devilsaurs and stegodons; north of it, the geysers and pools of Golakka are heated by the volcano and patrolled by steaming elementals. Pterrordax fledglings nest on the bare rock of the Ironstone Plateau in the north-east."
+      ],
+      "sources": ["warcraft.wiki.gg: Terror Run", "warcraft.wiki.gg: Golakka Hot Springs", "warcraft.wiki.gg: Ironstone Plateau"]
+    },
+    {
+      "id": 490050,
+      "kind": "history",
+      "title": "Un'Goro in the War of the Shifting Sands",
+      "triggers": [{ "areaId": 490 }],
+      "body": [
+        "A thousand years ago, when the Qiraji swarmed out of Silithus, the night elf army was driven back through Un'Goro to the borders of Tanaris. Yet something in the crater kept the Qiraji from ever taking it. Some of the ancient beasts of Un'Goro, it is said, grew to nearly three hundred feet long."
+      ],
+      "sources": ["warcraft.wiki.gg: Un'Goro Crater (War of the Shifting Sands, Ancient history)"]
+    }
+  ]
+}

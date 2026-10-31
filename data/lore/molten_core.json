@@ -1,0 +1,147 @@
+{
+  "zone": 2717,
+  "name": "Molten Core",
+  "entries": [
+    {
+      "id": 2717000,
+      "kind": "zone",
+      "title": "The Molten Core",
+      "triggers": [{ "areaId": 2717 }],
+      "body": [
+        "The burning heart of Blackrock Mountain, a cavern of rock and rivers of lava, smoke vents and lavafalls, where Ragnaros withdrew after Thaurissan summoned him. The burning lake where the Firelord lies sleeping is a rift to the Firelands, through which his malicious elementals pass into the world.",
+        "Ancient runes of warding empower his servants, each guarded by one of his lieutenants. The Hydraxian Waterlords, eternal enemies of fire, will reward anyone who puts out those runes."
+      ],
+      "sources": ["warcraft.wiki.gg: Molten Core (introduction, History, Geography)"]
+    },
+    {
+      "id": 2717001,
+      "kind": "place",
+      "title": "The Runes of Warding",
+      "triggers": [{ "areaId": 2717 }, { "kill": 12118 }, { "kill": 11982 }],
+      "body": [
+        "Seven runes in the depths of the Core, Kress, Mohn, Blaz, Zeth, Mazj, Theri and Koro, which empower the Firelord's servants. Each is kept by a lieutenant who covets the station of the others; the flamewakers, unlike the fire elementals, are beings of flesh and blood, and constantly jockey for Ragnaros's favour."
+      ],
+      "sources": ["warcraft.wiki.gg: Molten Core (Geography)", "warcraft.wiki.gg: Lucifron", "warcraft.wiki.gg: Gehennas", "warcraft.wiki.gg: Sulfuron Harbinger"]
+    },
+    {
+      "id": 2717002,
+      "kind": "place",
+      "title": "Ragnaros's Lair",
+      "triggers": [{ "kill": 12018 }, { "kill": 11502 }],
+      "body": [
+        "The burning lake at the bottom of the Core, where Majordomo Executus summons his master, and Ragnaros rises from the lava."
+      ],
+      "sources": ["warcraft.wiki.gg: Majordomo Executus", "warcraft.wiki.gg: Molten Core (History)"]
+    },
+    {
+      "id": 2717030,
+      "kind": "person",
+      "title": "Lucifron",
+      "triggers": [{ "kill": 12118 }],
+      "body": [
+        "One of the four flamewaker captains of Ragnaros, who guards the great core hound Magmadar. He has clashed with Gehennas many times, even during their imprisonment in the Elemental Plane, and waits quietly for any of the other flamewakers to show a weakness."
+      ],
+      "sources": ["warcraft.wiki.gg: Lucifron"]
+    },
+    {
+      "id": 2717031,
+      "kind": "person",
+      "title": "Magmadar",
+      "triggers": [{ "kill": 11982 }],
+      "body": [
+        "A behemoth of igneous rock and roiling magma, father of the core hounds and Ragnaros's favourite pet. While the Firelord was imprisoned in the Elemental Plane, it is said he fed the remains of his captured enemies to Magmadar's twin maws, and the hound grew strong and loyal."
+      ],
+      "sources": ["warcraft.wiki.gg: Magmadar"]
+    },
+    {
+      "id": 2717032,
+      "kind": "person",
+      "title": "Gehennas",
+      "triggers": [{ "kill": 12259 }],
+      "body": [
+        "A flamewaker near the bottom of the Firelord's hierarchy, who covets the power of his superiors and is trusted by no one but his two guards, who hope to rise with him. He wields shadow magic."
+      ],
+      "sources": ["warcraft.wiki.gg: Gehennas"]
+    },
+    {
+      "id": 2717033,
+      "kind": "person",
+      "title": "Garr",
+      "triggers": [{ "kill": 12057 }],
+      "body": [
+        "A lava elemental, one of the lieutenants who came with Ragnaros into Azeroth. With Baron Geddon he ambushed Prince Thunderaan, the Windseeker; Ragnaros devoured most of the prince's essence and sealed the rest in a talisman of elemental binding, splitting it between his two lieutenants. Garr carries one half."
+      ],
+      "sources": ["warcraft.wiki.gg: Garr"]
+    },
+    {
+      "id": 2717034,
+      "kind": "person",
+      "title": "Shazzrah",
+      "triggers": [{ "kill": 12264 }],
+      "body": [
+        "Of all the flamewakers, the most gifted in the arcane. He knows that Baron Geddon suspects Garr of treachery, and is happy to let them quarrel, for it is Shazzrah who wants both halves of the talisman, to drain its power for himself."
+      ],
+      "sources": ["warcraft.wiki.gg: Shazzrah"]
+    },
+    {
+      "id": 2717035,
+      "kind": "person",
+      "title": "Baron Geddon",
+      "triggers": [{ "kill": 12056 }],
+      "body": [
+        "A fire elemental who fought the titans long ago and helped betray Prince Thunderaan; he holds the other half of the talisman. It is rumoured that Executus supplanted him, and that they have been rivals ever since."
+      ],
+      "sources": ["warcraft.wiki.gg: Baron Geddon"]
+    },
+    {
+      "id": 2717036,
+      "kind": "person",
+      "title": "Golemagg the Incinerator",
+      "triggers": [{ "kill": 11988 }],
+      "body": [
+        "The most brutal of the molten giants, the most feared soldiers of Ragnaros. He has cowed two of Magmadar's offspring into serving as his pets, and earned Magmadar's undying hatred for it."
+      ],
+      "sources": ["warcraft.wiki.gg: Golemagg the Incinerator"]
+    },
+    {
+      "id": 2717037,
+      "kind": "person",
+      "title": "Sulfuron Harbinger",
+      "triggers": [{ "kill": 12098 }],
+      "body": [
+        "The herald of Ragnaros, among the most favoured flamewakers, who commands Ambassador Flamelash and the others in the outside world, and answers only to Executus. He watches Shazzrah closely, sure he means to betray their master."
+      ],
+      "sources": ["warcraft.wiki.gg: Sulfuron Harbinger"]
+    },
+    {
+      "id": 2717038,
+      "kind": "person",
+      "title": "Majordomo Executus",
+      "triggers": [{ "kill": 12018 }],
+      "body": [
+        "At the top of the elemental hierarchy, beneath only Ragnaros himself. He won his place by proving nearly invincible in the wars of the Elemental Plane. The lesser flamewakers, Baron Geddon above all, wait eagerly for him to slip, for Ragnaros does not tolerate failure."
+      ],
+      "sources": ["warcraft.wiki.gg: Majordomo Executus"]
+    },
+    {
+      "id": 2717039,
+      "kind": "person",
+      "title": "Ragnaros",
+      "triggers": [{ "kill": 11502 }],
+      "body": [
+        "The Firelord, first Elemental Lord of fire and a lieutenant of the Old Gods, defeated by the titans' servants and imprisoned in the Elemental Plane, where he ruled the Firelands. Thaurissan's summoning tore him back into the world two centuries ago, and he has ruled Blackrock Mountain from the Molten Core ever since, enslaving the Dark Irons and warring with Nefarian. Banished, he only returns to the Firelands, never truly destroyed."
+      ],
+      "sources": ["warcraft.wiki.gg: Ragnaros (introduction)"]
+    },
+    {
+      "id": 2717050,
+      "kind": "history",
+      "title": "Moira's Gambit",
+      "triggers": [{ "kill": 11502 }],
+      "body": [
+        "After her husband the Emperor died, Moira Thaurissan stayed in Shadowforge City and plotted to free the Dark Irons from Ragnaros's tyranny. She spread word that the Firelord was raising an army, and of the riches hidden in his stronghold, knowing it would draw adventurers. With the Hydraxian Waterlords' aid, champions broke into the Core, put out its runes, and banished Ragnaros back to the Firelands. The Dark Irons celebrated, and many pledged themselves to the Queen-Regent."
+      ],
+      "sources": ["warcraft.wiki.gg: Blackrock Mountain (After the Great Wars)", "warcraft.wiki.gg: Molten Core (World of Warcraft)"]
+    }
+  ]
+}

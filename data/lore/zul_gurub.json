@@ -1,0 +1,117 @@
+{
+  "zone": 1977,
+  "name": "Zul'Gurub",
+  "entries": [
+    {
+      "id": 1977000,
+      "kind": "zone",
+      "title": "Zul'Gurub",
+      "triggers": [{ "areaId": 1977 }],
+      "body": [
+        "The temple city of the Gurubashi, once capital of an empire that ruled from Stranglethorn to the Echo Isles. Fifteen hundred years ago the Atal'ai priests called the avatar of the blood god Hakkar the Soulflayer into the world here, and the empire tore itself apart; the Zandalari cast Hakkar down on his own shrine and exiled his priests.",
+        "In the Swamp of Sorrows, the Atal'ai learned that Hakkar's physical form can only be summoned here, in the ancient capital. Their prophet Jin'do the Hexxer has enslaved the Gurubashi high priests to bring the Soulflayer back."
+      ],
+      "sources": ["warcraft.wiki.gg: Zul'Gurub (History)", "warcraft.wiki.gg: Gurubashi Empire"]
+    },
+    {
+      "id": 1977001,
+      "kind": "place",
+      "title": "The Temples of the Primal Gods",
+      "triggers": [{ "areaId": 1977 }, { "kill": 14517 }, { "kill": 14507 }, { "kill": 14510 }],
+      "body": [
+        "The trolls of the land sent their High Priests into the city to stop Hakkar, each a champion of one of the Primal Gods, Bat, Snake, Spider, Panther and Tiger. They fell under his sway, and now their temples ring the city and the priests and the power of their loa feed the Soulflayer."
+      ],
+      "sources": ["warcraft.wiki.gg: Zul'Gurub (History)"]
+    },
+    {
+      "id": 1977002,
+      "kind": "place",
+      "title": "The Bloodfire Pit and the Altar of Hakkar",
+      "triggers": [{ "kill": 11382 }, { "kill": 11380 }, { "kill": 14834 }],
+      "body": [
+        "The bloodstained heart of the city, where the Soulflayer was cast down long ago and where his priests work to call him back. The raptor-riding Bloodlord Mandokir guards the way, and the Hexxer's dark rites go on day and night."
+      ],
+      "sources": ["warcraft.wiki.gg: Zul'Gurub (History)", "warcraft.wiki.gg: Stranglethorn Vale (Gurubashi civil war)"]
+    },
+    {
+      "id": 1977003,
+      "kind": "place",
+      "title": "The Edge of Madness and the Pool of Gahz'ranka",
+      "triggers": [{ "kill": 15082 }, { "kill": 15083 }, { "kill": 15084 }, { "kill": 15085 }, { "kill": 15114 }],
+      "body": [
+        "Other powers lurk in the city. At the Edge of Madness the spirits of the Gurubashi's old champions can be called up, and in a sacred pool sleeps a great beast the trolls revere."
+      ],
+      "sources": ["warcraft.wiki.gg: Zul'Gurub"]
+    },
+    {
+      "id": 1977030,
+      "kind": "person",
+      "title": "The High Priests",
+      "triggers": [{ "kill": 14517 }, { "kill": 14507 }, { "kill": 14510 }, { "kill": 14509 }, { "kill": 14515 }],
+      "body": [
+        "Jeklik of the Bat, Venoxis of the Snake, Mar'li of the Spider, Thekal of the Tiger and Arlokk of the Panther, champions of the Primal Gods sent to stop Hakkar, and enslaved by Jin'do to serve him instead. Beaten, each takes on the shape of the loa they serve."
+      ],
+      "sources": ["warcraft.wiki.gg: Zul'Gurub (History)"]
+    },
+    {
+      "id": 1977031,
+      "kind": "person",
+      "title": "Bloodlord Mandokir",
+      "triggers": [{ "kill": 11382 }, { "kill": 14988 }],
+      "body": [
+        "A Gurubashi warlord who rides the great raptor Ohgan, Hakkar's champion and executioner."
+      ],
+      "sources": ["warcraft.wiki.gg: Zul'Gurub"]
+    },
+    {
+      "id": 1977032,
+      "kind": "person",
+      "title": "Jin'do the Hexxer",
+      "triggers": [{ "kill": 11380 }],
+      "body": [
+        "The witch doctor who leads the effort to bring Hakkar back, who enslaved the Gurubashi high priests and turned their power to the Soulflayer's summoning."
+      ],
+      "sources": ["warcraft.wiki.gg: Zul'Gurub (History)"]
+    },
+    {
+      "id": 1977033,
+      "kind": "person",
+      "title": "Hakkar the Soulflayer",
+      "triggers": [{ "kill": 14834 }],
+      "body": [
+        "The Blood God, an ancient and terrible loa whose bloodlust can never be sated. The Zandalari saw that he would drive not only the trolls but the whole world to ruin, and cast him down. Now, at the heart of Zul'Gurub, he has entered the world again."
+      ],
+      "sources": ["warcraft.wiki.gg: Stranglethorn Vale (Gurubashi civil war)", "warcraft.wiki.gg: Zul'Gurub (History)"]
+    },
+    {
+      "id": 1977034,
+      "kind": "person",
+      "title": "The Madness",
+      "triggers": [{ "kill": 15082 }, { "kill": 15083 }, { "kill": 15084 }, { "kill": 15085 }],
+      "body": [
+        "Gri'lek, Hazza'rah, Renataki and Wushoolay, champions of the Gurubashi whose spirits can be called up at the Edge of Madness."
+      ],
+      "sources": ["warcraft.wiki.gg: Zul'Gurub"]
+    },
+    {
+      "id": 1977035,
+      "kind": "person",
+      "title": "Gahz'ranka",
+      "triggers": [{ "kill": 15114 }],
+      "body": [
+        "A great sea beast of legend, kept in the sacred pool of Zul'Gurub, which can be lured out only with the right bait."
+      ],
+      "sources": ["warcraft.wiki.gg: Zul'Gurub"]
+    },
+    {
+      "id": 1977050,
+      "kind": "history",
+      "title": "The Zandalari's Plea",
+      "triggers": [{ "kill": 14834 }, { "talk": 14875 }],
+      "body": [
+        "The Zandalari knew they could not free their champions and stop Hakkar alone. They sent word to the Darkspear that the Horde must come before it was too late, and set up camp on Yojamba Isle to recruit champions of every race. The Horde stormed Zul'Gurub and slew Jin'do, but not before Hakkar entered the world. The battle was costly, but the Soulflayer was beaten."
+      ],
+      "sources": ["warcraft.wiki.gg: Zul'Gurub (History)", "warcraft.wiki.gg: Yojamba Isle"]
+    }
+  ]
+}

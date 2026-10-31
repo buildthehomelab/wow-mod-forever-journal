@@ -1,0 +1,77 @@
+{
+  "zone": 3848,
+  "name": "The Arcatraz",
+  "entries": [
+    {
+      "id": 3848000,
+      "kind": "zone",
+      "title": "The Arcatraz",
+      "triggers": [{ "areaId": 3848 }],
+      "body": [
+        "The prison of Tempest Keep, where the naaru held the most terrifying and dangerous creatures they met on their journeys: agents of the black dragonflight, demons of the Legion, even servants of the Old Gods. When Kael'thas took the keep, he sent a warden and guards to run it. His blood elves were corruptible, and the prisoners have begun to break free."
+      ],
+      "sources": ["warcraft.wiki.gg: Arcatraz (introduction, Background)"]
+    },
+    {
+      "id": 3848001,
+      "kind": "place",
+      "title": "The Cellblocks",
+      "triggers": [{ "kill": 20870 }, { "kill": 20885 }, { "kill": 20886 }],
+      "body": [
+        "Corridors of broken cells, where escaped prisoners roam: a voidwraith loosed from its bonds, a shivarra and a wrathguard of the Legion."
+      ],
+      "sources": ["warcraft.wiki.gg: Zereketh the Unbound", "warcraft.wiki.gg: Dalliah the Doomsayer", "warcraft.wiki.gg: Wrath-Scryer Soccothrates"]
+    },
+    {
+      "id": 3848002,
+      "kind": "place",
+      "title": "The Warden's Chamber",
+      "triggers": [{ "kill": 20912 }],
+      "body": [
+        "The heart of the prison, where the warden keeps the most dangerous inmates in orbs along the walls, and the harbinger sleeps among them."
+      ],
+      "sources": ["warcraft.wiki.gg: Harbinger Skyriss"]
+    },
+    {
+      "id": 3848030,
+      "kind": "person",
+      "title": "Zereketh the Unbound",
+      "triggers": [{ "kill": 20870 }],
+      "body": [
+        "A powerful voidwraith, one of the prisoners loosed from the Arcatraz's cells."
+      ],
+      "sources": ["warcraft.wiki.gg: Zereketh the Unbound"]
+    },
+    {
+      "id": 3848031,
+      "kind": "person",
+      "title": "Dalliah the Doomsayer",
+      "triggers": [{ "kill": 20885 }],
+      "body": [
+        "A shivarra of the Legion, free in the Arcatraz."
+      ],
+      "sources": ["warcraft.wiki.gg: Dalliah the Doomsayer"]
+    },
+    {
+      "id": 3848032,
+      "kind": "person",
+      "title": "Wrath-Scryer Soccothrates",
+      "triggers": [{ "kill": 20886 }],
+      "body": [
+        "A wrathguard of the Legion, free in the Arcatraz, and no friend of the doomsayer."
+      ],
+      "sources": ["warcraft.wiki.gg: Wrath-Scryer Soccothrates"]
+    },
+    {
+      "id": 3848033,
+      "kind": "person",
+      "title": "Harbinger Skyriss",
+      "triggers": [{ "kill": 20912 }, { "kill": 21466 }, { "kill": 21467 }],
+      "body": [
+        "A qiraji, a servant of the Old Gods, who seeks to bring about his masters' vision of conquering every world in the universe. The naaru imprisoned him, and that suited him surprisingly well. He corrupted Warden Mellichar into releasing the prisoners of the Arcatraz.",
+        "Among the inmates freed with him was a wily gnome mage, Millhouse Manastorm."
+      ],
+      "sources": ["warcraft.wiki.gg: Harbinger Skyriss", "warcraft.wiki.gg: Millhouse Manastorm"]
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "zone": 1637,
+  "name": "Orgrimmar",
+  "entries": [
+    {
+      "id": 1637000,
+      "kind": "zone",
+      "title": "Orgrimmar",
+      "triggers": [{ "areaId": 1637 }],
+      "body": [
+        "The capital of the orcs and of the Horde, nestled in a system of valleys on the northern edge of Durotar, one of the mightiest warrior cities in the world. Thrall built it after the Battle of Mount Hyjal and named it for his friend and mentor Orgrim Doomhammer: a fortress of stout walls, massive gates and tall towers, with parts carved into the mountain behind it.",
+        "Tauren, Darkspear trolls, goblins and the half-ogre Rexxar helped raise it in a short time, despite trouble from centaur, harpies, thunder lizards, kobolds, quilboar and renegade warlocks. Fierce razor-winds sometimes sweep through it, strong enough to tear the roof off a badly built hut."
+      ],
+      "sources": ["warcraft.wiki.gg: Orgrimmar (introduction, Founding of Durotar, Geography)"]
+    },
+    {
+      "id": 1637001,
+      "kind": "place",
+      "title": "Grommash Hold",
+      "triggers": [{ "talk": 4949 }, { "talk": 3230 }, { "talk": 3144 }],
+      "body": [
+        "An enormous fortress in the Valley of Wisdom named for Grommash Hellscream, the seat of the Warchief. Thrall holds court here with his advisors, among them the old orc Eitrigg, who once saved Tirion Fordring's life and was saved by him in turn. The armour of the pit lord Mannoroth hangs on a tree outside, a trophy of the day Grom set his people free."
+      ],
+      "sources": ["warcraft.wiki.gg: Grommash Hold", "warcraft.wiki.gg: Valley of Wisdom"]
+    },
+    {
+      "id": 1637002,
+      "kind": "place",
+      "title": "The Valley of Strength",
+      "triggers": [{ "areaId": 1637 }],
+      "body": [
+        "The great valley just beyond the main gate, the economic heart of the city, where the bank, the auction house, the inn and the wind rider masters stand. Beyond it the Drag winds north-east towards the Valley of Honor, where warriors spar in the gladiatorial ring."
+      ],
+      "sources": ["warcraft.wiki.gg: Orgrimmar (Valleys)", "warcraft.wiki.gg: Orgrimmar (World of Warcraft)"]
+    },
+    {
+      "id": 1637003,
+      "kind": "place",
+      "title": "The Valley of Spirits",
+      "triggers": [{ "talk": 10540 }],
+      "body": [
+        "The troll quarter west of the Valley of Strength, home of the Darkspear and their shamans and witch doctors. Vol'jin, chief of the Darkspear, keeps his court here."
+      ],
+      "sources": ["warcraft.wiki.gg: Orgrimmar (Valleys)"]
+    },
+    {
+      "id": 1637004,
+      "kind": "place",
+      "title": "The Cleft of Shadow",
+      "triggers": [{ "talk": 3216 }],
+      "body": [
+        "A deep cleft beneath the city, home to its rogues and warlocks and its less-than-savoury citizens, and the entrance to Ragefire Chasm. Thrall tolerates the warlocks; not every orc has given up the old powers."
+      ],
+      "sources": ["warcraft.wiki.gg: Cleft of Shadow", "warcraft.wiki.gg: Ragefire Chasm"]
+    },
+    {
+      "id": 1637005,
+      "kind": "place",
+      "title": "The Valley of Wisdom",
+      "triggers": [{ "talk": 4047 }],
+      "body": [
+        "The valley of the tauren and the elders, where old shamans pass their knowledge to the Horde's newest generation, and a towering waterfall casts a cool mist over the huts."
+      ],
+      "sources": ["warcraft.wiki.gg: Valley of Wisdom", "warcraft.wiki.gg: Orgrimmar (World of Warcraft)"]
+    },
+    {
+      "id": 1637030,
+      "kind": "person",
+      "title": "Thrall",
+      "triggers": [{ "talk": 4949 }],
+      "body": [
+        "Go'el, son of Durotan and Draka of the Frostwolf clan. Gul'dan's assassins murdered his parents in the woods of Loch Modan when he was a baby, and Aedelas Blackmoore found him among their bodies and named him Thrall, \"slave\". He was raised as a gladiator in Durnholde, escaped, freed the orcs from the internment camps with Orgrim Doomhammer, and became warchief when Doomhammer died.",
+        "He led the Horde across the sea, made allies of the Darkspear and the tauren, and fought the Burning Legion at Mount Hyjal beside the Alliance. Since then he has worked for peace between the two."
+      ],
+      "sources": ["warcraft.wiki.gg: Thrall (introduction, Lord of the Clans)"]
+    },
+    {
+      "id": 1637050,
+      "kind": "history",
+      "title": "The Founding of Durotar",
+      "triggers": [{ "areaId": 1637 }],
+      "body": [
+        "After Mount Hyjal, Thrall led his people to a harsh desert on the eastern coast of Kalimdor and named it Durotar, after his father. With the demonic curse lifted, the Horde changed from a bloodthirsty juggernaut into a looser coalition, devoted to survival and prosperity rather than conquest, with the tauren of Mulgore and the Darkspear trolls at its side. In Orgrimmar it looked forward to an era of peace."
+      ],
+      "sources": ["warcraft.wiki.gg: Orgrimmar (Founding of Durotar)"]
+    },
+    {
+      "id": 1637051,
+      "kind": "history",
+      "title": "The Scourge at the Gates",
+      "triggers": [{ "talk": 34995 }, { "talk": 32518 }],
+      "body": [
+        "As Thrall and Garrosh Hellscream, Grom's son, fought a mak'gora in Grommash Hold, the Scourge struck Orgrimmar, undead in the streets and frost wyrms in the sky. The Horde threw them back, and the Lich King's herald taunted them to come to Northrend, where his minions would be waiting.",
+        "After the betrayal at the Wrathgate, Sylvanas and her loyal Forsaken took refuge here, and from Orgrimmar the Warchief led the march to take the Undercity back."
+      ],
+      "sources": ["warcraft.wiki.gg: Orgrimmar (Wrath of the Lich King)"]
+    }
+  ]
+}

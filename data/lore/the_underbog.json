@@ -1,0 +1,86 @@
+{
+  "zone": 3716,
+  "name": "The Underbog",
+  "entries": [
+    {
+      "id": 3716000,
+      "kind": "zone",
+      "title": "The Underbog",
+      "triggers": [{ "areaId": 3716 }],
+      "body": [
+        "The last of Coilfang Reservoir's natural life that Lady Vashj's naga have not stamped out, home to the most powerful beasts of Zangarmarsh. Only one structure here is theirs: the shrine they built to house their hydra god."
+      ],
+      "sources": ["warcraft.wiki.gg: Underbog (introduction, Background)"]
+    },
+    {
+      "id": 3716001,
+      "kind": "place",
+      "title": "The Underspore",
+      "triggers": [{ "kill": 17770 }],
+      "body": [
+        "A fungal cavern where a very special plant, the Underspore, has been tended to perfection for millennia."
+      ],
+      "sources": ["warcraft.wiki.gg: Hungarfen"]
+    },
+    {
+      "id": 3716002,
+      "kind": "place",
+      "title": "The Hydra's Shrine",
+      "triggers": [{ "kill": 18105 }],
+      "body": [
+        "The naga's only work in the Underbog: a structure built to house Ghaz'an, the hydra they worship."
+      ],
+      "sources": ["warcraft.wiki.gg: Underbog"]
+    },
+    {
+      "id": 3716003,
+      "kind": "place",
+      "title": "The Untamed Depths",
+      "triggers": [{ "kill": 17826 }, { "kill": 17882 }],
+      "body": [
+        "The wildest reaches of the Underbog, where a Broken lord hides among the beasts and the Black Stalker hunts."
+      ],
+      "sources": ["warcraft.wiki.gg: Swamplord Musel'ek", "warcraft.wiki.gg: The Black Stalker"]
+    },
+    {
+      "id": 3716030,
+      "kind": "person",
+      "title": "Hungarfen",
+      "triggers": [{ "kill": 17770 }],
+      "body": [
+        "A huge fungal giant, one of the leaders of his kind, who has tended the Underspore for millennia."
+      ],
+      "sources": ["warcraft.wiki.gg: Hungarfen"]
+    },
+    {
+      "id": 3716031,
+      "kind": "person",
+      "title": "Ghaz'an",
+      "triggers": [{ "kill": 18105 }],
+      "body": [
+        "A hydra the naga of Coilfang keep and revere as a god."
+      ],
+      "sources": ["warcraft.wiki.gg: Underbog", "warcraft.wiki.gg: Ghaz'an"]
+    },
+    {
+      "id": 3716032,
+      "kind": "person",
+      "title": "Swamplord Musel'ek",
+      "triggers": [{ "kill": 17826 }, { "kill": 17827 }],
+      "body": [
+        "A Broken hunter, ruler of the Murkblood, with his beast Claw. Why he lives down here among the animals rather than with his own people is a puzzle; he may be in exile, hiding in the untamed Underbog."
+      ],
+      "sources": ["warcraft.wiki.gg: Swamplord Musel'ek"]
+    },
+    {
+      "id": 3716033,
+      "kind": "person",
+      "title": "The Black Stalker",
+      "triggers": [{ "kill": 17882 }],
+      "body": [
+        "A great sporebat that hunts the deepest part of the Underbog."
+      ],
+      "sources": ["warcraft.wiki.gg: The Black Stalker"]
+    }
+  ]
+}

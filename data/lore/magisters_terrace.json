@@ -1,0 +1,77 @@
+{
+  "zone": 4131,
+  "name": "Magisters' Terrace",
+  "entries": [
+    {
+      "id": 4131000,
+      "kind": "zone",
+      "title": "The Magisters' Terrace",
+      "triggers": [{ "areaId": 4131 }],
+      "body": [
+        "A hall of the magisters on the Isle of Quel'Danas, near the Sunwell. When the Scourge came to Quel'Thalas, the traitor Dar'Khan Drathir hid here to work the spell that bound the Sunwell, and sent a fireball into the sky to tell Arthas that the time had come.",
+        "Now Prince Kael'thas has taken it as his base while his servants work at the Sunwell. He means to desecrate the ancient land of his people with an evil beyond compare."
+      ],
+      "sources": ["warcraft.wiki.gg: Magisters' Terrace (Background)"]
+    },
+    {
+      "id": 4131001,
+      "kind": "place",
+      "title": "The Grand Magister's Asylum",
+      "triggers": [{ "kill": 24723 }, { "kill": 24744 }],
+      "body": [
+        "The lower halls, where fel crystals feed the prince's servants, and a raging arcane elemental is held."
+      ],
+      "sources": ["warcraft.wiki.gg: Selin Fireheart", "warcraft.wiki.gg: Vexallus"]
+    },
+    {
+      "id": 4131002,
+      "kind": "place",
+      "title": "The Observation Grounds",
+      "triggers": [{ "kill": 24560 }, { "kill": 24664 }],
+      "body": [
+        "The upper terrace, where the priestess keeps her company of champions, and the prince waits beyond."
+      ],
+      "sources": ["warcraft.wiki.gg: Priestess Delrissa"]
+    },
+    {
+      "id": 4131030,
+      "kind": "person",
+      "title": "Selin Fireheart",
+      "triggers": [{ "kill": 24723 }],
+      "body": [
+        "A felblood elf, one of the blood elves who drink fel power instead of arcane, feeding on the crystals of his hall."
+      ],
+      "sources": ["warcraft.wiki.gg: Selin Fireheart"]
+    },
+    {
+      "id": 4131031,
+      "kind": "person",
+      "title": "Vexallus",
+      "triggers": [{ "kill": 24744 }],
+      "body": [
+        "An arcane elemental kept by the magisters, bursting with raw energy."
+      ],
+      "sources": ["warcraft.wiki.gg: Vexallus"]
+    },
+    {
+      "id": 4131032,
+      "kind": "person",
+      "title": "Priestess Delrissa",
+      "triggers": [{ "kill": 24560 }],
+      "body": [
+        "A blood elf priestess with a company of champions at her side. The Dawnblade elves on the isle say it was she who nursed Kael'thas back to \"health\" after his defeat at Tempest Keep."
+      ],
+      "sources": ["warcraft.wiki.gg: Priestess Delrissa"]
+    },
+    {
+      "id": 4131033,
+      "kind": "person",
+      "title": "Kael'thas Sunstrider",
+      "triggers": [{ "kill": 24664 }],
+      "body": [
+        "The last of the House of Sunstrider, defeated at Tempest Keep but not destroyed, now kept alive by fel power. Here, in the hall of his own magisters, the disgraced lord of the blood elves made his final stand, and here Lady Liadrin and the Horde's champions put an end to him. Had he succeeded, the Legion's darkness would have spread quickly to every corner of Azeroth."
+      ],
+      "sources": ["warcraft.wiki.gg: Magisters' Terrace (The Burning Crusade)", "warcraft.wiki.gg: Kael'thas Sunstrider"]
+    }
+  ]
+}

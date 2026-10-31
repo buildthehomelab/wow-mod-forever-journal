@@ -1,0 +1,102 @@
+{
+  "zone": 25,
+  "name": "Blackrock Mountain",
+  "entries": [
+    {
+      "id": 25000,
+      "kind": "zone",
+      "title": "Blackrock Mountain",
+      "triggers": [{ "areaId": 25 }],
+      "body": [
+        "A volcano that should not exist, towering between the Burning Steppes and the Searing Gorge. Inside it is some of the greatest work the dwarves ever made, and it is one of the most dangerous places on Azeroth.",
+        "Two masters war for the mountain. In its molten heart rules the Firelord Ragnaros, served by the enslaved Dark Iron dwarves of Shadowforge City and an army of elementals. In its heights, Nefarian, son of Deathwing, commands the orcs of the Dark Horde and his own black dragons from Blackrock Spire. Each hopes to raise an army that can conquer Azeroth."
+      ],
+      "sources": ["warcraft.wiki.gg: Blackrock Mountain (introduction, After the Great Wars)"]
+    },
+    {
+      "id": 25001,
+      "kind": "place",
+      "title": "The Blackrock Quarry",
+      "triggers": [{ "kill": 9026 }, { "accept": 3906 }, { "accept": 4262 }],
+      "body": [
+        "The great open heart of the mountain, crossed by chains and walkways over rivers of lava, where the Dark Irons work under the eye of Ragnaros's elementals. Overmaster Pyron, a fire elemental, guards the way down into the Depths."
+      ],
+      "sources": ["warcraft.wiki.gg: Overmaster Pyron", "warcraft.wiki.gg: Blackrock Depths (History)"]
+    },
+    {
+      "id": 25002,
+      "kind": "place",
+      "title": "Blackrock Spire",
+      "triggers": [{ "areaId": 25 }],
+      "body": [
+        "The fortress in the upper levels of the mountain, designed by the master mason Franclorn Forgewright as the symbol of Dark Iron power. The dwarves held it for centuries. In the First War it sheltered Gul'dan's Shadow Council, and in the Second it was the Horde's headquarters.",
+        "Now Nefarian and his dragons hold its upper reaches and make war on the dwarves below. Rend Blackhand and Nefarian's other generals defend the peak while the dragon carries on his sinister experiments."
+      ],
+      "sources": ["warcraft.wiki.gg: Blackrock Spire (History)"]
+    },
+    {
+      "id": 25003,
+      "kind": "place",
+      "title": "Blackrock Depths",
+      "triggers": [{ "areaId": 25 }],
+      "body": [
+        "The immense tunnels at the roots of the mountain, home of the Dark Iron dwarves and the black forge where they smelt their ore. Shadowforge City, their vast capital, is here, with a prison and the Grim Guzzler tavern. Emperor Dagran Thaurissan rules it, the latest of a line of sorcerer-thanes in the shadow of Ragnaros, and his people labour for the Firelord's elementals, who guide them towards ever more dangerous and apocalyptic deeds."
+      ],
+      "sources": ["warcraft.wiki.gg: Blackrock Depths (introduction, History)"]
+    },
+    {
+      "id": 25004,
+      "kind": "place",
+      "title": "Forgewright's Tomb",
+      "triggers": [{ "talk": 8888 }, { "talk": 9542 }],
+      "body": [
+        "A monument in the heart of the mountain to Franclorn Forgewright, the Dark Iron architect who built the Spire, much of the Depths, and the Stonewrought Dam in Loch Modan. He made the twin hammers Ironfoe and Ironfel, and kept the master key of Shadowforge City.",
+        "He stood by while the corruption of Ragnaros seeped into his people, believing he had no choice. When the Spire was finished, his will to live among them gave way. The statue over his tomb, which he likely designed himself, holds two secrets: a hidden compartment in its base, and an empty grip made to hold Ironfel forever."
+      ],
+      "sources": ["warcraft.wiki.gg: Franclorn Forgewright (Biography)"]
+    },
+    {
+      "id": 25030,
+      "kind": "person",
+      "title": "Bodley",
+      "triggers": [{ "talk": 16033 }, { "accept": 8960 }],
+      "body": [
+        "A gnome who belonged to the same company of mercenaries as Anthion Harmon, Falrin Treeshaper and Theldren. He was killed at Blackrock Spire and is stuck there as a ghost, which is unfortunate enough; more unfortunately, nobody can see him without a special device."
+      ],
+      "sources": ["warcraft.wiki.gg: Bodley"]
+    },
+    {
+      "id": 25050,
+      "kind": "history",
+      "title": "The Birth of the Mountain",
+      "triggers": [{ "areaId": 25 }, { "complete": 3906 }],
+      "body": [
+        "In the War of the Three Hammers, as the Bronzebeard and Wildhammer armies closed in to destroy the Dark Iron clan, Sorcerer-Thane Thaurissan tried to draw fire from deep within the world as a weapon. His rage at his wife's death was so absolute that his spell breached the Firelands and summoned Ragnaros. The Firelord's violent arrival shattered the mountains around him, and the armies of Ironforge and the Wildhammers turned and fled.",
+        "A raging volcano rose over the ruins of the Dark Iron kingdom. The wasteland to the south became the Burning Steppes, and the chasm to the north the Searing Gorge. Ragnaros withdrew into the mountain's heart, the Molten Core, and set the surviving Dark Irons to carve him a fortress beneath it. The mountain was called Blackrock long before the orcs of that name came."
+      ],
+      "sources": ["warcraft.wiki.gg: Blackrock Mountain (Creation)"]
+    },
+    {
+      "id": 25051,
+      "kind": "history",
+      "title": "The Blackrock Clan",
+      "triggers": [{ "areaId": 25 }, { "complete": 8994 }],
+      "body": [
+        "In the First War, Cho'gall used his link to the Old Gods to persuade Ragnaros's servants to let the Shadow Council keep the upper mountain. When Orgrim Doomhammer turned on the warlocks, the dwarves, on Ragnaros's secret orders, let the Horde take the Spire. Orgrim thought it a good omen that it bore his own clan's name, and it became the Horde's headquarters for the Second War; the volcano erupted as he spoke at its foot, and the shamans took it as a blessing.",
+        "The war ended in one of the fiercest battles Azeroth had seen, the Siege of Blackrock Spire. Rend and Maim Blackhand survived, hunted for two years, gathered what orcs they could, and founded the Dark Horde. When Teron Gorefiend came from Draenor seeking their aid, Rend refused. Deathwing offered his own help instead, and sent his son Nefarian to make the Dark Horde his army."
+      ],
+      "sources": ["warcraft.wiki.gg: Blackrock Mountain (First and Second Wars)"]
+    },
+    {
+      "id": 25052,
+      "kind": "history",
+      "title": "The War for the Mountain",
+      "triggers": [{ "areaId": 25 }, { "kill": 9026 }],
+      "body": [
+        "After the Second War, the orcs and the Dark Irons struck a bargain: the dwarves would go deeper, the orcs would hold the heights. Neither side meant to keep it. Ragnaros, with his Dark Irons, their machines and golems and his elemental lieutenants such as Baron Geddon, Garr and Sulfuron, wars for the mountain against Nefarian's orcs, trolls, ogres and chromatic dragonflight.",
+        "Even under Nefarian, the Spire changes hands often; before General Drakkisath, Lord Valthalak ruled it. The power of the bound fire elemental Pyroguard Emberseer is drained to hasten the hatching of black dragon eggs."
+      ],
+      "sources": ["warcraft.wiki.gg: Blackrock Mountain (First and Second Wars, After the Great Wars)"]
+    }
+  ]
+}

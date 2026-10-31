@@ -1,0 +1,101 @@
+{
+  "zone": 1537,
+  "name": "Ironforge",
+  "entries": [
+    {
+      "id": 1537000,
+      "kind": "zone",
+      "title": "Ironforge",
+      "triggers": [{ "areaId": 1537 }],
+      "body": [
+        "The ancestral home of the dwarves and one of the oldest cities on Azeroth, carved deep into Ironforge Mountain in northern Dun Morogh, and capital of the kingdom of Khaz Modan under the Bronzebeard clan. It is a city of craftsmen, explorers, miners and warriors, equal parts fortress and capital, built in rings around the Great Forge at its heart.",
+        "It is loud, busy and rowdy at every hour, and yet cosy: fires roar in the hearths of its inns and shops, and dwarven laughter rings off the stone. With the Deeprun Tram to Stormwind and the gnomes of Tinker Town, it is one of the most varied cities of the Alliance."
+      ],
+      "sources": ["warcraft.wiki.gg: Ironforge (introduction)"]
+    },
+    {
+      "id": 1537001,
+      "kind": "place",
+      "title": "The High Seat",
+      "triggers": [{ "talk": 2784 }, { "talk": 2918 }],
+      "body": [
+        "The throne room beside the Great Forge, where King Magni Bronzebeard rules Khaz Modan. In the Second War every dwarven stronghold fell but this one; as each citadel was lost, its survivors fled here, until the whole dwarven nation waited inside Ironforge for its revenge. When the Alliance freed Khaz Modan, Magni swore the dwarves would forever owe it a debt of honour, and he has kept that oath when other kingdoms walked away."
+      ],
+      "sources": ["warcraft.wiki.gg: Ironforge (The Second War and aftermath)", "warcraft.wiki.gg: Great Forge"]
+    },
+    {
+      "id": 1537002,
+      "kind": "place",
+      "title": "The Hall of Explorers",
+      "triggers": [{ "talk": 2916 }, { "talk": 5387 }, { "talk": 8256 }],
+      "body": [
+        "The headquarters of the Explorers' League, founded by the Bronzebeard brothers when the dwarves unearthed ruins holding the key to their lost heritage. Magni turned his people's industry from mining to archaeology, and the League now digs all over the world, Uldaman among its finds, searching for the truth of where the dwarves came from. It has a quiet, unofficial understanding with SI:7, and shares its secrets in code."
+      ],
+      "sources": ["warcraft.wiki.gg: Explorers' League (introduction, History)"]
+    },
+    {
+      "id": 1537003,
+      "kind": "place",
+      "title": "Tinker Town",
+      "triggers": [{ "talk": 7937 }],
+      "body": [
+        "When Gnomeregan fell, High Tinker Gelbin Mekkatorque led the survivors to Ironforge, and Magni took his old friends in, setting aside a part of the city for them. There the gnomes built Tinker Town, where they plan the day they will take their city back. Some dwarves were moved out of their homes to make room, and not all of them were happy about it."
+      ],
+      "sources": ["warcraft.wiki.gg: Ironforge (World of Warcraft)"]
+    },
+    {
+      "id": 1537004,
+      "kind": "place",
+      "title": "The Forlorn Cavern",
+      "triggers": [{ "area": "The Forlorn Cavern" }, { "talk": 2786 }],
+      "body": [
+        "A long, winding road around Ironforge's underground lake. It is dark and secluded, perfect for shady deals, and home to the city's rogues and warlocks. Dark things go on here; watch your purse."
+      ],
+      "sources": ["warcraft.wiki.gg: Forlorn Cavern"]
+    },
+    {
+      "id": 1537005,
+      "kind": "place",
+      "title": "The Great Forge",
+      "triggers": [{ "areaId": 1537 }],
+      "body": [
+        "The first thing the dwarves built under the mountain; the city grew around it and took its name. It never goes out. Loud, hot and cheerful, it is the heart of city life, ringed by foundries pouring molten slag, shops and guild halls.",
+        "Two great bells were cast here as gifts of friendship, one for Lordaeron and one for Stormwind. And on the Great Anvil at its centre, King Magni forged the Ashbringer."
+      ],
+      "sources": ["warcraft.wiki.gg: Great Forge"]
+    },
+    {
+      "id": 1537030,
+      "kind": "person",
+      "title": "King Magni Bronzebeard",
+      "triggers": [{ "talk": 2784 }],
+      "body": [
+        "The eldest of the three Bronzebeard brothers, born to be king under the mountain, and devoted to his brothers above all else. When he learned that Muradin had died in Northrend, and that Arthas was to blame, he was overcome with grief.",
+        "When Alexandros Mograine came to him, Magni stood at the Great Anvil and poured all his rage and grief into the blade he made, the finest he ever forged: the Ashbringer, to stand against Frostmourne. His daughter Moira was taken by the Dark Iron emperor; Magni believes she is under a spell."
+      ],
+      "sources": ["warcraft.wiki.gg: Magni Bronzebeard", "warcraft.wiki.gg: Ironforge (The Third War)", "warcraft.wiki.gg: Moira Thaurissan"]
+    },
+    {
+      "id": 1537050,
+      "kind": "history",
+      "title": "The Three Hammers",
+      "triggers": [{ "complete": 3701 }, { "complete": 3702 }, { "talk": 8879 }],
+      "body": [
+        "By 230 years before the Dark Portal, the dwarves had outgrown their mountain. High King Modimus Anvilmar ruled them all, but three clans vied for power: the Bronzebeards, the army and merchants of the city; the Wildhammers on the slopes outside; and the Dark Irons of Thaurissan, in the deepest halls with the richest veins. When Modimus died of old age, war broke out.",
+        "The Bronzebeards won and drove the others out. The Dark Irons came back with golems and siege engines and fought into the city's heart before they were thrown back, and in his desperation Thaurissan summoned Ragnaros. Madoran Bronzebeard offered the Wildhammers a home in Ironforge when their own city was cursed; Khardros refused. The two clans went their own ways, joined only by the Thandol Span."
+      ],
+      "sources": ["warcraft.wiki.gg: Ironforge (War of the Three Hammers)"]
+    },
+    {
+      "id": 1537051,
+      "kind": "history",
+      "title": "The Founding of Ironforge",
+      "triggers": [{ "areaId": 1537 }, { "talk": 2916 }],
+      "body": [
+        "Some 2,500 years before the Dark Portal, the first dwarves came out of Uldaman and were drawn west to the mountains of Dun Morogh. In its tallest peak they built an altar to their titan \"father\" Khaz'goroth and the Great Forge, and lava falls and rich ore made them masters of smithing.",
+        "In the mountains they met the gnomes, who had settled in Dun Morogh five centuries earlier; the dwarves helped build Gnomeregan, and the gnomes shared their invention. Around 1,200 years before the Portal, explorers from Gilneas and Alterac found the city and marvelled at it, and men, dwarves and gnomes became friends."
+      ],
+      "sources": ["warcraft.wiki.gg: Ironforge (Founding)"]
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "zone": 66,
+  "name": "Zul'Drak",
+  "entries": [
+    {
+      "id": 66000,
+      "kind": "zone",
+      "title": "Zul'Drak",
+      "triggers": [{ "areaId": 66 }],
+      "body": [
+        "The temple city of the Drakkari ice trolls, a region the size of the Grizzly Hills that is all one city: plazas and ziggurats, walls and aqueducts as far as the eye can see. The Drakkari are a hardy people who have endured war with Azjol-Nerub and now with the Scourge.",
+        "The Scourge is winning. In desperation, the Drakkari have turned on their own gods, the loa, sacrificing them to steal their power to fight the undead, and it has driven them mad. The whole city is stained by the suffering of its gods."
+      ],
+      "sources": ["warcraft.wiki.gg: Zul'Drak (introduction, Geography)", "warcraft.wiki.gg: Drakkari tribe"]
+    },
+    {
+      "id": 66001,
+      "kind": "place",
+      "title": "The Argent Stand",
+      "triggers": [{ "area": "The Argent Stand" }, { "area": "Light's Breach" }, { "area": "Crusader Forward Camp" }, { "talk": 28059 }, { "talk": 29687 }],
+      "body": [
+        "The Argent Crusade's base in Zul'Drak, set up in what might once have been an open-air Drakkari market, to keep the Scourge from taking the city's second tier. The Crusade fights here on two fronts, against the undead and against the maddened trolls."
+      ],
+      "sources": ["warcraft.wiki.gg: Argent Stand", "warcraft.wiki.gg: Light's Breach"]
+    },
+    {
+      "id": 66002,
+      "kind": "place",
+      "title": "Ebon Watch",
+      "triggers": [{ "area": "Ebon Watch" }, { "talk": 28518 }],
+      "body": [
+        "A small camp of the Knights of the Ebon Blade, the free death knights, who carry on their own operations against the Scourge here."
+      ],
+      "sources": ["warcraft.wiki.gg: Ebon Watch"]
+    },
+    {
+      "id": 66003,
+      "kind": "place",
+      "title": "Zim'Torga",
+      "triggers": [{ "area": "Zim'Torga" }, { "area": "Dubra'Jin" }, { "area": "Zim'Rhuk" }, { "talk": 28479 }],
+      "body": [
+        "A Zandalari camp in a clearing walled by thorny trees, around a statue of Zim'Torga, the Mother of Prosperity. The Zandalari have come from the South Seas to save the Drakkari's gods if they can, and to record the end of the Drakkari empire if they cannot. Here and there, forgotten gods like Zim'Rhuk, \"the Wise One\", still guard their old domains."
+      ],
+      "sources": ["warcraft.wiki.gg: Zim'Torga", "warcraft.wiki.gg: Zul'Drak (Wrath of the Lich King)", "warcraft.wiki.gg: Zim'Rhuk"]
+    },
+    {
+      "id": 66004,
+      "kind": "place",
+      "title": "The Altars of the Loa",
+      "triggers": [{ "area": "Altar of Sseratus" }, { "area": "Altar of Rhunok" }, { "area": "Altar of Har'koa" }, { "area": "Altar of Quetz'lun" }, { "talk": 28401 }, { "kill": 28416 }],
+      "body": [
+        "Great altars rise from the second tier upward, where the Drakkari once worshipped their loa. At Sseratus' altar the high prophet Slad'ran killed the serpent god, taking no pleasure in it, and swore vengeance on the Scourge for what it had made him do. At Rhunok's, the bear god's body is kept alive by his twisted followers, his spirit trapped and tormented. Har'koa's prophet held her captive instead of killing her. Quetz'lun, as her body died, made a private nightmare and dragged her worshippers into it."
+      ],
+      "sources": ["warcraft.wiki.gg: Altar of Sseratus", "warcraft.wiki.gg: Altar of Rhunok", "warcraft.wiki.gg: Altar of Har'koa", "warcraft.wiki.gg: Altar of Quetz'lun"]
+    },
+    {
+      "id": 66005,
+      "kind": "place",
+      "title": "Mam'toth Crater",
+      "triggers": [{ "area": "Mam'toth Crater" }, { "area": "Altar of Mam'toth" }],
+      "body": [
+        "When the mammoth god Mam'toth learned that his worshippers meant to sacrifice him and steal his power, he destroyed himself, his temple and every worshipper present. A crater crawling with blue ooze, his blood, is all that remains."
+      ],
+      "sources": ["warcraft.wiki.gg: Altar of Mam'toth", "warcraft.wiki.gg: Mam'toth Crater"]
+    },
+    {
+      "id": 66006,
+      "kind": "place",
+      "title": "Voltarus",
+      "triggers": [{ "area": "Voltarus" }, { "area": "Reliquary of Pain" }, { "area": "Frigid Breach" }],
+      "body": [
+        "A Scourge necropolis hovering over pools of blight near the Storm Peaks, where captured troll chieftains are infused with blight and made into undead champions."
+      ],
+      "sources": ["warcraft.wiki.gg: Voltarus", "warcraft.wiki.gg: Zul'Drak (Wrath of the Lich King)"]
+    },
+    {
+      "id": 66007,
+      "kind": "place",
+      "title": "Kolramas and Zeramas",
+      "triggers": [{ "area": "Kolramas" }, { "area": "Zeramas" }, { "area": "Reliquary of Agony" }, { "kill": 28255 }],
+      "body": [
+        "The Drakkari did not go quietly: they brought down the necropolis Kolramas. The crash did not kill all the undead nerubians inside, and they are crawling out, led by Malas the Corrupter. Another necropolis, Zeramas, still floats above the blighted Reliquary of Agony."
+      ],
+      "sources": ["warcraft.wiki.gg: Kolramas", "warcraft.wiki.gg: Zeramas"]
+    },
+    {
+      "id": 66008,
+      "kind": "place",
+      "title": "Thrym's End",
+      "triggers": [{ "area": "Thrym's End" }, { "area": "The Dead Fields" }, { "talk": 29647 }],
+      "body": [
+        "Undead vrykul experiment here for the Scourge. In a gigantic cage they hold Gymer, king of the storm giants."
+      ],
+      "sources": ["warcraft.wiki.gg: Thrym's End"]
+    },
+    {
+      "id": 66009,
+      "kind": "place",
+      "title": "The Amphitheater of Anguish",
+      "triggers": [{ "area": "Amphitheater of Anguish" }],
+      "body": [
+        "A Drakkari arena that the goblin Gurgthock, last seen in Nagrand, has taken over for his deathmatches."
+      ],
+      "sources": ["warcraft.wiki.gg: Amphitheater of Anguish"]
+    },
+    {
+      "id": 66010,
+      "kind": "place",
+      "title": "Drak'Sotra and Drak'Agal",
+      "triggers": [{ "area": "Drak'Sotra" }, { "area": "Drak'Sotra Fields" }, { "area": "Drak'Agal" }, { "area": "Zol'Maz Stronghold" }, { "area": "Heb'Drakkar" }],
+      "body": [
+        "Living districts of the city. The Drakkari farm water-poppies at Drak'Sotra, for pain salves, and call up water spirits to fight the Scourge. Drak'Agal is a flooded ruin of stagnant water, a battlefield between the Crusade and the trolls. Bat riders keep their rookery at Heb'Drakkar."
+      ],
+      "sources": ["warcraft.wiki.gg: Drak'Sotra Fields", "warcraft.wiki.gg: Drak'Agal", "warcraft.wiki.gg: Heb'Drakkar", "warcraft.wiki.gg: Zul'Drak (Flora)"]
+    },
+    {
+      "id": 66011,
+      "kind": "place",
+      "title": "Gundrak",
+      "triggers": [{ "area": "Gundrak" }],
+      "body": [
+        "The capital of the Drakkari, their last bastion, from which they rule Zul'Drak and fight the Scourge."
+      ],
+      "sources": ["warcraft.wiki.gg: Gundrak"]
+    },
+    {
+      "id": 66030,
+      "kind": "person",
+      "title": "Overlord Drakuru",
+      "triggers": [{ "kill": 28503 }, { "kill": 28998 }],
+      "body": [
+        "A Drakkari who betrayed his own people to the Lich King. It was his treachery that opened Drak'Tharon Keep to the Scourge. As reward he was given Voltarus, and he used it to make an undead army of troll chieftains empowered by blight crystals."
+      ],
+      "sources": ["warcraft.wiki.gg: Voltarus", "warcraft.wiki.gg: Drak'Tharon Keep (History)", "warcraft.wiki.gg: Zul'Drak (Wrath of the Lich King)"]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+-- mod-forever-journal: lore of Alterac Valley (zone 2597).
+-- Generated from data/lore/*.json by tools/build_lore_sql.py; edit the JSON, not this file.
+
+DELETE FROM `mod_forever_journal_lore_trigger` WHERE `Entry` BETWEEN 2597000 AND 2597999;
+DELETE FROM `mod_forever_journal_lore` WHERE `ID` BETWEEN 2597000 AND 2597999;
+
+INSERT INTO `mod_forever_journal_lore` (`ID`, `Zone`, `Kind`, `SortOrder`, `Faction`, `Races`, `Classes`, `Era`, `Title`, `Body`, `Sources`) VALUES
+(2597000, 2597, 0, 1, 0, 0, 0, 0, 'Alterac Valley', 'A valley hidden deep in the Alterac Mountains, home of the Frostwolf clan. Long before the First War, Gul''dan exiled the Frostwolves here, led by Durotan, Thrall''s father, because they refused to drink the blood of Mannoroth. They scraped a living in its southern reaches with the frost wolves they brought from Draenor, and when Thrall united the clans they chose to stay, under the old shaman Drek''Thar.\n\nThen the Stormpike Expedition of Ironforge came to mine its caves and dig for titan relics and links to their ancestral past, likely without knowing whose home it was. Each side says the other struck first. King Magni has since declared the valley Ironforge''s by right, and war rages along its length.', 'warcraft.wiki.gg: Alterac Valley (Official overview, Description, History and politics)'),
+(2597001, 2597, 1, 1, 0, 0, 0, 0, 'Dun Baldar', 'The Stormpike stronghold in the north of the valley, a dwarven fortress with its bunkers on the pass before it, where General Vanndar Stormpike commands from the Hall of the Stormpike.', 'warcraft.wiki.gg: Alterac Valley (Description)'),
+(2597002, 2597, 1, 2, 0, 0, 0, 0, 'Frostwolf Keep', 'The Frostwolf clan''s home in the south of the valley, their village and the keep above it, where Drek''Thar commands from the Hall of the Frostwolf. Near it stands the Rock of Durotan, in memory of the chieftain who led them into exile.', 'warcraft.wiki.gg: Alterac Valley (History and politics)'),
+(2597003, 2597, 1, 3, 0, 0, 0, 0, 'The Towers and Bunkers', 'Each side has fortified the valley with towers and bunkers, the Stormpike at Stonehearth, Icewing and the pass, the Frostwolves at Iceblood, Tower Point and their keep. Captain Balinda Stonehearth holds the Stormpike outpost, and Captain Galvangar the Frostwolf garrison.', 'warcraft.wiki.gg: Alterac Valley (Description)'),
+(2597004, 2597, 1, 4, 0, 0, 0, 0, 'The Mines', 'The valley''s riches, which brought the dwarves here. Troggs, the titans'' first failed creations, delve in the northern Irondeep Mine; kobolds hold the Coldtooth Mine in the south. Whoever holds a mine reaps its ore.', 'warcraft.wiki.gg: Alterac Valley (History and politics)'),
+(2597005, 2597, 1, 5, 0, 0, 0, 0, 'The Wild Places', 'Not all of the valley belongs to orcs and dwarves. The Winterax ice trolls once held a hold here too, before they gave up on the valley and went looking for greener pastures. Wildpaw gnolls den in the caves, and rams, goats and owls roam the slopes.', 'warcraft.wiki.gg: Alterac Valley (History and politics, Description)'),
+(2597006, 2597, 1, 6, 0, 0, 0, 0, 'The Field of Strife', 'The open ground in the middle of the valley, between the two peoples'' lines, where most of the fighting is done and the snow is rarely clean.', 'warcraft.wiki.gg: Alterac Valley (Description)'),
+(2597030, 2597, 2, 1, 0, 0, 0, 0, 'Drek''Thar', 'The old shaman who leads the Frostwolf clan, Durotan''s advisor in exile and a teacher of the young Thrall. He chose to keep his people in the valley that had been their home for so long, and has vowed to drive the dwarves out.', 'warcraft.wiki.gg: Alterac Valley (World of Warcraft)'),
+(2597031, 2597, 2, 2, 0, 0, 0, 0, 'Vanndar Stormpike', 'General of the Stormpike Guard, the dwarves who came to the valley to mine and search for relics. He says they were attacked without provocation by the territorial Frostwolves.', 'warcraft.wiki.gg: Alterac Valley (World of Warcraft)'),
+(2597032, 2597, 2, 3, 0, 0, 0, 0, 'Captain Galvangar', 'The Frostwolf captain who holds Iceblood Garrison, Drek''Thar''s war leader in the field.', 'warcraft.wiki.gg: Alterac Valley (Description)'),
+(2597033, 2597, 2, 4, 0, 0, 0, 0, 'Captain Balinda Stonehearth', 'The Stormpike captain who holds Stonehearth Outpost, a battle mage of the dwarves.', 'warcraft.wiki.gg: Alterac Valley (Description)'),
+(2597034, 2597, 2, 5, 0, 0, 0, 0, 'Korrak the Bloodrager', 'Champion of the Winterax ice trolls, who still roams the valley his tribe gave up on.', 'warcraft.wiki.gg: Alterac Valley (History and politics)'),
+(2597035, 2597, 2, 6, 0, 0, 0, 0, 'Lokholar and Ivus', 'Each side can call on the spirits of the land. The Frostwolf shamans summon Lokholar the Ice Lord, a great elemental of the frozen mountains; the Stormpike druids call Ivus the Forest Lord, a wild god of the woods.', 'warcraft.wiki.gg: Alterac Valley');
+
+INSERT INTO `mod_forever_journal_lore_trigger` (`Entry`, `Type`, `Value`, `Area`) VALUES
+(2597000, 1, 2597, ''),
+(2597001, 1, 0, 'Dun Baldar'),
+(2597001, 1, 0, 'Hall of the Stormpike'),
+(2597001, 1, 0, 'Dun Baldar Pass'),
+(2597002, 1, 0, 'Frostwolf Keep'),
+(2597002, 1, 0, 'Hall of the Frostwolf'),
+(2597002, 1, 0, 'Frostwolf Village'),
+(2597003, 1, 0, 'Iceblood Garrison'),
+(2597003, 1, 0, 'Stonehearth Outpost'),
+(2597003, 1, 0, 'Tower Point'),
+(2597004, 1, 0, 'Irondeep Mine'),
+(2597004, 1, 0, 'Coldtooth Mine'),
+(2597005, 1, 0, 'Winterax Hold'),
+(2597005, 1, 0, 'Wildpaw Cavern'),
+(2597005, 1, 0, 'The Veiled Cleft'),
+(2597006, 1, 0, 'Field of Strife'),
+(2597006, 1, 0, 'Snowfall Graveyard'),
+(2597030, 3, 11946, ''),
+(2597030, 3, 19604, ''),
+(2597031, 3, 11948, ''),
+(2597032, 3, 11947, ''),
+(2597032, 3, 22606, ''),
+(2597032, 3, 31055, ''),
+(2597032, 3, 37244, ''),
+(2597033, 3, 11949, ''),
+(2597033, 3, 22605, ''),
+(2597033, 3, 31820, ''),
+(2597033, 3, 37243, ''),
+(2597034, 3, 12159, ''),
+(2597034, 3, 22643, ''),
+(2597034, 3, 32027, ''),
+(2597034, 3, 37347, ''),
+(2597035, 3, 13256, ''),
+(2597035, 3, 22629, ''),
+(2597035, 3, 31822, ''),
+(2597035, 3, 37363, ''),
+(2597035, 3, 13419, ''),
+(2597035, 3, 22627, ''),
+(2597035, 3, 31821, ''),
+(2597035, 3, 37341, '');

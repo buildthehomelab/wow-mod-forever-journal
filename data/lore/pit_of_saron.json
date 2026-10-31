@@ -1,0 +1,76 @@
+{
+  "zone": 4813,
+  "name": "Pit of Saron",
+  "entries": [
+    {
+      "id": 4813000,
+      "kind": "zone",
+      "title": "The Pit of Saron",
+      "triggers": [{ "areaId": 4813 }],
+      "body": [
+        "A saronite mine in the shadow of the citadel, worked by slaves: Horde and Alliance soldiers captured by the Scourge. Its lord, Scourgelord Tyrannus, leaves intruders to his minions while his slaves are in chains. Free them, and he may have to deal with the threat himself. Perhaps the pit holds clues to where the Lich King keeps his private chambers."
+      ],
+      "sources": ["warcraft.wiki.gg: Pit of Saron (Background)"]
+    },
+    {
+      "id": 4813001,
+      "kind": "place",
+      "title": "The Forgemaster's Quarry",
+      "triggers": [{ "kill": 36494 }],
+      "body": [
+        "Where saronite is dug and forged under a giant's eye."
+      ],
+      "sources": ["warcraft.wiki.gg: Forgemaster Garfrost"]
+    },
+    {
+      "id": 4813002,
+      "kind": "place",
+      "title": "The Plague Works",
+      "triggers": [{ "kill": 36476 }, { "kill": 36477 }],
+      "body": [
+        "A corner of the pit given over to plague, ruled by a gnome riding an eruptor."
+      ],
+      "sources": ["warcraft.wiki.gg: Krick"]
+    },
+    {
+      "id": 4813003,
+      "kind": "place",
+      "title": "Scourgelord's Command",
+      "triggers": [{ "area": "Scourgelord's Command" }, { "area": "The Dark Approach" }, { "kill": 36658 }, { "kill": 36661 }],
+      "body": [
+        "The tunnel up to Tyrannus' command, where icicles fall from above, and beyond it the Scourgelord's own perch."
+      ],
+      "sources": ["warcraft.wiki.gg: Scourgelord Tyrannus"]
+    },
+    {
+      "id": 4813030,
+      "kind": "person",
+      "title": "Forgemaster Garfrost",
+      "triggers": [{ "kill": 36494 }],
+      "body": [
+        "A flesh giant who works the pit's forge, hurling saronite boulders at anyone in his way."
+      ],
+      "sources": ["warcraft.wiki.gg: Forgemaster Garfrost"]
+    },
+    {
+      "id": 4813031,
+      "kind": "person",
+      "title": "Krick and Ick",
+      "triggers": [{ "kill": 36476 }, { "kill": 36477 }],
+      "body": [
+        "A gnome in league with the Lich King, and his mount, a plague eruptor. Krick talks a great deal, especially when he is losing."
+      ],
+      "sources": ["warcraft.wiki.gg: Krick"]
+    },
+    {
+      "id": 4813032,
+      "kind": "person",
+      "title": "Scourgelord Tyrannus",
+      "triggers": [{ "kill": 36658 }],
+      "body": [
+        "A human death knight, master of the Pit of Saron, who rides the frost wyrm Rimefang. When he fell, Rimefang fled, to wait for heroes in the Frostwing Halls."
+      ],
+      "sources": ["warcraft.wiki.gg: Scourgelord Tyrannus", "warcraft.wiki.gg: Rimefang"]
+    }
+  ]
+}

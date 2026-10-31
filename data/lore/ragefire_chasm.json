@@ -1,0 +1,87 @@
+{
+  "zone": 2437,
+  "name": "Ragefire Chasm",
+  "entries": [
+    {
+      "id": 2437000,
+      "kind": "zone",
+      "title": "Ragefire Chasm",
+      "triggers": [{ "areaId": 2437 }],
+      "body": [
+        "A fiery chasm of volcanic caverns beneath Orgrimmar, entered from the Cleft of Shadow. Troggs, the Ragefire clan, have begun to come up from the lava-filled tunnels below. Magatha the Seer tried to make peace with them and met only hostility; left unchecked, they could overwhelm the Horde.",
+        "Worse hides here too: a sect of the Shadow Council, the Searing Blade, plotting to destroy everything the Horde has built in these lands."
+      ],
+      "sources": ["warcraft.wiki.gg: Ragefire Chasm (introduction, History)"]
+    },
+    {
+      "id": 2437001,
+      "kind": "place",
+      "title": "The Trogg Caverns",
+      "triggers": [{ "areaId": 2437 }, { "kill": 11517 }],
+      "body": [
+        "The upper caverns, overrun by the Ragefire troggs and their chieftain, Oggleflint, beside rivers of lava and the restless earth elementals of the deep."
+      ],
+      "sources": ["warcraft.wiki.gg: Ragefire Chasm (History)", "warcraft.wiki.gg: Oggleflint"]
+    },
+    {
+      "id": 2437002,
+      "kind": "place",
+      "title": "The Searing Blade's Hideout",
+      "triggers": [{ "kill": 11520 }, { "kill": 11518 }, { "kill": 11519 }],
+      "body": [
+        "Deeper in the chasm, the cultists of the Searing Blade have made their lair among the lava. From here, their leaders scheme to bring down Orgrimmar from beneath."
+      ],
+      "sources": ["warcraft.wiki.gg: Ragefire Chasm (History)"]
+    },
+    {
+      "id": 2437030,
+      "kind": "person",
+      "title": "Oggleflint",
+      "triggers": [{ "kill": 11517 }],
+      "body": [
+        "The chieftain of the Ragefire troggs, who lead them up from the depths into the chasm under Orgrimmar."
+      ],
+      "sources": ["warcraft.wiki.gg: Oggleflint"]
+    },
+    {
+      "id": 2437031,
+      "kind": "person",
+      "title": "Taragaman the Hungerer",
+      "triggers": [{ "kill": 11520 }],
+      "body": [
+        "A felguard, thought to be the leader of the Searing Blade, who uses his demonic influence to corrupt the citizens of Orgrimmar. In truth he is expendable bait, set out to lure young Horde adventurers to their deaths. The real leaders are Bazzalan and Jergosh."
+      ],
+      "sources": ["warcraft.wiki.gg: Taragaman the Hungerer"]
+    },
+    {
+      "id": 2437032,
+      "kind": "person",
+      "title": "Jergosh the Invoker",
+      "triggers": [{ "kill": 11518 }],
+      "body": [
+        "An orc who rejected the new ways of his people for the dark arts of the warlock. A leader of the Searing Blade, he concocted a scheme dangerous enough to draw the attention of Thrall himself."
+      ],
+      "sources": ["warcraft.wiki.gg: Jergosh the Invoker"]
+    },
+    {
+      "id": 2437033,
+      "kind": "person",
+      "title": "Bazzalan",
+      "triggers": [{ "kill": 11519 }],
+      "body": [
+        "A satyr who leads the Searing Blade with Jergosh. His motives are unclear, but like all satyrs he is swift and cunning, and his blades are poisoned."
+      ],
+      "sources": ["warcraft.wiki.gg: Bazzalan"]
+    },
+    {
+      "id": 2437050,
+      "kind": "history",
+      "title": "The Burning Blade's Test",
+      "triggers": [{ "kill": 11518 }, { "kill": 11519 }],
+      "body": [
+        "Neeru Fireblade, who seems a loyal warlock of the Cleft of Shadow, is secretly a leader of the Burning Blade. He sent Thrall's loyalists down into the chasm for two reasons: to get them killed, and to test whether the Searing Blade were truly worthy, or merely expendable. The Warchief learned of his plans, and sent adventurers to slay the cult's leaders."
+      ],
+      "sources": ["warcraft.wiki.gg: Ragefire Chasm (History)"]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "zone": 4500,
+  "name": "The Eye of Eternity",
+  "entries": [
+    {
+      "id": 4500000,
+      "kind": "zone",
+      "title": "The Eye of Eternity",
+      "triggers": [{ "areaId": 4500 }],
+      "body": [
+        "Malygos' own realm at the heart of the Nexus. At Wyrmrest Temple, Alexstrasza and the envoys of the other flights talked long over his recklessness, and reluctantly decided he was beyond saving. With the red dragons' help, mortals may do what was once unthinkable: challenge the Spell-Weaver here, in the Eye itself.",
+        "If he falls, Azeroth will be safe from him. It will also enter a new age, of magic with no Aspect powerful enough to watch over it."
+      ],
+      "sources": ["warcraft.wiki.gg: Eye of Eternity (Background)"]
+    },
+    {
+      "id": 4500030,
+      "kind": "person",
+      "title": "Malygos the Spell-Weaver",
+      "triggers": [{ "kill": 28859 }, { "kill": 26310 }],
+      "body": [
+        "Aspect of the blue dragonflight, eldest of the Aspects. The titan Norgannon gave him a share of his own power and made him guardian of arcane magic. In the War of the Ancients, Deathwing and the Demon Soul killed most of his flight, and he hid in Coldarra for thousands of years, slowly going mad.",
+        "When nether dragons came to claim the Nexus, he woke, destroyed them and took their energies back into himself. With that his eyes were fully opened, and what he saw in the world's use of magic he judged must be ended."
+      ],
+      "sources": ["warcraft.wiki.gg: Malygos"]
+    }
+  ]
+}

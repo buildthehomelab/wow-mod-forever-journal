@@ -1,0 +1,158 @@
+{
+  "zone": 3518,
+  "name": "Nagrand",
+  "entries": [
+    {
+      "id": 3518000,
+      "kind": "zone",
+      "title": "Nagrand",
+      "triggers": [{ "areaId": 3518 }],
+      "body": [
+        "\"Land of Winds\" in orcish, and the last unscarred region of Outland: green and gold plains under a pink sky, with floating islands drifting overhead. To the orcs it was the most sacred land of all. Twice a year the clans gathered at the foot of their holy mountain, Oshu'gun, for the Kosh'harg festival, to give thanks to the spirits.",
+        "It was also here, in Oshu'gun's shadow, that Gul'dan first taught the orcs warlock magic, and Nagrand was among the first lands to show the damage: droughts, soil turned to dust. Yet it escaped the worst of the corruption. Its Bonechewer orcs were too battle-crazed to bother with warlocks, and the land came to be called mag'har, \"uncorrupted\"."
+      ],
+      "sources": ["warcraft.wiki.gg: Nagrand (introduction, Rise of the Horde, Beyond the Dark Portal)"]
+    },
+    {
+      "id": 3518001,
+      "kind": "place",
+      "title": "Garadar",
+      "triggers": [{ "area": "Garadar" }, { "talk": 18141 }, { "talk": 18063 }],
+      "body": [
+        "Built some ten years before the First War to quarantine orcs who caught the red pox at a Kosh'harg festival. Garad, chieftain of the Frostwolves, was among the sick and agreed to lead them, sending his son Durotan home in his place. The pox took him within weeks, and the village was named for him. Cut off from the clans, its orcs never joined the Horde's blood pact, and their skin never turned green. They became the Mag'har.",
+        "Their spiritual leader is Greatmother Geyah, Garad's widow, Durotan's mother and Thrall's grandmother, now ailing. Their chieftain is Garrosh, son of Grom Hellscream, who knows his father only as the orc who drank the demon's blood first, and is ashamed of it."
+      ],
+      "sources": ["warcraft.wiki.gg: Garadar (History)", "warcraft.wiki.gg: Greatmother Geyah (The red pox)"]
+    },
+    {
+      "id": 3518002,
+      "kind": "place",
+      "title": "Telaar",
+      "triggers": [{ "area": "Telaar" }, { "talk": 18223 }],
+      "body": [
+        "The town of the Kurenai, draenei and Broken together. It is one of the few examples of undamaged draenei architecture left anywhere in what remains of Draenor."
+      ],
+      "sources": ["warcraft.wiki.gg: Telaar"]
+    },
+    {
+      "id": 3518003,
+      "kind": "place",
+      "title": "Halaa",
+      "triggers": [{ "area": "Halaa" }, { "area": "Halaani Basin" }],
+      "body": [
+        "A town on a floating plateau in the centre of Nagrand, once the draenei's foremost place for studying naaru crystals. The Horde and Alliance fight over it constantly."
+      ],
+      "sources": ["warcraft.wiki.gg: Halaa"]
+    },
+    {
+      "id": 3518004,
+      "kind": "place",
+      "title": "Oshu'gun",
+      "triggers": [{ "area": "Oshu'gun" }, { "area": "Spirit Fields" }, { "talk": 17545 }],
+      "body": [
+        "\"Mountain of Spirits\": a vast white monolith, smooth and triangular, unlike any other mountain. To the orcs it was holy. In truth it is the naaru vessel that carried Velen and his people away from Argus and crashed on Draenor. Deep inside it the naaru K'ure dwells among the spirits of the orcs' ancestors. The fields around it are inscribed with mystic symbols no one can read."
+      ],
+      "sources": ["warcraft.wiki.gg: Oshu'gun (introduction)", "warcraft.wiki.gg: Spirit Fields"]
+    },
+    {
+      "id": 3518005,
+      "kind": "place",
+      "title": "Aeris Landing",
+      "triggers": [{ "area": "Aeris Landing" }, { "talk": 18265 }],
+      "body": [
+        "A Consortium outpost under the ethereal merchant Gezhe, who says Oshu'gun is the largest diamond in the known universe. It was set up to mine the mountain, but the work stopped when the Consortium learned of Oshu'gun's tie to the naaru. A rival band of ethereals is mining it anyway."
+      ],
+      "sources": ["warcraft.wiki.gg: Aeris Landing (History)", "warcraft.wiki.gg: Oshu'gun"]
+    },
+    {
+      "id": 3518006,
+      "kind": "place",
+      "title": "The Throne of the Elements",
+      "triggers": [{ "area": "Throne of the Elements" }, { "area": "Elemental Plateau" }, { "talk": 18074 }],
+      "body": [
+        "The home of the four great elemental Furies of Draenor, where the first orc shaman learned to wield the elements. Shaman of the Earthen Ring have come to it from Azeroth."
+      ],
+      "sources": ["warcraft.wiki.gg: Throne of the Elements"]
+    },
+    {
+      "id": 3518007,
+      "kind": "place",
+      "title": "The Ogre Wars",
+      "triggers": [{ "area": "Warmaul Hill" }, { "area": "Laughing Skull Ruins" }, { "area": "Burning Blade Ruins" }, { "area": "Northwind Cleft" }, { "area": "Southwind Cleft" }, { "kill": 18423 }],
+      "body": [
+        "The Warmaul are a new clan of ogres. Their king, Cho'war the Pillager, claims to have driven the gronn out of the cave at Warmaul Hill, and they worship a corrupted earth elemental there. They have taken the old Mag'har town at the Laughing Skull Ruins and are at war with the Boulderfist, who hold the ruins of the Burning Blade's ancestral village."
+      ],
+      "sources": ["warcraft.wiki.gg: Warmaul clan", "warcraft.wiki.gg: Laughing Skull Ruins", "warcraft.wiki.gg: Burning Blade Ruins"]
+    },
+    {
+      "id": 3518008,
+      "kind": "place",
+      "title": "Kil'sorrow Fortress",
+      "triggers": [{ "area": "Kil'sorrow Fortress" }],
+      "body": [
+        "A walled fortress of the Kil'sorrow clan, agents of the Shadow Council, named after the demon lord Kil'jaeden."
+      ],
+      "sources": ["warcraft.wiki.gg: Kil'sorrow Fortress"]
+    },
+    {
+      "id": 3518009,
+      "kind": "place",
+      "title": "Sunspring Post",
+      "triggers": [{ "area": "Sunspring Post" }, { "area": "Mag'hari Procession" }, { "talk": 18229 }],
+      "body": [
+        "A Mag'har village by Lake Sunspring, sacked by the Murkblood Broken, who killed everyone they could find. Nearby, a procession of far seers carrying a dead elder to the Ancestral Grounds was caught in the same attack."
+      ],
+      "sources": ["warcraft.wiki.gg: Sunspring Post", "warcraft.wiki.gg: Mag'hari Procession"]
+    },
+    {
+      "id": 3518010,
+      "kind": "place",
+      "title": "The Ancestral Grounds",
+      "triggers": [{ "area": "Ancestral Grounds" }],
+      "body": [
+        "Shrines and standing stones raised to honour the orcs' fallen ancestors. Something has disturbed them, and the ancestors roam the grounds as ghosts."
+      ],
+      "sources": ["warcraft.wiki.gg: Ancestral Grounds"]
+    },
+    {
+      "id": 3518011,
+      "kind": "place",
+      "title": "The Ring of Trials",
+      "triggers": [{ "area": "The Ring of Trials" }, { "area": "The Ring of Blood" }],
+      "body": [
+        "An ancient orcish proving ground, though built in the style of the ogre empire. North of it, in the Laughing Skull Ruins, a goblin promoter has set up a pit for deathmatches of his own: the Ring of Blood."
+      ],
+      "sources": ["warcraft.wiki.gg: Ring of Trials", "warcraft.wiki.gg: Ring of Blood"]
+    },
+    {
+      "id": 3518012,
+      "kind": "place",
+      "title": "Twilight Ridge",
+      "triggers": [{ "area": "The Twilight Ridge" }],
+      "body": [
+        "Another of the gateways through which Magtheridon brought demons from the Twisting Nether, closed by Illidan's forces. It still stands, dead."
+      ],
+      "sources": ["warcraft.wiki.gg: Twilight Ridge", "warcraft.wiki.gg: Nagrand (The Frozen Throne)"]
+    },
+    {
+      "id": 3518013,
+      "kind": "place",
+      "title": "Nesingwary Safari",
+      "triggers": [{ "area": "Nesingwary Safari" }, { "talk": 18180 }],
+      "body": [
+        "Hemet Nesingwary has brought his hunting party through the Portal, drawn by Nagrand's game."
+      ],
+      "sources": ["warcraft.wiki.gg: Nesingwary Safari"]
+    },
+    {
+      "id": 3518050,
+      "kind": "history",
+      "title": "The Mountain of Spirits",
+      "triggers": [{ "areaId": 3518 }, { "area": "Oshu'gun" }],
+      "body": [
+        "During the war on the draenei, Prophet Velen and a retinue of priests went to Oshu'gun, and Durotan's Frostwolves took them prisoner there. Durotan let them go: they had let themselves be taken, he reasoned, and there was no honour in holding them. When the elements abandoned the orcs, it was in Oshu'gun's shadow that Gul'dan introduced them to warlock magic."
+      ],
+      "sources": ["warcraft.wiki.gg: Nagrand (Rise of the Horde)"]
+    }
+  ]
+}

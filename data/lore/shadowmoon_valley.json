@@ -1,0 +1,157 @@
+{
+  "zone": 3520,
+  "name": "Shadowmoon Valley",
+  "entries": [
+    {
+      "id": 3520000,
+      "kind": "zone",
+      "title": "Shadowmoon Valley",
+      "triggers": [{ "areaId": 3520 }],
+      "body": [
+        "Once a lush moor under eternal night, lit by Draenor's two moons, its plants glowing a soft blue. Orcs who settled here named their clan after the valley, and for centuries the Shadowmoon peacefully charted the stars and practised their shamanic and runic magic. The draenei raised their holiest temple, Karabor, on its coast.",
+        "Now it is one of the darkest and most fel-blighted places there is. The sky is black and ghastly yellow, lit by a never-ending rain of infernals from demon lords who mean to scour every last trace of life from it. Green lava and green-tinted water run through a wasteland of rock and ash."
+      ],
+      "sources": ["warcraft.wiki.gg: Shadowmoon Valley (introduction, History, The Burning Crusade)"]
+    },
+    {
+      "id": 3520001,
+      "kind": "place",
+      "title": "The Hand of Gul'dan",
+      "triggers": [{ "area": "The Hand of Gul'dan" }, { "area": "The Altar of Damnation" }, { "area": "The Fel Pits" }, { "area": "The Scalding Pools" }],
+      "body": [
+        "A great fel volcano in the middle of the valley. The Earthen Ring say Gul'dan raised it himself, when he cut the orcs off from the elemental spirits of Draenor: he shattered the land and took by force the power the elements would not give willingly, to turn it on the draenei. At the Altar of Damnation the vision of that act plays out again and again. Enraged elementals boil in the pools at its foot."
+      ],
+      "sources": ["warcraft.wiki.gg: Hand of Gul'dan (subzone)", "warcraft.wiki.gg: Altar of Damnation", "warcraft.wiki.gg: Fel Pits"]
+    },
+    {
+      "id": 3520002,
+      "kind": "place",
+      "title": "Shadowmoon Village",
+      "triggers": [{ "area": "Shadowmoon Village" }, { "talk": 21769 }],
+      "body": [
+        "The Horde's fortress in the valley, garrisoned by Kor'kron, the elite guard of Grommash Hold. Its scouts fight off infernals at the very walls."
+      ],
+      "sources": ["warcraft.wiki.gg: Shadowmoon Village"]
+    },
+    {
+      "id": 3520003,
+      "kind": "place",
+      "title": "Wildhammer Stronghold",
+      "triggers": [{ "area": "Wildhammer Stronghold" }, { "talk": 21330 }],
+      "body": [
+        "Founded by Kurdran Wildhammer, a survivor of the Alliance expedition, shortly before Draenor was destroyed, on ground sacred to the Shadowmoon orcs' ancestors."
+      ],
+      "sources": ["warcraft.wiki.gg: Wildhammer Stronghold"]
+    },
+    {
+      "id": 3520004,
+      "kind": "place",
+      "title": "The Altar of Sha'tar and the Sanctum of the Stars",
+      "triggers": [{ "area": "Altar of Sha'tar" }, { "area": "Sanctum of the Stars" }],
+      "body": [
+        "The Aldor and the Scryers each hold a temple here, staging grounds against Illidan. The neutrality of Shattrath does not reach this far: at either, those who serve the rival order are attacked on sight. The draenei city of Elodor once stood around the Altar of Sha'tar."
+      ],
+      "sources": ["warcraft.wiki.gg: Altar of Sha'tar"]
+    },
+    {
+      "id": 3520005,
+      "kind": "place",
+      "title": "Legion Hold",
+      "triggers": [{ "area": "Legion Hold" }, { "area": "Invasion Point: Cataclysm" }, { "area": "The Fetid Pool" }, { "kill": 21633 }],
+      "body": [
+        "Apparently the Burning Legion's main forward base in Outland: a great factory of fel reavers and infernals ruled by the eredar Deathbringer Jovaan, who takes his orders by hologram from a commander above him."
+      ],
+      "sources": ["warcraft.wiki.gg: Legion Hold"]
+    },
+    {
+      "id": 3520006,
+      "kind": "place",
+      "title": "The Deathforge",
+      "triggers": [{ "area": "The Deathforge" }, { "area": "Deathforge Tower" }, { "area": "Slag Watch" }],
+      "body": [
+        "A mine shaft run by the Shadow Council, where infernals are made. The Wildhammer and the Horde each watch it from a tower."
+      ],
+      "sources": ["warcraft.wiki.gg: Deathforge", "warcraft.wiki.gg: Deathforge Tower"]
+    },
+    {
+      "id": 3520007,
+      "kind": "place",
+      "title": "Netherwing Ledge",
+      "triggers": [{ "area": "Netherwing Ledge" }, { "area": "Netherwing Fields" }, { "area": "Netherwing Mines" }, { "area": "Dragonmaw Base Camp" }, { "area": "Dragonmaw Fortress" }, { "area": "Dragonmaw Skyway" }],
+      "body": [
+        "A huge floating island, once the breeding grounds of the Netherwing, who kept its rock flayers in check. The Dragonmaw fel orcs drove them off and enslaved the nether drakes as mounts, and now the flayers run rampant. When the Dark Portal reopened, the death knight Ragnok Bloodreaver attacked Dragonmaw Fortress for an army; Zuluhed the Whacked escaped, but most of the clan were forced into his service."
+      ],
+      "sources": ["warcraft.wiki.gg: Netherwing Ledge", "warcraft.wiki.gg: Dragonmaw Fortress"]
+    },
+    {
+      "id": 3520008,
+      "kind": "place",
+      "title": "The Illidari",
+      "triggers": [{ "area": "Eclipse Point" }, { "area": "Crimson Watch" }, { "area": "Illidari Point" }, { "area": "The Path of Conquest" }],
+      "body": [
+        "Illidan's servants hold the valley around his temple. The Eclipsion blood elves fill the ruins of Eclipse Point with a blood-red haze. The Crimson Sigil, his elite guard, watch the Path of Conquest, where they keep Marcus Auralion, High General of the Sha'tar, imprisoned in a crystal. Demons loyal to Illidan gather at Illidari Point."
+      ],
+      "sources": ["warcraft.wiki.gg: Eclipse Point", "warcraft.wiki.gg: Crimson Watch", "warcraft.wiki.gg: Illidari Point"]
+    },
+    {
+      "id": 3520009,
+      "kind": "place",
+      "title": "Coilskar Point",
+      "triggers": [{ "area": "Coilskar Point" }, { "area": "Coilskar Cistern" }, { "area": "Oronok's Farm" }, { "talk": 21183 }],
+      "body": [
+        "Naga hold the north of the valley and a water-lined cave, the Coilskar Cistern. On the mountain above them, the old orc Oronok Torn-heart keeps a boar farm, alone."
+      ],
+      "sources": ["warcraft.wiki.gg: Coilskar Cistern", "warcraft.wiki.gg: Oronok's Farm"]
+    },
+    {
+      "id": 3520010,
+      "kind": "place",
+      "title": "The Altar of Shadows",
+      "triggers": [{ "area": "The Altar of Shadows" }],
+      "body": [
+        "The prison of Teron Gorefiend, at the edge of the valley where the green falls pour off into the Nether."
+      ],
+      "sources": ["warcraft.wiki.gg: Altar of Shadows"]
+    },
+    {
+      "id": 3520011,
+      "kind": "place",
+      "title": "The Warden's Cage",
+      "triggers": [{ "area": "Warden's Cage" }],
+      "body": [
+        "A prison west of the Black Temple, where Maiev Shadowsong, once Illidan's jailer, is held captive by Broken servitors under Akama himself."
+      ],
+      "sources": ["warcraft.wiki.gg: Warden's Cage"]
+    },
+    {
+      "id": 3520012,
+      "kind": "place",
+      "title": "The Ruins of Baa'ri and Sketh'lon",
+      "triggers": [{ "area": "Ruins of Baa'ri" }, { "area": "Sketh'lon Base Camp" }, { "area": "Sketh'lon Wreckage" }],
+      "body": [
+        "Old ruins of the valley. In the olemba woods of Sketh'lon, the ghosts of the arakkoa of the Dark Conclave still roam."
+      ],
+      "sources": ["warcraft.wiki.gg: Sketh'lon Base Camp", "warcraft.wiki.gg: Sketh'lon Wreckage"]
+    },
+    {
+      "id": 3520013,
+      "kind": "place",
+      "title": "The Black Temple",
+      "triggers": [{ "area": "The Black Temple" }, { "area": "Ata'mal Terrace" }, { "area": "Ruins of Karabor" }],
+      "body": [
+        "Once the Temple of Karabor, the holiest site of the draenei, built on the greatest ley line nexus of Draenor, the refuge of Prophet Velen. Gul'dan's Horde took it and turned it into the seat of the Shadow Council. Ner'zhul held it when the Alliance came, then the Legion, then Magtheridon, and now Illidan. Outside its gates, Varedis Felsoul trains blood elves to be demon hunters, and fel orcs dig the sacred terrace for its crystals."
+      ],
+      "sources": ["warcraft.wiki.gg: Black Temple (Background)", "warcraft.wiki.gg: Ruins of Karabor", "warcraft.wiki.gg: Ata'mal Terrace"]
+    },
+    {
+      "id": 3520050,
+      "kind": "history",
+      "title": "The Fall of the Shadowmoon",
+      "triggers": [{ "areaId": 3520 }],
+      "body": [
+        "The Shadowmoon's own elder shaman, Ner'zhul, first heard the Legion's whispers, and his apprentice Gul'dan carried them further. The Horde that grew from them destroyed the draenei across Draenor, and the warlock magic that powered it blackened this valley. After the Second War, Ner'zhul ruled from the Black Temple and cast the spell that opened his portals, tearing the world apart."
+      ],
+      "sources": ["warcraft.wiki.gg: Shadowmoon Valley (Rise of the first Horde)", "warcraft.wiki.gg: Black Temple (The Burning Crusade)"]
+    }
+  ]
+}

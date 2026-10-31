@@ -1,0 +1,167 @@
+{
+  "zone": 796,
+  "name": "Scarlet Monastery",
+  "entries": [
+    {
+      "id": 796000,
+      "kind": "zone",
+      "title": "The Scarlet Monastery",
+      "triggers": [{ "areaId": 796 }],
+      "body": [
+        "Once the Old Monastery, a cathedral of the Church of the Holy Light in north-eastern Tirisfal, with great libraries and a seminary where paladins trained; Archbishop Alonsus Faol called it his church, and the young Alexandros Mograine spent months praying here. Its quiet days ended with the fall of Lordaeron.",
+        "The Silver Hand took it as a forward base against the Forsaken. When the order splintered, the Scarlet Crusade drove out the Scourge and the spiders that had infested it, renamed it, and made it their fortress and their prison. Now its zealots torture anyone they believe touched by the plague, living or dead."
+      ],
+      "sources": ["warcraft.wiki.gg: Scarlet Monastery (introduction, Origins, Ashbringer)"]
+    },
+    {
+      "id": 796001,
+      "kind": "place",
+      "title": "The Graveyard",
+      "triggers": [{ "kill": 3983 }, { "kill": 4543 }, { "kill": 6490 }],
+      "body": [
+        "The monastery's burial ground and crypts, where the Crusade's interrogators work on their captured undead. The dead do not rest here: the Scourge attacked the monastery three times in the Summertide Assaults, and those who fell, crusaders among them, rise again among its graves."
+      ],
+      "sources": ["warcraft.wiki.gg: Scarlet Monastery (World of Warcraft)", "warcraft.wiki.gg: Interrogator Vishas", "warcraft.wiki.gg: Bloodmage Thalnos"]
+    },
+    {
+      "id": 796002,
+      "kind": "place",
+      "title": "The Library",
+      "triggers": [{ "kill": 3974 }, { "kill": 6487 }],
+      "body": [
+        "The monastery's great library, where generations of archivists of the house of Godwyn and others kept the Church's books. The Crusade's hounds guard its halls now, and in the Athenaeum at its heart, its most powerful mage pores over the old tomes."
+      ],
+      "sources": ["warcraft.wiki.gg: Scarlet Monastery (Origins)", "warcraft.wiki.gg: Arcanist Doan"]
+    },
+    {
+      "id": 796003,
+      "kind": "place",
+      "title": "The Armory",
+      "triggers": [{ "kill": 3975 }],
+      "body": [
+        "The Crusade's training halls and armoury, where its warriors drill under the eye of their champion, Herod."
+      ],
+      "sources": ["warcraft.wiki.gg: Herod"]
+    },
+    {
+      "id": 796004,
+      "kind": "place",
+      "title": "The Cathedral",
+      "triggers": [{ "kill": 4542 }, { "kill": 3976 }, { "kill": 3977 }],
+      "body": [
+        "The heart of the monastery, its great cathedral and the Crusader's Chapel, from which Commander Mograine and High Inquisitor Whitemane direct the Crusade. Hidden in a secret chamber is someone the Crusade would rather forget."
+      ],
+      "sources": ["warcraft.wiki.gg: Scarlet Commander Mograine", "warcraft.wiki.gg: High Inquisitor Fairbanks"]
+    },
+    {
+      "id": 796030,
+      "kind": "person",
+      "title": "Interrogator Vishas",
+      "triggers": [{ "kill": 3983 }],
+      "body": [
+        "James Vishas, the Crusade's lead interrogator, notorious for his sadism, his cruel expertise and his high-pitched voice. He tortured the Forsaken Vorrel Sengutz for weeks, and gave Sengutz's wedding ring to his own wife, Nancy, who lives by Lordamere Lake."
+      ],
+      "sources": ["warcraft.wiki.gg: Interrogator Vishas"]
+    },
+    {
+      "id": 796031,
+      "kind": "person",
+      "title": "Bloodmage Thalnos",
+      "triggers": [{ "kill": 4543 }],
+      "body": [
+        "A sadistic mage who made his name in the Crusade with the brutal tortures he used to \"purify\" new recruits, until he caught the plague and rose as a skeleton. Now he prowls the graveyard he once filled, commanding apparitions against trespassers."
+      ],
+      "sources": ["warcraft.wiki.gg: Bloodmage Thalnos"]
+    },
+    {
+      "id": 796032,
+      "kind": "person",
+      "title": "The Graveyard's Restless",
+      "triggers": [{ "kill": 6489 }, { "kill": 6490 }, { "kill": 6488 }],
+      "body": [
+        "Some of the graveyard's dead are seldom seen: the skeleton Ironspine, Azshir the Sleepless, and a fallen champion of the Crusade who still wears its tabard."
+      ],
+      "sources": ["warcraft.wiki.gg: Ironspine", "warcraft.wiki.gg: Azshir the Sleepless", "warcraft.wiki.gg: Fallen Champion"]
+    },
+    {
+      "id": 796033,
+      "kind": "person",
+      "title": "Houndmaster Loksey",
+      "triggers": [{ "kill": 3974 }],
+      "body": [
+        "One of the four leaders of the monastery, who trains the hounds the Crusade uses to track its enemies, dogs that can tear a victim apart in minutes."
+      ],
+      "sources": ["warcraft.wiki.gg: Houndmaster Loksey"]
+    },
+    {
+      "id": 796034,
+      "kind": "person",
+      "title": "Arcanist Doan",
+      "triggers": [{ "kill": 6487 }],
+      "body": [
+        "Once a mage of the Silver Hand, who helped purify the corrupted crystal that would become the Ashbringer. After the Third War he joined the Crusade, and is counted one of its most powerful mages."
+      ],
+      "sources": ["warcraft.wiki.gg: Arcanist Doan"]
+    },
+    {
+      "id": 796035,
+      "kind": "person",
+      "title": "Herod",
+      "triggers": [{ "kill": 3975 }],
+      "body": [
+        "The Scarlet Champion, one of the four leaders of the monastery, a hulking warrior with a great axe. As a boy in Southshore he was the local bully."
+      ],
+      "sources": ["warcraft.wiki.gg: Herod", "warcraft.wiki.gg: Southshore (Third War)"]
+    },
+    {
+      "id": 796036,
+      "kind": "person",
+      "title": "High Inquisitor Fairbanks",
+      "triggers": [{ "kill": 4542 }],
+      "body": [
+        "Once a priest of the Silver Hand, closest advisor to Highlord Alexandros Mograine, and the first High Inquisitor of the Crusade. He was executed by the crusaders for blasphemy: he accused Saidan Dathrohan and Renault Mograine of what happened to Alexandros. He rose undead, and is hidden away in the cathedral."
+      ],
+      "sources": ["warcraft.wiki.gg: High Inquisitor Fairbanks"]
+    },
+    {
+      "id": 796037,
+      "kind": "person",
+      "title": "Scarlet Commander Mograine",
+      "triggers": [{ "kill": 3976 }],
+      "body": [
+        "Renault Mograine, son of Alexandros, and the young commander of the monastery. Jealous of the attention his father gave his brother Darion, and manipulated by Grand Crusader Dathrohan, he led his father into an ambush and murdered him with the Ashbringer. His reward was this command."
+      ],
+      "sources": ["warcraft.wiki.gg: Renault Mograine"]
+    },
+    {
+      "id": 796038,
+      "kind": "person",
+      "title": "High Inquisitor Whitemane",
+      "triggers": [{ "kill": 3977 }],
+      "body": [
+        "Sally Whitemane, priestess of the Light and High Inquisitor of the Crusade, who directs its work from the cathedral. As a girl in Southshore she played at slaying monsters with her friend Renault Mograine; they grew up and did it for real."
+      ],
+      "sources": ["warcraft.wiki.gg: High Inquisitor Whitemane"]
+    },
+    {
+      "id": 796039,
+      "kind": "person",
+      "title": "The Headless Horseman",
+      "triggers": [{ "kill": 23682 }],
+      "body": [
+        "On Hallow's End some years ago, the dreadlord Balnazzar made the Horseman in this monastery, pouring fel energy into the body of a knight, Sir Thomas Thomson. Every year at that season he rides again, and burns the towns of Azeroth."
+      ],
+      "sources": ["warcraft.wiki.gg: Scarlet Monastery (Legends)"]
+    },
+    {
+      "id": 796050,
+      "kind": "history",
+      "title": "The Madness of the Crusade",
+      "triggers": [{ "areaId": 796 }],
+      "body": [
+        "The paladin Raleigh the Devout believed in the Crusade's cause, until he lived in the monastery and saw its grip on reality slipping: anyone who did not wear its tabard was plagued, and innocent men and women were tortured to prove it. Of the inquisitor Halbin it is said that one night, in his rage at a Forsaken prisoner, he lost his hold on the holy relic he wielded; it exploded in holy fire, and his howls rang through the monastery for days as he died."
+      ],
+      "sources": ["warcraft.wiki.gg: Scarlet Monastery (World of Warcraft)"]
+    }
+  ]
+}

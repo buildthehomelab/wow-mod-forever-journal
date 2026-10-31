@@ -1,0 +1,148 @@
+{
+  "zone": 3523,
+  "name": "Netherstorm",
+  "entries": [
+    {
+      "id": 3523000,
+      "kind": "zone",
+      "title": "Netherstorm",
+      "triggers": [{ "areaId": 3523 }],
+      "body": [
+        "Once Farahlon, a lush land of forests and open range on the Devouring Sea. When Ner'zhul's portals tore Draenor apart, it broke into seven great floating islands and thousands of lesser shards drifting in the Twisting Nether. Here the Nether and the physical world bleed into each other. Lightning arcs through violet haze, bands of raw magic wrap the sky, and the Nether eats away at the edges of the land.",
+        "The bedrock and soil have turned a sickly purple that supports no plant life. All that is left of Farahlon's forests survives under the ethereals' great domes."
+      ],
+      "sources": ["warcraft.wiki.gg: Netherstorm (introduction, Recent history, Geography)"]
+    },
+    {
+      "id": 3523001,
+      "kind": "place",
+      "title": "The Manaforges",
+      "triggers": [{ "area": "Manaforge B'naar" }, { "area": "Manaforge Coruu" }, { "area": "Manaforge Duro" }, { "area": "Manaforge Ara" }, { "area": "Sunfury Hold" }, { "kill": 19593 }],
+      "body": [
+        "When Kael'thas' blood elves reached the Netherstorm, they seized Tempest Keep, dismantled parts of it, and built five tremendous manaforges across the islands. The forges draw mana out of the Twisting Nether itself and store it in cells for the elves to feed on. They were never meant to be used so close to land, and they are tearing the Netherstorm apart. Demons of the Legion have been seen among the elves at Manaforge Ara, which may say something about where Kael'thas' loyalties now lie."
+      ],
+      "sources": ["warcraft.wiki.gg: Netherstorm (The Burning Crusade)", "warcraft.wiki.gg: Manaforge Ara"]
+    },
+    {
+      "id": 3523002,
+      "kind": "place",
+      "title": "Manaforge Ultris",
+      "triggers": [{ "area": "Manaforge Ultris" }, { "area": "Access Shaft Zeon" }, { "kill": 19554 }],
+      "body": [
+        "The fifth manaforge, run beyond its capacity until it exploded and tore a hole in reality. Creatures of the Void came through and took it. In the mine beneath it, the corpses of slain blood elves carry parasitic fleshbeasts that burst out of their hosts at anyone who comes near."
+      ],
+      "sources": ["warcraft.wiki.gg: Manaforge Ultris", "warcraft.wiki.gg: Access Shaft Zeon"]
+    },
+    {
+      "id": 3523003,
+      "kind": "place",
+      "title": "Area 52",
+      "triggers": [{ "area": "Area 52" }, { "area": "Camp of Boom" }, { "area": "The Proving Grounds" }, { "area": "Cosmowrench" }, { "talk": 19570 }],
+      "body": [
+        "A goblin town built like Gadgetzan or Everlook, behind a short wall on the south-western island. The goblins came to study and experiment in this unique place. They are building the X-52 Nether-Rocket to fly into the Twisting Nether in search of new technology and business, and they send bombs to the troops fighting the Legion in Hellfire."
+      ],
+      "sources": ["warcraft.wiki.gg: Area 52", "warcraft.wiki.gg: Netherstorm (The Burning Crusade)"]
+    },
+    {
+      "id": 3523004,
+      "kind": "place",
+      "title": "The Stormspire",
+      "triggers": [{ "area": "The Stormspire" }, { "area": "Eco-Dome Sutheron" }, { "area": "Eco-Dome Skyperch" }, { "talk": 19674 }],
+      "body": [
+        "A draenei-built town under the twin eco-domes, with no draenei left in it. The ethereal Consortium runs it now. Its leader, Nexus-Prince Haramad, oversees it from the top of the spire as a hologram and does business with Prince Kael'thas and the forces of Azeroth alike. Many of the goods sold here are smuggled past the naaru's prohibitions and the goblins' taxes. The Legion's forge bases next door attack it constantly."
+      ],
+      "sources": ["warcraft.wiki.gg: Stormspire"]
+    },
+    {
+      "id": 3523005,
+      "kind": "place",
+      "title": "The Eco-Domes",
+      "triggers": [{ "area": "Eco-Dome Midrealm" }, { "area": "Eco-Dome Farfield" }, { "area": "Midrealm Post" }],
+      "body": [
+        "Great magical domes raised by the ethereals and visible from nearly anywhere in the Netherstorm. Inside them, the ethereals preserve the last of the region's greenery, though not every creature in them is native to Farahlon."
+      ],
+      "sources": ["warcraft.wiki.gg: Netherstorm (introduction, The Burning Crusade)", "warcraft.wiki.gg: Eco-Dome Farfield"]
+    },
+    {
+      "id": 3523006,
+      "kind": "place",
+      "title": "Kirin'Var Village",
+      "triggers": [{ "area": "Wizard Row" }, { "area": "Town Square" }, { "area": "Chapel Yard" }, { "area": "The Violet Tower" }, { "talk": 19481 }],
+      "body": [
+        "When the Alliance expedition came to Draenor, a group of Kirin Tor wizards under Archmage Vargoth built a village in the heart of Laughing Skull territory and survived the orcs' assaults. Then Draenor tore apart, and they held on for seventeen years among the wreckage.",
+        "Kael'thas' forces came with more power than they could imagine and destroyed the village with a mana bomb. Vargoth's wizards retreated into their tower, and Kael'thas sealed it with a curse so that none could leave. Now the dead of Kirin'Var haunt the streets, most of them living on as if they had never died."
+      ],
+      "sources": ["warcraft.wiki.gg: Kirin'Var Village (History, Current state)"]
+    },
+    {
+      "id": 3523007,
+      "kind": "place",
+      "title": "The Legion's Bases",
+      "triggers": [{ "area": "Forge Base: Gehenna" }, { "area": "Forge Base: Oblivion" }, { "area": "Arklon Ruins" }, { "area": "Invasion Point: Destroyer" }, { "area": "Invasion Point: Overlord" }],
+      "body": [
+        "The Burning Legion has staked its own claim here: two forge bases, one that sends wrathguards and shivarra through its teleporters against the Stormspire and one that assembles fel reavers, and demons digging through the Arklon ruins."
+      ],
+      "sources": ["warcraft.wiki.gg: Forge Base: Gehenna", "warcraft.wiki.gg: Forge Base: Oblivion", "warcraft.wiki.gg: Netherstorm (The Burning Crusade)"]
+    },
+    {
+      "id": 3523008,
+      "kind": "place",
+      "title": "Socrethar's Seat",
+      "triggers": [{ "area": "Socrethar's Seat" }, { "area": "Ruins of Farahlon" }, { "kill": 20132 }, { "kill": 20138 }],
+      "body": [
+        "A whole floating island in the far north-west, the throne of Socrethar, an eredar who leads the Legion in the Netherstorm. Below it lie the ruins of Farahlon, once a great draenei city, where a dreadlord named Culuthas slew Socrethar's own demons and summoned void terrors of his own."
+      ],
+      "sources": ["warcraft.wiki.gg: Socrethar's Seat", "warcraft.wiki.gg: Ruins of Farahlon", "warcraft.wiki.gg: Socrethar"]
+    },
+    {
+      "id": 3523009,
+      "kind": "place",
+      "title": "The Ruins of Enkaat",
+      "triggers": [{ "area": "Ruins of Enkaat" }],
+      "body": [
+        "All that is left of a draenei town. From the skeletons and the crates of belongings scattered through it, its people were being evacuated when it was destroyed. Spectral vindicators still wander among the ruins."
+      ],
+      "sources": ["warcraft.wiki.gg: Ruins of Enkaat"]
+    },
+    {
+      "id": 3523010,
+      "kind": "place",
+      "title": "The Protectorate",
+      "triggers": [{ "area": "Protectorate Watch Post" }, { "area": "Ethereum Staging Grounds" }, { "talk": 20448 }],
+      "body": [
+        "The Protectorate, a faction of ethereals, keeps a watch post on the doorstep of the rival Ethereum and of the Void at Manaforge Ultris. It is understaffed and cannot strike at either alone."
+      ],
+      "sources": ["warcraft.wiki.gg: Protectorate Watch Post", "warcraft.wiki.gg: Ethereum Staging Grounds"]
+    },
+    {
+      "id": 3523011,
+      "kind": "place",
+      "title": "Netherstone",
+      "triggers": [{ "area": "Netherstone" }],
+      "body": [
+        "Crystal spires in the north, thick with well-hidden Farahlon colossi, a source of the rare crystal farahlite."
+      ],
+      "sources": ["warcraft.wiki.gg: Netherstone"]
+    },
+    {
+      "id": 3523012,
+      "kind": "place",
+      "title": "Tempest Keep",
+      "triggers": [{ "area": "Tempest Keep" }, { "area": "The Vortex Fields" }],
+      "body": [
+        "A dimensional fortress of the naaru, able to travel through the Twisting Nether from place to place in the blink of an eye, a self-contained Dark Portal. A'dal, M'uru and O'ros brought it to Outland to help its people. Kael'thas raided it and took its satellite wings for himself. One wing escaped: Velen's draenei stole the Exodar and fled in it to Azeroth."
+      ],
+      "sources": ["warcraft.wiki.gg: Tempest Keep (History, Functioning)"]
+    },
+    {
+      "id": 3523013,
+      "kind": "place",
+      "title": "The Crumbling Waste",
+      "triggers": [{ "area": "The Crumbling Waste" }, { "area": "The Tempest Rift" }, { "area": "Voidwind Plateau" }],
+      "body": [
+        "The broken edges of the Netherstorm, where the land crumbles away into the Nether."
+      ],
+      "sources": ["warcraft.wiki.gg: Crumbling Waste"]
+    }
+  ]
+}

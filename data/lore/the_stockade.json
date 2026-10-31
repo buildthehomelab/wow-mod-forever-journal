@@ -1,0 +1,87 @@
+{
+  "zone": 717,
+  "name": "The Stockade",
+  "entries": [
+    {
+      "id": 717000,
+      "kind": "zone",
+      "title": "The Stormwind Stockade",
+      "triggers": [{ "areaId": 717 }],
+      "body": [
+        "A high-security prison hidden beneath Stormwind's canal district, presided over by Warden Thelwater, holding petty crooks, political insurgents, murderers and a score of the most dangerous criminals in the land.",
+        "Now the prisoners have risen. A revolt stirred up by the Defias Brotherhood has thrown the Stockade into chaos: the guards have been driven out and the convicts roam free. Thelwater escaped the holding area, and is quietly enlisting thrill-seekers to go in and kill the man behind it. The kingdom would rather nobody knew."
+      ],
+      "sources": ["warcraft.wiki.gg: Stormwind Stockade (introduction, World of Warcraft)"]
+    },
+    {
+      "id": 717001,
+      "kind": "place",
+      "title": "The Cell Blocks",
+      "triggers": [{ "areaId": 717 }, { "kill": 1666 }, { "kill": 1696 }],
+      "body": [
+        "Three cramped hallways with cells and round rooms branching from them, now in the hands of the rioters. Not every prisoner here is Defias: Stormwind's corrupt and sluggish courts have left some of its worst enemies alive in these cells, as political pawns. Once a fourteen-year-old boy named Mac served here as a guard while the army was at the front; he scolded the prisoners for tearing up their blankets to make gang scarves, and they stabbed him in the back."
+      ],
+      "sources": ["warcraft.wiki.gg: Stormwind Stockade (World of Warcraft, Geography)"]
+    },
+    {
+      "id": 717030,
+      "kind": "person",
+      "title": "Targorr the Dread",
+      "triggers": [{ "kill": 1696 }],
+      "body": [
+        "The supreme executioner of Gath'Ilzogg's Blackrock orcs, ruthless even by orcish standards, who tortured the men who defended Redridge at his whim. He was captured and sentenced to death, but a noble put a hold on his execution to keep him as a political pawn. In the riot he has fallen in with the Defias."
+      ],
+      "sources": ["warcraft.wiki.gg: Targorr the Dread", "warcraft.wiki.gg: Stormwind Stockade (World of Warcraft)"]
+    },
+    {
+      "id": 717031,
+      "kind": "person",
+      "title": "Kam Deepfury",
+      "triggers": [{ "kill": 1666 }],
+      "body": [
+        "A Dark Iron dwarf, by the reckoning of Alliance intelligence at Dun Modr the organiser of the blast that brought down a bridge of the Thandol Span and killed one of Longbraid the Grim's kin. Ironforge has given up waiting on Stormwind's justice."
+      ],
+      "sources": ["warcraft.wiki.gg: Kam Deepfury"]
+    },
+    {
+      "id": 717032,
+      "kind": "person",
+      "title": "Hamhock",
+      "triggers": [{ "kill": 1717 }],
+      "body": [
+        "A two-headed ogre locked up in the Stockade, whom the riot has set loose. Nobody remembers what he was put in for, and both his heads would rather not say."
+      ],
+      "sources": ["warcraft.wiki.gg: Hamhock"]
+    },
+    {
+      "id": 717033,
+      "kind": "person",
+      "title": "Dextren Ward",
+      "triggers": [{ "kill": 1663 }],
+      "body": [
+        "A grave robber who sold bodies from Raven Hill Cemetery to the necromancer Morbent Fel. The Council of Darkshire condemned him, but the House of Nobles had him locked up here instead, and Darkshire took it as an insult."
+      ],
+      "sources": ["warcraft.wiki.gg: Dextren Ward", "warcraft.wiki.gg: Stormwind Stockade (World of Warcraft)"]
+    },
+    {
+      "id": 717034,
+      "kind": "person",
+      "title": "Bazil Thredd",
+      "triggers": [{ "kill": 1716 }],
+      "body": [
+        "Edwin VanCleef's lieutenant and most trusted assistant, caught in the riots that killed Queen Tiffin and imprisoned here, where he took command of the Defias inside. For years nobody visited him. A few months before the riot, a suspicious man named Maelik began coming regularly."
+      ],
+      "sources": ["warcraft.wiki.gg: Bazil Thredd"]
+    },
+    {
+      "id": 717035,
+      "kind": "person",
+      "title": "Bruegal Ironknuckle",
+      "triggers": [{ "kill": 1720 }],
+      "body": [
+        "A dwarf prisoner seldom seen in the depths of the Stockade, rumoured to have kept a few good things hidden in his cell."
+      ],
+      "sources": ["warcraft.wiki.gg: Bruegal Ironknuckle"]
+    }
+  ]
+}

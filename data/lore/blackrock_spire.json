@@ -1,0 +1,217 @@
+{
+  "zone": 1583,
+  "name": "Blackrock Spire",
+  "entries": [
+    {
+      "id": 1583000,
+      "kind": "zone",
+      "title": "Blackrock Spire",
+      "triggers": [{ "areaId": 1583 }],
+      "body": [
+        "The fortress carved into the upper levels of Blackrock Mountain, designed by the master mason Franclorn Forgewright as the symbol of Dark Iron power. In the First War it sheltered Gul'dan's Shadow Council; in the Second it was the Horde's headquarters, where Orgrim Doomhammer made his war plans.",
+        "Now Nefarian, son of Deathwing, holds it. His dragonspawn and the Dark Horde of Rend Blackhand fill its halls, its lower city is crowded with orcs, trolls and ogres, and from its heights Nefarian wages war on the Dark Irons below and carries on his sinister experiments."
+      ],
+      "sources": ["warcraft.wiki.gg: Blackrock Spire (History)", "warcraft.wiki.gg: Blackrock Mountain"]
+    },
+    {
+      "id": 1583001,
+      "kind": "place",
+      "title": "Hordemar City",
+      "triggers": [{ "areaId": 1583 }, { "kill": 9196 }, { "kill": 10584 }],
+      "body": [
+        "The lower city of the Spire, a sprawl of ogre and orc quarters. The Spirestone ogres hold Mok'Doom under their highlord, though he is only a figurehead for their true master."
+      ],
+      "sources": ["warcraft.wiki.gg: Highlord Omokk", "warcraft.wiki.gg: Urok Doomhowl"]
+    },
+    {
+      "id": 1583002,
+      "kind": "place",
+      "title": "Tazz'Alor and the Skitterweb Tunnels",
+      "triggers": [{ "kill": 9236 }, { "kill": 9237 }, { "kill": 10596 }],
+      "body": [
+        "Forest trolls of the Smolderthorn tribe hold Tazz'Alor, led by a shadow hunter and a war master. Beyond them, crystal spiders nest in the tunnels around their great broodmother."
+      ],
+      "sources": ["warcraft.wiki.gg: Shadow Hunter Vosh'gajin", "warcraft.wiki.gg: War Master Voone", "warcraft.wiki.gg: Mother Smolderweb"]
+    },
+    {
+      "id": 1583003,
+      "kind": "place",
+      "title": "Halycon's Nest and the Lower Citadel",
+      "triggers": [{ "kill": 10220 }, { "kill": 10268 }, { "kill": 9568 }, { "kill": 9736 }],
+      "body": [
+        "Deep in the lower spire, the Bloodaxe Legion keeps the great worgs that breed their attack wolves, and Overlord Wyrmthalak, taskmaster of the lower citadel, takes his orders from General Drakkisath above."
+      ],
+      "sources": ["warcraft.wiki.gg: Halycon", "warcraft.wiki.gg: Overlord Wyrmthalak"]
+    },
+    {
+      "id": 1583004,
+      "kind": "place",
+      "title": "The Hall of Binding",
+      "triggers": [{ "area": "Halls of Binding" }, { "kill": 9816 }],
+      "body": [
+        "The gate to the upper spire, where warlocks of the Blackhand keep a powerful fire elemental, Pyroguard Emberseer, chained in a trance, draining his power to hasten the hatching of black dragon eggs."
+      ],
+      "sources": ["warcraft.wiki.gg: Pyroguard Emberseer", "warcraft.wiki.gg: Blackrock Mountain (After the Great Wars)"]
+    },
+    {
+      "id": 1583005,
+      "kind": "place",
+      "title": "The Rookery",
+      "triggers": [{ "kill": 10264 }],
+      "body": [
+        "A hall of black dragon eggs, guarded by elite dragonkin, warmed by a great crystal called the Father Flame."
+      ],
+      "sources": ["warcraft.wiki.gg: Solakar Flamewreath"]
+    },
+    {
+      "id": 1583006,
+      "kind": "place",
+      "title": "The Stadium",
+      "triggers": [{ "kill": 10429 }, { "kill": 10339 }, { "kill": 10162 }],
+      "body": [
+        "Where Lord Victor Nefarius, in his mortal guise, sets beasts and soldiers against intruders for his amusement, before Warchief Rend Blackhand rides down on his drake to finish them."
+      ],
+      "sources": ["warcraft.wiki.gg: Rend Blackhand", "warcraft.wiki.gg: Gyth"]
+    },
+    {
+      "id": 1583007,
+      "kind": "place",
+      "title": "The Furnace and the Halls of Ascension",
+      "triggers": [{ "kill": 10430 }, { "kill": 10363 }],
+      "body": [
+        "The Furnace holds a captured core hound of Ragnaros, tortured and retrained to guard the spire. Beyond, past the Halls of Ascension, General Drakkisath rules from his throne room at the summit, commanding the war to drive the Dark Irons from the mountain."
+      ],
+      "sources": ["warcraft.wiki.gg: The Beast", "warcraft.wiki.gg: General Drakkisath"]
+    },
+    {
+      "id": 1583030,
+      "kind": "person",
+      "title": "Highlord Omokk",
+      "triggers": [{ "kill": 9196 }],
+      "body": [
+        "The apparent leader of the Spirestone ogres, in truth a front for their real master, Urok Doomhowl."
+      ],
+      "sources": ["warcraft.wiki.gg: Highlord Omokk"]
+    },
+    {
+      "id": 1583031,
+      "kind": "person",
+      "title": "Urok Doomhowl",
+      "triggers": [{ "kill": 10584 }],
+      "body": [
+        "The true master of the Spirestone ogres, who cursed the troll Warosh and stole his mojo."
+      ],
+      "sources": ["warcraft.wiki.gg: Urok Doomhowl"]
+    },
+    {
+      "id": 1583032,
+      "kind": "person",
+      "title": "Shadow Hunter Vosh'gajin",
+      "triggers": [{ "kill": 9236 }],
+      "body": [
+        "A forest troll shadow hunter of Tazz'Alor, the former lover of a troll blacksmith in Everlook. She gave him the scar on his face, and called it a love tap."
+      ],
+      "sources": ["warcraft.wiki.gg: Shadow Hunter Vosh'gajin"]
+    },
+    {
+      "id": 1583033,
+      "kind": "person",
+      "title": "War Master Voone",
+      "triggers": [{ "kill": 9237 }],
+      "body": [
+        "The forest troll war master of Tazz'Alor, who leads the Smolderthorn in battle."
+      ],
+      "sources": ["warcraft.wiki.gg: War Master Voone"]
+    },
+    {
+      "id": 1583034,
+      "kind": "person",
+      "title": "Mother Smolderweb",
+      "triggers": [{ "kill": 10596 }],
+      "body": [
+        "The great broodmother of the crystal spiders that nest in the tunnels of the lower spire."
+      ],
+      "sources": ["warcraft.wiki.gg: Mother Smolderweb"]
+    },
+    {
+      "id": 1583035,
+      "kind": "person",
+      "title": "Halycon and Gizrul",
+      "triggers": [{ "kill": 10220 }, { "kill": 10268 }],
+      "body": [
+        "A giant red-and-black worg of the Bloodaxe Legion and her mate, Gizrul the Slavener, who sire the orcs' attack worgs, whatever the rumours of demonic origins. She is kept with her pups in her nest, heavily guarded."
+      ],
+      "sources": ["warcraft.wiki.gg: Halycon"]
+    },
+    {
+      "id": 1583036,
+      "kind": "person",
+      "title": "Overlord Wyrmthalak",
+      "triggers": [{ "kill": 9568 }],
+      "body": [
+        "The overlord and taskmaster of the lower city, who takes his commands from General Drakkisath."
+      ],
+      "sources": ["warcraft.wiki.gg: Overlord Wyrmthalak"]
+    },
+    {
+      "id": 1583037,
+      "kind": "person",
+      "title": "Pyroguard Emberseer",
+      "triggers": [{ "kill": 9816 }],
+      "body": [
+        "A powerful fire elemental held captive by the Blackhand Incarcerators. Should the warlocks' trance break, he breaks free, and tries to destroy everything near him."
+      ],
+      "sources": ["warcraft.wiki.gg: Pyroguard Emberseer"]
+    },
+    {
+      "id": 1583038,
+      "kind": "person",
+      "title": "Solakar Flamewreath",
+      "triggers": [{ "kill": 10264 }],
+      "body": [
+        "A dragonspawn who comes to defend the Rookery's eggs when anyone touches the Father Flame."
+      ],
+      "sources": ["warcraft.wiki.gg: Solakar Flamewreath"]
+    },
+    {
+      "id": 1583039,
+      "kind": "person",
+      "title": "Warchief Rend Blackhand",
+      "triggers": [{ "kill": 10429 }, { "kill": 10339 }],
+      "body": [
+        "Dal'rend, the bloodthirsty son of Blackhand the Destroyer and warchief of the Dark Horde, who believes he is the rightful warchief of the Horde by birth and means to overthrow Thrall. He has allied the Dark Horde with Nefarian, and together they breed the chromatic dragonflight. He rides the chromatic drake Gyth."
+      ],
+      "sources": ["warcraft.wiki.gg: Rend Blackhand", "warcraft.wiki.gg: Gyth"]
+    },
+    {
+      "id": 1583040,
+      "kind": "person",
+      "title": "The Beast",
+      "triggers": [{ "kill": 10430 }],
+      "body": [
+        "A core hound of Ragnaros captured by Nefarian's forces, tortured for their amusement and retrained to guard the spire. It once swallowed a gnome named Pip Quickwit whole; his lava-proof suit kept him alive in its belly for weeks."
+      ],
+      "sources": ["warcraft.wiki.gg: The Beast"]
+    },
+    {
+      "id": 1583041,
+      "kind": "person",
+      "title": "General Drakkisath",
+      "triggers": [{ "kill": 10363 }],
+      "body": [
+        "The black dragonspawn who rules Nefarian's armies, overseeing from the pinnacle of the spire their war to drive the Dark Irons out of the mountain. He bears the Blackblade of Shahram."
+      ],
+      "sources": ["warcraft.wiki.gg: General Drakkisath"]
+    },
+    {
+      "id": 1583042,
+      "kind": "person",
+      "title": "Lord Victor Nefarius",
+      "triggers": [{ "kill": 10162 }, { "talk": 10162 }],
+      "body": [
+        "The Lord of Blackrock, a nobleman in appearance, whom the Dark Horde serves. He is Nefarian, son of Deathwing, and from the Spire's highest reaches he breeds new dragons of every colour to make an army that can conquer Azeroth."
+      ],
+      "sources": ["warcraft.wiki.gg: Blackrock Mountain", "warcraft.wiki.gg: Rend Blackhand"]
+    }
+  ]
+}

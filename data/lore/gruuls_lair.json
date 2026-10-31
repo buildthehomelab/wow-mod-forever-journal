@@ -1,0 +1,57 @@
+{
+  "zone": 3923,
+  "name": "Gruul's Lair",
+  "entries": [
+    {
+      "id": 3923000,
+      "kind": "zone",
+      "title": "Gruul's Lair",
+      "triggers": [{ "areaId": 3923 }],
+      "body": [
+        "The cavern of Gruul the Dragonkiller, the merciless gronn overlord, whom the ogres of Blade's Edge worship as a god. His strength and experience in battle are unmatched; if he ever turned on the Horde and Alliance in Outland, he would be a grave threat."
+      ],
+      "sources": ["warcraft.wiki.gg: Gruul's Lair (introduction, Description)"]
+    },
+    {
+      "id": 3923001,
+      "kind": "place",
+      "title": "The High King's Hall",
+      "triggers": [{ "kill": 18831 }, { "kill": 18832 }, { "kill": 18834 }, { "kill": 18835 }, { "kill": 18836 }],
+      "body": [
+        "The outer hall of the lair, where the high king of the ogres sits in council with his four mages and shamans."
+      ],
+      "sources": ["warcraft.wiki.gg: High King Maulgar"]
+    },
+    {
+      "id": 3923002,
+      "kind": "place",
+      "title": "Gruul's Chamber",
+      "triggers": [{ "kill": 19044 }],
+      "body": [
+        "The deepest cavern, where the Dragonkiller himself waits."
+      ],
+      "sources": ["warcraft.wiki.gg: Gruul's Lair"]
+    },
+    {
+      "id": 3923030,
+      "kind": "person",
+      "title": "High King Maulgar",
+      "triggers": [{ "kill": 18831 }],
+      "body": [
+        "The Bladespire were among the weakest ogre clans, with neither the numbers of the Bloodmaul nor the strength of the Boulderfist, until Maulgar was born, stronger and hardier than any ogre of his age. When the old high king demanded a demonstration of his might, Maulgar snapped his neck where he stood. Power passed to the Bladespire, and Maulgar caught the eye of Gruul himself.",
+        "He rules from the lair with a council of four: Kiggler the Crazed, Blindeye the Seer, Olm the Summoner and Krosh Firehand."
+      ],
+      "sources": ["warcraft.wiki.gg: High King Maulgar (Background)"]
+    },
+    {
+      "id": 3923031,
+      "kind": "person",
+      "title": "Gruul the Dragonkiller",
+      "triggers": [{ "kill": 19044 }],
+      "body": [
+        "The gronn overlord of Outland's ogres, who rules them with an iron fist. He won his name, and the hatred of the black dragon Sabellian, by slaughtering the black dragons who came to Outland to aid the Horde and impaling them on the spires of Blade's Edge. He is allied with the Illidari, though how closely no one is sure."
+      ],
+      "sources": ["warcraft.wiki.gg: Gruul the Dragonkiller", "warcraft.wiki.gg: Gruul's Lair (Description)"]
+    }
+  ]
+}

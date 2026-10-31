@@ -1,0 +1,107 @@
+{
+  "zone": 491,
+  "name": "Razorfen Kraul",
+  "entries": [
+    {
+      "id": 491000,
+      "kind": "zone",
+      "title": "Razorfen Kraul",
+      "triggers": [{ "areaId": 491 }],
+      "body": [
+        "Ten thousand years ago, in the War of the Ancients, the demigod Agamaggan, the Great Boar, rallied by Cenarius, trampled thousands of demons and rained thorns from his back, until he fell. Over time, wherever his blood had soaked the earth, massive thorny vines sprang up. The quilboar, believed to be his mortal children, came to live among them and hold them sacred. The heart of these thorn colonies is called the Razorfen.",
+        "The great mass of Razorfen Kraul, in the far south of the Barrens, has been conquered by an old crone, Charlga Razorflank, whose shamanistic quilboar raid rival tribes and the villages of the Horde."
+      ],
+      "sources": ["warcraft.wiki.gg: Razorfen Kraul (Lore)", "warcraft.wiki.gg: Agamaggan"]
+    },
+    {
+      "id": 491001,
+      "kind": "place",
+      "title": "The Thorn Tunnels",
+      "triggers": [{ "areaId": 491 }, { "kill": 6168 }, { "kill": 4842 }],
+      "body": [
+        "Tunnels and hollows woven of the great thorns, bridged with wood, full of quilboar warriors, geomancers and their boars, with bats swarming in the dark. Quilboar take prisoners here too; not every captive has been eaten yet."
+      ],
+      "sources": ["warcraft.wiki.gg: Razorfen Kraul", "warcraft.wiki.gg: Earthcaller Halmgar"]
+    },
+    {
+      "id": 491002,
+      "kind": "place",
+      "title": "The Death's Head Shrine",
+      "triggers": [{ "kill": 4420 }, { "kill": 4424 }, { "kill": 4428 }],
+      "body": [
+        "Where Overlord Ramtusk holds court, and where the spirits of dead Death's Head prophets and captains still rise to defend him."
+      ],
+      "sources": ["warcraft.wiki.gg: Aggem Thorncurse", "warcraft.wiki.gg: Death Speaker Jargba"]
+    },
+    {
+      "id": 491003,
+      "kind": "place",
+      "title": "Charlga's Seat",
+      "triggers": [{ "kill": 4422 }, { "kill": 4421 }],
+      "body": [
+        "The deepest hollow of the Kraul, where the crone Charlga rules. A short tunnel nearby is the pen of Agathelos, a colossal armoured boar twice the size of a thunder lizard, held back by a field the quilboar keep up around him."
+      ],
+      "sources": ["warcraft.wiki.gg: Agathelos the Raging", "warcraft.wiki.gg: Charlga Razorflank"]
+    },
+    {
+      "id": 491030,
+      "kind": "person",
+      "title": "Roogug",
+      "triggers": [{ "kill": 6168 }],
+      "body": [
+        "A quilboar geomancer of the Kraul, one of the leaders the tauren want taken down."
+      ],
+      "sources": ["warcraft.wiki.gg: Roogug"]
+    },
+    {
+      "id": 491031,
+      "kind": "person",
+      "title": "Overlord Ramtusk",
+      "triggers": [{ "kill": 4420 }],
+      "body": [
+        "A quilboar warlord of the Razorfen, defended even in death by the ghosts of the Death's Head prophet Aggem Thorncurse and the captain Jargba."
+      ],
+      "sources": ["warcraft.wiki.gg: Overlord Ramtusk", "warcraft.wiki.gg: Aggem Thorncurse"]
+    },
+    {
+      "id": 491032,
+      "kind": "person",
+      "title": "Agathelos the Raging",
+      "triggers": [{ "kill": 4422 }],
+      "body": [
+        "A colossal armoured boar, twice the size of a thunder lizard and bigger still when enraged, penned in a tunnel by the quilboar's magic."
+      ],
+      "sources": ["warcraft.wiki.gg: Agathelos the Raging"]
+    },
+    {
+      "id": 491033,
+      "kind": "person",
+      "title": "Charlga Razorflank",
+      "triggers": [{ "kill": 4421 }],
+      "body": [
+        "The Crone, leader of the Razorfen and a powerful geomancer, under whom the quilboar drove the tauren from the southern Barrens. She tells her followers they need blood to revive Agamaggan, and sends them to raid. She shaped most of the thorn dome of Razorfen Downs. Some say she has been negotiating with agents of the Scourge, and her tribe does not know."
+      ],
+      "sources": ["warcraft.wiki.gg: Charlga Razorflank (Background)"]
+    },
+    {
+      "id": 491034,
+      "kind": "person",
+      "title": "The Blind Hunter",
+      "triggers": [{ "kill": 4425 }],
+      "body": [
+        "A pale bat that dwells only in the darkest depths of the Kraul, which has likely never seen the light."
+      ],
+      "sources": ["warcraft.wiki.gg: Blind Hunter"]
+    },
+    {
+      "id": 491035,
+      "kind": "person",
+      "title": "Earthcaller Halmgar",
+      "triggers": [{ "kill": 4842 }],
+      "body": [
+        "A quilboar earthcaller, seldom seen, past the first wooden bridge beyond Ramtusk."
+      ],
+      "sources": ["warcraft.wiki.gg: Earthcaller Halmgar"]
+    }
+  ]
+}
