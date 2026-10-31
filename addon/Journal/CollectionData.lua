@@ -27,8 +27,14 @@ J.SOURCE = {
 	{ bit = 0x040, name = "Container" },
 	{ bit = 0x080, name = "Fishing" },
 	{ bit = 0x100, name = "World Event" },
+	{ bit = 0x400, name = "Coin Shop" },
+	{ bit = 0x800, name = "Black Market" },
+	{ bit = 0x1000, name = "Guild Vendor" },
 	{ bit = 0x200, name = "Other" },
 }
+
+-- mod-boss-coins' coin (Tarnished Undermine Real): what the launcher's shop takes.
+J.BOSS_COIN = 90410
 
 local band = bit.band
 
@@ -177,7 +183,8 @@ end)
 -----------------------------------------
 -- filters, kept per character and kind
 
-local DEFAULT_FILTERS = { collected = true, missing = true, usable = false, hideLocked = false, sources = {} }
+-- unobtainable: also list what nothing on the realm gives yet (whatever the character has always shows).
+local DEFAULT_FILTERS = { collected = true, missing = true, usable = false, hideLocked = false, unobtainable = false, sources = {} }
 
 function J.Filters(kind)
 	JournalCharDB.collectionFilters = JournalCharDB.collectionFilters or {}
@@ -255,9 +262,12 @@ function J.FilteredEntries(kind, catalog, text)
 	text = text and text ~= "" and text:lower() or nil
 	for _, e in ipairs(withOwned(kind, catalog)) do
 		local name = J.EntryName(kind, e)
-		if name or kind == "toys" then
+		local mine = J.Owned(kind, e)
+		-- Nothing gives it and the character hasn't got it: left out of the list and the count
+		-- unless asked for, so a new player sees what they can go and get.
+		local hidden = not mine and not f.unobtainable and band(e.flags, J.ENTRY.UNOBTAINABLE) ~= 0
+		if (name or kind == "toys") and not hidden then
 			total = total + 1
-			local mine = J.Owned(kind, e)
 			if mine then have = have + 1 end
 			local ok = (mine and f.collected) or (not mine and f.missing)
 			if ok and f.usable and not J.Usable(e) then ok = false end
@@ -306,13 +316,14 @@ local function buildSources(rows)
 			s.creature, s.chance, s.instance, s.boss, s.reqState, s.placed, s.rare = r[3], r[4], r[5], r[6], r[7], r[8] == 1, r[9] == 1
 			s.name, s.where = Unescape(tostring(r[10])), Unescape(tostring(r[11] or "-"))
 			s.variant, s.tabs = r[12] ~= 255 and r[12] or nil, Unescape(tostring(r[13] or "-"))
+			s.base = r[14]
 		elseif kind == "G" then
 			s.object, s.chance, s.instance, s.boss, s.reqState, s.placed = r[3], r[4], r[5], r[6], r[7], r[8] == 1
 			s.name, s.where = Unescape(tostring(r[9])), Unescape(tostring(r[10] or "-"))
 			s.variant, s.tabs = r[11] ~= 255 and r[11] or nil, Unescape(tostring(r[12] or "-"))
 		elseif kind == "P" then
 			s.creature, s.chance, s.reqState, s.placed = r[3], r[4], r[5], r[6] == 1
-			s.name, s.where = Unescape(tostring(r[7])), Unescape(tostring(r[8] or "-"))
+			s.name, s.where, s.base = Unescape(tostring(r[7])), Unescape(tostring(r[8] or "-")), r[9]
 		elseif kind == "F" then
 			s.area, s.chance, s.reqState, s.name = r[3], r[4], r[5], Unescape(tostring(r[6]))
 		elseif kind == "I" then
@@ -328,6 +339,14 @@ local function buildSources(rows)
 		elseif kind == "T" then
 			s.class, s.level, s.copper, s.reqState, s.placed, s.trainers = r[3], r[4], r[5], r[6], r[7] == 1, r[8]
 			s.name, s.where = Unescape(tostring(r[9])), Unescape(tostring(r[10] or "-"))
+		elseif kind == "S" then
+			s.offer, s.coins, s.reqState = r[3], r[4], r[5]
+		elseif kind == "B" then
+			s.template, s.copper, s.reqState, s.placed = r[3], r[4], r[5], r[6] == 1
+			s.name, s.where, s.seller = Unescape(tostring(r[7])), Unescape(tostring(r[8] or "-")), Unescape(tostring(r[9] or "-"))
+		elseif kind == "U" then
+			s.guildLevel, s.rank, s.copper, s.faction, s.reqState, s.placed, s.vendors = r[3], r[4], r[5], r[6], r[7], r[8] == 1, r[9]
+			s.name, s.where = Unescape(tostring(r[10])), Unescape(tostring(r[11] or "-"))
 		elseif kind == "N" then
 			s.text = Unescape(tostring(r[3]))
 		elseif kind == "+" then
@@ -348,6 +367,24 @@ function J.LoadSources(kind, e, done)
 	J.Request("W", { J.KINDS[kind].letter, tostring(e.id) }, function (result)
 		if result then sources[key] = buildSources(result.rows) end
 		done(sources[key])
+	end)
+end
+
+-- What changes by the minute for an entry sold in the coin shop or at the Black Market: done(live)
+-- with { coins = wallet (nil without a shop), bags = coins in the bags, bid = copper, bids,
+-- left = seconds } (bid nil when it isn't up for bid), or done(nil). Never cached.
+function J.LoadLive(kind, e, done)
+	if not J.Has(J.HELLO_LIVE) or e.extra then done(nil) return end
+	J.Request("T", { J.KINDS[kind].letter, tostring(e.id) }, function (result)
+		if not result then done(nil) return end
+		local coins, bid = tonumber(result[1]) or -1, tonumber(result[3]) or 0
+		done({
+			coins = coins >= 0 and coins or nil,
+			bags = tonumber(result[2]) or 0,
+			bid = bid > 0 and bid or nil,
+			bids = tonumber(result[4]) or 0,
+			left = tonumber(result[5]) or 0,
+		})
 	end)
 end
 

@@ -19,6 +19,7 @@ J.HELLO_LORE = 128
 J.HELLO_LIBRARY = 256
 J.HELLO_HINTS = 512
 J.HELLO_MODELS = 1024
+J.HELLO_LIVE = 2048
 
 -- What this addon can do, sent with HELLO (AddonFeatureFlags in src/Journal.h): open a tab when
 -- the server says OPEN (the Town Guide spell and .find), and answer OPENED.
@@ -150,6 +151,20 @@ function J.Chance(hundredths)
 	if pct >= 1 then return (string.format("%.1f", pct):gsub("%.0$", "")) .. "%" end
 	if pct >= 0.01 then return (string.format("%.2f", pct):gsub("0$", "")) .. "%" end
 	return "<0.01%"
+end
+
+-- A drop chance the way a player thinks about it: "10% (about 1 in 10 kills)". per names the
+-- tries ("kills", "chests"); nil leaves the "1 in" out.
+function J.ChanceText(hundredths, per)
+	local text = J.Chance(hundredths)
+	local pct = (tonumber(hundredths) or 0) / 100
+	if text == "100%" then return "always" end
+	if not per or pct <= 0 or pct > 50 then return text end
+	local n = 100 / pct
+	-- Two significant figures are plenty: 1 in 7, 1 in 37, 1 in 740.
+	local scale = n >= 100 and 10 ^ (#tostring(floor(n)) - 2) or 1
+	n = floor(n / scale + 0.5) * scale
+	return text .. " (about 1 in " .. J.Number(n) .. (per ~= "" and (" " .. per) or "") .. ")"
 end
 
 function J.Print(msg)
@@ -409,8 +424,8 @@ local function onAddonMessage(message)
 		return
 	end
 
-	-- Single answers: H, M and R, to a request of the same kind.
-	if p and (code == "H" or code == "M" or code == "R") and p.cmd == code then
+	-- Single answers: H, M, R and T, to a request of the same kind.
+	if p and (code == "H" or code == "M" or code == "R" or code == "T") and p.cmd == code then
 		finish(req, splitFields(rest))
 	end
 end
