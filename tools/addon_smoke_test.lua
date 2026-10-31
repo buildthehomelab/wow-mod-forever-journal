@@ -922,6 +922,14 @@ step("mounts: summon, filters, search", function ()
 	-- Dragged to an action bar: the companion, as the stock Mounts tab hands it over.
 	stallion.__scripts.OnDragStart(stallion)
 	assert(picked == "MOUNT:1", "dragging a collected mount didn't pick it up: " .. tostring(picked))
+	-- The selected one's big icon in the detail pane drags the same way.
+	local iconDrag = find(function (f)
+		return f.__kind == "Button" and f:GetParent() == model:GetParent() and f.__scripts.OnDragStart and f:IsVisible()
+	end)
+	assert(iconDrag, "the detail pane's icon can't be dragged")
+	picked = nil
+	iconDrag.__scripts.OnDragStart(iconDrag)
+	assert(picked == "MOUNT:1", "dragging the detail icon didn't pick the mount up: " .. tostring(picked))
 	local f = J.Filters("mounts")
 	f.collected = false
 	J.Fire("COLLECTION_FILTER", "mounts")

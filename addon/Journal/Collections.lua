@@ -303,6 +303,18 @@ local function buildTab(kind, panel)
 	empty:SetPoint("CENTER", listInset, "CENTER")
 	empty:SetWidth(LIST_WIDTH - 30)
 
+	-- Dragged onto an action bar like the stock companion buttons: one you own, by the index
+	-- the client lists it at right now; a toy as its item.
+	local function pickup(e)
+		if not (e and e.mine) then return end
+		if kind == "toys" then
+			PickupItem(e.id)
+		else
+			local c = J.CompanionNow(kind, e)
+			if c then PickupCompanion(info.companion, c.index) end
+		end
+	end
+
 	local rows = {}
 	local render
 
@@ -389,19 +401,8 @@ local function buildTab(kind, panel)
 			end
 			select(e)
 		end)
-		-- Dragged onto an action bar like the stock companion buttons: one you own, by the index
-		-- the client lists it at right now; a toy as its item.
 		b:RegisterForDrag("LeftButton")
-		b:SetScript("OnDragStart", function (self)
-			local e = self.entry
-			if not (e and e.mine) then return end
-			if kind == "toys" then
-				PickupItem(e.id)
-			else
-				local c = J.CompanionNow(kind, e)
-				if c then PickupCompanion(info.companion, c.index) end
-			end
-		end)
+		b:SetScript("OnDragStart", function (self) pickup(self.entry) end)
 		b:SetScript("OnEnter", function (self)
 			local e = self.entry
 			if not e then return end
@@ -523,6 +524,17 @@ local function buildTab(kind, panel)
 		title:SetPoint("TOPLEFT", bigIcon, "TOPRIGHT", 10, -2)
 		title:SetPoint("RIGHT", right, "RIGHT", -12, 0)
 	end
+	-- The big icon drags onto an action bar too, as the list's rows do.
+	local iconDrag = CreateFrame("Button", nil, right)
+	iconDrag:SetAllPoints(bigIcon)
+	iconDrag:RegisterForDrag("LeftButton")
+	iconDrag:SetScript("OnDragStart", function () pickup(state.selected) end)
+	J.SetTooltip(iconDrag, function (tip)
+		local e = state.selected
+		if not e then return end
+		tip:SetHyperlink(kind == "toys" and ("item:" .. e.id) or ("spell:" .. e.id))
+		if e.mine then tip:AddLine("Drag to place it on an action bar.", 0.6, 0.8, 1, true) end
+	end, "ANCHOR_RIGHT")
 	local subtitle = right:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
 	subtitle:SetPoint("TOPLEFT", title, "BOTTOMLEFT", 0, -4)
 	subtitle:SetPoint("RIGHT", right, "RIGHT", -12, 0)
