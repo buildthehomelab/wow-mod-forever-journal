@@ -142,7 +142,9 @@ function CreateFrame(kind, name, parent, template)
 end
 
 function InCombatLockdown() return false end
-function PlaySound() end
+local played
+function PlaySound(name) played = name end
+function GetMoney() return 300000 end
 local modified = {}
 function IsModifiedClick(what) return modified[what] or false end
 function IsShiftKeyDown() return modified.SHIFT or false end
@@ -326,7 +328,7 @@ function GetInventoryItemID(_, slot) return worn[slot] end
 local spellNames = { [5145] = "Arcane Explosion", [6432] = "Smite Stomp", [9999] = "Hidden Trigger", [6603] = "Attack",
 	[7777] = "Berserk", [8888] = "Shadow Prison", [7778] = "Hard Enrage", [7779] = "Blank Mechanic",
 	[470] = "Black Stallion", [458] = "Brown Horse", [32244] = "Blue Wind Rider", [10673] = "Bombay Cat", [10674] = "Cornish Rex Cat",
-	[27241] = "Gurky" }
+	[27241] = "Gurky", [90615] = "Twilight Witch's Sweeper" }
 function GetSpellInfo(id) return spellNames[id], nil, "Interface\\Icons\\S" end
 function GetSpellLink(id) return "|Hspell:" .. id .. "|h[" .. tostring(spellNames[id]) .. "]|h" end
 
@@ -334,9 +336,16 @@ function GetSpellLink(id) return "|Hspell:" .. id .. "|h[" .. tostring(spellName
 -- events and the fake server
 
 local outbox = {}
+-- mod-pet-loot's auto-summon pick: the Pets tab asks it under its own prefix.
+local petLoot = { outbox = {}, sent = {}, pick = 0, online = true }
 function SendAddonMessage(prefix, msg, channel)
-	assert(prefix == "JNL" and channel == "WHISPER", "bad addon message")
+	assert(channel == "WHISPER", "bad addon message")
 	assert(#prefix + 1 + #msg <= 254, "addon message too long")
+	if prefix == "PETLOOT" then
+		table.insert(petLoot.outbox, msg)
+		return
+	end
+	assert(prefix == "JNL", "bad addon message prefix: " .. tostring(prefix))
 	table.insert(outbox, msg)
 end
 
@@ -388,7 +397,7 @@ local function serve(msg)
 	print("  -> " .. msg)
 	if cmd == "HELLO" then
 		assert(args[4] == "1", "HELLO without the addon's features: " .. msg)
-		reply("HELLO:" .. req .. ":2:1535:4242:3")
+		reply("HELLO:" .. req .. ":2:3583:4242:3")
 	elseif cmd == "D" then
 		list("D", req, "3", {
 			"I,6,36,0,0,15,25,19,6,Deadmines,Westfall",
@@ -479,7 +488,8 @@ local function serve(msg)
 	elseif cmd == "C" then
 		local rows = {
 			M = { "458,284,5656,1,1,0,1,0", "470,308,2411,1,1,0,1,0", "32244,22720,25475,3,6,0,1,8",
-				"99999,1,1,1,0,0,1,0" }, -- 99999: a spell the client doesn't have
+				"99999,1,1,1,0,0,1,0", -- 99999: a spell the client doesn't have
+				"90615,1,90615,4,20,0,0,0" }, -- nothing gives it (unobtainable): hidden unless asked for
 			P = { "10673,7385,8485,1,0,0,1,0", "10674,7384,8486,1,0,0,3,0" },
 			T = { "1973,0,1973,3,0,0,2,0", "13379,0,13379,3,0,0,2,0" },
 		}
@@ -487,12 +497,16 @@ local function serve(msg)
 	elseif cmd == "W" then
 		list("W", req, args[3] .. ":" .. args[4] .. ":3", {
 			"V,0,384,1000000,0,0,-,0,1,Katie Hunter,Elwynn Forest,-",
-			"D,1,639,150,6,6,0,1,0,Edwin VanCleef,The Deadmines,0,-",
+			"D,1,30639,150,6,6,0,1,0,Edwin VanCleef,The Deadmines,0,-,639",
 			"D,8,15954,100,159,3,0,1,0,Noth the Plaguebringer,Naxxramas,101,40 Player",
 			"Q,2,166,22,9,1,1,The Defias Brotherhood,Gryan Stoutmantle,Westfall",
 			"A,3,1234", "C,4,9999,202,250,Engineering,0,0,0", "T,5,2,20,0,0,1,12,Lord Grayson,Stormwind City",
-			"N,6,Ask a GM%2C nicely.", "+,7,V,3",
+			"N,6,Ask a GM%2C nicely.", "S,7,222,180,0", "B,8,5,60000000,0,1,Mister Chu,Booty Bay,Landro Longshot",
+			"U,9,20,7,10000000,1,0,1,4,Mirabel Ashford,Stormwind City", "+,10,V,3",
 		})
+	elseif cmd == "T" then
+		-- 34 coins in the wallet, 5 in the bags; up for bid at 6,500g after 2 bids, 5h left.
+		reply("T:" .. req .. ":34:5:65000000:2:18000")
 	elseif cmd == "G" then
 		-- Westfall is where the tester stands; Hellfire Peninsula is past their era (3).
 		list("G", req, "5:40", {
@@ -565,6 +579,15 @@ local function tick(seconds)
 			end
 		end
 		while #outbox > 0 do serve(table.remove(outbox, 1)) end
+		while #petLoot.outbox > 0 do
+			local msg = table.remove(petLoot.outbox, 1)
+			table.insert(petLoot.sent, msg)
+			if petLoot.online then
+				local spell = msg:match("^S:(%d+)$")
+				if spell then petLoot.pick = tonumber(spell) end
+				fire("CHAT_MSG_ADDON", "PETLOOT", "A:" .. petLoot.pick, "WHISPER", "Tester")
+			end
+		end
 	end
 end
 
@@ -850,7 +873,7 @@ step("mounts tab: catalog, collected first, owned count", function ()
 	SlashCmdList.JOURNALMOUNTS()
 	tick(1)
 	assert(J.view.section == "mounts", "/mounts didn't open the Mounts tab")
-	assert(counts.C == 1 and sent[#sent - 0]:match("^[COW]"), "catalog not asked")
+	assert(counts.C == 1 and sent[#sent - 0]:match("^[COWT]"), "catalog not asked")
 	assert(textShown("Collected: |cffffffff1|r / 3"), "collected count wrong (the unknown spell must not count)")
 	assert(textShown("^Black Stallion$") and textShown("^Brown Horse$") and textShown("^Blue Wind Rider$"), "mount rows missing")
 	assert(textShown("Progression stage 8"), "era lock on the wind rider missing")
@@ -875,6 +898,13 @@ step("mount sources: cost, boss link, quest, achievement, trainer, note, more", 
 	assert(textShown("Trainer: Paladin trainers") or textShown("Trainer: "), "trainer source missing")
 	assert(textShown("Ask a GM, nicely."), "note missing")
 	assert(textShown("and 3 more vendors"), "more row missing")
+	assert(textShown("Coin Shop: 180"), "coin shop source missing")
+	assert(textShown("you have 34 %(%+5 in your bags%)"), "coins in hand not filled in from T: " .. tostring(sent[#sent]))
+	assert(textShown("Black Market: Mister Chu") and textShown("Up for bid now: 6500"), "Black Market source or its auction missing")
+	assert(textShown("Guild Vendor: Mirabel Ashford") and textShown("guild level 20, Exalted with your guild"),
+		"guild vendor source missing")
+	assert(textShown("%(about 1 in 67 kills%)"), "drop chance not put in plain words")
+	assert(counts.T and counts.T >= 1, "live coin shop / auction info not asked")
 	local vendor = find(function (f) return f.__kind == "Button" and rawget(f, "source") and f.source.kind == "V" and f:IsVisible() end)
 	vendor.__scripts.OnClick(vendor)
 	tick(0.5)
@@ -943,6 +973,53 @@ step("mounts: summon, filters, search", function ()
 	f.mountType = nil
 	J.Fire("COLLECTION_FILTER", "mounts")
 	tick(0.5)
+	-- What nothing gives is left out (and out of the count) until asked for.
+	assert(not textShown("^Twilight Witch's Sweeper$") and textShown("Collected: |cffffffff1|r / 3"),
+		"an unobtainable mount listed by default")
+	f.unobtainable = true
+	J.Fire("COLLECTION_FILTER", "mounts")
+	tick(0.5)
+	assert(textShown("^Twilight Witch's Sweeper$") and textShown("Collected: |cffffffff1|r / 4"), "Show unobtainable")
+	f.unobtainable = false
+	J.Fire("COLLECTION_FILTER", "mounts")
+	tick(0.5)
+end)
+
+step("goal tracker: set, where to go, kills, collected", function ()
+	J.OpenSection("mounts")
+	tick(0.5)
+	local horse = find(function (f) return f.__kind == "Button" and type(rawget(f, "entry")) == "table" and f.entry.id == 458 and f:IsVisible() end)
+	horse.__scripts.OnClick(horse)
+	tick(0.2)
+	local set = buttonShown("Set as goal")
+	assert(set, "no Set as goal button on an uncollected mount")
+	assert(set:GetFrameLevel() > set:GetParent():GetFrameLevel() + 1, "Set as goal under the model")
+	set.__scripts.OnClick(set)
+	tick(1)
+	assert(JournalCharDB.goal and JournalCharDB.goal.id == 458, "goal not saved")
+	assert(buttonShown("Stop tracking"), "button doesn't offer to stop tracking")
+	assert(JournalGoalTracker and JournalGoalTracker:IsVisible(), "tracker not shown")
+	assert(textShown("^Goal: mount$") and textShown("Vendor: Katie Hunter"), "tracker doesn't say where to go")
+	assert(textShown("Gold: 30"), "tracker has no gold progress for a vendor")
+	-- Kills of a creature that drops it count (a party kill of Edwin VanCleef, 639 = 0x00027F).
+	fire("COMBAT_LOG_EVENT_UNFILTERED", 0, "PARTY_KILL", "0x0000000000000001", "Tester", 0x511, "0xF13000027F000042", "Edwin VanCleef", 0xa48)
+	fire("COMBAT_LOG_EVENT_UNFILTERED", 0, "PARTY_KILL", "0x0000000000000009", "Stranger", 0x548, "0xF13000027F000043", "Edwin VanCleef", 0xa48)
+	assert(JournalCharDB.goal.kills == 1, "kill count wrong: " .. tostring(JournalCharDB.goal.kills))
+	-- Clicking the tracker opens the journal on it, whatever the search box holds.
+	JournalFrame:Hide()
+	JournalGoalTracker.__scripts.OnClick(JournalGoalTracker, "LeftButton")
+	tick(0.5)
+	assert(JournalFrame:IsShown() and J.view.section == "mounts", "tracker click didn't open the Mounts tab")
+	-- Learning it ends the goal.
+	table.insert(companions.MOUNT, { 284, "Brown Horse", 458, "Interface\\Icons\\M", false })
+	fire("COMPANION_LEARNED")
+	tick(1)
+	assert(JournalCharDB.goal == nil, "goal not cleared once collected")
+	assert(not JournalGoalTracker:IsVisible(), "tracker still up")
+	assert(played == "LEVELUPSOUND", "no cheer")
+	table.remove(companions.MOUNT)
+	fire("COMPANION_LEARNED")
+	tick(1)
 end)
 
 if DragonUI then
@@ -1007,6 +1084,30 @@ step("pets and toys tabs", function ()
 	tick(1)
 	assert(textShown("^Bombay Cat$") and textShown("^Cornish Rex Cat$"), "pet rows missing")
 	assert(textShown("Collected: |cffffffff1|r / 2"), "pet count wrong")
+	-- Auto-summon: the box shows once mod-pet-loot answers, and ticking it picks the pet.
+	local function autoBox()
+		return find(function (f) return f.__kind == "CheckButton" and rawget(f, "label") and f.label.__text == "Auto-summon" and f:IsVisible() end)
+	end
+	local box = autoBox()
+	assert(box, "no Auto-summon box for a collected pet")
+	assert(not box:GetChecked(), "Auto-summon ticked before anything was picked")
+	box:SetChecked(true)
+	box.__scripts.OnClick(box)
+	tick(0.2)
+	assert(petLoot.sent[#petLoot.sent] == "S:10673", "ticking Auto-summon didn't pick the pet: " .. tostring(petLoot.sent[#petLoot.sent]))
+	assert(autoBox():GetChecked() and textShown("Auto%-summoned"), "the picked pet isn't shown as auto-summoned")
+	box:SetChecked(false)
+	box.__scripts.OnClick(box)
+	tick(0.2)
+	assert(petLoot.sent[#petLoot.sent] == "S:0", "unticking Auto-summon didn't turn it off")
+	assert(not autoBox():GetChecked() and not textShown("Auto%-summoned"), "Auto-summon still on after unticking")
+	-- A realm without mod-pet-loot (or with auto-summon off) never answers: no box.
+	J.autoSummon = nil
+	J.Fire("AUTO_SUMMON")
+	tick(0.2)
+	assert(not autoBox(), "Auto-summon box shown with no answer from the realm")
+	fire("CHAT_MSG_ADDON", "PETLOOT", "A:0", "WHISPER", "Tester")
+	tick(0.2)
 	-- The client renumbered the list since it was read: the summon finds the pet's index afresh.
 	table.insert(companions.CRITTER, 1, { 7380, "Cornish Rex Cat", 10674, "Interface\\Icons\\P", false })
 	called = nil

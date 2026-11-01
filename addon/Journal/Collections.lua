@@ -26,10 +26,41 @@ local SOURCE_ICONS = {
 	A = "Interface\\AchievementFrame\\UI-Achievement-TinyShield",
 	T = "Interface\\GossipFrame\\TrainerGossipIcon",
 	N = "Interface\\GossipFrame\\GossipGossipIcon",
+	S = "Interface\\Icons\\INV_Misc_Coin_16",
+	B = "Interface\\Icons\\INV_Misc_Coin_02",
+	U = "Interface\\GossipFrame\\TabardGossipIcon",
 }
 local BOSS_ICON = "Interface\\TargetingFrame\\UI-TargetingFrame-Skull"
 local MORE_NAMES = { V = "vendors", D = "creatures", G = "chests", P = "pockets", F = "fishing spots", I = "containers",
-	Q = "quests", A = "achievements", C = "recipes", T = "trainers" }
+	Q = "quests", A = "achievements", C = "recipes", T = "trainers", S = "shop offers", B = "Black Market listings",
+	U = "guild rewards" }
+-- Guild reputation ranks (mod-guild-levels uses the standing ranks, 7 = Exalted).
+local RANK_NAMES = { [0] = "Hated", "Hostile", "Unfriendly", "Neutral", "Friendly", "Honored", "Revered", "Exalted" }
+
+-- The pet that comes out on its own, kept by the realm's pet loot module (mod-pet-loot) under its
+-- own prefix: "G" asks, "S:<spell>" picks (0 = off); it answers "A:<spell>" or "OFF". J.autoSummon
+-- stays nil until it answers, so a realm without it never shows the box.
+local AUTO_PREFIX = "PETLOOT"
+
+local function sendAutoSummon(msg)
+	SendAddonMessage(AUTO_PREFIX, msg, "WHISPER", UnitName("player"))
+end
+
+local autoEvents = CreateFrame("Frame")
+autoEvents:RegisterEvent("CHAT_MSG_ADDON")
+autoEvents:SetScript("OnEvent", function (_, _, prefix, message, _, sender)
+	if prefix ~= AUTO_PREFIX or sender ~= UnitName("player") then return end
+	local spell = message:match("^A:(%d+)$")
+	if spell then
+		J.autoSummon = tonumber(spell)
+	elseif message == "OFF" then
+		J.autoSummon = nil
+	else
+		return
+	end
+	J.Fire("AUTO_SUMMON")
+end)
+J.On("LOGIN", function () J.After(3, function () sendAutoSummon("G") end) end)
 
 local function lockText(state)
 	return "|cffff5555Progression stage " .. state .. "|r"
@@ -68,10 +99,12 @@ local function className(id)
 	return token and LOCALIZED_CLASS_NAMES_MALE and LOCALIZED_CLASS_NAMES_MALE[token] or token
 end
 
--- The title, the line under it and the icon of a source row.
-local function describe(s)
+-- The title, the line under it and the icon of a source row. live: J.LoadLive's answer, once it
+-- is in, for the coin shop and Black Market rows.
+local function describe(s, live)
 	local title, detail, icon = "", nil, SOURCE_ICONS[s.kind]
-	local chance = s.chance and s.chance > 0 and J.Chance(s.chance) or nil
+	local PER = { D = "kills", G = "chests", P = "pockets", F = "catches", I = "" }
+	local chance = s.chance and s.chance > 0 and J.ChanceText(s.chance, PER[s.kind]) or nil
 	if s.kind == "V" then
 		title = "Vendor: " .. s.name
 		local bits = {}
@@ -145,6 +178,40 @@ local function describe(s)
 		if s.name ~= "" then table.insert(bits, s.name .. (s.where ~= "" and (", " .. s.where) or "")) end
 		if s.trainers and s.trainers > 1 then table.insert(bits, "and " .. (s.trainers - 1) .. " more") end
 		detail = table.concat(bits, " - ")
+	elseif s.kind == "S" then
+		title = "Coin Shop: " .. J.Number(s.coins) .. " |T" .. J.ItemIcon(J.BOSS_COIN) .. ":14:14:0:0|t coins"
+		icon = J.ItemIcon(J.BOSS_COIN)
+		local bits = { "In the launcher's Shop tab" }
+		if live and live.coins then
+			-- The shop spends the wallet only: coins in the bags go in at Pix Xizzix first.
+			local text = "you have " .. J.Number(live.coins) .. (live.bags and live.bags > 0 and (" (+" .. J.Number(live.bags) .. " in your bags)") or "")
+			table.insert(bits, (live.coins >= s.coins and "|cff66ff66" or "|cffffd200") .. text .. "|r")
+			if live.coins < s.coins and live.coins + (live.bags or 0) >= s.coins then
+				table.insert(bits, "put your bag coins in your wallet with Pix Xizzix in Booty Bay")
+			end
+		else
+			table.insert(bits, "coins come from dungeon and raid bosses")
+		end
+		detail = table.concat(bits, " - ")
+	elseif s.kind == "B" then
+		title = "Black Market: " .. s.name
+		local bits = {}
+		if s.where ~= "" then table.insert(bits, s.where) end
+		if live and live.bid then
+			table.insert(bits, "|cff66ff66Up for bid now: " .. J.Money(live.bid) .. (live.bids > 0 and "" or " to start")
+				.. ", " .. J.Duration(live.left) .. " left|r")
+		else
+			table.insert(bits, "bids from " .. J.Money(s.copper) .. " on the days it's up for auction")
+		end
+		detail = table.concat(bits, " - ")
+	elseif s.kind == "U" then
+		title = "Guild Vendor: " .. s.name .. (s.vendors and s.vendors > 1 and " |cffc0c0c0(every capital)|r" or "")
+		local bits = {}
+		if s.where ~= "" then table.insert(bits, s.where) end
+		table.insert(bits, "guild level " .. s.guildLevel .. ", " .. (RANK_NAMES[s.rank] or ("rank " .. s.rank)) .. " with your guild")
+		if s.copper and s.copper > 0 then table.insert(bits, J.Money(s.copper)) end
+		if s.faction == 1 then table.insert(bits, "|cff4080ffAlliance|r") elseif s.faction == 2 then table.insert(bits, "|cffff4040Horde|r") end
+		detail = table.concat(bits, " - ")
 	elseif s.kind == "N" then
 		title = s.text
 	elseif s.kind == "+" then
@@ -152,10 +219,14 @@ local function describe(s)
 		icon = nil
 	end
 	if (s.reqState or 0) > 0 and J.Has(J.HELLO_PROGRESSION) and s.reqState > (J.state or 18) then
+		-- The shop opens an offer once any character of the account gets there.
 		detail = (detail and detail ~= "" and (detail .. " - ") or "") .. lockText(s.reqState)
+			.. (s.kind == "S" and "|cffff5555 on any of your characters|r" or "")
 	end
 	return title, detail, icon
 end
+
+J.DescribeSource = describe
 
 -- DragonUI's Mounts and Pets window, when it's there: its art for the rows and the selected one,
 -- and its favourites, so a star set here shows there and the other way round.
@@ -226,6 +297,9 @@ local function buildTab(kind, panel)
 			table.insert(items, { text = "Hide locked by progression", checked = f.hideLocked, keepShownOnClick = true,
 				func = toggle("hideLocked") })
 		end
+		table.insert(items, { text = "Show unobtainable", checked = f.unobtainable, keepShownOnClick = true,
+			tooltipTitle = "Show unobtainable", tooltipText = "Also list the ones nothing on this realm gives yet.",
+			func = toggle("unobtainable") })
 		if kind == "mounts" then
 			table.insert(items, { text = "Mount type", isTitle = true, notCheckable = true })
 			for _, t in ipairs({ { nil, "All" }, { "flying", "Flying" }, { "ground", "Ground" } }) do
@@ -588,7 +662,11 @@ local function buildTab(kind, panel)
 	-- The model takes the mouse (drag to turn) and in the client it ends up above this button,
 	-- a sibling made after it: clicks on Summon turned the model instead. So the button sits a
 	-- level above the model, re-pinned on every render in case the window is re-levelled.
-	local function raiseAction() action:SetFrameLevel(model:GetFrameLevel() + 1) end
+	local auto
+	local function raiseAction()
+		action:SetFrameLevel(model:GetFrameLevel() + 1)
+		if auto then auto:SetFrameLevel(model:GetFrameLevel() + 1) end
+	end
 	raiseAction()
 	action:SetScript("OnClick", function ()
 		local e = state.selected
@@ -603,6 +681,51 @@ local function buildTab(kind, panel)
 		end
 		J.Debounce("collection-companions", 0.5, function () J.Fire("COMPANIONS") end)
 	end)
+
+	-- One not collected yet: make it the character's goal, and the tracker (GoalTracker.lua) shows
+	-- where to go for it while they play. Where Summon is for one they have.
+	local goalButton = J.CreateButton(right, "Set as goal", 110, 24)
+	goalButton:SetPoint("BOTTOMRIGHT", model, "BOTTOMRIGHT", -6, 6)
+	goalButton:SetScript("OnClick", function ()
+		local e = state.selected
+		if not e then return end
+		J.SetGoal(kind, not J.GoalIs(kind, e) and e or nil)
+	end)
+	J.SetTooltip(goalButton, function (tip)
+		local e = state.selected
+		if e and J.GoalIs(kind, e) then
+			tip:SetText("Stop tracking", 1, 1, 1)
+			tip:AddLine("Takes it off your screen.", 1, 0.82, 0, true)
+		else
+			tip:SetText("Set as goal", 1, 1, 1)
+			tip:AddLine("Shows it on your screen while you play: where to get it next, and how close you are. "
+				.. "Click the tracker to come back here.", 1, 0.82, 0, true)
+		end
+	end, "ANCHOR_TOP")
+	local function syncGoal()
+		local e = state.selected
+		goalButton:SetFrameLevel(model:GetFrameLevel() + 1)
+		local can = e and not e.mine and band(e.flags, J.ENTRY.UNOBTAINABLE) == 0 and J.Usable(e)
+		setShown(goalButton, can)
+		if can then goalButton:SetText(J.GoalIs(kind, e) and "Stop tracking" or "Set as goal") end
+	end
+
+	-- Pets: pick the one that comes out on its own, left of Summon.
+	if kind == "pets" then
+		auto = J.CreateCheck(right, "Auto-summon")
+		auto:SetPoint("RIGHT", action, "LEFT", -(auto.label:GetStringWidth() + 12), 0)
+		auto:SetScript("OnClick", function (self)
+			local e = state.selected
+			if not e then return end
+			sendAutoSummon("S:" .. (self:GetChecked() and e.id or 0))
+		end)
+		J.SetTooltip(auto, function (tip)
+			tip:SetText("Auto-summon", 1, 1, 1)
+			tip:AddLine("Comes out on its own whenever you have no pet: after logging in, zoning, dying or a flight. "
+				.. "Dismiss it and it stays away until you summon a pet again.", 1, 0.82, 0, true)
+		end, "ANCHOR_TOP")
+		raiseAction()
+	end
 
 	-- A secure button makes every frame it sits in protected, and the journal would then be
 	-- blocked from closing or switching tabs in combat. So it sits on UIParent, over the
@@ -721,6 +844,13 @@ local function buildTab(kind, panel)
 					GameTooltip:SetHyperlink("spell:" .. s.spell)
 					GameTooltip:Show()
 				end
+			elseif s.kind == "S" then
+				GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+				GameTooltip:SetText("Coin Shop", 1, 1, 1)
+				GameTooltip:AddLine("Open the Shop tab in the realm's launcher and buy it there with Tarnished Undermine "
+					.. "Reals. Bosses of high-level dungeons and raids give them, and you get a couple each day "
+					.. "for logging in.", 1, 0.82, 0, true)
+				GameTooltip:Show()
 			elseif s.placed or (s.instance and s.instance > 0) then
 				GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
 				GameTooltip:SetText(self.title:GetText() or "")
@@ -751,23 +881,36 @@ local function buildTab(kind, panel)
 				return
 			end
 			sourcesEmpty:Hide()
-			local y = 0
-			for _, s in ipairs(list) do
-				local b = sourceRows:Get()
-				b.source = s
-				local t, detail, icon = describe(s)
-				b.title:SetText(t)
-				b.detail:SetText(detail or "")
-				b.icon:SetTexture(icon)
-				setShown(b.icon, icon ~= nil)
-				local h = (detail and detail ~= "") and 34 or 22
-				b:SetHeight(h)
-				b:ClearAllPoints()
-				b:SetPoint("TOPLEFT", sourceScroll.content, "TOPLEFT", 0, -y)
-				b:SetPoint("RIGHT", sourceScroll.content, "RIGHT", 0, 0)
-				y = y + h + 2
+			local function layout(live)
+				sourceRows:Reset()
+				local y = 0
+				for _, s in ipairs(list) do
+					local b = sourceRows:Get()
+					b.source = s
+					local t, detail, icon = describe(s, live)
+					b.title:SetText(t)
+					b.detail:SetText(detail or "")
+					b.icon:SetTexture(icon)
+					setShown(b.icon, icon ~= nil)
+					local h = (detail and detail ~= "") and 34 or 22
+					b:SetHeight(h)
+					b:ClearAllPoints()
+					b:SetPoint("TOPLEFT", sourceScroll.content, "TOPLEFT", 0, -y)
+					b:SetPoint("RIGHT", sourceScroll.content, "RIGHT", 0, 0)
+					y = y + h + 2
+				end
+				sourceScroll:SetContentHeight(y)
 			end
-			sourceScroll:SetContentHeight(y)
+			layout(nil)
+			-- The coin shop and Black Market rows fill in what you have and what's up for bid.
+			for _, s in ipairs(list) do
+				if s.kind == "S" or s.kind == "B" then
+					J.LoadLive(kind, e, function (live)
+						if live and state.selected == e and state.sourcesFor == e then layout(live) end
+					end)
+					break
+				end
+			end
 		end)
 	end
 
@@ -799,6 +942,7 @@ local function buildTab(kind, panel)
 		else
 			table.insert(bits, e.mine and "|cff66ff66Collected|r" or "|cff9d9d9dNot collected|r")
 		end
+		if kind == "pets" and J.autoSummon == e.id then table.insert(bits, "|cff66ccffAuto-summoned|r") end
 		if J.EntryLocked(e) then table.insert(bits, lockText(e.reqState)) end
 		subtitle:SetText(table.concat(bits, " - "))
 
@@ -820,6 +964,10 @@ local function buildTab(kind, panel)
 			local c = J.Companion(kind, e)
 			raiseAction()
 			setShown(action, c ~= nil)
+			if auto then
+				setShown(auto, c ~= nil and J.autoSummon ~= nil)
+				auto:SetChecked(J.autoSummon == e.id)
+			end
 			if star then
 				setShown(star, c ~= nil and c.creature ~= nil)
 				local fav = isFavorite(e)
@@ -831,6 +979,7 @@ local function buildTab(kind, panel)
 				action:SetText((c.active or mounted) and (kind == "mounts" and "Dismount" or "Dismiss") or "Summon")
 			end
 		end
+		syncGoal()
 		if state.sourcesFor ~= e then
 			state.sourcesFor = e
 			renderSources(e)
@@ -891,6 +1040,7 @@ local function buildTab(kind, panel)
 		if J.ServerStatus() or not J.Has(J.HELLO_COLLECTIONS) then render() return end
 		J.Fire("COMPANIONS")
 		if kind == "toys" then J.RefreshToys() end
+		if kind == "pets" and J.autoSummon == nil then sendAutoSummon("G") end
 		if state.catalog then render() return end
 		render()
 		J.LoadCatalog(kind, function (catalog)
@@ -932,6 +1082,21 @@ local function buildTab(kind, panel)
 		if shown() then load() end
 	end)
 	J.On("LOCKOUTS_CHANGED", function () if shown() then render() end end)
+	if kind == "pets" then J.On("AUTO_SUMMON", function () if shown() then render() end end) end
+	J.On("GOAL_CHANGED", function () if shown() then syncGoal() end end)
+	-- The goal tracker opens the tab on one entry: show it, whatever the search box held.
+	J.On("COLLECTION_SELECT", function (k, id)
+		if k ~= kind then return end
+		JournalCharDB.collectionSelected = JournalCharDB.collectionSelected or {}
+		JournalCharDB.collectionSelected[kind] = id
+		state.selected = state.catalog and state.catalog.byId[id] or nil
+		if (search:GetText() or "") ~= "" then search:SetText("") end
+		-- Filters that would hide a goal (one not collected yet, for this character) let it through.
+		local f = J.Filters(kind)
+		f.missing, f.hideLocked, f.mountType = true, false, nil
+		wipe(f.sources)
+		if shown() then render() end
+	end)
 
 	return load
 end

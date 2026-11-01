@@ -185,23 +185,37 @@ books you've read are listed, so there's nothing to spoil. `/lore library` opens
 
 On the left, the list: collected ones first in their quality colour, then the rest greyed out,
 with a lock on those your progression stage hasn't opened. A search box, a Filter menu and the
-collected count sit above it. On the right, the one you picked:
+collected count sit above it. Ones nothing on the realm gives yet are left out of the list and the
+count, so it shows what you can go and get (and whatever you already have); **Show unobtainable**
+in the Filter menu brings them back. On the right, the one you picked:
 - its **model** (drag to turn it; toys show their icon and what using them does), whether it's for
   one faction or class, a ground, flying, or ground and flying mount (Invincible, the Headless
   Horseman's Mount...), and a **Summon**, **Dismount**, **Use** or **Equip** (trinket toys) button
   when you have it. A toy in your bank counts as collected and says so; take it out to use it;
+- for a pet you have, an **Auto-summon** box when the realm runs
+  [mod-pet-loot](https://github.com/buildthehomelab/wow-mod-pet-loot): tick it and that pet comes
+  out on its own whenever you have none (after logging in, zoning, dying or a flight), the same as
+  `.companion auto`;
+- for one you don't have, **Set as goal**: a small tracker stays on screen while you play with the
+  first place to get it your progression has opened (who, where, the drop chance), and how close
+  you are: coins against a shop price, gold against a vendor's, or the kills of a creature that
+  drops it so far. Click it to come back here, right-click to flag the place on your map, drag it
+  to move it. It goes away with a cheer once you have it;
 - **Where to get it**: every source the realm has, each on its own line:
 
 | Source | Shows | Click |
 | --- | --- | --- |
 | Vendor | who, where, price (gold, honor, arena points, tokens), the world event they come with | flag on the map |
-| Boss, drop, chest | who or what, where, the difficulties it drops on (Heroic, 25 Player), the drop chance | a boss opens in the Dungeons tab on that difficulty, others flag the map |
+| Boss, drop, chest | who or what, where, the difficulties it drops on (Heroic, 25 Player), the drop chance in plain words ("10% (about 1 in 10 kills)") | a boss opens in the Dungeons tab on that difficulty, others flag the map |
 | Pickpocket, fishing, container | who, the zone, or the container item, with the chance | |
 | Quest | the quest, who starts it, where, its level and faction | flag the quest giver |
 | Achievement | the achievement and what it asks | opens it in the achievement window |
 | Profession | the profession, the skill it takes, the recipe and the specialisation it needs | |
 | Trainer | the class's trainers (class mounts), level and cost | flag the nearest trainer of your faction |
 | World drop | drops from a shared world drop table | |
+| Coin Shop | the price in boss coins ([mod-boss-coins](https://github.com/buildthehomelab/wow-mod-boss-coins), bought in the launcher) and how many you have, wallet and bags | |
+| Black Market | the broker ([mod-black-market](https://github.com/buildthehomelab/wow-mod-black-market)), where, the starting bid, and when it's up for bid now, the current bid and the time left | flag the broker |
+| Guild Vendor | the guild vendors ([mod-guild-levels](https://github.com/buildthehomelab/wow-mod-guild-levels)), the guild level and guild reputation it takes, the price | flag the nearest guild vendor of your faction |
 
 Up to eight sources of each kind are listed, most likely or cheapest first; a last line counts the
 rest. Map flags go to the nearest spawn on your map. Sources nobody can reach are left out: vendors
@@ -274,7 +288,12 @@ At startup the module builds an index:
   and `game_event_creature` for event vendors), the creature, gameobject, pickpocketing, fishing,
   item and reference loot tables (chances worked out as above), quest rewards and their
   `creature_queststarter` / `gameobject_queststarter`, `achievement_reward`, profession spells
-  that create the item, `trainer_spell`, and notes in `mod_forever_journal_collection_note`.
+  that create the item, `trainer_spell`, notes in `mod_forever_journal_collection_note`, and, when
+  those modules are installed, `mod_boss_coins_shop`, `mod_black_market_template` (its broker by
+  the script name `npc_black_market_broker`) and `mod_guild_levels_reward` (its vendors by
+  `npc_guild_levels_vendor`). Coins in the wallet (`mod_boss_coins_wallet`) and Black Market
+  auctions running now (`mod_black_market_auction`) are read from the characters database when a
+  mount, pet or toy with those sources is opened.
   Mounts, pets and toys with no source at all (promotions, test items) are left out, unless the
   character has one: the addon lists every mount and pet the character knows, marked
   unobtainable when the catalog lacks it.
@@ -302,8 +321,8 @@ start works them out from the map files and saves them to `creature` and `gameob
 show up after a restart.
 
 The addon keeps instance lists, boss lists, loot and the mount, pet and toy lists across sessions
-until the server's data stamp changes; abilities and sources for the session; status, quests and
-toys are asked fresh.
+until the server's data stamp changes; abilities and sources for the session; status, quests,
+toys, coins and Black Market auctions are asked fresh.
 
 ### Filling the gaps
 

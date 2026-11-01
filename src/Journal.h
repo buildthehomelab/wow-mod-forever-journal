@@ -66,6 +66,7 @@ namespace Journal
         HELLO_HINTS       = 0x200, // E: achievement actions for hover tooltips
         HELLO_LIBRARY     = 0x100, // J, P: books read, BN announces a new one
         HELLO_MODELS      = 0x400, // R: creature records for previews of creatures never seen
+        HELLO_LIVE        = 0x800, // T: coins in hand and Black Market auctions for a collectible
     };
 
     // What the addon can do, sent as HELLO's second field.
@@ -355,6 +356,10 @@ namespace Journal
         void HandleOwnedToys(Player* player, std::string const& req);
         // M:<req>:S:<kind>:<id>:<source>: a red flag on a source.
         void HandleMapPin(Player* player, std::string const& req, std::vector<std::string_view> const& args);
+        // T:<req>:<kind>:<id> -> T:<req>:<coins>:<coins in bags>:<bid>:<bids>:<seconds left>: what changes by
+        // the minute about a collectible's coin shop and Black Market sources (answered later: it
+        // reads the characters database).
+        void HandleLive(Player* player, std::string const& req, std::vector<std::string_view> const& args);
 
         // The era state a spot on a map opens at: Outland and Northrend by zone (the blood elf
         // and draenei zones are classic's), instances by their journal tabs. 0 without era locks.
