@@ -94,8 +94,10 @@ end
 
 -- It sits above the scroll area, not in it: the 3.3.5 client draws a model inside a scroll
 -- frame in the wrong place, on top of the boss list and the text.
+-- A DressUpModel, not a PlayerModel: the 3.3.5 client only skins a character-model creature (a
+-- humanoid boss built from a race model) in a DressUpModel; a PlayerModel draws it white.
 local MODEL_HEIGHT = 250
-local model = CreateFrame("PlayerModel", nil, pane)
+local model = CreateFrame("DressUpModel", nil, pane)
 model:SetPoint("TOPLEFT", pane, "TOPLEFT", 4, -4)
 model:SetPoint("TOPRIGHT", pane, "TOPRIGHT", -26, -4)
 model:SetHeight(MODEL_HEIGHT)

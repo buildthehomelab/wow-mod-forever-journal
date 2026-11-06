@@ -703,7 +703,7 @@ step("boss: overview, abilities", function ()
 	assert(textShown("3,500 health"), "boss health missing")
 	assert(textShown("Defeated this lockout"), "kill not shown")
 	-- The 3.3.5 client draws a model inside a scroll frame in the wrong place.
-	local model = find(function (f) return f.__kind == "PlayerModel" and f:IsVisible() end)
+	local model = find(function (f) return f.__kind == "DressUpModel" and f:IsVisible() end)
 	assert(model, "boss model not shown")
 	local p = model:GetParent()
 	while p do
